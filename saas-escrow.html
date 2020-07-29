@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<body>
+  <div class="resources bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content overflow-hidden">
+      <div class="header__bg">
+        <div class="container">
+          <h2 class="header__title mx-auto mt-5">SaaS Escrow</h2>
+          <p class="header__subtitle mx-auto mt-5">Learn more about what SaaS escrow is, how it’s used, and how it might benefit your company.</p>
+          <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
+            GET STARTED
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white info__bg">
+    </div>
+    <div class="container">
+      <div class="info__box">
+        <div>
+          <p class="info__title">What is SaaS escrow?</p>
+          <p class="info__subtitle mx-auto mt-4">As software shifts away from the traditional on-site licensing model, SaaS and other cloud escrows are becoming increasingly more important.<br><br>
+          For all intents and purposes, SaaS escrow is similar to a regular <a class="underline-none" href="software-source-code-escrow.html">software or source code escrow</a>; however, it is tailored to the unique needs of Software-as-a-Service (SaaS) applications, which often require a more robust solution to obtain a required level of protection.<br><br> 
+          Much like software escrow, SaaS escrow is an agreement set up between a software developer or vendor (aka “Depositor” or “Licensor”), their client who is purchasing a software license (aka “Beneficiary” or “Licensee”), and a trusted third party (“Escrow Agent”). Materials deposited in SaaS escrow may contain code, virtual machines, data, and any other components necessary to ensure the SaaS product remains viable in the event the original vendor is no longer able to support it.<br><br> 
+          By establishing a SaaS escrow agreement, the beneficiary protects itself from a potential sudden loss of access to critical SaaS services—whether temporary or long-term—and secures direct access to a running copy of the software and their own customer data in case certain predefined release conditions are met. Such conditions typically involve the licensor discontinuing maintenance and support of the software, running out of business, or breaching the contract in any other way.<br><br>
+          If any of these (or other) predetermined events occur (each, a “Release Condition”), the escrowed materials (i.e., source code, credentials, build instructions, etc.) are then made available to the beneficiary so they can ensure their operations go on uninterrupted regardless of the operational status of the licensor’s company.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-white section-medium px-2">
+      <p class="info__title2">How does Codekeeper help?</p>
+      <p class="info__subtitle mx-auto mt-4">As the escrow agent, Codekeeper’s role is to receive, store, and protect escrow deposits within a secure facility accessible only to authorized persons with a valid reason. It is also required to implement extensive security safeguards that ensure the integrity of data transmission into escrow, allow for content encryption, and validate authenticity.<br><br>
+      Codekeeper fits directly into modern development and source code management workflows, which means deposits can be automated while removing the unnecessary burden of making manual deposits and increasing security. Once the deposit is made, Codekeeper also validates the format and completeness of the data file set of each registry escrow deposit.<br><br>
+      Our modular pricing structure responds to the needs of the marketplace with four simple, straightforward plans with no hidden fees. You can get a plan for as low as $59 per month, with a start-up fee of only $199. This includes unlimited continuous deposits, beneficiary confirmations, and more. Even a free escrow agreement is included, which means you save additional dollars on lawyer fees. </p>
+      <a class="button btn-primary-lg mt-4 mx-auto" href="pricing.html">
+        SEE OUR PRICING
+      </a>
+    </div>
+    <!-- Third Section -->
+    <div class="bg-light-gray section-medium px-2">
+      <div class="container">
+        <h3 class="info__reading-title mx-auto">Further reading</h3>
+        <p class="info__reading-subtitle mx-auto mt-4">Check out this guide on the <a class="underline-none" href="https://blog.codekeeper.co">Codekeeper blog</a> for everything you need to know to get started with source code escrow. Learn more about what a software or source code escrow is, how it’s used, and how it might benefit your company.</p>
+        <div class="row my-5">
+          <div class="col-md-7 col-sm-12 px-0">
+            <img class="info__reading-image" src="images/guide/further-reading.svg"/>
+          </div>
+          <div class="col-md-5 col-sm-12 bg-white px-0">
+            <p class="info__reading-text mx-auto">The Ultimate Guide to Software Escrow: Everything You Need to Know to Get Started</p>
+          </div>
+        </div>
+        <a class="button btn-primary-lg mt-4 mx-auto" href="https://blog.codekeeper.co">
+          SEE ALL ARTICLES
+        </a>
+      </div>
+    </div>
+    <!-- Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

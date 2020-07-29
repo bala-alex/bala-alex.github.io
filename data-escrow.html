@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<body>
+  <div class="resources bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content overflow-hidden">
+      <div class="header__bg">
+        <div class="container">
+          <h2 class="header__title mx-auto mt-5">Data Escrow</h2>
+          <p class="header__subtitle mx-auto mt-5">Learn more about what data escrow is, how it’s used, and how it might benefit your company.</p>
+          <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
+            GET STARTED
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white info__bg">
+    </div>
+    <div class="container">
+      <div class="info__box">
+        <div>
+          <p class="info__title">What is data escrow?</p>
+          <p class="info__subtitle mx-auto mt-4">Data escrow is a specialized data protection solution designed to meet the compliance needs of domain name registrants worldwide. This type of escrow is an effective way of ensuring that the data associated with registered domain names is never at risk of being lost or inaccessible by securing up-to-date copies of domain name ownership and contact details. Specifically, this guarantees that domain owners and end-users will still be able to access the data even if a backend registry operator should no longer be able to provide its services.<br><br>
+          Data escrow takes data deposits on a regular, scheduled basis, and these services are provided by a trusted, neutral third party such as Codekeeper (aka “Escrow Agent”). Full deposits include the contents of all domain objects, host objects, contact objects, registrar objects, and, when applicable, Domain Name System Security Extensions (DNSSEC)-related key material.<br><br>
+          The escrow contents can only be accessed and released under predefined and verified conditions—generally, in the event of a registry’s business or technical failure. If any of these (or other) predetermined events occur (each, a “Release Condition”), the escrowed materials are then made available (released) to the beneficiary so they can ensure their operations go on uninterrupted.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-light-gray section-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h3 class="info__data-title">Who needs to use data escrow?</h3>
+            <div class="info__benefits-content mt-4">
+              <p class="info__benefits-subtitle">According to the ICANN Registry Agreement, all registry operators of generic Top Level Domains (gTLDs) are required to create a daily backup of the domain name registration data they are managing and to transfer it to a reputable escrow agent.<br><br>
+              In addition to gTLD operators, data escrow is also used by ccTLD operators. Though they have no obligation to escrow their data, they often do so to minimize potential risks. In case a release condition is met, escrowed data can be retrieved at any time.</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style mb-5" src="images/guide/data-escrow.svg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="bg-white section-medium px-2">
+      <p class="info__title2">How does Codekeeper help?</p>
+      <p class="info__subtitle mx-auto mt-4">As the escrow agent, Codekeeper’s role is to receive, store, and protect escrow deposits within a secure facility accessible only to authorized persons with a valid reason. It is also required to implement extensive security safeguards that ensure the integrity of data transmission into escrow, allow for content encryption, and validate authenticity.<br><br>
+      Codekeeper fits directly into modern development and source code management workflows, which means deposits can be automated while removing the unnecessary burden of making manual deposits and increasing security. Once the deposit is made, Codekeeper also validates the format and completeness of the data file set of each registry escrow deposit.<br><br>
+      Our modular pricing structure responds to the needs of the marketplace with four simple, straightforward plans with no hidden fees. You can get a plan for as low as $59 per month, with a start-up fee of only $199. This includes unlimited continuous deposits, beneficiary confirmations, and more. Even a free escrow agreement is included, which means you save additional dollars on lawyer fees. </p>
+      <a class="button btn-primary-lg mt-4 mx-auto" href="pricing.html">
+        SEE OUR PRICING
+      </a>
+    </div>
+    <!-- Fourth Section -->
+    <div class="bg-light-gray section-medium px-2">
+      <div class="container">
+        <h3 class="info__reading-title mx-auto">Further reading</h3>
+        <p class="info__reading-subtitle mx-auto mt-4">Check out this guide on the <a class="underline-none" href="https://blog.codekeeper.co">Codekeeper blog</a> for everything you need to know to get started with source code escrow. Learn more about what a software or source code escrow is, how it’s used, and how it might benefit your company.</p>
+        <div class="row my-5">
+          <div class="col-md-7 col-sm-12 px-0">
+            <img class="info__reading-image" src="images/guide/further-reading.svg"/>
+          </div>
+          <div class="col-md-5 col-sm-12 bg-white px-0">
+            <p class="info__reading-text mx-auto">The Ultimate Guide to Software Escrow: Everything You Need to Know to Get Started</p>
+          </div>
+        </div>
+        <a class="button btn-primary-lg mt-4 mx-auto" href="https://blog.codekeeper.co">
+          SEE ALL ARTICLES
+        </a>
+      </div>
+    </div>
+    <!-- Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

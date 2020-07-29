@@ -1,0 +1,125 @@
+.confirmation {
+  .header {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      text-align: center;
+    }
+  
+    &__subtitle {
+      color: $white;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      max-width: 736px;
+    }
+  
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+    }
+  
+    &__bg {
+      height: 457px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .reads {
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      text-align: center;
+    }
+  
+    &__subtitle {
+      color: $night-black;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      max-width: 736px;
+    }
+
+    &__bg1 {
+      background: url('../images/confirmation/building.svg');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      border-radius: 6px;
+      height: 260px;
+      width: 328px;
+      margin-top: 30px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__bg2 {
+      background: url('../images/confirmation/office.svg');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      border-radius: 6px;
+      height: 260px;
+      width: 328px;
+      margin-top: 30px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__bg3 {
+      background: url('../images/confirmation/member.svg');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      border-radius: 6px;
+      height: 260px;
+      width: 328px;
+      margin-top: 30px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__content {
+      background-color: $white;
+      height: 78px;
+      width: 100%;
+      padding-left: 24px;
+      padding-top: 16px;
+    }
+
+    &__text {
+      color: $night-black;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 24px;
+      font-family: 'Muli', sans-serif;
+      max-width: 245px;
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<body>
+  <div class="confirmation bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content">
+      <div class="header__bg">
+        <div class="container">
+          <h2 class="header__title mx-auto">Thank you!</h2>
+          <p class="header__subtitle my-4 mx-auto">We’ll send you a tailored offer to your current requirements soon.</p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-light-gray section-medium">
+      <div class="container">
+        <h2 class="reads__title">Good reads</h2>
+        <p class="reads__subtitle my-4 mx-auto">In the meanwhile, get to know our blog and learn more about escrow.<br> Check out this great content: </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <a href="https://blog.codekeeper.co/reducing-enterprise-risk-using-source-code-escrow">
+              <div class="reads__bg1 mx-auto">
+                <div class="reads__content">
+                  <p class="reads__text">
+                    Reducing Enterprise Risk using Source Code Escrow
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <a href="https://www.codekeeper.co/features.html">
+              <div class="reads__bg2 mx-auto">
+                <div class="reads__content">
+                  <p class="reads__text">
+                    Review how Codekeeper features match your situation
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <a href="https://www.codekeeper.co/integrations.html">
+              <div class="reads__bg3 mx-auto">
+                <div class="reads__content">
+                  <p class="reads__text">
+                    Check if your system is listed as an integration
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a class="button btn-secondary-lg my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
+          CHECK OUR BLOG
+        </a>
+      </div>
+    </div>
+
+    <!-- Second Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+
+  </div>
+
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

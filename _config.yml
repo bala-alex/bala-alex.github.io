@@ -1,0 +1,12 @@
+plugins:
+  - pagemaster
+collections:
+  integrations:
+    output: true
+    id_key: integration_name
+    source: integrations.csv
+    layout: service
+
+url: "https://codekeeper.co/" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
