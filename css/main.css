@@ -9104,7 +9104,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #fff;
     border-radius: 0px;
     border: 1px solid #d4d4d4;
-    min-height: 690px;
+    min-height: 750px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9142,7 +9142,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 0px; }
     .pricing .plan__box.-active {
       background-color: #FAFAFA;
-      min-height: 710px;
+      min-height: 770px;
       margin-top: -10px;
       border: 2px solid #d4d4d4;
       -webkit-box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.13);
@@ -9694,13 +9694,13 @@ a.text-dark:hover, a.text-dark:focus {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
-    background: #00887f;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 20px !important;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.3px;
-    line-height: 24px;
+    line-height: 20px;
     min-width: 250px;
     text-align: center;
     border-radius: 4px; }
@@ -9749,19 +9749,19 @@ a.text-dark:hover, a.text-dark:focus {
   .pricing [data-tooltip-position="top"]:after {
     bottom: 100%;
     border-width: 6px 6px 0;
-    border-top-color: #00887f; }
+    border-top-color: rgba(0, 0, 0, 0.8); }
   .pricing [data-tooltip-position="right"]:after {
     left: 100%;
     border-width: 6px 6px 6px 0;
-    border-right-color: #00887f; }
+    border-right-color: rgba(0, 0, 0, 0.8); }
   .pricing [data-tooltip-position="bottom"]:after {
     top: 100%;
     border-width: 0 6px 6px;
-    border-bottom-color: #00887f; }
+    border-bottom-color: rgba(0, 0, 0, 0.8); }
   .pricing [data-tooltip-position="left"]:after {
     right: 100%;
     border-width: 6px 0 6px 6px;
-    border-left-color: #00887f; }
+    border-left-color: rgba(0, 0, 0, 0.8); }
   .pricing [data-tooltip]:hover:before,
   .pricing [data-tooltip]:hover:after {
     display: block;
