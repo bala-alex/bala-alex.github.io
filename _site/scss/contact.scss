@@ -84,6 +84,15 @@
         }
       }
 
+      label.hs-error-msg {
+        color: red;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
       textarea {
         width: 100% !important;
         background-color: $light-gray;
@@ -106,11 +115,6 @@
 
       fieldset {
         max-width: 100% !important;
-      }
-
-      .inputs-list {
-        list-style-type: none;
-        padding-left: 0px;
       }
 
       .hs-form-booleancheckbox-display {
