@@ -563,10 +563,10 @@
     }
 
     &__text-content {
-      min-height: 370px;
+      height: 410px;
 
-      @include screen-lg {
-        min-height: auto;
+      @include screen-md {
+        height: auto;
       }
     }
 
