@@ -9107,7 +9107,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #fff;
     border-radius: 0px;
     border: 1px solid #d4d4d4;
-    min-height: 750px;
+    min-height: 630px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9145,7 +9145,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 0px; }
     .pricing .plan__box.-active {
       background-color: #FAFAFA;
-      min-height: 770px;
+      min-height: 650px;
       margin-top: -10px;
       border: 2px solid #d4d4d4;
       -webkit-box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.13);
@@ -9329,9 +9329,10 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%;
     margin-top: -30px;
     margin-bottom: 50px;
-    padding: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px; }
+    padding: 60px 30px; }
+    @media (max-width: 992px) {
+      .pricing .verify__details-box {
+        padding: 60px 15px; } }
   .pricing .verify__details-title {
     font-size: 28px !important;
     font-family: 'Muli', sans-serif;
@@ -9342,12 +9343,19 @@ a.text-dark:hover, a.text-dark:focus {
     max-width: 100%; }
   .pricing .verify__details-subtitle {
     color: #333333;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-family: 'Muli', sans-serif; }
+  .pricing .verify__details-text {
+    color: #333333;
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
     font-family: 'Muli', sans-serif;
-    max-width: 725px; }
+    max-width: 360px; }
   .pricing .verify__container {
     background: #fff;
     border-radius: 10px;
@@ -9378,7 +9386,7 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 32px;
     font-family: 'Muli', sans-serif;
     text-align: end;
-    max-width: 544px; }
+    max-width: 575px; }
   .pricing .verify__main-text2 {
     font-size: 44px !important;
     font-family: 'Muli', sans-serif;
