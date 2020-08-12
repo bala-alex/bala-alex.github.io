@@ -121,9 +121,21 @@
             <div class="col-md-7 col-sm-12 mt-4">
               <h2 class="schedule__title mt-4">Schedule a Demo</h2>
               <p class="schedule__subtitle mt-4">Discover how software developers and publishers provide their clients with Software Escrow.</p>
-              <a class="button btn-primary-xl mt-5 mb-4">
+              <a data-toggle="modal" data-target="#meetingModal" class="button btn-primary-xl mt-5 mb-4 outline-none">
                 SCHEDULE A DEMO
               </a>
+
+              <div class="modal fade meeting-modal" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="text-white" aria-hidden="true">&times;</span>
+                    </button>
+                  <div class="modal-content bg-transparent border-0">
+                    <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/danny70?embed=true"></div>
+                    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-5 col-sm-12 mt-4">
               <img class="image-style" src="images/guide/schedule.svg"/>
