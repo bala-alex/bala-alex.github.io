@@ -117,8 +117,10 @@
             <img class="info__image my-4" alt="Image: Feedback Types" src="images/How-it-works/response.svg"/>
           </div>
         </div>
-        <div class="d-flex justify-content-center">
-          <img class="info__image-hand" alt="Image: Ok Hand" src="images/How-it-works/ok-hand.svg"/>
+      </div>
+      <div id="video13">
+        <div id="video5" class="d-flex justify-content-center">
+          <lottie-player id="lottie5" class="lottie" src="https://assets6.lottiefiles.com/private_files/lf30_asu9dK.json" background="transparent"  speed="1"></lottie-player>
         </div>
       </div>
       <!-- Second Section -->
@@ -274,8 +276,6 @@
           </div>
         </div>
       </div>
-      
-
       <!-- Section -->
       {% include get-answers.html %}
       <!-- Footer -->
@@ -284,6 +284,30 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  <!-- Animation -->
+  <script>
+    var video13 = document.getElementById('video13'), fraction = 0.6;
+    var video5 = document.getElementById('video5');
+    function checkScroll() {
+      var x = video13.offsetLeft, y = video13.offsetTop, w = video13.offsetWidth, h = video13.offsetHeight, r = x + w, //right
+      b = y + h, //bottom
+      visibleX, visibleY, visible;
+      visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+      visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+      visible = visibleX * visibleY / (w * h);
+      const player = document.getElementById('lottie5'),
+          lottie = player.getLottie();
+        if (visible > fraction) {
+            lottie.loop = true;
+            lottie.play();
+        } else {
+          lottie.play();
+        }
+    }
+    checkScroll();
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+  </script>
 </body>
 
 </html>

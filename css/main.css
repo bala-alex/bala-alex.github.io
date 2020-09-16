@@ -7361,7 +7361,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  white-space: nowrap; }
   .nav-link:hover {
     opacity: 0.7;
     text-decoration: none; }
@@ -7404,7 +7405,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 12px;
   padding-bottom: 10px;
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 0px;
   -webkit-box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.15), 0px 29px 45px 4px rgba(0, 0, 0, 0.08), 0px 11px 55px 10px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.15), 0px 29px 45px 4px rgba(0, 0, 0, 0.08), 0px 11px 55px 10px rgba(0, 0, 0, 0.07);
   z-index: 1; }
@@ -7412,10 +7413,10 @@ a.text-dark:hover, a.text-dark:focus {
 .dropdown-content:after {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -10px;
   left: 85px;
   border-style: solid;
-  border-width: 0 15px 15px;
+  border-width: 0 10px 10px;
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
@@ -7492,6 +7493,11 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: start; } }
+
+.lottie {
+  width: 130px !important;
+  height: 130px !important;
+  margin-top: -23px; }
 
 .footer__logo {
   margin-right: 50px; }
@@ -8094,7 +8100,8 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; }
     @media (max-width: 992px) {
       .features .header__title {
-        font-size: 38px !important; } }
+        font-size: 38px !important;
+        line-height: 50px; } }
   .features .header__subtitle {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
@@ -8223,6 +8230,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media (max-width: 992px) {
+      .feedbacks .header__container {
+        height: 650px; } }
   .feedbacks .header__title {
     font-size: 56px !important;
     font-family: 'Muli', sans-serif;
@@ -8233,14 +8243,15 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; }
     @media (max-width: 992px) {
       .feedbacks .header__title {
-        font-size: 38px !important; } }
+        font-size: 38px !important;
+        line-height: 50px; } }
   .feedbacks .header__subtitle {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     font-size: 21px;
     line-height: 31px;
     text-align: center;
-    max-width: 600px;
+    max-width: 610px;
     font-family: 'Muli', sans-serif; }
 
 .feedbacks .section__title {

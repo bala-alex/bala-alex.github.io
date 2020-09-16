@@ -34,6 +34,7 @@
   font-family: 'Muli', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  white-space: nowrap;
   &:hover {
     opacity: 0.7;
     text-decoration: none;
@@ -83,7 +84,7 @@
   padding-top: 12px;
   padding-bottom: 10px;
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 0px;
   box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.15),
   0px 29px 45px 4px rgba(0, 0, 0, 0.08),
   0px 11px 55px 10px rgba(0, 0, 0, 0.07);
@@ -93,10 +94,10 @@
 .dropdown-content:after {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -10px;
   left: 85px;
   border-style: solid;
-  border-width: 0 15px 15px;
+  border-width: 0 10px 10px;
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
@@ -171,6 +172,12 @@
   @include screen-sm {
     justify-content: start;
   }
+}
+
+.lottie {
+  width: 130px !important;
+  height: 130px !important;
+  margin-top: -23px;
 }
 
 .footer {

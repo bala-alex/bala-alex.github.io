@@ -12,6 +12,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include screen-md {
+        height: 650px;
+      }
     }
 
     &__title {
@@ -24,6 +28,7 @@
       text-align: center;
       @include screen-md {
         font-size: 38px !important;
+        line-height: 50px;
       }
     }
 
@@ -33,7 +38,7 @@
       font-size: 21px;
       line-height: 31px;
       text-align: center;
-      max-width: 600px;
+      max-width: 610px;
       font-family: 'Muli', sans-serif;
     }
   }
