@@ -1,0 +1,225 @@
+<body>
+  <div class="homepage">
+    <div class="bg-white">
+      <!-- Navigation -->
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+      <!-- Header -->
+      <div class="section-small pt-5">
+        <div class="d-flex align-items-center justify-content-center flex-wrap flex-column">
+          <h2 class="header__title text-center mr-4">{{ site.data[page.lang]['index']['find_the_answer_to'] }}</h2>
+          <div class="typewriter">
+            <p class="mb-0">
+              <a href="" class="typewrite header__text" data-period="2000" data-type='[ "why do my clients churn?", "is our new feature useful?", "how to improve our CS ops?", "are my employees happy?" ]'>
+                <span class="wrap"></span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['index']['actionable_insights'] }}</p>
+        <a class="button btn-primary-lg mx-auto mt-5 mb-4 px-3" href="https://app.feedbacklabs.com/signup">
+          {{ site.data[page.lang]['index']['sign_up'] }}
+        </a>
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <div class="d-flex align-items-center mr-4 my-3">
+            <img class="" alt="Icon Check" src="/images/Homepage/icon-check.svg"/>
+            <p class="text-fade-gray mb-0 ml-1">{{ site.data[page.lang]['index']['no_credit_card'] }}</p>
+          </div>
+          <div class="d-flex align-items-center mr-4 my-3">
+            <img class="" alt="Icon Check" src="/images/Homepage/icon-check.svg"/>
+            <p class="text-fade-gray mb-0 ml-1">{{ site.data[page.lang]['index']['14_day_free'] }}</p>
+          </div>
+          <div class="d-flex align-items-center my-3">
+            <img class="" alt="Icon Check" src="/images/Homepage/icon-check.svg"/>
+            <p class="text-fade-gray mb-0 ml-1">{{ site.data[page.lang]['index']['cancel_anytime'] }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="header__image-bg-container">
+        <div class="header__image-bg"></div>
+      </div>
+      <div class="w-100 d-flex align-items-center justify-content-center">
+        <img class="header__image mx-auto" alt="Image: Welcome Dashboard" src="/images/Homepage/dashboard-header.svg"/>
+      </div>
+      <!-- First Section -->
+      <div class="container text-center section-medium">
+        <h2 class="answers__title mt-5">{{ site.data[page.lang]['index']['why_people_love'] }}</h2>
+        <p class="answers__subtitle mx-auto mt-4">{{ site.data[page.lang]['index']['its_never_been_easier'] }}</p>
+        <div class="row answers__content">
+          <div class="col-md-6 col-sm-12 mt-3">
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Ease of Use" src="/images/Homepage/ease-of-use.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['ease_of_use'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['intended_for_all_skill'] }}</p>
+              </div>
+            </div>
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Customization" src="/images/Homepage/customization.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['customization_branding'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['customize_your_surveys'] }} </p>
+              </div>
+            </div>
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Privacy" src="/images/Homepage/privacy.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['privacy'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['protecting_your_data'] }} </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-3">
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Versatility" src="/images/Homepage/versatility.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['versatility'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['get_feedback_on'] }}:<br> {{ site.data[page.lang]['index']['products_purchases'] }} </p>
+              </div>
+            </div>
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Integrations" src="/images/Homepage/integrations.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['integrations'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['do_more_with'] }} </p>
+              </div>
+            </div>
+            <div class="answers__box mt-4">
+              <img class="answers__image mt-4" alt="Icon Fair Pricing" src="/images/Homepage/fair-pricing.svg"/>
+              <div class="ml-3">
+                <p class="answers__text mt-4">{{ site.data[page.lang]['index']['fair_pricing'] }}</p>
+                <p class="answers__subtext">{{ site.data[page.lang]['index']['we_have_pricing'] }} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Section -->
+      <div class="info__gradient-right py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h2 class="info__title mt-4">{{ site.data[page.lang]['index']['use_channels_to'] }}</h2>
+              <p class="info__subtext pb-3 mt-4">{{ site.data[page.lang]['index']['feedback_channels_are'] }}</p>
+              <a class="button btn-secondary-outline my-4" href="https://app.feedbacklabs.com/signup">
+                {{ site.data[page.lang]['index']['see_how_it_works'] }}
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+              <img class="info__image my-4" alt="Image: Feedback Channels" src="/images/Homepage/image-fb-channels.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info__gradient-left py-5">
+        <div class="container">
+          <div class="row column-reverse-mobile section-medium">
+            <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+              <img class="info__image my-4" alt="Image: Feedback Types" src="/images/Homepage/type-feedback.svg"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <h2 class="info__title mt-4">{{ site.data[page.lang]['index']['pick_the_right_feedback'] }}</h2>
+              <p class="info__subtext my-4">{{ site.data[page.lang]['index']['with_feedbacklabs'] }}</p>
+              <a class="info__link my-3" href="nps.html">
+                {{ site.data[page.lang]['index']['learn_more_about_nps'] }}
+                <i class="fas fa-arrow-right ml-1"></i>
+              </a><br><br>
+              <a class="info__link my-3 mt-5" href="five-stars.html">
+                {{ site.data[page.lang]['index']['learn_more_about_five_star'] }}
+                <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info__gradient-right py-5">
+        <div class="container">
+          <div class="row pb-5">
+            <div class="col-md-6 col-sm-12">
+              <h2 class="info__title mt-4">{{ site.data[page.lang]['index']['share_insights'] }} </h2>
+              <p class="info__subtext mt-4">{{ site.data[page.lang]['index']['help_the_right'] }}</p>
+              <a class="button btn-secondary-outline my-4" href="features.html">
+                {{ site.data[page.lang]['index']['see_all_features'] }}
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+              <img class="info__image my-4" alt="Image: Average Score" src="/images/Homepage/average-score.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Section -->
+      {% include fb-insights.html %}
+      <!-- Fourth Section -->
+      {% include feedback-guide.html %}
+      <!-- Fifth Section -->
+      {% include get-answers.html %}
+      <!-- Footer -->
+      {% include footer.html %}
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+  <script>
+
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+</body>
+
+</html>

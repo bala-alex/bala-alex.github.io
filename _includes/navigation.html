@@ -1,34 +1,43 @@
-<!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="images/codekeeper-logo.svg"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item">
-          <a class="nav-link m-1" href="features.html">FEATURES</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav justify-content-between align-items-center ml-auto">
+      <!-- <div>
+        <li class="footer__link mb-1">
+          <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            EN
+          </a>
+          <div class="dropdown-menu" aria-labelledby="langDropdown">
+            <a class="dropdown-item" href="/index.html">English</a>
+            <a class="dropdown-item" href="/fr/index.html">French</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="pricing.html">PRICING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="integrations.html">INTEGRATIONS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="contact.html">CONTACT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="https://blog.codekeeper.co" target="_blank">BLOG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="https://app.codekeeper.co/">LOGIN</a>
-        </li>
-        <a class="button btn-secondary-lg m-1" href="pricing.html">
-          GET STARTED
-        </a>
-      </ul>
-    </div>
+      </div> -->
+      <li class="nav-item active">
+        <a class="nav-link mx-2" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="how-it-works.html">{{ site.data[page.lang]['navigation']['how_it_works'] }}</a>
+      </li>
+      <li class=" nav-item dropdown">
+        <a class="dropbtn nav-link mx-2">{{ site.data[page.lang]['navigation']['feedback_types'] }}</a>
+        <div class="dropdown-content">
+          <a href="nps.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['nps'] }}</a>
+          <a href="five-stars.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['5_star'] }}</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-2 mr-2 mr-lg-5" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="https://app.feedbacklabs.com/login">{{ site.data[page.lang]['navigation']['sign_in'] }}</a>
+      </li>
+      <a class="button btn-primary mx-2 my-3" href="https://app.feedbacklabs.com/signup">
+        {{ site.data[page.lang]['navigation']['sign_up'] }}
+      </a>
+    </ul>
   </div>
 </nav>

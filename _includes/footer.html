@@ -1,43 +1,30 @@
 <!DOCTYPE html>
-<div class="bg-light-gray py-5">
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-3 col-sm-12">
-        <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="images/codekeeper-logo.svg"/></a>
-        <p class="footer__text">Source Code Escrow for Developers </p>
-      </div>
-      <div class="col-md-9 col-sm-12">
-        <div class="row">
-          <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text fw-bold mb-0 mt-2">CODEKEEPER</p>
-            <a class="footer__subtext mt-2" href="index.html">Home</a>
-            <a class="footer__subtext mt-2" href="features.html">Features</a>
-            <a class="footer__subtext mt-2" href="integrations.html">Integrations</a>
-            <a class="footer__subtext mt-2" href="pricing.html">Pricing</a>
-            <a class="footer__subtext mt-2" href="verification.html">Verification</a>
-          </div>
-          <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text mt-2 mb-0 fw-bold">RESOURCES</p>
-            <a class="footer__subtext mt-2" href="resources.html">All Resources</a>
-            <a class="footer__subtext mt-2" href="software-source-code-escrow.html">Software and Source<br> Code Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
-            <a class="footer__subtext mt-2" href="information-escrow.html">Information Escrow</a>
-            <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
-          </div>
-          <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text mt-2 mb-0 fw-bold">SUPPORT</p>
-            <a class="footer__subtext mt-2" href="contact.html">Contact</a>
-            <a class="footer__subtext mt-2" href="security.html">Security</a>
-          </div>
-          <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text mt-2 mb-0 fw-bold">LEGAL</p>
-            <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Privacy Policy</a>
-            <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">Terms & Conditions</a>
-          </div>
+<div class="container py-4">
+  <div class="row py-4">
+    <div class="col-md-3 col-sm-12">
+      <div class="d-flex align-items-center my-2">
+        <a href="index.html"><img class="footer__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
+        <div>
+          <!-- <img class="footer__logo-team mt-3" alt="Logo: Startupz" src="/images/Homepage/Startupz-created.svg"/> -->
+          <!-- <li class="footer__link mt-3">
+            <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="/index.html">English</a>
+              <a class="dropdown-item" href="/fr/index.html">French</a>
+            </div>
+          </li> -->
         </div>
       </div>
     </div>
-    <p class="footer__text text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co - Codekeeper, Inc.</a> - All rights reserved <script>document.write( new Date().getFullYear() );</script>.</p>
+    <div class="col-md-9 col-sm-12 footer__links my-3">
+      <a class="footer__link m-3" href="features.html">{{ site.data[page.lang]['includes']['footer']['features'] }} </a>
+      <a class="footer__link m-3" href="how-it-works.html">{{ site.data[page.lang]['includes']['footer']['how_it_works'] }}</a>
+      <a class="footer__link m-3" href="pricing.html">{{ site.data[page.lang]['includes']['footer']['pricing'] }}</a>
+      <a class="footer__link m-3" href="contact.html">{{ site.data[page.lang]['includes']['footer']['contact'] }}</a>
+    </div>
   </div>
+  <div class="footer__border mx-auto"></div>
+  <p class="footer__text mx-auto text-center my-4">{{ site.data[page.lang]['includes']['footer']['feedbacklabs'] }}<a href="">{{ site.data[page.lang]['includes']['footer']['terms_and_conditions'] }}</a> - <a href="">{{ site.data[page.lang]['includes']['footer']['privacy_policy'] }}</a></p>
 </div>

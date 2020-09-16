@@ -1,0 +1,382 @@
+<body>
+  <div class="feedbacks">
+    <div class="bg-white">
+      <!-- Navigation -->
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+      <!-- Header -->
+      <div class="header__container">
+        <div class="mt-3">
+          <h2 class="header__title">{{ site.data[page.lang]['pricing']['discover_the_right_plan'] }}</h2>
+          <p class="header__subtitle mx-auto my-4">{{ site.data[page.lang]['pricing']['try_free'] }}</p>
+          <a class="button btn-white-lg mt-5 mb-4 mx-auto" href="https://app.feedbacklabs.com/signup">
+            {{ site.data[page.lang]['pricing']['start_getting_answers'] }} 
+          </a>
+          <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="d-flex align-items-center mr-4 my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['no_credit_card'] }}</p>
+            </div>
+            <div class="d-flex align-items-center mr-4 my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['14_day_free'] }}</p>
+            </div>
+            <div class="d-flex align-items-center my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['cancel_anytime'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- First Section -->
+      <div class="pricing">
+        <div class="pricing-tabs">
+          <div class="nav nav-pills mb-3 d-flex justify-content-center mx-auto" id="pills-tab" role="tablist">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['pay_yearly'] }} </a>
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">{{ site.data[page.lang]['pricing']['pay_monthly'] }} </a>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="container pb-5 plan">
+                <div class="plan__content">
+                  <div class="plan__list hover-plan">
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['basic'] }}</p>
+                    <h2 class="plan__list-value">$19</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_250'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="basic-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_per_year'] }}</p>
+                  </div>
+                  <div class="plan__list hover-plan reset-active active-plan position-relative">
+                    <p class="plan__list-growth-popular">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
+                    <!-- <div class="plan__list-growth-border"></div> -->
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['growth'] }}</p>
+                    <h2 class="plan__list-value">$69</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_2500'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="growth-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_per_year'] }}</p>
+                  </div>
+                  <div class="plan__list hover-plan">
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['business'] }}</p>
+                    <h2 class="plan__list-value">$139</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_5000'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="business-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_per_year'] }}</p>
+                  </div>
+                </div>
+                <div class="plan__list-include">
+                  <h2 class="plan__list-enterprise-custom mt-4">{{ site.data[page.lang]['pricing']['all_plans_include'] }}</h2>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['unlimited_channels_and'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['multiple_platforms'] }}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['different_survey'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['zapier_integrations'] }}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['multiple_teams_and'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['import_export_contacts'] }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="plan__list-enterprise hover-plan">
+                  <div>
+                    <h2 class="plan__list-enterprise-custom">{{ site.data[page.lang]['pricing']['custom_plan'] }}</h2>
+                    <p class="plan__list-enterprise-text">{{ site.data[page.lang]['pricing']['need_a_custom'] }}</p>
+                    <a class="button btn-outline-sm my-4" href="contact.html">
+                      {{ site.data[page.lang]['pricing']['contact_us'] }}
+                    </a>
+                  </div>
+                  <div class="my-4">
+                    <p class="plan__list-enterprise-subtitle">{{ site.data[page.lang]['pricing']['enterprise_features'] }}</p>
+                    <div class="d-flex align-items-center mt-3">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['unlimited_number_of'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['custom_feature_configuration'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['native_integrations'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['dedicated_onboarding'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['tailored_hands'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2 pb-3">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['custom_sla'] }}</p>
+                    </div>
+                    <a class="plan__list-enterprise-link" href="features.html">
+                      {{ site.data[page.lang]['index']['see_all_features'] }}
+                      <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="container pb-5 plan">
+                <div class="plan__content">
+                  <div class="plan__list hover-plan">
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['basic'] }}</p>
+                    <h2 class="plan__list-value">$29</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_250'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="basic-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['switch_save'] }}</p>
+                  </div>
+                  <div class="plan__list hover-plan reset-active active-plan position-relative">
+                    <p class="plan__list-growth-popular">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
+                    <!-- <div class="plan__list-growth-border"></div> -->
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['growth'] }}</p>
+                    <h2 class="plan__list-value">$79</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_2500'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="growth-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['switch_save'] }}</p>
+                  </div>
+                  <div class="plan__list hover-plan">
+                    <p class="plan__list-title">{{ site.data[page.lang]['pricing']['business'] }}</p>
+                    <h2 class="plan__list-value">$149</h2>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                    <div class="plan__list-border"></div>
+                    <p class="plan__list-text">
+                      {{ site.data[page.lang]['pricing']['get_feedback_from_5000'] }}
+                    </p>
+                    <a class="button btn-outline-sm mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="business-plan">
+                      {{ site.data[page.lang]['pricing']['start_free_trial'] }}
+                    </a>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['switch_save'] }}</p>
+                  </div>
+                </div>
+                <div class="plan__list-include">
+                  <h2 class="plan__list-enterprise-custom mt-4">{{ site.data[page.lang]['pricing']['all_plans_include'] }}</h2>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['unlimited_channels_and'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['multiple_platforms'] }}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['different_survey'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['zapier_integrations'] }}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['multiple_teams_and'] }}</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img class="plan__list-include-icon mt-1" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-include-text">{{ site.data[page.lang]['pricing']['import_export_contacts'] }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="plan__list-enterprise hover-plan">
+                  <div>
+                    <h2 class="plan__list-enterprise-custom">{{ site.data[page.lang]['pricing']['custom_plan'] }}</h2>
+                    <p class="plan__list-enterprise-text">{{ site.data[page.lang]['pricing']['need_a_custom'] }}</p>
+                    <a class="button btn-outline-sm my-4" href="contact.html">
+                      {{ site.data[page.lang]['pricing']['contact_us'] }}
+                    </a>
+                  </div>
+                  <div class="my-4">
+                    <p class="plan__list-enterprise-subtitle">{{ site.data[page.lang]['pricing']['enterprise_features'] }}</p>
+                    <div class="d-flex align-items-center mt-3">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['unlimited_number_of'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['custom_feature_configuration'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['native_integrations'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['dedicated_onboarding'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['tailored_hands'] }}</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-2 pb-3">
+                      <img class="" alt="Icon: check" src="images/Pricing/check-circle.svg"/>
+                      <p class="plan__list-enterprise-subtext">{{ site.data[page.lang]['pricing']['custom_sla'] }}</p>
+                    </div>
+                    <a class="plan__list-enterprise-link" href="features.html">
+                      {{ site.data[page.lang]['index']['see_all_features'] }}
+                      <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Section -->
+      <div class="pricing">
+        <div class="container faq section-medium">
+          <div class="faq__container">
+            <h4 class="faq__title">{{ site.data[page.lang]['pricing']['faq'] }}</h4>
+            <p class="faq__subtitle2">{{ site.data[page.lang]['pricing']['faq_answered'] }}</p>
+            <ul class="faq pl-0">
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['can_you_tell'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['all_our_data'] }}</li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['can_i_pay'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['yes_you_can'] }} <a href="mailto:billing@feedbacklabs.com">billing@feedbacklabs.com</a> {{ site.data[page.lang]['pricing']['if_you_like_to'] }} </li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['what_payment_methods'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['we_support_all'] }} </li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['will_i_get'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['yes_if_you_enter'] }} </li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['whats_your_cancellation'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['you_can_cancel'] }} </li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['can_i_change'] }}</p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['you_can_make'] }} </li>
+              <li class="q d-flex align-items-center faq__border">
+                <img class="faq__icon" alt="Icon: Arrow Down" src="images/Pricing/down-arrow.svg"/>
+                <p class="faq__subtitle">{{ site.data[page.lang]['pricing']['do_you_have'] }} </p>
+              </li>
+              <li class="a faq__text">{{ site.data[page.lang]['pricing']['we_do_not'] }} </li>
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="faq__subtext">{{ site.data[page.lang]['pricing']['havent_found_the_answer'] }}
+                  <span><a href="contact.html">{{ site.data[page.lang]['pricing']['send_us_a_message'] }}</a></span></p>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Third Section -->
+      {% include get-answers.html %}
+      <!-- Footer -->
+      {% include footer.html %}
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+  
+    $(document).ready(function(){
+  
+    // Question handler
+      $('li.q').on(action, function(){
+  
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+        
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+      
+        // Grab img from clicked question
+        var img = $(this).children('img');
+  
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+  
+        // toggle rotate class
+        img.toggleClass('rotate');
+      });
+    }); 
+  </script>
+  <script>
+    $('.hover-plan').mouseover(function() {
+      $('.hover-plan').removeClass('active-plan');
+      $(this).addClass('active-plan');
+    });
+
+    $('.reset').mouseover(function() {
+      $('.hover-plan').removeClass('active-plan');
+      $('.reset-active').addClass('active-plan');
+    });
+  </script>
+</body>
+
+</html>

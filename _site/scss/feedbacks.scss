@@ -1,0 +1,167 @@
+
+.feedbacks {
+  .header {
+    overflow: hidden;
+
+    &__container {
+      height: 550px;
+      width: 100%;
+      background-color: $sinbad;
+      margin-bottom: 100px;
+      border-radius: 0 0 60% 60% / 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 56px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: -0.54px;
+      line-height: 70px;
+      text-align: center;
+      @include screen-md {
+        font-size: 38px !important;
+      }
+    }
+
+    &__subtitle {
+      color: rgba(255, 255, 255, 0.9);;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 31px;
+      text-align: center;
+      max-width: 600px;
+      font-family: 'Muli', sans-serif;
+    }
+  }
+
+  .section {
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $dark-charcoal;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    &__subtitle {
+      color: $gray;
+      font-weight: 300;
+      font-size: 28px;
+      text-align: center;
+      max-width: 650px;
+      font-family: 'Muli', sans-serif;
+    }
+  }
+
+  .team {
+
+    &__box {
+      background-color: #F4F8FB;
+      border-radius: 60px;
+      margin: 15px;
+      box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+      padding: 0px;
+      overflow: visible;
+      margin-top: 80px;
+    }
+
+    &__box-right {
+      position: relative;
+      background-color: none;
+      min-height: 284px;
+    }
+
+    &__title {
+      color: #2D4379;
+      font-family: 'Muli', sans-serif;
+      font-size: 34px;
+      font-weight: bold;
+      letter-spacing: -0.24px;
+      line-height: 47px;
+      text-align: center;
+      max-width: 494px;
+    }
+
+    &__subtitle {
+      color: $gray;
+      font-family: 'Muli', sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+      text-align: center;
+      max-width: 410px;
+    }
+
+    &__image {
+      position: absolute;
+      bottom: -70px;
+      left: auto;
+      right: 110px;
+      width: 320px;
+      height: 330px;
+      @include screen-md {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .error {
+
+    &__header {
+      height: 280px;
+      width: 100%;
+      background-color: #E4EDF1;
+      border-radius: 0 0 60% 60% / 90px;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -100px;
+    }
+
+    &__image {
+      height: 200px;
+    }
+
+    &__title {
+      font-family: 'Muli', sans-serif;
+      color: $dark-blue;
+      font-size: 56px;
+      font-weight: 300;
+      letter-spacing: -0.54px;
+      text-align: center;
+      @include screen-md {
+        font-size: 38px !important;
+      }
+    }
+
+    &__subtitle {
+      font-family: 'Muli', sans-serif;
+      font-size: 28px;
+      color: $gray;
+      font-weight: 300;
+      letter-spacing: 0px;
+      text-align: center;
+      max-width: 560px;
+    }
+
+    &__link {
+      font-family: 'Muli', sans-serif;
+      font-size: 14px;
+      color: $sinbad;
+      font-weight: bold;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}

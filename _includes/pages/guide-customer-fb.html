@@ -1,0 +1,70 @@
+<body>
+  <div class="guide-customer">
+    <div class="bg-white customer">
+      <!-- Navigation -->
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+      <!-- Header -->
+      <div class="header__container"></div>
+      <div class="header__content container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mt-2">
+            <h2 class="header__title pb-4">{{ site.data[page.lang]['guide_customer_fb']['guide_to_customer'] }}</h2>
+            <p class="header__subtitle mt-5">{{ site.data[page.lang]['guide_customer_fb']['fill_out_your_contact'] }}</p>
+            <div class="header__form">
+              <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                portalId: "7622707",
+                formId: "3a529526-712e-4492-9240-aa4de32dd2da"
+              });
+              </script>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="header__image mx-auto" alt="Image: Guide to Customer Feedback" src="images/Guide/Guide-customer-fb.svg"/>
+          </div>
+        </div>
+      </div>
+      <!-- First Section -->
+      <div class="container section-medium">
+        <h2 class="content__title">{{ site.data[page.lang]['guide_customer_fb']['in_this_guide'] }}:</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mt-2">
+            <div class="content__box mt-5">
+              <img class="content__image" alt="Icon pencil" src="images/Guide/Pencil.svg"/>
+              <p class="content__text mx-auto mt-4">{{ site.data[page.lang]['guide_customer_fb']['learn_and_plan'] }}</p>
+              <p class="content__subtext mx-auto">{{ site.data[page.lang]['guide_customer_fb']['learn_about_the_importance'] }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-2">
+            <div class="content__box mt-5">
+              <img class="content__image" alt="Icon pie-chart" src="images/Guide/Pie-chart.svg"/>
+              <p class="content__text mx-auto mt-4">{{ site.data[page.lang]['guide_customer_fb']['how_to_get'] }}</p>
+              <p class="content__subtext mx-auto">{{ site.data[page.lang]['guide_customer_fb']['learn_how_to_schedule'] }}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-2">
+            <div class="content__box mt-5">
+              <img class="content__image" alt="Icon line-chart" src="images/Guide/Line-chart.svg"/>
+              <p class="content__text mx-auto mt-4">{{ site.data[page.lang]['guide_customer_fb']['act_to_get_results'] }}</p>
+              <p class="content__subtext mx-auto">{{ site.data[page.lang]['guide_customer_fb']['learn_to_analyse'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Section -->
+      {% include get-answers.html %}
+      <!-- Footer -->
+      {% include footer.html %}
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
+
+</html>
