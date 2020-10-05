@@ -1,0 +1,20 @@
+<body>
+  <div class="select">
+    <!-- Header -->
+    <div class="bg-light-gray error">
+      <div class="container error__container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
+        <div class="error__content">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <img class="error__image" alt="Icon: Error Image" src="images/landing/404-error.svg"/>
+            <h2 class="error__title text-center mt-4">{{ site.data[page.lang]['error']['page_not_found'] }}</h2>
+            <p class="error__subtitle mt-2">{{ site.data[page.lang]['error']['the_requested_url'] }}</p>
+            <a class="error__link" href="index.html">{{ site.data[page.lang]['error']['home_page'] }}<i class="fas fa-arrow-right ml-2 fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

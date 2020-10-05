@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<div class="container py-4">
-  <div class="row py-4">
-    <div class="col-md-3 col-sm-12">
-      <div class="d-flex align-items-center my-2">
-        <a href="index.html"><img class="footer__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
-        <div>
-          <!-- <img class="footer__logo-team mt-3" alt="Logo: Startupz" src="/images/Homepage/Startupz-created.svg"/> -->
-          <!-- <li class="footer__link mt-3">
-            <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="/index.html">English</a>
-              <a class="dropdown-item" href="/fr/index.html">French</a>
-            </div>
-          </li> -->
+<div class="bg-night-black footer__border">
+  <div class="container footer__content">
+    <div class="row pt-5">
+      <div class="col-md-3 col-sm-12">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img class="footer__logo" alt="Logo: Legalsite" src="images/features/Logo-white.svg"/>
+          <span class="footer__logo-text">LegalSite</span>
+        </a>
+        <!-- <div class="dropdown mt-2">
+          <a class="btn dropdown-toggle footer__text pl-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="footer__icon-globe mr-2" src="images/features/globe.svg"/>
+            English
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/nl/index.html">Dutch</a>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-md-9 col-sm-12">
+        <div class="row mt-1">
+          <div class="col-md-4 col-sm-12 d-flex flex-column">
+            <p class="footer__title mt-3 mb-0">{{ site.data[page.lang]['footer']['company'] }}</p>
+            <a class="footer__text mt-3" href="https://legalsite.legalsites.app/page?page=TermsConditions">{{ site.data[page.lang]['footer']['our_terms'] }}</a>
+            <a class="footer__text mt-3" href="https://legalsite.legalsites.app/page?page=PrivacyPolicy">{{ site.data[page.lang]['footer']['our_privacy_policy'] }}</a>
+            <a class="footer__text mt-3" href="https://legalsite.legalsites.app/page?page=CookiesPolicy">{{ site.data[page.lang]['footer']['our_cookie_policy'] }}</a>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex flex-column">
+            <p class="footer__title mt-3 mb-0">{{ site.data[page.lang]['footer']['product'] }}</p>
+            <a class="footer__text mt-3" href="legal-pages.html">{{ site.data[page.lang]['footer']['legal_pages'] }}</a>
+            <a class="footer__text mt-3" href="privacy-compliance.html">{{ site.data[page.lang]['footer']['privacy_compliance'] }}</a>
+            <a class="footer__text mt-3" href="privacy-operations.html">{{ site.data[page.lang]['footer']['privacy_operations'] }}</a>
+            <a class="footer__text mt-3" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex flex-column">
+            <p class="footer__title mt-3 mb-0">{{ site.data[page.lang]['footer']['support'] }}</p>
+            <a class="footer__text mt-3" href="pricing.html">{{ site.data[page.lang]['footer']['pricing'] }}</a>
+            <a class="footer__text mt-3" href="faq.html">{{ site.data[page.lang]['footer']['faq'] }}</a>
+            <a class="footer__text mt-3" href="https://blog.legalsite.co/">{{ site.data[page.lang]['footer']['blog'] }}</a>
+            <a class="footer__text mt-3" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-9 col-sm-12 footer__links my-3">
-      <a class="footer__link m-3" href="features.html">{{ site.data[page.lang]['includes']['footer']['features'] }} </a>
-      <a class="footer__link m-3" href="how-it-works.html">{{ site.data[page.lang]['includes']['footer']['how_it_works'] }}</a>
-      <a class="footer__link m-3" href="pricing.html">{{ site.data[page.lang]['includes']['footer']['pricing'] }}</a>
-      <a class="footer__link m-3" href="contact.html">{{ site.data[page.lang]['includes']['footer']['contact'] }}</a>
-    </div>
   </div>
-  <div class="footer__border mx-auto"></div>
-  <p class="footer__text mx-auto text-center my-4">{{ site.data[page.lang]['includes']['footer']['feedbacklabs'] }}. <a href="">{{ site.data[page.lang]['includes']['footer']['terms_and_conditions'] }}</a>. <a href="">{{ site.data[page.lang]['includes']['footer']['privacy_policy'] }}</a></p>
+</div>
+<div class="footer__bar">
+  <p class="footer__bar-text">© 2020 LegalSite BV. {{ site.data[page.lang]['footer']['all_rights_reserved'] }} <a href="https://app.legalsite.co/signup">{{ site.data[page.lang]['footer']['get_your'] }}</a></p>
 </div>

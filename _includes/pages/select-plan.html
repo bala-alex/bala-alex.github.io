@@ -1,0 +1,306 @@
+<body>
+  <div class="select">
+    <!-- Header -->
+    <div class="bg-light-gray">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Legalsite" src="images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
+        <div class="header__content">
+          <h2 class="select__title text-center mt-2">{{ site.data[page.lang]['select_plan']['select_a_plan'] }}</h2>
+          <p class="select__subtitle mt-3">{{ site.data[page.lang]['select_plan']['already_have_an'] }}<a class="select__link ml-2" href="https://app.legalsite.co/signin">{{ site.data[page.lang]['select_plan']['log_in'] }}</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white pricing">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-7 col-sm-12">
+            <div class="business__box mt-4">
+              <div class="ribbon">
+                <span class="ribbon-text">{{ site.data[page.lang]['select_plan']['recommended'] }}</span>
+              </div>
+              <h2 class="business__main-title mt-3">{{ site.data[page.lang]['select_plan']['business'] }}</h2>
+              <p class="business__main-subtitle mt-3 mx-auto">{{ site.data[page.lang]['select_plan']['everything_on_free'] }} </p>
+              <div class="row mt-5">
+                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                  <h4 class="business__cost"><sup>$</sup>99</h4>
+                  <p class="business__cost-text mb-0 mt-2">{{ site.data[page.lang]['select_plan']['per_month'] }}</p>
+                  <p class="business__text mb-0 mt-5">+ $20/{{ site.data[page.lang]['select_plan']['month_per'] }} 1,000<br> <span class="business__tooltip" data-tooltip="What is a Data Subject? Anybody that you keep personal identifiable information about (e.g. email adress, name, address)." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span></p>
+                  <a class="button btn-white-md my-4" href="https://app.legalsite.co/signup">
+                    {{ site.data[page.lang]['select_plan']['get_started'] }}
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="d-flex mt-4">
+                    <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                    <div class="ml-3">
+                      <p class="business__icon-text">1,000 <span class="business__tooltip2" data-tooltip="What is a Data Subject? Anybody that you keep personal identifiable information about (e.g. email adress, name, address)." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span></p>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-2">
+                    <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                    <div class="ml-3">
+                      <p class="business__icon-text">{{ site.data[page.lang]['select_plan']['compliance_features'] }} </p>
+                      <p class="business__icon-subtext">{{ site.data[page.lang]['select_plan']['assess_risks'] }}</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                    <div class="ml-3">
+                      <p class="business__icon-text">{{ site.data[page.lang]['select_plan']['privacy_operations'] }} </p>
+                      <p class="business__icon-subtext">{{ site.data[page.lang]['select_plan']['automate_workflows'] }}</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                    <div class="ml-3">
+                      <p class="business__icon-text">{{ site.data[page.lang]['select_plan']['custom_domain'] }} </p>
+                      <p class="business__icon-subtext">{{ site.data[page.lang]['select_plan']['host_your_legal'] }}</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3">
+                    <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                    <div class="ml-3">
+                      <p class="business__icon-text">{{ site.data[page.lang]['select_plan']['vip_support'] }} </p>
+                      <p class="business__icon-subtext">{{ site.data[page.lang]['select_plan']['jump_to_the'] }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="business__features-text mt-3" id='showFeatures'>{{ site.data[page.lang]['select_plan']['see_all_features'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="business__box2">
+              <p class="business__box2-title">{{ site.data[page.lang]['select_plan']['free'] }} </p>
+              <p class="business__box2-text mt-2">{{ site.data[page.lang]['select_plan']['anyone_can_be'] }} </p>
+              <a class="button btn-purple-outline-sm mb-4 mx-auto" href="https://app.legalsite.co/signup">
+                {{ site.data[page.lang]['select_plan']['choose_this_plan'] }}
+              </a>
+              <div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">1,000 <span class="business__tooltip3" data-tooltip="What is a Data Subject? Anybody that you keep personal identifiable information about (e.g. email adress, name, address)." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span></p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">{{ site.data[page.lang]['select_plan']['branded_legal_pages'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">{{ site.data[page.lang]['select_plan']['compatible_with'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">{{ site.data[page.lang]['select_plan']['policies_hosted'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">{{ site.data[page.lang]['select_plan']['regularly_updated'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="business__icon" alt="Icon: Check" src="images/privacy/check-purple.svg"/>
+                  <div class="ml-3">
+                    <p class="business__box2-text mb-0">{{ site.data[page.lang]['select_plan']['easy_signup'] }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="business__box2 mt-5">
+              <p class="business__box2-title mt-3">{{ site.data[page.lang]['select_plan']['enterprise'] }} </p>
+              <p class="business__box2-text text-center mt-2">{{ site.data[page.lang]['select_plan']['everything_on_business'] }}</p>
+              <a class="button btn-purple-outline-sm mb-3 mx-auto" href="contact-enterprise.html">
+                {{ site.data[page.lang]['select_plan']['contact_us'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-white py-5 pricing" id='features'>
+      <div class="container">
+        <div class="price__features-box">
+          <h4 class="price__tab-title mt-5">{{ site.data[page.lang]['select_plan']['features'] }}</h4>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+              <div class="mt-5">
+                <h4 class="price__features-title">{{ site.data[page.lang]['select_plan']['legal_pages'] }}</h4>
+                <p class="price__features-text mt-4"><i class="fas fa-check icon-check mr-2"></i>LegalSite</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['mobile_version'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['privacy_policy'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['terms_and_conditions'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['cookies_policy'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['data_processing'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['customizable_terms'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['additional_legal'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['cookies_popup'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['agreements_popup'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['custom_domain'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['legalsite_customization'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['cookies_popup_customization'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['agreements_popup_customization'] }}</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+              <div class="mt-5">
+                <h4 class="price__features-title">{{ site.data[page.lang]['select_plan']['privacy_compliance'] }}</h4>
+                <p class="price__features-text mt-4"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['data_protection'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['privacy_impact'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['dpa_management'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['data_breach_incident'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['consent_logs'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['consent_management'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['ip_server'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['liability_sla'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['gdpr_manual'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['sla_uptime'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['integrations'] }}</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+              <div class="mt-5">
+                <h4 class="price__features-title">{{ site.data[page.lang]['select_plan']['privacy_operations'] }}</h4>
+                <p class="price__features-text mt-4"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['legal_inbox'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['gdpr_requests'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['data_processors_requests'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['data_processors_index'] }}</p>
+                <p class="price__features-text"><i class="fas fa-check icon-check mr-2"></i>{{ site.data[page.lang]['select_plan']['emails_customization'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="bg-white py-5 pricing">
+      <div class="container">
+        <div class="discover__box">
+          <h4 class="discover__box-title mt-4">{{ site.data[page.lang]['select_plan']['discover_the_right'] }}</h4>
+          <p class="discover__box-subtitle mt-3">{{ site.data[page.lang]['select_plan']['how_many'] }} <span class="business__tooltip4" data-tooltip="What is a Data Subject? Anybody that you keep personal identifiable information about (e.g. email adress, name, address)." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span> {{ site.data[page.lang]['select_plan']['does_your_company'] }}</p>
+          <div id="range" class="mt-5">
+            <span class="currentVal" id='currentVal'>2,000</span>
+          </div>
+          <div id='freePlan'>
+            <div class="d-flex align-items-center flex-wrap mt-5">
+              <p class="discover__box-name m-4 mr-5">{{ site.data[page.lang]['select_plan']['free'] }}</p>
+              <div class="mx-4">
+                <div class="d-flex align-items-center mt-2">
+                  <h4 class="discover__cost"><sup>$</sup>0</h4>
+                  <p class="discover__cost-text ml-3">{{ site.data[page.lang]['select_plan']['per_month'] }}</p>
+                </div>
+              </div>
+              <a class="button btn-purple-lg m-3" href="https://app.legalsite.co/signup">
+                {{ site.data[page.lang]['select_plan']['activate_this_plan'] }}
+              </a>
+            </div>
+          </div>
+          <div id='businessPlan'>
+            <div class="d-flex align-items-center flex-wrap mt-5">
+              <p class="discover__box-name m-4">{{ site.data[page.lang]['select_plan']['your_total_plan'] }}:</p>
+              <div class="mx-4">
+                <div class="d-flex align-items-center mt-2">
+                  <h4 class="discover__cost"><sup>$</sup><span id='totalVal'></span></h4>
+                  <p class="discover__cost-text ml-3">{{ site.data[page.lang]['select_plan']['per_month'] }}</p>
+                </div>
+              </div>
+              <a class="button btn-purple-lg m-3" href="https://app.legalsite.co/signup">
+                {{ site.data[page.lang]['select_plan']['activate_this_plan'] }}
+              </a>
+            </div>
+          </div>
+          <div id='enterprisePlan'>
+            <div class="d-flex align-items-center flex-wrap mt-5">
+              <p class="discover__box-name m-4">{{ site.data[page.lang]['select_plan']['enterprise'] }}</p>
+              <a class="button btn-purple-lg m-3" href="contact-enterprise.html">
+                {{ site.data[page.lang]['select_plan']['contact_us'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth Section -->
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="header__content">
+          <h2 class="header__title text-center mt-5">{{ site.data[page.lang]['select_plan']['questions_or_special'] }}</h2>
+          <p class="header__subtitle">{{ site.data[page.lang]['select_plan']['leave_a_message'] }}</p>
+          <a class="button btn-gray-lg m-2 mx-auto mb-5" href="contact.html">
+            {{ site.data[page.lang]['select_plan']['contact'] }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+  <script>
+    $(document).ready(function(){
+      $('#freePlan').hide();
+      $('#enterprisePlan').hide();
+      $('#totalVal').text((((2000 / 1000) * 20) + 99 - 20).toLocaleString());
+  }); 
+  </script>
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+  
+    $(document).ready(function(){
+      $('#features').hide();
+
+      $('#showFeatures').on("click", function(){
+        $('#features').show();
+      });
+    }); 
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script>
+    (function () {
+  $("#range").slider({
+    range: "min",
+    max: 150000,
+    min: 1000,
+    value: 2000,
+    step: 1000,
+    slide: function (e, ui) {
+      $(".currentVal").html((ui.value).toLocaleString());
+      $('#totalVal').text((((ui.value / 1000) * 20) + 99 - 20).toLocaleString());
+
+      var values = $(ui.value)[0];
+
+      if (values > 1000 && values < 150000) {
+        $('#businessPlan').show();
+        $('#freePlan').hide();
+        $('#enterprisePlan').hide();
+      }
+      else if (values <= 1000){
+        $('#businessPlan').hide();
+        $('#freePlan').show();
+        $('#enterprisePlan').hide();
+      }
+      else {
+        $('#businessPlan').hide();
+        $('#freePlan').hide();
+        $('#enterprisePlan').show();
+      }
+
+      
+    } });
+  }).call(this);
+  </script>
+</body>

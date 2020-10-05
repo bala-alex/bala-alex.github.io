@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<div class="bg-white section-medium get-started">
+  <div class="container">
+    <div
+      class="d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      <h2 class="header__title mw-100">Protect your business in minutes — for free!</h2>
+      <p class="header__subtitle text-center mb-0 mt-3">
+        Get started on our Free plan, and achieve full compliance with U.S., E.U., and other global privacy regulations for up to 1,000 data subjects. No credit card required and no need to talk to sales.
+      </p>
+    </div>
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center my-3"
+    >
+      <!-- <input type="text" class="form-control eight__input mt-3" placeholder="Full name" aria-label="Fullname">
+      <input type="text" class="form-control eight__input mt-3" placeholder="E-mail" aria-label="Email">
+      <a class="button btn-purple-lg mt-3">
+        Get Started
+      </a> -->
+      <!--[if lte IE 8]>
+        <script
+          charset="utf-8"
+          type="text/javascript"
+          src="//js.hsforms.net/forms/v2-legacy.js"
+        ></script>
+      <![endif]-->
+      <script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js.hsforms.net/forms/v2.js"
+      ></script>
+      <script>
+        hbspt.forms.create({
+          portalId: '6250848',
+          formId: 'a3d890f6-817f-4d45-ac6c-d925c3290ca4',
+          onFormSubmit: function($form) {
+            var name = $form[0][1].value;
+            var email = $form[0][2].value;
+            console.log(`Create account for ${email}`);
+            var query = `mutation getStartedMutation($email: String!, $name: String!) {
+            getStartedMutation(
+              input:{ email: $email, name: $name } ) {
+              user{
+                id
+                email
+              }
+            }
+          }`;
+
+            fetch('https://legalsite.app/graphql', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+              },
+              body: JSON.stringify({
+                query,
+                variables: {
+                  name,
+                  email
+                }
+              })
+            })
+              .then(r => r.json())
+              .then(data => {
+                console.log('data returned:', data);
+                if (data.errors){ window.alert(data.errors[0].message)};
+              });
+          }
+        });
+      </script>
+    </div>
+  </div>
+</div>

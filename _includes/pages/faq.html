@@ -1,0 +1,157 @@
+<body>
+  <!-- Header -->
+  <div class="faq">
+    <div class="bg-light-gray">
+      <div class="container">
+        {% include navigation.html %}
+        <div class="header__content">
+          <h2 class="header__title text-center">{{ site.data[page.lang]['faq']['frequently_asked'] }}</h2>
+          <p class="header__subtitle">{{ site.data[page.lang]['faq']['dont_see_your'] }} </p>
+          <a class="button btn-white-large m-2 mx-auto" href="contact.html">
+            {{ site.data[page.lang]['faq']['contact_us'] }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white">
+      <div class="container">
+        <h4 class="section__title mt-5">{{ site.data[page.lang]['faq']['about_legalsite'] }}</h4>
+        <ul class="faq mt-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_legalsite'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['legalsite_is_a_complete'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_is_legalsite'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['legalsite_is_the_only'] }} </li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_do_i_know'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['to_ensure_that_our'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['can_you_tell'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['all_our_data'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_kind_of'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['when_you_create'] }} <a href="contact.html">{{ site.data[page.lang]['faq']['contact_page'] }}</a></li>
+        </ul>
+        <h4 class="section__title mt-5">{{ site.data[page.lang]['faq']['privacy_compliance'] }}</h4>
+        <ul class="faq mt-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_a_privacy'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['a_privacy_policy'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_the_difference'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['the_difference_between'] }} </li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_consent'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['consent_here_refers'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_gdpr'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['gdpr_is_a_regulation'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['whats_the_risk'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['the_gdpr_has'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['does_the_gdpr_apply'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['yes_the_gdpr_does'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_ccpa'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['the_california_consumer'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_constitutes'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['the_law_defines'] }}</li>
+        </ul>
+        <h4 class="section__title mt-5">{{ site.data[page.lang]['faq']['plans_and_payment'] }}</h4>
+        <ul class="faq mt-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_payment_methods'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['we_support_all_major'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['will_i_get'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['yes_if_you_enter'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['whats_your_cancellation'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['you_can_cancel'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['do_you_have'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['we_do_not_offer'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['can_i_change'] }}</p>
+            <img alt="Icon: Arrow Down" src="images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq']['you_can_make'] }}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Second Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+
+  </div>
+
+  <!-- Snippets -->
+  {% include snippets.html %}
+  <script>
+  // Accordian Action
+  var action = 'click';
+  var speed = "500";
+
+  $(document).ready(function(){
+
+  // Question handler
+    $('li.q').on(action, function(){
+
+      // gets next element
+      // opens .a of selected question
+      $(this).next().slideToggle(speed)
+      
+      // selects all other answers and slides up any open answer
+      .siblings('li.a').slideUp();
+    
+      // Grab img from clicked question
+      var img = $(this).children('img');
+
+      // remove Rotate class from all images except the active
+      $('img').not(img).removeClass('rotate');
+
+      // toggle rotate class
+      img.toggleClass('rotate');
+    });
+  }); 
+  </script>
+</body>

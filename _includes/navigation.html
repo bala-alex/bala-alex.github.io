@@ -1,42 +1,28 @@
+<!DOCTYPE html>
 <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/></a>
+  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Legalsite" src="/images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav justify-content-between align-items-center ml-auto">
-      <!-- <div>
-        <li class="footer__link mb-1">
-          <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            EN
-          </a>
-          <div class="dropdown-menu" aria-labelledby="langDropdown">
-            <a class="dropdown-item" href="/index.html">English</a>
-            <a class="dropdown-item" href="/fr/index.html">French</a>
-          </div>
-        </li>
-      </div> -->
       <li class="nav-item active">
-        <a class="nav-link mx-2" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+        <a class="nav-link mr-2" href="legal-pages.html">{{ site.data[page.lang]['navigation']['legal_pages'] }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mx-2" href="how-it-works.html">{{ site.data[page.lang]['navigation']['how_it_works'] }}</a>
-      </li>
-      <li class=" nav-item dropdown">
-        <a class="dropbtn nav-link mx-2">{{ site.data[page.lang]['navigation']['feedback_types'] }}</a>
-        <div class="dropdown-content">
-          <a href="nps.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['nps'] }}</a>
-          <a href="five-stars.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['5_star'] }}</a>
-        </div>
+        <a class="nav-link mr-2" href="privacy-compliance.html">{{ site.data[page.lang]['navigation']['compliance'] }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ml-2 mr-2 mr-xl-5 mr-lg-2" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+        <a class="nav-link mr-2" href="privacy-operations.html">{{ site.data[page.lang]['navigation']['operations'] }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mx-2" href="https://app.feedbacklabs.com/login">{{ site.data[page.lang]['navigation']['sign_in'] }}</a>
+        <a class="nav-link mr-2 mr-lg-2 mr-xl-5" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
       </li>
-      <a class="button btn-primary mx-2 my-3" href="https://app.feedbacklabs.com/signup">
-        {{ site.data[page.lang]['navigation']['sign_up'] }}
+      <li class="nav-item">
+        <a class="nav-link mr-2" href="https://app.legalsite.co/signin">{{ site.data[page.lang]['navigation']['login'] }}</a>
+      </li>
+      <a class="button btn-purple-sm m-1" href="https://app.legalsite.co/signup">
+        {{ site.data[page.lang]['navigation']['get_started'] }}
       </a>
     </ul>
   </div>

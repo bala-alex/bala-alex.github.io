@@ -1,122 +1,85 @@
 .confirm {
-  .customer {
-    .header {
-      overflow: hidden;
-  
-      &__container {
-        height: 450px;
-        width: 100%;
-        background-color: $sinbad;
-        margin-bottom: 50px;
-        border-radius: 0 0 60% 60% / 90px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      &__title {
-        font-size: 56px !important;
-        font-family: 'Muli', sans-serif;
-        color: $white;
-        font-weight: bold;
-        letter-spacing: -0.54px;
-        line-height: 70px;
-        text-align: center;
-        @include screen-md {
-          font-size: 38px !important;
-        }
-      }
-  
-      &__subtitle {
-        color: rgba(255, 255, 255, 0.9);
-        font-weight: 600;
-        font-size: 21px;
-        line-height: 31px;
-        text-align: center;
-        max-width: 600px;
-        font-family: 'Muli', sans-serif;
-        @include screen-md {
-          font-size: 22px !important;
-        }
-      }
+  &__box {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+    width: 331px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  &__title {
+    font-size: 18px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: $purple;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $dust-gray;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif !important;
+    height: 120px;
+    max-width: 278px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen-md {
+      justify-content: center;
     }
+  }
 
-    .content {
+  &__icon {
+    height: 30px;
+  }
 
-      &__container {
-        max-width: 950px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  &__submit {
+    height: 150px;
+  }
 
-      &__title {
-        font-size: 44px !important;
-        font-family: 'Muli', sans-serif;
-        color: $dark-charcoal;
-        font-weight: normal;
-        text-align: center;
-      }
-  
-      &__box {
-        background: $white;
-        border-radius: 16px;
-        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
-        height: 583px;
-        width: 384px;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-  
-        @include screen-lg {
-          width: 100%;
-        }
-      }
-  
-      &__image-team {
-        position: absolute;
-        width: 200px;
-        bottom: -80px;
-      }
+  &__submit-title {
+    font-size: 22px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: $purple;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+  }
 
-      &__image-customer {
-        position: absolute;
-        width: 220px;
-        bottom: 0px;
-      }
+  &__submit-subtitle {
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: $dust-gray;
+    font-weight: normal;
+    max-width: 280px;
+    text-align: center;
+  }
 
-      &__image-nps {
-        position: absolute;
-        width: 350px;
-        bottom: 0px;
+  &__submit-text {
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: $purple;
+    font-weight: bold;
+    text-align: center;
 
-        @include screen-md {
-          width: 280px;
-        }
-      }
-  
-      &__text {
-        font-size: 30px !important;
-        font-family: 'Muli', sans-serif;
-        color: $dark-blue;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: -0.21px;
-        line-height: 42px;
-        max-width: 300px;
-      }
-  
-      &__subtext {
-        font-size: 18px !important;
-        font-family: 'Muli', sans-serif;
-        color: $gray;
-        font-weight: normal;
-        text-align: center;
-        max-width: 316px;
-        letter-spacing: 0px;
-        line-height: 28px;
-      }
+    &:hover {
+      text-decoration: none;
     }
   }
 }

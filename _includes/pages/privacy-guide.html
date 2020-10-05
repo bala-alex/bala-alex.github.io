@@ -1,0 +1,99 @@
+<body>
+  <div class="contact">
+    <!-- Header -->
+    <div class="bg-light-gray position-relative">
+      <div class="container">
+        {% include navigation.html %}
+        <div class="row pt-5">
+          <div class="col-md-7 col-sm-12 checklist__form">
+            <div class="checklist__box">
+              <h2 class="checklist__title mt-4">{{ site.data[page.lang]['privacy_guide']['privacy_compliance'] }}:<br>{{ site.data[page.lang]['privacy_guide']['getting_started_guide'] }}</h2>
+              <p class="checklist__subtitle mt-4">{{ site.data[page.lang]['privacy_guide']['fill_out_your'] }}</p>
+              <div>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "6250848",
+                  formId: "99021fb3-7759-4ec6-b5bb-0d07515f3b6e"
+                });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 mt-5 d-flex justify-content-center align-items-end">
+            <img class="checklist__image2" alt="Image: Compliance Screens" src="images/checklist/Compliance-Screens.svg"/>
+          </div>
+        </div>
+      </div>
+      <div class="checklist__screens-bg"></div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white section-medium privacy">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="header__title mt-5">{{ site.data[page.lang]['privacy_guide']['in_this_guide'] }}:</h2>
+          <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: Privacy Regulations" src="images/checklist/file-edit-alt.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['privacy_regulations'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['privacy_regulations_are'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: Comply" src="images/checklist/file-edit-alt.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['who_needs_to'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['discover_if_you'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: Fines and Penalties" src="images/checklist/desktop.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['fines_and_penalties'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['understand_what'] }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: Requirements" src="images/checklist/access.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['requirements'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['many_regions'] }} </p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: User Rights" src="images/checklist/user-circle.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['users_rights'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['privacy_regulations_ensure'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Icon: Other Features" src="images/checklist/window.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['privacy_guide']['and_other_features'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['privacy_guide']['understand_terms'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-light-gray py-5 landing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mt-5 pr-5">
+            <img class="image-style" alt="Image: Legalsite Status" src="images/landing/Image-Status-2.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-5">
+            <h2 class="privacy__title mt-4">{{ site.data[page.lang]['privacy_guide']['about_legalsite'] }} </h2>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['privacy_guide']['legalsite_is_a'] }} </p>
+            <div class="d-flex flex-wrap">
+              <a class="button btn-purple-lg mt-3 mr-3" href="https://app.legalsite.co/signup">
+                {{ site.data[page.lang]['privacy_guide']['get_started'] }}
+              </a>
+              <a class="button btn-secondary-lg mt-3" href="legal-pages.html">
+                {{ site.data[page.lang]['privacy_guide']['learn_more'] }} 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
