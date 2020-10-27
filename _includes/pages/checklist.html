@@ -6,8 +6,8 @@
         {% include navigation.html %}
         <div class="row py-4">
           <div class="col-md-7 col-sm-12 checklist__form">
-            <h2 class="checklist__title mt-4">{{ site.data[page.lang]['checklist']['startup_launch'] }}</h2>
-            <p class="checklist__subtitle mt-2">{{ site.data[page.lang]['checklist']['fill_your_contact'] }}</p>
+            <h2 class="checklist__title mt-4">{{ site.data[page.lang]['checklist']['gdpr_compliance'] }}: {{ site.data[page.lang]['checklist']['a_guide_for'] }}</h2>
+            <p class="checklist__subtitle mt-2 mb-0">{{ site.data[page.lang]['checklist']['grab_our_free'] }}</p>
             <div>
               <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
               <script>
@@ -28,22 +28,22 @@
     <div class="bg-white section-medium privacy">
       <div class="container">
         <div class="text-center">
-          <h2 class="header__title mx-auto">{{ site.data[page.lang]['checklist']['in_this_guide'] }}:</h2>
+          <h2 class="header__title mx-auto">{{ site.data[page.lang]['checklist']['in_this_guide'] }}</h2>
           <div class="row mt-5">
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="requirements__icon mx-auto" alt="Privacy laws" src="images/checklist/file-edit-alt.svg"/>
-              <p class="requirements__text mt-4">{{ site.data[page.lang]['checklist']['what_is_gdpr'] }}</p>
-              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['privacy_regulations'] }}</p>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['checklist']['data_protection'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['understand_the_most'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12 mt-5">
-              <img class="requirements__icon mx-auto" alt="Checklist" src="images/checklist/file-edit-alt.svg"/>
-              <p class="requirements__text mt-4">{{ site.data[page.lang]['checklist']['checklist'] }}</p>
-              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['complete_a_checklist'] }}</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mt-5">
-              <img class="requirements__icon mx-auto" alt="Fines and Penalties" src="images/checklist/desktop.svg"/>
+              <img class="requirements__icon mx-auto" alt="Checklist" src="images/checklist/desktop.svg"/>
               <p class="requirements__text mt-4">{{ site.data[page.lang]['checklist']['fines_and_penalties'] }}</p>
-              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['understand_what'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['learn_more_about'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="requirements__icon mx-auto" alt="Fines and Penalties" src="images/checklist/file-edit-alt.svg"/>
+              <p class="requirements__text mt-4">{{ site.data[page.lang]['checklist']['step_by_step'] }}</p>
+              <p class="requirements__subtext mx-auto">{{ site.data[page.lang]['checklist']['complete_our_checklist'] }}</p>
             </div>
           </div>
         </div>
@@ -51,14 +51,14 @@
     </div>
     <!-- Second Section -->
     <div class="bg-light-gray py-5 landing">
-      <div class="container">
+      <div class="container pb-5">
         <div class="row column-reverse-mobile">
           <div class="col-md-6 col-sm-12 mt-5 pr-5">
             <img class="image-style" alt="Image: Legalsite Status" src="images/landing/Image-Status-2.svg"/>
           </div>
           <div class="col-md-6 col-sm-12 mt-5">
-            <h2 class="privacy__title mt-4">{{ site.data[page.lang]['checklist']['about_legalsite'] }} </h2>
-            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['checklist']['legalsite_is'] }} </p>
+            <h2 class="privacy__title mt-4">{{ site.data[page.lang]['checklist']['get_compliant_with'] }} </h2>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['checklist']['whether_you_run'] }} </p>
             <div class="d-flex flex-wrap mobile-center">
               <a class="button btn-purple-lg mt-3 mr-3" href="https://app.legalsite.co/signup">
                 {{ site.data[page.lang]['checklist']['get_started'] }}

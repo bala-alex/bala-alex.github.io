@@ -108,88 +108,108 @@
       </div>
     </div>
     <!-- Fourth Section -->
-    <div class="bg-light-gray pt-5 overflow-hidden overflow-x-scroll">
-      <div class="container">
-        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-          <h2 class="header__title mt-5 mb-5">{{ site.data[page.lang]['privacy_compliance']['how_it_works'] }}</h2>
-          <div class="tabs3 container mt-5">
-            <!-- Tab 1 -->
-            <section id="tab5">
-              <div class="first__icons">
-                <a href="#publish-pop-ups" class="not-clickable">
-                  <div class="sixth__icon-container reset-active -is-active">
-                    <img class="sixth__icon" alt="Icon: Publish Banners" src="images/privacy/browser-outline.svg"/>
-                    <p class="sixth__icon-text">{{ site.data[page.lang]['privacy_compliance']['publish_banners'] }}</p>
-                  </div>
-                </a>
-                <div class="border-bottom-purple"></div>
+    <div class="bg-light-gray section-large mt-5 landing">
+      <h2 class="header__title mb-5 pb-5 mx-auto text-center">{{ site.data[page.lang]['privacy_compliance']['how_it_works'] }}</h2>
+      <div class="container works mt-5">
+        <div class="works__content">
+          <div>
+            <div class="works__section reset-active -is-active" id="section1">
+              <div class="works__number">
+                1
               </div>
-              <div class="mt-5 tabs3__content first-show-tab -show w-100">
-                <h3 class="sixth__title mt-5">{{ site.data[page.lang]['privacy_compliance']['set_up_cookie'] }}</h3>
-                <p class="sixth__subtitle">{{ site.data[page.lang]['privacy_compliance']['customize_and_publish'] }}</p>
-                <div class="d-flex justify-content-center w-100 mt-5">
-                  <img class="image-style sixth__image" alt="Image: Cookie Pop-ups" src="images/privacy/Compliance-How1.svg"/>
-                </div>
+              <div class="works__content-text">
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['set_up_cookie'] }}</p>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['customize_and_publish'] }}</p>
               </div>
-            </section>
-            <!-- Tab 2 -->
-            <section id="tab6">
-              <div class="first__icons">
-                <a href="#set-up-pia" class="not-clickable">
-                  <div class="sixth__icon-container">
-                    <img class="sixth__icon" alt="Icon: Complete PIA" src="images/privacy/file-edit-alt.svg"/>
-                    <p class="sixth__icon-text">{{ site.data[page.lang]['privacy_compliance']['complete_pia'] }}</p>
-                  </div>
-                </a>
-                <div class="border-bottom-purple"></div>
+            </div>
+            <div class="works__section mt-4" id="section2">
+              <div class="works__number">
+                2
               </div>
-              <div class="mt-5 tabs3__content w-100">
-                <h3 class="sixth__title mt-5">{{ site.data[page.lang]['privacy_compliance']['complete_pia'] }}</h3>
-                <p class="sixth__subtitle">{{ site.data[page.lang]['privacy_compliance']['identify_and_minimize'] }}</p>
-                <div class="d-flex justify-content-center w-100 mt-5">
-                  <img class="image-style sixth__image" alt="Image: Setup Privacy Impact Assessment" src="images/privacy/Compliance-How2.svg"/>
-                </div>
+              <div class="works__content-text">
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['complete_pia'] }}</p>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['identify_and_minimize'] }}</p>
               </div>
-            </section>
-            <!-- Tab 3 -->
-            <section id="tab7">
-              <div class="first__icons">
-                <a href="#appoint-dpo" class="not-clickable">
-                  <div class="sixth__icon-container">
-                    <img class="sixth__icon" alt="Icon: Appoint DPO" src="images/privacy/person-outline.svg"/>
-                    <p class="sixth__icon-text">{{ site.data[page.lang]['privacy_compliance']['appoint_dpo'] }}</p>
-                  </div>
-                </a>
-                <div class="border-bottom-purple"></div>
+            </div>
+            <div class="works__section mt-4" id="section3">
+              <div class="works__number">
+                3
               </div>
-              <div class="mt-5 tabs3__content w-100">
-                <h3 class="sixth__title mt-5">{{ site.data[page.lang]['privacy_compliance']['appoint_dpo'] }}</h3>
-                <p class="sixth__subtitle">{{ site.data[page.lang]['privacy_compliance']['ensure_your_company'] }}</p>
-                <div class="d-flex justify-content-center w-100 mt-5">
-                  <img class="image-style sixth__image" alt="Image: Appoint DPO" src="images/privacy/Compliance-How3.svg"/>
-                </div>
+              <div class="works__content-text">
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['appoint_dpo'] }}</p>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['ensure_your_company'] }}</p>
               </div>
-            </section>
-            <!-- Tab 4 -->
-            <section id="tab8">
-              <div class="first__icons">
-                <a href="#manage-dpa" class="not-clickable">
-                  <div class="sixth__icon-container">
-                    <img class="sixth__icon" alt="Icon: Manage DPAs" src="images/privacy/shield.svg"/>
-                    <p class="sixth__icon-text">{{ site.data[page.lang]['privacy_compliance']['manage_dpas'] }}</p>
-                  </div>
-                </a>
-                <div class="border-bottom-purple"></div>
+            </div>
+            <div class="works__section mt-4" id="section4">
+              <div class="works__number">
+                4
               </div>
-              <div class="mt-5 tabs3__content w-100">
-                <h3 class="sixth__title mt-5">{{ site.data[page.lang]['privacy_compliance']['manage_dpas'] }}</h3>
-                <p class="sixth__subtitle">{{ site.data[page.lang]['privacy_compliance']['manage_the_data'] }}</p>
-                <div class="d-flex justify-content-center w-100 mt-5">
-                  <img class="image-style sixth__image" alt="Image: Manage Data Processing Agreements" src="images/privacy/Compliance-How4.svg"/>
-                </div>
+              <div class="works__content-text">
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['manage_dpas'] }}</p>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['manage_the_data'] }}</p>
               </div>
-            </section>
-            <div class="sixth__dotted-line2"></div>
+            </div>
+          </div>
+          <div class="ml-5 mt-5">
+            <img id="img1" class="works__image first-show-tab -show" alt="Image: Set Up Cookie" src="images/compliance/set-up-cookie.svg"/>
+            <img id="img2" class="works__image" alt="Image: Complete PIA" src="images/compliance/complete-pia.svg"/>
+            <img id="img3" class="works__image" alt="Image: Appoint DPO" src="images/compliance/appoint-dpo.svg"/>
+            <img id="img4" class="works__image" alt="Image: Manage DPAs" src="images/compliance/manage-dpas.svg"/>
+          </div>
+        </div>
+        <div class="works__line-dotted2"></div>
+        <div class="works__content-mobile">
+          <!-- Tab 1 -->
+          <div class="works__section">
+            <div class="works__number">
+              1
+            </div>
+            <div class="works__content-text">
+              <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['set_up_cookie'] }}</p>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['customize_and_publish'] }}</p>
+            </div>
+          </div>
+          <div class="item-center mt-4">
+            <img class="works__image" alt="Image: Set Up Cookie" src="images/compliance/set-up-cookie.svg"/>
+          </div>
+          <!-- Tab 2 -->
+          <div class="works__section mt-5">
+            <div class="works__number">
+              2
+            </div>
+            <div class="works__content-text">
+              <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['complete_pia'] }}</p>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['identify_and_minimize'] }}</p>
+            </div>
+          </div>
+          <div class="item-center mt-4">
+            <img class="works__image" alt="Image: Complete PIA" src="images/compliance/complete-pia.svg"/>
+          </div>
+          <!-- Tab 3 -->
+          <div class="works__section mt-5">
+            <div class="works__number">
+              3
+            </div>
+            <div class="works__content-text">
+              <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['appoint_dpo'] }}</p>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['ensure_your_company'] }}</p>
+            </div>
+          </div>
+          <div class="item-center mt-4">
+            <img class="works__image" alt="Image: Appoint DPO" src="images/compliance/appoint-dpo.svg"/>
+          </div>
+          <!-- Tab 4 -->
+          <div class="works__section mt-5">
+            <div class="works__number">
+              4
+            </div>
+            <div class="works__content-text">
+              <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['manage_dpas'] }}</p>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['manage_the_data'] }}</p>
+            </div>
+          </div>
+          <div class="item-center mt-4">
+            <img class="works__image" alt="Image: Manage DPAs" src="images/compliance/manage-dpas.svg"/>
           </div>
         </div>
       </div>
@@ -279,98 +299,112 @@
       </div>
     </div>
     <!-- Eight Section -->
-    <div class="landing">
-      <div class="bg-white section-medium overflow-x-scroll px-3 reset">
-        <h2 class="header__title text-center mb-5 mx-auto">{{ site.data[page.lang]['privacy_compliance']['the_complete_compliance'] }}</h2>
-        <div class="tabs container mt-5">
+    <div class="bg-white section-medium landing">
+      <h2 class="header__title mb-5 pb-5 mx-auto text-center mw-100">{{ site.data[page.lang]['privacy_compliance']['the_complete_compliance'] }}</h2>
+      <div class="container works mt-5">
+        <div class="works__content">
+          <div>
+            <!-- Tab 1 -->
+            <div class="works__section2 reset-active -is-active" id="section5">
+              <div class="works__content-text">
+                <div class="d-flex align-items-center">
+                  <img class="works__icon" alt="Icon: Easy and Fast" src="images/features/bolt-icon.svg"/>
+                  <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['easy_and_fast'] }}</p>
+                </div>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['easily_navigate'] }}</p>
+              </div>
+            </div>
+            <!-- Tab 2 -->
+            <div class="works__section2 mt-4" id="section6">
+              <div class="works__content-text">
+                <div class="d-flex align-items-center">
+                  <img class="works__icon" alt="Icon: Always up-to-date" src="images/features/file-check.svg"/>
+                  <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['always_up_to'] }}</p>
+                </div>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['global_privacy'] }}</p>
+              </div>
+            </div>
+            <!-- Tab 3 -->
+            <div class="works__section2 mt-4" id="section7">
+              <div class="works__content-text">
+                <div class="d-flex align-items-center">
+                  <img class="works__icon" alt="Icon: Comprehensive" src="images/features/check-circle.svg"/>
+                  <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['comprehensive'] }}</p>
+                </div>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['legalsite_includes'] }}</p>
+              </div>
+            </div>
+            <!-- Tab 4 -->
+            <div class="works__section2 mt-4" id="section8">
+              <div class="works__content-text">
+                <div class="d-flex align-items-center">
+                  <img class="works__icon" alt="Icon: No code required" src="images/features/code.svg"/>
+                  <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['no_code_required'] }}</p>
+                </div>
+                <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['legalsite_helps_you'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="ml-5 mt-5">
+            <img id="img5" class="works__image2 first-show-tab -show" alt="Image: Easy and Fast" src="images/features/Image-Dashboard-1.svg"/>
+            <img id="img6" class="works__image2" alt="Image: Always up-to-date" src="images/features/Image-Dashboard-2.svg"/>
+            <img id="img7" class="works__image2" alt="Image: All in one solution" src="images/features/Image-Dashboard-3.svg"/>
+            <img id="img8" class="works__image2" alt="Image: No coding required" src="images/features/Image-Dashboard-4.svg"/>
+          </div>
+        </div>
+        <div class="works__content-mobile">
           <!-- Tab 1 -->
-          <section id="tab1">
-            <div class="first__icons">
-              <a href="#easy-and-fast" class="not-clickable icons-container reset-active2 -is-active">
-                <img class="first__icon" alt="Icon: Easy and Fast" src="images/features/bolt-icon.svg"/>
-                <p class="first__icons-text">{{ site.data[page.lang]['privacy_compliance']['easy_and_fast'] }}</p>
-              </a>
-              <div class="border-bottom-purple"></div>
-            </div>
-            <div class="row mt-5 tabs__content first-show-tab2 -show bg-white">
-              <div class="col-md-6 col-sm-12 justify-content-center d-flex flex-column my-4 p-2 bg-white">
-                <h3 class="first__title">{{ site.data[page.lang]['privacy_compliance']['easy_and_fast'] }}</h3>
-                <p class="first__subtitle mt-3">{{ site.data[page.lang]['privacy_compliance']['easily_navigate'] }} </p>
-                <a class="button btn-purple-lg mt-5 mb-5" href="pricing.html">
-                  {{ site.data[page.lang]['privacy_compliance']['get_started'] }}
-                </a>
+          <div class="works__section2">
+            <div class="works__content-text">
+              <div class="d-flex align-items-center">
+                <img class="works__icon" alt="Icon: Easy and Fast" src="images/features/bolt-icon.svg"/>
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['easy_and_fast'] }}</p>
               </div>
-              <div class="col-md-6 col-sm-12 bg-white">
-                <img class="image-style" alt="Image: Easy and Fast" src="images/features/Image-Dashboard-1.svg"/>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['easily_navigate'] }}</p>
+              <div class="item-center mt-4">
+                <img class="works__image2" alt="Image: Easy and Fast" src="images/features/Image-Dashboard-1.svg"/>
               </div>
             </div>
-          </section>
+          </div>
           <!-- Tab 2 -->
-          <section id="tab2">
-            <div class="first__icons">
-              <a href="#always-up-to-date" class="not-clickable icons-container">
-                <img class="first__icon" alt="Icon: Always up-to-date" src="images/features/file-check.svg"/>
-                <p class="first__icons-text">{{ site.data[page.lang]['privacy_compliance']['always_up_to'] }}</p>
-              </a>
-              <div class="border-bottom-purple"></div>
-            </div>
-            <div class="row mt-5 tabs__content bg-white">
-              <div class="col-md-6 col-sm-12 justify-content-center d-flex flex-column my-4 p-2">
-                <h3 class="first__title">{{ site.data[page.lang]['privacy_compliance']['always_up_to'] }}</h3>
-                <p class="first__subtitle mt-3">{{ site.data[page.lang]['privacy_compliance']['global_privacy'] }} </p>
-                <a class="button btn-purple-lg mb-5" href="https://app.legalsite.co/signup">
-                  {{ site.data[page.lang]['privacy_compliance']['get_started'] }}
-                </a>
+          <div class="works__section2 mt-5">
+            <div class="works__content-text">
+              <div class="d-flex align-items-center">
+                <img class="works__icon" alt="Icon: Always up-to-date" src="images/features/file-check.svg"/>
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['always_up_to'] }}</p>
               </div>
-              <div class="col-md-6 col-sm-12 bg-white">
-                <img class="image-style" alt="Image: Always up-to-date" src="images/features/Image-Dashboard-2.svg"/>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['global_privacy'] }}</p>
+              <div class="item-center mt-4">
+                <img class="works__image2" alt="Image: Always up-to-date" src="images/features/Image-Dashboard-2.svg"/>
               </div>
             </div>
-          </section>
+          </div>
           <!-- Tab 3 -->
-          <section id="tab3">
-            <div class="first__icons">
-              <a href="#all-in-one-solution" class="not-clickable icons-container">
-                <img class="first__icon" alt="Icon: Comprehensive" src="images/features/check-circle.svg"/>
-                <p class="first__icons-text">{{ site.data[page.lang]['privacy_compliance']['comprehensive'] }}</p>
-              </a>
-              <div class="border-bottom-purple"></div>
-            </div>
-            <div class="row mt-5 tabs__content bg-white">
-              <div class="col-md-6 col-sm-12 justify-content-center d-flex flex-column my-4 p-2">
-                <h3 class="first__title">{{ site.data[page.lang]['privacy_compliance']['comprehensive'] }}</h3>
-                <p class="first__subtitle mt-3">{{ site.data[page.lang]['privacy_compliance']['legalsite_includes'] }} </p>
-                <a class="button btn-purple-lg mt-5 mb-5" href="pricing.html">
-                  {{ site.data[page.lang]['privacy_compliance']['get_started'] }}
-                </a>
+          <div class="works__section2 mt-5">
+            <div class="works__content-text">
+              <div class="d-flex align-items-center">
+                <img class="works__icon" alt="Icon: Comprehensive" src="images/features/check-circle.svg"/>
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['comprehensive'] }}</p>
               </div>
-              <div class="col-md-6 col-sm-12 bg-white pb-4">
-                <img class="image-style" alt="Image: All in one solution" src="images/features/Image-Dashboard-3.svg"/>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['legalsite_includes'] }}</p>
+              <div class="item-center mt-4">
+                <img class="works__image2" alt="Image: All in one solution" src="images/features/Image-Dashboard-3.svg"/>
               </div>
             </div>
-          </section>
+          </div>
           <!-- Tab 4 -->
-          <section id="tab4">
-            <div class="first__icons">
-              <a href="#no-coding-required" class="not-clickable icons-container">
-                <img class="first__icon" alt="Icon: No code required" src="images/features/code.svg"/>
-                <p class="first__icons-text">{{ site.data[page.lang]['privacy_compliance']['no_code_required'] }}</p>
-              </a>
-              <div class="border-bottom-purple"></div>
-            </div>
-            <div class="row mt-5 tabs__content bg-white">
-              <div class="col-md-6 col-sm-12 justify-content-center d-flex flex-column my-4 p-2">
-                <h3 class="first__title">{{ site.data[page.lang]['privacy_compliance']['no_code_required'] }}</h3>
-                <p class="first__subtitle mt-3">{{ site.data[page.lang]['privacy_compliance']['legalsite_helps_you'] }}</p>
-                <a class="button btn-purple-lg mt-5 mb-5" href="https://app.legalsite.co/signup">
-                  {{ site.data[page.lang]['privacy_compliance']['get_started'] }}
-                </a>
+          <div class="works__section2 mt-5">
+            <div class="works__content-text">
+              <div class="d-flex align-items-center">
+                <img class="works__icon" alt="Icon: No code required" src="images/features/code.svg"/>
+                <p class="works__title">{{ site.data[page.lang]['privacy_compliance']['no_code_required'] }}</p>
               </div>
-              <div class="col-md-6 col-sm-12 bg-white">
-                <img class="image-style" alt="Image: No coding required" src="images/features/Image-Dashboard-4.svg"/>
+              <p class="works__subtitle">{{ site.data[page.lang]['privacy_compliance']['legalsite_helps_you'] }}</p>
+              <div class="item-center mt-4">
+                <img class="works__image2" alt="Image: No coding required" src="images/features/Image-Dashboard-4.svg"/>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </div>
@@ -402,56 +436,59 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  
   <script>
     $('.not-clickable').click(function(event) {
       event.preventDefault();
     });
 
-    $('.sixth__icon-container').mouseover(function() {
-      $('.sixth__icon-container').removeClass('-is-active');
-      $('.tabs3__content').removeClass('-show');
+    $('#section1').click(function() {
+      $('.works__section').removeClass('-is-active');
+      $('.works__image').removeClass('-show');
+      $('#img1').addClass('-show');
       $(this).addClass('-is-active');
-      $(this).parent().parent().siblings().addClass('-show');
     });
-
-    $('.reset').mouseover(function() {
-      $('.sixth__icon-container').removeClass('-is-active');
-      $('.tabs3__content').removeClass('-show');
-      $('.first-show-tab').addClass('-show');
-      $('.reset-active').addClass('-is-active');
-    });
-  </script>
-  <script>
-    $('.not-clickable').click(function(event) {
-      event.preventDefault();
-    });
-
-    $('.sixth__icon-container').mouseover(function() {
-      $('.sixth__icon-container').removeClass('-is-active');
-      $('.tabs2__content').removeClass('-show');
+    $('#section2').click(function() {
+      $('.works__section').removeClass('-is-active');
+      $('.works__image').removeClass('-show');
+      $('#img2').addClass('-show');
       $(this).addClass('-is-active');
-      $(this).parent().parent().siblings().addClass('-show');
     });
-
-    $('.icons-container').mouseover(function() {
-      $('.icons-container').removeClass('-is-active');
-      $('.tabs__content').removeClass('-show');
+    $('#section3').click(function() {
+      $('.works__section').removeClass('-is-active');
+      $('.works__image').removeClass('-show');
+      $('#img3').addClass('-show');
       $(this).addClass('-is-active');
-      $(this).parent().siblings().addClass('-show');
     });
-
-    $('.reset').mouseover(function() {
-      $('.sixth__icon-container').removeClass('-is-active');
-      $('.tabs2__content').removeClass('-show');
-      $('.first-show-tab').addClass('-show');
-      $('.reset-active').addClass('-is-active');
+    $('#section4').click(function() {
+      $('.works__section').removeClass('-is-active');
+      $('.works__image').removeClass('-show');
+      $('#img4').addClass('-show');
+      $(this).addClass('-is-active');
     });
-
-    $('.reset2').mouseover(function() {
-      $('.icons-container').removeClass('-is-active');
-      $('.tabs__content').removeClass('-show');
-      $('.first-show-tab2').addClass('-show');
-      $('.reset-active2').addClass('-is-active');
+    $('#section5').click(function() {
+      $('.works__section2').removeClass('-is-active');
+      $('.works__image2').removeClass('-show');
+      $('#img5').addClass('-show');
+      $(this).addClass('-is-active');
+    });
+    $('#section6').click(function() {
+      $('.works__section2').removeClass('-is-active');
+      $('.works__image2').removeClass('-show');
+      $('#img6').addClass('-show');
+      $(this).addClass('-is-active');
+    });
+    $('#section7').click(function() {
+      $('.works__section2').removeClass('-is-active');
+      $('.works__image2').removeClass('-show');
+      $('#img7').addClass('-show');
+      $(this).addClass('-is-active');
+    });
+    $('#section8').click(function() {
+      $('.works__section2').removeClass('-is-active');
+      $('.works__image2').removeClass('-show');
+      $('#img8').addClass('-show');
+      $(this).addClass('-is-active');
     });
   </script>
 </body>

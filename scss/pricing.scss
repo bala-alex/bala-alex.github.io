@@ -203,6 +203,26 @@
       align-items: center;
     }
 
+    &__range-content {
+      display: flex;
+      align-items: flex-end;
+
+      @include screen-md {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
+    }
+
+    &__range-text {
+      color: $purple;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Roboto', sans-serif !important;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+
     &__box-title {
       color: $night-black;
       font-family: 'Bookmania Semibold', sans-serif !important;
