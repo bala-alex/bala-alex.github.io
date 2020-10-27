@@ -7458,7 +7458,7 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 568px; }
 
 .mw-100 {
-  max-width: 100%; }
+  max-width: 100% !important; }
 
 .shadow-none {
   -webkit-box-shadow: none !important;
@@ -9041,6 +9041,40 @@ textarea::placeholder {
     max-width: 495px; }
     @media (max-width: 768px) {
       .landing .privacy__title {
+        text-align: center; } }
+  .landing .privacy__text {
+    color: #292E31;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif !important; }
+    @media (max-width: 768px) {
+      .landing .privacy__text {
+        text-align: center; } }
+  .landing .privacy__subtext {
+    color: #292E31;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif !important;
+    max-width: 306px; }
+    @media (max-width: 768px) {
+      .landing .privacy__subtext {
+        text-align: center; } }
+  .landing .privacy__subtitle-main {
+    color: #292E31;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 28px;
+    max-width: 488px;
+    font-family: 'Roboto', sans-serif !important; }
+    .landing .privacy__subtitle-main span {
+      font-weight: bold !important; }
+    @media (max-width: 768px) {
+      .landing .privacy__subtitle-main {
         text-align: center; } }
   .landing .privacy__subtitle {
     color: #292E31;

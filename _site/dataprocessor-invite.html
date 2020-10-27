@@ -54,9 +54,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <p class="privacy__subtitle">DATA PROCESSOR INVITATION</p>
+            <p class="privacy__subtitle mt-5">DATA PROCESSOR INVITATION</p>
             <h2 class="privacy__title mt-4">Receive, track, and solve subject access requests — all in one place</h2>
-            <p class="privacy__subtitle mt-4">We help agile online companies achieve full compliance with global data privacy laws and scale their privacy operations.<br><br> A client invited you to join as their <span>Data Processor</span> so you can harness powerful automations to solve data access requests across all your systems in one place — efficiently, every time.</p>
+            <p class="privacy__subtitle-main mt-4">We help agile online companies achieve full compliance with global data privacy laws and scale their privacy operations.<br><br> A client invited you to join as their <span>Data Processor</span> so you can harness powerful automations to solve data access requests across all your systems in one place — efficiently, every time.</p>
               <div class="d-flex flex-wrap mobile-center">
                 <a class="button btn-purple-lg mt-3 mr-md-3" href="https://app.legalsite.co/signup">
                   Accept Invitation
@@ -68,7 +68,7 @@
               <p class="header__btn-text mt-1 mb-5">(No credit card required)</p>
           </div>
           <div class="col-md-6 col-sm-12 mt-5">
-            <img class="data__header-image ml-5" alt="Image: Data Access Request" src="images/processors/data-access-request.svg"/>
+            <img class="image-style" alt="Image: Data Access Request" src="images/processors/data-access-request.svg"/>
           </div>
         </div>
       </div>
@@ -81,18 +81,18 @@
           <div class="row mt-5">
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Inbox" src="images/features/Icon-1.svg"/>
-              <p class="third__icon-title text-bold mt-4">Central Dashboard</p>
-              <p class="third__icon-subtitle mx-auto">Use a central dashboard to get a look inside your entire privacy compliance posture, including data subject requests across all your systems, timelines, third-party processing, and more. </p>
+              <p class="privacy__text text-bold mt-4">Central Dashboard</p>
+              <p class="privacy__subtext mx-auto">Use a central dashboard to get a look inside your entire privacy compliance posture, including data subject requests across all your systems, timelines, third-party processing, and more. </p>
             </div>
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Integrate Easily" src="images/features/Icon-2.svg"/>
-              <p class="third__icon-title text-bold mt-4">Easy Integrations</p>
-              <p class="third__icon-subtitle mx-auto">Automate your DSAR delivery by syncing privacy data across the tools and systems you already know and love. Integrate LegalSite into sales, marketing, support, HR, and other critical workflows.</p>
+              <p class="privacy__text text-bold mt-4">Easy Integrations</p>
+              <p class="privacy__subtext mx-auto">Automate your DSAR delivery by syncing privacy data across the tools and systems you already know and love. Integrate LegalSite into sales, marketing, support, HR, and other critical workflows.</p>
             </div>
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Coding" src="images/features/Logs.svg"/>
-              <p class="third__icon-title text-bold mt-4">DSAR Logs</p>
-              <p class="third__icon-subtitle mx-auto">Demonstrates compliance by tracking consent, DSARs, and every action in the process. View and export detailed consent logs and reports for internal and external review or benchmarking. </p>
+              <p class="privacy__text text-bold mt-4">DSAR Logs</p>
+              <p class="privacy__subtext mx-auto">Demonstrates compliance by tracking consent, DSARs, and every action in the process. View and export detailed consent logs and reports for internal and external review or benchmarking. </p>
             </div>
           </div>
         </div>
@@ -154,81 +154,67 @@
       </div>
     </div>
     <!-- Second Section -->
-    <!DOCTYPE html>
-<div class="bg-white section-medium get-started">
-  <div class="container">
-    <div
-      class="d-flex flex-column justify-content-center align-items-center text-center"
-    >
-      <h2 class="header__title mw-100">Protect your business in minutes — for free!</h2>
-      <p class="header__subtitle text-center mb-0 mt-3">
-        Get started on our Free plan, and achieve full compliance with U.S., E.U., and other global privacy regulations for up to 1,000 data subjects. No credit card required and no need to talk to sales.
-      </p>
-    </div>
-    <div
-      class="d-flex flex-wrap align-items-center justify-content-center my-3"
-    >
-      <!-- <input type="text" class="form-control eight__input mt-3" placeholder="Full name" aria-label="Fullname">
-      <input type="text" class="form-control eight__input mt-3" placeholder="E-mail" aria-label="Email">
-      <a class="button btn-purple-lg mt-3">
-        Get Started
-      </a> -->
-      <!--[if lte IE 8]>
-        <script
-          charset="utf-8"
-          type="text/javascript"
-          src="//js.hsforms.net/forms/v2-legacy.js"
-        ></script>
-      <![endif]-->
-      <script
-        charset="utf-8"
-        type="text/javascript"
-        src="//js.hsforms.net/forms/v2.js"
-      ></script>
-      <script>
-        hbspt.forms.create({
-          portalId: '6250848',
-          formId: 'a3d890f6-817f-4d45-ac6c-d925c3290ca4',
-          onFormSubmit: function($form) {
-            var name = $form[0][1].value;
-            var email = $form[0][2].value;
-            console.log(`Create account for ${email}`);
-            var query = `mutation getStartedMutation($email: String!, $name: String!) {
-            getStartedMutation(
-              input:{ email: $email, name: $name } ) {
-              user{
-                id
-                email
-              }
-            }
-          }`;
-
-            fetch('https://legalsite.app/graphql', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
-              },
-              body: JSON.stringify({
-                query,
-                variables: {
-                  name,
-                  email
+    <div class="bg-white section-medium get-started">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <h2 class="header__title mw-100">A better way to manage privacy<br> operations — and it’s free to try!</h2>
+          <p class="header__subtitle text-center mb-0 mt-3">
+            Automate your access requests for up to 1,000 data subjects at absolutely no cost. As your needs grow, you can add as many data subjects as you need, whenever you need them.
+          </p>
+        </div>
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center my-3"
+        >
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2.js"
+          ></script>
+          <script>
+            hbspt.forms.create({
+              portalId: '6250848',
+              formId: 'a3d890f6-817f-4d45-ac6c-d925c3290ca4',
+              onFormSubmit: function($form) {
+                var name = $form[0][1].value;
+                var email = $form[0][2].value;
+                console.log(`Create account for ${email}`);
+                var query = `mutation getStartedMutation($email: String!, $name: String!) {
+                getStartedMutation(
+                  input:{ email: $email, name: $name } ) {
+                  user{
+                    id
+                    email
+                  }
                 }
-              })
-            })
-              .then(r => r.json())
-              .then(data => {
-                console.log('data returned:', data);
-                if (data.errors){ window.alert(data.errors[0].message)};
-              });
-          }
-        });
-      </script>
+              }`;
+    
+                fetch('https://legalsite.app/graphql', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                  },
+                  body: JSON.stringify({
+                    query,
+                    variables: {
+                      name,
+                      email
+                    }
+                  })
+                })
+                  .then(r => r.json())
+                  .then(data => {
+                    console.log('data returned:', data);
+                    if (data.errors){ window.alert(data.errors[0].message)};
+                  });
+              }
+            });
+          </script>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
     <!-- Footer -->
     <!DOCTYPE html>
 <div class="bg-night-black footer__border">

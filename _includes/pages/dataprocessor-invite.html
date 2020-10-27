@@ -10,9 +10,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <p class="privacy__subtitle">{{ site.data[page.lang]['dataprocessor_invite']['data_processor_invitation'] }}</p>
+            <p class="privacy__subtitle mt-5">{{ site.data[page.lang]['dataprocessor_invite']['data_processor_invitation'] }}</p>
             <h2 class="privacy__title mt-4">{{ site.data[page.lang]['dataprocessor_invite']['receive_track'] }}</h2>
-            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['dataprocessor_invite']['we_help_agile'] }}</p>
+            <p class="privacy__subtitle-main mt-4">{{ site.data[page.lang]['dataprocessor_invite']['we_help_agile'] }}</p>
               <div class="d-flex flex-wrap mobile-center">
                 <a class="button btn-purple-lg mt-3 mr-md-3" href="https://app.legalsite.co/signup">
                   {{ site.data[page.lang]['dataprocessor_invite']['accept_invitation'] }}
@@ -24,7 +24,7 @@
               <p class="header__btn-text mt-1 mb-5">{{ site.data[page.lang]['dataprocessor_invite']['no_credit_card'] }}</p>
           </div>
           <div class="col-md-6 col-sm-12 mt-5">
-            <img class="data__header-image ml-5" alt="Image: Data Access Request" src="images/processors/data-access-request.svg"/>
+            <img class="image-style" alt="Image: Data Access Request" src="images/processors/data-access-request.svg"/>
           </div>
         </div>
       </div>
@@ -37,18 +37,18 @@
           <div class="row mt-5">
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Inbox" src="images/features/Icon-1.svg"/>
-              <p class="third__icon-title text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['central_dashboard'] }}</p>
-              <p class="third__icon-subtitle mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['use_a_central'] }} </p>
+              <p class="privacy__text text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['central_dashboard'] }}</p>
+              <p class="privacy__subtext mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['use_a_central'] }} </p>
             </div>
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Integrate Easily" src="images/features/Icon-2.svg"/>
-              <p class="third__icon-title text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['easy_intagration'] }}</p>
-              <p class="third__icon-subtitle mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['automate_your'] }}</p>
+              <p class="privacy__text text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['easy_intagration'] }}</p>
+              <p class="privacy__subtext mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['automate_your'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12 mt-5">
               <img class="third__icon mx-auto" alt="Icon: Coding" src="images/features/Logs.svg"/>
-              <p class="third__icon-title text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['dsar_logs'] }}</p>
-              <p class="third__icon-subtitle mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['demonstrate_compliance'] }} </p>
+              <p class="privacy__text text-bold mt-4">{{ site.data[page.lang]['dataprocessor_invite']['dsar_logs'] }}</p>
+              <p class="privacy__subtext mx-auto">{{ site.data[page.lang]['dataprocessor_invite']['demonstrate_compliance'] }} </p>
             </div>
           </div>
         </div>
@@ -110,7 +110,67 @@
       </div>
     </div>
     <!-- Second Section -->
-    {% include get-started.html %}
+    <div class="bg-white section-medium get-started">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <h2 class="header__title mw-100">{{ site.data[page.lang]['dataprocessor_invite']['a_better_way'] }}</h2>
+          <p class="header__subtitle text-center mb-0 mt-3">
+            {{ site.data[page.lang]['dataprocessor_invite']['automate_your_access'] }}
+          </p>
+        </div>
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center my-3"
+        >
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2.js"
+          ></script>
+          <script>
+            hbspt.forms.create({
+              portalId: '6250848',
+              formId: 'a3d890f6-817f-4d45-ac6c-d925c3290ca4',
+              onFormSubmit: function($form) {
+                var name = $form[0][1].value;
+                var email = $form[0][2].value;
+                console.log(`Create account for ${email}`);
+                var query = `mutation getStartedMutation($email: String!, $name: String!) {
+                getStartedMutation(
+                  input:{ email: $email, name: $name } ) {
+                  user{
+                    id
+                    email
+                  }
+                }
+              }`;
+    
+                fetch('https://legalsite.app/graphql', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                  },
+                  body: JSON.stringify({
+                    query,
+                    variables: {
+                      name,
+                      email
+                    }
+                  })
+                })
+                  .then(r => r.json())
+                  .then(data => {
+                    console.log('data returned:', data);
+                    if (data.errors){ window.alert(data.errors[0].message)};
+                  });
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     {% include footer.html %}
   </div>
