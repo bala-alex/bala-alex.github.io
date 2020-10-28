@@ -1,19 +1,23 @@
 <body>
   <div class="contact">
     <!-- Header -->
-    <div class="bg-light-gray">
+    <div class="nav-fixed-mobile bg-light-gray">
       <div class="container">
         {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
         <div class="header__content">
-          <h2 class="header__title text-center mw-100">{{ site.data[page.lang]['contact_enterprise']['deliver_privacy'] }}</h2>
+          <h2 class="header__title text-center mw-100">{{ site.data[page.lang]['contact_enterprise']['request_your'] }}</h2>
         </div>
       </div>
     </div>
     <!-- First Section -->
     <div class="bg-white enterprise py-5">
       <div class="container">
-        <div class="section__container mx-auto">
-          <p class="header__subtitle text-center mt-3" id="leave-message">{{ site.data[page.lang]['contact_enterprise']['once_we_receive'] }}</p>
+        <div class="section__container landing mx-auto">
+          <p class="header__text mx-auto text-center mt-3" id="leave-message">{{ site.data[page.lang]['contact_enterprise']['please_fill'] }}</p>
           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
           <script>
             hbspt.forms.create({

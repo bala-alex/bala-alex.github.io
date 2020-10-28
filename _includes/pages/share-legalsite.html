@@ -1,9 +1,13 @@
 <body>
   <div class="share">
     <!-- Header -->
-    <div class="bg-light-gray">
+    <div class="nav-fixed-mobile bg-light-gray">
       <div class="container">
         {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
         <div class="share__header-content">
           <h2 class="header__title text-center mt-3">{{ site.data[page.lang]['share_legalsite']['share_legalsite'] }}</h2>
           <p class="share__subtitle mt-3">{{ site.data[page.lang]['share_legalsite']['know_someone'] }}</p>

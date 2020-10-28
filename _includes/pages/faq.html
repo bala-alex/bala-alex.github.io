@@ -1,9 +1,13 @@
 <body>
   <!-- Header -->
   <div class="faq">
-    <div class="bg-light-gray">
+    <div class="nav-fixed-mobile bg-light-gray">
       <div class="container">
         {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
         <div class="header__content">
           <h2 class="header__title text-center">{{ site.data[page.lang]['faq']['frequently_asked'] }}</h2>
           <p class="header__subtitle mt-3">{{ site.data[page.lang]['faq']['dont_see_your'] }} </p>

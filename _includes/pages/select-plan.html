@@ -5,7 +5,8 @@
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Legalsite" src="images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
         <div class="header__content">
-          <h2 class="select__title text-center mt-2">{{ site.data[page.lang]['select_plan']['select_a_plan'] }}</h2>
+          <h2 class="select__title text-center mt-2">{{ site.data[page.lang]['select_plan']['pick_a_plan'] }}</h2>
+          <p class="select__subtitle mt-4">{{ site.data[page.lang]['select_plan']['whether_you'] }}</p>
           <p class="select__subtitle mt-3">{{ site.data[page.lang]['select_plan']['already_have_an'] }}<a class="select__link ml-2" href="https://app.legalsite.co/signin">{{ site.data[page.lang]['select_plan']['log_in'] }}</a></p>
         </div>
       </div>
@@ -25,7 +26,7 @@
                 <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                   <h4 class="business__cost"><sup>$</sup>99</h4>
                   <p class="business__cost-text mb-0 mt-2">{{ site.data[page.lang]['select_plan']['per_month'] }}</p>
-                  <p class="business__text mb-0 mt-5">+ $20/{{ site.data[page.lang]['select_plan']['month_per'] }} 1,000<br> <span class="business__tooltip" data-tooltip="Data subject refers to an individual who gave you consent to hold their personal information, which may include but is not limited to their name, ID number, location data, email, phone number, address, etc." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span></p>
+                  <p class="business__text mb-0 mt-5">+ $20/{{ site.data[page.lang]['select_plan']['month_per'] }}<br> 1,000 <span class="business__tooltip" data-tooltip="Data subject refers to an individual who gave you consent to hold their personal information, which may include but is not limited to their name, ID number, location data, email, phone number, address, etc." data-tooltip-position="top">{{ site.data[page.lang]['select_plan']['data_subjects'] }}</span></p>
                   <a class="button btn-white-md my-4" href="https://app.legalsite.co/signup">
                     {{ site.data[page.lang]['select_plan']['get_started'] }}
                   </a>

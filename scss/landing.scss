@@ -1,5 +1,5 @@
 .landing {
-  overflow: hidden;
+
   .header {
     overflow: hidden;
 
@@ -52,7 +52,21 @@
       letter-spacing: 0px;
       line-height: 28px;
       text-align: start;
-      max-width: 730px !important;
+      max-width: 730px;
+      font-family: 'Roboto', sans-serif !important;
+      @include screen-sm {
+        text-align: center;
+      }
+    }
+
+    &__subtitle2 {
+      color: $dust-gray;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+      text-align: start;
+      max-width: 780px;
       font-family: 'Roboto', sans-serif !important;
       @include screen-sm {
         text-align: center;
@@ -129,8 +143,8 @@
     }
 
     &__content-text {
-      max-width: 540px;
-      min-width: 540px;
+      max-width: 550px;
+      min-width: 550px;
       width: 100%;
       @include screen-md {
         min-width: auto;
@@ -325,7 +339,7 @@
       letter-spacing: 0px;
       line-height: 28px;
       text-align: center;
-      max-width: 226px;
+      max-width: 260px;
       font-family: 'Roboto', sans-serif !important;
     }
 
@@ -505,6 +519,34 @@
       letter-spacing: 0px;
       line-height: 28px;
       max-width: 434px;
+      font-family: 'Roboto', sans-serif !important;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &__subtitle-small {
+      color: $dust-gray;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+      max-width: 400px;
+      font-family: 'Roboto', sans-serif !important;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &__subtitle4 {
+      color: $dust-gray;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+      max-width: 410px;
       font-family: 'Roboto', sans-serif !important;
 
       span {

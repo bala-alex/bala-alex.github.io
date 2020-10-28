@@ -1,11 +1,15 @@
 <body>
   <!-- Header -->
-  <div class="bg-light-gray">
+  <div class="nav-fixed-mobile bg-light-gray">
     <div class="container">
       {% include navigation.html %}
+    </div>
+  </div>
+  <div class="bg-light-gray">
+    <div class="container">
       <div class="header__content">
         <h2 class="header__title mt-5 text-center">{{ site.data[page.lang]['legal_pages']['protect_your'] }}</h2>
-        <p class="header__subtitle2 mt-3">{{ site.data[page.lang]['legal_pages']['shield_yourself_from'] }}</p>
+        <p class="header__subtitle mt-3">{{ site.data[page.lang]['legal_pages']['shield_yourself_from'] }}</p>
         <div class="d-flex flex-wrap justify-content-center mb-5">
           <a class="button btn-purple-lg m-3" href="https://app.legalsite.co/signup">
             {{ site.data[page.lang]['legal_pages']['get_started'] }}
@@ -36,7 +40,7 @@
           <div class="col-md-6 col-sm-12 mt-3">
             <div class="privacy__content">
               <h2 class="privacy__title mt-4">{{ site.data[page.lang]['legal_pages']['privacy_policy'] }}</h2>
-              <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['legal_pages']['create_a_free_privacy'] }} </p>
+              <p class="privacy__subtitle-small mt-4">{{ site.data[page.lang]['legal_pages']['create_a_free_privacy'] }} </p>
               <a class="button btn-purple-lg my-4 mobile-center" href="https://app.legalsite.co/signup">
                 {{ site.data[page.lang]['legal_pages']['get_started'] }}
               </a>
@@ -53,7 +57,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <h2 class="privacy__title mt-5">{{ site.data[page.lang]['legal_pages']['terms_conditions'] }}</h2>
-            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['legal_pages']['protect_your_business'] }}</p>
+            <p class="privacy__subtitle-small mt-4">{{ site.data[page.lang]['legal_pages']['protect_your_business'] }}</p>
             <a class="button btn-purple-lg my-4 mobile-center" href="https://app.legalsite.co/signup">
               {{ site.data[page.lang]['legal_pages']['get_started'] }}
             </a>
@@ -76,7 +80,7 @@
           <div class="col-md-6 col-sm-12 mt-3">
             <div class="privacy__content">
               <h2 class="privacy__title mt-4">{{ site.data[page.lang]['legal_pages']['other_legal_documents'] }}</h2>
-              <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['legal_pages']['ensure_your_online'] }}</p>
+              <p class="privacy__subtitle4 mt-4">{{ site.data[page.lang]['legal_pages']['ensure_your_online'] }}</p>
               <a class="button btn-purple-lg my-4 mobile-center" href="https://app.legalsite.co/signup">
                 {{ site.data[page.lang]['legal_pages']['get_started'] }}
               </a>
@@ -180,7 +184,7 @@
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <h2 class="privacy__title mt-4">{{ site.data[page.lang]['legal_pages']['do_i_need'] }}</h2>
-            <p class="privacy__subtitle3 mt-5">{{ site.data[page.lang]['legal_pages']['the_short_answer'] }}: <span>{{ site.data[page.lang]['legal_pages']['yes_and_it'] }}</span><br> {{ site.data[page.lang]['legal_pages']['heres_why'] }}:</p>
+            <p class="privacy__subtitle3 mt-5 mw-100">{{ site.data[page.lang]['legal_pages']['the_short_answer'] }}: <span>{{ site.data[page.lang]['legal_pages']['yes_and_it'] }}</span> {{ site.data[page.lang]['legal_pages']['heres_why'] }}:</p>
             <div class="d-flex mt-4">
               <img class="privacy__info-icon mr-3 mt-1" alt="Icon: Info" src="images/features/info-icon.svg"/>
               <p class="privacy__subtitle2 mb-0">{{ site.data[page.lang]['legal_pages']['owning_an_online'] }}</p>

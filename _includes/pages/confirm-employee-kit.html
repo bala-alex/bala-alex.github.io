@@ -1,9 +1,13 @@
 <body>
   <div class="contact">
     <!-- Header -->
-    <div class="bg-light-gray">
+    <div class="nav-fixed-mobile bg-light-gray">
       <div class="container">
         {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
         <div class="header__content">
           <h2 class="header__title text-center">{{ site.data[page.lang]['confirm_employee']['your_guide_is'] }}</h2>
           <p class="header__subtitle mt-4">{{ site.data[page.lang]['confirm_employee']['thank_you_for'] }} </p>

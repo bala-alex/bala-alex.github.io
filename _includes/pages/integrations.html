@@ -1,12 +1,16 @@
 <body>
   <div class="integrations">
     <!-- Header -->
-    <div class="bg-light-gray">
+    <div class="nav-fixed-mobile bg-light-gray">
       <div class="container">
         {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
         <div class="header__content">
           <h2 class="header__title text-center">{{ site.data[page.lang]['integrations']['integrations'] }}</h2>
-          <p class="header__subtitle">{{ site.data[page.lang]['integrations']['make_legalsite'] }}</p>
+          <p class="header__subtitle mw-100 mt-4">{{ site.data[page.lang]['integrations']['make_legalsite'] }}</p>
           <a class="button btn-purple-lg m-3 mx-auto" href="https://app.legalsite.co/signup">
             {{ site.data[page.lang]['integrations']['get_started'] }}
           </a>
