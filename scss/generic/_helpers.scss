@@ -27,31 +27,17 @@
 }
 
 .nav-link {
-  font-size: 13px;
-	color: $night-black !important;
-	letter-spacing: 0px;
-	font-weight: normal;
-	font-family: 'Roboto', sans-serif !important;
-	text-transform: uppercase;
+  color: $night-black !important;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 22px;
+  text-transform: uppercase;
   &:hover {
     opacity: 0.8;
     text-decoration: none;
   }
-}
-
-.navigation-spacing {
-	margin-right: 130px;
-	margin-left: 8px;
-
-	@include screen-lg {
-		margin-right: 8px;
-	}
-}
-
-.nav-fixed-mobile {
-	position: sticky;
-	top: 0;
-	z-index: 999;
 }
 
 .image-style {
@@ -60,115 +46,83 @@
 	object-fit: contain;
 }
 
-.image-style2 {
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
+.datacenter-image {
+	width: 100%;
+	height: 100%;
+  object-fit: contain;
+  max-width: 670px;
 }
 
-.width-initial {
-	max-width: initial !important;
+.img-hor {
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 
-.features-image {
-	background-color: $white;
-	@include screen-md {
-		display: none !important;
-	}
+.border-none {
+  border: none !important;
 }
 
-.text-underline {
-	text-decoration: underline;
+.content-center {
+  display: flex;
+  justify-content: center;
 }
 
-.fw-bold {
-  font-weight: bold !important;
-  opacity: 1 !important;
+.section-divider {
+  height: 4px;
+  width: 60px;
+  border-top: 4px solid $forest-green;
+  margin-bottom: 16px;
 }
 
 .text-white {
   color: $white;
 }
 
+.text-forest-green {
+  color: $forest-green !important;
+}
+
+.text-faded-black {
+  color: $faded-black !important;
+}
+
 .text-black {
-  color: $night-black;
+  color: $black !important;
+}
+
+.text-soft-gray {
+  color: $soft-gray !important;
 }
 
 .text-dust-gray {
-	color: $dust-gray;
+  color: $dust-gray !important;
 }
 
-.text-small {
-  font-size: 14px;
+.text-underline {
+  text-decoration: underline;
 }
 
-.text-bold {
-	font-weight: bold !important;
+.underline-none {
+  text-decoration: none !important;
 }
 
-.dropdown-toggle {
-  box-shadow: none !important;
-}
-
-.border-purple {
-  border: 1px solid $purple !important;
+.outline-none {
+  outline: none !important;
 }
 
 .overflow-hidden {
-	overflow: hidden;
+  overflow: hidden !important;
 }
 
-.font-bookmania {
-	font-family: 'Bookmania Semibold' !important;
+.fw-bold {
+  font-weight: bold;
 }
 
-.overflow-x-scroll {
-	width: 100%;
-	overflow-x: scroll;
-	overflow-y: hidden;
-}
-
-.position-relative {
-	position: relative;
-}
-
-.fw-500 {
-	font-weight: 500 !important;
-}
-
-.container-medium {
-	max-width: 568px;
-}
-
-.mw-100 {
-	max-width: 100% !important;
-}
-
-.shadow-none {
-  box-shadow: none !important;
-}
-
-.item-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.border-service {
-	border: 1px solid rgb(223, 228, 238) !important;
-	&:hover {
-		border: 1px solid $purple !important;
-	}
-}
-
-input::placeholder {
-  color: $faded-gray !important;
-}
-
-textarea::placeholder {
-	color: $faded-gray !important;
+.mt-large {
+  margin-top: 110px;
+  @include screen-md {
+    margin-top: 50px;
+  }
 }
 
 .mobile-center {
@@ -179,47 +133,97 @@ textarea::placeholder {
 	}
 }
 
-.text-right {
-	@include screen-sm {
-		text-align: center !important;
-	}
-}
-
-.multine-ellipsis {
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-}
-
-.multine-ellipsis2 {
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-	white-space: normal;
-	height: 115px;
-}
-
-.no-border {
-	&:hover {
-		border: none !important;
-	}
-}
-
 .column-reverse-mobile {
 	@include screen-sm {
 		flex-direction: column-reverse;
 	}
 }
 
-.truncate {
-  width: 220px;
-  white-space: nowrap;
-  overflow: hidden;
-	text-overflow: ellipsis;
-	text-align: left;
+.max-w100 {
+  max-width: 100% !important;
+}
+
+.bg-faded-gray {
+  background-color: $faded-gray;
+}
+
+.questions-text {
+  color: $forest-green;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.mobile-wrap {
+  display: flex;
+
+  @include screen-md {
+		flex-wrap: wrap;
+	}
+}
+
+.footer-dropdown {
+  .custom-select {
+    position: relative;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #00887f;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 12px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #00887f;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }

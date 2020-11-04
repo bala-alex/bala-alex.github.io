@@ -1,19 +1,55 @@
 .integrations {
+  .header {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      text-align: center;
+    }
+  
+    &__subtitle {
+      color: $white;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 736px;
+      text-align: center;
+    }
+  
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+    }
+  
+    &__bg {
+      min-height: 457px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+    }
+  }
+
   // Pagination Container
   .cont{
     width: 100%;
   }
-  .container2 {
+  .container2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1000px;
     justify-content: space-between;
 
     ul.list {
       display: flex;
       flex-wrap: wrap;
       max-width: 1000px;
-      width: 100%;
       list-style-type: none;
     }
 
@@ -46,7 +82,6 @@
         background:#f3f3f3;
       }
     }
-
     a.page  {
       box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
       height: 36px;
@@ -70,7 +105,7 @@
     }
 
     li.active {
-      background-color: $white !important;
+      background-color: $light-gray !important;
       a.page {
         background: #f3f3f3;
       }
@@ -78,14 +113,11 @@
   }
 // End pagination
   .service {
+
     &__input {
-      border-radius: 4px;
-      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: none !important;
       height: 49px;
-      max-width: 764px;
-      margin-right: auto;
-      margin-left: auto;
-      width: 100% !important;
+      width: 498px;
       @include screen-md {
         width: 100%;
         margin-right: auto;
@@ -93,9 +125,14 @@
       }
     }
 
-    &__input-container {
-      width: 100%;
-      max-width: 1000px;
+    &__input-form {
+      border: 1px solid transparent;
+      border-bottom: 1px solid $soft-gray;
+      border-radius: 0px;
+      background-color: $light-gray;
+      &:focus {
+        border-bottom: 1px solid $sky-blue !important;
+      }
     }
 
     &__box {
@@ -106,6 +143,7 @@
       border-radius: 4px;
       box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
       padding: 15px;
+      margin: 15px;
       text-decoration: none;
       border: 1px solid transparent;
       display: flex;
@@ -114,28 +152,24 @@
       &:hover {
         border: 1px solid $purple;
       }
-      @include screen-lg {
-        max-width: 100%;
-        min-width: 100%;
-      }
+      // @include screen-lg {
+      //   max-width: 100%;
+      //   min-width: 100%;
+      // }
     }
 
     &__image {
-      img {
-        height: 80px;
-        width: 80px;
-        object-fit: contain;
-      }
+      height: 85px;
     }
 
-    &__image-logo {
-      margin-top: 20px;
+    &__search {
+      border: none;
+      box-shadow: none;
+      height: 48px;
+      margin-left: -110px;
+      z-index: 999;
+      background-color: $light-gray;
 
-      img {
-        height: 80px;
-        width: 80px;
-        object-fit: contain;
-      }
     }
 
     &__image-box {
@@ -173,28 +207,6 @@
       align-items: center;
       justify-content: center;
       margin-top: -80px;
-      @include screen-sm {
-        width: 100%;
-        margin-top: -30px;
-      }
-    }
-
-    &__image-box3 {
-      background: $white;
-      border-radius: 10px;
-      box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.08);
-      height: 317px;
-      width: 387px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 30px;
-      margin-bottom: -40px;
-      @include screen-sm {
-        width: 100%;
-        margin-bottom: 20px;
-      }
     }
 
     &__title {
@@ -233,38 +245,25 @@
 
   .sidebar {
     &__title {
-      color: $purple;
-      font-family: 'Roboto', sans-serif !important;
+      color: $night-black;
+      font-family: 'Muli', sans-serif;
       font-size: 22px;
       font-weight: bold;
       letter-spacing: -0.16px;
+      line-height: 28px;
     }
 
     &__container {
       max-width: 310px;
+      min-height: 580px;
       box-shadow: 0px 10px 20px 0px rgba(46, 91, 255, 0.07);
       border-radius: 1px;
-      max-height: 780px !important;
-      overflow: hidden;
-      overflow-y: scroll;
-    }
-
-    &__container2 {
-      max-width: 310px;
-      border-radius: 4px;
-      border: 1px solid rgb(223, 228, 238);
-      margin-top: 212px;
-      max-height: 780px !important;
-      overflow: hidden;
-      overflow-y: scroll;
-      @include screen-sm {
-        margin-top: 60px;
-      }
     }
   }
 
   .active {
-    color: $purple !important;
+    color: $dark-green !important;
     background-color: $light-gray !important;
   }
+
 }

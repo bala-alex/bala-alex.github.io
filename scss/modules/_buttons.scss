@@ -1,245 +1,166 @@
-.btn-purple-sm {
-  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
-  color: $white !important;
+.btn-secondary-lg {
+  @include button-variant(transparent, transparent, $active-background: darken(transparent, 7.5%), $active-border: darken(transparent, 10%));
+  color: $forest-green !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 136px;
-  height: 36px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-purple-lg {
-  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
-  color: $white !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-purple-xl {
-  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
-  color: $white !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  border-radius: 25px;
+  border: 1px solid $forest-green;
+  height: 50px;
+  width: max-content;
   min-width: 200px;
-  height: 36px;
-  border-radius: 4px;
+  padding: 0 20px;
+  font-size: 16px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
   &:hover {
-    color: $white;
+    color: $white !important;
     text-decoration: none;
+    background-color: $forest-green !important;
+    border: 1px solid $forest-green;
     cursor: pointer;
-  }
-}
-
-.btn-gray-lg {
-  @include button-variant($light-gray, $light-gray, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple;
-    text-decoration: none;
-    cursor: pointer;
+    transition: .3s;
   }
 }
 
 .btn-white-lg {
   @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
+  color: $forest-green !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-white-large {
-  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
-  display: flex;
-  border: 1px solid $purple;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple;
-    border: 1px solid $purple;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-white-md {
-  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 179px;
-  height: 40px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-white-outline {
-  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  border: 1px solid $purple !important;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
   &:hover {
     color: $white !important;
-    background-color: $purple;
+    background-color: transparent !important;
     text-decoration: none;
+    border: 1px solid $white;
+    transition: all .3s;
     cursor: pointer;
   }
 }
 
-.btn-purple-outline {
-  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
+.btn-white-xl {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $forest-green !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  border: 1px solid $purple !important;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 257px;
+  padding: 0 20px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
   &:hover {
-    color: $purple !important;
-    background-color: darken($light-gray, 7.5%);
+    color: $white !important;
+    background-color: transparent !important;
     text-decoration: none;
+    border: 1px solid $white;
+    transition: all .3s;
     cursor: pointer;
   }
 }
 
-.btn-purple-outline-sm {
-  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $purple !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  width: 160px;
-  border-radius: 4px;
-  border: 1px solid $purple !important;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.btn-secondary-lg {
-  @include button-variant(transparent, transparent, $active-background: darken(transparent, 7.5%), $active-border: darken(transparent, 10%));
-  color: $purple !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 52px;
-  border-radius: 4px;
-  border: 1px solid $purple;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple;
-    text-decoration: none;
-    background-color: $white;
-    border: 1px solid $purple;
-    cursor: pointer;
-  }
-}
-
-.btn-purple {
-  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+.btn-primary-xl {
+  @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
   color: $white !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: $forest-green;
+  border-radius: 25px;
+  height: 50px;
+  width: 257px;
   font-weight: bold;
-  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+}
+
+.btn-primary-square-xl {
+  @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $forest-green;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-primary-lg {
+  @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $forest-green;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+}
+
+.btn-primary-sm {
+  @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $forest-green;
+  border-radius: 25px;
+  height: 35px;
+  width: 141px;
+  font-weight: normal;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-learn-more {
+  text-decoration: underline;
+  color: $white;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Muli', sans-serif;
   &:hover {
     color: $white;
-    text-decoration: none;
+    opacity: .7;
+    transition: all .3s;
     cursor: pointer;
   }
 }
@@ -258,34 +179,8 @@
   border: none;
   font-size: 14px;
   font-weight: 500;
-  text-transform: uppercase;
   &:hover {
-    color: $purple !important;
-    text-decoration: none;
-    cursor: pointer;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: none;
-  }
-}
-
-.btn-sidebar2 {
-  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
-  color: $night-black !important;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding-left: 50px;
-  border-radius: 0px;
-  height: 55px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  &:hover {
-    color: $purple !important;
+    color: $dark-green !important;
     text-decoration: none;
     cursor: pointer;
     padding-top: 0px;

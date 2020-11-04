@@ -1,7 +1,51 @@
 .contact {
+  .header {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      margin-top: 100px !important;
+      @include screen-sm {
+        margin-top: 50px !important;
+      }
+    }
+  
+    &__subtitle {
+      color: $white;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 736px;
+    }
+
+    &__image {
+      margin-top: 80px;
+    }
+  
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+    }
+  
+    &__bg {
+      height: 358px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+
+      @include screen-md {
+        height: auto !important;
+      }
+    }
+  }
 
   .section {
-
     &__input {
       width: 100%;
       &:focus {
@@ -10,19 +54,19 @@
     }
 
     &__container {
-      max-width: 574px !important;
+      max-width: 574px;
 
       label {
         font-size: 16px !important;
-        font-family: 'Roboto', sans-serif !important;
-        color: $gray-400;
+        font-family: 'Muli', sans-serif;
+        color: $black;
         font-weight: normal;
         letter-spacing: 0px;
       }
 
       input {
         width: 100% !important;
-        background-color: #ffffff;
+        background-color: $light-gray;
         margin-bottom: 15px;
         display: block;
         width: 100%;
@@ -35,15 +79,23 @@
         border: 1px solid #ced4da;
         border-radius: 0.25rem;
         outline: none;
-        margin-bottom: 0px;
         &:focus {
           box-shadow: none;
         }
       }
 
+      label.hs-error-msg {
+        color: red;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
       textarea {
         width: 100% !important;
-        background-color: #ffffff;
+        background-color: $light-gray;
         margin-bottom: 15px;
         display: block;
         width: 100%;
@@ -65,11 +117,6 @@
         max-width: 100% !important;
       }
 
-      .inputs-list {
-        list-style-type: none;
-        padding-left: 0px;
-      }
-
       .hs-form-booleancheckbox-display {
         display: flex;
 
@@ -80,282 +127,219 @@
         span {
           margin-left: 10px !important;
           margin-top: 7px;
-          color: #000000;
+          color: $soft-gray;
           font-size: 16px;
           font-weight: normal;
           letter-spacing: 0px;
-          font-family: 'Roboto', sans-serif !important;
+          font-family: 'Muli', sans-serif;
 
           a {
-            color: $purple;
+            color: $forest-green;
           }
         }
       }
 
-      label.hs-error-msg {
-        color: red !important;
-        font-size: 12px !important;
-      }
-    
-      .hs-error-msgs {
-        list-style-type: none !important;
-        padding-left: 0px;
-      }
-    
-      .hs_error_rollup {
-        display: none !important;
-      }
-    
-      .hs-form-required {
-        color: #fff !important;
-      }
-
       .hs-button.primary.large {
-        @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+        @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
         color: $white !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 136px !important;
-        height: 36px;
-        border-radius: 4px;
+        background: $forest-green;
+        border-radius: 25px;
+        height: 50px;
+        width: 200px !important;
         font-weight: bold;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 14px;
-        margin-left: auto;
-        margin-right: auto;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-top: 10px;
         &:hover {
-          color: $white;
-          text-decoration: none;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  .checklist {
-    &__image {
-      width: 360px;
-      height: 100%;
-      object-fit: contain;
-
-      @include screen-md {
-        width: 100%;
-      }
-    }
-
-    &__image2 {
-      width: 410px;
-      height: 345px;
-      object-fit: contain;
-      z-index: 99;
-
-      @include screen-md {
-        width: 370px;
-        height: 300px;
-      }
-    }
-
-    &__image3 {
-      width: 450px;
-      height: 100%;
-      object-fit: contain;
-      margin-bottom: -60px;
-
-      @include screen-md {
-        width: 100%;
-        margin-bottom: 50px;
-      }
-    }
-
-    &__box {
-      background: rgb(255, 255, 255);
-      border-radius: 4px;
-      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
-      min-height: 464px;
-      width: 510px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: -80px;
-      z-index: 99;
-
-      @include screen-md {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
-
-    &__screens-bg {
-      width: 60%;
-      height: 160px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 0;
-      background: linear-gradient(45deg, rgb(106, 69, 192) 0%, rgb(156, 120, 241) 100%);
-
-      @include screen-md {
-        width: 100%;
-      }
-    }
-
-    &__form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      label {
-        font-size: 16px !important;
-        font-family: 'Roboto', sans-serif !important;
-        color: $dust-gray;
-        font-weight: normal;
-        letter-spacing: 0px;
-      }
-
-      input {
-        width: 100% !important;
-        background-color: #ffffff;
-        margin-bottom: 15px;
-        display: block;
-        height: calc(2.25rem + 2px);
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        border-radius: 0.25rem;
-        outline: none;
-        margin-bottom: 0px;
-        &:focus {
-          box-shadow: none;
-        }
-      }
-
-      .hs-input {
-        width: 100% !important;
-        background-color: #ffffff;
-        margin-bottom: 15px;
-        display: block;
-        height: calc(2.25rem + 2px);
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        border-radius: 0.25rem;
-        outline: none;
-        margin-bottom: 0px;
-        &:focus {
-          box-shadow: none;
-        }
-      }
-
-      label.hs-error-msg {
-        color: red !important;
-        font-size: 12px !important;
-      }
-    
-      .hs-error-msgs {
-        list-style-type: none !important;
-        padding-left: 0px;
-      }
-    
-      .hs_error_rollup {
-        display: none !important;
-      }
-    
-      .hs-form-required {
-        color: #fff !important;
-      }
-
-      span {
-        color: #fff !important;
-        display: none !important;
-      }
-
-      .hs-form-field {
-        width: 325px;
-      }
-
-      .hs-button.primary.large {
-        @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
-        color: $white !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 223px !important;
-        height: 36px;
-        border-radius: 4px;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 14px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 24px;
-        &:hover {
-          color: $white;
-          text-decoration: none;
+          transition: all .3s;
           cursor: pointer;
         }
       }
     }
 
     &__title {
-      font-size: 35px !important;
-      font-family: 'Roboto', sans-serif !important;
-      color: $purple;
-      font-weight: bold;
-      line-height: 38px;
-      letter-spacing: -0.6px;
-      text-align: center;
+      font-size: 16px !important;
+      font-family: 'Muli', sans-serif;
+      color: $black;
+      font-weight: normal;
+      letter-spacing: 0px;
     }
 
-    &__subtext {
+    &__input-message {
+      min-height: 221px !important;
+      width: 100%;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .info {
+    &__title {
       font-size: 18px !important;
-      font-family: 'Roboto', sans-serif !important;
-      color: $purple;
+      font-family: 'Muli', sans-serif;
+      color: $black;
       font-weight: bold;
-      line-height: 28px;
-      letter-spacing: -0.6px;
+      text-transform: uppercase;
     }
 
     &__subtitle {
-      color: $dust-gray;
+      font-size: 18px !important;
+      font-family: 'Muli', sans-serif;
+      font-weight: normal;
+      max-width: 295px;
+      @include screen-md {
+        max-width: 100%;
+      }
+    }
+
+    &__main-title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $dark-green;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__main-subtitle {
+      font-size: 18px !important;
+      font-family: 'Muli', sans-serif;
+      font-weight: normal;
+      color: $soft-gray;
+      text-align: center;
+      margin-bottom: 90px;
+      max-width: 736px;
+      @include screen-md {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__image {
+      height: 279px;
+      width: 418px;
+      @include screen-md {
+        width: 100%;
+      }
+    }
+  }
+
+  .sample {
+
+    &__box {
+      background-color: $white;
+      border-radius: 16px;
+      margin: 15px;
+      box-shadow: 0px 16px 32px 0 rgba(67,67,87,0.20) !important;
+      padding: 0px;
+      overflow: hidden;
+      width: 1159px;
+      @include screen-lg {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+
+    &__bg-top {
+      background: url('../images/features/sample-bg@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      height: 150px;
+      margin-top: -50px;
+      @include screen-lg {
+        height: 180px;
+      }
+    }
+
+    &__content{
+      margin-top: -65px;
+      margin-left: 100px;
+      @include screen-md {
+        margin-left: 15px;
+        margin-top: -95px;
+      }
+    }
+
+    &__title {
+      font-size: 28px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: -0.2px;
+      line-height: 34px;
+    }
+
+    &__subtitle {
+      color: $night-black;
+      font-family: 'Muli', sans-serif;
       font-size: 18px;
       font-weight: normal;
       letter-spacing: 0px;
       line-height: 28px;
-      text-align: center;
-      font-family: 'Roboto', sans-serif !important;
-      max-width: 550px;
+      max-width: 410px;
+      margin-top: 70px;
+    }
+
+    &__image {
+      height: 260px;
+      width: 173px;
     }
   }
 
-  .enterprise {
-    .multi-container {
-      display: flex;
+  .about {
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
     }
 
-    .hs-form-checkbox-display {
-      display: flex;
-      align-items: center;
-      margin-right: 30px;
+    &__subtitle {
+      font-size: 18px !important;
+      font-family: 'Muli', sans-serif;
+      color: $black;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
-    .hs-input[type=checkbox] {
-      margin-left: 0px;
-      margin-right: 10px;
-      width: 15px !important;
+    &__text {
+      font-size: 16px !important;
+      font-family: 'Muli', sans-serif;
+      font-weight: normal;
+      color: $black;
+      line-height: 30px;
+      max-width: 497px;
     }
 
-    .hs_do_you_have_a_privacy_management_tool_in_place_ {
-      margin-top: 30px;
+    &__box {
+      background: rgb(250, 250, 250);
+      border-radius: 0px;
+      box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.06);
+      padding: 32px;
     }
+  }
+
+  .form-control {
+    background-color: $light-gray;
+    color: $soft-gray !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important;
+  }
+
+  input::placeholder {
+    color: $soft-gray !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important;
+  }
+
+  textarea::placeholder {
+    color: $soft-gray !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important;
   }
 }
