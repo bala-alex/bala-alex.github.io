@@ -3,7 +3,76 @@
 
 layout: 404
 permalink: /404.html
-lang: en
 ---
 
-{% include pages/404.html %}
+<body>
+  <div class="feedbacks">
+    <!-- Header -->
+    <div class="error">
+      <div>
+        <div class="error__header">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="header__logo" alt="Logo: Feedbacklabs" src="images/Homepage/Logo.svg"/></a>
+          </div>
+        </div>
+        <div class="error__content">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <img class="error__image" alt="Icon: Error Image" src="images/Homepage/Image-404.svg"/>
+            <h2 class="error__title text-center mt-4">Page not found</h2>
+            <p class="error__subtitle mt-2">The page you are looking for doesn't exist or has been moved.</p>
+            <a class="button btn-primary mx-auto my-3" href="index.html">
+              Go to Homepage
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="error__border"></div>
+        <div class="container">
+          <div class="row w-100">
+            <div class="col-md-4 col-sm-12 error__footer">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="images/Homepage/direction.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="javascript:history.back()">
+                    Go back
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">Head back to the page you came from.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 error__footer-center">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="images/Homepage/answers.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="https://app.feedbacklabs.com/signup">
+                    Start getting answers
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">Start a free trial to get the insights you need.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 error__footer">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="images/Homepage/contact.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="contact.html">
+                    Contact us
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">Looking for something specific? Get in touch!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
+
+</html>
