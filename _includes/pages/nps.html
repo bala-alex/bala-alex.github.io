@@ -61,8 +61,17 @@
         </div>
       </div>
       <!-- Second Section -->
-      {% include nps-survey.html %}
+      <div class="container py-5">
+        <div class="survey__start">
+          <p class="survey__start-title mt-2">Measure and improve customer loyalty with ease</p>
+          <p class="survey__start-subtitle mt-4">Try FeedbackLabs <span>free for 14 days</span>. Quick setup, no need to talk to sales, and you can cancel anytime.</p>
+          <p class="survey__start-subtitle mt-3"><span>Sign up today</span> and send your first <span>NPS survey</span> in minutes:</p>
+          {% include start-now.html %}
+        </div>
+      </div>
       <!-- Third Section -->
+      {% include nps-survey.html %}
+      <!-- Fourth Section -->
       <div class="container mt-4 homepage">
         <p class="info__registered-text">{{ site.data[page.lang]['nps']['nps_net_promoter'] }}</p>
       </div>
