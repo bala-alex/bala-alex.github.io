@@ -222,9 +222,15 @@
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
   <script>
     hbspt.forms.create({
-    portalId: "7622707",
-    formId: "b1e96e69-f0ca-4075-b257-84bb9a7adfc9"
-  });
+      portalId: "7622707",
+      formId: "b1e96e69-f0ca-4075-b257-84bb9a7adfc9",
+      onFormSubmit: function($form) {
+        var firstName = encodeURI($form[0][1].value);
+        var lastName = encodeURI($form[0][2].value);
+        var email = encodeURI($form[0][3].value);
+        window.location.href = "https://app.feedbacklabs.com/${firstName}/${lastName}/${email}"
+       }
+      });
   </script>
 </div>
         </div>
