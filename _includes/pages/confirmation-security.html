@@ -1,0 +1,23 @@
+<body>
+  <div class="confirmation bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content">
+      <div class="header__bg">
+        <div class="container">
+          <h1 class="header__title mx-auto">{{ site.data[page.lang]['confirmation_security']['thank_you'] }}</h1>
+          <p class="header__subtitle my-4 mx-auto">{{ site.data[page.lang]['confirmation_security']['thank_you_for_registering'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    {% include check-blog.html %}
+    <!-- Second Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

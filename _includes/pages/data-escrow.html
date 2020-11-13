@@ -1,0 +1,77 @@
+<body>
+  <div class="resources bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content overflow-hidden">
+      <div class="header__bg">
+        <div class="container">
+          <h1 class="header__title mx-auto mt-5">{{ site.data[page.lang]['data_escrow']['data_escrow'] }}</h1>
+          <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['data_escrow']['learn_more_about'] }}</p>
+          <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
+            {{ site.data[page.lang]['data_escrow']['get_started'] }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white info__bg">
+    </div>
+    <div class="container">
+      <div class="info__box">
+        <div>
+          <p class="info__title">{{ site.data[page.lang]['data_escrow']['what_is_data'] }}</p>
+          <p class="info__subtitle mx-auto mt-4">{{ site.data[page.lang]['data_escrow']['data_escrow_is'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-light-gray section-large">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h3 class="info__data-title">{{ site.data[page.lang]['data_escrow']['who_needs'] }}</h3>
+            <div class="info__benefits-content mt-4">
+              <p class="info__benefits-subtitle">{{ site.data[page.lang]['data_escrow']['according_to_the'] }}</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style mb-5" src="/images/guide/data-escrow.svg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="bg-white section-medium px-2">
+      <p class="info__title2">{{ site.data[page.lang]['data_escrow']['how_does'] }}</p>
+      <p class="info__subtitle mx-auto mt-4">{{ site.data[page.lang]['data_escrow']['as_the_escrow_agent'] }} </p>
+      <a class="button btn-primary-lg mt-4 mx-auto" href="pricing.html">
+        {{ site.data[page.lang]['data_escrow']['see_out_pricing'] }}
+      </a>
+    </div>
+    <!-- Fourth Section -->
+    <div class="bg-light-gray section-medium px-2">
+      <div class="container">
+        <h3 class="info__reading-title mx-auto">{{ site.data[page.lang]['data_escrow']['further_reading'] }}</h3>
+        <p class="info__reading-subtitle mx-auto mt-4">{{ site.data[page.lang]['data_escrow']['check_out_this'] }} <a class="underline-none" href="https://blog.codekeeper.co">{{ site.data[page.lang]['data_escrow']['codekeeper_blog'] }}</a> {{ site.data[page.lang]['data_escrow']['for_everything'] }}</p>
+        <div class="row my-5">
+          <div class="col-md-7 col-sm-12 px-0">
+            <img class="info__reading-image" src="/images/guide/further-reading.svg"/>
+          </div>
+          <div class="col-md-5 col-sm-12 bg-white p-4">
+            <a class="info__reading-text mx-auto" href="https://blog.codekeeper.co/software-escrow-101">{{ site.data[page.lang]['data_escrow']['the_ultimate_guide'] }}: {{ site.data[page.lang]['data_escrow']['everything_you_need'] }}</a>
+          </div>
+        </div>
+        <a class="button btn-primary-lg mt-4 mx-auto" href="https://blog.codekeeper.co">
+          {{ site.data[page.lang]['data_escrow']['see_all_articles'] }}
+        </a>
+      </div>
+    </div>
+    <!-- Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
