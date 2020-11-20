@@ -286,18 +286,14 @@
 <div class="container py-4">
   <div class="row py-4">
     <div class="col-md-3 col-sm-12">
-      <div class="d-flex align-items-center my-2">
-        <a href="index.html"><img class="footer__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
-        <!-- <div>
-          <li class="footer__link">
-            <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="/index.html">English</a>
-              <a class="dropdown-item" href="/nl/index.html">Dutch</a>
-            </div>
-          </li>
+      <div class="footer-dropdown my-2">
+        <a href="index.html"><img class="footer__logo mr-2" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
+        <!-- <div class="custom-select">
+          <select>
+            <option value="0">Selecteer taal</option>
+            <option value="1" id="english">Engels</option>
+            <option value="2" id="dutch">Nederlands</option>
+          </select>
         </div> -->
       </div>
     </div>
@@ -310,7 +306,7 @@
     </div>
   </div>
   <div class="footer__border mx-auto"></div>
-  <p class="footer__text mx-auto text-center my-4">© 2020 FeedbackLabs.  <a href="https://legal.feedbacklabs.com/page?page=TermsConditions"></a> .  <a href="https://legal.feedbacklabs.com/page?page=PrivacyPolicy">.</a></p>
+  <p class="footer__text mx-auto text-center my-4">© <script>document.write( new Date().getFullYear() );</script> FeedbackLabs.  <a href="https://legal.feedbacklabs.com/page?page=TermsConditions"></a> .  <a href="https://legal.feedbacklabs.com/page?page=PrivacyPolicy">.</a></p>
 </div>
 
     </div>
@@ -334,6 +330,110 @@
 <!-- End of HubSpot Embed Code -->
 
 
+<script>
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  /*look for any elements with the class "custom-select":*/
+  x = document.getElementsByClassName("custom-select");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+    selElmnt = x[i].getElementsByTagName("select")[0];
+    ll = selElmnt.length;
+    /*for each element, create a new DIV that will act as the selected item:*/
+    a = document.createElement("DIV");
+    a.setAttribute("class", "select-selected");
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+    /*for each element, create a new DIV that will contain the option list:*/
+    b = document.createElement("DIV");
+    b.setAttribute("class", "select-items select-hide");
+    for (j = 1; j < ll; j++) {
+      /*for each option in the original select element,
+      create a new DIV that will act as an option item:*/
+      c = document.createElement("DIV");
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener("click", function(e) {
+          /*when an item is clicked, update the original select box,
+          and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+      });
+      b.appendChild(c);
+    }
+    x[i].appendChild(b);
+    a.addEventListener("click", function(e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+  }
+  function closeAllSelect(elmnt) {
+    /*a function that will close all select boxes in the document,
+    except the current select box:*/
+    var x, y, i, xl, yl, arrNo = [];
+    x = document.getElementsByClassName("select-items");
+    y = document.getElementsByClassName("select-selected");
+    xl = x.length;
+    yl = y.length;
+    for (i = 0; i < yl; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i)
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (i = 0; i < xl; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+      }
+    }
+  
+    const lang = $('.select-selected').text();
+  
+    if (lang === 'Engels') {
+      window.location = '/index.html';
+    }
+    else if (lang === 'Dutch') {
+      window.location = '/nl/index.html';
+    }
+  
+  }
+  /*if the user clicks anywhere outside the select box,
+  then close all select boxes:*/
+  document.addEventListener("click", closeAllSelect);
+  
+  </script>
+  <script>
+    $( document ).ready(function() {
+      var lang = location.pathname.substring(0, 3);
+  
+      console.log($('#lang').text());
+      if (lang === '/nl') {
+        $('.select-items > div:eq(1)').hide();
+      }
+      else {
+        $('.select-items > div:eq(0)').hide();
+      }
+    });
+  </script>
   <script>
     $('.not-clickable').click(function(event) {
       event.preventDefault();

@@ -2,18 +2,14 @@
 <div class="container py-4">
   <div class="row py-4">
     <div class="col-md-3 col-sm-12">
-      <div class="d-flex align-items-center my-2">
-        <a href="index.html"><img class="footer__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
-        <!-- <div>
-          <li class="footer__link">
-            <a class="footer__link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="/index.html">English</a>
-              <a class="dropdown-item" href="/nl/index.html">Dutch</a>
-            </div>
-          </li>
+      <div class="footer-dropdown my-2">
+        <a href="index.html"><img class="footer__logo mr-2" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/> </a>
+        <!-- <div class="custom-select">
+          <select>
+            <option value="0">{{ site.data[page.lang]['includes']['footer']['select_language'] }}</option>
+            <option value="1" id="english">{{ site.data[page.lang]['includes']['footer']['english'] }}</option>
+            <option value="2" id="dutch">{{ site.data[page.lang]['includes']['footer']['dutch'] }}</option>
+          </select>
         </div> -->
       </div>
     </div>
@@ -26,5 +22,5 @@
     </div>
   </div>
   <div class="footer__border mx-auto"></div>
-  <p class="footer__text mx-auto text-center my-4">© 2020 FeedbackLabs. {{ site.data[page.lang]['includes']['footer']['all_rights_reserved'] }} <a href="https://legal.feedbacklabs.com/page?page=TermsConditions">{{ site.data[page.lang]['includes']['footer']['terms_and_conditions'] }}</a> {{ site.data[page.lang]['includes']['footer']['apply'] }}. {{ site.data[page.lang]['includes']['footer']['see_our'] }} <a href="https://legal.feedbacklabs.com/page?page=PrivacyPolicy">{{ site.data[page.lang]['includes']['footer']['privacy_policy'] }}.</a></p>
+  <p class="footer__text mx-auto text-center my-4">© <script>document.write( new Date().getFullYear() );</script> FeedbackLabs. {{ site.data[page.lang]['includes']['footer']['all_rights_reserved'] }} <a href="https://legal.feedbacklabs.com/page?page=TermsConditions">{{ site.data[page.lang]['includes']['footer']['terms_and_conditions'] }}</a> {{ site.data[page.lang]['includes']['footer']['apply'] }}. {{ site.data[page.lang]['includes']['footer']['see_our'] }} <a href="https://legal.feedbacklabs.com/page?page=PrivacyPolicy">{{ site.data[page.lang]['includes']['footer']['privacy_policy'] }}.</a></p>
 </div>
