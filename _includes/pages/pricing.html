@@ -40,7 +40,7 @@
                 <div class="plan__content">
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['basic'] }}</p>
-                    <h2 class="plan__list-value">$29</h2>
+                    <h2 class="plan__list-value" id="basic-yearly">$29</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month_annually'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -49,13 +49,13 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_basic'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save'] }} <span class="basic-save">$120</span> {{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   </div>
                   <div class="plan__list hover-plan reset-active active-plan position-relative">
                     <p class="plan__list-growth-popular">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
                     <!-- <div class="plan__list-growth-border"></div> -->
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['growth'] }}</p>
-                    <h2 class="plan__list-value">$79</h2>
+                    <h2 class="plan__list-value" id="growth-yearly">$79</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month_annually'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -64,11 +64,11 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_growth'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save'] }} <span class="growth-save">$312</span> {{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   </div>
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['business'] }}</p>
-                    <h2 class="plan__list-value">$149</h2>
+                    <h2 class="plan__list-value" id="business-yearly">$149</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month_annually'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -77,7 +77,7 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save_business'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['save'] }} <span class="business-save">$588</span> {{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   </div>
                 </div>
                 <div class="plan__list-include">
@@ -160,7 +160,7 @@
                 <div class="plan__content">
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['basic'] }}</p>
-                    <h2 class="plan__list-value">$39</h2>
+                    <h2 class="plan__list-value" id="basic-monthly">$39</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -169,13 +169,13 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually_basic'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually'] }} <span class="basic-save">$120</span>{{ site.data[page.lang]['pricing']['year'] }}</p>
                   </div>
                   <div class="plan__list hover-plan reset-active active-plan position-relative">
                     <p class="plan__list-growth-popular">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
                     <!-- <div class="plan__list-growth-border"></div> -->
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['growth'] }}</p>
-                    <h2 class="plan__list-value">$105</h2>
+                    <h2 class="plan__list-value" id="growth-monthly">$105</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -184,11 +184,11 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually_growth'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually'] }} <span class="growth-save">$312</span>{{ site.data[page.lang]['pricing']['year'] }}</p>
                   </div>
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title">{{ site.data[page.lang]['pricing']['business'] }}</p>
-                    <h2 class="plan__list-value">$198</h2>
+                    <h2 class="plan__list-value" id="business-monthly">$198</h2>
                     <p class="plan__list-period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -197,7 +197,7 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       {{ site.data[page.lang]['pricing']['start_free_trial'] }}
                     </a>
-                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually_business'] }}</p>
+                    <p class="plan__list-period">{{ site.data[page.lang]['pricing']['pay_annually'] }} <span class="business-save">$588</span>{{ site.data[page.lang]['pricing']['year'] }}</p>
                   </div>
                 </div>
                 <div class="plan__list-include">
@@ -373,6 +373,31 @@
     $('.reset').mouseover(function() {
       $('.hover-plan').removeClass('active-plan');
       $('.reset-active').addClass('active-plan');
+    });
+  </script>
+  <script>
+    $( document ).ready(function() {
+
+      $.ajax('http://ip-api.com/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe')) {
+              $('#basic-yearly').text('€25');
+              $('#growth-yearly').text('€67');
+              $('#business-yearly').text('€126');
+              $('#basic-monthly').text('€33');
+              $('#growth-monthly').text('€89');
+              $('#business-monthly').text('€167');
+              $('.basic-save').text('€101');
+              $('.growth-save').text('€263');
+              $('.business-save').text('€496');
+            }
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      );
     });
   </script>
 </body>

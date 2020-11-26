@@ -109,7 +109,7 @@
                 <div class="plan__content">
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$29</h2>
+                    <h2 class="plan__list-value" id="basic-yearly">$29</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -118,13 +118,13 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="basic-save">$120</span> </p>
                   </div>
                   <div class="plan__list hover-plan reset-active active-plan position-relative">
                     <p class="plan__list-growth-popular"></p>
                     <!-- <div class="plan__list-growth-border"></div> -->
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$79</h2>
+                    <h2 class="plan__list-value" id="growth-yearly">$79</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -133,11 +133,11 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="growth-save">$312</span> </p>
                   </div>
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$149</h2>
+                    <h2 class="plan__list-value" id="business-yearly">$149</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -146,7 +146,7 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="business-save">$588</span> </p>
                   </div>
                 </div>
                 <div class="plan__list-include">
@@ -229,7 +229,7 @@
                 <div class="plan__content">
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$39</h2>
+                    <h2 class="plan__list-value" id="basic-monthly">$39</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -238,13 +238,13 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="basic-save">$120</span></p>
                   </div>
                   <div class="plan__list hover-plan reset-active active-plan position-relative">
                     <p class="plan__list-growth-popular"></p>
                     <!-- <div class="plan__list-growth-border"></div> -->
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$105</h2>
+                    <h2 class="plan__list-value" id="growth-monthly">$105</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -253,11 +253,11 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="growth-save">$312</span></p>
                   </div>
                   <div class="plan__list hover-plan">
                     <p class="plan__list-title"></p>
-                    <h2 class="plan__list-value">$198</h2>
+                    <h2 class="plan__list-value" id="business-monthly">$198</h2>
                     <p class="plan__list-period"></p>
                     <div class="plan__list-border"></div>
                     <p class="plan__list-text">
@@ -266,7 +266,7 @@
                     <a class="button btn-outline-sm mt-4" href="https://app.feedbacklabs.com/signup">
                       
                     </a>
-                    <p class="plan__list-period"></p>
+                    <p class="plan__list-period"> <span class="business-save">$588</span></p>
                   </div>
                 </div>
                 <div class="plan__list-include">
@@ -571,6 +571,7 @@
       }
     });
   </script>
+
   <script>
     // Accordian Action
     var action = 'click';
@@ -608,6 +609,31 @@
     $('.reset').mouseover(function() {
       $('.hover-plan').removeClass('active-plan');
       $('.reset-active').addClass('active-plan');
+    });
+  </script>
+  <script>
+    $( document ).ready(function() {
+
+      $.ajax('http://ip-api.com/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe')) {
+              $('#basic-yearly').text('€25');
+              $('#growth-yearly').text('€67');
+              $('#business-yearly').text('€126');
+              $('#basic-monthly').text('€33');
+              $('#growth-monthly').text('€89');
+              $('#business-monthly').text('€167');
+              $('.basic-save').text('€101');
+              $('.growth-save').text('€263');
+              $('.business-save').text('€496');
+            }
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      );
     });
   </script>
 </body>
