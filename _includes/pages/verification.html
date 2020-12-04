@@ -1,0 +1,239 @@
+<body>
+  <div class="bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="resources">
+      <div class="header__content overflow-hidden">
+        <div class="header__bg p-0 d-flex align-items-center justify-content-center flex-column">
+          <div class="container">
+            <h1 class="header__title mx-auto">{{ site.data[page.lang]['verification']['verification_services'] }}</h1>
+            <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['verification']['learn_what_software'] }}</p>
+            <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="container pricing">
+      <div class="verify__details-box">
+        <div>
+          <p class="verify__details-title">{{ site.data[page.lang]['verification']['about_software_escrow'] }}</p>
+          <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
+              <img src="/images/icons/wallet.svg"/>
+              <p class="verify__details-subtitle mt-4">{{ site.data[page.lang]['verification']['deposit'] }}</p>
+              <p class="verify__details-text">{{ site.data[page.lang]['verification']['though_software_developers'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
+              <img src="/images/icons/cloud-computing.svg"/>
+              <p class="verify__details-subtitle mt-4">{{ site.data[page.lang]['verification']['verify'] }}</p>
+              <p class="verify__details-text">{{ site.data[page.lang]['verification']['different_levels'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
+              <img src="/images/icons/safety.svg"/>
+              <p class="verify__details-subtitle mt-4">{{ site.data[page.lang]['verification']['release'] }}</p>
+              <p class="verify__details-text">{{ site.data[page.lang]['verification']['verification_is_used'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-light-gray section-medium px-2 resources">
+      <p class="info__title2">{{ site.data[page.lang]['verification']['codekeeper_verification'] }}</p>
+      <p class="info__subtitle mx-auto mt-4 mb-5">{{ site.data[page.lang]['verification']['the_level_of'] }}</p>
+    </div>
+    <!-- Third Section -->
+    <div class="pricing">
+      <div class="verify__container mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mt-4 verify__column">
+            <img src="/images/icons/verification-micro.svg"/>
+            <h2 class="verify__title mt-4">{{ site.data[page.lang]['verification']['verification_micro'] }}</h2>
+            <p class="verify__amount"><span>$</span> 199</p>
+            <p class="verify__period">{{ site.data[page.lang]['verification']['per_report'] }}</p>
+            <div class="verify__text-content">
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['escrow_content_inspection'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['development_activity'] }}</p>
+              </div>
+            </div>
+            <a class="button btn-primary-lg mt-4 mb-5 mx-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-micro&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12 mt-4 verify__column">
+            <img src="/images/icons/verification-basic.svg"/>
+            <h2 class="verify__title mt-4">{{ site.data[page.lang]['verification']['verification_basic'] }}</h2>
+            <p class="verify__amount"><span>$</span> 499</p>
+            <p class="verify__period">{{ site.data[page.lang]['verification']['per_report'] }}</p>
+            <div class="verify__text-content">
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
+              </div>
+            </div>
+            <a class="button btn-primary-lg mt-4 mb-5 mx-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-basic&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12 mt-4 verify__column">
+            <img src="/images/icons/verification-advanced.svg"/>
+            <h2 class="verify__title mt-4">{{ site.data[page.lang]['verification']['verification_advanced'] }}</h2>
+            <p class="verify__amount"><span>$</span> 2,495</p>
+            <p class="verify__period">{{ site.data[page.lang]['verification']['per_report'] }}</p>
+            <div class="verify__text-content">
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['software_installation'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
+              </div>
+            </div>
+            <a class="button btn-primary-lg mt-4 mb-5 mx-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-advanced&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-12 mt-4 verify__column">
+            <img src="/images/icons/verification-complete.svg"/>
+            <h2 class="verify__title mt-4">{{ site.data[page.lang]['verification']['verification_complete'] }}</h2>
+            <p class="verify__amount"><span>$</span> 3,995</p>
+            <p class="verify__period">{{ site.data[page.lang]['verification']['per_report'] }}</p>
+            <div class="verify__text-content">
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['software_installation'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                <p class="verify__text">{{ site.data[page.lang]['verification']['testing_of_up'] }}</p>
+              </div>
+            </div>
+            <a class="button btn-primary-lg mt-4 mb-5 mx-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-complete&addons[quantity][0]=1 ">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+        </div>
+        <!-- <div class="verify__devider mx-auto mt-2"></div> -->
+        <div class="resources mt-5">
+          <p class="info__subtitle mx-auto text-center">{{ site.data[page.lang]['verification']['we_are_also'] }} <a href="contact.html" class="text-forest-green">{{ site.data[page.lang]['verification']['send_us_your'] }}</a>, {{ site.data[page.lang]['verification']['and_we_will'] }}</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-7 col-sm-12">
+            <div class="section-divider mt-5 mb-3"></div>
+            <h2 class="verify__main-text2">{{ site.data[page.lang]['verification']['verification_micro2'] }}</h2>
+            <p class="verify__main-subtext2 mt-3">{{ site.data[page.lang]['verification']['our_micro_verification'] }}  </p>
+            <a class="button btn-primary-lg mt-4 mb-5" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-micro&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style" src="/images/verify-micro.svg"/>
+          </div>
+        </div>
+        <div class="row my-5 column-reverse-mobile">
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style" src="/images/verify-basic.svg"/>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="section-divider mt-5 mb-3 ml-auto"></div>
+            <h2 class="verify__main-text">{{ site.data[page.lang]['verification']['verification_basic2'] }}</h2>
+            <p class="verify__main-subtext ml-auto mt-3">{{ site.data[page.lang]['verification']['our_basic_verification'] }} </p>
+            <a class="button btn-primary-lg mt-4 mb-5 ml-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-basic&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-7 col-sm-12">
+            <div class="section-divider mt-5 mb-3"></div>
+            <h2 class="verify__main-text2">{{ site.data[page.lang]['verification']['verification_advanced2'] }}</h2>
+            <p class="verify__main-subtext2 mt-3">{{ site.data[page.lang]['verification']['our_advanced_verification'] }} </p>
+            <a class="button btn-primary-lg mt-4 mb-5" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-advanced&addons[quantity][0]=1">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style" src="/images/verify-advanced.svg"/>
+          </div>
+        </div>
+        <div class="row my-5 column-reverse-mobile">
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style" src="/images/verify-complete.svg"/>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="section-divider mt-5 mb-3 ml-auto"></div>
+            <h2 class="verify__main-text">{{ site.data[page.lang]['verification']['verification_complete2'] }}</h2>
+            <p class="verify__main-subtext ml-auto mt-3">{{ site.data[page.lang]['verification']['our_complete_verification'] }}<br><br>
+              <span>*{{ site.data[page.lang]['verification']['a_feature_can'] }}: {{ site.data[page.lang]['verification']['the_aplication_sends'] }}*</span> </p>
+            <a class="button btn-primary-lg mt-4 mb-5 ml-auto" href="https://codekeeperbilling.chargebee.com/hosted_pages/plans/developer-plan?addons[id][0]=verification-complete&addons[quantity][0]=1 ">
+              {{ site.data[page.lang]['verification']['get_started'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth Section -->
+    <div class="bg-light-gray section-large pricing">
+      <h2 class="offer__main-title">{{ site.data[page.lang]['verification']['see_codekeeper'] }}</h2>
+      <p class="offer__main-subtitle mt-3 mx-auto">{{ site.data[page.lang]['verification']['discover_the_features'] }}</p>
+      <a class="button btn-primary-lg mt-4 mx-auto" href="pricing.html">
+        {{ site.data[page.lang]['verification']['see_our_pricing'] }}
+      </a>
+    </div>
+    <!-- Fifth Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+
+</body>

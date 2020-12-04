@@ -1,0 +1,113 @@
+.service {
+  .header {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      max-width: 450px !important;
+    }
+  
+    &__subtitle {
+      color: $white;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 736px;
+    }
+
+    &__image {
+      margin-top: 80px;
+    }
+  
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+    }
+  
+    &__bg {
+      height: 457px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+
+      @include screen-md {
+        height: auto !important;
+      }
+    }
+
+    &__image-box2 {
+      background: $white;
+      border-radius: 10px;
+      box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.08);
+      height: 252px;
+      width: 423px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include screen-md {
+        width: 100% !important;
+        margin-top: 40px;
+      }
+    }
+
+    &__image2 {
+      img {
+        height: 130px !important;
+        width: 130px !important;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .how {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      max-width: 465px;
+      text-align: right;
+    }
+  
+    &__subtitle {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 438px;
+      text-align: right;
+    }
+  }
+
+  .about {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      max-width: 544px;
+    }
+  
+    &__subtitle {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 438px;
+    }
+  }
+}

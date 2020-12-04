@@ -1,0 +1,570 @@
+<body>
+  <div class="pricing bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="plan__header overflow-hidden"></div>
+    <h1 class="plan__header-title mx-auto">{{ site.data[page.lang]['confirm_plan']['confirm_your_plan'] }}</h1>
+    <!-- First Section -->
+    <div class="pricing-tabs">
+      <div class="container">
+        <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}</a>
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">{{ site.data[page.lang]['pricing']['annual_save'] }}</a>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row my-4">
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 59</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-(2019)" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 149</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box -active">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
+                  <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
+                  <p class="plan__amount"><span>$</span> 299</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>30</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 899</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>50</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row my-4">
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 615</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-yearly-(2019)" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 1,554</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan-(yearly)" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box -active">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
+                  <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
+                  <p class="plan__amount"><span>$</span> 3,120</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>30</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business-plan-(yearly)" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12 px-0 mt-4">
+                <div class="plan__box">
+                  <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
+                  <p class="plan__amount"><span>$</span> 9,380</p>
+                  <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
+                  <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <div class="w-100 px-2">
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['synk_automatically'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>50</b> {{ site.data[page.lang]['pricing']['escrow_agreements'] }}</span></p>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_plans_come'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mt-2 text-dust-gray"></i>
+                      </div>
+                    </div>
+                    <div class="plan__content-tooltip mt-2">
+                      <div class="d-flex mt-2">
+                        <i class="fas fa-check text-forest-green mr-2 mt-1"></i>
+                        <p class="plan__text-tooltip"><span class="tooltip-text">{{ site.data[page.lang]['pricing']['concierge_supported'] }}</span></p>
+                      </div>
+                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_of_our_plans'] }}" data-tooltip-position="top">
+                        <i class="fa fa-info-circle mb-3 text-dust-gray"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-(yearly)" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-white py-5">
+      <div class="container">
+        <h2 class="details__main-title mt-5">{{ site.data[page.lang]['pricing']['features'] }}</h2>
+        <p class="protect__subtext mt-4">{{ site.data[page.lang]['pricing']['no_matter_your'] }}</p>
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/included.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['included'] }}</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['all_accounts_included'] }}:</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text"><span>{{ site.data[page.lang]['pricing']['free'] }}</span> {{ site.data[page.lang]['pricing']['escrow_agreement'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text"><span>{{ site.data[page.lang]['pricing']['unlimited'] }}</span> {{ site.data[page.lang]['pricing']['continuous_deposits'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text"><span>{{ site.data[page.lang]['pricing']['no_lawyer_fees'] }}</span> {{ site.data[page.lang]['pricing']['or_hidden'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['escrow_activation'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/escrow-agreements.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['escrow_agreements'] }}</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['choose_from_these_agreement'] }}:</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['software_licensing'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['software_development'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['software_transaction'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['software_as_a_service'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/secure-vaults.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['secure_vaults'] }}</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['choose_from_these_vault'] }}:</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['source_code_vault'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['data_vault'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['information_vault'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/storage-locations.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['storage_location'] }}</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['need_to_limit'] }}</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['all_regions'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['source_code_data'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['complete_end'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['hipaa_gdpr'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/data-escrow.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['data_escrow'] }}</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['we_offer_different'] }}:</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['snapshot_upload'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['mirror_streaming'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['data_verification'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['amazon'] }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-4 content-center">
+            <div>
+              <img src="/images/features/legal-options.svg"/>
+              <p class="details__title mt-3">{{ site.data[page.lang]['pricing']['legal_options'] }}:</p>
+              <p class="details__text">{{ site.data[page.lang]['pricing']['configure_the_escrow'] }}:</p>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['two_or_three'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['select_from'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['include_verification'] }}</p>
+              </div>
+              <div class="d-flex mt-2">
+                <p class="details__text mr-2">&bull; </p>
+                <p class="details__text">{{ site.data[page.lang]['pricing']['configure_by_concierge'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="container section-medium">
+      <div class="plan__divider"></div>
+      <p class="protect__subtext mt-5">{{ site.data[page.lang]['pricing']['trusted_by'] }}</p>
+      <div class="tech-slideshow">
+        <div class="slideshow-brands">
+          <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
+            <img class="protect__logos" src="/images/logos/axxiome.svg"/>
+            <img class="protect__logos" src="/images/logos/intuit.svg"/>
+            <img class="protect__logos" src="/images/logos/Bayer.svg"/>
+            <img class="protect__logos" src="/images/logos/slate-digital.svg"/>
+            <img class="protect__logos" src="/images/logos/colorado.svg"/>
+            <img class="protect__logos" src="/images/logos/zynga.svg"/>
+            <img class="protect__logos" src="/images/logos/gorenje.svg"/>
+            <img class="protect__logos" src="/images/logos/axxiome.svg"/>
+            <img class="protect__logos" src="/images/logos/intuit.svg"/>
+            <img class="protect__logos" src="/images/logos/Bayer.svg"/>
+            <img class="protect__logos" src="/images/logos/slate-digital.svg"/>
+            <img class="protect__logos" src="/images/logos/colorado.svg"/>
+            <img class="protect__logos" src="/images/logos/zynga.svg"/>
+            <img class="protect__logos" src="/images/logos/gorenje.svg"/>
+            <img class="protect__logos" src="/images/logos/axxiome.svg"/>
+            <img class="protect__logos" src="/images/logos/intuit.svg"/>
+            <img class="protect__logos" src="/images/logos/Bayer.svg"/>
+            <img class="protect__logos" src="/images/logos/slate-digital.svg"/>
+            <img class="protect__logos" src="/images/logos/colorado.svg"/>
+            <img class="protect__logos" src="/images/logos/zynga.svg"/>
+            <img class="protect__logos" src="/images/logos/gorenje.svg"/>
+          </div>
+          <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
+            <img class="protect__logos" src="/images/logos/Pepsico_large.svg"/>
+            <img class="protect__logos" src="/images/logos/general-electric.svg"/>
+            <img class="protect__logos" src="/images/logos/mercedes-benz.svg"/>
+            <img class="protect__logos" src="/images/logos/nestle.svg"/>
+            <img class="protect__logos" src="/images/logos/Airbus.svg"/>
+            <img class="protect__logos" src="/images/logos/the-economist.svg"/>
+            <img class="protect__logos" src="/images/logos/Pepsico_large.svg"/>
+            <img class="protect__logos" src="/images/logos/general-electric.svg"/>
+            <img class="protect__logos" src="/images/logos/mercedes-benz.svg"/>
+            <img class="protect__logos" src="/images/logos/nestle.svg"/>
+            <img class="protect__logos" src="/images/logos/Airbus.svg"/>
+            <img class="protect__logos" src="/images/logos/the-economist.svg"/>
+            <img class="protect__logos" src="/images/logos/Pepsico_large.svg"/>
+            <img class="protect__logos" src="/images/logos/general-electric.svg"/>
+            <img class="protect__logos" src="/images/logos/mercedes-benz.svg"/>
+            <img class="protect__logos" src="/images/logos/nestle.svg"/>
+            <img class="protect__logos" src="/images/logos/Airbus.svg"/>
+            <img class="protect__logos" src="/images/logos/the-economist.svg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Snippets -->
+  {% include snippets.html %}
+  <script>
+  // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+  <!-- Segment -->
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("kS7MfzQKC6q4Z256S4COmij9oHjObrrL");
+    analytics.page();
+    }}();
+  </script>
+  <!-- End Segment -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100639203-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-100639203-1');
+  </script>
+  <!-- End of Google Analytics -->
+</body>
