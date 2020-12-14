@@ -18,11 +18,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 59</p>
+                  <p class="plan__amount" id="developer-monthly"><span>$</span> 79</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -46,7 +46,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-(2019)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="developer-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -54,11 +60,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 149</p>
+                  <p class="plan__amount" id="team-monthly"><span>$</span> 199</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -82,7 +88,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -91,11 +103,11 @@
                 <div class="plan__box -active">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
                   <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
-                  <p class="plan__amount"><span>$</span> 299</p>
+                  <p class="plan__amount" id="business-monthly"><span>$</span> 349</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -119,7 +131,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -127,11 +145,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 899</p>
+                  <p class="plan__amount" id="enterprise-monthly"><span>$</span> 1,299</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_month'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -155,7 +173,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -167,11 +191,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 615</p>
+                  <p class="plan__amount" id="developer-yearly"><span>$</span> 824</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -195,7 +219,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-yearly-(2019)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -203,11 +233,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 1,554</p>
+                  <p class="plan__amount" id="team-yearly"><span>$</span> 2,077</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -231,7 +261,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -240,11 +276,11 @@
                 <div class="plan__box -active">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
                   <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
-                  <p class="plan__amount"><span>$</span> 3,120</p>
+                  <p class="plan__amount" id="business-yearly"><span>$</span> 3,642</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -268,7 +304,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -276,11 +318,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
-                  <p class="plan__amount"><span>$</span> 9,380</p>
+                  <p class="plan__amount" id="enterprise-yearly"><span>$</span> 13,555</p>
                   <p class="plan__period">{{ site.data[page.lang]['pricing']['per_year'] }}</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> {{ site.data[page.lang]['pricing']['source_code_vaults'] }}</span></p>
@@ -304,7 +346,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" href="javascript:void(0)">
+                    {{ site.data[page.lang]['pricing']['get_started'] }}
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                   </a>
                 </div>
@@ -567,4 +615,51 @@
     gtag('config', 'UA-100639203-1');
   </script>
   <!-- End of Google Analytics -->
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.setup-fee').text('€249');
+              $('#developer-monthly').text('€79');
+              $('#team-monthly').text('€199');
+              $('#business-monthly').text('€349');
+              $('#enterprise-monthly').text('€1,299');
+              $('#developer-yearly').text('€824');
+              $('#team-yearly').text('€2,077');
+              $('#business-yearly').text('€3,642');
+              $('#enterprise-yearly').text('€13,555');
+              $('.plan-eu').removeClass('d-none');
+              $('.plan-us').remove();
+              $('.plan-uk').remove();
+            }
+            else if (response.currency === 'GBP') {
+              $('.setup-fee').text('£199');
+              $('#developer-monthly').text('£59');
+              $('#team-monthly').text('£149');
+              $('#business-monthly').text('£249');
+              $('#enterprise-monthly').text('£899');
+              $('#developer-yearly').text('£616');
+              $('#team-yearly').text('£1,555');
+              $('#business-yearly').text('£2,598');
+              $('#enterprise-yearly').text('£9,381');
+              $('.plan-uk').removeClass('d-none');
+              $('.plan-us').remove();
+              $('.plan-eu').remove();
+            }
+            else {
+              $('.plan-us').removeClass('d-none');
+              $('.plan-eu').remove();
+              $('.plan-uk').remove();
+            }
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
 </body>

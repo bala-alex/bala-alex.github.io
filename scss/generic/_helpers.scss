@@ -116,7 +116,7 @@
 }
 
 .fw-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .mt-large {
@@ -124,6 +124,14 @@
   @include screen-md {
     margin-top: 50px;
   }
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.pb-300 {
+  padding-bottom: 300px !important;
 }
 
 .mobile-center {

@@ -58,6 +58,28 @@
       padding-bottom: 60px;
     }
 
+    &__box2 {
+      background: $white;
+      border-radius: 10px;
+      box-shadow: 0px 10px 34px 0px rgba(210, 210, 210, 0.5);
+      min-height: 500px;
+      width: 100%;
+      margin-top: -200px;
+      margin-bottom: 50px;
+      padding: 50px;
+    }
+
+    &__box-small {
+      background: $white;
+      border-radius: 10px;
+      box-shadow: 0px 10px 34px 0px rgba(210, 210, 210, 0.5);
+      min-height: 240px;
+      width: 550px;
+      margin-top: -250px;
+      margin-bottom: 70px;
+      padding: 40px 28px;
+    }
+
     &__title {
       font-size: 28px !important;
       font-family: 'Muli', sans-serif;
@@ -85,7 +107,7 @@
       letter-spacing: 0px;
       line-height: 32px;
       font-family: 'Muli', sans-serif;
-      max-width: 725px;
+      max-width: 740px;
     }
 
     &__bull {
@@ -189,6 +211,86 @@
       letter-spacing: 0px;
       font-family: 'Muli', sans-serif;
       max-width: 500px;
+    }
+  }
+
+  .product {
+    &__title {
+      font-size: 20px !important;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: 300;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      color: $night-black;
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif;
+      text-transform: uppercase;
+    }
+
+    &__subtext {
+      color: $charcoal;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: normal;
+      letter-spacing: 0.3px;
+      font-family: 'Muli', sans-serif;
+      max-width: 240px;
+    }
+
+    &__subtext2 {
+      color: $charcoal;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: normal;
+      letter-spacing: 0.3px;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+    }
+
+    &__amount {
+      color: $forest-green;
+      font-size: 38px;
+      font-weight: normal;
+      letter-spacing: -0.6px;
+      text-align: center;
+      font-family: 'Muli', sans-serif;
+      margin-bottom: 0;
+    }
+
+    &__link {
+      color: #007bff !important;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: normal;
+      letter-spacing: 0.3px;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+    }
+
+    &__devider {
+      width: 176px;
+      height: 1px;
+      background-color: #E8E8E8;
+    }
+
+    &__devider2 {
+      max-width: 380px;
+      width: 100%;
+      height: 1px;
+      background-color: #E8E8E8;
+    }
+
+    &__icon {
+      width: 64px;
+      height: 64px;
     }
   }
 

@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-  <!--Required meta tags-->
+
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
   <title>Codekeeper | Source Code Escrow | Software Escrow | Data Escrow </title>
   <meta name="description" content="An all-in-one solution for software developers and publishers to provide source code escrow">
 
@@ -15,6 +16,11 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+  <script
+    src="https://js.chargebee.com/v2/chargebee.js"
+    data-cb-site="codekeeperbilling"
+    data-cb-ga-enabled="true" >
+  </script>
 </head>
   <body>
   <div class="pricing bg-white">
@@ -75,11 +81,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">DEVELOPER-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 59</p>
+                  <p class="plan__amount" id="developer-monthly"><span>$</span> 79</p>
                   <p class="plan__period">pro Monat</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> Quellcode-Repositories</span></p>
@@ -103,7 +109,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-(2019)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="developer-plan" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -111,11 +123,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">TEAM-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 149</p>
+                  <p class="plan__amount" id="team-monthly"><span>$</span> 199</p>
                   <p class="plan__period">pro Monat</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> Quellcode-Repositories</span></p>
@@ -139,7 +151,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -148,11 +166,11 @@
                 <div class="plan__box -active">
                   <h2 class="plan__title">BUSINESS-TARIF</h2>
                   <p class="plan__banner">AM BELIEBTESTEN</p>
-                  <p class="plan__amount"><span>$</span> 299</p>
+                  <p class="plan__amount" id="business-monthly"><span>$</span> 349</p>
                   <p class="plan__period">pro Monat</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> Quellcode-Repositories</span></p>
@@ -176,7 +194,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -184,11 +208,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">ENTERPRISE-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 899</p>
+                  <p class="plan__amount" id="enterprise-monthly"><span>$</span> 1,299</p>
                   <p class="plan__period">pro Monat</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> Quellcode-Repositories</span></p>
@@ -212,7 +236,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -224,11 +254,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">DEVELOPER-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 615</p>
+                  <p class="plan__amount" id="developer-yearly"><span>$</span> 824</p>
                   <p class="plan__period">pro Jahr</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>2</b> Quellcode-Repositories</span></p>
@@ -252,7 +282,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="developer-plan-yearly-(2019)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -260,11 +296,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">TEAM-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 1,554</p>
+                  <p class="plan__amount" id="team-yearly"><span>$</span> 2,077</p>
                   <p class="plan__period">pro Jahr</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>5</b> Quellcode-Repositories</span></p>
@@ -288,7 +324,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="team-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -297,11 +339,11 @@
                 <div class="plan__box -active">
                   <h2 class="plan__title">BUSINESS-TARIF</h2>
                   <p class="plan__banner">AM BELIEBTESTEN</p>
-                  <p class="plan__amount"><span>$</span> 3,120</p>
+                  <p class="plan__amount" id="business-yearly"><span>$</span> 3,642</p>
                   <p class="plan__period">pro Jahr</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-2"></i><span class="tooltip-text"><b>15</b> Quellcode-Repositories</span></p>
@@ -325,7 +367,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="business-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -333,11 +381,11 @@
               <div class="col-md-3 col-sm-12 px-0 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">ENTERPRISE-TARIF</h2>
-                  <p class="plan__amount"><span>$</span> 9,380</p>
+                  <p class="plan__amount" id="enterprise-yearly"><span>$</span> 13,555</p>
                   <p class="plan__period">pro Jahr</p>
                   <div class="plan__devider mx-auto"></div>
                   <p class="plan__fee-text mt-3 mb-0">Einrichtungsgebühr</p>
-                  <p class="plan__fee-amount"><sup>$</sup> 199</p>
+                  <p class="plan__fee-amount setup-fee"><sup>$</sup> 249</p>
                   <div class="w-100 px-2">
                     <div class="plan__content-tooltip mt-2">
                       <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-forest-green mr-1"></i><span class="tooltip-text"><b>100</b> Quellcode-Repositories</span></p>
@@ -361,7 +409,13 @@
                       </div>
                     </div>
                   </div>
-                  <a class="button btn-secondary-lg mx-auto mt-5" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-(yearly)" href="javascript:void(0)">
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" href="javascript:void(0)">
+                    Erste Schritte
+                  </a>
+                  <a class="button btn-secondary-lg mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
                     Erste Schritte
                   </a>
                 </div>
@@ -630,22 +684,53 @@
       </div>
     </div>
     <!-- Sixth Section -->
-    <div class="bg-white py-5">
-      <div class="container">
-        <div class="guide__bg">
-          <div class="guide__content">
-            <div>
-              <h2 class="guide__title">Getting Started with Source Code Escrow</h2>
-              <p class="guide__subtitle mt-3">Lesen Sie unseren Leitfaden, um zu erfahren, wie die Hinterlegung von Quellcode Ihnen helfen kann, Risiken zu minimieren und sicherzustellen, dass Ihre unternehmenskritischen Systeme unter allen Umständen unbeeinträchtigt bleiben.</p>
-              <a class="button btn-white-xl mt-4" href="start-guide.html">
-                KOSTENLOSEN LEITFADEN HERUNTERLADEN
-              </a>
+    <!DOCTYPE html>
+<div class="bg-light-gray py-5 resources">
+  <div class="container">
+    <div class="guide__bg">
+      <div class="guide__content">
+        <div>
+          <h2 class="guide__title mt-4">: </h2>
+          <p class="guide__subtitle mt-3"></p>
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal">
+            
+          </a>
+        </div>
+        <img class="guide__image2" src="/images/resources/Introduction.svg"/>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row m-0">
+              <div class="col-md-5 col-sm-12 section__modal-form p-0">
+                <p class="section__modal-title mb-4 mt-4">Dieses eBook kostenlos herunterladen!</p>
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "5365877",
+                  formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
+                });
+                </script>
+              </div>
+              <div class="col-md-7 col-sm-12 section__modal-image p-0">
+                <img class="image-style mt-3" src="/images/resources/Introduction.svg"/>
+              </div>
             </div>
-            <img class="guide__image2" src="/images/resources/Introduction.svg"/>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
     <!-- Seventh Section -->
     <div class="bg-white section-large">
       <div class="container">
@@ -666,7 +751,7 @@
             <p class="section__subtitle mt-3">Können Sie eine Kopie des Escrow-Vertrags zur Verfügung stellen?</p>
             <img src="/images/integrations/icon-down.svg"/>
           </li>
-          <li class="a section__text">Klicken Sie <a href="sample-agreement.html" class="text-underline">hier</a> um auf unser kostenloses Muster eines Escrow-Vertrags zuzugreifen!</li>
+          <li class="a section__text">Klicken Sie <a href="sample-agreement.html" class="text-underline">hier</a> um ein kostenloses Muster eines Escrow-Vertrags zu erhalten!</li>
           <li class="q d-flex align-items-center justify-content-between q-border">
             <p class="section__subtitle mt-3">Welche Zahlungsmethoden bieten Sie an?</p>
             <img src="/images/integrations/icon-down.svg"/>
@@ -752,7 +837,7 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
-        <p class="footer__text">Quellcode-Escrow für Entwickler </p>
+        <p class="footer__text"> </p>
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Sprache wählen</option>
@@ -775,9 +860,9 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFOMATERIAL</p>
             <a class="footer__subtext mt-2" href="resources.html">Gesamtes Infomaterial</a>
-            <a class="footer__subtext mt-2" href="software-source-code-escrow.html">Software- und Quell<br>code-Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data-Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS-Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow für Entwickler</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data-Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS-Escrow</a>
             <a class="footer__subtext mt-2" href="information-escrow.html">Information-Escrow</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
           </div>
@@ -787,14 +872,14 @@
             <a class="footer__subtext mt-2" href="security.html">Sicherheit</a>
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text mt-2 mb-0 fw-bold">Rechtliches</p>
+            <p class="footer__text mt-2 mb-0 fw-bold">RECHTLICHES</p>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Datenschutzrichtlinie</a>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">Allgemeine Geschäftsbedingungen</a>
           </div>
         </div>
       </div>
     </div>
-    <p class="footer__text text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co -  </a> - Alle Rechte vorbehalten <script>document.write( new Date().getFullYear() );</script>.</p>
+    <p class="footer__text text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co - Codekeeper, Inc. </a> - Alle Rechte vorbehalten <script>document.write( new Date().getFullYear() );</script>.</p>
   </div>
 </div>
 
@@ -950,9 +1035,7 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  console.log('sss', lang)
-
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
@@ -986,7 +1069,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }
@@ -1056,6 +1139,53 @@ document.addEventListener("click", closeAllSelect);
         img.toggleClass('rotate');
 
       });
+    });
+  </script>
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.setup-fee').text('€249');
+              $('#developer-monthly').text('€79');
+              $('#team-monthly').text('€199');
+              $('#business-monthly').text('€349');
+              $('#enterprise-monthly').text('€1,299');
+              $('#developer-yearly').text('€824');
+              $('#team-yearly').text('€2,077');
+              $('#business-yearly').text('€3,642');
+              $('#enterprise-yearly').text('€13,555');
+              $('.plan-eu').removeClass('d-none');
+              $('.plan-us').remove();
+              $('.plan-uk').remove();
+            }
+            else if (response.currency === 'GBP') {
+              $('.setup-fee').text('£199');
+              $('#developer-monthly').text('£59');
+              $('#team-monthly').text('£149');
+              $('#business-monthly').text('£249');
+              $('#enterprise-monthly').text('£899');
+              $('#developer-yearly').text('£616');
+              $('#team-yearly').text('£1,555');
+              $('#business-yearly').text('£2,598');
+              $('#enterprise-yearly').text('£9,381');
+              $('.plan-uk').removeClass('d-none');
+              $('.plan-us').remove();
+              $('.plan-eu').remove();
+            }
+            else {
+              $('.plan-us').removeClass('d-none');
+              $('.plan-eu').remove();
+              $('.plan-uk').remove();
+            }
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
     });
   </script>
 

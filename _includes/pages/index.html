@@ -309,22 +309,7 @@
       </div>
     </div>
     <!-- Seventh Section -->
-    <div class="bg-light-gray py-5">
-      <div class="container">
-        <div class="guide__bg">
-          <div class="guide__content">
-            <div>
-              <h2 class="guide__title mt-4">{{ site.data[page.lang]['index']['getting_started_with'] }}</h2>
-              <p class="guide__subtitle mt-3">{{ site.data[page.lang]['index']['read_our_guide'] }}</p>
-              <a class="button btn-white-xl mt-4" href="start-guide.html">
-                {{ site.data[page.lang]['index']['download_free_guide'] }}
-              </a>
-            </div>
-            <img class="guide__image2" src="/images/resources/Introduction.svg"/>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include escrow-introduction.html %}
     <!-- Eight Section -->
     <div class="bg-light-gray section-medium">
       <div class="container">

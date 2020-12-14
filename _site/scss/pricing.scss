@@ -56,7 +56,7 @@
       line-height: 32px;
       font-family: 'Muli', sans-serif;
       z-index: 0;
-      text-transform: capitalize;
+      text-transform: none;
       &:hover {
         opacity: 1;
       }
@@ -1042,7 +1042,7 @@
   }
 
   .slideshow-brands {
-    animation: moveSlideshow 50s linear infinite;
+    animation: moveSlideshow 90s linear infinite;
   }
 
   @keyframes moveSlideshow {

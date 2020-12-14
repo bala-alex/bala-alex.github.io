@@ -254,9 +254,7 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  console.log('sss', lang)
-
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
@@ -290,7 +288,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

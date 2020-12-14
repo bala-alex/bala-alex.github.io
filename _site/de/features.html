@@ -266,22 +266,53 @@
       </div>
     </div>
     <!-- Fifth Section -->
-    <div class="bg-light-gray py-5">
-      <div class="container">
-        <div class="guide__bg">
-          <div class="guide__content">
-            <div>
-              <h2 class="guide__title">Getting Started with Source Code Escrow</h2>
-              <p class="guide__subtitle mt-3">Lesen Sie unseren Leitfaden, um zu erfahren, wie die Hinterlegung von Quellcode Ihnen helfen kann, Risiken zu minimieren und sicherzustellen, dass Ihre unternehmenskritischen Systeme unter allen Umständen unbeeinträchtigt bleiben.</p>
-              <a class="button btn-white-xl mt-4" href="start-guide.html">
-                KOSTENLOSEN LEITFADEN HERUNTERLADEN
-              </a>
+    <!DOCTYPE html>
+<div class="bg-light-gray py-5 resources">
+  <div class="container">
+    <div class="guide__bg">
+      <div class="guide__content">
+        <div>
+          <h2 class="guide__title mt-4">: </h2>
+          <p class="guide__subtitle mt-3"></p>
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal">
+            
+          </a>
+        </div>
+        <img class="guide__image2" src="/images/resources/Introduction.svg"/>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row m-0">
+              <div class="col-md-5 col-sm-12 section__modal-form p-0">
+                <p class="section__modal-title mb-4 mt-4">Dieses eBook kostenlos herunterladen!</p>
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "5365877",
+                  formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
+                });
+                </script>
+              </div>
+              <div class="col-md-7 col-sm-12 section__modal-image p-0">
+                <img class="image-style mt-3" src="/images/resources/Introduction.svg"/>
+              </div>
             </div>
-            <img class="guide__image2" src="/images/resources/Introduction.svg"/>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
     <!-- Sixth Section -->
     <!DOCTYPE html>
 <div class="bg-light-gray section-medium">
@@ -347,7 +378,7 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
-        <p class="footer__text">Quellcode-Escrow für Entwickler </p>
+        <p class="footer__text"> </p>
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Sprache wählen</option>
@@ -370,9 +401,9 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFOMATERIAL</p>
             <a class="footer__subtext mt-2" href="resources.html">Gesamtes Infomaterial</a>
-            <a class="footer__subtext mt-2" href="software-source-code-escrow.html">Software- und Quell<br>code-Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data-Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS-Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow für Entwickler</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data-Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS-Escrow</a>
             <a class="footer__subtext mt-2" href="information-escrow.html">Information-Escrow</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
           </div>
@@ -382,14 +413,14 @@
             <a class="footer__subtext mt-2" href="security.html">Sicherheit</a>
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text mt-2 mb-0 fw-bold">Rechtliches</p>
+            <p class="footer__text mt-2 mb-0 fw-bold">RECHTLICHES</p>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Datenschutzrichtlinie</a>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">Allgemeine Geschäftsbedingungen</a>
           </div>
         </div>
       </div>
     </div>
-    <p class="footer__text text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co -  </a> - Alle Rechte vorbehalten <script>document.write( new Date().getFullYear() );</script>.</p>
+    <p class="footer__text text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co - Codekeeper, Inc. </a> - Alle Rechte vorbehalten <script>document.write( new Date().getFullYear() );</script>.</p>
   </div>
 </div>
 
@@ -546,9 +577,7 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  console.log('sss', lang)
-
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
@@ -582,7 +611,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

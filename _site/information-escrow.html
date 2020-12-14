@@ -152,7 +152,7 @@
     <!-- Third Section -->
     <div class="bg-white section-medium px-2">
       <p class="info__title2">How does Codekeeper help?</p>
-      <p class="info__subtitle mx-auto mt-4">As the escrow agent, Codekeeper’s role is to receive, store, and protect escrow deposits within a secure facility accessible only to authorized persons with a valid reason. It is also required to implement extensive security safeguards that ensure the integrity of data transmission into escrow, allow for content encryption, and validate authenticity.<br><br> Codekeeper fits directly into modern development and source code management workflows, which means deposits can be automated while removing the unnecessary burden of making manual deposits and increasing security. Once the deposit is made, Codekeeper also validates the format and completeness of the data file set of each registry escrow deposit.<br><br> Our modular pricing structure responds to the needs of the marketplace with four simple, straightforward plans with no hidden fees. You can get a plan for as low as $59 per month, with a start-up fee of only $199. This includes unlimited continuous deposits, beneficiary confirmations, and more. Even a free escrow agreement is included, which means you save additional dollars on lawyer fees. </p>
+      <p class="info__subtitle mx-auto mt-4">As the escrow agent, Codekeeper’s role is to receive, store, and protect escrow deposits within a secure facility accessible only to authorized persons with a valid reason. It is also required to implement extensive security safeguards that ensure the integrity of data transmission into escrow, allow for content encryption, and validate authenticity.<br><br> Codekeeper fits directly into modern development and source code management workflows, which means deposits can be automated while removing the unnecessary burden of making manual deposits and increasing security. Once the deposit is made, Codekeeper also validates the format and completeness of the data file set of each registry escrow deposit.<br><br> Our modular pricing structure responds to the needs of the marketplace with four simple, straightforward plans with no hidden fees. You can get a plan for as low as $79 per month, with a start-up fee of only $249. This includes unlimited continuous deposits, beneficiary confirmations, and more. Even a free escrow agreement is included, which means you save additional dollars on lawyer fees. </p>
       <a class="button btn-primary-lg mt-4 mx-auto" href="pricing.html">
         SEE OUR PRICING
       </a>
@@ -225,9 +225,9 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">RESOURCES</p>
             <a class="footer__subtext mt-2" href="resources.html">All Resources</a>
-            <a class="footer__subtext mt-2" href="software-source-code-escrow.html">Software and Source<br> Code Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code<br> Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="information-escrow.html">Information Escrow</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
           </div>
@@ -399,9 +399,7 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  console.log('sss', lang)
-
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
@@ -435,7 +433,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }
