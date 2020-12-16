@@ -110,6 +110,16 @@
       max-width: 740px;
     }
 
+    &__subtitle2 {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 787px;
+    }
+
     &__bull {
       color: $dark-green;
       font-size: 16px;
@@ -146,6 +156,11 @@
       max-width: 520px;
     }
 
+    &__benefits-content2 {
+      display: flex;
+      max-width: 532px;
+    }
+
     &__reading-title {
       font-size: 44px !important;
       font-family: 'Muli', sans-serif;
@@ -163,6 +178,17 @@
       line-height: 32px;
       font-family: 'Muli', sans-serif;
       max-width: 706px;
+      text-align: center;
+    }
+
+    &__reading-subtitle2 {
+      color: $night-black;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 900px;
       text-align: center;
     }
 
@@ -291,6 +317,11 @@
     &__icon {
       width: 64px;
       height: 64px;
+    }
+
+    &__image {
+      max-width: 625px;
+      width: 100%;
     }
   }
 
