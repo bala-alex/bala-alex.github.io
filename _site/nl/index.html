@@ -366,10 +366,10 @@
     <div class="guide__bg">
       <div class="guide__content">
         <div>
-          <h2 class="guide__title mt-4">: </h2>
-          <p class="guide__subtitle mt-3"></p>
+          <h2 class="guide__title mt-4">Software Escrow Introductie: Een gids</h2>
+          <p class="guide__subtitle mt-3">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
           <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal">
-            
+            GRATIS GIDS DOWNLOADEN
           </a>
         </div>
         <img class="guide__image2" src="/images/resources/Introduction.svg"/>
@@ -437,7 +437,7 @@
         <img class="security__icon" src="/images/icons/processor.svg"/>
         <p class="security__title2 mt-5">END-TO-END BEVEILIGING</p>
         <div class="section-divider my-3"></div>
-        <p class="security__text">Data is bij ons altijd beveiligd, zowel te verzenden data en opgeslagen data zijn versleuteld met AES256/512.     </p>
+        <p class="security__text">Data is bij ons altijd beveiligd, zowel te verzenden data als opgeslagen data zijn versleuteld met AES256/512. </p>
       </div>
       <div class="col-md-4 col-sm-12 mt-4">
         <img class="security__icon" src="/images/icons/folder-upload.svg"/>
@@ -535,9 +535,9 @@
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Selecteer taal</option>
-            <option value="1" id="english">Engles</option>
+            <option value="1" id="english">Engels</option>
             <option value="2" id="dutch">Nederlands</option>
-            <option value="3" id="german">Duitse</option>
+            <option value="3" id="german">Duits</option>
           </select>
         </div>
       </div>
@@ -554,7 +554,7 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFORMATIE</p>
             <a class="footer__subtext mt-2" href="resources.html">Alle informatie</a>
-            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow voor Ontwikkelaars</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow</a>
             <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
             <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Informatie Escrow</a>
@@ -729,13 +729,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -758,12 +758,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

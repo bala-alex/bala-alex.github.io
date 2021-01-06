@@ -407,13 +407,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -436,12 +436,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

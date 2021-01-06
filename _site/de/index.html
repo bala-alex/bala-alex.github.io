@@ -205,7 +205,7 @@
               <img class="escrow__icon" src="/images/icons/line-chart.svg"/>
               <div>
                 <p class="escrow__subtitle">VERKAUFSFÖRDERUNG</p>
-                <p class="escrow__subtext">Schalten Sie Risiken für Ihre Kunden aus, indem Sie die Hinterlegung des Quellcodes als Teil der Servicelevel- und Lizenzverträge anbieten, und überzeugen Sie sich aus erster Hand, warum dies als "der große Verkaufsförderer" bezeichnet wird.</p>
+                <p class="escrow__subtext">Schalten Sie Risiken für Ihre Kunden aus, indem Sie die Hinterlegung des Quellcodes als Teil der Dienstleistungs- und Lizenzverträge anbieten, und überzeugen Sie sich aus erster Hand, warum dies als "der große Verkaufsförderer" bezeichnet wird.</p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@
             </li>
             <li>
               <h3 class="escrow2__subtitle ml-auto">MANAGEMENT<img class="escrow2__icon" src="/images/icons/monitor-screen.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">Fügen Sie einfach Ihre Lizenznehmer als Nutzungsberechtigter des hinterlegten Quellcodes hinzu und halten Sie sie auf dem aktuellen Stand. Als Lizenzgeber können Sie auch Anbieter hinzufügen und mit nur wenigen Klicks neue Escrows initiieren. Die Bestätigungen sind automatisiert, so dass der damit verbundene Papierkram entfällt.</p>
+              <p class="escrow2__subtext ml-auto mt-3">Fügen Sie einfach Ihre Lizenznehmer als Nutzungsberechtigte des hinterlegten Quellcodes hinzu und halten Sie sie auf dem aktuellen Stand. Als Lizenzgeber können Sie auch Anbieter hinzufügen und mit nur wenigen Klicks neue Escrows initiieren. Die Bestätigungen sind automatisiert, so dass der damit verbundene Papierkram entfällt.</p>
             </li>
           </ul>
         </div>
@@ -366,10 +366,10 @@
     <div class="guide__bg">
       <div class="guide__content">
         <div>
-          <h2 class="guide__title mt-4">: </h2>
-          <p class="guide__subtitle mt-3"></p>
+          <h2 class="guide__title mt-4">Introduction to Software Escrow: A Guide</h2>
+          <p class="guide__subtitle mt-3">Lernen Sie, wie Software-Escrow Ihnen dabei hilft, Risiken zu vermeiden und Ihr Ziel zu erreichen - kritische Systeme sind unter keinen Umständen betroffen.</p>
           <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal">
-            
+            KOSTENLOSEN LEITFADEN HERUNTERLADEN
           </a>
         </div>
         <img class="guide__image2" src="/images/resources/Introduction.svg"/>
@@ -514,7 +514,7 @@
           <h2 class="software__title">Erste Schritte zum Software-Escrow</h2>
           <p class="software__subtitle mt-4">Codekeeper ist die einfache und erschwingliche Lösung für Softwareentwickler und -hersteller, um Zeit und Geld zu sparen und den Umsatz zu steigern. Richten Sie noch heute Ihren ersten Escrow ein, um Ihren Code und Ihre Daten zu schützen. </p>
           <a class="button btn-white-lg my-5" href="pricing.html">
-            Erste Schritte
+            ERSTE SCHRITTE
           </a>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -531,13 +531,13 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
-        <p class="footer__text"> </p>
+        <p class="footer__text">Source Code Escrow for Developers </p>
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Sprache wählen</option>
             <option value="1" id="english">Englisch</option>
             <option value="2" id="dutch">Niederländisch</option>
-            <option value="3" id="german">Deutsche</option>
+            <option value="3" id="german">Deutsch</option>
           </select>
         </div>
       </div>
@@ -554,9 +554,9 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFOMATERIAL</p>
             <a class="footer__subtext mt-2" href="resources.html">Gesamtes Infomaterial</a>
-            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow für Entwickler</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow</a>
             <a class="footer__subtext mt-2" href="data-escrow.html">Data-Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS-Escrow</a>
+            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Information-Escrow</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
           </div>
@@ -729,13 +729,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -758,12 +758,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

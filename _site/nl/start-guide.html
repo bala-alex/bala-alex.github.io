@@ -59,7 +59,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-              <h1 class="header__title mb-5 mt-5 mr-1">: </h1>
+              <h1 class="header__title mb-5 mt-5 mr-1">Software Escrow Introductie: Een Gids</h1>
               <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
               <script>
                 hbspt.forms.create({
@@ -80,7 +80,7 @@
       <div class="container">
         <div class="section-divider my-3 mx-auto"></div>
         <h2 class="discover__title mx-auto mb-5"></h2>
-        <p class="discover__subtitle mx-auto mb-5">Bekijk onze gids en ontdek hoe Codekeeper u kan helpen bij het beschermen van uw source code en databases met software escrow.</p>
+        <p class="discover__subtitle mx-auto mb-5">Bekijk onze gids en ontdek hoe Codekeeper u helpt uw broncode en databases te beschermen met software escrow.</p>
         <div class="row mt-3">
           <div class="col-md-4 col-sm-12 mt-4">
             <img class="discover__icon" src="/images/features/icons/terms.svg"/>
@@ -90,15 +90,15 @@
           </div>
           <div class="col-md-4 col-sm-12 mt-4">
             <img class="discover__icon" src="/images/features/icons/support.svg"/>
-            <p class="discover__title2 mt-5">UITLEG BIJ DE OVEREENKOMST</p>
+            <p class="discover__title2 mt-5">UITLEG VAN TERMEN IN DE OVEREENKOMST</p>
             <div class="section-divider my-3"></div>
-            <p class="discover__text">Een beschrijving van de verschillende aspecten van een escrow overeenkomst waar u rekening mee moet houden als u een escrow op wilt zetten.</p>
+            <p class="discover__text">Een beschrijving van de verschillende aspecten van een escrowovereenkomst waar u rekening mee moet houden als u een escrow op wilt zetten.</p>
           </div>
           <div class="col-md-4 col-sm-12 mt-4">
             <img class="discover__icon" src="/images/features/icons/bill.svg"/>
             <p class="discover__title2 mt-5">PROCESOVERZICHT</p>
             <div class="section-divider my-3"></div>
-            <p class="discover__text">Een flow-chart die laat zien welke stappen er komen kijken bij het opstellen van een source code escrow, inclusief een uitleg van iedere stap. </p>
+            <p class="discover__text">Een flowchart die laat zien welke stappen u moet zetten bij het opstellen van een source code escrow, inclusief een uitleg van iedere stap. </p>
           </div>
         </div>
         <a class="button btn-primary-xl mt-5 mx-auto" href="start-guide.html">
@@ -113,7 +113,7 @@
           <div class="row">
             <div class="col-md-7 col-sm-12 mt-4">
               <h2 class="schedule__title mt-4">Codekeeper in de praktijk</h2>
-              <p class="schedule__subtitle mt-4">Ontdek hoe Codekeeper softwareontwikkelaars en -uitgevers kan helpen om aan de software escrow behoeften van hun klanten te voldoen als onderdeel van hun dienstverlening en licentieovereenkomst.</p>
+              <p class="schedule__subtitle mt-4">Ontdek hoe Codekeeper ontwikkelaars en aanbieders van software kan helpen om aan de software escrow behoeften van hun klanten te voldoen als onderdeel van licenties en overeenkomsten inzake niveau van dienstverlening.</p>
               <a data-toggle="modal" data-target="#meetingModal" class="button btn-primary-xl mt-5 mb-4 outline-none">
                 BOEK EEN DEMO
               </a>
@@ -148,9 +148,9 @@
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Selecteer taal</option>
-            <option value="1" id="english">Engles</option>
+            <option value="1" id="english">Engels</option>
             <option value="2" id="dutch">Nederlands</option>
-            <option value="3" id="german">Duitse</option>
+            <option value="3" id="german">Duits</option>
           </select>
         </div>
       </div>
@@ -167,7 +167,7 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFORMATIE</p>
             <a class="footer__subtext mt-2" href="resources.html">Alle informatie</a>
-            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow voor Ontwikkelaars</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow</a>
             <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
             <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Informatie Escrow</a>
@@ -342,13 +342,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -371,12 +371,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

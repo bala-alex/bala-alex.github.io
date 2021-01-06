@@ -72,7 +72,7 @@
     </div>
     <!-- Second Section -->
     <div class="bg-light-gray section-large mt-200 pb-300">
-      <div class="container">
+      <div class="container pb-5">
         <div class="info__box-small mx-auto">
           <div>
             <p class="info__data-title">Definition</p>
@@ -111,7 +111,7 @@
             <div class="section-divider my-3 ml-auto"></div>
             <h2 class="verification__title">Source code escrow for agile companies</h2>
             <p class="verification__subtitle ml-auto mt-3">Discover how Codekeeper’s modern escrow solutions help leading global companies protect the source code they need to operate critical business functions. </p>
-            <a class="button btn-primary-lg ml-auto my-4" href="source-code-escrow.html">
+            <a class="button btn-primary-lg ml-auto my-4" href="features.html">
               LEARN MORE
             </a>
           </div>
@@ -122,7 +122,7 @@
     <div class="bg-white section-medium px-2">
       <p class="info__title2">How does Codekeeper help?</p>
       <p class="info__subtitle mx-auto mt-4">As a trusted escrow agent, Codekeeper’s role is to receive, store, and protect mission-critical software assets. With cost-effective pricing, you can securely store your escrow deposits in our world-class data centers for as low as <strong>$79 per month</strong>, with a start-up fee of only $249.<br><br>All plans come with <strong>cutting-edge automation</strong> technology, <strong>advanced security</strong> features, rich <strong>integrations</strong>, unlimited <strong>continuous deposits</strong>, free escrow <strong>agreements</strong> and <strong>confirmations</strong>, and more. </p>
-      <a class="button btn-primary-lg mt-5 mx-auto" href="pricing.html">
+      <a class="button btn-primary-lg my-5 mx-auto" href="pricing.html">
         SEE OUR PRICING
       </a>
     </div>
@@ -407,13 +407,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -436,12 +436,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

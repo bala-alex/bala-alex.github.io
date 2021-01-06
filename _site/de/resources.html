@@ -126,7 +126,7 @@
             <div>
               <p class="section__text mb-1 mt-5">eBook</p>
               <h3 class="section__title">The Anatomy of a Software Escrow Agreement</h3>
-              <p class="section__subtitle mt-4">Laden Sie diesen Codekeeper-Leitfaden zur Einrichtung eines erfolgreichen Software Escrow-Vertrages herunter. Erfahren Sie, wie Sie Ihren Vertrag aushandeln können, einschließlich der Festlegung der Hinterlegungsmaterialien und Verifizierungsanforderungen, der Formulierung der Rechte und Pflichten jeder Vertragspartei und der Festlegung der Freigabebedingungen. </p>
+              <p class="section__subtitle mt-4">Laden Sie diesen Codekeeper-Leitfaden zur Einrichtung eines erfolgreichen Software-Escrow-Vertrages herunter. Erfahren Sie, wie Sie Ihren Vertrag aushandeln können, einschließlich der Festlegung der Hinterlegungsmaterialien und Verifizierungsanforderungen, der Formulierung der Rechte und Pflichten jeder Vertragspartei und der Festlegung der Freigabebedingungen. </p>
               <a class="button btn-primary-xl mt-4 mb-5" data-toggle="modal" data-target="#exampleModal2">
                 eBOOK HERUNTERLADEN
               </a>
@@ -239,13 +239,13 @@
     <div class="bg-faded-gray section-large">
       <div class="container">
         <h3 class="discover__title">Mehr Infomaterial entdecken</h3>
-        <p class="discover__subtitle mt-4 mx-auto">Sehen Sie sich unsere Quick Guides zu einigen der häufigsten Anwendungsfälle von Software Escrow an. Erfahren Sie mehr über die verschiedenen Arten von Escrow und wie Ihr Unternehmen davon profitieren kann. </p>
+        <p class="discover__subtitle mt-4 mx-auto">Sehen Sie sich unsere Quick Guides zu einigen der häufigsten Anwendungsfälle von Software-Escrow an. Erfahren Sie mehr über die verschiedenen Escrow-Arten und wie Ihr Unternehmen davon profitieren kann. </p>
         <div class="discover__content mx-auto mt-5">
           <div class="row">
             <div class="col-md-6 col-sm-12 content-center mt-4">
               <a class="discover__box" href="what-is-source-code-escrow.html">
                 <img class="discover__box-image" src="/images/resources/source-code.svg"/>
-                <p class="discover__box-text"> </p>
+                <p class="discover__box-text">Quellcode-Escrow </p>
               </a>
             </div>
             <div class="col-md-6 col-sm-12 content-center mt-4">
@@ -259,7 +259,7 @@
             <div class="col-md-6 col-sm-12 content-center mt-4">
               <a class="discover__box" href="what-is-saas-escrow.html">
                 <img class="discover__box-image" src="/images/resources/saas-escrow.svg"/>
-                <p class="discover__box-text">SaaS-Escrow </p>
+                <p class="discover__box-text">SaaS Escrow </p>
               </a>
             </div>
             <div class="col-md-6 col-sm-12 content-center mt-4">
@@ -330,13 +330,13 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
-        <p class="footer__text"> </p>
+        <p class="footer__text">Source Code Escrow for Developers </p>
         <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
           <select>
             <option value="0">Sprache wählen</option>
             <option value="1" id="english">Englisch</option>
             <option value="2" id="dutch">Niederländisch</option>
-            <option value="3" id="german">Deutsche</option>
+            <option value="3" id="german">Deutsch</option>
           </select>
         </div>
       </div>
@@ -353,9 +353,9 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">INFOMATERIAL</p>
             <a class="footer__subtext mt-2" href="resources.html">Gesamtes Infomaterial</a>
-            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow für Entwickler</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow</a>
             <a class="footer__subtext mt-2" href="data-escrow.html">Data-Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS-Escrow</a>
+            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Information-Escrow</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
           </div>
@@ -528,13 +528,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -557,12 +557,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

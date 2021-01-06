@@ -156,12 +156,12 @@
     </div>
     <!-- Second Section -->
     <div class="bg-white security">
-      <div class="container py-5">
+      <div class="container section-medium">
         <div class="row">
           <div class="col-md-7 col-sm-12">
-            <div class="section-divider my-3"></div>
+            <div class="section-divider my-4"></div>
             <h2 class="infrastructure__title2">Data SnapShot</h2>
-            <p class="infrastructure__subtitle mt-2">Your data is always changing, and in case of unforeseen corruption or loss, all of it could become unusable or irreversibly lost. With Codekeeper’s SnapShot Upload, you can ensure your data is safe, quickly accessible, and always available. Take a data ‘snapshot’ at a moment in time and upload it to our secure data centers at predefined intervals.</p>
+            <p class="infrastructure__subtitle mt-4">Your data is always changing, and in case of unforeseen corruption or loss, all of it could become unusable or irreversibly lost. With Codekeeper’s SnapShot Upload, you can ensure your data is safe, quickly accessible, and always available. Take a data ‘snapshot’ at a moment in time and upload it to our secure data centers at predefined intervals.</p>
             <a class="button btn-primary-lg my-4" href="pricing.html">
               GET STARTED
             </a>
@@ -180,9 +180,9 @@
             <img class="image-style" src="/images/security/mitigation.svg"/>
           </div>
           <div class="col-md-7 col-sm-12">
-            <div class="section-divider my-3 ml-auto"></div>
+            <div class="section-divider my-4 ml-auto"></div>
             <h2 class="mitigation__title2 ml-auto">Database Mirroring</h2>
-            <p class="mitigation__subtitle2 mt-2 ml-auto">Database mirroring maintains two copies of a single database that reside on different instances of the (SQL) Server Database Engine. We connect to your database instances and create mirrors that sync at set intervals, helping you ensure you’re able to quickly bring the standby copy of your database online in case of an emergency, without any data loss. </p>
+            <p class="mitigation__subtitle2 mt-4 ml-auto">Database mirroring maintains two copies of a single database that reside on different instances of the (SQL) Server Database Engine. We connect to your database instances and create mirrors that sync at set intervals, helping you ensure you’re able to quickly bring the standby copy of your database online in case of an emergency, without any data loss. </p>
             <a class="button btn-primary-lg ml-auto my-4" href="pricing.html">
               GET STARTED
             </a>
@@ -192,12 +192,12 @@
     </div>
     <!-- Forth Section -->
     <div class="bg-white security pb-300">
-      <div class="container py-5">
+      <div class="container section-medium">
         <div class="row">
           <div class="col-md-7 col-sm-12">
-            <div class="section-divider my-3"></div>
+            <div class="section-divider my-4"></div>
             <h2 class="infrastructure__title2">Repository Connection</h2>
-            <p class="infrastructure__subtitle mt-2">If you store your data with AWS S3, Bitbucket, Azure Blob, GitLab, SourceForge, or a lesser-known host, automate data escrow deposits directly from your preferred repository to Codekeeper’s world-class data centers. Your data escrow vault seamlessly and securely connects to your object storage buckets and takes care-free deposits at desired intervals.</p>
+            <p class="infrastructure__subtitle mt-4">If you store your data with AWS S3, Bitbucket, Azure Blob, GitLab, SourceForge, or a lesser-known host, automate data escrow deposits directly from your preferred repository to Codekeeper’s world-class data centers. Your data escrow vault seamlessly and securely connects to your object storage buckets and takes care-free deposits at desired intervals.</p>
             <a class="button btn-primary-lg my-4" href="pricing.html">
               GET STARTED
             </a>
@@ -228,11 +228,11 @@
               <img class="image-style" src="/images/cards.svg"/>
             </div>
             <div class="col-md-7 col-sm-12">
-              <div class="section-divider mt-5 mb-3 ml-auto"></div>
+              <div class="section-divider mt-5 mb-4 ml-auto"></div>
               <h2 class="verification__title3">Secure your data<br> — and peace of mind</h2>
-              <p class="verification__subtitle3 ml-auto mt-3">Add an additional layer of protection by ensuring you have everything you need for a successful recovery. Validate the completeness and usability of each escrow deposit, and once you execute your recovery plans, test whether your application data was properly restored. </p>
-              <div class="d-flex justify-content-end">
-                <a class="verification__link" href="security.html">LEARN MORE <i class="fas fa-arrow-right ml-2"></i></a>
+              <p class="verification__subtitle3 ml-auto mt-4">Add an additional layer of protection by ensuring you have everything you need for a successful recovery. Validate the completeness and usability of each escrow deposit, and once you execute your recovery plans, test whether your application data was properly restored. </p>
+              <div class="d-flex justify-content-end mt-5">
+                <a class="verification__link" href="verification.html">LEARN MORE <i class="fas fa-arrow-right ml-2"></i></a>
               </div>
             </div>
           </div>
@@ -311,10 +311,10 @@
       </div>
     </div>
     <!-- Sixth Section -->
-    <div class="pb-5 security section-medium mb-5">
+    <div class="security section-large mb-5">
       <div class="section-divider mt-5 mx-auto"></div>
       <h3 class="info__reading-title mx-auto">Best-in-class security</h3>
-      <p class="info__reading-subtitle2 mx-auto mt-4">We’ve built the strictest security standards into the core of our product, and we conduct comprehensive audits of our applications, systems, and networks to ensure your data is always protected.</p>
+      <p class="info__reading-subtitle2 mx-auto mt-4 pb-5">We’ve built the strictest security standards into the core of our product, and we conduct comprehensive audits of our applications, systems, and networks to ensure your data is always protected.</p>
       <div class="security2__container mx-auto mt-5">
         <div class="row">
           <div class="col-md-4 col-sm-12 mt-4">
@@ -589,13 +589,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -618,12 +618,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }

@@ -162,7 +162,7 @@
     <div class="pricing bg-light-gray">
       <div class="section-large offer">
         <h2 class="offer__main-title mt-5">Industry-leading features at the best price</h2>
-        <p class="offer__main-subtitle mt-4 mx-auto mw-100">You don’t need to break the bank to protect your systems with unmatched security, scalability, and availability.<br> Let us know your current requirements, and we’ll send you a tailored offer.</p>
+        <p class="offer__main-subtitle mt-4 mx-auto mw-100">You don’t need to break the bank to protect your assets with unmatched security, scalability, and availability.<br> Let us know your current requirements, and we’ll send you a tailored offer.</p>
         <button class="button btn-primary-lg mx-auto mt-4 btn-offer-style open" id="openButton">
           Get Offer
         </button>
@@ -441,13 +441,13 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engles') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
     window.location = '/index.html';
   }
   else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duitse') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
     window.location = '/de/index.html';
   }
 
@@ -470,12 +470,12 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duitse') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engles') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
           $element.remove();
         }
       }
