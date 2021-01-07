@@ -142,6 +142,7 @@
             <option value="1" id="english">English</option>
             <option value="2" id="dutch">Dutch</option>
             <option value="3" id="german">German</option>
+            <option value="4" id="spanish">Spanish</option>
           </select>
         </div>
       </div>
@@ -332,14 +333,17 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') ) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés')) {
     window.location = '/index.html';
   }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch')) {
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsche')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán')) {
     window.location = '/de/index.html';
+  }
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española')) {
+    window.location = '/es/index.html';
   }
 
 }
@@ -356,17 +360,22 @@ document.addEventListener("click", closeAllSelect);
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch')) {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés')) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsche')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/es') {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés')) {
           $element.remove();
         }
       }
