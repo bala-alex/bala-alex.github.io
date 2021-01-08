@@ -191,7 +191,7 @@
               <img class="escrow__icon" src="/images/icons/usd-circle.svg"/>
               <div>
                 <p class="escrow__subtitle">BRANCHENFÜHRENDE PREISE - KEINE ANWALTSKOSTEN</p>
-                <p class="escrow__subtext">Dank unserer leistungsstarken Automatisierungstechnologie und unseres einzigartigen Betriebsmodells sind wir in der Lage, Ihnen einen hervorragenden Service zum besten Preis auf dem Markt anzubieten. <a class="text-underline" href="pricing.html">Buchen Sie einen Tarif für nur 79 USD/Monat.</a></p>
+                <p class="escrow__subtext">Dank unserer leistungsstarken Automatisierungstechnologie und unseres einzigartigen Betriebsmodells sind wir in der Lage, Ihnen einen hervorragenden Service zum besten Preis auf dem Markt anzubieten. <a class="text-underline" href="pricing.html">Buchen Sie einen Tarif für nur <span id="developer-monthly">$79</span> pro Monat.</a></p>
               </div>
             </div>
             <div class="d-flex mt-5">
@@ -798,6 +798,33 @@ document.addEventListener("click", closeAllSelect);
                 $info.show();
             }
         });
+    });
+  </script>
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('#developer-monthly').text('€79');
+            }
+            else if (response.currency === 'GBP') {
+              $('#developer-monthly').text('£59');
+            }
+            else if (response.currency === 'INR') {
+              $('#developer-monthly').text('₹5,000');
+            }
+            else if (response.currency === 'AUD') {
+              $('#developer-monthly').text('A$99');
+            }
+
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
     });
   </script>
 </body>

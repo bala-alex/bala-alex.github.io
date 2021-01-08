@@ -269,7 +269,7 @@
             <div>
               <img src="/images/features/legal-options.svg"/>
               <p class="details__title mt-3">Scalability</p>
-              <p class="details__text">Scale your escrow repositories up and down to meet fluctuating demands. Protect your data for only $79/month, with a start-up fee of $249, including unlimited deposits and more.</p>
+              <p class="details__text">Scale your escrow repositories up and down to meet fluctuating demands. Protect your data for only <span id="developer-monthly">$79</span>/month, with a start-up fee of <span class="setup-fee">$249</span>, including unlimited deposits and more.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 mt-4 content-center">
@@ -655,5 +655,38 @@ document.addEventListener("click", closeAllSelect);
         //  $("div").toggle(300);
     });
   </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.setup-fee').text('€249');
+              $('#developer-monthly').text('€79');
+            }
+            else if (response.currency === 'GBP') {
+              $('.setup-fee').text('£199');
+              $('#developer-monthly').text('£59');
+            }
+            else if (response.currency === 'INR') {
+              $('.setup-fee').text('₹15,000');
+              $('#developer-monthly').text('₹5,000');
+            }
+            else if (response.currency === 'AUD') {
+              $('.setup-fee').text('A$299');
+              $('#developer-monthly').text('A$99');
+            }
+
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
+  
 </body>
 </html>

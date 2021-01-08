@@ -12209,7 +12209,11 @@ a.text-dark:hover, a.text-dark:focus {
   background: #00887f;
   border-radius: 25px;
   height: 50px;
-  width: 257px;
+  min-width: 257px;
+  padding: 0 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   font-size: 16px; }

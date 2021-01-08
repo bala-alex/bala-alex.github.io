@@ -639,7 +639,7 @@
               </div>
               <div class="d-flex mt-2">
                 <p class="details__text mr-2">&bull; </p>
-                <p class="details__text">Conexiones de depósito directo con Amazon S3 (29,00 $/mes)</p>
+                <p class="details__text">Conexiones de depósito directo con Amazon S3 (<span class="amazon-deposit">$29</span>/mes)</p>
               </div>
             </div>
           </div>
@@ -836,7 +836,7 @@
               <p class="section__subtitle mt-3">¿Ofrecen servicios de depósito de datos?</p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text">Ofrecemos diferentes configuraciones de custodia de datos. La carga de copias instantáneas de volumen está incluida en nuestra caja de depósito de datos, y puede solicitar presupuesto para la transmisión reflejada («mirror streaming»). También ofrecemos verificación de datos y conexiones de depósito directo con Amazon S3 por 29,00 $ al mes.</li>
+            <li class="a section__text">Ofrecemos diferentes configuraciones de custodia de datos. La carga de copias instantáneas de volumen está incluida en nuestra caja de depósito de datos, y puede solicitar presupuesto para la transmisión reflejada («mirror streaming»). También ofrecemos verificación de datos y conexiones de depósito directo con Amazon S3 por <span class="amazon-deposit">$29</span> al mes.</li>
             <li class="q d-flex align-items-center justify-content-between q-border">
               <p class="section__subtitle mt-3">¿Qué tipos de acuerdos de custodia ofrecen y en qué se diferencian?</p>
               <img src="/images/integrations/icon-down.svg"/>
@@ -1205,6 +1205,7 @@ document.addEventListener("click", closeAllSelect);
           function success(response) {
             if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
               $('.setup-fee').text('€249');
+              $('.amazon-deposit').text('€29');
               $('#developer-monthly').text('€79');
               $('#team-monthly').text('€199');
               $('#business-monthly').text('€349');
@@ -1221,6 +1222,7 @@ document.addEventListener("click", closeAllSelect);
             }
             else if (response.currency === 'GBP') {
               $('.setup-fee').text('£199');
+              $('.amazon-deposit').text('£29');
               $('#developer-monthly').text('£59');
               $('#team-monthly').text('£149');
               $('#business-monthly').text('£249');
@@ -1237,6 +1239,7 @@ document.addEventListener("click", closeAllSelect);
             }
             else if (response.currency === 'INR') {
               $('.setup-fee').text('₹15,000');
+              $('.amazon-deposit').text('₹1,995');
               $('#developer-monthly').text('₹5,000');
               $('#team-monthly').text('₹12,500');
               $('#business-monthly').text('₹20,000');
@@ -1253,6 +1256,7 @@ document.addEventListener("click", closeAllSelect);
             }
             else if (response.currency === 'AUD') {
               $('.setup-fee').text('A$299');
+              $('.amazon-deposit').text('A$29');
               $('#developer-monthly').text('A$99');
               $('#team-monthly').text('A$250');
               $('#business-monthly').text('A$450');

@@ -26,7 +26,7 @@
           <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
             <img class="product__icon" src="/images/icons/verification-data.svg"/>
             <p class="product__text mt-5">{{ site.data[page.lang]['saas_escrow_product']['saas_continuity'] }}</p>
-            <p class="product__amount"><sup>$</sup>299/mo</p>
+            <p class="product__amount saas-continuity">$299/mo</p>
             <div class="product__devider my-3 mx-auto"></div>
             <div class="d-flex mt-3">
               <i class="fas fa-check text-forest-green m-2"></i>
@@ -51,7 +51,7 @@
           <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
             <img class="product__icon" src="/images/icons/verification-basic.svg"/>
             <p class="product__text mt-5">{{ site.data[page.lang]['saas_escrow_product']['saas_recovery'] }}</p>
-            <p class="product__amount"><sup>$</sup>599/mo</p>
+            <p class="product__amount saas-recovery">$599/mo</p>
             <div class="product__devider my-3 mx-auto"></div>
             <div class="d-flex mt-3">
               <i class="fas fa-check text-forest-green m-2"></i>
@@ -76,7 +76,7 @@
           <div class="col-md-4 col-sm-12 mt-4 d-flex flex-column align-items-center">
             <img class="product__icon" src="/images/icons/verification-advanced.svg"/>
             <p class="product__text mt-5">{{ site.data[page.lang]['saas_escrow_product']['saas_replication'] }}</p>
-            <p class="product__amount"><sup>$</sup>899/mo</p>
+            <p class="product__amount saas-replication">$899/mo</p>
             <div class="product__devider my-3 mx-auto"></div>
             <div class="d-flex mt-3">
               <i class="fas fa-check text-forest-green m-2"></i>
@@ -322,6 +322,42 @@
         }
         $('#offer').toggle(300);
         //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.saas-continuity').text('€299/mo');
+              $('.saas-recovery').text('€599/mo');
+              $('.saas-replication').text('€899/mo');
+            }
+            else if (response.currency === 'GBP') {
+              $('.saas-continuity').text('£225/mo');
+              $('.saas-recovery').text('£449/mo');
+              $('.saas-replication').text('£699/mo');
+            }
+            else if (response.currency === 'INR') {
+              $('.saas-continuity').text('₹19,995/mo');
+              $('.saas-recovery').text('₹39,995/mo');
+              $('.saas-replication').text('₹59,995/mo');
+            }
+            else if (response.currency === 'AUD') {
+              $('.saas-continuity').text('A$349/mo');
+              $('.saas-recovery').text('A$699/mo');
+              $('.saas-replication').text('A$995/mo');
+            }
+
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
     });
   </script>
 </body>

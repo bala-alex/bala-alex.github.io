@@ -185,7 +185,7 @@
     <!-- Fourth Section -->
     <div class="bg-white section-large px-2">
       <p class="info__title2">Hoe helpt Codekeeper u?</p>
-      <p class="info__subtitle mx-auto mt-4">Als betrouwbare escrow agent zorgt Codekeeper ervoor dat bedrijfskritische activa worden ontvangen, opgeslagen en beschermd. Tegen een kosteneffectieve prijsstelling kunt u uw escrow deponeringen veilig opslaan in onze datacenters van topkwaliteit voor slechts <strong>$79 per maand</strong> met slechts $249 opstartkosten.<br><br>Alle plannen zijn inclusief <strong>geavanceerde automatiserings</strong>technologie, <strong>geavanceerde beveiligings</strong>mogelijkheden, waardevolle <strong>integraties</strong>, onbeperkt <strong>doorlopend deponeren</strong>, gratis escrow<strong>overeenkomsten</strong> en <strong>bevestigingen</strong>, en meer. </p>
+      <p class="info__subtitle mx-auto mt-4">Als betrouwbare escrow agent zorgt Codekeeper ervoor dat bedrijfskritische activa worden ontvangen, opgeslagen en beschermd. Tegen een kosteneffectieve prijsstelling kunt u uw escrow deponeringen veilig opslaan in onze datacenters van topkwaliteit voor slechts <strong><span id="developer-monthly">$79</span> per maand</strong> met slechts <span class="setup-fee">$249</span> opstartkosten.<br><br>Alle plannen zijn inclusief <strong>geavanceerde automatiserings</strong>technologie, <strong>geavanceerde beveiligings</strong>mogelijkheden, waardevolle <strong>integraties</strong>, onbeperkt <strong>doorlopend deponeren</strong>, gratis escrow<strong>overeenkomsten</strong> en <strong>bevestigingen</strong>, en meer. </p>
       <a class="button btn-primary-lg mt-5 mx-auto" href="pricing.html">
         BEKIJK ONZE TARIEFSTRUCTUUR
       </a>
@@ -505,6 +505,38 @@ document.addEventListener("click", closeAllSelect);
         }
         $('#offer').toggle(300);
         //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.setup-fee').text('€249');
+              $('#developer-monthly').text('€79');
+            }
+            else if (response.currency === 'GBP') {
+              $('.setup-fee').text('£199');
+              $('#developer-monthly').text('£59');
+            }
+            else if (response.currency === 'INR') {
+              $('.setup-fee').text('₹15,000');
+              $('#developer-monthly').text('₹5,000');
+            }
+            else if (response.currency === 'AUD') {
+              $('.setup-fee').text('A$299');
+              $('#developer-monthly').text('A$99');
+            }
+
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
     });
   </script>
 </body>

@@ -68,7 +68,7 @@
     <!-- First Section -->
     <div class="container">
       <p class="info__title mt-5">Was ist Data-Escrow?</p>
-      <p class="info__subtitle2 mx-auto mt-4 mb-5">Ohne die nötigen Daten ist es äußerst schwierig, eine Softwareanwendung in einen benutzbaren und nützlichen Zustand zu bringen und diesen Zustand zu bewahren. Data-Escrow ist ein effizienter Weg, um sicherzustellen, dass Daten, die von einem unternehmenskritischen Softwareprogramm geschaffen und verwaltet werden,<strong>nicht Gefahr laufen, verloren zu gehen oder unzugänglich zu sein.</strong><br><br>Bei Anwendung des Data-Escrow stellt der Endnutzer des Programms (Lizenznehmer) sicher, dass stets ein Zugang zu den aktuellsten Datensätzen vorhanden ist, die notwendig sind, um <strong>kritische Funktionen aufrechtzuerhalten</strong> und <strong>eine Geschäftskontinuität zu gewährleisten.</strong> Die Daten im Escrow können nur an den Lizenznehmer <strong>freigegeben werden</strong>, wenn vordefinierte (und überprüfte) Bedingungen vorliegen, wie zum Beispiel bei einer Naturkatastrophe oder wenn die Lizenzgeber die Geschäftstätigkeit einstellen.</p>
+      <p class="info__subtitle2 mx-auto mt-4 mb-5">Ohne die nötigen Daten ist es äußerst schwierig, eine Softwareanwendung in einen benutzbaren und nützlichen Zustand zu bringen und diesen Zustand zu bewahren. Data-Escrow ist ein effizienter Weg, um sicherzustellen, dass Daten, die von einem unternehmenskritischen Softwareprogramm geschaffen und verwaltet werden, <strong>nicht Gefahr laufen, verloren zu gehen oder unzugänglich zu sein.</strong><br><br>Bei Anwendung des Data-Escrow stellt der Endnutzer des Programms (Lizenznehmer) sicher, dass stets ein Zugang zu den aktuellsten Datensätzen vorhanden ist, die notwendig sind, um <strong>kritische Funktionen aufrechtzuerhalten</strong> und <strong>eine Geschäftskontinuität zu gewährleisten.</strong> Die Daten im Escrow können nur an den Lizenznehmer <strong>freigegeben werden</strong>, wenn vordefinierte (und überprüfte) Bedingungen vorliegen, wie zum Beispiel bei einer Naturkatastrophe oder wenn die Lizenzgeber die Geschäftstätigkeit einstellen.</p>
     </div>
     <!-- Second Section -->
     <div class="bg-light-gray section-large mt-200 pb-300">
@@ -91,7 +91,7 @@
             </div>
             <h3 class="info__data-title mt-4">Was kann zu Datenverlust führen?</h3>
             <div class="info__benefits-content2 mt-4">
-              <p class="info__benefits-subtitle">Datenverlust kommt zustande, wenn Daten aus Versehen gelöscht oder beschädigt werden. Ein Virus, ein physischer Schaden, Formatierungsfehler oder eine Kombination dieser Gründe können Daten für die Nutzer wie auch die Software unlesbar machen und so ein<strong>Risiko für die finanzielle Gesundheit</strong> von Unternehmen jeder Größe darstellen.</p>
+              <p class="info__benefits-subtitle">Datenverlust kommt zustande, wenn Daten aus Versehen gelöscht oder beschädigt werden. Ein Virus, ein physischer Schaden, Formatierungsfehler oder eine Kombination dieser Gründe können Daten für die Nutzer wie auch die Software unlesbar machen und so ein <strong>Risiko für die finanzielle Gesundheit</strong> von Unternehmen jeder Größe darstellen.</p>
             </div>
           </div>
           <div class="col-md-5 col-sm-12">
@@ -121,7 +121,7 @@
     <!-- Fourth Section -->
     <div class="bg-white section-medium px-2">
       <p class="info__title2">Wie hilft Codekeeper?</p>
-      <p class="info__subtitle mx-auto mt-4">Als vertrauenswürdiger Escrow Agent ist es Codekeepers Rolle, unternehmenskritische Daten zu empfangen, zu speichern und zu schützen. Mit einem sehr guten Preis-Leistungsverhältnis können Sie sicher Kopien Ihrer Daten in unseren erstklassigen Datenzentren für eine geringe Summe von <strong>$79 pro Monat</strong> und einer Einrichtungsgebühr von nur $249 speichern.<br><br>Alle Tarife beinhalten <strong>aktuelle Automatisierungstechnologie</strong>, <strong>fortgeschrittene Sicherheitsleistungen</strong>, starke <strong>Integrationen</strong>, unbegrenzte <strong>kontinuierliche Speicher</strong>, kostenlose Escrow-<strong>Verträge</strong> und <strong>Bestätigungen</strong> sowie vieles mehr. </p>
+      <p class="info__subtitle mx-auto mt-4">Als vertrauenswürdiger Escrow Agent ist es Codekeepers Rolle, unternehmenskritische Daten zu empfangen, zu speichern und zu schützen. Mit einem sehr guten Preis-Leistungsverhältnis können Sie sicher Kopien Ihrer Daten in unseren erstklassigen Datenzentren für eine geringe Summe von <strong><span id="developer-monthly">$79</span> pro Monat</strong> und einer Einrichtungsgebühr von nur <span class="setup-fee">$249</span> speichern.<br><br>Alle Tarife beinhalten <strong>aktuelle Automatisierungstechnologie</strong>, <strong>fortgeschrittene Sicherheitsleistungen</strong>, starke <strong>Integrationen</strong>, unbegrenzte <strong>kontinuierliche Speicher</strong>, kostenlose Escrow-<strong>Verträge</strong> und <strong>Bestätigungen</strong> sowie vieles mehr. </p>
       <a class="button btn-primary-lg my-5 mx-auto" href="pricing.html">
         UNSERE PREISE
       </a>
@@ -427,5 +427,37 @@ document.addEventListener("click", closeAllSelect);
     });
   });
 </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+          function success(response) {
+            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
+              $('.setup-fee').text('€249');
+              $('#developer-monthly').text('€79');
+            }
+            else if (response.currency === 'GBP') {
+              $('.setup-fee').text('£199');
+              $('#developer-monthly').text('£59');
+            }
+            else if (response.currency === 'INR') {
+              $('.setup-fee').text('₹15,000');
+              $('#developer-monthly').text('₹5,000');
+            }
+            else if (response.currency === 'AUD') {
+              $('.setup-fee').text('A$299');
+              $('#developer-monthly').text('A$99');
+            }
+
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
 </body>
 </html>

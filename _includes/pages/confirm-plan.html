@@ -670,6 +670,7 @@
           function success(response) {
             if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
               $('.setup-fee').text('€249');
+              $('.amazon-deposit').text('€29');
               $('#developer-monthly').text('€79');
               $('#team-monthly').text('€199');
               $('#business-monthly').text('€349');
@@ -686,6 +687,7 @@
             }
             else if (response.currency === 'GBP') {
               $('.setup-fee').text('£199');
+              $('.amazon-deposit').text('£29');
               $('#developer-monthly').text('£59');
               $('#team-monthly').text('£149');
               $('#business-monthly').text('£249');
@@ -702,6 +704,7 @@
             }
             else if (response.currency === 'INR') {
               $('.setup-fee').text('₹15,000');
+              $('.amazon-deposit').text('₹1,995');
               $('#developer-monthly').text('₹5,000');
               $('#team-monthly').text('₹12,500');
               $('#business-monthly').text('₹20,000');
@@ -718,6 +721,7 @@
             }
             else if (response.currency === 'AUD') {
               $('.setup-fee').text('A$299');
+              $('.amazon-deposit').text('A$29');
               $('#developer-monthly').text('A$99');
               $('#team-monthly').text('A$250');
               $('#business-monthly').text('A$450');
