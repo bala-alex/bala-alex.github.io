@@ -1,41 +1,47 @@
-// Screen size
+//-------------------------------------//
+// COLORS
+
+// colors: base font
+$light-grey: #d8d8d8;
+$font-base: #18173a;
+$font-dark: #1c1c3d;
+$dark-grey: #191e2f;
+$grey-2: #8f9096;
+$grey-3: #a3a5ac;
+$grey-4: #818181;
+
+// colors: brand
+$color-light-blue: #53a9e6;
+
+// colors: border
+$border-color: #a3a5ac;
+
+// color: background
+$grey-bg: #f0f5f8;
+
+//-------------------------------------//
+// MEDIA QUERIES
+
 $media-lg: 1200px;
 $media-md: 992px;
 $media-sm: 768px;
 $media-xs: 480px;
 
-// Colors
-$white:    #ffffff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6B717B !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-
-$forest-green: #00887f !default;
-$dark-green:   #0b7a76 !default;
-$darker-green: #067774 !default;
-$night-black:  #333333 !default;
-$light-gray:   #FAFAFA !default;
-$lighter-gray: #ececec !default;
-$faded-gray:   #F4F4F4 !default;
-$faded-black:  #2e384d !default;
-$soft-black:   #3e3f42 !default;
-$black:        #000000 !default;
-$dust-gray:    #8798ad !default;
-$soft-gray:    #7f7f7f !default;
-$softer-gray:  #d4d4d4 !default;
-$dark-gray:    #818181 !default;
-$darker-gray:  #4a4a4a !default;
-$charcoal:     #444444 !default;
-$eclipse:      #3f3f3f !default;
-$jumbo:        #8e8e8d !default;
-
-
-$purple:       #7450C8 !default;
-$light-purple: #DFE4EE !default;
-$sky-blue:     #3377c6 !default;
+.btn-blue {
+  &:hover {
+    color: #fff;
+    background-color: darken($color-light-blue, 15%);
+    border-color: darken($color-light-blue, 15%);
+    transition: .3s;
+  }
+}
+.btn-outline {
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: $color-light-blue !important;
+    border: 1px solid $color-light-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}

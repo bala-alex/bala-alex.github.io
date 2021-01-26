@@ -1,437 +1,296 @@
 <body>
-  <div class="bg-white">
-    <div class="container-fluid px-0">
-      <!-- Navigation -->
-      {% include navigation.html %}
-      <!-- Header -->
-      <div class="header__content">
-        <div class="header__image">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5 col-sm-12">
-                <h1 class="header__title">{{ site.data[page.lang]['index']['source_code_escrow_for'] }}</h1>
-                <p class="header__subtitle mt-5">{{ site.data[page.lang]['index']['an_all_in_one'] }}</p>
-                <div class="d-flex flex-wrap align-items-center my-5 mobile-center">
-                  <a class="button btn-white-lg mr-4" href="pricing.html">
-                    {{ site.data[page.lang]['index']['get_started'] }}
-                  </a>
-                  <a class="button btn-learn-more" href="features.html">
-                    {{ site.data[page.lang]['index']['learn_more'] }}
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12 d-flex flex-column align-items-center">
-                <img class="image-style" src="/images/macbook@3x.png"/>
-                <div class="w-100">
-                  <p class="header__subtext mx-auto">{{ site.data[page.lang]['index']['some_of_our'] }}:</p>
-                  <div class="d-flex flex-wrap align-items-center justify-content-around">
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/GitHub-Mark-Light.svg"/>
-                      <p class="header__logo-subtext mx-auto">GitHub</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/gitlab-icon.svg"/>
-                      <p class="header__logo-subtext mx-auto">GitLab</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Git-Icon-White.svg"/>
-                      <p class="header__logo-subtext mx-auto">Git</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/visual-studio.svg"/>
-                      <p class="header__logo-subtext mx-auto">Visual<br>Studio</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Bitbucket.svg"/>
-                      <p class="header__logo-subtext mx-auto">Bitbucket</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Shape-icon.svg"/>
-                      <p class="header__logo-subtext mx-auto">Azure</p>
-                    </div>  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJR93GW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="index-header">
+    {% include navigation.html %}
+
+    <div class="index-header__content container -is-homepage">
+      <div class="index-header__content-info">
+        <h1 class="index-header__content-title">{{ site.data[page.lang]['homepage']['localization_solution'] }}</h1>
+        <p class="index-header__content-text darker-grey">{{ site.data[page.lang]['homepage']['sell_more_products'] }}</p>
+
+        <button class="btn-initial btn-blue index-header__content-btn" type="button" id="button-addon2"><a
+            href="https://clients.tolq.com/sign_up">{{ site.data[page.lang]['homepage']['sign_up_for'] }}</a></button>
       </div>
-      <!-- First Section -->
-      <div class="container section-medium pb-0">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-5 col-sm-12">
-            <div class="d-flex">
-              <img class="protect__image1 img-hor" src="/images/image-team.svg"/>
-              <img class="protect__image2 img-hor" src="/images/team-member.svg"/>
-            </div>
-          </div>
-          <div class="col-md-7 col-sm-12">
-            <div class="protect__divider ml-auto mb-3"></div>
-            <h2 class="protect__title ml-auto">{{ site.data[page.lang]['index']['protect_your_software'] }}</h2>
-            <p class="protect__subtitle ml-auto mt-3">{{ site.data[page.lang]['index']['software_escrow_is'] }}</p>
-            <a class="button btn-primary-lg ml-auto mt-4 mb-5" href="pricing.html">
-              {{ site.data[page.lang]['index']['get_started'] }}
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container section-medium">
-        <p class="protect__subtext">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
-        <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-          <img class="protect__logos" src="/images/logos/Pepsico_large.svg"/>
-          <img class="protect__logos" src="/images/logos/general-electric.svg"/>
-          <img class="protect__logos" src="/images/logos/mercedes-benz.svg"/>
-          <img class="protect__logos" src="/images/logos/nestle.svg"/>
-        </div>
-        <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-          <img class="protect__logos" src="/images/logos/Airbus.svg"/>
-          <img class="protect__logos" src="/images/logos/the-economist.svg"/>
-          <img class="protect__logos" src="/images/logos/JetBlue.svg"/>
-        </div>
+
+      <div class="index-header__content-img">
+        <img src="/images/landing-img.svg" alt="header" />
       </div>
     </div>
-    <!-- Second Section -->
-    <div class="bg-light-gray section-medium">
-      <div class="container">
-        <div class="section-divider my-3 mx-auto"></div>
-        <h2 class="clients__title mx-auto">{{ site.data[page.lang]['index']['who_is_codekeeper_for'] }}</h2>
-        <p class="clients__subtitle mt-4 mx-auto">{{ site.data[page.lang]['index']['our_clients_range_from'] }}</p>
-        <div class="d-flex flex-column align-items-center">
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/developer.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['software_developers'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['software_escrow_gives'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/associates.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['businesses_and_enterprises'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['software_escrow_protects'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/advisors.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['legal_advisors'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['we_support_you'] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <p class="clients__subtitle mt-5 mx-auto">{{ site.data[page.lang]['index']['have_needs_that'] }} <a class="text-underline" href="contact.html">{{ site.data[page.lang]['index']['contact_us'] }}</a>.</p>
+  </header>
+  <!-- Partners -->
+  <section class="index-partners">
+    <h3 class="index-partners__subtitle container">{{ site.data[page.lang]['homepage']['trusted_partner_of'] }}</h3>
+
+    <div class="d-flex flex-wrap justify-content-around container index-partners__logos-container">
+      <div class="mt-20 mb-20">
+        <img src="/images/media.svg" class="" alt="" />
+      </div>
+      <div class="mt-20 mb-20">
+        <img src="/images/traum (1).svg" class="" alt="" />
+      </div>
+      <div class="mt-20 mb-20">
+        <img src="/images/kfzteile.svg" class="" alt="" />
+      </div>
+      <div class="mt-20 mb-20">
+        <img src="/images/bol (1).svg" class="" alt="" />
+      </div>
+      <div class="mt-20 mb-20">
+        <img src="/images/grand (1).svg" class="" alt="" />
       </div>
     </div>
-    <!-- Third Section -->
-    <div class="container-fluid px-0 bg-light-gray overflow-hidden">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 section-large d-flex justify-content-center">
-          <div class="escrow__content px-3">
-            <div class="protect__divider mb-3"></div>
-            <h2 class="escrow__title">{{ site.data[page.lang]['index']['why_people_choose'] }}</h2>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/usd-circle.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['industry_leading_pricing'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['thanks_to_our_powerful'] }} <a class="text-underline" href="pricing.html">{{ site.data[page.lang]['index']['get_a_plan_for'] }}</a></p>
-              </div>
-            </div>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/circle-checked.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['ease_of_use'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['forget_manual_deposits'] }}</p>
-              </div>
-            </div>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/line-chart.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['sales_facilitation'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['eliminate_risk_for'] }}</p>
-              </div>
-            </div>
+
+    <h2 class="index-partners__title container">{{ site.data[page.lang]['homepage']['why_do_global'] }}</h2>
+    <!-- <div class="main-carousel">
+      <div class="carousel-cell"><img class="index-partners__imgs" src="./images/Asset 1.svg"></div>
+      <div class="carousel-cell"><img  class="index-partners__imgs" src="./images/Asset 2.svg"></div>
+      <div class="carousel-cell"><img class="index-partners__imgs" src="./images/Asset 3.svg"></div>
+    </div> -->
+
+    <div class="d-flex container align-items-center row justify-content-between mx-auto">
+      <div class="d-flex justify-content-between container flex-column col-12 col-lg-4">
+        <div class="d-flex align-items-start index-partners__col-container">
+          <img src="/images/chart2.svg" class="mt-20 mr-30" />
+          <div class="index-partners__col" id="first">
+            <p class="index-partners__col-title">{{ site.data[page.lang]['homepage']['product_catalog'] }}</p>
+            <p class="index-partners__col-text dark-grey">{{ site.data[page.lang]['homepage']['boost_your_sales'] }}</p>
+            <a class="index-partners__col-link" href="product-catalog.html">{{ site.data[page.lang]['homepage']['learn_more'] }} <i
+                class="fas fa-chevron-right" style="margin-top: 2px;"></i></a>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 pr-0">
-          <div class="escrow__image-box bg-faded-gray">
-            <img class="escrow__image" src="/images/Escrow-info.svg"/>
+
+        <div class="d-flex align-items-start index-partners__col-container">
+          <img src="/images/cs.svg" class="mt-20 mr-30" />
+          <div class="index-partners__col" id="second">
+            <p class="index-partners__col-title">{{ site.data[page.lang]['homepage']['customer_service'] }}</p>
+            <p class="index-partners__col-text dark-grey">{{ site.data[page.lang]['homepage']['provide_memorable'] }}</p>
+            <a class="index-partners__col-link" href="customer-service.html">{{ site.data[page.lang]['homepage']['learn_more'] }} <i
+                class="fas fa-chevron-right" style="margin-top: 2px;"></i></a>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start index-partners__col-container">
+          <img src="/images/heart2.svg" class="mt-20 mr-30" />
+          <div class="index-partners__col" id="third">
+            <p class="index-partners__col-title">{{ site.data[page.lang]['homepage']['marketing_solutions'] }}</p>
+            <p class="index-partners__col-text dark-grey">{{ site.data[page.lang]['homepage']['quickly_and_easy'] }}</p>
+            <a class="index-partners__col-link" href="marketing.html">{{ site.data[page.lang]['homepage']['learn_more'] }} <i
+                class="fas fa-chevron-right" style="margin-top: 2px;"></i></a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Fourth Section -->
-    <div id="container" class="vertical-tabs bg-light-gray">
-      <!--Vertical Tab-->
-      <div class="container section-large">
-        <div class="tabs-title">
-          <div class="section-divider ml-auto mb-3"></div>
-          <h2 class="escrow2__title mb-5">{{ site.data[page.lang]['index']['how_it_works'] }}</h2>
-        </div>
-        <div id="parentVerticalTab" class="d-flex">
-          <div class="resp-tabs-container hor_1">
-            <div>
-              <img class="image-style" src="/images/Escrow-agreement.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/deposit-material.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/escrow-active.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/management.svg"/>
-            </div>
-          </div>
-          <ul class="resp-tabs-list hor_1">
-            <div class="section-divider ml-auto mb-3"></div>
-            <h2 class="escrow2__title">{{ site.data[page.lang]['index']['how_it_works'] }}</h2>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto mt-4">{{ site.data[page.lang]['index']['set_up'] }}<img class="escrow2__icon" src="/images/icons/file-checked.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['setting_up_an_escrow'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['deposit'] }}<img class="escrow2__icon" src="/images/icons/money-withdraw.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['the_deposit_materials'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['activation'] }}<img class="escrow2__icon" src="/images/icons/circle-checked.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['your_new_source'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['management'] }}<img class="escrow2__icon" src="/images/icons/monitor-screen.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['easily_add_your'] }}</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Fifth Section -->
-    <div class="bg-light-gray">
-      <div class="container section-large">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="escrow__content px-3">
-              <div class="section-divider my-3"></div>
-              <h2 class="escrow3__title">{{ site.data[page.lang]['index']['excrow_agreement_included'] }}</h2>
-              <p class="escrow3__subtitle mt-4">{{ site.data[page.lang]['index']['a_legally_sound_escrow'] }}</p>
-              <div class="d-flex flex-wrap align-items-center mt-5">
-                <a class="button btn-primary-lg mr-4 my-4" href="pricing.html">
-                  {{ site.data[page.lang]['index']['get_started'] }}
-                </a>
-                <a class="button escrow3__link" href="sample-agreement.html">
-                  {{ site.data[page.lang]['index']['view_a_sample_agreement'] }}
-                </a>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="mobile-wrap">
-              <div>
-                <div class="escrow3__box1 bg-white d-flex mt-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-faded-black mb-0">4</h2>
-                    <p class="escrow3__subtext text-dust-gray">{{ site.data[page.lang]['index']['pending_change'] }}</p>
-                  </div>
-                </div>
-                <div class="escrow3__box1 bg-forest-green d-flex ml-5 my-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file-white.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-white mb-0">14</h2>
-                    <p class="escrow3__subtext text-white">{{ site.data[page.lang]['index']['active_escrows'] }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="escrow3__box2 bg-forest-green ml-4 avoid-clicks">
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['escrow_role'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['index']['depositor'] }}</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['depositor'] }}</p>
-                <p class="escrow3__text text-black">Nexity Industry</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['beneficiary'] }}</p>
-                <p class="escrow3__text text-black">BestValue Corporation</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['status'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['index']['last_backup'] }}: 23:59 CET -  <br> 04/04/2020</p>
-                <a class="button btn-primary-sm my-4">
-                  {{ site.data[page.lang]['index']['view'] }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="bg-light-gray py-5">
-      <div class="verification__container mx-auto">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/cards.svg"/>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="section-divider mt-5 mb-3 ml-auto"></div>
-            <h2 class="verification__title">{{ site.data[page.lang]['index']['verification_services'] }}</h2>
-            <p class="verification__subtitle ml-auto mt-3">{{ site.data[page.lang]['index']['need_to_provide_additional'] }} </p>
-            <a class="button btn-primary-lg ml-auto my-4" href="verification.html">
-              {{ site.data[page.lang]['index']['learn_more'] }}
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/file-alt-icon.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['release_triggers'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['specify_for_each'] }}</p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/user-exclamation.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['concierge_support'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['we_offer_full_support'] }} <a class="underline-none" href="contact.html">{{ site.data[page.lang]['index']['send_us_a_message'] }}</a></p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/bill-icon.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['no_lawyer_fees'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['no_need_to_hire'] }}</p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Seventh Section -->
-    {% include escrow-introduction.html %}
-    <!-- Eight Section -->
-    <div class="bg-light-gray section-medium">
-      <div class="container">
-        <div class="section-divider my-3 mx-auto"></div>
-        <h2 class="integration__title mx-auto">{{ site.data[page.lang]['index']['integrations'] }}</h2>
-        <p class="integration__subtitle mt-5 mx-auto">{{ site.data[page.lang]['index']['codekeeper_integrates_directly'] }}</p>
-        <p class="integration__subtext mt-4 mx-auto">{{ site.data[page.lang]['index']['dont_see_your'] }} <a class="text-underline" href="contact.html">{{ site.data[page.lang]['index']['contact_us'] }}.</a></p>
-        <a class="button btn-secondary-lg mx-auto my-4" href="integrations.html">
-          {{ site.data[page.lang]['index']['see_integrations'] }}
+
+      <div class="col-12 col-lg-7 offset-lg-1 mb-20">
+        <img src="/images/solutions.svg" class="w-100" />
+        <a href="product-catalog.html" class="d-flex justify-content-center">
+          <button class="btn-initial btn-outline">{{ site.data[page.lang]['homepage']['see_solutions'] }}</button>
         </a>
-        <img class="image-style" src="/images/integrations-bg.svg"/>
       </div>
     </div>
-    <!-- Ninth Section -->
-    {% include security.html %}
-    <div class="container section-medium">
-      <p class="protect__subtext">{{ site.data[page.lang]['index']['trusted_partner_of_these'] }}</p>
-      <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-        <img class="protect__logos" src="/images/logos/axxiome.svg"/>
-        <img class="protect__logos" src="/images/logos/intuit.svg"/>
-        <img class="protect__logos" src="/images/logos/Bayer.svg"/>
-        <img class="protect__logos" src="/images/logos/slate-digital.svg"/>
-      </div>
-      <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-        <img class="protect__logos" src="/images/logos/colorado.svg"/>
-        <img class="protect__logos" src="/images/logos/zynga.svg"/>
-        <img class="protect__logos" src="/images/logos/gorenje.svg"/>
-      </div>
-    </div>
-    <!-- Tenth Section -->
-    <div class="bg-light-gray overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="mentions__box">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
-              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-            </div>
-            <div class="mentions__box ml-4">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
-              <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
-            </div>
+
+  </section>
+  <!-- Customers -->
+  <section class="index-customers">
+    <div class="container">
+      <h2 class="index-customers__title">{{ site.data[page.lang]['homepage']['more_agile'] }}</h2>
+      <p class="index-customers__text darker-grey">{{ site.data[page.lang]['homepage']['tolq_provides_you'] }}</p>
+
+      <div class="index-customers__row">
+        <img src="/images/efficient.svg" alt="" />
+
+        <div class="index-customers__col">
+          <div class="index-customers__col-content">
+            <p class="index-customers__row-title">{{ site.data[page.lang]['homepage']['efficient'] }}</p>
+            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['homepage']['help_your_team'] }}</p>
+
+            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['homepage']['maximize_the_efficiency'] }}</p>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="mentions__box-second mb-4">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
-              <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
-            </div>
-            <div class="mentions__box-negative">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['compared_to_traditional'] }}</p>
-              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-            </div>
+        </div>
+      </div>
+
+      <div class="index-customers__row -reverse">
+        <div class="index-customers__col -right">
+          <div class="index-customers__col-content col-content">
+            <p class="index-customers__row-title">{{ site.data[page.lang]['homepage']['scalable'] }}</p>
+            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['homepage']['with_our_state'] }}</p>
           </div>
-          <div class="col-md-4 col-sm-12 pt-5">
-            <div class="section-divider mt-large mb-3 ml-auto"></div>
-            <h2 class="mentions__title">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
-            <p class="mentions__subtitle mt-4">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
-            <a class="button btn-primary-lg ml-auto mb-5" href="pricing.html">
-              {{ site.data[page.lang]['index']['get_started'] }}
-            </a>
+        </div>
+
+        <img src="/images/scalable.svg" class="col-img" alt="" />
+      </div>
+
+      <div class="index-customers__row">
+        <img src="/images/localized.svg" alt="" />
+
+        <div class="index-customers__col">
+          <div class="index-customers__col-content">
+            <p class="index-customers__row-title">{{ site.data[page.lang]['homepage']['localized'] }}</p>
+            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['homepage']['sound_like_yourself'] }}</p>
+
+            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['homepage']['our_powerfull'] }}</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Eleventh Section -->
-    {% include get-started.html %}
-    <!-- Footer -->
+  </section>
+  <!-- Translators -->
+  <section class="index-translators container">
+    <div>
+      <p class="index-translators__title">{{ site.data[page.lang]['homepage']['experienced_translators'] }}</p>
+      <p class="index-translators__text dark-grey">{{ site.data[page.lang]['homepage']['no_matter_the'] }}</p>
+
+      <p class="index-translators__text dark-grey">{{ site.data[page.lang]['homepage']['our_community_of'] }}</p>
+
+      <div class="d-flex index-translators__btns">
+        <a href="https://calendly.com/tolq" class="mr-sm-0 mr-md-4">
+          <button class="btn-initial btn-blue">{{ site.data[page.lang]['homepage']['book_a_demo'] }}</button>
+        </a>
+
+        <a href="translators.html">
+          <button class="btn-initial btn-outline">{{ site.data[page.lang]['homepage']['become_a_translator'] }}</button>
+        </a>
+      </div>
+    </div>
+    <img src="/images/translators-illustr.svg" alt="" />
+  </section>
+  <!-- Enterprise -->
+  <section class="index-enterprise">
+    <div class="container">
+      <h2 class="index-enterprise__title mx-auto">{{ site.data[page.lang]['homepage']['enterprise_scale'] }}</h2>
+      <p class="index-enterprise__text darker-grey">{{ site.data[page.lang]['homepage']['tolqs_powerful'] }}</p>
+      <div class="index-enterprise__row d-flex justify-content-between">
+        <div class="index-enterprise__col">
+          <img src="/images/security.svg" alt="" />
+          <p class="index-enterprise__col-title">{{ site.data[page.lang]['homepage']['security'] }}</p>
+          <p class="index-enterprise__col-text darker-grey">{{ site.data[page.lang]['homepage']['we_provide_end'] }}</p>
+        </div>
+        <div class="index-enterprise__col">
+          <img src="/images/data.svg" alt="" />
+          <p class="index-enterprise__col-title">{{ site.data[page.lang]['homepage']['data_privacy'] }}</p>
+          <p class="index-enterprise__col-text darker-grey">{{ site.data[page.lang]['homepage']['we_are_compliant'] }}</p>
+        </div>
+        <div class="index-enterprise__col">
+          <img src="/images/service.svg" alt="" />
+          <p class="index-enterprise__col-title">{{ site.data[page.lang]['homepage']['service_sla'] }}</p>
+          <p class="index-enterprise__col-text darker-grey">{{ site.data[page.lang]['homepage']['we_can_offer'] }}<br />
+            <a href="contact.html">{{ site.data[page.lang]['homepage']['contact_us_today'] }}</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing -->
+  <section class="index-pricing container">
+    <img src="/images/pricing.svg" alt="" />
+    <div class="index-pricing__col">
+      <h2 class="index-pricing__title">{{ site.data[page.lang]['homepage']['high_quality_at'] }}</h2>
+      <p class="index-pricing__text dark-grey">{{ site.data[page.lang]['homepage']['with_tolq'] }}</p>
+
+      <p class="index-pricing__text dark-grey">{{ site.data[page.lang]['homepage']['your_privacy_is'] }}</p>
+      <p class="index-pricing__free">{{ site.data[page.lang]['homepage']['set_up_a'] }}</p>
+
+      <button class="btn-initial btn-blue index-header__content-btn mb-3" type="button" id="button-addon2"><a
+          href="https://clients.tolq.com/sign_up">{{ site.data[page.lang]['homepage']['sign_up_for'] }}</a></button>
+
+
+    </div>
+  </section>
+  <!-- Solutions -->
+  <section class="index-solutions">
+    <div class="container index-solutions__container">
+      <div class="index-solutions__bespoke">
+        <h2 class="index-solutions__bespoke-title">{{ site.data[page.lang]['homepage']['bespoke_solutions'] }}</h2>
+        <p class="index-solutions__bespoke-text darker-grey">{{ site.data[page.lang]['homepage']['schedule_a'] }}</p>
+
+        <div class="d-flex index-solutions__bespoke-btns">
+          <a href="https://calendly.com/tolq" class="mr-4">
+            <button class="btn-initial btn-blue">{{ site.data[page.lang]['homepage']['book_a_demo'] }}</button>
+          </a>
+
+          <a href="https://clients.tolq.com/sign_up">
+            <button class="btn-initial btn-outline">{{ site.data[page.lang]['homepage']['start_now'] }}</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="index-solutions__col">
+        <p class="index-solutions__col-title">{{ site.data[page.lang]['homepage']['do_you_have_an'] }}</p>
+        <p class="index-solutions__col-text">{{ site.data[page.lang]['homepage']['we_love_to'] }}</p>
+
+        <a href="contact.html" class="d-flex justify-content-center">
+          <button class="btn-initial btn-outline">{{ site.data[page.lang]['homepage']['contact_us'] }}</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
     {% include footer.html %}
-  </div>
-
-  <!-- Snippets -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   {% include snippets.html %}
-  <script src="/js/easyResponsiveTabs.js"></script>
-  <!--Plug-in Initialisation-->
-	<script type="text/javascript">
-    $(document).ready(function() {
-        //Vertical Tab
-        $('#parentVerticalTab').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo2');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
-            }
-        });
-    });
-  </script>
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-          function success(response) {
-            if ((response.timezone).includes('Europe') && (response.currency !== 'GBP')) {
-              $('#developer-monthly').text('€79');
-            }
-            else if (response.currency === 'GBP') {
-              $('#developer-monthly').text('£59');
-            }
-            else if (response.currency === 'INR') {
-              $('#developer-monthly').text('₹5,000');
-            }
-            else if (response.currency === 'AUD') {
-              $('#developer-monthly').text('A$99');
-            }
-
-          },
-          function fail(data, status) {
-              console.log('Request failed.  Returned status of',
-                          status);
-          }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
 </body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.index-partners__tabs-title').on('click', function () {
+      $('.index-partners__tabs-title').removeClass('-is-selected');
+      $('.index-partners__tabs-text').removeClass('-is-visible');
+      $('.index-partners__tabs-border').removeClass('-selected');
+
+      if ($(this).hasClass('-is-selected') && $(this).siblings().hasClass('-is-visible') && $(this).parent()
+        .parent().next().hasClass('-selected')) {
+        return;
+      }
+      $(this).addClass('-is-selected');
+      $(this).siblings().addClass('-is-visible');
+      $(this).parent().parent().next().addClass('-selected')
+    })
+  });
+
+  $('.main-carousel').flickity({
+    prevNextButtons: false,
+    resize: true,
+  });
+
+  $('.flickity-page-dots')
+    .addClass('container mx-auto d-flex justify-content-between')
+    .css({
+      "left": '0',
+      "right": '0'
+    });
+
+  $('#first').on({
+    mouseenter: function () {
+      $('.main-carousel').flickity('select', 0);
+    },
+  })
+
+  $('#second').on({
+    mouseenter: function () {
+      $('.main-carousel').flickity('select', 1);
+    },
+  })
+
+  $('#third').on({
+    mouseenter: function () {
+      $('.main-carousel').flickity('select', 2);
+    },
+  })
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5626357.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+</html>
