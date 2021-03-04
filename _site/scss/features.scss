@@ -256,9 +256,9 @@
 			border-radius: 3px;
 			margin-left: 2rem;
 
-			@include screen-sm {
-				margin-left: 0;
-			}
+			@include screen-lg {
+        margin-left: 0;
+      }
 
 			&:hover {
 				background: rgba(216, 216, 216, 0.15);
