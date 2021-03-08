@@ -10365,7 +10365,7 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 32px;
     font-family: 'Muli', sans-serif; }
   .contact .section__custom label {
-    font-size: 16px !important;
+    font-size: 22px !important;
     font-family: 'Muli', sans-serif;
     color: #000000;
     font-weight: normal;
@@ -10374,7 +10374,6 @@ a.text-dark:hover, a.text-dark:focus {
       display: none; }
     .contact .section__custom label span {
       color: #00887f;
-      font-weight: bold;
       margin-top: 30px; }
   .contact .section__custom select {
     width: 100% !important;
@@ -10395,7 +10394,7 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-box-shadow: none;
       box-shadow: none; }
   .contact .section__custom legend {
-    font-size: 24px !important;
+    font-size: 16px !important;
     font-family: 'Muli', sans-serif;
     color: #000000;
     font-weight: normal;
@@ -10443,6 +10442,8 @@ a.text-dark:hover, a.text-dark:focus {
       box-shadow: none; }
   .contact .section__custom fieldset {
     max-width: 100% !important; }
+  .contact .section__custom .hs-applied_jurisdiction {
+    margin-top: 20px; }
   .contact .section__custom .hs-form-booleancheckbox-display {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10513,7 +10514,10 @@ a.text-dark:hover, a.text-dark:focus {
     background: #00887f;
     border-radius: 25px;
     height: 50px;
-    width: 200px !important;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    min-width: 200px !important;
     font-weight: bold;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
@@ -10543,6 +10547,10 @@ a.text-dark:hover, a.text-dark:focus {
       -o-transition: all .3s;
       transition: all .3s;
       cursor: pointer; }
+    @media (max-width: 768px) {
+      .contact .section__custom .hs-button.primary.large {
+        height: auto !important;
+        min-height: 50px; } }
 
 .contact .section__title {
   font-size: 16px !important;

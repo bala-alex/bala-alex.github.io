@@ -193,7 +193,7 @@
       }
 
       label {
-        font-size: 16px !important;
+        font-size: 22px !important;
         font-family: 'Muli', sans-serif;
         color: $black;
         font-weight: normal;
@@ -205,7 +205,6 @@
 
         span {
           color: $forest-green;
-          font-weight: bold;
           margin-top: 30px;
         }
       }
@@ -231,7 +230,7 @@
       }
 
       legend {
-        font-size: 24px !important;
+        font-size: 16px !important;
         font-family: 'Muli', sans-serif;
         color: $black;
         font-weight: normal;
@@ -289,6 +288,10 @@
 
       fieldset {
         max-width: 100% !important;
+      }
+
+      .hs-applied_jurisdiction {
+        margin-top: 20px;
       }
 
       .hs-form-booleancheckbox-display {
@@ -373,7 +376,8 @@
         background: $forest-green;
         border-radius: 25px;
         height: 50px;
-        width: 200px !important;
+        width: max-content;
+        min-width: 200px !important;
         font-weight: bold;
         font-family: 'Muli', sans-serif;
         font-size: 16px;
@@ -381,6 +385,11 @@
         &:hover {
           transition: all .3s;
           cursor: pointer;
+        }
+
+        @include screen-sm {
+          height: auto !important;
+          min-height: 50px;
         }
       }
 
