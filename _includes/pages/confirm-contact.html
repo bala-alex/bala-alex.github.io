@@ -1,0 +1,40 @@
+<body>
+  <div class="contact">
+    <!-- Header -->
+    <div class="nav-fixed-mobile bg-light-gray">
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
+        <div class="header__content">
+          <h2 class="header__title text-center">{{ site.data[page.lang]['confirm_contact']['thanks_for'] }}</h2>
+          <p class="header__subtitle mw-100 mt-3">{{ site.data[page.lang]['confirm_contact']['your_message'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white py-5">
+      <div class="container d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-center mt-5">
+          <img class="confirm__submit" alt="Icon: Message Submitted" src="/images/confirm/message-submit.svg"/>
+          <div class="d-flex flex-wrap mt-4">
+            <a class="confirm__submit-text d-flex align-items-center mt-4 mx-3" href="index.html">
+              {{ site.data[page.lang]['confirm_contact']['go_to_homepage'] }}<i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <a class="confirm__submit-text d-flex align-items-center mt-4 mx-3" href="https://app.legalsite.co/signup">
+              {{ site.data[page.lang]['confirm_contact']['become_compliant'] }}<i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

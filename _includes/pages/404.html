@@ -1,27 +1,24 @@
 <body>
-  <div class="registration bg-white">
-    <!-- Navigation -->
-    {% include navigation.html %}
+  <div class="select">
     <!-- Header -->
-    <div class="container-fluid sign-up__content">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 bg-light-gray sign-up__box">
-          <img class="sign-up__image" src="/images/registration/404-error.svg"/>
-        </div>
-        <div class="col-md-6 col-sm-12 bg-white sign-up__box">
-          <div class="mt-3">
-            <h2 class="sign-up__title">{{ site.data[page.lang]['error']['error'] }}</h2>
-            <p class="sign-up__subtitle">{{ site.data[page.lang]['error']['page_not_found'] }}</p>
-            <p class="sign-up__subtitle">{{ site.data[page.lang]['error']['please_check'] }}</p>
-            <a class="button btn-primary-lg mx-auto my-4 underline-none" href="index.html">
-              {{ site.data[page.lang]['error']['home_page'] }}
-            </a>
+    <div class="bg-light-gray error">
+      <div class="container error__container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
+        <div class="error__content">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <img class="error__image" alt="Icon: Error Image" src="/images/landing/404-error.svg"/>
+            <h2 class="error__title text-center mt-4">{{ site.data[page.lang]['error']['sorry'] }}</h2>
+            <p class="error__subtitle mt-2">{{ site.data[page.lang]['error']['it_looks_like'] }}</p>
+            <div class="d-flex flex-wrap mt-4">
+              <a class="error__link mx-3" href="index.html">{{ site.data[page.lang]['error']['go_to_homepage'] }}<i class="fas fa-arrow-right ml-2 fa-xs"></i></a>
+              <a class="error__link mx-3" href="https://app.legalsite.co/signup">{{ site.data[page.lang]['error']['become_compliant'] }}<i class="fas fa-arrow-right ml-2 fa-xs"></i></a>
+              <a class="error__link mx-3" href="contact.html">{{ site.data[page.lang]['error']['contact_us'] }}<i class="fas fa-arrow-right ml-2 fa-xs"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
 </body>

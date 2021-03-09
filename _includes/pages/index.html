@@ -1,448 +1,205 @@
 <body>
-  <div class="bg-white">
-    <div class="container-fluid px-0">
-      <!-- Navigation -->
-      {% include navigation.html %}
-      <!-- Header -->
-      <div class="header__content">
-        <div class="header__image">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5 col-sm-12">
-                <h1 class="header__title">{{ site.data[page.lang]['index']['source_code_escrow_for'] }}</h1>
-                <p class="header__subtitle mt-5">{{ site.data[page.lang]['index']['an_all_in_one'] }}</p>
-                <div class="d-flex flex-wrap align-items-center my-5 mobile-center">
-                  <a class="button btn-white-lg mr-4" href="pricing.html">
-                    {{ site.data[page.lang]['index']['get_started'] }}
-                  </a>
-                  <a class="button btn-learn-more" href="features.html">
-                    {{ site.data[page.lang]['index']['learn_more'] }}
-                  </a>
-                </div>
+  <div class="landing">
+    <!-- Header -->
+    <div class="nav-fixed-mobile bg-white">
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="header__container px-0">
+        <div class="row mt-5 align-items-center">
+          <div class="col-md-6 col-sm-12">
+            <div class="header__text align-items-start">
+              <h2 class="header__main-title mt-3">{{ site.data[page.lang]['homepage']['drop_in_compliance'] }}</h2>
+              <p class="header__subtitle mt-5">{{ site.data[page.lang]['homepage']['archieve_full'] }}</p>
+              <p class="header__subtitle mt-4">{{ site.data[page.lang]['homepage']['no_attorneys_or'] }}</p>
+              <div class="d-flex flex-wrap mobile-center">
+                <a class="button btn-purple-lg mt-3 mr-md-3" href="https://app.legalsite.co/signup">
+                  {{ site.data[page.lang]['homepage']['get_started'] }}
+                </a>
+                <a class="button btn-white-large mt-3" href="privacy-compliance.html">
+                  {{ site.data[page.lang]['homepage']['learn_more'] }}
+                </a>
               </div>
-              <div class="col-md-7 col-sm-12 d-flex flex-column align-items-center">
-                <img class="image-style" src="/images/macbook@3x.png"/>
-                <div class="w-100">
-                  <p class="header__subtext mx-auto">{{ site.data[page.lang]['index']['some_of_our'] }}:</p>
-                  <div class="d-flex flex-wrap align-items-center justify-content-around">
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/GitHub-Mark-Light.svg"/>
-                      <p class="header__logo-subtext mx-auto">GitHub</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/gitlab-icon.svg"/>
-                      <p class="header__logo-subtext mx-auto">GitLab</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Git-Icon-White.svg"/>
-                      <p class="header__logo-subtext mx-auto">Git</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/visual-studio.svg"/>
-                      <p class="header__logo-subtext mx-auto">Visual<br>Studio</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Bitbucket.svg"/>
-                      <p class="header__logo-subtext mx-auto">Bitbucket</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mx-2">
-                      <img class="header__logos" src="/images/logos/Shape-icon.svg"/>
-                      <p class="header__logo-subtext mx-auto">Azure</p>
-                    </div>  
-                  </div>
-                </div>
-              </div>
+              <p class="header__btn-text mt-1 mb-5">{{ site.data[page.lang]['homepage']['no_credit_card'] }}</p>
             </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="header__image" alt="Image: Welcome Dashboard" src="/images/landing/mac-white.svg"/>
           </div>
         </div>
       </div>
-      <!-- First Section -->
-      <div class="container section-medium pb-0">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-5 col-sm-12">
-            <div class="d-flex">
-              <img class="protect__image1 img-hor" src="/images/image-team.svg"/>
-              <img class="protect__image2 img-hor" src="/images/team-member.svg"/>
+    </div>
+    <!-- First Section -->
+    <div class="bg-light-gray section-large">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="header__title text-center mx-auto mw-100">{{ site.data[page.lang]['homepage']['privacy_compliance_has'] }}</h2>
+          <p class="header__subtitle mx-auto text-center mt-4 mw-100">{{ site.data[page.lang]['homepage']['handle_all_your_data'] }}</p>
+          <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="first__icons mx-auto" alt="Icon: Legal Pages" src="/images/landing/icon-1.svg"/>
+              <p class="first__text fw-500 mt-4">{{ site.data[page.lang]['homepage']['legal_pages'] }}</p>
+              <p class="first__subtext mx-auto">{{ site.data[page.lang]['homepage']['create_your_terms'] }}</p>
+              <a class="first__link text-center mx-auto my-2" href="legal-pages.html">
+                {{ site.data[page.lang]['homepage']['learn_more'] }}
+                <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="first__icons mx-auto" alt="Icon: Privacy Compliance" src="/images/landing/icon-2.svg"/>
+              <p class="first__text fw-500 mt-4">{{ site.data[page.lang]['homepage']['compliance'] }}</p>
+              <p class="first__subtext mx-auto">{{ site.data[page.lang]['homepage']['a_complete_toolkit'] }}</p>
+              <a class="first__link text-center mx-auto my-2" href="privacy-compliance.html">
+                {{ site.data[page.lang]['homepage']['learn_more'] }}
+                <i class="fas fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+              <img class="first__icons mx-auto" alt="Icon: Privacy Operations" src="/images/landing/icon-3.svg"/>
+              <p class="first__text fw-500 mt-4">{{ site.data[page.lang]['homepage']['operations'] }}</p>
+              <p class="first__subtext mx-auto">{{ site.data[page.lang]['homepage']['stop_managing_user'] }}</p>
+              <a class="first__link text-center mx-auto my-2" href="privacy-operations.html">
+                {{ site.data[page.lang]['homepage']['learn_more'] }}
+                <i class="fas fa-arrow-right ml-1"></i>
+              </a>
             </div>
           </div>
-          <div class="col-md-7 col-sm-12">
-            <div class="protect__divider ml-auto mb-3"></div>
-            <h2 class="protect__title ml-auto">{{ site.data[page.lang]['index']['protect_your_software'] }}</h2>
-            <p class="protect__subtitle ml-auto mt-3">{{ site.data[page.lang]['index']['software_escrow_is'] }}</p>
-            <a class="button btn-primary-lg ml-auto mt-4 mb-5" href="pricing.html">
-              {{ site.data[page.lang]['index']['get_started'] }}
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="container section-medium">
-        <p class="protect__subtext">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
-        <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-          <img class="protect__logos" src="/images/logos/Pepsico_large.svg"/>
-          <img class="protect__logos" src="/images/logos/general-electric.svg"/>
-          <img class="protect__logos" src="/images/logos/mercedes-benz.svg"/>
-          <img class="protect__logos" src="/images/logos/nestle.svg"/>
-        </div>
-        <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-          <img class="protect__logos" src="/images/logos/Airbus.svg"/>
-          <img class="protect__logos" src="/images/logos/the-economist.svg"/>
-          <img class="protect__logos" src="/images/logos/JetBlue.svg"/>
         </div>
       </div>
     </div>
     <!-- Second Section -->
-    <div class="bg-light-gray section-medium">
+    <div class="bg-white section-medium">
       <div class="container">
-        <div class="section-divider my-3 mx-auto"></div>
-        <h2 class="clients__title mx-auto">{{ site.data[page.lang]['index']['who_is_codekeeper_for'] }}</h2>
-        <p class="clients__subtitle mt-4 mx-auto">{{ site.data[page.lang]['index']['our_clients_range_from'] }}</p>
-        <div class="d-flex flex-column align-items-center">
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/developer.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['software_developers'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['software_escrow_gives'] }}</p>
-              </div>
-            </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <img class="image-style" alt="Image: Privacy Policy" src="/images/landing/Image-Privacy-2.svg"/>
           </div>
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/associates.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['businesses_and_enterprises'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['software_escrow_protects'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4">
-            <div class="clients__box">
-              <img class="clients__image" src="/images/advisors.svg"/>
-              <div class="p-3">
-                <p class="clients__box-title">{{ site.data[page.lang]['index']['legal_advisors'] }}</p>
-                <p class="clients__box-subtitle">{{ site.data[page.lang]['index']['we_support_you'] }}</p>
-              </div>
+          <div class="col-md-6 col-sm-12 mt-3">
+            <div class="privacy__content">
+              <h2 class="privacy__title mt-4">{{ site.data[page.lang]['homepage']['create_legal_pages'] }}</h2>
+              <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['set_up_and_publish'] }}</p>
+              <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['our_experts_regularly'] }}</p>
+              <a class="button btn-purple-lg my-4 mobile-center" href="legal-pages.html">
+                {{ site.data[page.lang]['homepage']['learn_more2'] }}
+              </a>
             </div>
           </div>
         </div>
-        
-        <p class="clients__subtitle mt-5 mx-auto">{{ site.data[page.lang]['index']['have_needs_that'] }} <a class="text-underline" href="contact.html">{{ site.data[page.lang]['index']['contact_us'] }}</a>.</p>
       </div>
     </div>
     <!-- Third Section -->
-    <div class="container-fluid px-0 bg-light-gray overflow-hidden">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 section-large d-flex justify-content-center">
-          <div class="escrow__content px-3">
-            <div class="protect__divider mb-3"></div>
-            <h2 class="escrow__title">{{ site.data[page.lang]['index']['why_people_choose'] }}</h2>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/usd-circle.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['industry_leading_pricing'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['thanks_to_our_powerful'] }} <a class="text-underline" href="pricing.html">{{ site.data[page.lang]['index']['get_a_plan_for'] }}</a></p>
-              </div>
-            </div>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/circle-checked.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['ease_of_use'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['forget_manual_deposits'] }}</p>
-              </div>
-            </div>
-            <div class="d-flex mt-5">
-              <img class="escrow__icon" src="/images/icons/line-chart.svg"/>
-              <div>
-                <p class="escrow__subtitle">{{ site.data[page.lang]['index']['sales_facilitation'] }}</p>
-                <p class="escrow__subtext">{{ site.data[page.lang]['index']['eliminate_risk_for'] }}</p>
-              </div>
-            </div>
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <h2 class="privacy__title mt-4">{{ site.data[page.lang]['homepage']['achive_privacy'] }}</h2>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['ensure_your_online'] }}</p>
+            <a class="button btn-purple-lg my-4 mobile-center" href="privacy-compliance.html">
+              {{ site.data[page.lang]['homepage']['learn_more2'] }}
+            </a>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 pr-0">
-          <div class="escrow__image-box bg-faded-gray">
-            <img class="escrow__image" src="/images/Escrow-info.svg"/>
+          <div class="col-md-7 col-sm-12 mt-5">
+            <img class="image-style" alt="Image: Data Processing Agreement" src="/images/landing/Image-DPA.svg"/>
           </div>
         </div>
       </div>
     </div>
     <!-- Fourth Section -->
-    <div id="container" class="vertical-tabs bg-light-gray">
-      <!--Vertical Tab-->
-      <div class="container section-large">
-        <div class="tabs-title">
-          <div class="section-divider ml-auto mb-3"></div>
-          <h2 class="escrow2__title mb-5">{{ site.data[page.lang]['index']['how_it_works'] }}</h2>
-        </div>
-        <div id="parentVerticalTab" class="d-flex">
-          <div class="resp-tabs-container hor_1">
-            <div>
-              <img class="image-style" src="/images/Escrow-agreement.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/deposit-material.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/escrow-active.svg"/>
-            </div>
-            <div>
-              <img class="image-style" src="/images/management.svg"/>
+    <div class="bg-white section-medium">
+      <div class="container">
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <img class="image-style" alt="Image: Scalable Privacy Operations" src="/images/landing/Image-Privacy-3.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-3">
+            <div class="privacy__content">
+              <h2 class="privacy__title mt-4">{{ site.data[page.lang]['homepage']['process_data_requests'] }}</h2>
+              <p class="privacy__subtitle-small mt-4">{{ site.data[page.lang]['homepage']['turn_managing_data'] }} </p>
+              <a class="button btn-purple-lg my-4 mobile-center" href="privacy-operations.html">
+                {{ site.data[page.lang]['homepage']['learn_more2'] }}
+              </a>
             </div>
           </div>
-          <ul class="resp-tabs-list hor_1">
-            <div class="section-divider ml-auto mb-3"></div>
-            <h2 class="escrow2__title">{{ site.data[page.lang]['index']['how_it_works'] }}</h2>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto mt-4">{{ site.data[page.lang]['index']['set_up'] }}<img class="escrow2__icon" src="/images/icons/file-checked.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['setting_up_an_escrow'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['deposit'] }}<img class="escrow2__icon" src="/images/icons/money-withdraw.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['the_deposit_materials'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['activation'] }}<img class="escrow2__icon" src="/images/icons/circle-checked.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['your_new_source'] }}</p>
-            </li>
-            <li>
-              <h3 class="escrow2__subtitle ml-auto">{{ site.data[page.lang]['index']['management'] }}<img class="escrow2__icon" src="/images/icons/monitor-screen.svg"/></h3>
-              <p class="escrow2__subtext ml-auto mt-3">{{ site.data[page.lang]['index']['easily_add_your'] }}</p>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
     <!-- Fifth Section -->
-    <div class="bg-light-gray">
-      <div class="container section-large">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="escrow__content px-3">
-              <div class="section-divider my-3"></div>
-              <h2 class="escrow3__title">{{ site.data[page.lang]['index']['excrow_agreement_included'] }}</h2>
-              <p class="escrow3__subtitle mt-4">{{ site.data[page.lang]['index']['a_legally_sound_escrow'] }}</p>
-              <div class="d-flex flex-wrap align-items-center mt-5">
-                <a class="button btn-primary-lg mr-4 my-4" href="pricing.html">
-                  {{ site.data[page.lang]['index']['get_started'] }}
-                </a>
-                <a class="button escrow3__link" href="sample-agreement.html">
-                  {{ site.data[page.lang]['index']['view_a_sample_agreement'] }}
-                </a>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="mobile-wrap">
-              <div>
-                <div class="escrow3__box1 bg-white d-flex mt-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-faded-black mb-0">4</h2>
-                    <p class="escrow3__subtext text-dust-gray">{{ site.data[page.lang]['index']['pending_change'] }}</p>
-                  </div>
-                </div>
-                <div class="escrow3__box1 bg-forest-green d-flex ml-5 my-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file-white.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-white mb-0">14</h2>
-                    <p class="escrow3__subtext text-white">{{ site.data[page.lang]['index']['active_escrows'] }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="escrow3__box2 bg-forest-green ml-4 avoid-clicks">
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['escrow_role'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['index']['depositor'] }}</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['depositor'] }}</p>
-                <p class="escrow3__text text-black">Nexity Industry</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['beneficiary'] }}</p>
-                <p class="escrow3__text text-black">BestValue Corporation</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['index']['status'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['index']['last_backup'] }}: 23:59 CET -  <br> 04/04/2020</p>
-                <a class="button btn-primary-sm my-4">
-                  {{ site.data[page.lang]['index']['view'] }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="bg-light-gray py-5">
-      <div class="verification__container mx-auto">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/cards.svg"/>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="section-divider mt-5 mb-3 ml-auto"></div>
-            <h2 class="verification__title">{{ site.data[page.lang]['index']['verification_services'] }}</h2>
-            <p class="verification__subtitle ml-auto mt-3">{{ site.data[page.lang]['index']['need_to_provide_additional'] }} </p>
-            <a class="button btn-primary-lg ml-auto my-4" href="verification.html">
-              {{ site.data[page.lang]['index']['learn_more'] }}
+    <div class="bg-light-gray pt-5">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <h2 class="header__title mt-5 mw-100">{{ site.data[page.lang]['homepage']['build_relationships'] }}</h2>
+          <p class="header__subtitle text-center mt-4">{{ site.data[page.lang]['homepage']['give_your_customers'] }}</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="button btn-purple-lg mt-3 mx-3 mb-4" href="https://hooli.legalsites.app/ ">
+              {{ site.data[page.lang]['homepage']['see_real_life_example'] }}
             </a>
           </div>
         </div>
+        <img class="image-style" alt="Image: Transparency Welcome Dashboard" src="/images/landing/Group-Image-2.svg"/>
+      </div>
+    </div>
+    <!-- Sixth Section -->
+    <div class="bg-white section-medium">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/file-alt-icon.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['release_triggers'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['specify_for_each'] }}</p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
+          <div class="col-md-6 col-sm-12">
+            <h2 class="privacy__title mt-5">{{ site.data[page.lang]['homepage']['integrations'] }}</h2>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['synk_your_legalsite'] }}</p>
+            <a class="button btn-purple-lg my-4 mobile-center" href="integrations.html">
+              {{ site.data[page.lang]['homepage']['see_integrations'] }}
+            </a>
           </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/user-exclamation.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['concierge_support'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['we_offer_full_support'] }} <a class="underline-none" href="contact.html">{{ site.data[page.lang]['index']['send_us_a_message'] }}</a></p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/icons/bill-icon.svg"/>
-            <p class="verification__title2 mt-5">{{ site.data[page.lang]['index']['no_lawyer_fees'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="verification__text">{{ site.data[page.lang]['index']['no_need_to_hire'] }}</p>
-            <a class="verification__link" href="features.html">{{ site.data[page.lang]['index']['learn_more'] }} <i class="fas fa-arrow-right ml-2"></i></a>
+          <div class="col-md-6 col-sm-12 mt-3">
+            <img class="image-style" alt="Image: Integrations" src="/images/landing/Image-Integration-2.svg"/>
           </div>
         </div>
       </div>
     </div>
     <!-- Seventh Section -->
-    {% include escrow-introduction.html %}
-    <!-- Eight Section -->
-    <div class="bg-light-gray section-medium">
+    <div class="bg-light-gray py-5">
       <div class="container">
-        <div class="section-divider my-3 mx-auto"></div>
-        <h2 class="integration__title mx-auto">{{ site.data[page.lang]['index']['integrations'] }}</h2>
-        <p class="integration__subtitle mt-5 mx-auto">{{ site.data[page.lang]['index']['codekeeper_integrates_directly'] }}</p>
-        <p class="integration__subtext mt-4 mx-auto">{{ site.data[page.lang]['index']['dont_see_your'] }} <a class="text-underline" href="contact.html">{{ site.data[page.lang]['index']['contact_us'] }}.</a></p>
-        <a class="button btn-secondary-lg mx-auto my-4" href="integrations.html">
-          {{ site.data[page.lang]['index']['see_integrations'] }}
-        </a>
-        <img class="image-style" src="/images/integrations-bg.svg"/>
-      </div>
-    </div>
-    <!-- Ninth Section -->
-    {% include security.html %}
-    <div class="container section-medium">
-      <p class="protect__subtext">{{ site.data[page.lang]['index']['trusted_partner_of_these'] }}</p>
-      <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-        <img class="protect__logos" src="/images/logos/axxiome.svg"/>
-        <img class="protect__logos" src="/images/logos/intuit.svg"/>
-        <img class="protect__logos" src="/images/logos/Bayer.svg"/>
-        <img class="protect__logos" src="/images/logos/slate-digital.svg"/>
-      </div>
-      <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
-        <img class="protect__logos" src="/images/logos/colorado.svg"/>
-        <img class="protect__logos" src="/images/logos/zynga.svg"/>
-        <img class="protect__logos" src="/images/logos/gorenje.svg"/>
-      </div>
-    </div>
-    <!-- Tenth Section -->
-    <div class="bg-light-gray overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="mentions__box">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
-              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-            </div>
-            <div class="mentions__box ml-4">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
-              <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
-            </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12 mt-5">
+            <img class="status__image" alt="Image: Legalsite Status" src="/images/landing/Image-Status-2.svg"/>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="mentions__box-second mb-4">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
-              <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
-            </div>
-            <div class="mentions__box-negative">
-              <img class="mentions__icon" src="/images/icons/quotes.svg"/>
-              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['compared_to_traditional'] }}</p>
-              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 pt-5">
-            <div class="section-divider mt-large mb-3 ml-auto"></div>
-            <h2 class="mentions__title">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
-            <p class="mentions__subtitle mt-4">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
-            <a class="button btn-primary-lg ml-auto mb-5" href="pricing.html">
-              {{ site.data[page.lang]['index']['get_started'] }}
+          <div class="col-md-6 col-sm-12 mt-5">
+            <h2 class="privacy__title mt-4">{{ site.data[page.lang]['homepage']['why_legalsite'] }}</h2>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['whether_you_run'] }}</p>
+            <p class="privacy__subtitle mt-4">{{ site.data[page.lang]['homepage']['create_beautiful'] }}</p>
+            <a class="button btn-purple-lg mobile-center mb-3" href="https://app.legalsite.co/signup">
+              {{ site.data[page.lang]['homepage']['get_started_free'] }}
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Eleventh Section -->
-    {% include secure-assets.html %}
+    <!-- Eight Section -->
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="guide__box">
+          <div class="row">
+            <div class="col-md-9 col-sm-12 mt-5">
+              <p class="guide__title mt-3 mx-auto px-2">{{ site.data[page.lang]['homepage']['get_started_with_privacy'] }}</p>
+              <p class="guide__subtitle m-2 mx-auto px-2">{{ site.data[page.lang]['homepage']['access_our_guide'] }}</p>
+              <a class="button btn-purple-lg mx-auto mb-5 mt-4" href="privacy-guide.html">
+                {{ site.data[page.lang]['homepage']['download_free_guide'] }}
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-12 guide__box-right">
+              <img class="guide__image" alt="Image: Getting Started Guide" src="/images/landing/Screens-1.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ninth Section -->
+    {% include get-started.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
-  <script src="/js/easyResponsiveTabs.js"></script>
-  <!--Plug-in Initialisation-->
-	<script type="text/javascript">
-    $(document).ready(function() {
-        //Vertical Tab
-        $('#parentVerticalTab').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo2');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
-            }
-        });
-    });
-  </script>
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-          function success(response) {
-            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-              $('#developer-monthly').text('€79');
-            }
-            else if (response.currency === 'GBP') {
-              $('#developer-monthly').text('£59');
-            }
-            else if (response.currency === 'INR') {
-              $('#developer-monthly').text('₹5,000');
-            }
-            else if (response.currency === 'AUD') {
-              $('#developer-monthly').text('A$99');
-            }
-            else if (response.currency === 'SGD') {
-              $('#developer-monthly').text('$99');
-            }
-            else if (response.currency === 'ZAR') {
-              $('#developer-monthly').text('R1,099');
-            }
-            else if (response.currency === 'CHF') {
-              $('#developer-monthly').text('CHF89');
-            }
-            else if (response.currency === 'CAD') {
-              $('#developer-monthly').text('CA$99');
-            }
-          },
-          function fail(data, status) {
-              console.log('Request failed.  Returned status of',
-                          status);
-          }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
+
 </body>
