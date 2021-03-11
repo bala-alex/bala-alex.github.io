@@ -5516,10 +5516,10 @@ crossorigin="anonymous"></script>
       var serviceUrl = serviceUrls.replace(/[^\w\s]/gi, '')
 
       if (serviceUrl.match(/^[a-z\.]+ [a-z]+/i)) {
-        $(this).attr('href', 'processors/' + serviceUrl.split(' ').join("_") + '.html');
+        $(this).attr('href', '/processors/' + serviceUrl.split(' ').join("_") + '.html');
       }
       else {
-        $(this).attr('href', 'processors/' + serviceUrl + '.html');
+        $(this).attr('href', '/processors/' + serviceUrl + '.html');
       }
     });
   </script>

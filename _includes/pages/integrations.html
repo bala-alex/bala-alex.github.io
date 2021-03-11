@@ -87,10 +87,10 @@
       var serviceUrl = serviceUrls.replace(/[^\w\s]/gi, '')
 
       if (serviceUrl.match(/^[a-z\.]+ [a-z]+/i)) {
-        $(this).attr('href', 'integrations/' + serviceUrl.split(' ').join("_") + '.html');
+        $(this).attr('href', '/integrations/' + serviceUrl.split(' ').join("_") + '.html');
       }
       else {
-        $(this).attr('href', 'integrations/' + serviceUrl + '.html');
+        $(this).attr('href', '/integrations/' + serviceUrl + '.html');
       }
     });
   </script>
