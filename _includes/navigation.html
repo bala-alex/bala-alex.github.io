@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Legalsite" src="/images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav justify-content-between align-items-center ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link mx-2" href="legal-pages.html">{{ site.data[page.lang]['navigation']['legal_pages'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="privacy-compliance.html">{{ site.data[page.lang]['navigation']['compliance'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="privacy-operations.html">{{ site.data[page.lang]['navigation']['operations'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link navigation-spacing" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://app.legalsite.co/signin">{{ site.data[page.lang]['navigation']['login'] }}</a>
-      </li>
-      <a class="button btn-purple-sm m-1" href="https://app.legalsite.co/signup">
-        {{ site.data[page.lang]['navigation']['get_started'] }}
-      </a>
-    </ul>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link m-1" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1 space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
+        </li>
+        <a class="button btn-secondary-lg m-1" href="pricing.html">
+          {{ site.data[page.lang]['navigation']['get_started'] }}
+        </a>
+      </ul>
+    </div>
   </div>
 </nav>

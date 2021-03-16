@@ -1,0 +1,49 @@
+<body>
+  <div class="registration bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="container-fluid sign-up__content">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 bg-light-gray sign-up__box">
+          <img class="sign-up__image" src="/images/registration/screen-image.svg"/>
+          <div class="py-5">
+            <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
+              <img class="sign-up__logos" src="/images/registration/logos/Pepsico.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/general-electric.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/Daimler.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/nestle.svg"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
+              <img class="sign-up__logos" src="/images/registration/logos/Bayer_Logo.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/JetBlue.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/Airbus.svg"/>
+              <img class="sign-up__logos" src="/images/registration/logos/Snapchat.svg"/>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 bg-white sign-up__box">
+          <div class="my-5">
+            <h1 class="sign-up__title">{{ site.data[page.lang]['check_email']['check_your_email'] }}</h1>
+            <p class="sign-up__subtitle">{{ site.data[page.lang]['check_email']['we_have_sent'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+    portalId: "5365877",
+    formId: "c40c5263-c8b7-4e5f-8084-3e475bf2d97d",
+    onFormReady: function($form) {
+      $form.hide()
+      $('input[name=accept_terms_conditions]')[0].checked = true;
+      $form[0].submit();
+    },
+  });
+  </script>
+
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
