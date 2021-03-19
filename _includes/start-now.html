@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<div class="survey__form">
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+        portalId: "7622707",
+        formId: "b1e96e69-f0ca-4075-b257-84bb9a7adfc9",
+        onFormSubmit: function($form){
+            setTimeout( function() {
+              var firstName = $form.find('input[name="firstname"]').val();
+              var lastName = $form.find('input[name="lastname"]').val();
+              var email = $form.find('input[name="email"]').val();
+              var sl = '/';
+              var loc = "https://app.feedbacklabs.com/signup/" + encodeURIComponent(firstName) + sl + encodeURIComponent(lastName) + sl + encodeURIComponent(email);
+              window.location.href = loc;
+            }, 250 ); // Redirects to url with query string data from form fields after 250 milliseconds.
+        }
+  });
+   </script>
+</div>
