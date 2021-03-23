@@ -7586,17 +7586,12 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 30px;
   /*style the arrow inside the select element:*/
   /*point the arrow upwards when the select box is open (active):*/
   /*style the items (options), including the selected item:*/
   /*style items (options):*/
   /*hide the items when the select box is closed:*/ }
-  @media (max-width: 992px) {
-    .footer-dropdown {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
   .footer-dropdown .custom-select {
     position: relative;
     width: 180px;
@@ -8346,6 +8341,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media (max-width: 992px) {
+      .features .header__container {
+        height: 650px; } }
   .features .header__title {
     font-size: 56px !important;
     font-family: 'Muli', sans-serif;
@@ -9631,7 +9629,8 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; }
     @media (max-width: 992px) {
       .contact .header__title {
-        font-size: 38px !important; } }
+        font-size: 38px !important;
+        line-height: 50px; } }
   .contact .header__subtitle {
     font-family: 'Muli', sans-serif;
     font-style: normal;
@@ -10418,7 +10417,8 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; }
     @media (max-width: 992px) {
       .confirm .customer .header__title {
-        font-size: 38px !important; } }
+        font-size: 38px !important;
+        line-height: 50px; } }
   .confirm .customer .header__subtitle {
     color: #7f7f7f;
     font-weight: normal;

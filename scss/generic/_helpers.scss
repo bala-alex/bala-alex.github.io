@@ -265,10 +265,7 @@
 .footer-dropdown {
   display: flex;
   align-items: center;
-
-  @include screen-md {
-    flex-direction: column;
-  }
+  margin-bottom: 30px;
 
   .custom-select {
     position: relative;

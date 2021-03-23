@@ -11,6 +11,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include screen-md {
+        height: 650px;
+      }
     }
 
     &__title {
