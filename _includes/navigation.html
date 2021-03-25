@@ -1,50 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav justify-content-between align-items-center ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link mx-2" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="how-it-works.html">{{ site.data[page.lang]['navigation']['how_it_works'] }}</a>
-      </li>
-      <li class=" nav-item dropdown">
-        <a class="dropbtn nav-link mx-2">{{ site.data[page.lang]['navigation']['feedback_types'] }}</a>
-        <div class="dropdown-content">
-          <div class="d-flex align-items-center">
-            <img class="works__icon3" alt="Icon: Roadmap Finder" src="/images/Homepage/roadmap-finder.svg"/>
-            <a href="roadmap-finder.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['roadmap_finder'] }}</a>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="works__icon3" alt="Icon: Persona Finder" src="/images/Homepage/persona-finder.svg"/>
-            <a href="persona-finder.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['persona_finder'] }}</a>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="works__icon3" alt="Icon: General Feedback" src="/images/Homepage/general.svg"/>
-            <a href="general-feedback.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['general_feedback'] }}</a>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="works__icon3" alt="Icon: 5 Star" src="/images/Homepage/5-star.svg"/>
-            <a href="5-star.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['5_star'] }}</a>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="works__icon3" alt="Icon: NPS" src="/images/Homepage/nps.svg"/>
-            <a href="nps.html">{{ site.data[page.lang]['navigation']['feedback_types_values']['nps'] }}</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link ml-2 mr-2 mr-xl-5 mr-lg-2" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://app.feedbacklabs.com/login">{{ site.data[page.lang]['navigation']['sign_in'] }}</a>
-      </li>
-      <a class="button btn-primary mx-2 my-3" href="https://app.feedbacklabs.com/signup">
-        {{ site.data[page.lang]['navigation']['sign_up'] }}
-      </a>
-    </ul>
+<!DOCTYPE html>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link m-1" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-1 space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
+        </li>
+        <a class="button btn-secondary-lg m-1" href="pricing.html">
+          {{ site.data[page.lang]['navigation']['get_started'] }}
+        </a>
+      </ul>
+    </div>
   </div>
 </nav>
