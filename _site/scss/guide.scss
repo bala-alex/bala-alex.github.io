@@ -1,0 +1,550 @@
+.guide-customer {
+  .header {
+    overflow: hidden;
+
+    &__container {
+      min-height: 280px;
+      width: 100%;
+      background-color: $sinbad;
+      margin-bottom: 50px;
+      border-radius: 0 0 60% 60% / 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include screen-md {
+        height: 350px;
+      }
+    }
+
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: -0.31px;
+      line-height: 57px;
+      text-align: center;
+      max-width: 527px;
+
+      sup {
+        position: relative;
+        font-size: 50%;
+        line-height: 0;
+        vertical-align: revert;
+      }
+    }
+
+    &__subtitle {
+      color: $gray;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: 'Muli', sans-serif;
+      line-height: 32px;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+      margin-top: 6px;
+    }
+
+    &__content {
+      margin-top: 50px;
+    }
+
+    &__image {
+      max-width: 320px;
+      margin-top: -23px;
+
+      @include screen-sm {
+        margin-top: 40px;
+      }
+    }
+
+    &__form-box {
+      width: 933px;
+      min-height: 486px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+
+      @include screen-md {
+        width: 100%;
+      }
+    }
+
+    &__form-title {
+      color: $night-blue;
+      font-weight: bold;
+      font-size: 24px;
+      font-family: 'Muli', sans-serif;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__form-subtitle {
+      font-size: 16px !important;
+      line-height: 24px;
+      font-family: 'Muli', sans-serif;
+      color: $gray;
+      font-weight: normal;
+      max-width: 630px;
+      text-align: center;
+    }
+
+    &__form {
+      max-width: 365px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+      input {
+        width: 100% !important;
+        height: 40px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #d8dce6;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label {
+        font-size: 14px !important;
+        font-family: 'Muli', sans-serif;
+        color: $night-blue;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+
+      textarea {
+        width: 100% !important;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        line-height: 1.5;
+        color: #7f7f7f;
+        background-clip: padding-box;
+        border: 1px solid rgba(45, 67, 121, 0.1);
+        border-radius: 8px;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      fieldset {
+        max-width: 100% !important;
+      }
+    
+      label.hs-error-msg {
+        color: red !important;
+        font-size: 12px !important;
+      }
+    
+      .hs-error-msgs {
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+    
+      .hs_error_rollup {
+        display: none !important;
+      }
+    
+      .hs-form-required {
+        color: #fff !important;
+      }
+    
+      .hs-button.primary.large {
+        @include button-variant($night-blue, $night-blue, $active-background: darken($night-blue, 7.5%), $active-border: darken($night-blue, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 207px !important;
+        border-radius: 30px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .content {
+    &__title {
+      font-size: 56px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-blue;
+      font-weight: bold;
+      text-align: center;
+
+      @include screen-md {
+        font-size: 28px !important;
+      }
+    }
+
+    &__subtitle {
+      font-size: 21px !important;
+      font-family: 'Muli', sans-serif;
+      color: $gray;
+      font-weight: normal;
+      text-align: center;
+      max-width: 710px;
+    }
+
+    &__box {
+      background: $white;
+      border-radius: 5px;
+      box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.06);
+      min-height: 358px;
+      width: 319px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include screen-lg {
+        width: 100%;
+      }
+    }
+
+    &__image {
+      margin-top: 30px;
+      height: 32px;
+      width: 32px;
+    }
+
+    &__text {
+      font-size: 22px !important;
+      font-family: 'Muli', sans-serif;
+      color: $dark-blue;
+      font-weight: bold;
+      text-align: center;
+      max-width: 200px;
+      height: 60px;
+    }
+
+    &__subtext {
+      font-size: 16px !important;
+      font-family: 'Muli', sans-serif;
+      color: $gray;
+      font-weight: normal;
+      text-align: center;
+      max-width: 222px;
+      height: 80px;
+    }
+  }
+}
+
+.guide-survey {
+  .header {
+    overflow: hidden;
+
+    &__container {
+      min-height: 400px;
+      width: 100%;
+      background-color: $sinbad;
+      margin-bottom: 150px;
+      padding-top: 50px;
+
+      @include screen-md {
+        margin-bottom: 0px;
+        overflow: hidden;
+      }
+    }
+
+    &__box {
+      background: $white;
+      border-radius: 19px;
+      box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.06);
+      min-height: 515px;
+      width: 488px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: -130px;
+
+      @include screen-md {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+
+    &__title {
+      font-size: 40px !important;
+      font-family: 'Muli', sans-serif;
+      color: $dark-blue;
+      font-weight: bold;
+      letter-spacing: -0.29px;
+      text-align: center;
+      max-width: 443px;
+    }
+
+    &__subtitle {
+      color: $gray;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Muli', sans-serif;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      max-height: 270px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &__image-container {
+      position:relative;
+      height: 400px;
+
+      @include screen-sm {
+        height: 180px;
+      }
+    }
+
+    &__form {
+      max-width: 365px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+
+      input {
+        width: 100% !important;
+        height: 40px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #d8dce6;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      fieldset {
+        max-width: 100% !important;
+      }
+    
+      label.hs-error-msg {
+        color: red !important;
+        font-size: 12px !important;
+      }
+    
+      .hs-error-msgs {
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+    
+      .hs_error_rollup {
+        display: none !important;
+      }
+    
+      .hs-form-required {
+        color: #fff !important;
+      }
+    
+      .hs-button.primary.large {
+        @include button-variant($sinbad, $sinbad, $active-background: darken($sinbad, 7.5%), $active-border: darken($sinbad, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 207px !important;
+        border-radius: 30px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.guide-build {
+  .header {
+    overflow: hidden;
+
+    &__container {
+      min-height: 500px;
+      width: 100%;
+      background-color: $sinbad;
+      margin-bottom: 50px;
+      padding-top: 50px;
+
+      @include screen-md {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: -0.31px;
+      line-height: 57px;
+      max-width: 623px;
+    }
+
+    &__subtitle {
+      color: $white;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: 'Muli', sans-serif;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      bottom: -60px;
+      margin-top: 60px;
+
+      @include screen-sm {
+        position: relative;
+        bottom: -20px;
+        margin-top: 20px;
+      }
+    }
+
+    &__image-container {
+      position:relative;
+      height: 480px;
+
+      @include screen-sm {
+        height: 400px;
+      }
+    }
+
+    &__form {
+      max-width: 365px;
+      width: 100%;
+
+      input {
+        width: 100% !important;
+        height: 40px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #d8dce6;
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      fieldset {
+        max-width: 100% !important;
+      }
+    
+      label.hs-error-msg {
+        color: red !important;
+        font-size: 12px !important;
+      }
+    
+      .hs-error-msgs {
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+    
+      .hs_error_rollup {
+        display: none !important;
+      }
+    
+      .hs-form-required {
+        color: $sinbad !important;
+      }
+    
+      .hs-button.primary.large {
+        @include button-variant($white, $white, $active-background: darken($white, 7.5%), $active-border: darken($white, 10%));
+        color: $dark-blue !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 207px !important;
+        border-radius: 30px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        &:hover {
+          color: $dark-blue;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
