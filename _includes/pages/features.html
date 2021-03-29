@@ -1,237 +1,182 @@
 <body>
-  <div class="features bg-white">
-    <!-- Navigation -->
-    {% include navigation.html %}
-    <!-- Header -->
-    <div class="header__content overflow-hidden">
-      <div class="header__bg">
+  <div class="features">
+    <div class="bg-white">
+      <!-- Navigation -->
+      <div class="nav-fixed-mobile">
         <div class="container">
-          <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['features']['features_main'] }}</h1>
-          <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['features']['some_of_the_world'] }}</p>
-          <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
-            {{ site.data[page.lang]['features']['get_started'] }}
+          {% include navigation.html %}
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="header__container">
+        <div class="mt-3">
+          <h2 class="header__title">{{ site.data[page.lang]['features']['empower_your'] }}</h2>
+          <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['features']['feedbacklabs_makes_it'] }}</p>
+          <a class="button btn-white-lg mt-5 mb-4 mx-auto" href="https://app.feedbacklabs.com/signup">
+            {{ site.data[page.lang]['features']['sign_up'] }}
           </a>
-        </div>
-      </div>
-    </div>
-    <!-- First Section -->
-    <div class="container">
-      <img class="header__screen" src="/images/features/laptop-large.svg"/>
-    </div>
-    <div class="container section-medium">
-      <div class="section-divider my-3 mx-auto"></div>
-      <h2 class="solutions__main-title mx-auto">{{ site.data[page.lang]['features']['our_solutions'] }}</h2>
-      <p class="solutions__main-subtitle mx-auto mt-4">{{ site.data[page.lang]['features']['thanks_to_our'] }}</p>
-      <div class="row mt-5">
-        <div class="col-md-6 col-sm-12">
-          <h2 class="solutions__title mb-5">{{ site.data[page.lang]['features']['the_traditional_way'] }}</h2>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-feather.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['manual_and_outdated'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['traditional_escrows_require'] }}</p>
+          <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="d-flex align-items-center mr-4 my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['14_day_free'] }}</p>
             </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-cancel.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['recovery_problems'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['incompatible_code_versions'] }}</p>
-            </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-folder.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['expensive_lawyer'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['waiting_for_expensive'] }}</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h2 class="solutions__title mb-5">{{ site.data[page.lang]['features']['the_codekeeper_source'] }}</h2>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-automated.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['automated_and_up'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['codekeeper_integrates_directly'] }}</p>
-            </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-upload.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['quick_recovery'] }} </p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['quick_recovery_in_case'] }}</p>
-            </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features/icons/circle-user.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['end_to_end_concierge'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['we_offer_complete'] }}</p>
+            <div class="d-flex align-items-center my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['cancel_anytime'] }}</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Second Section -->
-    <div class="bg-light-gray section-medium mt-5">
-      <div class="attributes__container mx-auto">
-        <div class="section-divider my-3 mx-auto"></div>
-        <h2 class="attributes__title mx-auto mb-5">{{ site.data[page.lang]['features']['features'] }}</h2>
-        <p class="attributes__subtitle mx-auto mb-5">{{ site.data[page.lang]['features']['codekeeper_ensures_you_have'] }}</p>
-        <div class="row mt-3">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/terms.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['customizable_release'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['specify_for_each'] }}</p>
+      <!-- First Section -->
+      <div class="container homepage">
+        <h2 class="info__title text-center mt-4">{{ site.data[page.lang]['features']['organize_feedbacks'] }}<br> <span>{{ site.data[page.lang]['features']['channels'] }}</span></h2>
+        <div class="row section-large">
+          <div class="col-md-6 col-sm-12"> 
+            <p class="info__text mt-5">{{ site.data[page.lang]['features']['get_a_birds_eye'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['keep_track_of_all'] }}</p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
           </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/support.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['concierge_support'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['we_offer_complete_expert'] }} <a class="underline-none" href="contact.html">{{ site.data[page.lang]['features']['send_us_a_message'] }}</a> </p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/bill.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['no_lawyer_fees'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['a_free_and_legally'] }}</p>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Manage Team Group" src="/images/Features/manage-team-group.svg"/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/sitemap.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['multi_party_escrow'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['we_support_bipartite'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/cloud-data.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['data_escrow'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['we_have_storage'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="attributes__icon" src="/images/features/icons/cloud-shield.svg"/>
-            <p class="attributes__title2 mt-5">{{ site.data[page.lang]['features']['escrow_agreements'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="attributes__text">{{ site.data[page.lang]['features']['if_you_need'] }} <a class="attributes__text text-underline" href="contact.html">{{ site.data[page.lang]['features']['contact_us'] }}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Third Section -->
-    <div class="bg-light-gray">
-      <div class="container section-large">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="escrow__content px-3">
-              <div class="section-divider my-3"></div>
-              <h2 class="escrow3__title">{{ site.data[page.lang]['features']['escrow_agreement_included'] }}</h2>
-              <p class="escrow3__subtitle mt-4">{{ site.data[page.lang]['features']['a_legally_sound_escrow'] }}</p>
-              <div class="d-flex flex-wrap align-items-center mt-5">
-                <a class="button btn-primary-lg mr-4 my-4 underline-none" href="pricing.html">
-                  {{ site.data[page.lang]['features']['get_started'] }}
-                </a>
-                <a class="button escrow3__link" href="sample-agreement.html">
-                  {{ site.data[page.lang]['features']['view_a_sample_agreement'] }}
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="mobile-wrap">
-              <div>
-                <div class="escrow3__box1 bg-white d-flex mt-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-faded-black mb-0">4</h2>
-                    <p class="escrow3__subtext text-dust-gray">{{ site.data[page.lang]['features']['pending_change'] }}</p>
-                  </div>
-                </div>
-                <div class="escrow3__box1 bg-forest-green d-flex ml-5 my-5">
-                  <img class="escrow3__icon" src="/images/icons/circle-file-white.svg"/>
-                  <div class="ml-2">
-                    <h2 class="escrow3__number text-white mb-0">14</h2>
-                    <p class="escrow3__subtext text-white">{{ site.data[page.lang]['features']['active_escrows'] }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="escrow3__box2 bg-forest-green ml-4 avoid-clicks">
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['features']['escrow_role'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['features']['depositor'] }}</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['features']['depositor'] }}</p>
-                <p class="escrow3__text text-black">Nexity Industry</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['features']['beneficiary'] }}</p>
-                <p class="escrow3__text text-black">BestValue Corporation</p>
-                <p class="escrow3__text text-soft-gray mb-0">{{ site.data[page.lang]['features']['status'] }}</p>
-                <p class="escrow3__text text-black">{{ site.data[page.lang]['features']['last_backup'] }}: 23:59 CET -  <br> 04/04/2020</p>
-                <a class="button btn-primary-sm my-4">
-                  {{ site.data[page.lang]['features']['view'] }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fourth Section -->
-    <div class="bg-light-gray py-3">
-      <div class="management__container mx-auto mb-5">
         <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/features/management-screens.svg"/>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Drag and Drop" src="/images/Features/drag-and-drop.svg"/>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="section-divider ml-auto mb-3 mt-5"></div>
-            <h2 class="management__title ml-auto">{{ site.data[page.lang]['features']['escrow_management'] }}</h2>
-            <p class="management__subtitle ml-auto mt-4">{{ site.data[page.lang]['features']['easily_add_your'] }}</p>
-            <a class="button btn-secondary-lg ml-auto mt-4 mb-5" href="pricing.html">
-              {{ site.data[page.lang]['features']['see_our_pricing'] }}
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['ask_the_right'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['add_unlimited'] }}</p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
             </a>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="management__icon" src="/images/features/icons/layers.svg"/>
-            <p class="management__title2 mt-5">{{ site.data[page.lang]['features']['ip_whitelisting'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="management__text">{{ site.data[page.lang]['features']['we_support_complex_setups'] }} </p>
+        <div class="row section-large">
+          <div class="col-md-6 col-sm-12"> 
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['gather_one_time'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['unlike_traditional'] }}</p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
           </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="management__icon" src="/images/features/icons/cloud-database.svg"/>
-            <p class="management__title2 mt-5">{{ site.data[page.lang]['features']['private_scm_servers'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="management__text">{{ site.data[page.lang]['features']['source_code_management'] }}</p>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Send Feedback" src="/images/Features/send-feedback2.svg"/>
           </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="management__icon" src="/images/features/icons/code.svg"/>
-            <p class="management__title2 mt-5">{{ site.data[page.lang]['features']['no_coding'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="management__text">{{ site.data[page.lang]['features']['using_codekeeper_requires'] }}</p>
+        </div>
+        <div class="row column-reverse-mobile mb-5">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Create Keyword" src="/images/Features/create-keyword.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['learn_what'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['keep_tabs'] }}</p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Fifth Section -->
-    {% include escrow-introduction.html %}
-    <!-- Sixth Section -->
-    {% include security.html %}
-    <!-- Seventh Section -->
-    <div class="bg-white py-5">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">{{ site.data[page.lang]['features']['we_operate_inside'] }}:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.svg"/>
+      <!-- Second Section -->
+      <div class="container homepage section-medium">
+        <h2 class="info__title text-center mt-4">{{ site.data[page.lang]['features']['collaborate_with_your'] }}</h2>
+        <div class="row section-large">
+          <div class="col-md-6 col-sm-12"> 
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['share_the_right'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['add_unlimited_users'] }} </p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Assign" src="/images/Features/assign-to.svg"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Performance Chart" src="/images/Features/performance-chart.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['measure_your'] }} </p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['monitor_share'] }} </p>
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row section-large">
+          <div class="col-md-6 col-sm-12"> 
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['listen_and_act'] }} </p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['set_triggers'] }} </p> 
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Send Email Alerts" src="/images/Features/send-email-alerts.svg"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <img class="info__image" alt="Image: Export as CSV" src="/images/Features/export-as-csv.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="info__text mt-4">{{ site.data[page.lang]['features']['let_the_insights'] }} </p>
+            <p class="info__subtext">{{ site.data[page.lang]['features']['get_a_quick'] }} </p> 
+            <a class="info__link my-3 mt-3" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+              <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row section-large">
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__title mt-4">{{ site.data[page.lang]['features']['connenct_your_favorite'] }}</h2>
+            <p class="info__subtext mt-4 pb-4">{{ site.data[page.lang]['features']['connect_feedbacklabs_with'] }} </p>
+            <a class="button btn-secondary-outline my-4" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+            <img class="info__image my-4" alt="Image: Favorite Apps" src="/images/Features/favorite-apps.svg"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+            <img class="info__image my-4" alt="Image: Security Priority" src="/images/Features/security-priority.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__title mt-4">{{ site.data[page.lang]['features']['your_security_is'] }}</h2>
+            <p class="info__subtext mt-4 pb-4">{{ site.data[page.lang]['features']['protecting_your_data'] }}</p>
+            <a class="button btn-secondary-outline my-4" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['features']['get_answers'] }}
+            </a>
+          </div>
+        </div>
+        <div class="info__contact-box mt-5">
+          <p class="info__contact-text text-center">{{ site.data[page.lang]['features']['have_questions'] }}</p>
+          <a class="button btn-primary-lg mt-2 px-3" href="contact.html">
+            {{ site.data[page.lang]['features']['contact_us'] }}
+          </a>
+        </div>
       </div>
+      <!-- Third Section -->
+      {% include get-answers.html %}
+      <!-- Footer -->
+      {% include footer.html %}
     </div>
-    <!-- Eight Section -->
-    {% include secure-assets.html %}
-    <!-- Footer -->
-    {% include footer.html %}
-    
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
 </body>
+
+</html>

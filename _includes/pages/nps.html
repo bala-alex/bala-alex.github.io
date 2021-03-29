@@ -1,0 +1,87 @@
+<body>
+  <div class="feedbacks">
+    <div class="bg-white">
+      <!-- Navigation -->
+      <div class="nav-fixed-mobile">
+        <div class="container">
+          {% include navigation.html %}
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="header__container">
+        <div class="mt-3">
+          <h2 class="header__title">{{ site.data[page.lang]['nps']['improve_customer'] }}</h2>
+          <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['nps']['use_nps_to'] }}</p>
+          <a class="button btn-white-lg mt-5 mb-4 mx-auto" href="https://app.feedbacklabs.com/signup">
+            {{ site.data[page.lang]['nps']['sign_up'] }}
+          </a>
+          <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="d-flex align-items-center mr-4 my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['14_day_free'] }}</p>
+            </div>
+            <div class="d-flex align-items-center my-3">
+              <img class="" alt="Icon Check" src="/images/Homepage/icon-check-white.svg"/>
+              <p class="text-fade-white mb-0 ml-1">{{ site.data[page.lang]['index']['cancel_anytime'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- First Section -->
+      <div class="container pt-5 homepage">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__title mt-4">{{ site.data[page.lang]['nps']['what_is_nps'] }}</h2>
+            <p class="info__subtext mt-4">{{ site.data[page.lang]['nps']['nps_commonly'] }}</p>
+            <p class="info__subtext mt-4">{{ site.data[page.lang]['nps']['nps_methodology'] }}: {{ site.data[page.lang]['nps']['how_likely'] }}</p>
+            <p class="info__subtext mt-4">{{ site.data[page.lang]['nps']['customers_rate'] }}: {{ site.data[page.lang]['nps']['promoters_passives'] }}</p>
+            <p class="info__subtext mt-4">{{ site.data[page.lang]['nps']['detractors'] }}</p>
+            
+            <a class="button btn-secondary-outline my-4" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['nps']['get_answers'] }}
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+            <img class="info__image my-4" alt="Image: Loyalty" src="/images/Feedback-types/Loyalty.svg"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile pt-5">
+          <div class="col-md-6 col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+            <img class="info__image my-4" alt="Image: Info" src="/images/Feedback-types/Info2.svg"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__title mt-4">{{ site.data[page.lang]['nps']['how_nps_helps'] }} </h2>
+            <p class="info__subtext mt-4">{{ site.data[page.lang]['nps']['the_nps_survey'] }}</p>
+            <p class="info__subtext">{{ site.data[page.lang]['nps']['because_nps'] }}</p>
+            <p class="info__subtext pb-3">{{ site.data[page.lang]['nps']['complement_nps'] }}</p>
+            <a class="button btn-secondary-outline my-4" href="https://app.feedbacklabs.com/signup">
+              {{ site.data[page.lang]['nps']['get_answers'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Second Section -->
+      <div class="container py-5">
+        <div class="survey__start">
+          <p class="survey__start-title mt-2">{{ site.data[page.lang]['nps']['measure_and_improve'] }}</p>
+          <p class="survey__start-subtitle mt-4">{{ site.data[page.lang]['nps']['try_feedbacklabs'] }}</p>
+          <p class="survey__start-subtitle mt-3">{{ site.data[page.lang]['nps']['sign_up_today'] }}:</p>
+          {% include start-now.html %}
+        </div>
+      </div>
+      <!-- Third Section -->
+      {% include nps-survey.html %}
+      <!-- Fourth Section -->
+      <div class="container mt-4 homepage">
+        <p class="info__registered-text">{{ site.data[page.lang]['nps']['nps_net_promoter'] }}</p>
+      </div>
+      {% include get-answers.html %}
+      <!-- Footer -->
+      {% include footer.html %}
+    </div>
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
+
+</html>

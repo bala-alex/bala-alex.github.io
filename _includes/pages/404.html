@@ -1,27 +1,70 @@
 <body>
-  <div class="registration bg-white">
-    <!-- Navigation -->
-    {% include navigation.html %}
+  <div class="feedbacks">
     <!-- Header -->
-    <div class="container-fluid sign-up__content">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 bg-light-gray sign-up__box">
-          <img class="sign-up__image" src="/images/registration/404-error.svg"/>
+    <div class="error">
+      <div>
+        <div class="error__header">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="header__logo" alt="Logo: Feedbacklabs" src="/images/Homepage/Logo.svg"/></a>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12 bg-white sign-up__box">
-          <div class="mt-3">
-            <h2 class="sign-up__title">{{ site.data[page.lang]['error']['error'] }}</h2>
-            <p class="sign-up__subtitle">{{ site.data[page.lang]['error']['page_not_found'] }}</p>
-            <p class="sign-up__subtitle">{{ site.data[page.lang]['error']['please_check'] }}</p>
-            <a class="button btn-primary-lg mx-auto my-4 underline-none" href="index.html">
-              {{ site.data[page.lang]['error']['home_page'] }}
+        <div class="error__content">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <img class="error__image" alt="Icon: Error Image" src="/images/Homepage/Image-404.svg"/>
+            <h2 class="error__title text-center mt-4">{{ site.data[page.lang]['error']['where_did'] }}</h2>
+            <p class="error__subtitle mt-2">{{ site.data[page.lang]['error']['who_knows'] }}</p>
+            <a class="button btn-primary mx-auto mt-3 mb-5" href="index.html">
+              {{ site.data[page.lang]['error']['go_to_homepage'] }}
             </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container">
+          <div class="row w-100">
+            <div class="col-md-4 col-sm-12 error__footer">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="/images/Homepage/direction.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="javascript:history.back()">
+                    {{ site.data[page.lang]['error']['go_back'] }}
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">{{ site.data[page.lang]['error']['head_back'] }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 error__footer-center">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="/images/Homepage/answers.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="https://app.feedbacklabs.com/signup">
+                    {{ site.data[page.lang]['error']['start_getting'] }}
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">{{ site.data[page.lang]['error']['start_a_free'] }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 error__footer">
+              <div class="d-flex">
+                <img class="error__icon" alt="Icon: Direction" src="/images/Homepage/contact.svg"/>
+                <div class="ml-3">
+                  <a class="error__text" href="contact.html">
+                    {{ site.data[page.lang]['error']['contact_us'] }}
+                    <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                  <p class="error__subtext mt-2">{{ site.data[page.lang]['error']['looking_for'] }}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
 </body>
+
+</html>

@@ -1,0 +1,58 @@
+.confirm {
+  .customer {
+    .header {
+      overflow: hidden;
+  
+      &__container {
+        min-height: 280px;
+        width: 100%;
+        background-color: $sinbad;
+        margin-bottom: 50px;
+        border-radius: 0 0 60% 60% / 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        @include screen-md {
+          height: 350px;
+        }
+      }
+  
+      &__title {
+        font-size: 56px !important;
+        font-family: 'Muli', sans-serif;
+        color: $white;
+        font-weight: bold;
+        letter-spacing: -0.54px;
+        line-height: 70px;
+        text-align: center;
+        @include screen-md {
+          font-size: 38px !important;
+          line-height: 50px;
+        }
+      }
+  
+      &__subtitle {
+        color: $gray;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 31px;
+        text-align: center;
+        max-width: 800px;
+        font-family: 'Muli', sans-serif;
+
+        span {
+          font-weight: 700;
+          color: $dark-charcoal;
+        }
+
+        sup {
+          position: relative;
+          font-size: 50%;
+          line-height: 0;
+          vertical-align: revert;
+        }
+      }
+    }
+  }
+}
