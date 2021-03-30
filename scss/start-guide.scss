@@ -1,0 +1,421 @@
+.start-guide {
+  
+  .header {
+  
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: -0.42px;
+      max-width: 495px;
+    }
+  
+    &__text{
+      color: $white;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif;
+    }
+  
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+
+      input {
+        width: 100%;
+        background-color: $light-gray;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label {
+        color: $white !important;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        font-family: 'Muli', sans-serif;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+      .hs-button.primary.large {
+        @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+        color: $forest-green !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $white;
+        border-radius: 25px;
+        height: 50px;
+        width: 257px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-top: 50px;
+        &:hover {
+          color: $white !important;
+          background-color: transparent !important;
+          text-decoration: none;
+          border: 1px solid $white;
+          transition: all .3s;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    &__bg {
+      min-height: 530px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+    }
+
+    &__guide {
+      height: 500px;
+      width: 354px;
+      margin-bottom: -250px;
+      @include screen-md {
+        margin-top: 50px;
+        margin-bottom: 0px;
+      }
+    }
+  }  
+
+  .discover {
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: normal;
+      letter-spacing: -0.42px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 706px;
+      text-align: center;
+    }
+
+    &__title2 {
+      font-size: 14px !important;
+      font-family: 'Muli', sans-serif;
+      color: $night-black;
+      font-weight: bold;
+      letter-spacing: 0px;
+      line-height: 32px;
+    }
+  
+    &__text {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 295px;
+      min-height: 170px;
+    }
+  
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .schedule {
+    &__box {
+      background-color: $white;
+      border-radius: 16px;
+      margin: 15px;
+      box-shadow: 0px 16px 32px 0 rgba(67,67,87,0.20) !important;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 127px;
+      padding-right: 67px;
+      overflow: hidden;
+      width: 1159px;
+      @include screen-lg {
+        width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    &__title {
+      font-size: 28px !important;
+      font-family: 'Muli', sans-serif;
+      color: $forest-green;
+      font-weight: bold;
+      letter-spacing: -0.2px;
+      line-height: 34px;
+    }
+
+    &__subtitle {
+      color: $night-black;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif;
+      max-width: 420px;
+    }
+  }
+
+  .sample {
+    &__bg {
+      min-height: 530px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      margin-top: 85px;
+    }
+
+    &__image {
+      height: 362px;
+      width: 242px;
+    }
+
+    &__image2 {
+      max-height: 362px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 530px;
+    }
+
+    &__content {
+      max-width: 470px;
+      padding: 25px;
+
+      input {
+        width: 100%;
+        background-color: $light-gray;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label {
+        color: $night-black !important;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        font-family: 'Muli', sans-serif;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+      .hs-button.primary.large {
+        @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $forest-green;
+        border-radius: 25px;
+        height: 50px;
+        width: 257px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-top: 50px;
+        &:hover {
+          transition: all .3s;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $forest-green;
+      font-weight: bold;
+      letter-spacing: -0.42px;
+    }
+
+    &__text {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif;
+    }
+  }
+
+  .secure {
+    &__bg {
+      min-height: 530px !important;
+      background: url('../images/features/Slogan@3x.png');
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+      padding-top: 58px;
+      padding-bottom: 58px;
+    }
+
+    &__image {
+      height: 384px;
+      width: 314px;
+    }
+
+    &__content {
+      background-size: 100%;
+      margin-top: 85px;
+    }
+
+    &__title {
+      font-size: 44px !important;
+      font-family: 'Muli', sans-serif;
+      color: $forest-green;
+      font-weight: bold;
+      letter-spacing: -0.42px;
+      max-width: 478px;
+    }
+
+    &__text {
+      color: $night-black;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif;
+    }
+
+    &__box {
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+      min-height: 538px;
+      width: 1316px;
+      margin-bottom: -200px;
+      margin-right: -200px;
+      padding: 15px;
+      @include screen-lg {
+        width: 100%;
+        margin-bottom: 0px;
+        margin-right: 0px;
+      }
+
+      input {
+        width: 100%;
+        background-color: $light-gray;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label {
+        color: $night-black !important;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        font-family: 'Muli', sans-serif;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+      .hs-button.primary.large {
+        @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $forest-green;
+        border-radius: 25px;
+        height: 50px;
+        width: 257px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        margin-top: 50px;
+        &:hover {
+          transition: all .3s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  input {
+    max-width: 425px;
+    height: 49px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  input::placeholder {
+    color: $soft-gray !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important;
+    font-weight: normal;
+  }
+
+  textarea::placeholder {
+    color: $soft-gray !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important;
+    font-weight: normal;
+  }
+}
