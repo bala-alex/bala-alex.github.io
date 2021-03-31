@@ -20,8 +20,19 @@
   <div class="features bg-white">
     <!-- Navigation -->
     <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="banner-navigation">
+    <div class="banner-navigation__content">
+      <p class="m-3 text-center">No setup fees! Save 250€ when you register in April '21 </p>
+      <a class="button btn-white-sm m-3" data-toggle="modal" data-target="#exampleModal4">
+        GET COUPON
+      </a>
+    </div>
+    <div class="banner-close">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+  <div class="container py-3">
     <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,6 +61,36 @@
     </div>
   </div>
 </nav>
+<!-- Modal -->
+<div class="resources">
+  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content section__modal">
+        <div class="modal-body p-0">
+          <button type="button" class="close text-black" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row m-0">
+            <div class="col-12 section__modal-form p-0">
+              <p class="section__modal-title mb-4 mt-4">GET COUPON</p>
+              <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                region: "na1",
+                portalId: "5365877",
+                formId: "d7cf92d3-99eb-423c-a4e7-d618c669c09e"
+              });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Header -->
     <div class="header__content overflow-hidden">
       <div class="header__bg">
@@ -625,6 +666,24 @@ document.addEventListener("click", closeAllSelect);
       }
     });
   });
+</script>
+
+<script>
+  $(document).ready(function(){
+
+    $(window).scroll(function(){
+      if ($(window).scrollTop() === 0) {
+        $(".banner-navigation").removeClass("d-none");
+      } else {
+          $(".banner-navigation").addClass("d-none");
+      }
+    });
+
+    $(".banner-close").click(function(){
+      $(".banner-navigation").hide()
+    });
+  });
+
 </script>
 </body>
 </html>

@@ -46,6 +46,30 @@
   }
 }
 
+.btn-white-sm {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $forest-green !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 38px;
+  min-width: 117px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  &:hover {
+    color: $white !important;
+    background-color: transparent !important;
+    text-decoration: none;
+    border: 1px solid $white;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
 .btn-white-xl {
   @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
   color: $forest-green !important;

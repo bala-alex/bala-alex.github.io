@@ -244,3 +244,40 @@
 .user-select-none {
   user-select: none;
 }
+
+.banner-navigation {
+  background-color: #00867B;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  p {
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-sm {
+      flex-direction: column;
+    }
+  }
+}
+
+.banner-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

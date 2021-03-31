@@ -680,6 +680,24 @@ document.addEventListener("click", closeAllSelect);
   });
 </script>
 
+<script>
+  $(document).ready(function(){
+
+    $(window).scroll(function(){
+      if ($(window).scrollTop() === 0) {
+        $(".banner-navigation").removeClass("d-none");
+      } else {
+          $(".banner-navigation").addClass("d-none");
+      }
+    });
+
+    $(".banner-close").click(function(){
+      $(".banner-navigation").hide()
+    });
+  });
+
+</script>
+
   <script>
     $('#offer').hide();
     $('#closeButton').hide();
