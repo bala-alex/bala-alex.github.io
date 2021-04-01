@@ -246,7 +246,7 @@
 }
 
 .banner-navigation {
-  background-color: #00867B;
+  background-color: #6D9EDE;
   width: 100%;
   min-height: 70px;
   display: flex;
@@ -257,6 +257,9 @@
   p {
     color: #fff;
     margin-bottom: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
   }
 
   &__content {
@@ -280,4 +283,9 @@
     cursor: pointer;
     opacity: 0.5;
   }
+}
+
+.banner-button {
+  cursor: pointer;
+  text-decoration: underline !important;
 }

@@ -23,13 +23,11 @@
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
   <div class="banner-navigation">
     <div class="banner-navigation__content">
-      <p class="m-3 text-center">No setup fees! Save 250€ when you register in April '21 </p>
-      <a class="button btn-white-sm m-3" data-toggle="modal" data-target="#exampleModal4">
-        GET COUPON
-      </a>
+      <p class="m-3 text-center">No setup fees? Register this month and save <span id="coupon-month">$249</span>! -<a class="banner-button m-1" data-toggle="modal" data-target="#exampleModal4">Get the coupon</a>-
+      </p>
     </div>
-    <div class="banner-close">
-      <i class="fas fa-times"></i>
+    <div class="banner-close p-2">
+      <span aria-hidden="true">&times;</span>
     </div>
   </div>
   <div class="container py-3">
@@ -91,6 +89,7 @@
     </div>
   </div>
 </div>
+
     <!-- Header -->
     <div class="header__content">
       <div class="header__bg">
@@ -509,11 +508,53 @@ document.addEventListener("click", closeAllSelect);
       }
     });
 
+    $('.header__content').css('margin-top', 155);
+
     $(".banner-close").click(function(){
-      $(".banner-navigation").hide()
+      $(".banner-navigation").hide();
+      $('.header__content').css('margin-top', 85);
     });
   });
 
+</script>
+
+<script>
+  $( document ).ready(function() {
+    $.ajax('https://ipapi.co/json')
+    .then(
+        function success(response) {
+          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            $('#coupon-month').text('€249');
+          }
+          else if (response.currency === 'GBP') {
+            $('#coupon-month').text('£199');
+          }
+          else if (response.currency === 'INR') {
+            $('#coupon-month').text('₹15,000');
+          }
+          else if (response.currency === 'AUD') {
+            $('#coupon-month').text('A$299');
+          }
+          else if (response.currency === 'SGD') {
+            $('#coupon-month').text('$299');
+          }
+          else if (response.currency === 'ZAR') {
+            $('#coupon-month').text('R3,499');
+          }
+          else if (response.currency === 'CHF') {
+            $('#coupon-month').text('CHF275');
+          }
+          else if (response.currency === 'CAD') {
+            $('#coupon-month').text('CA$299');
+          }
+        },
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+    )
+    .catch((e) => console.log(e))
+  });
 </script>
 </body>
 </html>

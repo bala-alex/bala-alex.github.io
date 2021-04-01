@@ -7561,7 +7561,7 @@ a.text-dark:hover, a.text-dark:focus {
   user-select: none; }
 
 .banner-navigation {
-  background-color: #00867B;
+  background-color: #6D9EDE;
   width: 100%;
   min-height: 70px;
   display: -webkit-box;
@@ -7576,7 +7576,10 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative; }
   .banner-navigation p {
     color: #fff;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 18px; }
   .banner-navigation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7602,6 +7605,10 @@ a.text-dark:hover, a.text-dark:focus {
   .banner-close:hover {
     cursor: pointer;
     opacity: 0.5; }
+
+.banner-button {
+  cursor: pointer;
+  text-decoration: underline !important; }
 
 .section-large {
   padding-top: 145px;
@@ -12493,7 +12500,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #212529;
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #00887f !important;
+  color: #6D9EDE !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
