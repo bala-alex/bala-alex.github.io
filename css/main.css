@@ -7368,7 +7368,23 @@ html {
     text-decoration: none; }
 
 .container {
-  max-width: 1720px; }
+  max-width: 1920px;
+  padding-left: 100px;
+  padding-right: 100px; }
+  @media (max-width: 992px) {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 480px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.link-margin {
+  margin-right: 80px; }
+  @media (max-width: 992px) {
+    .link-margin {
+      margin-right: 30px; } }
 
 .bg-light-gray {
   background-color: #FCFCFC; }
@@ -7395,7 +7411,7 @@ html {
 
 @font-face {
   font-family: 'Circular Std';
-  src: url("../fonts/Circular/CircularStd-Medium.otf") format("opentype"); }
+  src: url("../fonts/Circular/CircularStd-Book.otf") format("opentype"); }
 
 .homepage {
   overflow: hidden; }
@@ -7453,18 +7469,20 @@ html {
     font-size: 120px;
     letter-spacing: -0.01em;
     font-family: 'Gilroy Bold', sans-serif;
-    line-height: 120px; }
+    line-height: 120px;
+    margin-bottom: 50px; }
     @media (max-width: 768px) {
       .homepage .header__title {
         font-size: 60px;
-        line-height: 70px; } }
+        line-height: 70px;
+        margin-bottom: 20px; } }
   .homepage .header__link {
     color: #46B8C8;
     font-size: 32px;
     font-family: 'Gilroy Bold', sans-serif; }
     @media (max-width: 768px) {
       .homepage .header__link {
-        font-size: 20px; } }
+        font-size: 24px; } }
   .homepage .info__title {
     font-size: 60px;
     line-height: 60px;
@@ -7590,6 +7608,9 @@ html {
     font-size: 32px;
     font-family: 'Gilroy Bold', sans-serif;
     white-space: nowrap; }
+    @media (max-width: 768px) {
+      .homepage .hiring__link {
+        font-size: 24px; } }
   .homepage .works__title {
     font-size: 60px;
     line-height: 60px;

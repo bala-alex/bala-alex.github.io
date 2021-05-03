@@ -41,7 +41,27 @@ html { scroll-behavior: smooth; }
 }
 
 .container {
-  max-width: 1720px;
+  max-width: 1920px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @include screen-md {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include screen-xs {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.link-margin {
+  margin-right: 80px;
+
+  @include screen-md {
+    margin-right: 30px;
+  }
 }
 
 .bg-light-gray {
