@@ -1,0 +1,57 @@
+.faq {
+
+  .section {
+    &__title {
+      color: $purple;
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 28px;
+    }
+
+    &__subtitle {
+      color: $night-black;
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 28px;
+    }
+
+    &__text {
+      color: $dust-gray;
+      font-family: 'Roboto', sans-serif !important;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+    }
+
+    &__container {
+      border-bottom: 1px solid $light-purple;
+    }
+  }
+
+  .is-visible {
+    display: block !important;
+  }
+
+  .faq li {
+    list-style-type: none;
+  }
+
+  .faq li.q {
+    background: $white;
+    cursor: pointer;
+  }
+
+  .faq li.a {
+    background: $white;
+    display: none;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+}

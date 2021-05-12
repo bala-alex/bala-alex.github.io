@@ -1,29 +1,315 @@
-.btn-white-default {
-  @include button-variant($white, $white, $active-background: darken($white, 7.5%), $active-border: darken($white, 10%));
-  color: $gray-500;
-  &:hover {
-    color: $gray-500;
-    text-decoration: none;
-  }
-}
-
-.btn-primary {
-  @include button-variant($turquoise, $turquoise, $active-background: darken($turquoise, 7.5%), $active-border: darken($turquoise, 10%));
+.btn-purple-sm {
+  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
   color: $white !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 55px;
   width: max-content;
-  min-width: 225px;
+  min-width: 136px;
   padding: 0 20px;
-  border-radius: 30px;
+  height: 36px;
+  border-radius: 4px;
   font-weight: bold;
-  font-family: 'Gilroy Bold', sans-serif;
-  font-size: 22px;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
   &:hover {
     color: $white;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.btn-purple-lg {
+  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-purple-xl {
+  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-gray-lg {
+  @include button-variant($light-gray, $light-gray, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-white-lg {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-white-large {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  border: 1px solid $purple;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple;
+    border: 1px solid $purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-white-md {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 179px;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-white-outline {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  border: 1px solid $purple !important;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $white !important;
+    background-color: $purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-purple-outline {
+  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  border: 1px solid $purple !important;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple !important;
+    background-color: darken($light-gray, 7.5%);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-purple-outline-sm {
+  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: max-content;
+  min-width: 160px;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: 1px solid $purple !important;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-secondary-lg {
+  @include button-variant(transparent, transparent, $active-background: darken(transparent, 7.5%), $active-border: darken(transparent, 10%));
+  color: $purple !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 4px;
+  border: 1px solid $purple;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+    background-color: $white;
+    border: 1px solid $purple;
+    cursor: pointer;
+  }
+}
+
+.btn-purple {
+  @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.btn-sidebar {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $night-black !important;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 50px;
+  border-radius: 0px;
+  height: 55px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple !important;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+  }
+}
+
+.btn-sidebar2 {
+  @include button-variant(transparent, transparent, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $night-black !important;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 50px;
+  border-radius: 0px;
+  height: 55px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    color: $purple !important;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
   }
 }

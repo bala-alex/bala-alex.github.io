@@ -1,0 +1,361 @@
+.contact {
+
+  .section {
+
+    &__input {
+      width: 100%;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &__container {
+      max-width: 574px !important;
+
+      label {
+        font-size: 16px !important;
+        font-family: 'Roboto', sans-serif !important;
+        color: $gray-400;
+        font-weight: normal;
+        letter-spacing: 0px;
+      }
+
+      input {
+        width: 100% !important;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        margin-bottom: 0px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      textarea {
+        width: 100% !important;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        height: 221px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      fieldset {
+        max-width: 100% !important;
+      }
+
+      .inputs-list {
+        list-style-type: none;
+        padding-left: 0px;
+      }
+
+      .hs-form-booleancheckbox-display {
+        display: flex;
+
+        .hs-input {
+          width: auto;
+        }
+
+        span {
+          margin-left: 10px !important;
+          margin-top: 7px;
+          color: #000000;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          font-family: 'Roboto', sans-serif !important;
+
+          a {
+            color: $purple;
+          }
+        }
+      }
+
+      label.hs-error-msg {
+        color: red !important;
+        font-size: 12px !important;
+      }
+    
+      .hs-error-msgs {
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+    
+      .hs_error_rollup {
+        display: none !important;
+      }
+    
+      .hs-form-required {
+        color: #fff !important;
+      }
+
+      .hs-button.primary.large {
+        @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 136px !important;
+        height: 36px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .checklist {
+    &__image {
+      width: 360px;
+      height: 100%;
+      object-fit: contain;
+
+      @include screen-md {
+        width: 100%;
+      }
+    }
+
+    &__image2 {
+      width: 410px;
+      height: 345px;
+      object-fit: contain;
+      z-index: 99;
+
+      @include screen-md {
+        width: 370px;
+        height: 300px;
+      }
+    }
+
+    &__image3 {
+      width: 450px;
+      height: 100%;
+      object-fit: contain;
+      margin-bottom: -60px;
+
+      @include screen-md {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+
+    &__box {
+      background: rgb(255, 255, 255);
+      border-radius: 4px;
+      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+      min-height: 464px;
+      width: 510px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -80px;
+      z-index: 99;
+
+      @include screen-md {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__screens-bg {
+      width: 60%;
+      height: 160px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+      background: linear-gradient(45deg, rgb(106, 69, 192) 0%, rgb(156, 120, 241) 100%);
+
+      @include screen-md {
+        width: 100%;
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        font-size: 16px !important;
+        font-family: 'Roboto', sans-serif !important;
+        color: $dust-gray;
+        font-weight: normal;
+        letter-spacing: 0px;
+      }
+
+      input {
+        width: 100% !important;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        margin-bottom: 0px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .hs-input {
+        width: 100% !important;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        display: block;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        outline: none;
+        margin-bottom: 0px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      label.hs-error-msg {
+        color: red !important;
+        font-size: 12px !important;
+      }
+    
+      .hs-error-msgs {
+        list-style-type: none !important;
+        padding-left: 0px;
+      }
+    
+      .hs_error_rollup {
+        display: none !important;
+      }
+    
+      .hs-form-required {
+        color: #fff !important;
+      }
+
+      span {
+        color: #fff !important;
+        display: none !important;
+      }
+
+      .hs-form-field {
+        width: 325px;
+      }
+
+      .hs-button.primary.large {
+        @include button-variant($purple, $purple, $active-background: darken($purple, 7.5%), $active-border: darken($purple, 10%));
+        color: $white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 223px !important;
+        height: 36px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        &:hover {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 35px !important;
+      font-family: 'Roboto', sans-serif !important;
+      color: $purple;
+      font-weight: bold;
+      line-height: 38px;
+      letter-spacing: -0.6px;
+      text-align: center;
+    }
+
+    &__subtext {
+      font-size: 18px !important;
+      font-family: 'Roboto', sans-serif !important;
+      color: $purple;
+      font-weight: bold;
+      line-height: 28px;
+      letter-spacing: -0.6px;
+    }
+
+    &__subtitle {
+      color: $dust-gray;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 28px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif !important;
+      max-width: 550px;
+    }
+  }
+
+  .enterprise {
+    .multi-container {
+      display: flex;
+    }
+
+    .hs-form-checkbox-display {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    .hs-input[type=checkbox] {
+      margin-left: 0px;
+      margin-right: 10px;
+      width: 15px !important;
+    }
+
+    .hs_do_you_have_a_privacy_management_tool_in_place_ {
+      margin-top: 30px;
+    }
+  }
+}

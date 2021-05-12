@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<div class="bg-white section-medium get-started landing">
+  <div class="container">
+    <div
+      class="d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      <h2 class="header__title mw-100">{{ site.data[page.lang]['get_started']['protect_your_business'] }}</h2>
+      <p class="header__subtitle2 text-center mb-0 mt-3">
+        {{ site.data[page.lang]['get_started']['get_started_on'] }}
+      </p>
+    </div>
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center my-3"
+    >
+      <script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js.hsforms.net/forms/v2.js"
+      ></script>
+      <script>
+        hbspt.forms.create({
+          portalId: '6250848',
+          formId: 'a3d890f6-817f-4d45-ac6c-d925c3290ca4',
+          onFormSubmit: function($form) {
+            var name = $form[0][1].value;
+            var email = $form[0][2].value;
+            console.log(`Create account for ${email}`);
+            var query = `mutation getStartedMutation($email: String!, $name: String!) {
+            getStartedMutation(
+              input:{ email: $email, name: $name } ) {
+              user{
+                id
+                email
+              }
+            }
+          }`;
+
+            fetch('https://legalsite.app/graphql', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+              },
+              body: JSON.stringify({
+                query,
+                variables: {
+                  name,
+                  email
+                }
+              })
+            })
+              .then(r => r.json())
+              .then(data => {
+                console.log('data returned:', data);
+                if (data.errors){ window.alert(data.errors[0].message)};
+              });
+          }
+        });
+      </script>
+    </div>
+  </div>
+</div>

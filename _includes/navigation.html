@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" alt="Logo: Legalsite" src="/images/features/Logo.svg"/><span class="header__logo-text">LegalSite</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav justify-content-between align-items-center ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link mx-2" href="legal-pages.html">{{ site.data[page.lang]['navigation']['legal_pages'] }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="privacy-compliance.html">{{ site.data[page.lang]['navigation']['compliance'] }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="privacy-operations.html">{{ site.data[page.lang]['navigation']['operations'] }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-2" href="https://app.legalsite.co/signin">{{ site.data[page.lang]['navigation']['login'] }}</a>
+      </li>
+      <a class="button btn-purple-sm m-1 mx-2" href="https://app.legalsite.co/signup">
+        {{ site.data[page.lang]['navigation']['get_started'] }}
+      </a>
+    </ul>
+  </div>
+</nav>

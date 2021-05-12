@@ -1,0 +1,56 @@
+<body>
+  <div class="contact">
+    <!-- Header -->
+    <div class="nav-fixed-mobile bg-light-gray">
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+    </div>
+    <div class="bg-light-gray">
+      <div class="container">
+        <div class="header__content">
+          <h2 class="header__title text-center">{{ site.data[page.lang]['confirm_compliance']['your_guide_is'] }}</h2>
+          <p class="header__subtitle mt-4">{{ site.data[page.lang]['confirm_compliance']['thank_you_for'] }}: {{ site.data[page.lang]['confirm_compliance']['getting_started'] }} </p>
+          <p class="header__subtitle mt-3">{{ site.data[page.lang]['confirm_compliance']['if_you_dont_see'] }} </p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="confirm__container">
+          <div class="confirm__box">
+            <img class="confirm__icon mt-4" alt="Icon: Privacy Compliance" src="/images/confirm/hat.svg"/>
+            <h2 class="confirm__title mt-3">{{ site.data[page.lang]['confirm_compliance']['privacy_compliance'] }}</h2>
+            <p class="confirm__subtitle">{{ site.data[page.lang]['confirm_compliance']['learn_more_about'] }}</p>
+            <a class="button btn-purple-sm mx-auto m-2" href="privacy-compliance.html">
+              {{ site.data[page.lang]['confirm_compliance']['learn_more'] }}
+            </a>
+          </div>
+          <div class="confirm__box">
+            <img class="confirm__icon mt-4" alt="Icon: Legalsite" src="/images/confirm/desktop.svg"/>
+            <h2 class="confirm__title mt-3">{{ site.data[page.lang]['confirm_compliance']['legalsite'] }}</h2>
+            <p class="confirm__subtitle">{{ site.data[page.lang]['confirm_compliance']['discover_how_our'] }} </p>
+            <a class="button btn-purple-sm mx-auto m-2" href="index.html">
+              {{ site.data[page.lang]['confirm_compliance']['learn_more'] }}
+            </a>
+          </div>
+          <div class="confirm__box">
+            <img class="confirm__icon mt-4" alt="Icon: Contact" src="/images/confirm/chat-user.svg"/>
+            <h2 class="confirm__title mt-3">{{ site.data[page.lang]['confirm_compliance']['contact'] }}</h2>
+            <p class="confirm__subtitle">{{ site.data[page.lang]['confirm_compliance']['have_any_questions'] }}</p>
+            <a class="button btn-purple-sm mx-auto m-2" href="contact.html">
+              {{ site.data[page.lang]['confirm_compliance']['learn_more'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    {% include get-started.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
