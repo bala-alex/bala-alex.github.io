@@ -1,113 +1,161 @@
 <body>
-  <div class="integrations">
+  <div class="integrations bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
     <!-- Header -->
-    <div class="nav-fixed-mobile bg-light-gray">
-      <div class="container">
-        {% include navigation.html %}
-      </div>
-    </div>
-    <div class="bg-light-gray">
-      <div class="container">
-        <div class="header__content">
-          <h2 class="header__title text-center">{{ site.data[page.lang]['integrations']['integrations'] }}</h2>
-          <p class="header__subtitle mw-100 mt-4">{{ site.data[page.lang]['integrations']['make_legalsite'] }}</p>
-          <a class="button btn-purple-lg m-3 mx-auto" href="https://app.legalsite.co/signup">
-            {{ site.data[page.lang]['integrations']['get_started'] }}
-          </a>
+    <div class="header__content overflow-hidden">
+      <div class="header__bg">
+        <div class="container section-medium">
+          <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['integrations']['integrations'] }}</h1>
+          <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['integrations']['codekeeper_integrates'] }} <a class="text-underline text-white" href="contact.html">{{ site.data[page.lang]['integrations']['let_us_know'] }}</a> {{ site.data[page.lang]['integrations']['and_we_add'] }} </p>
         </div>
       </div>
     </div>
     <!-- First Section -->
     <div class="bg-white pb-5">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3 col-sm-12 px-0">
-            <div class="sidebar__container pt-5 pb-5">
-              <div class="d-flex align-items-center pl-5">
-                <img class="" alt="Icon: Filter" src="/images/integrations/filter-icon.svg"/>
-                <p class="sidebar__title mb-0 ml-2">{{ site.data[page.lang]['integrations']['filter'] }}</p>
-              </div>
-              <div class="btn-group btn-group-toggle mt-4 d-flex flex-column" data-toggle="buttons">
-                <label class="btn btn-sidebar" id="all">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> {{ site.data[page.lang]['integrations']['see_all'] }}
-                </label>
-                {% for integration in site.integrations %}
-                <label class="btn btn-sidebar" id="{{ integration.integration_type }}">
-                    <input type="radio" class="search" name="Zapier" id="option2" autocomplete="off"><span class="truncate">{{ integration.integration_type }}</span>
-                  </label>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9 col-sm-12 pt-5">
-            <div class="cont">
-              <div class="container2 d-flex flex-column">
-                <p class="header__subtitle">{{ site.data[page.lang]['integrations']['if_you_dont_see'] }}, <a href="contact.html">{{ site.data[page.lang]['integrations']['let_us_know'] }}.</a></p>
-                <div class="row d-flex flex-wrap mt-5 mobile-center service__input-container" id="myUL">
-                  <div id="test-list" class="w-100 pl-2">
-                    <div class="input-group mb-3 service__input">
-                      <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="Type to search for a service..." aria-label="Type to search" aria-describedby="basic-addon2" />
-                      <div class="input-group-append">
-                        <button class="btn btn-purple service__search px-5 shadow-none" type="button"><i class="fas fa-search"></i></button>
+        <div class="col-12 pt-5">
+          <div class="cont">
+            <div class="container2 mx-auto"> 
+              <div class="row d-flex flex-wrap mt-5 mobile-center w-100" id="myUL">
+                <div id="test-list" class="w-100">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 pt-4">
+                      <div class="btn-group btn-group-toggle mt-4 d-flex align-items-center" data-toggle="buttons">
+                        <label class="btn btn-sidebar" id='all'>
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> {{ site.data[page.lang]['integrations']['see_all'] }}
+                        </label>
+                        {% for integration in site.integrations %}
+                        <label class="btn btn-sidebar" id="{{ integration.integration_type }}">
+                          <input type="radio" class='search' name="Source Code Escrow" id="option2" autocomplete="off">{{ integration.integration_type }}
+                        </label>
+                        {% endfor %}
                       </div>
                     </div>
-                    <ul class="list">
-                      {% for integration in site.integrations %}
-                      <li><a data-name="{{ integration.integration_name }}" class="service__box page-link mt-5 mx-auto" href="">
-                        <span class="type d-none">{{ integration.integration_type }}</span>
-                        <span class="service__image-box">
-                          <img alt="Logo: Integration" src="{{ integration.integration_logo_url }}"/>
-                        </span>
-                        <span class="service__title name">{{ integration.integration_name }}</span>
-                        <p class="service__subtitle multine-ellipsis">{{ integration.integration_description }}</p>
-                        <p class="d-none">{{ integration.integration_type }}</p>
-                      </a></li>
-                      {% endfor %}
-                    </ul>
-                    <ul class="pagination"></ul>
+                    <div class="col-md-6 col-sm-12 pt-5">
+                      <div class="input-group mb-3 service__input ml-auto">
+                        <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="Search integrations" aria-label="Type to search" aria-describedby="basic-addon2" />
+                        <div class="input-group-append bg-light-gray">
+                          <button class="service__search btn px-5 shadow-none" type="button">
+                            <img class="service__input-icon" src="/images/integration-page/search-icon.svg"/>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  
+                  <ul class="list mt-5">
+                    {% for integration in site.integrations %}
+                    <li><a data-name="{{ integration.integration_name }}" class="service__box page-link mt-3 mx-auto" href="">
+                      <span class="type d-none">{{ integration.integration_type }}</span>
+                      <span class="service__image-box">
+                        <img src="{{ integration.integration_logo_url }}"/>
+                      </span>
+                      <span class="service__title name">{{ integration.integration_name }}</span>
+                      <p class="service__subtitle">{{ integration.integration_description }}</p>
+                      <p class="d-none">{{ integration.integration_type }}</p>
+                    </a></li>
+                    {% endfor %}
+                  </ul>
+                  <ul class="pagination"></ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <p class="header__subtitle mx-auto mt-3">Your preferred platform is not listed? <a class="text-underline text-white" href="contact.html">Let us know</a> and we'll add it. </p>
       </div>
     </div>
     <!-- Second Section -->
-    {% include get-started.html %}
+    <div class="bg-white pb-5">
+      <div class="container-fluid section-medium">
+        <div class="steps__container mx-auto">
+          <h1 class="steps__main-title">How to activate integrations</h1>
+          <div class="container steps__desktop">
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <div class="steps__content">
+                  <p class="steps__title ml-auto">Step 1</p>
+                  <p class="steps__subtitle ml-auto text-right">To activate an Integration, you need to sign in to <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> and go to your dashboard, select <strong>Integrations</strong> located on left sidebar menu of your screen:</p>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
+                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
+                <div class="steps__dash mx-auto"></div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img class="steps__image" src="/images/integration-page/step-1.svg"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-sm-12 d-flex justify-content-end">
+                <img class="steps__image2" src="/images/integration-page/step-2.svg"/>
+              </div>
+              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
+                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
+                <div class="steps__dash mx-auto"></div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="steps__content">
+                  <p class="steps__title">Step 2</p>
+                  <p class="steps__subtitle text-start">Once on the page, you will see all of our built-in apps we integrate with, from here you will select integration platform you want and click on <strong>“Activate”</strong> button.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <div class="steps__content">
+                  <p class="steps__title ml-auto">Step 3</p>
+                  <p class="steps__subtitle ml-auto text-right">Once you click on the <strong>“Activate”</strong> button you will be asked to connect your Codeekeper account with selected integration account or activate the integration manually following the instructions from right.</p>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
+                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img class="steps__image3" src="/images/integration-page/step-3.svg"/>
+              </div>
+            </div>
+            <p class="steps__text mt-5">If you don’t already have an account, you’ll need to sign up for <a href="https://codekeeper.co/sign-up.html"> Codekeeper account.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    {% include secure-assets.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
+
   <!-- Snippets -->
   {% include snippets.html %}
   <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
   <script>
     $('.page-link').each(function() {
-      var serviceUrls = $(this).attr('data-name').toLowerCase().split(' ').join("_");
-      var serviceUrl = serviceUrls.replace(/[^\w\s]/gi, '')
+      var serviceUrl = $(this).attr('data-name').toLowerCase();
 
       if (serviceUrl.match(/^[a-z\.]+ [a-z]+/i)) {
-        $(this).attr('href', '/integrations/' + serviceUrl.split(' ').join("_") + '.html');
+        
+        $(this).attr('href', 'integrations/' + serviceUrl.split(' ').join("_") + '.html');
       }
       else {
-        $(this).attr('href', '/integrations/' + serviceUrl + '.html');
+        $(this).attr('href', 'integrations/' + serviceUrl + '.html');
       }
     });
   </script>
-
   <script>
     $('#all').addClass('active');
     var seen = {};
 
     $('.btn-sidebar').each(function() {
       var txt = $(this).attr('id');
-
+    
       if (seen[txt])
         $(this).remove();
       else
         seen[txt] = true;
     });
-
+      
     var options = {
       valueNames: ['name', 'type'],
       page: 9,
@@ -118,10 +166,12 @@
 
     $('.btn-sidebar').click(function() {
       $('.btn-sidebar').removeClass('active');
-
+  
       $('#all').removeClass('active');
       var category = $(this).attr('id');
+
       $('#' + category).addClass('active');
+      $(this).addClass('active');
       featureList.filter(function(item) {
         if (item.values().type === category) {
             return true;

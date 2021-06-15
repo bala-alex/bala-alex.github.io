@@ -1,42 +1,139 @@
 <body>
-  <div class="contact">
+  <div class="contact bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
     <!-- Header -->
-    <div class="nav-fixed-mobile bg-light-gray">
-      <div class="container">
-        {% include navigation.html %}
-      </div>
-    </div>
-    <div class="bg-light-gray">
-      <div class="container">
-        <div class="header__content">
-          <h2 class="header__title text-center">{{ site.data[page.lang]['contact']['how_can_we'] }}</h2>
-          <p class="header__subtitle mw-100 mt-3">{{ site.data[page.lang]['contact']['drop_us_a_line'] }}</p>
+    <div class="header__content">
+      <div class="header__bg">
+        <div class="container">
+          <div class="header__container mx-auto">
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="header__title mt-4">{{ site.data[page.lang]['contact']['contact_us'] }}</h1>
+                <p class="header__subtitle my-4">{{ site.data[page.lang]['contact']['leave_us_a_message'] }}</p>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="mt-2">
+                  <img class="image-style" src="/images/contact/contact-image.svg"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- First Section -->
-    <div class="bg-white py-5">
+    <div class="pb-5">
       <div class="container">
-        <div class="section__container mx-auto">
-          <p class="header__subtitle text-center mt-3 mx-auto" id="leave-message">{{ site.data[page.lang]['contact']['fill_out_the'] }}</p>
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            portalId: "6250848",
-            onFormSubmit: function() {
-              $('#leave-message').hide();
-            },
-            formId: "438e6fea-6534-4322-8de2-1bb3b8e58258"
-          });
-          </script>
+        <div class="section__container-bg mx-auto">
+          <div class="section__container mx-auto">
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "5365877",
+              formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+            });
+            </script>
+          </div>
         </div>
       </div>
     </div>
     <!-- Second Section -->
-    {% include get-started.html %}
+    <div class="bg-white section-medium">
+      <div class="container">
+        <p class="info__main-title mt-2">{{ site.data[page.lang]['contact']['our_offices'] }}</p>
+        <p class="info__main-subtitle mt-2 mx-auto">{{ site.data[page.lang]['contact']['our_team_is'] }}</p>
+        <div class="info__container mx-auto">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img class="info__image" src="/images/contact/office-us.svg"/>
+                <p class="info__title mt-4"><img class="mr-2" src="/images/contact/location.svg"/>{{ site.data[page.lang]['contact']['us_office'] }}</p>
+                <p class="info__subtitle">
+                  548 Market St<br>
+                  PMB 63050 San Francisco,<br>
+                  California 94104-5401<br>
+                  The United States
+                </p>
+                <div class="info__devider"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img class="info__image" src="/images/contact/office-nl.svg"/>
+                <p class="info__title mt-4"><img class="mr-2" src="/images/contact/location.svg"/>{{ site.data[page.lang]['contact']['netherlands_office'] }}</p>
+                <p class="info__subtitle">
+                  World Trade Center - The Hague<br>
+                  Prinses Margrietplantsoen 33<br>
+                  2595 AM The Hague<br>
+                  The Netherlands
+                </p>
+                <div class="info__devider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p class="info__title mt-2"><img class="mr-2" src="/images/contact/email.svg"/>Sales Inquiries</p>
+                <p class="info__subtitle">
+                  Please use our website chat feature<br> or <a class="text-underline" href="mailto:contact@codekeeper.co">email us here</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p class="info__title mt-2"><img class="mr-2" src="/images/contact/request.svg"/>Release Request</p>
+                <p class="info__subtitle">
+                  If you cannot login to your account <br>
+                  please <a class="text-underline" href="mailto:release@codekeeper.co">email us here</a> (Monitored 24/7/365).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="bg-white section-small px-3">
+      <div class="about__container mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <h2 class="about__title">{{ site.data[page.lang]['contact']['about_us'] }}</h2>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <p class="about__text">{{ site.data[page.lang]['contact']['codekeeper_was_founded'] }}</p>
+            <p class="about__text">{{ site.data[page.lang]['contact']['after_our_soft'] }}</p>
+          </div>
+        </div>
+        <div class="about__devider"></div>
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <p class="about__subtitle">{{ site.data[page.lang]['contact']['pricing_philosophy'] }}</p>
+            <p class="about__text2">{{ site.data[page.lang]['contact']['software_escrow'] }}: {{ site.data[page.lang]['contact']['you_need_it'] }}</p>
+            <p class="about__text2">{{ site.data[page.lang]['contact']['we_keep'] }}</p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <p class="about__subtitle">{{ site.data[page.lang]['contact']['expert_security'] }}</p>
+            <p class="about__text3">{{ site.data[page.lang]['contact']['data_security_runs'] }} <a class="text-underline" href="security.html">{{ site.data[page.lang]['contact']['our_security'] }}</a></p>
+            <p class="about__subtitle mt-4">{{ site.data[page.lang]['contact']['global_company'] }}</p>
+            <p class="about__text3">{{ site.data[page.lang]['contact']['we_have_offices'] }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="verification__guide">
+        {% include escrow-introduction.html %}
+      </div>
+    </div>
+    <!-- Fourth Section -->
+    {% include secure-assets.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
+
   <!-- Snippets -->
   {% include snippets.html %}
 </body>
