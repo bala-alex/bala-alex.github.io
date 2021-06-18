@@ -365,7 +365,7 @@
     </div>
     <!-- Seventh Section -->
     <div class="bg-white">
-      <div class="container section-large">
+      <div class="container section-large resources">
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="escrow__content px-3">
@@ -375,14 +375,45 @@
                 <a class="button btn-bondi-blue mr-4 my-4" href="pricing.html">
                   AAN DE SLAG
                 </a>
-                <a class="button escrow3__link" href="sample-agreement.html">
-                  View sample agreement
+                <a class="button escrow3__link mw-100 text-bondi-blue" data-toggle="modal" data-target="#exampleModal4">
+                  Download sample agreement
                 </a>
                 </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <img class="image-style" src="/images/homepage/escrow-role.svg"/>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content section__modal mx-auto">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="m-0">
+                  <div class="section__modal-image-content p-0 pt-5">
+                    <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
+                  </div>
+                  <div class="section__modal-form p-0">
+                    <img class="section__modal-image" src="/images/resources-page/guide-sample.svg"/>
+                    <!--[if lte IE 8]>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                    <![endif]-->
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                      portalId: "5365877",
+                      formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -451,20 +482,23 @@
             GRATIS GIDS DOWNLOADEN
           </a>
         </div>
-        <img class="guide__image2 my-4" src="/images/homepage/introduction-to-software.svg"/>
+        <img class="guide__image2 my-4" src="/images/resources-page/guide-introduction.svg"/>
       </div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal">
+        <div class="modal-content section__modal mx-auto">
           <div class="modal-body p-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <div class="row m-0">
-              <div class="col-md-5 col-sm-12 section__modal-form p-0">
-                <p class="section__modal-title mb-4 mt-4">U kunt dit e-book gratis downloaden!</p>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.svg"/>
                 <!--[if lte IE 8]>
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                 <![endif]-->
@@ -475,9 +509,6 @@
                   formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
                 });
                 </script>
-              </div>
-              <div class="col-md-7 col-sm-12 section__modal-image p-0">
-                <img class="image-style mt-3" src="/images/homepage/introduction-to-software.svg"/>
               </div>
             </div>
           </div>
@@ -920,8 +951,8 @@
             <p class="footer__text mt-2 mb-0 fw-bold">INFORMATIE</p>
             <a class="footer__subtext mt-2" href="resources.html">Alle informatie</a>
             <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Informatie Escrow</a>
             <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>

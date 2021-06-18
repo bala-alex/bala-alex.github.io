@@ -20,36 +20,37 @@
   <div class="resources bg-alice-blue">
     <!-- Navigation -->
     <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link m-1" href="features.html">LEISTUNGEN</a>
+          <a class="nav-link m-2" href="features.html">LEISTUNGEN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="how-it-works.html">SO GEHT ES</a>
+          <a class="nav-link m-2" href="pricing.html">PREISE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="data-escrow.html">DATA-ESCROW</a>
+          <a class="nav-link m-2" href="integrations.html">INTEGRATIONEN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="saas-escrow.html">SAAS ESCROW</a>
+          <a class="nav-link m-2" href="contact.html">KONTAKT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="security.html">SICHERHEIT</a>
+          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">ANMELDEN</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="pricing.html">PREISE</a>
-        </li>
+        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+          ERSTE SCHRITTE
+        </a>
       </ul>
     </div>
   </div>
 </nav>
+
     <!-- Header -->
     <div class="header__content overflow-hidden">
       <div class="header__bg2 pb-4">
@@ -137,20 +138,23 @@
             KOSTENLOSEN LEITFADEN HERUNTERLADEN
           </a>
         </div>
-        <img class="guide__image2 my-4" src="/images/resources-page/modal-anatomy.svg"/>
+        <img class="guide__image2 my-4" src="/images/resources-page/guide-anatomy.svg"/>
       </div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal">
+        <div class="modal-content section__modal mx-auto">
           <div class="modal-body p-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <div class="row m-0">
-              <div class="col-md-5 col-sm-12 section__modal-form p-0">
-                <p class="section__modal-title mb-4 mt-4">Dieses eBook kostenlos herunterladen!</p>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">Dieses eBook kostenlos herunterladen!</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/guide-anatomy.svg"/>
                 <!--[if lte IE 8]>
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                 <![endif]-->
@@ -161,9 +165,6 @@
                   formId: "8d1e2eaf-1bfa-4f0f-8495-7a7a1533c912"
                 });
                 </script>
-              </div>
-              <div class="col-md-7 col-sm-12 section__modal-image p-0">
-                <img class="image-style mt-3" src="/images/resources/Anatomy-escrow.svg"/>
               </div>
             </div>
           </div>
@@ -268,8 +269,8 @@
             <p class="footer__text mt-2 mb-0 fw-bold">INFOMATERIAL</p>
             <a class="footer__subtext mt-2" href="resources.html">Gesamtes Infomaterial</a>
             <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Quellcode-Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data-Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data-Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Information-Escrow</a>
             <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>

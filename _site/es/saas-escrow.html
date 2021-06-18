@@ -20,36 +20,37 @@
   <div class="resources bg-white">
     <!-- Navigation -->
     <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link m-1" href="features.html">CARACTERÍSTICAS</a>
+          <a class="nav-link m-2" href="features.html">CARACTERÍSTICAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="how-it-works.html">CÓMO FUNCIONA</a>
+          <a class="nav-link m-2" href="pricing.html">TARIFAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="data-escrow.html">DEPÓSITO DE DATOS</a>
+          <a class="nav-link m-2" href="integrations.html">INTEGRACIONES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="saas-escrow.html">DEPÓSITO DE SaaS</a>
+          <a class="nav-link m-2" href="contact.html">CONTACTO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="security.html">SEGURIDAD</a>
+          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">INICIAR SESIÓN</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="pricing.html">TARIFAS</a>
-        </li>
+        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+          COMENZAR
+        </a>
       </ul>
     </div>
   </div>
 </nav>
+
     <!-- Header -->
     <div class="header__content overflow-hidden">
       <div class="header__bg pb-4">
@@ -323,31 +324,34 @@
     </div>
     <div class="verification__guide">
       <!DOCTYPE html>
-<div class="">
+<div class="resources">
   <div class="container">
     <div class="guide__bg">
-      <div class="guide__content d-flex align-items-center justify-content-center">
+      <div class="guide__content">
         <div>
-          <h2 class="guide__title">Guía de seguridad de la información</h2>
-          <p class="guide__subtitle mt-3">Descargue nuestra guía para conocer las medidas que toma Codekeeper para garantizar la máxima seguridad en su depósito de código fuente.</p>
-          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal3">
+          <h2 class="guide__title mt-4">La anatomía de un acuerdo de custodia de software</h2>
+          <p class="guide__subtitle mt-3">Obtenga información acerca de todo lo que debe saber para celebrar con éxito un acuerdo de custodia de software, desde la negociación de los términos hasta la gestión de una rápida entrega y recuperación.</p>
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal2">
             DESCARGAR GUÍA GRATUITA
           </a>
         </div>
-        <img class="guide__image2" src="/images/homepage/information-security-image.svg"/>
+        <img class="guide__image2 my-4" src="/images/resources-page/guide-anatomy.svg"/>
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade resources" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal">
+        <div class="modal-content section__modal mx-auto">
           <div class="modal-body p-0">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <div class="row m-0">
-              <div class="col-md-5 col-sm-12 section__modal-form p-0">
-                <p class="section__modal-title mb-4 mt-4">¡Descargue el e-book gratis!</p>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">¡Descargue el e-book gratis!</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/guide-anatomy.svg"/>
                 <!--[if lte IE 8]>
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
                 <![endif]-->
@@ -355,12 +359,9 @@
                 <script>
                   hbspt.forms.create({
                   portalId: "5365877",
-                  formId: "4ecdb6ad-f33c-4059-bc23-89c465ae1216"
+                  formId: "8d1e2eaf-1bfa-4f0f-8495-7a7a1533c912"
                 });
                 </script>
-              </div>
-              <div class="col-md-7 col-sm-12 section__modal-image p-0">
-                <img class="image-style mt-3" src="/images/homepage/information-security-image.svg"/>
               </div>
             </div>
           </div>
@@ -430,8 +431,8 @@
             <p class="footer__text mt-2 mb-0 fw-bold">RECURSOS</p>
             <a class="footer__subtext mt-2" href="resources.html">Todos los recursos</a>
             <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Depósito de código fuente</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Depósito de datos</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">Depósito de SaaS</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Depósito de datos</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">Depósito de SaaS</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Depósito de información</a>
             <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>

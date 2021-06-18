@@ -2,22 +2,51 @@
   .header {
   
     &__title {
-      font-size: 44px !important;
+      font-size: 45px !important;
+      line-height: 65px;
       font-family: 'Muli', sans-serif;
-      color: $white;
-      font-weight: normal;
-      letter-spacing: -0.42px;
-      max-width: 450px !important;
+      color: $cerulean;
+      font-weight: bold;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    &__main-title {
+      font-size: 22px !important;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      color: $air-force-blue;
+      font-weight: bold;
+      letter-spacing: -1px;
+      text-align: center;
     }
   
     &__subtitle {
-      color: $white;
+      color: $air-force-blue;
       font-size: 18px;
       font-weight: normal;
       letter-spacing: 0px;
       line-height: 32px;
       font-family: 'Muli', sans-serif;
-      max-width: 736px;
+      max-width: 663px;
+      text-align: center;
+    }
+
+    &__subtitle2 {
+      color: $air-force-blue;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      line-height: 32px;
+      font-family: 'Muli', sans-serif;
+      max-width: 716px;
+      text-align: center;
+    }
+
+    &__devider-small {
+      width: 29px;
+      height: 1px;
+      background-color: $air-force-blue;
     }
 
     &__image {
@@ -29,16 +58,14 @@
       margin-top: 85px;
     }
   
-    &__bg {
-      height: 457px !important;
-      background: url('../images/features/Slogan@3x.png');
+    &__bg2 {
+      min-height: 450px !important;
+      background: url('../images/resources-page/resources-bg.png');
       background-repeat: no-repeat;
       background-position: center; 
       background-size: cover !important;
-
-      @include screen-md {
-        height: auto !important;
-      }
+      padding-top: 80px !important;
+      padding-bottom: 180px !important;
     }
 
     &__image-box2 {
@@ -108,6 +135,35 @@
       line-height: 32px;
       font-family: 'Muli', sans-serif;
       max-width: 438px;
+    }
+
+    &__content {
+      max-width: 470px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    &__box {
+      width: 173px;
+      height: 160px;
+      background: #FFFFFF;
+      box-shadow: 2px 9px 20px #EEF1F6;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__box-logo {
+      max-width: 130px;
+      max-height: 130px;
+    }
+
+    &__line {
+      width: 110px;
+      height: 1px;
+      border-top: 1px dashed $air-force-blue;
     }
   }
 }

@@ -357,7 +357,7 @@
       color: $air-force-blue;
       font-weight: 400;
       max-width: 429px;
-      
+
       a {
         color: $bondi-blue;
         text-decoration: none;
@@ -385,6 +385,15 @@
 
       @include screen-md {
         display: none;
+      }
+    }
+
+    &__mobile {
+      display: none;
+
+      @include screen-md {
+        display: block;
+        margin-top: 100px;
       }
     }
   }

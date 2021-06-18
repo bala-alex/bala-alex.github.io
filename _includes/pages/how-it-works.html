@@ -1,97 +1,162 @@
 <body>
   <div class="resources bg-white">
     <!-- Navigation -->
-    {% include navigation-marketing.html %}
+    {% include navigation.html %}
     <!-- Header -->
     <div class="header__content overflow-hidden">
-      <div class="header__bg pb-4">
+      <div class="header__bg">
         <div class="container">
-          <p class="product__title mx-auto mt-4">{{ site.data[page.lang]['how_it_works']['manage_software'] }}</p>
-          <h1 class="header__title mx-auto mt-3">{{ site.data[page.lang]['how_it_works']['technical_configuration'] }}</h1>
-          <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['how_it_works']['our_innovative'] }}</p>
-          <a class="button btn-white-lg mt-4 mx-auto" href="pricing.html">
-            {{ site.data[page.lang]['how_it_works']['get_started'] }}
-          </a>
+          <h1 class="header__title mx-auto mt-5">{{ site.data[page.lang]['how_it_works']['technical_configuration'] }}</h1>
+          <p class="header__subtitle mx-auto mt-4 mb-0"><strong>{{ site.data[page.lang]['how_it_works']['manage_software'] }}</strong></p>
+          <p class="header__subtitle mx-auto mt-1">{{ site.data[page.lang]['how_it_works']['our_innovative'] }}</p>
         </div>
       </div>
     </div>
     <!-- First Section -->
     <div class="container pt-4">
       <p class="info__reading-title mx-auto mt-5">{{ site.data[page.lang]['how_it_works']['effortless_intuitive'] }}</p>
-      <p class="info__subtitle mx-auto mt-4 mb-5 text-center">{{ site.data[page.lang]['how_it_works']['codekeeper_is_made'] }}</p>
+      <p class="info__subtitle2 mx-auto mt-4 mb-5 text-center">{{ site.data[page.lang]['how_it_works']['codekeeper_is_made'] }}</p>
     </div>
     <!-- Second Section -->
     <div class="bg-white security">
       <div class="container py-5">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <p class="how-it-works__lable my-2">{{ site.data[page.lang]['how_it_works']['step_1'] }}</p>
-            <h2 class="how-it-works__title">{{ site.data[page.lang]['how_it_works']['connect_repository'] }}</h2>
-            <p class="how-it-works__subtitle mt-4">{{ site.data[page.lang]['how_it_works']['our_intuitive_interface'] }}</p>
+            <div class="works__config">
+              <div class="works__number-bg">
+                <div class="works__number">1</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Sign Up</p>
+                <p class="works__subtext">The first step is to set up your account on Codekeeper.
+                  From the Codekeeper pricing page, click the “Get Started” button under your plan of choice.
+                  You will be redirected to the signup flow, where you will be asked to enter your information in order to create an account.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/security/step-1.GIF"/>
+          <div class="col-md-6 col-sm-12 pr-5">
+            <img class="works__image2 mt-5" src="/images/homepage/config-1.svg"/>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Third Section -->
-    <div class="bg-white security">
-      <div class="container py-5">
         <div class="row column-reverse-mobile">
           <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/security/step-2.GIF"/>
+            <div class="works__config2">
+              <img class="works__image2" src="/images/homepage/config-2.svg"/>
+            </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <p class="how-it-works__lable text-right">{{ site.data[page.lang]['how_it_works']['step_2'] }}</p>
-            <h2 class="how-it-works__title2 ml-auto">{{ site.data[page.lang]['how_it_works']['create_and_configure'] }}</h2>
-            <p class="how-it-works__subtitle2 mt-4 ml-auto">{{ site.data[page.lang]['how_it_works']['to_create_a_new'] }} </p>
+            <div class="works__config3">
+              <div class="works__number-bg2">
+                <div class="works__number">2</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Explore dashboard</p>
+                <p class="works__subtext">Easily manage all of your escrows from a single centralized dashboard.
+                  At the top, you’ll find some general metrics that give you insights into the status of your escrows. The dashboard also contains information about all of your escrow agreements and latest activity, as well as links to get help.
+                  To get started with a new escrow agreement, simply navigate to the “Set up new escrow” card and click on the “Initiate” button.
+                  </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Fourth Section -->
-    <div class="bg-white security">
-      <div class="container py-5">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <p class="how-it-works__lable my-2">{{ site.data[page.lang]['how_it_works']['step_3'] }}</p>
-            <h2 class="how-it-works__title">{{ site.data[page.lang]['how_it_works']['add_assets'] }}</h2>
-            <p class="how-it-works__subtitle mt-4">{{ site.data[page.lang]['how_it_works']['our_state'] }}</p>
+            <div class="works__config4">
+              <div class="works__number-bg">
+                <div class="works__number">3</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Connect your repositories</p>
+                <p class="works__subtext">With Codekeeper’s user-friendly, step-by-step process, you can set up automatic source code and data deposits by connecting your SCM platform such as Github, Bitbucket, Gitlab, and others. No coding required! <br><br>If you still prefer manual upload, our secure upload folder allows you to easily deposit your source code and other data.
+                  </p>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/security/step-3.GIF"/>
+            <img class="works__image2" src="/images/homepage/config-3.svg"/>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Fifth Section -->
-    <div class="bg-white security">
-      <div class="container py-5">
         <div class="row column-reverse-mobile">
           <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/security/step-4.GIF"/>
+            <div class="works__config7">
+              <img class="works__image2" src="/images/homepage/config-4.svg"/>
+            </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <p class="how-it-works__lable text-right">{{ site.data[page.lang]['how_it_works']['step_4'] }}</p>
-            <h2 class="how-it-works__title2 ml-auto">{{ site.data[page.lang]['how_it_works']['sign'] }}</h2>
-            <p class="how-it-works__subtitle2 mt-4 ml-auto">{{ site.data[page.lang]['how_it_works']['to_make_the'] }} </p>
+            <div class="works__config3">
+              <div class="works__number-bg2">
+                <div class="works__number">4</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Define release triggers</p>
+                <p class="works__subtext">Specify for each beneficiary which source code repositories they should receive, 
+                  as well as under which conditions the content of the repositories should be released. Manage complex agreements 
+                  with confidence and ease.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="works__config6">
+              <div class="works__number-bg">
+                <div class="works__number">5</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Manage beneficiaries</p>
+                <p class="works__subtext">Should you want to add more beneficiaries to your secure vaults (repositories), you can do so at any time. Simply let us know and we’ll validate the necessary configuration.
+                  Each of your license beneficiaries can only access their own repository information, which ensures source code privacy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="works__image2 mt-1 mt-lg-5" src="/images/homepage/config-5.svg"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <div class="works__config8">
+              <img class="works__image2" src="/images/homepage/config-6.svg"/>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="works__content3">
+              <div class="works__number-bg3">
+                <div class="works__number">6</div>
+              </div>
+              <div>
+                <p class="works__text mt-1">Manage beneficiaries</p>
+                <p class="works__subtext">Should you want to add more beneficiaries to your secure vaults (repositories), you can do so at any time. Simply let us know and we’ll validate the necessary configuration.
+                  Each of your license beneficiaries can only access their own repository information, which ensures source code privacy.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+          
     <!-- Sixth Section -->
-    <div class="security my-5 py-5">
-      <div class="security2__container mx-auto mt-5">
-        <div class="section-divider mt-5 mx-auto"></div>
-        <h3 class="info__reading-title mx-auto">{{ site.data[page.lang]['how_it_works']['what_information'] }}</h3>
-        <p class="info__reading-subtitle2 mx-auto mt-4 pb-5">{{ site.data[page.lang]['how_it_works']['codekeeper_does_not'] }}</p>
+    <div class="bg-white section-small container-fluid">
+      <div class="beneficiary__container mx-auto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <h2 class="beneficiary__title mt-5">{{ site.data[page.lang]['how_it_works']['what_information'] }}</h2>
+              <p class="beneficiary__subtitle mt-4">{{ site.data[page.lang]['how_it_works']['codekeeper_does_not'] }}</p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="beneficiary__image mt-5" src="/images/homepage/beneficiary-information.svg"/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="bg-light-gray section-medium pricing">
+    <!-- Section -->
+    <div class="bg-white section-medium pricing">
       <h2 class="offer__main-title mt-5">{{ site.data[page.lang]['how_it_works']['let_us_guide'] }}</h2>
       <p class="offer__main-subtitle mt-4 mx-auto mw-100">{{ site.data[page.lang]['how_it_works']['every_codekeeper_account'] }}</p>
-      <a data-toggle="modal" data-target="#meetingModal" class="button btn-primary-lg mx-auto my-5 outline-none underline-none">
+      <a data-toggle="modal" data-target="#meetingModal" class="button btn-bondi-blue mx-auto my-5 outline-none underline-none">
         {{ site.data[page.lang]['how_it_works']['schedule_a_demo'] }} 
       </a>
       <div class="modal fade meeting-modal" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,47 +171,8 @@
         </div>
       </div>
     </div>
-    <!-- Seventh Section -->
-    <div class="security section-large mb-5">
-      <div class="section-divider mt-5 mx-auto"></div>
-      <h3 class="info__reading-title mx-auto">{{ site.data[page.lang]['data_escrow_product']['best_in_class'] }}</h3>
-      <p class="info__reading-subtitle2 mx-auto mt-4 pb-5">{{ site.data[page.lang]['data_escrow_product']['we_build_the'] }}</p>
-      <div class="security2__container mx-auto mt-5">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="security2__icon" src="/images/icons/lock-access.svg"/>
-            <p class="security2__title2 mt-5">{{ site.data[page.lang]['security']['data_security'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="security2__text">{{ site.data[page.lang]['data_escrow_product']['safeguard_the'] }} </p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="security2__icon" src="/images/icons/processor.svg"/>
-            <p class="security2__title2 mt-5">{{ site.data[page.lang]['security']['end_to_end'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="security2__text">{{ site.data[page.lang]['data_escrow_product']['maintain_the'] }} </p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="security2__icon" src="/images/icons/folder-upload.svg"/>
-            <p class="security2__title2 mt-5">{{ site.data[page.lang]['security']['secure_upload'] }}</p>
-            <div class="section-divider my-3"></div>
-            <p class="security2__text">{{ site.data[page.lang]['data_escrow_product']['automate_your'] }}</p>
-          </div>
-        </div>
-        <a class="button btn-primary-lg mx-auto my-2" href="security.html">
-          {{ site.data[page.lang]['data_escrow_product']['learn_more'] }}
-        </a>
-      </div>
-    </div>
-    <!-- Eight Section -->
-    <div class="bg-light-gray section-medium px-2">
-      <div class="container">
-        <h3 class="info__reading-title mx-auto">{{ site.data[page.lang]['how_it_works']['grab_your'] }}</h3>
-        <p class="info__reading-subtitle mx-auto mt-4">{{ site.data[page.lang]['how_it_works']['arm_yourself_with'] }}</p>
-        {% include anatomy-escrow.html %}
-      </div>
-    </div>
     <!-- Section -->
-    {% include secure-assets.html %}
+    {% include get-started.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>

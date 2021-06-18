@@ -20,42 +20,43 @@
   <div class="resources bg-alice-blue">
     <!-- Navigation -->
     <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link m-1" href="features.html">CARACTERÍSTICAS</a>
+          <a class="nav-link m-2" href="features.html">CARACTERÍSTICAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="how-it-works.html">CÓMO FUNCIONA</a>
+          <a class="nav-link m-2" href="pricing.html">TARIFAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="data-escrow.html">DEPÓSITO DE DATOS</a>
+          <a class="nav-link m-2" href="integrations.html">INTEGRACIONES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="saas-escrow.html">DEPÓSITO DE SaaS</a>
+          <a class="nav-link m-2" href="contact.html">CONTACTO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="security.html">SEGURIDAD</a>
+          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">INICIAR SESIÓN</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="pricing.html">TARIFAS</a>
-        </li>
+        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+          COMENZAR
+        </a>
       </ul>
     </div>
   </div>
 </nav>
+
     <!-- Header -->
     <div class="header__content overflow-hidden">
       <div class="header__bg2 pb-4">
         <div class="container">
           <h1 class="header__title mx-auto text-cerulean mt-5">Depositing Features</h1>
-          <p class="header__subtitle mx-auto mt-4">Descubra cómo el depósito de datos protege a los desarrolladores de software y a sus clientes<br> en el marco de los acuerdos de licencia de usuario final y de nivel de servicio.</p>
+          <p class="header__subtitle mx-auto mt-4">Whether you use an in-memory database, an online repository, or different physical data centres, we integrate with popular cloud services and custom solutions alike.</p>
         </div>
       </div>
     </div>
@@ -204,7 +205,7 @@
           <p class="discover__subtitle2 mx-auto mt-4">En su papel de agente de custodia de confianza, Codekeeper se encarga de recibir, almacenar y proteger los datos de misión crítica. A un precio económico, puede almacenar de forma segura copias de sus datos en nuestros centros de datos de primera categoría por tan solo <strong><span id="developer-monthly">$79</span> al mes</strong>, con una tarifa inicial de <span class="setup-fee">$249</span>.<br><br>Todos los planes incluyen tecnología de <strong>automatización de última generación</strong>, funciones de <strong>seguridad avanzadas</strong>, <strong>integraciones</strong> sofisticadas, <strong>depósitos continuos</strong> e ilimitados, <strong>acuerdos</strong> y <strong>confirmaciones</strong> de custodia gratuitos, y mucho más.</p>
         </div>
       </div>
-      <div class="verification__guide">
+      <div class="verification__guide mb-5">
         <!DOCTYPE html>
 <div class="resources">
   <div class="container">
@@ -213,11 +214,41 @@
         <div>
           <h2 class="guide__title mt-4">Muestra de acuerdo de custodia de software</h2>
           <p class="guide__subtitle mt-3">Descubra algunos de los términos y condiciones más comunes (y esenciales) de cualquier acuerdo de custodia eficaz con este acuerdo bipartito estándar con anotaciones.</p>
-          <a class="button btn-white-xl mt-4" href="sample-agreement.html">
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal4">
             DESCARGAR GUÍA GRATUITA
           </a>
         </div>
-        <img class="guide__image2 my-4" src="/images/resources-page/modal-sample.svg"/>
+        <img class="guide__image2 my-4" src="/images/resources-page/guide-sample.svg"/>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-image-content p-0 pt-5">
+                  <p class="section__modal-title mt-3">¡Descargue el e-book gratis!</p>
+                </div>
+                <div class="section__modal-form p-0">
+                  <img class="section__modal-image" src="/images/resources-page/guide-sample.svg"/>
+                  <!--[if lte IE 8]>
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                  <![endif]-->
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    portalId: "5365877",
+                    formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
+                  });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -280,8 +311,8 @@
             <p class="footer__text mt-2 mb-0 fw-bold">RECURSOS</p>
             <a class="footer__subtext mt-2" href="resources.html">Todos los recursos</a>
             <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Depósito de código fuente</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Depósito de datos</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">Depósito de SaaS</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Depósito de datos</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">Depósito de SaaS</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Depósito de información</a>
             <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>

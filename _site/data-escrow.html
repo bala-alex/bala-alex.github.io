@@ -20,36 +20,37 @@
   <div class="resources bg-white">
     <!-- Navigation -->
     <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light py-3 bg-white">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/codekeeper-logo.svg"/></a>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link m-1" href="features.html">FEATURES</a>
+          <a class="nav-link m-2" href="features.html">FEATURES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="how-it-works.html">HOW IT WORKS</a>
+          <a class="nav-link m-2" href="pricing.html">PRICING</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="data-escrow.html">DATA ESCROW</a>
+          <a class="nav-link m-2" href="integrations.html">INTEGRATIONS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="saas-escrow.html">SAAS ESCROW</a>
+          <a class="nav-link m-2" href="contact.html">CONTACT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-1" href="security.html">SECURITY</a>
+          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">LOGIN</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link m-1" href="pricing.html">PRICING</a>
-        </li>
+        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+          GET STARTED
+        </a>
       </ul>
     </div>
   </div>
 </nav>
+
     <!-- Header -->
     <div class="header__content overflow-hidden">
       <div class="header__bg pb-4">
@@ -356,11 +357,41 @@
         <div>
           <h2 class="guide__title mt-4">Sample Software Escrow Agreement</h2>
           <p class="guide__subtitle mt-3">Discover some of the most common (and the most essential) terms and conditions to any successful escrow agreement with this standard bipartite agreement with annotations.</p>
-          <a class="button btn-white-xl mt-4" href="sample-agreement.html">
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal4">
             DOWNLOAD FREE GUIDE
           </a>
         </div>
-        <img class="guide__image2 my-4" src="/images/resources-page/modal-sample.svg"/>
+        <img class="guide__image2 my-4" src="/images/resources-page/guide-sample.svg"/>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-image-content p-0 pt-5">
+                  <p class="section__modal-title mt-3">Download this ebook for free!</p>
+                </div>
+                <div class="section__modal-form p-0">
+                  <img class="section__modal-image" src="/images/resources-page/guide-sample.svg"/>
+                  <!--[if lte IE 8]>
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                  <![endif]-->
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    portalId: "5365877",
+                    formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
+                  });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -420,8 +451,8 @@
             <p class="footer__text mt-2 mb-0 fw-bold">RESOURCES</p>
             <a class="footer__subtext mt-2" href="resources.html">All Resources</a>
             <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">Source Code Escrow</a>
-            <a class="footer__subtext mt-2" href="data-escrow.html">Data Escrow</a>
-            <a class="footer__subtext mt-2" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">Data Escrow</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">SaaS Escrow</a>
             <a class="footer__subtext mt-2" href="what-is-information-escrow.html">Information Escrow</a>
             <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">Blog</a>
