@@ -105,7 +105,7 @@
         <a class="features-header__nav-item" href="marketing.html">Marketing</a>
       </div>
       <h1 class="features-header__content-title">Boostez vos ventes grâce aux solutions évolutives de Tolq pour la localisation de votre catalogue de produits</h1>
-      <p class="features-header__content-text mb-4 darker-grey">Entrez sur le marché international et augmentez votre chiffre d'affaires en localisant <br>le catalogue de produits de votre site e-commerce.</p>
+      <p class="features-header__content-text mb-4 darker-grey">Entrez sur le marché international et augmentez votre chiffre d'affaires en localisant le catalogue de produits de votre site e-commerce.</p>
       <a href="https://calendly.com/tolq" class="mx-auto mt-2">
         <button class="btn-initial btn-blue">Demander une démo</button>
       </a>
@@ -600,6 +600,11 @@
       }
       else if (lang === '/it') {
         if ( ($.trim( $element.html() ) === 'Italian') || ($.trim( $element.html() ) === 'Italiaans') || ($.trim( $element.html() ) === 'Italienisch') || ($.trim( $element.html() ) === 'Italiana') || ($.trim( $element.html() ) === 'Italien')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/fr') {
+        if ( ($.trim( $element.html() ) === 'French') || ($.trim( $element.html() ) === 'Frans') || ($.trim( $element.html() ) === 'Französisch') || ($.trim( $element.html() ) === 'Francese') || ($.trim( $element.html() ) === 'Français')) {
           $element.remove();
         }
       }

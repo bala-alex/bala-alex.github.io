@@ -527,6 +527,11 @@
           $element.remove();
         }
       }
+      else if (lang === '/fr') {
+        if ( ($.trim( $element.html() ) === 'French') || ($.trim( $element.html() ) === 'Frans') || ($.trim( $element.html() ) === 'Französisch') || ($.trim( $element.html() ) === 'Francese') || ($.trim( $element.html() ) === 'Français')) {
+          $element.remove();
+        }
+      }
       else {
         if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglese') || ($.trim( $element.html() ) === 'Anglais')) {
           $element.remove();
