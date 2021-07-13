@@ -1,70 +1,31 @@
 <!DOCTYPE html>
-<div class="features-header__container container">
-  <div class="row">
-    <div class="col">
-      <nav class="navbar navbar-expand-lg navbar-light index-header__container-nav">
-        <a href="index.html"><img src="/images/logo.svg" class="features-header__logo" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
-          aria-controls="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mr-auto ml-sm-0 ml-lg-4 mt-0 mt-lg-1">
-            <li class="nav-item">
-              <a class="nav-link" href="features.html">{{ site.data[page.lang]['navigation']['how_it_works'] }}</a>
-            </li>
-
-            <span class="-is-mobile">
-              <li class="nav-item"><a class="nav-link" href="product-catalog.html">{{ site.data[page.lang]['navigation']['product_catalog'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="customer-service.html">{{ site.data[page.lang]['navigation']['customer_service'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="marketing.html">{{ site.data[page.lang]['navigation']['marketing'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">{{ site.data[page.lang]['navigation']['contact_us'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="translators.html">{{ site.data[page.lang]['navigation']['translator'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://calendly.com/tolq">{{ site.data[page.lang]['navigation']['book_a_demo'] }}</a></li>
-            </span>
-
-            <li class="features-header__dropdown">
-              <a href="#" class="nav-link">{{ site.data[page.lang]['navigation']['solutions'] }} <i
-                  class="fas fa-chevron-down ml-1 features-header__dropdown-icon"></i></a>
-              <ul class="dropdown">
-                <div class="dropdown-content">
-                  <li><a href="product-catalog.html">{{ site.data[page.lang]['navigation']['product_catalog'] }}</a></li>
-                  <li><a href="customer-service.html">{{ site.data[page.lang]['navigation']['customer_service'] }}</a></li>
-                  <li><a href="marketing.html">{{ site.data[page.lang]['navigation']['marketing'] }}</a></li>
-                </div>
-              </ul>
-            </li>
-
-            <!-- <li class="features-header__dropdown">
-              <a href="#" class="nav-link">{{ site.data[page.lang]['navigation']['about'] }} <i
-                  class="fas fa-chevron-down ml-1 features-header__dropdown-icon"></i></a>
-              <ul class="dropdown">
-                <div class="dropdown-content">
-                  <li><a href="contact.html">{{ site.data[page.lang]['navigation']['contact_us'] }}</a></li>
-                  <li><a href="translators.html">{{ site.data[page.lang]['navigation']['translator'] }}</a></li>
-                </div>
-              </ul>
-            </li> -->
-
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">{{ site.data[page.lang]['navigation']['contact_us'] }}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="translators.html">{{ site.data[page.lang]['navigation']['translator'] }}</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav my-2 my-lg-0">
-            <li class="nav-item mt-lg-1 features-header__login">
-              <a href="https://clients.tolq.com/sign_in">{{ site.data[page.lang]['navigation']['login'] }}</a>
-            </li>
-            <li class="nav-item features-header__book">
-              <a href="https://calendly.com/tolq">
-                <button class="btn-initial btn-blue">{{ site.data[page.lang]['navigation']['book_a_demo'] }}</button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link m-2" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
+        </li>
+        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+          {{ site.data[page.lang]['navigation']['get_started'] }}
+        </a>
+      </ul>
     </div>
   </div>
-</div>
+</nav>

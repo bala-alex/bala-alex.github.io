@@ -1,136 +1,138 @@
 <body>
-  <header class="features-header">
+  <div class="contact bg-white">
+    <!-- Navigation -->
     {% include navigation.html %}
-
-    <div class="features-header__content container">
-      <h1 class="features-header__content-title">{{ site.data[page.lang]['contact']['we_love_to'] }}</h1>
-      <p class="features-header__content-text -long mb-5 darker-grey">{{ site.data[page.lang]['contact']['our_team_is'] }}</p>
-      <div class="w-100 d-flex justify-content-center features-header__content-btns  mb-5">
-        <a href="https://calendly.com/tolq">
-          <button class="btn-initial btn-blue">{{ site.data[page.lang]['contact']['request_demo'] }}</button>
-        </a>
-        <a href="https://clients.tolq.com/sign_up">
-          <button class="btn-initial btn-outline">{{ site.data[page.lang]['contact']['start_now'] }}</button>
-        </a>
-      </div>
-      <img class="features-header__content-img -translators d-block mx-auto" src="/images/illustration-contact.png" alt="" />
-      <img class="features-header__content-img-mob w-100 pb-5" src="/images/illustration-contact.png" alt="" />
-    </div>
-  </header>
-
-  <section class="contact-speak container">
-    <h2 class="contact-speak__title">{{ site.data[page.lang]['contact']['speak_with'] }}</h2>
-    <p class="contact-speak__text dark-grey">{{ site.data[page.lang]['contact']['leave_us_your'] }}</p>
-
-    <div class="mt-4">
-      <div class="contact-speak__box mx-auto">
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-          portalId: "5626357",
-          formId: "82e1e8fb-e767-4802-9fa1-30124b47ed40"
-        });
-        </script>
-      </div>
-    </div>
-    
-  </section>
-
-  <section class="contact-request">
-    <div class="container">
-      <div class="index-customers__row">
-        <div class="index-customers__col -right">
-          <div class="index-customers__col-content col-content">
-            <p class="index-customers__row-title">{{ site.data[page.lang]['contact']['requests_for'] }}</p>
-            <p class="index-customers__row-text darker-grey">{{ site.data[page.lang]['contact']['we_are_happy'] }}</p>
-            <p class="index-customers__row-text mb-4 darker-grey">{{ site.data[page.lang]['contact']['if_you_need'] }}</p>
-            <a href="mailto:contact@tolq.com?subject=Request for Proposal">
-              <button class="btn-initial btn-blue">{{ site.data[page.lang]['contact']['request_proposal'] }}</button>
-            </a>
-          </div>
-        </div>
-
-        <img src="/images/proposal.svg" class="col-img" alt="" />
-      </div>
-
-      <div class="index-customers__row -reverse">
-        <img src="/images/partnership.svg" alt="" />
-
-        <div class="index-customers__col">
-          <div class="index-customers__col-content">
-            <p class="index-customers__row-title">{{ site.data[page.lang]['contact']['technology_partnerships'] }}</p>
-            <p class="index-customers__row-text mb-4 darker-grey">{{ site.data[page.lang]['contact']['we_are_interested'] }}</p>
-            <a href="mailto:contact@tolq.com?subject=Technology Partnerships">
-              <button class="btn-initial btn-blue">{{ site.data[page.lang]['contact']['get_in_touch'] }}</button>
-            </a>
+    <!-- Header -->
+    <div class="header__content">
+      <div class="header__bg">
+        <div class="container">
+          <div class="header__container mx-auto">
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="header__title mt-4">{{ site.data[page.lang]['contact']['contact_us'] }}</h1>
+                <p class="header__subtitle my-4">{{ site.data[page.lang]['contact']['leave_us_a_message'] }}</p>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="mt-2">
+                  <img class="image-style" src="/images/contact/contact-image.svg"/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="features-show container">
-    <div class="features-show__container">
-      <div>
-        <p class="features-show__container-title mb-0 -is-translation">{{ site.data[page.lang]['contact']['want_to_become'] }}</p>
-      </div>
-      <a href="translators.html" class="features-show__btn">
-        <button class="btn-initial btn-outline">{{ site.data[page.lang]['contact']['get_started'] }}</button>
-      </a>
-    </div>
-  </section>
-
-  <section class="contact-offices">
-    <div class="container">
-      <h2 class="contact-speak__title mt-0">{{ site.data[page.lang]['contact']['our_offices'] }}</h2>
-      <p class="contact-speak__text darker-grey">{{ site.data[page.lang]['contact']['our_headquarters'] }}</p>
-
-      <div class="row contact-offices__row">
-        <div class="col-md p-0">
-          <img src="/images/office.svg" class="w-100" alt="">
-        </div>
-        <div class="col-md contact-offices__col">
-          <p class="contact-offices__col-title">{{ site.data[page.lang]['contact']['drop_by'] }}</p>
-          <p class="contact-offices__col-label">{{ site.data[page.lang]['contact']['address'] }}</p>
-          <p class="contact-offices__col-text dark-grey">World Trade Center - The Hague<br />
-            Prinses Margrietplantsoen 33<br />
-            2595 AM The Hague<br />
-            {{ site.data[page.lang]['contact']['the_netherlands'] }}</p>
-          <p class="contact-offices__col-label">{{ site.data[page.lang]['contact']['email'] }}</p>
-          <p><a href="mailto:contact@tolq.com">contact@tolq.com</a></p>
+    <!-- First Section -->
+    <div class="pb-5">
+      <div class="container">
+        <div class="section__container-bg mx-auto">
+          <div class="section__container mx-auto">
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "5365877",
+              formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+            });
+            </script>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="features-show container">
-    <div class="features-show__container">
-      <div>
-        <p class="features-show__container-title mb-0 -is-contact">{{ site.data[page.lang]['contact']['set_up_a'] }}</p>
-      </div>
-
-      <div class="d-flex index-translators__btns">
-
-        <a href="https://clients.tolq.com/sign_up">
-          <button class="btn-initial btn-outline">{{ site.data[page.lang]['contact']['sign_up_now'] }}</button>
-        </a>
+    <!-- Second Section -->
+    <div class="bg-white section-medium">
+      <div class="container">
+        <p class="info__main-title mt-2">{{ site.data[page.lang]['contact']['our_offices'] }}</p>
+        <p class="info__main-subtitle mt-2 mx-auto">{{ site.data[page.lang]['contact']['our_team_is'] }}</p>
+        <div class="info__container mx-auto">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img class="info__image" src="/images/contact/office-us.svg"/>
+                <p class="info__title mt-4"><img class="mr-2" src="/images/contact/location.svg"/>{{ site.data[page.lang]['contact']['us_office'] }}</p>
+                <p class="info__subtitle">
+                  548 Market St<br>
+                  PMB 63050 San Francisco,<br>
+                  California 94104-5401<br>
+                  The United States
+                </p>
+                <div class="info__devider"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+              <div>
+                <img class="info__image" src="/images/contact/office-nl.svg"/>
+                <p class="info__title mt-4"><img class="mr-2" src="/images/contact/location.svg"/>{{ site.data[page.lang]['contact']['netherlands_office'] }}</p>
+                <p class="info__subtitle">
+                  World Trade Center - The Hague<br>
+                  Prinses Margrietplantsoen 33<br>
+                  2595 AM The Hague<br>
+                  The Netherlands
+                </p>
+                <div class="info__devider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p class="info__title mt-2"><img class="mr-2" src="/images/contact/email.svg"/>{{ site.data[page.lang]['contact']['sales_inquiries'] }}</p>
+                <p class="info__subtitle">
+                  {{ site.data[page.lang]['contact']['please_use_our'] }} <a class="text-underline" href="mailto:contact@codekeeper.co">{{ site.data[page.lang]['contact']['email_us_here'] }}</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div>
+                <p class="info__title mt-2"><img class="mr-2" src="/images/contact/request.svg"/>{{ site.data[page.lang]['contact']['release_request'] }}</p>
+                <p class="info__subtitle">
+                  {{ site.data[page.lang]['contact']['if_you_cannot'] }} <a class="text-underline" href="mailto:release@codekeeper.co">{{ site.data[page.lang]['contact']['email_us_here'] }}</a> {{ site.data[page.lang]['contact']['monitored'] }}.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
+    <!-- Third Section -->
+    <div class="bg-white section-small px-3">
+      <div class="about__container mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <h2 class="about__title">{{ site.data[page.lang]['contact']['about_us'] }}</h2>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <p class="about__text">{{ site.data[page.lang]['contact']['codekeeper_was_founded'] }}</p>
+            <p class="about__text">{{ site.data[page.lang]['contact']['after_our_soft'] }}</p>
+          </div>
+        </div>
+        <div class="about__devider"></div>
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <p class="about__subtitle">{{ site.data[page.lang]['contact']['pricing_philosophy'] }}</p>
+            <p class="about__text2">{{ site.data[page.lang]['contact']['software_escrow'] }}: {{ site.data[page.lang]['contact']['you_need_it'] }}</p>
+            <p class="about__text2">{{ site.data[page.lang]['contact']['we_keep'] }}</p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <p class="about__subtitle">{{ site.data[page.lang]['contact']['expert_security'] }}</p>
+            <p class="about__text3">{{ site.data[page.lang]['contact']['data_security_runs'] }} <a class="text-underline" href="security.html">{{ site.data[page.lang]['contact']['our_security'] }}</a></p>
+            <p class="about__subtitle mt-4">{{ site.data[page.lang]['contact']['global_company'] }}</p>
+            <p class="about__text3">{{ site.data[page.lang]['contact']['we_have_offices'] }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="verification__guide">
+        {% include escrow-introduction.html %}
+      </div>
+    </div>
+    <!-- Fourth Section -->
+    {% include secure-assets.html %}
+    <!-- Footer -->
     {% include footer.html %}
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  </div>
+
+  <!-- Snippets -->
   {% include snippets.html %}
 </body>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="https://clearbitjs.com/v1/x/forms.js"></script> -->
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5626357.js"></script>
-<!-- End of HubSpot Embed Code -->
-
-</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<div class="resources">
+  <div class="container">
+    <div class="guide__bg">
+      <div class="guide__content d-flex align-items-center justify-content-center">
+        <div>
+          <h2 class="guide__title">{{ site.data[page.lang]['security']['information_security'] }}</h2>
+          <p class="guide__subtitle mt-3">{{ site.data[page.lang]['security']['download_our_guide'] }}</p>
+          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal3">
+            {{ site.data[page.lang]['security']['download_free_guide'] }}
+          </a>
+        </div>
+        <img class="guide__image2" src="/images/resources-page/guide-information.svg"/>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal mx-auto">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">{{ site.data[page.lang]['resources']['download_this_ebook'] }}</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/guide-information.svg"/>
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "5365877",
+                  formId: "4ecdb6ad-f33c-4059-bc23-89c465ae1216"
+                });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
