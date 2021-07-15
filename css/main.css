@@ -7560,6 +7560,18 @@ html {
 .list-style-none {
   list-style-type: none; }
 
+.show-desktop {
+  display: block; }
+  @media (max-width: 992px) {
+    .show-desktop {
+      display: none; } }
+
+.show-mobile {
+  display: none; }
+  @media (max-width: 992px) {
+    .show-mobile {
+      display: block; } }
+
 .mobile-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

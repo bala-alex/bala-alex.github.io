@@ -244,6 +244,22 @@ html {
   list-style-type: none;
 }
 
+.show-desktop {
+  display: block;
+
+  @include screen-md {
+		display: none;
+	}
+}
+
+.show-mobile {
+  display: none;
+
+  @include screen-md {
+		display: block;
+	}
+}
+
 .mobile-wrap {
   display: flex;
 
