@@ -297,6 +297,11 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 
+    @include screen-lg {
+      margin-top: -126px;
+      margin-left: 1px;
+    }
+
     @include screen-md {
       border: none;
       padding: 80px 0 40px 0;
@@ -325,7 +330,7 @@
 
   &__config6 {
     padding: 80px 0;
-    margin-top: -1px;
+    margin-top: -66px;
     margin-left: 0px;
     margin-right: 40px;
     display: flex;
@@ -334,6 +339,11 @@
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+
+    @include screen-lg {
+      margin-top: -87px;
+      margin-left: -2px;
+    }
 
     @include screen-md {
       border: none;
@@ -352,6 +362,10 @@
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
+    @include screen-lg {
+      margin-left: 39px;
+    }
+
     @include screen-md {
       border: none;
       padding: 10px 0 60px 0;
@@ -367,6 +381,10 @@
     border-top: 1px dashed #6782A3;
     border-right: 1px dashed #6782A3;
     border-top-right-radius: 30px;
+
+    @include screen-lg {
+      margin-left: 46px;
+    }
 
     @include screen-md {
       border: none;
