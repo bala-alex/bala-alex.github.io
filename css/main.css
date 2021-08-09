@@ -14508,7 +14508,10 @@ html {
   background: #00A0B6;
   border-radius: 25px;
   height: 50px;
-  width: 250px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 250px;
   padding: 0 20px;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
@@ -14560,7 +14563,10 @@ html {
   background: #00A0B6;
   border-radius: 25px;
   height: 50px;
-  width: 200px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 200px;
   padding: 0 20px;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
