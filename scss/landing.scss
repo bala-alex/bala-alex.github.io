@@ -48,8 +48,8 @@
   overflow: hidden;
   
 	&__logo {
-    width: 154px;
-    height: 44px;
+    width: 180px;
+    height: 55px;
   }
 
   &__logo-text {
@@ -235,6 +235,14 @@
     font-weight: 300;
     letter-spacing: -0.42px;
     text-align: center;
+  }
+
+  &__custom-padding {
+    padding-left: 96px;
+
+    @include screen-sm {
+      padding-left: 0;
+    }
   }
 
   &__icon {
@@ -1000,7 +1008,7 @@
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 0px;
-    line-height: 28px;
+    line-height: 24px;
     font-family: 'Muli', sans-serif;
     max-width: 410px;
   }

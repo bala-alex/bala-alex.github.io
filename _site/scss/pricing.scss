@@ -139,13 +139,15 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        width: 140px;
+        min-width: 140px;
+        width: fit-content;
         text-align: center;
         display: block;
         background-color: $bondi-blue;
         padding-left: 20px;
         padding-bottom: 5px;
-        padding-top: 5px;
+        padding-top: 12px;
+        height: 38px;
         padding-right: 20px;
         font-family: 'Muli', sans-serif;
         font-size: 10px;
@@ -155,7 +157,7 @@
       }
 
       .plan__amount {
-        margin-top: 27px;
+        margin-top: 20px;
         margin-bottom: 0px;
       }
       &.-active {
@@ -1326,7 +1328,6 @@
 
   #button:hover {
     cursor: pointer;
-    background-color: $white !important;
   }
   #button:active {
     text-align: center;
