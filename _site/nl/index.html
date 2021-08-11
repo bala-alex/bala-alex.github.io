@@ -522,19 +522,19 @@
             <img class="verification__icon" src="/images/homepage/verification-micro.svg"/>
             <p class="verification__title2 mt-3">VERIFICATIE VAN DE INHOUD</p>
             <p class="verification__text">U krijgt een profiel van de gedeponeerde inhoud in de vorm van een rapport.</p>
-            <a class="verification__link" href="features.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
+            <a class="verification__link" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
           </div>
           <div class="col-md-4 col-sm-12 mt-4">
             <img class="verification__icon" src="/images/homepage/verification-basic.svg"/>
             <p class="verification__title2 mt-3">VERIFICATIE VAN DE ACTIVITEIT</p>
             <p class="verification__text">Een profiel van de ontwikkelingsactiviteit (aanpassingen) van de broncode of de data.</p>
-            <a class="verification__link" href="features.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
+            <a class="verification__link" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
           </div>
           <div class="col-md-4 col-sm-12 mt-4">
             <img class="verification__icon" src="/images/homepage/verification-advanced.svg"/>
             <p class="verification__title2 mt-3">SAAS-VERIFICATIE</p>
             <p class="verification__text">Controle van de beschikbaarheid van actieve SaaS-applicaties.</p>
-            <a class="verification__link" href="features.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
+            <a class="verification__link" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
           </div>
         </div>
       </div>
@@ -548,7 +548,7 @@
         <div>
           <h2 class="guide__title mt-4">Software Escrow Introductie: Een gids</h2>
           <p class="guide__subtitle mt-3">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
-          <a class="button btn-white-xl mt-4" data-toggle="modal" data-target="#exampleModal">
+          <a class="button btn-white-xl2 mt-4" data-toggle="modal" data-target="#exampleModal">
             GRATIS GIDS DOWNLOADEN
           </a>
         </div>
@@ -980,7 +980,7 @@
         <div class="col-md-6 col-sm-12">
           <h2 class="software__title">Bescherm uw belangrijkste code en data </h2>
           <p class="software__subtitle mt-4">Stel vandaag nog uw eerste software escrowovereenkomst op en bescherm uw activa in slechts enkele minuten. Maak gebruik van toonaangevende automatisering, beveiliging en recoverymogelijkheden tegen de beste prijs op de markt. </p>
-          <a class="button btn-white-xl my-5" href="pricing.html">
+          <a class="button btn-white-xl2 my-5" href="pricing.html">
             AAN DE SLAG
           </a>
         </div>
@@ -1305,6 +1305,42 @@ document.addEventListener("click", closeAllSelect);
           }
       )
       .catch((e) => console.log(e))
+    });
+  </script>
+
+<script>
+  // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
     });
   </script>
 

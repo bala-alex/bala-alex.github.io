@@ -14,10 +14,10 @@
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   &:hover {
-    color: $cerulean !important;
+    color: $white !important;
     text-decoration: none;
-    background-color: #F3FDFF !important;
-    border: #F3FDFF;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
     cursor: pointer;
     transition: .3s;
   }
@@ -39,10 +39,10 @@
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   &:hover {
-    color: $cerulean !important;
+    color: $white !important;
     text-decoration: none;
-    background-color: #F3FDFF !important;
-    border: 1px solid #F3FDFF;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
     cursor: pointer;
     transition: .3s;
   }
@@ -57,7 +57,34 @@
   background: $white;
   border-radius: 25px;
   height: 50px;
-  width: 200px;
+  min-width: 200px;
+  padding: 0 20px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-lg2 {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  min-width: 200px;
+  padding: 0 20px;
+  width: fit-content;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   font-size: 16px;
@@ -136,16 +163,41 @@
   font-family: 'Muli', sans-serif;
   font-size: 12px;
   &:hover {
-    color: $cerulean !important;
-    background-color: #F3FDFF !important;
+    color: $white !important;
     text-decoration: none;
-    border: 1px solid #F3FDFF;
-    transition: all .3s;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
     cursor: pointer;
+    transition: .3s;
   }
 }
 
 .btn-white-xl {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 257px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-xl2 {
   @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
   color: $bondi-blue !important;
   display: flex;
