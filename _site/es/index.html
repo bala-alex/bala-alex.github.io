@@ -17,6 +17,16 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
 </head>
   <body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
   <div class="bg-white">
     <div class="container-fluid px-0">
       <!-- Navigation -->
@@ -383,7 +393,7 @@
               </div>
               <div>
                 <p class="works__text">GESTIÓN<img class="works__icon" src="/images/homepage/icon-cog.svg"/></p>
-                <p class="works__subtext">Añada fácilmente a los licenciatarios como beneficiarios del código fuente depositado y manténgalos al día. Como licenciante, también puede agregar a proveedores e iniciar nuevos depósitos con solo unos clics. Las confirmaciones son automáticas, así que se acabó el papeleo.</p>
+                <p class="works__subtext2">Añada fácilmente a los licenciatarios como beneficiarios del código fuente depositado y manténgalos al día. Como licenciante, también puede agregar a proveedores e iniciar nuevos depósitos con solo unos clics. Las confirmaciones son automáticas, así que se acabó el papeleo.</p>
               </div>
             </div>
           </div>
@@ -441,7 +451,9 @@
                       formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
                     });
                     </script>
+                    <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -579,6 +591,7 @@
                   formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
                 });
                 </script>
+                <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
               </div>
             </div>
           </div>
@@ -734,7 +747,7 @@
                   </div>
                 </div>
                 <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Depósito de información</span></p>
+                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Depósitos de información</span></p>
                   <div class="d-flex" data-html="true" data-tooltip="El número de carpetas seguras que puede tener en su cuenta a las que subir información, como documentos." data-tooltip-position="top">
                     <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
                   </div>
@@ -788,7 +801,7 @@
               </div>
               <div class="plan__content-info">
                 <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>20</b> Acuerdos de custodia</span></p>
+                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Acuerdos de custodia</span></p>
                   <div class="d-flex" data-html="true" data-tooltip="El número de acuerdos de custodia que puede tener en su cuenta con clientes o proveedores." data-tooltip-position="top">
                     <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
                   </div>
@@ -806,7 +819,7 @@
                   </div>
                 </div>
                 <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Depósito de información</span></p>
+                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Depósitos de información</span></p>
                   <div class="d-flex" data-html="true" data-tooltip="El número de carpetas seguras que puede tener en su cuenta a las que subir información, como documentos." data-tooltip-position="top">
                     <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
                   </div>
@@ -877,7 +890,7 @@
                   </div>
                 </div>
                 <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Depósito de información</span></p>
+                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Depósitos de información</span></p>
                   <div class="d-flex" data-html="true" data-tooltip="El número de carpetas seguras que puede tener en su cuenta a las que subir información, como documentos." data-tooltip-position="top">
                     <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
                   </div>
@@ -1360,6 +1373,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('€2,077');
           $('#business-yearly').text('€3,642');
           $('#enterprise-yearly').text('€13,555');
+          $('.saas-continuity').text('€299');
           $('.plan-eu').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-uk').remove();
@@ -1381,6 +1395,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('£1,555');
           $('#business-yearly').text('£2,598');
           $('#enterprise-yearly').text('£9,381');
+          $('.saas-continuity').text('£225');
           $('.plan-uk').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1402,6 +1417,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('₹130,000');
           $('#business-yearly').text('₹200,000');
           $('#enterprise-yearly').text('₹780,000');
+          $('.saas-continuity').text('₹19,995');
           $('.plan-in').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1423,6 +1439,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('A$2,599');
           $('#business-yearly').text('A$4,699');
           $('#enterprise-yearly').text('A$17,699');
+          $('.saas-continuity').text('A$349');
           $('.plan-au').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1445,6 +1462,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('$2,598');
           $('#business-yearly').text('$3,419');
           $('#enterprise-yearly').text('$17,729');
+          $('.saas-continuity').text('$399');
           $('.plan-sg').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1467,6 +1485,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('R29,207');
           $('#business-yearly').text('R52,163');
           $('#enterprise-yearly').text('R187,816');
+          $('.saas-continuity').text('R3,999');
           $('.plan-rsa').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1489,6 +1508,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('CHF2,284');
           $('#business-yearly').text('CHF4,163');
           $('#enterprise-yearly').text('CHF14,598');
+          $('.saas-continuity').text('CHF329');
           $('.plan-ch').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();
@@ -1511,6 +1531,7 @@ document.addEventListener("click", closeAllSelect);
           $('#team-yearly').text('CA$2,598');
           $('#business-yearly').text('CA$4,685');
           $('#enterprise-yearly').text('CA$17,207');
+          $('.saas-continuity').text('CA$349');
           $('.plan-ca').removeClass('d-none');
           $('.plan-us').remove();
           $('.plan-eu').remove();

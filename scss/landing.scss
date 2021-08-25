@@ -251,40 +251,44 @@
   }
 
   &__config {
-    padding: 0 0 80px 0;
+    padding: 0;
     margin-top: 44px;
     margin-right: 44px;
     display: flex;
     border-bottom: 1px dashed #6782A3;
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
+    min-height: 350px;
 
     @include screen-md {
       border: none;
       padding: 0 0 10px 0;
       margin-right: 0px;
+      min-height: auto;
     }
   }
 
   &__config2 {
-    padding: 80px 40px 80px 0;
-    margin-left: 56px;
+    padding: 80px 40px 0 0;
+    margin-left: 53px;
     margin-top: -1px;
     border-top: 1px dashed #6782A3;
     border-right: 1px dashed #6782A3;
     border-bottom: 1px dashed #6782A3;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    min-height: 490px;
 
     @include screen-md {
       border: none;
       padding: 10px 0 60px 0;
       margin-left: 0px;
+      min-height: auto;
     }
   }
 
   &__config3 {
-    padding: 0 0 80px 0;
+    padding: 0;
     margin-top: 80px;
     display: flex;
 
@@ -294,9 +298,9 @@
   }
 
   &__config4 {
-    padding: 80px 0;
-    margin-top: -94px;
-    margin-left: -1px;
+    padding: 80px 0 0 0;
+    margin-top: -1px;
+    margin-left: -2px;
     margin-right: 40px;
     display: flex;
     border-bottom: 1px dashed #6782A3;
@@ -304,6 +308,7 @@
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+    min-height: 400px;
 
     @include screen-lg {
       margin-top: -126px;
@@ -314,6 +319,7 @@
       border: none;
       padding: 80px 0 40px 0;
       margin-right: 0px;
+      min-height: auto;
     }
   }
 
@@ -337,9 +343,9 @@
   }
 
   &__config6 {
-    padding: 80px 0;
-    margin-top: -66px;
-    margin-left: 0px;
+    padding: 80px 0 0 0;
+    margin-top: -1px;
+    margin-left: -2px;
     margin-right: 40px;
     display: flex;
     border-bottom: 1px dashed #6782A3;
@@ -347,6 +353,7 @@
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+    min-height: 450px;
 
     @include screen-lg {
       margin-top: -87px;
@@ -357,18 +364,20 @@
       border: none;
       padding: 80px 0 40px 0;
       margin-right: 0px;
+      min-height: auto;
     }
   }
 
   &__config7 {
-    padding: 80px 40px 80px 0;
-    margin-left: 42px;
+    padding: 80px 0 0 0;
+    margin-left: 39px;
     margin-top: -1px;
     border-top: 1px dashed #6782A3;
     border-right: 1px dashed #6782A3;
     border-bottom: 1px dashed #6782A3;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    min-height: 450px;
 
     @include screen-lg {
       margin-left: 39px;
@@ -378,6 +387,7 @@
       border: none;
       padding: 10px 0 60px 0;
       margin-left: 0px;
+      min-height: auto;
     }
   }
 
@@ -398,6 +408,7 @@
       border: none;
       padding: 20px 0 60px 0;
       margin-left: 0px;
+      min-height: auto;
     }
   }
 
@@ -417,7 +428,7 @@
   }
 
   &__content2 {
-    padding: 80px 40px 80px 0;
+    padding: 80px 0 0 0;
     margin-left: 37px;
     margin-top: -1px;
     border-top: 1px dashed #6782A3;
@@ -425,15 +436,17 @@
     border-bottom: 1px dashed #6782A3;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    min-height: 330px;
 
     @include screen-md {
       border: none;
       padding: 10px 0 60px 0;
+      min-height: auto;
     }
   }
 
   &__content3 {
-    padding: 0 0 80px 0;
+    padding: 0;
     margin-top: 80px;
     display: flex;
 
@@ -443,8 +456,8 @@
   }
 
   &__content4 {
-    padding: 80px 0;
-    margin-top: -55px;
+    padding: 80px 0 0 0;
+    margin-top: -1px;
     margin-left: 8px;
     margin-right: 40px;
     display: flex;
@@ -453,17 +466,19 @@
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+    min-height: 350px;
 
     @include screen-md {
       border: none;
-      padding: 80px 0 40px 0;
+      padding: 80px 0 0 0;
+      min-height: auto;
     }
   }
 
   &__content5 {
     padding: 80px 50px 0 0;
     margin-top: -1px;
-    margin-left: 40px;
+    margin-left: 38px;
     display: flex;
     border-top: 1px dashed #6782A3;
     border-right: 1px dashed #6782A3;
@@ -569,6 +584,15 @@
     line-height: 28px;
     font-family: 'Muli', sans-serif;
     max-width: 345px;
+  }
+
+  &__subtext2 {
+    color: $air-force-blue;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    font-family: 'Muli', sans-serif;
+    max-width: 400px;
   }
 
   &__info-text {
@@ -980,7 +1004,7 @@
     min-height: 317px !important;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 150px;
+    padding-left: 90px;
     padding-right: 70px;
     display: flex;
     flex-direction: row;
