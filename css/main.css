@@ -168,6 +168,13 @@
   -o-object-fit: contain;
   object-fit: contain; }
 
+@media (max-width: 992px) {
+  .image-style-mobile {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain; } }
+
 .mw-320 {
   max-width: 320px; }
 
@@ -3123,7 +3130,8 @@ video {
 @media (max-width: 768px) {
   .customer-provider {
     padding-top: 60px;
-    padding-bottom: 60px; } }
+    padding-bottom: 60px;
+    overflow: hidden; } }
 
 @media (max-width: 992px) {
   .customer-provider__slide {
@@ -3411,10 +3419,13 @@ video {
       max-width: 500px; }
       @media (max-width: 768px) {
         .customer-apps__col-title {
-          margin-top: 0;
+          font-weight: bold;
           font-size: 30px;
-          letter-spacing: -0.29px;
-          line-height: 32px;
+          line-height: 35px;
+          letter-spacing: -0.5px;
+          color: #004E82;
+          font-family: 'Ubuntu', sans-serif;
+          margin-top: 0;
           text-align: center; } }
     .customer-apps__col-text {
       font-size: 18px;

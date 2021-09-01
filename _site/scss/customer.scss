@@ -146,6 +146,7 @@ video {
     @include screen-sm {
       padding-top: 60px;
       padding-bottom: 60px;
+      overflow: hidden;
     }
 
     &__slide {
@@ -471,10 +472,13 @@ video {
         max-width: 500px;
 
         @include screen-sm {
-          margin-top: 0;
+          font-weight: bold;
           font-size: 30px;
-          letter-spacing: -0.29px;
-          line-height: 32px;
+          line-height: 35px;
+          letter-spacing: -0.5px;
+          color: $font-base;
+          font-family: 'Ubuntu', sans-serif;
+          margin-top: 0;
           text-align: center;
         }
       }

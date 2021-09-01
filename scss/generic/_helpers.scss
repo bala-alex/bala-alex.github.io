@@ -115,6 +115,15 @@
 	object-fit: contain;
 }
 
+.image-style-mobile {
+
+  @include screen-md {
+		width: 100%;
+    height: 100%;
+    object-fit: contain;
+	}
+}
+
 .mw-320 {
   max-width: 320px;
 }
