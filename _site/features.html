@@ -112,7 +112,7 @@
       <p class="features-header__content-text mx-auto">Learn how Tolq helps you serve customers in any language with fast, fully integrated translations of the content powering your global growth.</p>
       <div class="d-flex align-items-center justify-content-center">
         <a href="https://calendly.com/tolq">
-          <button class="btn-initial btn-green index-header__content-btn">Book a demo</button>
+          <button class="btn-initial btn-medium index-header__content-btn">Book a demo</button>
         </a>
       </div>
     </div>
@@ -260,13 +260,45 @@
           <p class="index-learn__text mb-0">How to get started with localization?</p>
         </div>
         <p class="index-learn__subtitle mt-3">and many more</p>
-        <a href="https://calendly.com/tolq">
-          <button class="btn-initial btn-green index-header__content-btn">Download guide</button>
+        <a data-toggle="modal" data-target="#exampleModal">
+          <button class="btn-initial btn-white index-header__content-btn mb-5">Download guide</button>
         </a>
       </div>
     </div>
     <div class="col-12 col-lg-5 d-flex justify-content-end px-0 my-4">
       <img class="index-learn__image" src="/images//homepage/beginner-guide.svg" />
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content section__modal mx-auto">
+        <div class="modal-body p-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="m-0">
+            <div class="section__modal-image-content p-0 pt-5">
+              <p class="section__modal-title mt-3">Download this ebook for free!</p>
+            </div>
+            <div class="section__modal-form p-0">
+              <img class="section__modal-image" src="/images/homepage/guide-image.svg"/>
+              <!--[if lte IE 8]>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+              <![endif]-->
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                region: "na1",
+                portalId: "5626357",
+                formId: "5cc9a226-b022-4f87-948a-2226653fa942"
+              });
+              </script>
+              <p class="section__modal-subtext mt-5">*E-book available only in English</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -344,7 +376,7 @@
   <p class="index-action__title mt-4">See Tolq in action!</p>
   <p class="index-action__subtitle text-center">Find out how to localize your e-commerce business</p>
   <a href="https://calendly.com/tolq">
-    <button class="btn-initial btn-green index-header__content-btn mt-3">Book a demo</button>
+    <button class="btn-initial btn-white index-header__content-btn mt-3">Book a demo</button>
   </a>
 </div>
 

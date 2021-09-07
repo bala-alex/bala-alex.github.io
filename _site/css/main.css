@@ -178,6 +178,9 @@
 .mw-320 {
   max-width: 320px; }
 
+.mw-400 {
+  max-width: 400px !important; }
+
 .mw-600 {
   max-width: 600px; }
 
@@ -245,6 +248,182 @@
   @media (max-width: 992px) {
     .solutions-header-image {
       display: none; } }
+
+.section__text {
+  color: #F7FBFD;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase; }
+
+.section__title {
+  font-size: 28px !important;
+  line-height: 34px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #004E82;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  max-width: 384px; }
+
+.section__subtitle {
+  color: #F7FBFD;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 28px;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 453px; }
+
+.section__modal {
+  min-height: 500px;
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  background-color: transparent !important;
+  border-radius: 20px;
+  overflow: hidden; }
+  .section__modal .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 999;
+    color: #ffffff;
+    font-weight: 300; }
+    @media (max-width: 992px) {
+      .section__modal .close {
+        color: #004E82; } }
+
+.section__modal-form {
+  background-color: #ffffff;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px !important; }
+  .section__modal-form .hs-button.primary.large {
+    color: #ffffff !important;
+    background-color: #4476ae;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 50px;
+    width: 250px !important;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+    .section__modal-form .hs-button.primary.large:hover {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer;
+      background-color: #004E82; }
+  .section__modal-form label {
+    font-size: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #004E82;
+    font-weight: 400; }
+  .section__modal-form input {
+    width: 100% !important;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    outline: none; }
+    .section__modal-form input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .section__modal-form label.hs-error-msg {
+    color: red; }
+  .section__modal-form .inputs-list {
+    list-style-type: none;
+    padding-left: 0px; }
+  .section__modal-form input::-webkit-input-placeholder {
+    font-size: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #CCD5DF;
+    font-weight: 400; }
+  .section__modal-form input:-ms-input-placeholder {
+    font-size: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #CCD5DF;
+    font-weight: 400; }
+  .section__modal-form input::-ms-input-placeholder {
+    font-size: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #CCD5DF;
+    font-weight: 400; }
+  .section__modal-form input::placeholder {
+    font-size: 16px !important;
+    font-family: 'Ubuntu', sans-serif;
+    color: #CCD5DF;
+    font-weight: 400; }
+
+.section__modal-image-content {
+  height: 240px;
+  background: #5183BB; }
+
+.section__modal-image {
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-top: -140px; }
+
+.section__modal-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center; }
+
+.section__modal-subtext {
+  color: #004E82;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif; }
+
+.modal-dialog {
+  min-width: 900px; }
+  @media (max-width: 768px) {
+    .modal-dialog {
+      min-width: auto !important; } }
+
+.container-box-shadow {
+  -webkit-box-shadow: 2px 8px 35px rgba(0, 90, 109, 0.15);
+  box-shadow: 2px 8px 35px rgba(0, 90, 109, 0.15); }
 
 .carousel-cell {
   opacity: 0.5;
