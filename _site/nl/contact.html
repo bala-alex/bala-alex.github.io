@@ -181,9 +181,12 @@
         </div>
         <div class="col-md contact-offices__col">
           <p class="index-solution__title mt-5 mb-4">Kom gerust langs voor een cappuccino.</p>
-          <div class="d-flex align-items-center">
-            <img class="mr-2" src="/images/contact/location-icon.svg" alt="" />
-            <img class="" src="/images/contact/coffee-icon.svg" alt="" />
+          <div class="contact-offices__col-icons">
+            <div class="d-flex">
+              <img class="contact-offices__col-icon mr-2 ml-0" src="/images/contact/location-icon.svg" alt="" />
+              <img class="contact-offices__col-icon mx-0" src="/images/contact/coffee-icon.svg" alt="" />
+            </div>
+            
           </div>
           <p class="contact-offices__col-text2 mt-4">World Trade Center - The Hague<br />
             Prinses Margrietplantsoen 33<br />
@@ -225,23 +228,23 @@
         </select>
       </div>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Bedrijf</p>
       <a class="index-footer__link" href="translators.html">Vertalers</a>
       <a class="index-footer__link" href="contact.html">Contact</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Oplossingen</p>
       <a class="index-footer__link" href="product-catalog.html">Productcatalogus</a>
       <a class="index-footer__link" href="customer-service.html">Klantenservice</a>
       <a class="index-footer__link" href="marketing.html">Marketing</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Product</p>
       <a class="index-footer__link" href="features.html">Zo werkt het</a>
       <a class="index-footer__link" href="https://docs.tolq.com/docs">API documentatie</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Sociale media</p>
       <div class="d-flex w-100 index-footer__social">
 
@@ -347,7 +350,7 @@
     else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Olandese') || (lang === 'Néerlandais')) {
       window.location = '/nl/index.html';
     }
-    else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Tedesca') || (lang === 'Allemand')) {
+    else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Tedesco') || (lang === 'Allemand')) {
       window.location = '/de/index.html';
     }
     else if ((lang === 'Italian') || (lang === 'Italiaans') || (lang === 'Italienisch') || (lang === 'Italiana') || (lang === 'Italien')) {
@@ -375,7 +378,7 @@
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Tedesca') || ($.trim( $element.html() ) === 'Allemand')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Tedesco') || ($.trim( $element.html() ) === 'Allemand')) {
           $element.remove();
         }
       }

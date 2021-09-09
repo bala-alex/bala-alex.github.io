@@ -289,6 +289,19 @@
         font-weight: 300;
       }
 
+      &-icon {
+        width: 35px !important;
+        height: 35px !important;
+      }
+
+      &-icons {
+        @media (max-width: 770px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
       &-text2 {
         font-size: 18px;
         line-height: 28px;
@@ -301,6 +314,11 @@
         max-height: 371px;
         width: 100%;
         object-fit: cover;
+
+        @media (max-width: 765px) {
+          margin: 0 !important;
+          width: 100% !important;
+        }
 
         @include screen-sm {
           margin-top: 0;

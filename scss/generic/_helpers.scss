@@ -115,6 +115,11 @@
 	object-fit: contain;
 }
 
+.image-style2 {
+	width: 100%;
+	object-fit: contain;
+}
+
 .image-style-mobile {
 
   @include screen-md {
@@ -196,6 +201,13 @@
 	@include screen-md {
 		flex-direction: column-reverse;
 	}
+}
+
+.column-reverse-mobile2 {
+
+  @media (max-width: 750px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .logo-box-shadow {

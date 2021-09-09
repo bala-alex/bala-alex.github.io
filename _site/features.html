@@ -144,7 +144,7 @@
 
   <section class="container">
     <h2 class="features__section-title text-center mt-0 pb-5">Translation Process</h2>
-    <div class="row py-5 column-reverse-mobile">
+    <div class="row py-5 column-reverse-mobile2">
       <div class="col-12 col-md-5">
         <img class="image-style-mobile" src="/images/features/quality-dimension.svg" alt="" />
       </div>
@@ -179,13 +179,13 @@
         <div class="col-12 col-md-6">
           <p class="features__section-subtitle mw-520">Manage your translation projects from a single dashboard</p>
           <p class="features__section-subtext mw-520">Managing translations in various language pairs (and in different states of completion) is a lot of work. But with Tolq, it doesn’t have to be. We give you granular control over all your localization operations from a single Dashboard.</p>
-          <p class="features__section-subtext mw-520 mb-4">You can easily review the status of any translation in real-time right down to the segment level. And you can set up accounts for your team members so everyone can leverage the same centralized language assets.</p>
+          <p class="features__section-subtext mw-520 mb-4">You can easily review the status of any translation in real-time right down to the segment level. You can set up accounts for your team members so everyone can benefit from the same centralized language assets.</p>
         </div>
         <div class="col-12 col-md-6">
           <img class="image-style-mobile" src="/images/features/manage-translation.svg" alt="" />
         </div>
       </div>
-      <div class="row py-5">
+      <div class="row py-5 column-reverse-mobile2">
         <div class="col-12 col-md-6">
           <img class="image-style-mobile" src="/images/features/use-workflows.svg" alt="" />
         </div>
@@ -218,14 +218,14 @@
       <div class="row py-5">
         <div class="col-12 col-md-6">
           <p class="features__section-subtitle mw-520">Translate thousands of products in just a few clicks</p>
-          <p class="features__section-subtext mw-520">Translate up to 10,000 products by leveraging translation memory (TM). Simply drag and drop one or more files directly from your desktop, and we’ll parse and process your file translations just as quickly as your product catalog content.</p>
+          <p class="features__section-subtext mw-520">Translate up to 10,000 products with the help of translation memory (TM). Simply drag and drop one or more files directly from your desktop, and we’ll parse and process your file translations just as quickly as your product catalog content.</p>
           <p class="features__section-subtext mw-520 mb-4">Amongst others, we support HTML, XLIFF, CSV, and XLSX files at the moment. New formats are being added regularly.</p>
         </div>
         <div class="col-12 col-md-6">
           <img class="image-style-mobile" src="/images/features/translate-file.svg" alt="" />
         </div>
       </div>
-      <div class="row py-5">
+      <div class="row py-5 column-reverse-mobile2">
         <div class="col-12 col-md-6">
           <img class="image-style-mobile" src="/images/features/generate-key.svg" alt="" />
         </div>
@@ -259,7 +259,7 @@
           <img class="mr-2" src="/images//homepage/check-icon.svg" />
           <p class="index-learn__text mb-0">How to get started with localization?</p>
         </div>
-        <p class="index-learn__subtitle mt-3">and many more</p>
+        <p class="index-learn__subtitle mt-3">and much more</p>
         <a data-toggle="modal" data-target="#exampleModal">
           <button class="btn-initial btn-white index-header__content-btn mb-5">Download guide</button>
         </a>
@@ -337,7 +337,7 @@
       <div class="row py-5">
         <div class="col-12 col-md-6">
           <p class="features__section-subtitle mw-520 mt-4">Take control of your translation results with Tolq’s advanced tools</p>
-          <img class="image-style-mobile" src="/images/features/take-control.svg" alt="" />
+          <img class="image-style2 my-4" src="/images/features/take-control.svg" alt="" />
           <p class="features__section-subtext mw-520 mb-4">Tolq’s set of advanced tools empowers you to take control of your translations and ensure efficiency, quality, and consistency.</p>
         </div>
         <div class="col-12 col-md-6">
@@ -399,23 +399,23 @@
         </select>
       </div>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Company</p>
       <a class="index-footer__link" href="translators.html">Translators</a>
       <a class="index-footer__link" href="contact.html">Contact</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Solutions</p>
       <a class="index-footer__link" href="product-catalog.html">Product Catalog</a>
       <a class="index-footer__link" href="customer-service.html">Customer Service</a>
       <a class="index-footer__link" href="marketing.html">Marketing</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Product</p>
       <a class="index-footer__link" href="features.html">How It Works</a>
       <a class="index-footer__link" href="https://docs.tolq.com/docs">API Docs</a>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Social Media</p>
       <div class="d-flex w-100 index-footer__social">
 
@@ -523,7 +523,7 @@
     else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Olandese') || (lang === 'Néerlandais')) {
       window.location = '/nl/index.html';
     }
-    else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Tedesca') || (lang === 'Allemand')) {
+    else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Tedesco') || (lang === 'Allemand')) {
       window.location = '/de/index.html';
     }
     else if ((lang === 'Italian') || (lang === 'Italiaans') || (lang === 'Italienisch') || (lang === 'Italiana') || (lang === 'Italien')) {
@@ -551,7 +551,7 @@
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Tedesca') || ($.trim( $element.html() ) === 'Allemand')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Tedesco') || ($.trim( $element.html() ) === 'Allemand')) {
           $element.remove();
         }
       }
