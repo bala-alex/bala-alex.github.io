@@ -116,7 +116,8 @@
   .footer-dropdown .select-selected {
     background-color: #53a9e6;
     margin-bottom: 0 !important;
-    width: 100% !important; }
+    width: 100% !important;
+    border-radius: 10px; }
   .footer-dropdown .select-selected:after {
     position: absolute;
     content: "";
@@ -145,7 +146,8 @@
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 99; }
+    z-index: 99;
+    border-radius: 10px; }
     @media (max-width: 768px) {
       .footer-dropdown .select-items {
         width: 100% !important;
@@ -218,6 +220,15 @@
   @media (max-width: 992px) {
     .mt-negative-large {
       margin-top: -150px; } }
+
+.mt-negative-medium {
+  margin-top: -270px; }
+  @media (max-width: 992px) {
+    .mt-negative-medium {
+      margin-top: -370px; } }
+  @media (max-width: 768px) {
+    .mt-negative-medium {
+      margin-top: -220px; } }
 
 .mt-300 {
   margin-top: 300px; }
@@ -531,6 +542,9 @@
       background-repeat: no-repeat;
       background-size: 207px 120px, 650px 660px !important;
       background-position: bottom left 0px, bottom right 0px; }
+      @media (max-width: 1260px) {
+        .index-header__content.-is-homepage {
+          background-size: 207px 120px, 500px 500px !important; } }
       @media (max-width: 992px) {
         .index-header__content.-is-homepage {
           min-height: 400px !important;
@@ -3350,6 +3364,10 @@ video {
   letter-spacing: -0.5px;
   color: #004E82;
   font-family: 'Ubuntu', sans-serif; }
+  @media (max-width: 1300px) {
+    .customer__header-title {
+      font-size: 26px;
+      line-height: 32px; } }
   @media (max-width: 768px) {
     .customer__header-title {
       font-size: 18px;
@@ -3362,12 +3380,17 @@ video {
   letter-spacing: -0.5px;
   color: #004E82;
   font-family: 'Ubuntu', sans-serif;
-  max-width: 800px; }
+  max-width: 770px; }
   @media (max-width: 1300px) {
     .customer__header-subtitle {
-      font-size: 45px;
-      line-height: 50px;
+      font-size: 40px;
+      line-height: 45px;
       max-width: 540px; } }
+  @media (max-width: 1100px) {
+    .customer__header-subtitle {
+      font-size: 35px;
+      line-height: 40px;
+      max-width: 480px; } }
   @media (max-width: 768px) {
     .customer__header-subtitle {
       font-size: 32px;
@@ -3380,6 +3403,9 @@ video {
   color: #354C6D;
   font-family: 'Ubuntu', sans-serif;
   max-width: 561px; }
+  @media (max-width: 1100px) {
+    .customer__header-text {
+      max-width: 500px; } }
 
 @media (max-width: 768px) {
   .customer-provider {

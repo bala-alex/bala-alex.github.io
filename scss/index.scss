@@ -113,6 +113,10 @@
         background-size: 207px 120px, 650px 660px !important;
         background-position: bottom left 0px, bottom right 0px;
 
+        @media (max-width: 1260px) {
+          background-size: 207px 120px, 500px 500px !important;
+        }
+
         @include screen-md {
           min-height: 400px !important;
           background: none;

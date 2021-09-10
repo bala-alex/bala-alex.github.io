@@ -111,6 +111,11 @@ video {
 			color: $font-base;
 			font-family: 'Ubuntu', sans-serif;
 
+      @media (max-width: 1300px) {
+        font-size: 26px;
+        line-height: 32px;
+      }
+
       @include screen-sm {
         font-size: 18px;
 			  line-height: 28px;
@@ -124,12 +129,18 @@ video {
 			letter-spacing: -0.5px;
 			color: $font-base;
 			font-family: 'Ubuntu', sans-serif;
-      max-width: 800px;
+      max-width: 770px;
 
       @media (max-width: 1300px) {
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 40px;
+        line-height: 45px;
         max-width: 540px;
+      }
+
+      @media (max-width: 1100px) {
+        font-size: 35px;
+        line-height: 40px;
+        max-width: 480px;
       }
 
       @include screen-sm {
@@ -145,6 +156,10 @@ video {
 			color: #354C6D;
 			font-family: 'Ubuntu', sans-serif;
       max-width: 561px;
+
+      @media (max-width: 1100px) {
+        max-width: 500px;
+      }
 		}
   }
 
