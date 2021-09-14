@@ -50,7 +50,7 @@
             <p class="index-solution__subtitle">{{ site.data[page.lang]['contact']['we_are_happy'] }}</p>
             <p class="index-solution__subtitle">{{ site.data[page.lang]['contact']['if_you_need'] }}</p>
             <div class="d-flex justify-content-between flex-wrap">
-              <a href="product-catalog.html" class="d-flex justify-content-center mt-3">
+              <a href="mailto:contact@tolq.com?subject=Request for Proposal" class="d-flex justify-content-center mt-3">
                 <button class="btn-initial btn-outline">{{ site.data[page.lang]['contact']['request_proposal'] }}</button>
               </a>
               <img src="/images//contact/proposals.svg" class="index-solution__image mt-3" />
@@ -62,7 +62,7 @@
             <p class="index-solution__title">{{ site.data[page.lang]['contact']['technology_partnerships'] }}</p>
             <p class="index-solution__subtitle mb-2 pb-2">{{ site.data[page.lang]['contact']['we_are_interested'] }}</p>
             <div class="d-flex justify-content-between flex-wrap mt-4">
-              <a href="marketing.html" class="d-flex justify-content-center mt-3">
+              <a href="mailto:contact@tolq.com?subject=Technology Partnerships" class="d-flex justify-content-center mt-3">
                 <button class="btn-initial btn-outline">{{ site.data[page.lang]['contact']['get_in_touch'] }}</button>
               </a>
               <img src="/images//contact/partnerships.svg" class="index-solution__image mt-3" />
@@ -117,6 +117,12 @@
       </div>
     </div>
   </section>
+
+  <!-- Download Guide -->
+  {% include download-guide.html %}
+
+  <!-- Our Pricing -->
+  {% include our-pricing.html %}
 
   <!-- Book a Demo -->
   {% include book-a-demo.html %}
