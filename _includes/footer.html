@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<div class="container">
-  <div class="d-flex index-footer">
-    <div class="d-flex flex-column footer-dropdown">
-      <a href="index.html"><img src="/images/brand.svg" alt="Tolq Logo" /></a>
-      <p class="index-footer__easy my-3">{{ site.data[page.lang]['footer']['scalable_e_commerce'] }}</p>
-      <div class="custom-select mt-2" style="width:235px; height: auto; padding: 0px; border-radius: 12px;">
-        <select>
-          <option value="0">{{ site.data[page.lang]['footer']['select_language'] }}</option>
+<div class="bg-light-gray py-5">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-3 col-sm-12 footer-dropdown">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
+        <p class="footer__subtitle">{{ site.data[page.lang]['footer']['source_code_escrow_for'] }} </p>
+        <div class="custom-select" style="width:200px; height: auto; padding: 0px;">
+          <select>
+            <option value="0">{{ site.data[page.lang]['footer']['select_language'] }}</option>
             <option value="1" id="english">{{ site.data[page.lang]['footer']['english'] }}</option>
             <option value="2" id="dutch">{{ site.data[page.lang]['footer']['dutch'] }}</option>
             <option value="3" id="german">{{ site.data[page.lang]['footer']['german'] }}</option>
-            <option value="4" id="italian">{{ site.data[page.lang]['footer']['italian'] }}</option>
-            <option value="5" id="french">{{ site.data[page.lang]['footer']['french'] }}</option>
-        </select>
+            <option value="4" id="spanish">{{ site.data[page.lang]['footer']['spanish'] }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 d-flex flex-column">
+            <p class="footer__text fw-bold mb-0 mt-2">{{ site.data[page.lang]['footer']['codekeeper'] }}</p>
+            <a class="footer__subtext mt-2" href="index.html">{{ site.data[page.lang]['footer']['home'] }}</a>
+            <a class="footer__subtext mt-2" href="features.html">{{ site.data[page.lang]['footer']['features'] }}</a>
+            <a class="footer__subtext mt-2" href="how-it-works.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
+            <a class="footer__subtext mt-2" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
+            <a class="footer__subtext mt-2" href="pricing.html">{{ site.data[page.lang]['footer']['pricing'] }}</a>
+            <a class="footer__subtext mt-2" href="verification.html">{{ site.data[page.lang]['footer']['verification'] }}</a>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex flex-column">
+            <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['resources'] }}</p>
+            <a class="footer__subtext mt-2" href="resources.html">{{ site.data[page.lang]['footer']['all_resources'] }}</a>
+            <a class="footer__subtext mt-2" href="what-is-source-code-escrow.html">{{ site.data[page.lang]['footer']['source_code_escrow'] }}</a>
+            <a class="footer__subtext mt-2" href="what-is-data-escrow.html">{{ site.data[page.lang]['footer']['data_escrow'] }}</a>
+            <a class="footer__subtext mt-2" href="what-is-saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
+            <a class="footer__subtext mt-2" href="what-is-information-escrow.html">{{ site.data[page.lang]['footer']['information_escrow'] }}</a>
+            <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
+            <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">{{ site.data[page.lang]['footer']['blog'] }}</a>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex flex-column">
+            <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['support'] }}</p>
+            <a class="footer__subtext mt-2" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
+            <a class="footer__subtext mt-2" href="security.html">{{ site.data[page.lang]['footer']['security'] }}</a>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex flex-column">
+            <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['legal'] }}</p>
+            <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">{{ site.data[page.lang]['footer']['privacy_policy'] }}</a>
+            <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">{{ site.data[page.lang]['footer']['terms_conditions'] }}</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="d-flex flex-column pr-2 pl-4">
-      <p class="index-footer__cat">{{ site.data[page.lang]['footer']['company'] }}</p>
-      <a class="index-footer__link" href="translators.html">{{ site.data[page.lang]['footer']['translators'] }}</a>
-      <a class="index-footer__link" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
-    </div>
-    <div class="d-flex flex-column px-2">
-      <p class="index-footer__cat">{{ site.data[page.lang]['footer']['solutions'] }}</p>
-      <a class="index-footer__link" href="product-catalog.html">{{ site.data[page.lang]['footer']['product_catalog'] }}</a>
-      <a class="index-footer__link" href="customer-service.html">{{ site.data[page.lang]['footer']['customer_service'] }}</a>
-      <a class="index-footer__link" href="marketing.html">{{ site.data[page.lang]['footer']['marketing'] }}</a>
-    </div>
-    <div class="d-flex flex-column px-2">
-      <p class="index-footer__cat">{{ site.data[page.lang]['footer']['product'] }}</p>
-      <a class="index-footer__link" href="features.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
-      <a class="index-footer__link" href="https://docs.tolq.com/docs">{{ site.data[page.lang]['footer']['api_docs'] }}</a>
-    </div>
-    <div class="d-flex flex-column px-2">
-      <p class="index-footer__cat">{{ site.data[page.lang]['footer']['social_media'] }}</p>
-      <div class="d-flex w-100 index-footer__social">
-
-        <a class="nav-link" href="https://www.facebook.com/tolqcom">
-          <img src="/images/fb.svg" alt="" />
-        </a>
-        <a class="nav-link" href="https://twitter.com/tolqcom">
-          <img src="/images/tw.svg" alt="" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col text-center smaller-fontsize copyright mb-5 index-footer__text pb-4">
-    ©<script>document.write( new Date().getFullYear() );</script> Tolq.com BV, {{ site.data[page.lang]['footer']['all_rights'] }} - <a href="https://legal.tolq.com/page?page=TermsConditions">{{ site.data[page.lang]['footer']['terms'] }}</a> - <a href="https://legal.tolq.com/page?page=PrivacyPolicy">{{ site.data[page.lang]['footer']['privacy'] }}</a>
+    <p class="footer__text2 text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co - {{ site.data[page.lang]['footer']['codekeeper_inc'] }} </a> - {{ site.data[page.lang]['footer']['all_rights_reserved'] }} <script>document.write( new Date().getFullYear() );</script>.</p>
   </div>
 </div>
