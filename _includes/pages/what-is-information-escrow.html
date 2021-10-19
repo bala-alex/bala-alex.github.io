@@ -129,9 +129,9 @@
       </div>
     </div>
     <!-- Third Section -->
-    <div class="pricing">
+    <div class="pricing mt-5">
       <div class="section-medium offer">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center section-medium pb-0">
           <img class="header__screen mx-auto" src="/images/features-page/features-image.svg"/>
         </div>
         <h2 class="offer__main-title mt-2">{{ site.data[page.lang]['information_escrow']['industry_leading'] }}</h2>
@@ -168,12 +168,10 @@
           <p class="discover__subtitle2 mx-auto mt-4">{{ site.data[page.lang]['information_escrow']['as_a_trusted_escrow'] }}</p>
         </div>
       </div>
-      <div class="verification__guide">
-        {% include sample-escrow.html %}
-      </div>
-      <a class="button btn-secondary-lg mb-5 mx-auto" href="resources.html">
-        {{ site.data[page.lang]['source_escrow']['see_all_resources'] }}
-      </a>
+    </div>
+    <!-- Guide Section -->
+    <div class="section-medium pb-0">
+      {% include escrow-introduction.html %}
     </div>
     <!-- Fifth Section -->
     <div class="section-medium px-3 features my-5">
@@ -207,7 +205,7 @@
               </a>
             </div>
           </div>
-          <a class="button btn-bondi-blue my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
+          <a class="button btn-cerulean my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
             {{ site.data[page.lang]['resources']['see_all_articles'] }} 
           </a>
         </div>

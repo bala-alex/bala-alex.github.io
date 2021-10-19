@@ -455,8 +455,20 @@ html {
   background: #6782A3;
 }
 
+.mt-negative-50 {
+  margin-top: -50px;
+
+  @include screen-sm {
+    margin-top: 50px;
+  }
+}
+
 .mt-negative-150 {
   margin-top: -150px;
+
+  @include screen-sm {
+    margin-top: 50px;
+  }
 }
 
 .mt-negative-250 {

@@ -94,12 +94,10 @@
           <p class="discover__subtitle2 mx-auto mt-4">{{ site.data[page.lang]['data_escrow']['as_a_trusted'] }}</p>
         </div>
       </div>
-      <div class="verification__guide">
-        {% include sample-escrow.html %}
-      </div>
-      <a class="button btn-secondary-lg mb-5 mx-auto" href="resources.html">
-        {{ site.data[page.lang]['source_escrow']['see_all_resources'] }}
-      </a>
+    </div>
+    <!-- Guide Section -->
+    <div class="section-medium pb-0">
+      {% include escrow-introduction.html %}
     </div>
     <!-- Fifth Section -->
     <div class="section-medium px-3 features my-5">
@@ -133,7 +131,7 @@
               </a>
             </div>
           </div>
-          <a class="button btn-bondi-blue my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
+          <a class="button btn-cerulean my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
             {{ site.data[page.lang]['resources']['see_all_articles'] }} 
           </a>
         </div>

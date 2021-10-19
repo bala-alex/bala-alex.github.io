@@ -7743,8 +7743,17 @@ html {
   height: 1px;
   background: #6782A3; }
 
+.mt-negative-50 {
+  margin-top: -50px; }
+  @media (max-width: 768px) {
+    .mt-negative-50 {
+      margin-top: 50px; } }
+
 .mt-negative-150 {
   margin-top: -150px; }
+  @media (max-width: 768px) {
+    .mt-negative-150 {
+      margin-top: 50px; } }
 
 .mt-negative-250 {
   margin-top: -250px; }
@@ -8704,14 +8713,6 @@ html {
   margin-top: -65px;
   margin-bottom: 100px; }
 
-.verification__guide-bg {
-  position: relative;
-  z-index: 0;
-  margin-top: -120px; }
-  @media (max-width: 768px) {
-    .verification__guide-bg {
-      margin-top: 50px; } }
-
 .guide__bg {
   background: url("../images/homepage/guide-bg.png");
   background-repeat: no-repeat;
@@ -8754,7 +8755,7 @@ html {
       flex-wrap: wrap; } }
 
 .guide__content2 {
-  min-height: 600px !important;
+  min-height: 500px !important;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8811,7 +8812,7 @@ html {
   letter-spacing: 0px;
   line-height: 24px;
   font-family: 'Muli', sans-serif;
-  max-width: 410px; }
+  max-width: 570px; }
 
 .guide__image {
   height: 291px;

@@ -174,12 +174,10 @@
           <p class="discover__subtitle2 mx-auto mt-4">{{ site.data[page.lang]['data_escrow']['as_a_trusted'] }}</p>
         </div>
       </div>
-      <div class="verification__guide mb-5">
-        {% include sample-escrow.html %}
-      </div>
-      <a class="button btn-cerulean mb-5 mx-auto" href="resources.html">
-        {{ site.data[page.lang]['source_escrow']['see_all_resources'] }}
-      </a>
+    </div>
+    <!-- Guide Section -->
+    <div class="mt-4">
+      {% include sample-escrow.html %}
     </div>
     <!-- Section -->
     {% include secure-assets.html %}
