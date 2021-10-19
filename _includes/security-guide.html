@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <div class="resources">
-  <div class="container">
-    <div class="guide__bg">
-      <div class="guide__content d-flex align-items-center justify-content-center">
-        <div>
-          <h2 class="guide__title">{{ site.data[page.lang]['security']['information_security'] }}</h2>
-          <p class="guide__subtitle mt-3">{{ site.data[page.lang]['security']['download_our_guide'] }}</p>
-          <a class="button btn-white-xl2 mt-4" data-toggle="modal" data-target="#exampleModal3">
-            {{ site.data[page.lang]['security']['download_free_guide'] }}
-          </a>
+  <div class="container-fluid px-0">
+    <div class="guide__bg-security">
+      <div class="container">
+        <div class="guide__content2 d-flex align-items-center justify-content-between">
+          <div>
+            <p class="verification__add-on text-uppercase">{{ site.data[page.lang]['resources']['ebook'] }} </p>
+            <h2 class="guide__title2">{{ site.data[page.lang]['security']['information_security'] }}</h2>
+            <p class="guide__subtitle2 mt-3">{{ site.data[page.lang]['security']['download_our_guide'] }}</p>
+            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal3">
+              {{ site.data[page.lang]['security']['download_free_guide'] }}
+            </a>
+          </div>
+          <img class="guide__image2 mt-4" src="/images/resources-page/guide-information.svg"/>
         </div>
-        <img class="guide__image2" src="/images/resources-page/guide-information.svg"/>
       </div>
     </div>
     <!-- Modal -->

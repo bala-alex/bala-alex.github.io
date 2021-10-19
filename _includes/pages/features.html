@@ -93,7 +93,7 @@
           </div>
         </div>
       </div>
-      <a class="button btn-bondi-blue mx-auto mb-5" href="pricing.html">
+      <a class="button btn-cerulean mx-auto mb-5" href="pricing.html">
         {{ site.data[page.lang]['features']['get_started'] }}
       </a>
     </div>
@@ -186,7 +186,7 @@
             </div>
           </div>
         </div>
-        <a class="button btn-secondary-large mx-auto my-5" href="resources.html">
+        <a class="button btn-cerulean mx-auto my-5" href="resources.html">
           {{ site.data[page.lang]['features']['learn_more'] }}
         </a>
         <p class="clients__info-text pt-4">{{ site.data[page.lang]['features']['our_source_code'] }}:</p>
@@ -238,7 +238,7 @@
           <div class="col-md-6 col-sm-12">
             <h2 class="verification__title">{{ site.data[page.lang]['features']['escrow_management'] }}</h2>
             <p class="verification__subtitle ml-auto mt-3">{{ site.data[page.lang]['features']['need_to_provide'] }} </p>
-            <a class="button btn-secondary-large ml-auto my-4" href="pricing.html">
+            <a class="button btn-cerulean ml-auto my-4" href="pricing.html">
               {{ site.data[page.lang]['features']['see_our_pricing'] }}
             </a>
           </div>
@@ -274,7 +274,7 @@
               <h2 class="escrow3__title">{{ site.data[page.lang]['features']['escrow_agreement_included'] }}</h2>
               <p class="escrow3__subtitle mt-4">{{ site.data[page.lang]['features']['a_legally_sound_escrow'] }}</p>
               <div class="d-flex flex-wrap align-items-center my-5">
-                <a class="button btn-bondi-blue mr-4 my-4" href="pricing.html">
+                <a class="button btn-cerulean mr-4 my-4" href="pricing.html">
                   {{ site.data[page.lang]['features']['get_started'] }}
                 </a>
                 <a class="button escrow3__link mw-100 text-bondi-blue" data-toggle="modal" data-target="#exampleModal4">
@@ -284,7 +284,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/homepage/escrow-role.svg"/>
+            <img class="image-style" src="/images/homepage/escrow-role.png"/>
           </div>
         </div>
         <!-- Modal -->
@@ -322,44 +322,12 @@
       </div>
     </div>
     <!-- Sixth Section -->
-    <div class="bg-white pt-5 px-3">
-      <div class="people__section-container mx-auto people__guide-spacing">
-        <div class="container">
-          <h2 class="people__title">{{ site.data[page.lang]['includes']['security']['security'] }}</h2>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/data-security.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['data_security'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['our_data_centers'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/encryption.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['end_to_end'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['data_is_secured'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/secure-upload.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['secure_upload'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['if_you_prefer'] }}</p>
-              </div>
-            </div>
-          </div>
-          <a class="button btn-secondary-large mx-auto my-5" href="security.html">
-            {{ site.data[page.lang]['includes']['security']['learn_more'] }}
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="verification__guide">
+    {% include security.html %}
+    <div class="verification__guide-bg">
       {% include security-guide.html %}
     </div>
     <!-- Seventh Section -->
-    <div class="bg-white py-5">
+    <div class="bg-white section-medium">
       <div class="container d-flex flex-column align-items-center">
         <p class="protect__subtext">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
         <img class="datacenter-image" src="/images/logos/datacenter-certifications.svg"/>

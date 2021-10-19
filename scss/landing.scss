@@ -178,6 +178,20 @@
     }
   }
 
+  &__background {
+    min-height: 950px !important;
+    background: url('../images/homepage/protect-software-bg.png');
+    background-repeat: no-repeat;
+    background-position: top; 
+    background-size: cover !important;
+    padding-top: 200px;
+    padding-bottom: 400px;
+    margin-top: 100px;
+    @include screen-md {
+      padding-top: 100px;
+    }
+  }
+
   &__title {
     font-size: 42px !important;
     line-height: 53px;
@@ -650,6 +664,20 @@
     }
   }
 
+  &__content-bg {
+    min-height: 750px !important;
+    background: url('../images/homepage/escrow-role-bg.png');
+    background-repeat: no-repeat;
+    background-position: top; 
+    background-size: cover !important;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    margin-top: 100px;
+    @include screen-md {
+      padding-top: 100px;
+    }
+  }
+
   &__title {
     font-size: 44px !important;
     font-family: 'Muli', sans-serif;
@@ -843,14 +871,15 @@
 .verification {
 
   &__container {
-    background: $snow;
+    background: $alice-blue;
     border-radius: 25px;
     min-height: 960px !important;
     width: 1320px;
-    padding: 100px 80px 200px;
+    padding: 100px 80px 100px;
+    box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
     @include screen-lg {
       width: 90%;
-      padding: 15px 15px 200px;
+      padding: 50px 15px 50px;
     }
   }
 
@@ -862,6 +891,22 @@
     font-weight: 300;
     letter-spacing: -0.42px;
     text-align: right;
+  }
+
+  &__add-on {
+    font-size: 20px !important;
+    line-height: 25px;
+    font-family: 'Muli', sans-serif;
+    color: #F7FBFF;
+    font-weight: 700;
+    letter-spacing: -0.42px;
+    text-align: center;
+    height: 45px;
+    min-width: 120px;
+    width: fit-content;
+    background: #65A2FD;
+    border-radius: 10px;
+    padding: 10px 20px;
   }
 
   &__subtitle {
@@ -988,6 +1033,16 @@
     margin-top: -65px;
     margin-bottom: 100px;
   }
+
+  &__guide-bg {
+    position: relative;
+    z-index: 0;
+    margin-top: -120px;
+
+    @include screen-sm {
+      margin-top: 50px;
+    }
+  }
 }
 
 .guide {
@@ -1000,12 +1055,34 @@
     border-radius: 16px;
   }
 
+  &__bg-security {
+    background: url('../images/homepage/security-background.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover !important;
+    padding: 50px 0px;
+  }
+
   &__content {
     min-height: 317px !important;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 90px;
     padding-right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include screen-md {
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content2 {
+    min-height: 600px !important;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1037,6 +1114,26 @@
     max-width: 410px;
   }
 
+  &__title2 {
+    font-size: 42px !important;
+    font-family: 'Muli', sans-serif;
+    color: $sherpa-blue;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    max-width: 547px;
+    line-height: 42px;
+  }
+
+  &__subtitle2 {
+    color: $sherpa-blue;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-family: 'Muli', sans-serif;
+    max-width: 410px;
+  }
+
   &__image {
     height: 291px;
     width: 206px;
@@ -1049,7 +1146,7 @@
   }
 
   &__image2 {
-    max-width: 360px;
+    max-width: 420px;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -1116,7 +1213,8 @@
     max-width: 1320px;
     min-height: 690px;
     border-radius: 25px;
-    background-color: $snow;
+    background-color: $alice-blue;
+    box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
     padding: 90px 0;
   }
 
@@ -1220,6 +1318,7 @@
     border-radius: 25px;
     background-color: $alice-blue;
     padding: 90px 0;
+    box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
   }
 
   &__title {
@@ -1285,6 +1384,16 @@
     margin: 30px 0;
   }
 
+  &__section-image2 {
+    width: 130px;
+    height:130px;
+    margin: 30px 30px 0px 0px;
+
+    @include screen-sm {
+      margin: 10px;
+    }
+  }
+
   &__section-title {
     color: $sherpa-blue;
     font-size: 16px;
@@ -1300,6 +1409,24 @@
     font-weight: normal;
     text-align: center;
     line-height: 30px;
+    font-family: 'Muli', sans-serif;
+    max-width: 303px;
+  }
+
+  &__section-title2 {
+    color: $sherpa-blue;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Muli', sans-serif;
+  }
+
+  &__section-subtitle2 {
+    color: $air-force-blue;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 27px;
+    font-weight: 400;
     font-family: 'Muli', sans-serif;
     max-width: 303px;
   }
@@ -1334,17 +1461,32 @@
     font-family: 'Muli', sans-serif;
   }
 
-  &__item-box{
+  &__item-box {
     max-width: 370px;
     min-height: 410px;
     background: $white;
-    box-shadow: 2px 9px 20px #EEF1F6;
+    box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
     border-radius: 20px;
     padding: 25px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__item-box2 {
+    max-width: 570px;
+    min-height: 310px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5FAFF 100%);
+    box-shadow: 0px 8px 20px rgba(0, 90, 109, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 30px;
+    display: flex;
+
+    @include screen-sm {
+      flex-direction: column;
+    }
   }
 
   &__box-subtitle {
@@ -1547,7 +1689,7 @@
 
   &__bg {
     min-height: 440px !important;
-    background: url('../images/homepage/guide-background.png');
+    background: url('../images/homepage/guide-background2.png');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover !important;

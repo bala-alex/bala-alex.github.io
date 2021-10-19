@@ -148,6 +148,56 @@
   }
 }
 
+.btn-cerulean {
+  @include button-variant($cerulean, $cerulean, $active-background: darken($cerulean, 7.5%), $active-border: darken($cerulean, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $cerulean;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($cerulean, 7.5%) !important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-cerulean2 {
+  @include button-variant($cerulean, $cerulean, $active-background: darken($cerulean, 7.5%), $active-border: darken($cerulean, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $cerulean;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($cerulean, 7.5%)!important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
 .btn-white-sm {
   @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
   color: #6D9EDE !important;
@@ -217,6 +267,31 @@
     background-color: #F3FDFF !important;
     text-decoration: none;
     border: 1px solid #F3FDFF;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-yellow {
+  @include button-variant($yellow, $yellow, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $sherpa-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $sherpa-blue !important;
+    background-color: darken($yellow, 7.5%)!important;
+    text-decoration: none;
+    border: 1px solid $yellow;
     transition: all .3s;
     cursor: pointer;
   }
