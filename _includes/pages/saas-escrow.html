@@ -63,10 +63,14 @@
             </div>
           </div>
           <div class="col-md-5 col-sm-12">
-            <img class="applications__image my-5" src="/images/homepage/saas-applications.svg"/>
+            <img class="applications__image my-4" src="/images/homepage/saas-applications.svg"/>
             <p class="applications__header-title">{{ site.data[page.lang]['saas_escrow_product']['speedy'] }}</p>
             <p class="applications__content-text2 mt-3">{{ site.data[page.lang]['saas_escrow_product']['lower_your'] }}</p>
+            <a class="button btn-cerulean my-4" href="pricing.html">
+              {{ site.data[page.lang]['index']['get_started'] }}
+            </a>
           </div>
+          
         </div>
         <div class="applications__logos mt-5">
           <div class="applications__logo">
@@ -134,6 +138,9 @@
             <p class="how__col-text">{{ site.data[page.lang]['saas_escrow_product']['results'] }}: {{ site.data[page.lang]['saas_escrow_product']['in_a_default'] }}</p>
           </div>
         </div>
+        <a class="button btn-yellow mt-5" href="pricing.html">
+          {{ site.data[page.lang]['index']['get_started'] }}
+        </a>
       </div>
     </div>
     <!-- Third Section -->
@@ -255,7 +262,7 @@
       </div>
     </div>
     <!-- Sixth Section -->
-    <div class="bg-white pt-5 px-3">
+    <div class="pt-5 px-3 position-relative">
       <div class="people__section-container mx-auto">
         <div class="container">
           <h2 class="people__title">{{ site.data[page.lang]['data_escrow_product']['best_in_class'] }}</h2>
@@ -289,7 +296,7 @@
         </div>
       </div>
     </div>
-    <div class="section-medium pb-0">
+    <div class="mt-negative-50">
       {% include anatomy-escrow.html %}
     </div>
     <!-- Seventh Section -->

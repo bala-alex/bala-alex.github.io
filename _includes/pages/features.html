@@ -22,7 +22,7 @@
     {% include navigation.html %}
     <!-- Header -->
     <div class="header__content overflow-hidden">
-      <div class="header__bg">
+      <div class="header__bg2">
         <div class="container">
           <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['features']['features_main'] }}</h1>
           <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['features']['some_of_the_world'] }}</p>
@@ -30,75 +30,77 @@
       </div>
     </div>
     <!-- First Section -->
-    <div class="container d-flex justify-content-center">
-      <img class="header__screen" src="/images/features-page/features-image.svg"/>
-    </div>
-    <div class="container section-medium">
-      <h2 class="solutions__main-title mx-auto">{{ site.data[page.lang]['features']['our_solutions'] }}</h2>
-      <p class="solutions__main-subtitle mx-auto mt-4">{{ site.data[page.lang]['features']['thanks_to_our'] }}</p>
-      <div class="row mt-5">
-        <div class="col-md-5 col-sm-12">
-          <h2 class="solutions__title-fade mb-5 min-h-110">{{ site.data[page.lang]['features']['the_traditional_way'] }}</h2>
-          <div class="d-flex justify-content-end mt-2">
-            <div>
-              <p class="solutions__subtitle-fade">{{ site.data[page.lang]['features']['manual_and_outdated'] }}</p>
-              <p class="solutions__subtext-fade">{{ site.data[page.lang]['features']['traditional_escrows_require'] }}</p>
-            </div>
-            <img class="solutions__icon-fade" src="/images/features-page/circle-feather.svg"/>
-          </div>
-          <div class="d-flex justify-content-end mt-2">
-            <div>
-              <p class="solutions__subtitle-fade">{{ site.data[page.lang]['features']['recovery_problems'] }}</p>
-              <p class="solutions__subtext-fade">{{ site.data[page.lang]['features']['incompatible_code_versions'] }}</p>
-            </div>
-            <img class="solutions__icon-fade" src="/images/features-page/circle-cancel.svg"/>
-          </div>
-          <div class="d-flex justify-content-end mt-2">
-            <div>
-              <p class="solutions__subtitle-fade">{{ site.data[page.lang]['features']['expensive_lawyer'] }}</p>
-              <p class="solutions__subtext-fade">{{ site.data[page.lang]['features']['waiting_for_expensive'] }}</p>
-            </div>
-            <img class="solutions__icon-fade" src="/images/features-page/circle-folder.svg"/>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-12">
-          <div class="solutions__center">
-            <div class="solutions__center-dot"></div>
-            <div class="solutions__center-line"></div>
-            <div class="solutions__center-dot2"></div>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <h2 class="solutions__title mb-5 min-h-110">{{ site.data[page.lang]['features']['the_codekeeper_source'] }}</h2>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features-page/circle-automated.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['automated_and_up'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['codekeeper_integrates_directly'] }}</p>
-            </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features-page/circle-recovery.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['quick_recovery'] }} </p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['quick_recovery_in_case'] }}</p>
-            </div>
-          </div>
-          <div class="d-flex mt-2">
-            <img class="solutions__icon" src="/images/features-page/circle-support.svg"/>
-            <div>
-              <p class="solutions__subtitle">{{ site.data[page.lang]['features']['end_to_end_concierge'] }}</p>
-              <p class="solutions__subtext">{{ site.data[page.lang]['features']['we_offer_complete'] }}</p>
-            </div>
-          </div>
-        </div>
+    <div class="solutions__large-bg">
+      <div class="container d-flex justify-content-center mt-negative-160">
+        <img class="header__screen" src="/images/features-page/features-image.svg"/>
       </div>
-      <a class="button btn-cerulean mx-auto mb-5" href="pricing.html">
-        {{ site.data[page.lang]['features']['get_started'] }}
-      </a>
+      <div class="container py-5">
+        <h2 class="solutions__main-title mx-auto text-white">{{ site.data[page.lang]['features']['our_solutions'] }}</h2>
+        <p class="solutions__main-subtitle mx-auto mt-4 text-white">{{ site.data[page.lang]['features']['thanks_to_our'] }}</p>
+        <div class="row mt-5">
+          <div class="col-md-5 col-sm-12">
+            <h2 class="solutions__title-fade mb-5 min-h-110 text-white">{{ site.data[page.lang]['features']['the_traditional_way'] }}</h2>
+            <div class="d-flex justify-content-end mt-2">
+              <div>
+                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['manual_and_outdated'] }}</p>
+                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['traditional_escrows_require'] }}</p>
+              </div>
+              <img class="solutions__icon-fade" src="/images/features-page/circle-feather-white.svg"/>
+            </div>
+            <div class="d-flex justify-content-end mt-2">
+              <div>
+                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['recovery_problems'] }}</p>
+                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['incompatible_code_versions'] }}</p>
+              </div>
+              <img class="solutions__icon-fade" src="/images/features-page/circle-cancel-white.svg"/>
+            </div>
+            <div class="d-flex justify-content-end mt-2">
+              <div>
+                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['expensive_lawyer'] }}</p>
+                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['waiting_for_expensive'] }}</p>
+              </div>
+              <img class="solutions__icon-fade" src="/images/features-page/circle-folder-white.svg"/>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <div class="solutions__center">
+              <div class="solutions__center-dot"></div>
+              <div class="solutions__center-line"></div>
+              <div class="solutions__center-dot-yellow"></div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <h2 class="solutions__title mb-5 min-h-110 text-white">{{ site.data[page.lang]['features']['the_codekeeper_source'] }}</h2>
+            <div class="d-flex mt-2">
+              <img class="solutions__icon" src="/images/features-page/circle-automated-blue.svg"/>
+              <div>
+                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['automated_and_up'] }}</p>
+                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['codekeeper_integrates_directly'] }}</p>
+              </div>
+            </div>
+            <div class="d-flex mt-2">
+              <img class="solutions__icon" src="/images/features-page/circle-recovery-blue.svg"/>
+              <div>
+                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['quick_recovery'] }} </p>
+                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['quick_recovery_in_case'] }}</p>
+              </div>
+            </div>
+            <div class="d-flex mt-2">
+              <img class="solutions__icon" src="/images/features-page/circle-support-blue.svg"/>
+              <div>
+                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['end_to_end_concierge'] }}</p>
+                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['we_offer_complete'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="button btn-yellow mx-auto mb-5" href="pricing.html">
+          {{ site.data[page.lang]['features']['get_started'] }}
+        </a>
+      </div>
     </div>
     <!-- Second Section -->
-    <div class="bg-white py-3 px-3">
+    <div class="py-3 px-3 mt-negative-250 position-relative">
       <div class="advantages__section-container mx-auto">
         <div class="container">
           <h2 class="advantages__title">{{ site.data[page.lang]['features']['key_advantages'] }}</h2>
@@ -159,8 +161,13 @@
         </div>
       </div>
     </div>
+    <!-- Guide Section -->
+    <div class="mt-negative-50 pt-0">
+      {% include escrow-introduction.html %}
+    </div>
+
     <!-- Third Section -->
-    <div class="bg-white section-medium">
+    <div class="section-medium">
       <div class="container">
         <h2 class="clients__title mt-5">{{ site.data[page.lang]['features']['our_escrow_deposit'] }}</h2>
         <div class="row">
@@ -189,7 +196,7 @@
         <a class="button btn-cerulean mx-auto my-5" href="resources.html">
           {{ site.data[page.lang]['features']['learn_more'] }}
         </a>
-        <p class="clients__info-text pt-4">{{ site.data[page.lang]['features']['our_source_code'] }}:</p>
+        <p class="clients__info-text pt-4 text-bondi-blue">{{ site.data[page.lang]['features']['our_source_code'] }}:</p>
         <div class="resources">
           <div class="applications__logos mt-5">
             <div class="applications__logo">
@@ -229,7 +236,7 @@
       </div>
     </div>
     <!-- Fourth Section -->
-    <div class="bg-white">
+    <div class="mt-5 position-relative">
       <div class="verification__container mx-auto">
         <div class="row column-reverse-mobile">
           <div class="col-md-6 col-sm-12">
@@ -262,9 +269,7 @@
         </div>
       </div>
     </div>
-    <div class="section-medium">
-      {% include escrow-introduction.html %}
-    </div>
+    
     <!-- Fifth Section -->
     <div class="bg-white">
       <div class="container section-medium resources">
@@ -323,7 +328,7 @@
     </div>
     <!-- Sixth Section -->
     {% include security.html %}
-    <div class="pt-5">
+    <div class="mt-negative-50">
       {% include security-guide.html %}
     </div>
     <!-- Seventh Section -->

@@ -33,7 +33,8 @@
   
     &__bg {
       min-height: 457px !important;
-      background: url('../images/integration-page/integration-bg.png');
+      // background: url('../images/integration-page/integration-bg.png');
+      background: url('../images/features-page/features-header.png');
       background-repeat: no-repeat;
       background-position: center; 
       background-size: cover !important;
@@ -143,7 +144,13 @@
       height: 49px;
       width: 450px;
       @include screen-md {
-        width: 100%;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @include screen-xs {
+        width: 300px;
         margin-right: auto;
         margin-left: auto;
       }

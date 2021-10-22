@@ -112,14 +112,24 @@
     <!-- First Section -->
     <div class="bg-white pb-5">
       <div class="container-fluid">
-        <div class="col-12 pt-5">
+        <div class="col-12">
           <div class="cont">
             <div class="container2 mx-auto"> 
               <div class="row d-flex flex-wrap mt-5 mobile-center w-100" id="myUL">
                 <div id="test-list" class="w-100">
-                  <div class="row mw-900 mx-auto">
-                    <div class="col-md-6 col-sm-12 pt-4">
-                      <div class="btn-group btn-group-toggle mt-4 d-flex align-items-center" data-toggle="buttons">
+                  <div class="mw-900 mx-auto d-flex flex-column align-items-center">
+                    <div class="pt-3">
+                      <div class="input-group mb-3 service__input mx-auto">
+                        <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="Search integrations" aria-label="Type to search" aria-describedby="basic-addon2" />
+                        <div class="input-group-append bg-light-gray">
+                          <button class="service__search btn px-5 shadow-none" type="button">
+                            <img class="service__input-icon" src="/images/integration-page/search-icon.svg"/>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-0">
+                      <div class="btn-group btn-group-toggle mt-4 d-flex align-items-center mx-auto" data-toggle="buttons">
                         <label class="btn btn-sidebar" id='all'>
                           <input type="radio" name="options" id="option1" autocomplete="off" checked> See all
                         </label>
@@ -206,16 +216,7 @@
                         
                       </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 pt-5">
-                      <div class="input-group mb-3 service__input ml-auto">
-                        <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="Search integrations" aria-label="Type to search" aria-describedby="basic-addon2" />
-                        <div class="input-group-append bg-light-gray">
-                          <button class="service__search btn px-5 shadow-none" type="button">
-                            <img class="service__input-icon" src="/images/integration-page/search-icon.svg"/>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                   
                   <ul class="list mt-5">

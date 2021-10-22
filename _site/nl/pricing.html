@@ -705,52 +705,53 @@
       </div>
     </div>
     <!-- Section -->
-    <div class="container section-large resources">
-      <div class="row column-reverse-mobile">
-        <div class="col-md-8 col-sm-12">
-          <h2 class="offer__main-title2 mt-5">Compleet Service Overzicht</h2>
-          <p class="offer__main-subtitle2 mt-3">We hebben vele andere services/features, wilt u ons volledige prijsschema ontvangen?</p>
-          <a class="button btn-cerulean2 text-uppercase my-4" data-toggle="modal" data-target="#exampleModal">
-            ONTVANG PRIJSLIJST
-          </a>
+    <div class="offer__content-bg">
+      <div class="container resources">
+        <div class="row column-reverse-mobile">
+          <div class="col-md-8 col-sm-12">
+            <h2 class="offer__main-title2 mt-5 text-white">Compleet Service Overzicht</h2>
+            <p class="offer__main-subtitle2 mt-3 text-white">We hebben vele andere services/features, wilt u ons volledige prijsschema ontvangen?</p>
+            <a class="button btn-yellow text-uppercase my-4" data-toggle="modal" data-target="#exampleModal">
+              ONTVANG PRIJSLIJST
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+            <img class="image-style" src="/images/homepage/pricelist-illustration.png"/>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-          <img class="image-style" src="/images/homepage/get-pricelist.svg"/>
-        </div>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content section__modal mx-auto">
-            <div class="modal-body p-0">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <div class="m-0">
-                <div class="section__modal-image-content p-0 pt-5">
-                  <p class="section__modal-title mt-3">Ontvang onze prijslijst</p>
-                </div>
-                <div class="section__modal-form p-0">
-                  <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
-                  <!--[if lte IE 8]>
-                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                  <![endif]-->
-                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                  <script>
-                    hbspt.forms.create({
-                    region: "na1",
-                    portalId: "5365877",
-                    formId: "cd3b35ed-b4f2-4948-97fe-4212186f6b17"
-                  });
-                  </script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content section__modal mx-auto">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="m-0">
+                  <div class="section__modal-image-content p-0 pt-5">
+                    <p class="section__modal-title mt-3">Ontvang onze prijslijst</p>
+                  </div>
+                  <div class="section__modal-form p-0">
+                    <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
+                    <!--[if lte IE 8]>
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                    <![endif]-->
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                      region: "na1",
+                      portalId: "5365877",
+                      formId: "cd3b35ed-b4f2-4948-97fe-4212186f6b17"
+                    });
+                    </script>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
     <!-- Section -->
     <!-- <div class="container-fluid section-medium pb-3">
@@ -781,7 +782,7 @@
 
     
     <!-- Third Section -->
-    <div class="bg-white features container-fluid">
+    <div class="features container-fluid mt-negative-150">
       <div class="advantages__section-container mx-auto">
         <div class="container">
           <h2 class="advantages__title">Belangrijkste Voordelen</h2>
@@ -876,47 +877,47 @@
     </div>
     <!-- Fifth Section -->
     <div class="bg-white features container-fluid">
-      <div class="advantages__section-container mx-auto pb-200">
+      <div class="advantages__section-container mx-auto pb-100 position-relative">
         <div class="container">
           <h4 class="section__title">Wat houden onze diensten in?</h4>
           <p class="section__text mt-4 text-center">Bekijk de termen hieronder om meer te leren over hoe u uw software en databases kunt beschermen.</p>
           <ul class="faq mt-5 pl-0">
-            <li class="q d-flex align-items-center justify-content-between bg-snow">
+            <li class="q d-flex align-items-center justify-content-between bg-alice-blue">
               <p class="section__subtitle mt-3">Source Code Escrow</p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">Source code of software escrow is een overeenkomst tussen een softwareontwikkelaar of -verkoper (ook „Leverancier“ of „Licentiegever“ genoemd), hun klant, die de softwarelicentie koopt (ook „Begunstigde“ of „Licentienemer“ genoemd) en een betrouwbare, neutrale derde partij zoals Codekeeper („Escrow Agent“). Source code escrow legt in het bijzonder de leverancier een contractuele verplichting op om alle source code, data, ontwerprichtlijnen, tools van derden en alle andere materialen waarmee de begunstigde de software kan updaten of onderhouden, bij een betrouwbare escrow agent op te slaan. <a href="features.html">Meer lezen</a></li>
-            <li class="q d-flex align-items-center justify-content-between q-border bg-snow">
+            <li class="a section__text bg-alice-blue">Source code of software escrow is een overeenkomst tussen een softwareontwikkelaar of -verkoper (ook „Leverancier“ of „Licentiegever“ genoemd), hun klant, die de softwarelicentie koopt (ook „Begunstigde“ of „Licentienemer“ genoemd) en een betrouwbare, neutrale derde partij zoals Codekeeper („Escrow Agent“). Source code escrow legt in het bijzonder de leverancier een contractuele verplichting op om alle source code, data, ontwerprichtlijnen, tools van derden en alle andere materialen waarmee de begunstigde de software kan updaten of onderhouden, bij een betrouwbare escrow agent op te slaan. <a href="features.html">Meer lezen</a></li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
               <p class="section__subtitle mt-3">Veilige Kluizen</p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">Dankzij de keuzemogelijkheden voor een bepaalde type kluis heeft u volledige controle. Bij ieder abonnement zijn een aantal opties inbegrepen, die u kunt vullen met: Broncoderepository's</li>
-            <li class="q d-flex align-items-center justify-content-between q-border bg-snow">
+            <li class="a section__text bg-alice-blue">Dankzij de keuzemogelijkheden voor een bepaalde type kluis heeft u volledige controle. Bij ieder abonnement zijn een aantal opties inbegrepen, die u kunt vullen met: Broncoderepository's</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
               <p class="section__subtitle mt-3">Software Escrow</p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">De termen "Software escrow" en "source code escrow" worden door elkaar gebruikt. Het is de meest gebruikte soort escrow, die is bedoeld om de begunstigde in staat te stellen de broncode, maar ook ontwerprichtlijnen en andere belangrijke documentatie bedrijfskritische softwareapplicatie, indien nodig, te updaten en onderhouden. Hoewel software escrow meestal wordt gebruikt voor traditionele on-site softwarelicenties, is het ook geschikt voor ontwikkelingsovereenkomsten, software overname overeenkomsten, SaaS-toepassingen (zie hieronder) en andere software transacties.</li>
-            <li class="q d-flex align-items-center justify-content-between q-border bg-snow">
+            <li class="a section__text bg-alice-blue">De termen "Software escrow" en "source code escrow" worden door elkaar gebruikt. Het is de meest gebruikte soort escrow, die is bedoeld om de begunstigde in staat te stellen de broncode, maar ook ontwerprichtlijnen en andere belangrijke documentatie bedrijfskritische softwareapplicatie, indien nodig, te updaten en onderhouden. Hoewel software escrow meestal wordt gebruikt voor traditionele on-site softwarelicenties, is het ook geschikt voor ontwikkelingsovereenkomsten, software overname overeenkomsten, SaaS-toepassingen (zie hieronder) en andere software transacties.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
               <p class="section__subtitle mt-3">Data Escrow </p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">Data escrow is van toepassing op databewaarders, zoals dienstverleners of internetdomeinnamen. Het verzekert dat er een actuele kopie van het domeinnaam-eigendom en bijbehorende contactgegevens in escrow is geplaatst voor het geval zich een bedrijfs- of technische storing voordoet. Soms wordt het tegelijk met domein escrow gebruikt. Hierin zijn de toegangsgegevens van een domein opgeslagen, dit vermindert risico‘s bij de aankoop van een domein of bij gebruik van een domein als bezit. Net als source code escrow, verzekeren data en domein escrows dat er actuele kopieën van de data en andere, vooraf bepaalde, depotmaterialen in escrow worden geplaatst door een betrouwbare derde partij zoals Codekeeper, die het materiaal uitsluitend vrijgeeft als aan een of meerdere voorwaarden voor vrijgave wordt voldaan. </li>
+            <li class="a section__text bg-alice-blue">Data escrow is van toepassing op databewaarders, zoals dienstverleners of internetdomeinnamen. Het verzekert dat er een actuele kopie van het domeinnaam-eigendom en bijbehorende contactgegevens in escrow is geplaatst voor het geval zich een bedrijfs- of technische storing voordoet. Soms wordt het tegelijk met domein escrow gebruikt. Hierin zijn de toegangsgegevens van een domein opgeslagen, dit vermindert risico‘s bij de aankoop van een domein of bij gebruik van een domein als bezit. Net als source code escrow, verzekeren data en domein escrows dat er actuele kopieën van de data en andere, vooraf bepaalde, depotmaterialen in escrow worden geplaatst door een betrouwbare derde partij zoals Codekeeper, die het materiaal uitsluitend vrijgeeft als aan een of meerdere voorwaarden voor vrijgave wordt voldaan. </li>
 
-            <li class="q d-flex align-items-center justify-content-between q-border bg-snow">
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
               <p class="section__subtitle mt-3">Informatie Escrow </p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">Met behulp van informatie escrow kunnen bedrijven gevoelige informatie overdragen aan een betrouwbare tussenpartij, een escrow agent, die de informatie uitsluitend onder vooraf bepaalde voorwaarden zal doorsturen.  Dit houdt in dat, in een zakelijke context, het bedrijven ondersteunt bij het bewaren van gevoelige documenten, die uitsluitend kunnen worden vrijgegeven onder zekere, vooraf bepaalde voorwaarden. Informatie escrow wordt vaak gebruikt wanneer een deel van het productontwikkelingsproces aan een externe ontwerper wordt uitbesteed, of wanneer er een transactie plaatsvindt en er een betrouwbare derde nodig is om de documenten te bewaren totdat bepaalde mijlpalen zijn bereikt.  Het wordt ook veel gebruikt voor het opslaan van intellectueel eigendom en andere gevoelige en vertrouwelijke informatie die fysiek, elektronisch of in de 'cloud‘ kan worden opgeslagen.</li>
-            <li class="q d-flex align-items-center justify-content-between q-border bg-snow">
+            <li class="a section__text bg-alice-blue">Met behulp van informatie escrow kunnen bedrijven gevoelige informatie overdragen aan een betrouwbare tussenpartij, een escrow agent, die de informatie uitsluitend onder vooraf bepaalde voorwaarden zal doorsturen.  Dit houdt in dat, in een zakelijke context, het bedrijven ondersteunt bij het bewaren van gevoelige documenten, die uitsluitend kunnen worden vrijgegeven onder zekere, vooraf bepaalde voorwaarden. Informatie escrow wordt vaak gebruikt wanneer een deel van het productontwikkelingsproces aan een externe ontwerper wordt uitbesteed, of wanneer er een transactie plaatsvindt en er een betrouwbare derde nodig is om de documenten te bewaren totdat bepaalde mijlpalen zijn bereikt.  Het wordt ook veel gebruikt voor het opslaan van intellectueel eigendom en andere gevoelige en vertrouwelijke informatie die fysiek, elektronisch of in de 'cloud‘ kan worden opgeslagen.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
               <p class="section__subtitle mt-3">SaaS Escrows</p>
               <img src="/images/integrations/icon-down.svg"/>
             </li>
-            <li class="a section__text bg-snow">SaaS escrow is vergelijkbaar met standaard software of source code escrow. Het verschil is dat het op maat is gemaakt voor de unieke behoeften van Software-as-a-Service (SaaS) toepassingen, die vaak om robuustere oplossingen vragen om het benodigde beschermingsniveau te bereiken. Net als software escrow, bevat SaaS escrow code, virtuele machines, data en andere onderdelen die nodig zijn om ervoor te zorgen dat een SaaS-product kan blijven werken indien de oorspronkelijke verkoper het niet langer ondersteunt. Door het opzetten van een SaaS escrow overeenkomst kan een bedrijf dat gebruik maakt van een SaaS-toepassing (begunstigde) zich beschermen tegen het risico op plotselinge toegangsproblemen tot kritieke SaaS-toepassingen, tijdelijk of langduriger, en verzekeren dat het rechtstreeks toegang heeft tot een werkende kopie van de software en hun eigen klantgegevens in het geval er aan de vrijgave-voorwaarden wordt voldaan.</li>
+            <li class="a section__text bg-alice-blue">SaaS escrow is vergelijkbaar met standaard software of source code escrow. Het verschil is dat het op maat is gemaakt voor de unieke behoeften van Software-as-a-Service (SaaS) toepassingen, die vaak om robuustere oplossingen vragen om het benodigde beschermingsniveau te bereiken. Net als software escrow, bevat SaaS escrow code, virtuele machines, data en andere onderdelen die nodig zijn om ervoor te zorgen dat een SaaS-product kan blijven werken indien de oorspronkelijke verkoper het niet langer ondersteunt. Door het opzetten van een SaaS escrow overeenkomst kan een bedrijf dat gebruik maakt van een SaaS-toepassing (begunstigde) zich beschermen tegen het risico op plotselinge toegangsproblemen tot kritieke SaaS-toepassingen, tijdelijk of langduriger, en verzekeren dat het rechtstreeks toegang heeft tot een werkende kopie van de software en hun eigen klantgegevens in het geval er aan de vrijgave-voorwaarden wordt voldaan.</li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="section-medium">
+    <div class="section-medium pt-0 mt-negative-50">
       <!DOCTYPE html>
 <div class="resources">
   <div class="container-fluid px-0">
@@ -1022,96 +1023,153 @@
       </div>
     </div>
     <!-- Seventh Section -->
-    <div class="bg-white section-large">
-      <div class="container">
-        <h4 class="section__title">Veelgestelde Vragen</h4>
-        <ul class="faq mt-5 pb-5 pl-0">
-          <li class="q d-flex align-items-center justify-content-between">
-            <p class="section__subtitle mt-3">Ondersteunen jullie ook andere methodes voor source code depots?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Ieder account is inclusief onbeperkt, doorlopend deponeren. Wij ondersteunen ook SFTP, Dropbox, Google Drive, e-mail, enz. Laat ons weten wat u nodig heeft, dan zorgen wij voor een passende oplossing.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Hoe beschermen jullie de data precies?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Gedeponeerde broncode wordt in één enkel proces versleuteld wanneer het depot wordt aangemaakt. Er worden in verschillende locaties over de wereld backups gemaakt van de versleutelde broncode.  Decryptiesleutels worden bewaard in onze kluizen, die zich in een bankgebouw bevinden. De codes worden er uitsluitend uit gehaald als zich een vrijgave gebeurtenis voordoet.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Is het mogelijk een escrow overeenkomst in te zien?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Klik <a href="sample-agreement.html" class="text-underline">hier</a> om de gratis voorbeeld escrow overeenkomst te zien.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Hoe vindt betaling plaats?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Wij accepteren alle bekende creditcards. Registraties worden verwerkt met behulp van Chargebee en betalingen worden verwerkt door Stripe. Het kan daarom zijn dat deze namen op uw creditcardoverzicht vermeld staan.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Ontvang ik een btw-factuur?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Ja. Als u tijdens uw registratie uw btw-gegevens invoert, ontvangt u een factuur met vermelding van de btw-bedragen. De prijzen van Codekeeper diensten zoals vermeld op de website, zijn exclusief btw.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Wanneer begint het escrow proces?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Zodra u zich voor een Codekeeper plan heeft geregistreerd, ontvangt u een introductie van ons per e-mail. In deze mail vindt u ook de links voor het registreren van uw repositories en de verschillende partijen. Wij begeleiden u bij dit proces, zodat uw code snel en gemakkelijk wordt veiliggesteld.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Heeft Codekeeper toegang tot de inhoud die in de escrow is opgeslagen?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Nee. Om volledige veiligheid en integriteit te garanderen, worden het depotmateriaal versleuteld en opgeslagen met behulp van een geautomatiseerd proces.</li>
-          <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3">Waar is de code in escrow precies opgeslagen?</p>
-            <img src="/images/integrations/icon-down.svg"/>
-          </li>
-          <li class="a section__text">Wij maken backups van alle versleutelde escrow inhoud op verschillende geheime locaties wereldwijd. Als er regionale beperkingen gelden voor de opslag van uw data, dan kunnen wij daar rekening mee houden. </li>
+    <div class="section-medium pb-0 features container-fluid position-relative">
+      <div class="advantages__section-container mx-auto pb-100 position-relative">
+        <div class="container">
+          <h4 class="section__title">Veelgestelde Vragen</h4>
+          <ul class="faq mt-5 pb-5 pl-0">
+            <li class="q d-flex align-items-center justify-content-between bg-alice-blue">
+              <p class="section__subtitle mt-3">Ondersteunen jullie ook andere methodes voor source code depots?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Ieder account is inclusief onbeperkt, doorlopend deponeren. Wij ondersteunen ook SFTP, Dropbox, Google Drive, e-mail, enz. Laat ons weten wat u nodig heeft, dan zorgen wij voor een passende oplossing.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Hoe beschermen jullie de data precies?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Gedeponeerde broncode wordt in één enkel proces versleuteld wanneer het depot wordt aangemaakt. Er worden in verschillende locaties over de wereld backups gemaakt van de versleutelde broncode.  Decryptiesleutels worden bewaard in onze kluizen, die zich in een bankgebouw bevinden. De codes worden er uitsluitend uit gehaald als zich een vrijgave gebeurtenis voordoet.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Is het mogelijk een escrow overeenkomst in te zien?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Klik <a href="sample-agreement.html" class="text-underline">hier</a> om de gratis voorbeeld escrow overeenkomst te zien.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Hoe vindt betaling plaats?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Wij accepteren alle bekende creditcards. Registraties worden verwerkt met behulp van Chargebee en betalingen worden verwerkt door Stripe. Het kan daarom zijn dat deze namen op uw creditcardoverzicht vermeld staan.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Ontvang ik een btw-factuur?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Ja. Als u tijdens uw registratie uw btw-gegevens invoert, ontvangt u een factuur met vermelding van de btw-bedragen. De prijzen van Codekeeper diensten zoals vermeld op de website, zijn exclusief btw.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Wanneer begint het escrow proces?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Zodra u zich voor een Codekeeper plan heeft geregistreerd, ontvangt u een introductie van ons per e-mail. In deze mail vindt u ook de links voor het registreren van uw repositories en de verschillende partijen. Wij begeleiden u bij dit proces, zodat uw code snel en gemakkelijk wordt veiliggesteld.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Heeft Codekeeper toegang tot de inhoud die in de escrow is opgeslagen?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Nee. Om volledige veiligheid en integriteit te garanderen, worden het depotmateriaal versleuteld en opgeslagen met behulp van een geautomatiseerd proces.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+              <p class="section__subtitle mt-3">Waar is de code in escrow precies opgeslagen?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text bg-alice-blue">Wij maken backups van alle versleutelde escrow inhoud op verschillende geheime locaties wereldwijd. Als er regionale beperkingen gelden voor de opslag van uw data, dan kunnen wij daar rekening mee houden. </li>
 
-          <div class="bg-white" id="questions">
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Wat is jullie werkgebied?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">Wij hebben vestigingen in de VS en in Nederland en zijn betrouwbare partner van gerenommeerde bedrijven over de hele wereld.</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Kan ik bij jullie terecht voor data escrow diensten?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">U heeft de keuze uit een aantal verschillende data escrow setups. Snapshot Upload is inbegrepen in onze Data Escrow Kluis en het is mogelijk een offerte aan te vragen voor Mirror Streaming. U kunt bij ons ook Data Verification en Amazon S3 depot-verbindingen afsluiten voor <span class='amazon-deposit'>$29</span> per maand. </li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Wat voor soort escrow overeenkomsten bieden jullie aan en hoe verschillen deze onderling?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">De overeenkomsten voor alle verschillende soorten escrow (softwarelicenties, software ontwikkeling, softwareoverdracht en Saas) zijn opgesteld volgens hetzelfde format. Zij zijn in principe hetzelfde voor alle doeleinden, maar de voorwaarden in uw overeenkomst kunnen worden afgestemd op de specifieke behoeften die u mogelijk heeft onder uw  overeenkomst met de licentiegever of -nemer. Onze experts zorgen ervoor dat iedere overeenkomst rechtsmatig is, dus u bent geen geld kwijt aan notariskosten.</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Kan ik mijn plan wijzigen?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">U kunt uw abonnement te allen tijde wijzigen. Stel dat u in eerste instantie het Developer plan heeft afgesloten, dan kunt u het later altijd nog uitbreiden naar het Team plan of Business plan. Echter, als u verandert naar een goedkoper plan, dan kunt u geen geld terug krijgen. Wilt u uw plan wijzigen, <a href="mailto: support@codekeeper.co" class="text-underline">stuur ons dan een e-mail</a> met uw nieuwe wensen; wij bepalen in dat geval welke configuratie nodig is en sturen u een offerte op maat, zodat u alleen betaalt voor wat u daadwerkelijk nodig heeft. </li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Hoe veilig is Codekeeper?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">Het beschermen van de data die u aan Codekeeper toevertrouwt heeft bij ons de hoogste prioriteit. Wij gebruiken fysieke, procedurele en technische waarborgen om de veiligheid en integriteit van uw informatie te verzekeren en wij maken regelmatige backups van uw data om verlies te voorkomen en als ondersteuning voor herstel.  Codekeeper werkt samen met partners die strikte veiligheidseisen en protocollen hanteren voor de beveiliging van uw data, zoals ISO/IEC 27001 en ISO/IEC 27018.   Daarnaast hosten wij data in veilige SOC2-gecertificeerde datacenters, maken wij gebruik van firewalls en toegangsbeperkingen op onze servers om uw informatie beter te beschermen, houden wij ons aan de strengste databeschermingswetten, controleren we het systeem dag en nacht op een proactieve manier en ondergaan we jaarlijks externe veiligheid audits en evaluaties om ervoor te zorgen dat onze praktijken in overeenstemming zijn met de hoogste veiligheidsstandaarden. <a href="security.html" class="text-underline">Meer over veiligheidspraktijken.</a></li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Hoe lang heeft Codekeeper al software escrow diensten verleend? Met welke bedrijven werken jullie?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">Codekeeper is in 2013 in Den Haag opgericht. In de afgelopen zeven jaar hebben we, dankzij onze vooruitstrevende technologie en scherpe prijzen, het vertrouwen gewonnen van duizenden bedrijven over de hele wereld. Bekende internationale merken als Intuit, GE, Pepsico, Nestlé, P&G, Daimler en vele anderen vertrouwen erop dat  Codekeeper ervoor zorgt dat hun bedrijfskritische systemen onder alle omstandigheden ononderbroken blijven.   Wij hebben ondertussen een tweede kantoor in San Francisco, Californië, geopend en onze activiteiten breiden zich snel uit over de hele wereld. Wij hebben ervaring met klanten in rechtsgebieden over de hele wereld, inclusief Europa, Noord Amerika, Azië enz.</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">Kan ik telefonisch contact met jullie opnemen?</p>
-              <img src="/images/integrations/icon-down.svg"/>
-            </li>
-            <li class="a section__text">Wilt u meer weten over hoe Codekeeper u kan helpen risico‘s te verkleinen en uw bedrijfskritische systemen met behulp van software escrow te beschermen? Wij laten u graag ons platform zien en beantwoorden graag uw vragen. Maak een afspraak met een van onze experts voor een demonstratiegesprek van 30 minuten <a href="contact.html" class="text-underline">hier</a>. Met bestaande klanten zijn we in verband met compliance vereisten verplicht uitsluitend schriftelijk te communiceren; <a href="mailto: support@codekeeper.co" class="text-underline">als u ons e-mailt</a> doen we ons best u meteen te helpen.</li>
-          </div>
-          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
-            <span id='show'>Meer vragen zien +</span>
-            <span id='hide'>Toon minder vragen -</span>
-          </p>
-        </ul>
-        <p class="section__text mt-5 mb-0 text-center">Staat uw vraag er niet bij?</p>
-        <p class="section__text text-center fw-bold"><a href="contact.html" class="text-underline">Neem contact met ons op</a></p>
+            <div class="bg-alice-blue" id="questions">
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Wat is jullie werkgebied?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">Wij hebben vestigingen in de VS en in Nederland en zijn betrouwbare partner van gerenommeerde bedrijven over de hele wereld.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Kan ik bij jullie terecht voor data escrow diensten?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">U heeft de keuze uit een aantal verschillende data escrow setups. Snapshot Upload is inbegrepen in onze Data Escrow Kluis en het is mogelijk een offerte aan te vragen voor Mirror Streaming. U kunt bij ons ook Data Verification en Amazon S3 depot-verbindingen afsluiten voor <span class='amazon-deposit'>$29</span> per maand. </li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Wat voor soort escrow overeenkomsten bieden jullie aan en hoe verschillen deze onderling?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">De overeenkomsten voor alle verschillende soorten escrow (softwarelicenties, software ontwikkeling, softwareoverdracht en Saas) zijn opgesteld volgens hetzelfde format. Zij zijn in principe hetzelfde voor alle doeleinden, maar de voorwaarden in uw overeenkomst kunnen worden afgestemd op de specifieke behoeften die u mogelijk heeft onder uw  overeenkomst met de licentiegever of -nemer. Onze experts zorgen ervoor dat iedere overeenkomst rechtsmatig is, dus u bent geen geld kwijt aan notariskosten.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Kan ik mijn plan wijzigen?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">U kunt uw abonnement te allen tijde wijzigen. Stel dat u in eerste instantie het Developer plan heeft afgesloten, dan kunt u het later altijd nog uitbreiden naar het Team plan of Business plan. Echter, als u verandert naar een goedkoper plan, dan kunt u geen geld terug krijgen. Wilt u uw plan wijzigen, <a href="mailto: support@codekeeper.co" class="text-underline">stuur ons dan een e-mail</a> met uw nieuwe wensen; wij bepalen in dat geval welke configuratie nodig is en sturen u een offerte op maat, zodat u alleen betaalt voor wat u daadwerkelijk nodig heeft. </li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Hoe veilig is Codekeeper?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">Het beschermen van de data die u aan Codekeeper toevertrouwt heeft bij ons de hoogste prioriteit. Wij gebruiken fysieke, procedurele en technische waarborgen om de veiligheid en integriteit van uw informatie te verzekeren en wij maken regelmatige backups van uw data om verlies te voorkomen en als ondersteuning voor herstel.  Codekeeper werkt samen met partners die strikte veiligheidseisen en protocollen hanteren voor de beveiliging van uw data, zoals ISO/IEC 27001 en ISO/IEC 27018.   Daarnaast hosten wij data in veilige SOC2-gecertificeerde datacenters, maken wij gebruik van firewalls en toegangsbeperkingen op onze servers om uw informatie beter te beschermen, houden wij ons aan de strengste databeschermingswetten, controleren we het systeem dag en nacht op een proactieve manier en ondergaan we jaarlijks externe veiligheid audits en evaluaties om ervoor te zorgen dat onze praktijken in overeenstemming zijn met de hoogste veiligheidsstandaarden. <a href="security.html" class="text-underline">Meer over veiligheidspraktijken.</a></li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Hoe lang heeft Codekeeper al software escrow diensten verleend? Met welke bedrijven werken jullie?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">Codekeeper is in 2013 in Den Haag opgericht. In de afgelopen zeven jaar hebben we, dankzij onze vooruitstrevende technologie en scherpe prijzen, het vertrouwen gewonnen van duizenden bedrijven over de hele wereld. Bekende internationale merken als Intuit, GE, Pepsico, Nestlé, P&G, Daimler en vele anderen vertrouwen erop dat  Codekeeper ervoor zorgt dat hun bedrijfskritische systemen onder alle omstandigheden ononderbroken blijven.   Wij hebben ondertussen een tweede kantoor in San Francisco, Californië, geopend en onze activiteiten breiden zich snel uit over de hele wereld. Wij hebben ervaring met klanten in rechtsgebieden over de hele wereld, inclusief Europa, Noord Amerika, Azië enz.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-alice-blue">
+                <p class="section__subtitle mt-3">Kan ik telefonisch contact met jullie opnemen?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-alice-blue">Wilt u meer weten over hoe Codekeeper u kan helpen risico‘s te verkleinen en uw bedrijfskritische systemen met behulp van software escrow te beschermen? Wij laten u graag ons platform zien en beantwoorden graag uw vragen. Maak een afspraak met een van onze experts voor een demonstratiegesprek van 30 minuten <a href="contact.html" class="text-underline">hier</a>. Met bestaande klanten zijn we in verband met compliance vereisten verplicht uitsluitend schriftelijk te communiceren; <a href="mailto: support@codekeeper.co" class="text-underline">als u ons e-mailt</a> doen we ons best u meteen te helpen.</li>
+            </div>
+            <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+              <span id='show'>Meer vragen zien +</span>
+              <span id='hide'>Toon minder vragen -</span>
+            </p>
+          </ul>
+          <p class="section__text mt-5 mb-0 text-center">Staat uw vraag er niet bij?</p>
+          <p class="section__text text-center fw-bold"><a href="contact.html" class="text-underline">Neem contact met ons op</a></p>
+        </div>
       </div>
+    </div>
+
+    <div class="mt-negative-50 pb-4">
+      <!DOCTYPE html>
+<div class="resources">
+  <div class="container-fluid px-0">
+    <div class="guide__bg-security">
+      <div class="container">
+        <div class="guide__content2 d-flex align-items-center justify-content-between">
+          <img class="guide__image2 my-4" src="/images/resources-page/expert-insights.svg"/>
+          <div>
+            <p class="verification__add-on text-uppercase">E-book </p>
+            <h2 class="guide__title2">Inzichten van experts: Software Escrowovereenkomsten</h2>
+            <p class="guide__subtitle2 mt-3">Leer alles wat u moet weten over het opstellen van een succesvolle software escrowovereenkomst — van het onderhandelen over de voorwaarden tot het zorgen voor een snelle vrijgave en recovery.</p>
+            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal2">
+              GRATIS GIDS DOWNLOADEN
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal mx-auto">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/expert-insights.svg"/>
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5365877",
+                  formId: "08adf3fe-f24d-4ef7-a1cf-2b2288ceb09c"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*E-book alleen beschikbaar in het Engels</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     <!-- Eight Section -->
     <div class="bg-white py-5">

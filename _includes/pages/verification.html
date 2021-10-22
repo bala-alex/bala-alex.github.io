@@ -38,6 +38,9 @@
         <div class="col-md-6 col-sm-12">
           <h2 class="verify__main-text2">{{ site.data[page.lang]['verification']['codekeeper_verification'] }}</h2>
           <p class="verify__main-subtext2 mt-3">{{ site.data[page.lang]['verification']['we_offer_four'] }}</p>
+          <a class="button btn-cerulean mt-4" href="pricing.html">
+            {{ site.data[page.lang]['index']['get_started'] }}
+          </a>
         </div>
         <div class="col-md-6 col-sm-12">
           <img class="image-style" src="/images/homepage/verification-image.svg"/>
@@ -81,7 +84,7 @@
       </div>
     </div>
     <!-- Second Section -->
-    <div class="bg-white pt-5 container-fluid pricing">
+    <div class="pt-5 container-fluid pricing position-relative">
       <div class="verify__section-container bg-alice-blue mx-auto">
         <div class="container">
           <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_manual_verification'] }}:</p>
@@ -120,30 +123,33 @@
       </div>
     </div>
     <!-- Third Section -->
-    <div class="bg-white section-medium">
+    <div class="clients__content-bg mt-negative-100">
       <div class="container">
-        <h2 class="clients__title mt-5">{{ site.data[page.lang]['verification']['secure_your_code'] }}</h2>
+        <h2 class="clients__title mt-3 text-white">{{ site.data[page.lang]['verification']['secure_your_code'] }}</h2>
         <div class="row">
           <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/deposit-icon.svg"/>
-            <p class="clients__section-title">{{ site.data[page.lang]['verification']['deposit'] }}</p>
-            <p class="clients__section-subtitle">{{ site.data[page.lang]['verification']['escrow_deposits_sometimes'] }}</p>
+            <img class="clients__section-image" src="/images/verification-page/deposit-white.png"/>
+            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['deposit'] }}</p>
+            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['escrow_deposits_sometimes'] }}</p>
           </div>
           <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/verify-icon.svg"/>
-            <p class="clients__section-title">{{ site.data[page.lang]['verification']['verify'] }}</p>
-            <p class="clients__section-subtitle">{{ site.data[page.lang]['verification']['different_levels'] }}</p>
+            <img class="clients__section-image" src="/images/verification-page/verify-white.png"/>
+            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['verify'] }}</p>
+            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['different_levels'] }}</p>
           </div>
           <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/release-icon.svg"/>
-            <p class="clients__section-title">{{ site.data[page.lang]['verification']['release'] }}</p>
-            <p class="clients__section-subtitle">{{ site.data[page.lang]['verification']['verification_provides'] }}</p>
+            <img class="clients__section-image" src="/images/verification-page/release-white.png"/>
+            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['release'] }}</p>
+            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['verification_provides'] }}</p>
           </div>
         </div>
+        <a class="button btn-yellow mt-5 mx-auto" href="pricing.html">
+          {{ site.data[page.lang]['index']['get_started'] }}
+        </a>
       </div>
     </div>
     <!-- Fourth Section -->
-    <div class="bg-white section-large px-3 features">
+    <div class="px-3 features mt-negative-100">
       <div class="advantages__section-container mx-auto">
         <div class="container">
           <h2 class="advantages__title">{{ site.data[page.lang]['data_escrow_product']['trusted_by'] }}</h2>
@@ -228,7 +234,7 @@
       </div>
     </div>
     <!-- Sixth Section -->
-    <div class="bg-white pt-5 px-3">
+    <div class="pt-5 px-3 position-relative">
       <div class="people__section-container mx-auto people__guide-spacing">
         <div class="container">
           <h2 class="people__title">{{ site.data[page.lang]['verification']['best_in_class'] }}</h2>
@@ -262,8 +268,8 @@
         </div>
       </div>
     </div>
-    <div class="section-medium pb-0">
-      {% include security-guide.html %}
+    <div class="mt-negative-50">
+      {% include anatomy-escrow.html %}
     </div>
     <!-- Seventh Section -->
     <!-- <div class="bg-white py-5">
