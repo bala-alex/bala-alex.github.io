@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-  <!--Required meta tags-->
+
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
   <title>Codekeeper | Source Code Escrow | Software Escrow | Escrow Agreement | Software Escrow Agreement </title>
   <meta name="description" content="An all-in-one solution for software developers and publishers to provide source code escrow">
 
@@ -15,6 +16,11 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+  <script
+    src="https://js.chargebee.com/v2/chargebee.js"
+    data-cb-site="codekeeperbilling"
+    data-cb-ga-enabled="true" >
+  </script>
 </head>
   <body>
   <!--  Clickcease.com tracking-->
@@ -972,7 +978,7 @@
           <p class="plan__amount mt-0"> Let’s talk!</p>
           <div class="d-flex flex-column align-items-center mt-4">
             <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>Unlimited</b> Escrow Arrangements</span></p>
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">Fully customized features that you can fit to your enterprise</span></p>
+            <p class="plan__text-tooltip mt-2 text-center"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text text-center">Fully customized features that you can fit to your enterprise</span></p>
             <a class="button btn-bondi-blue2 mx-auto text-uppercase my-4" href="contact.html">
               Contact us
             </a>
@@ -1152,6 +1158,8 @@
 </div>
 
   </div>
+  
+  
 
   <!-- Snippets -->
   <!DOCTYPE html>
@@ -1373,44 +1381,7 @@ document.addEventListener("click", closeAllSelect);
         });
     });
   </script>
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-          function success(response) {
-            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-              $('#developer-monthly').text('€79');
-            }
-            else if (response.currency === 'GBP') {
-              $('#developer-monthly').text('£59');
-            }
-            else if (response.currency === 'INR') {
-              $('#developer-monthly').text('₹5,000');
-            }
-            else if (response.currency === 'AUD') {
-              $('#developer-monthly').text('A$99');
-            }
-            else if (response.currency === 'SGD') {
-              $('#developer-monthly').text('$99');
-            }
-            else if (response.currency === 'ZAR') {
-              $('#developer-monthly').text('R1,099');
-            }
-            else if (response.currency === 'CHF') {
-              $('#developer-monthly').text('CHF89');
-            }
-            else if (response.currency === 'CAD') {
-              $('#developer-monthly').text('CA$99');
-            }
-          },
-          function fail(data, status) {
-              console.log('Request failed.  Returned status of',
-                          status);
-          }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
+
 
 <script>
   // Accordian Action

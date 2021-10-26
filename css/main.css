@@ -7438,7 +7438,9 @@ html {
   max-width: 50%; }
   @media (max-width: 768px) {
     .plan-custom-width {
-      max-width: 98%; } }
+      max-width: 96%;
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .text-white {
   color: #ffffff; }
@@ -8222,7 +8224,8 @@ html {
     .works__content4 {
       border: none;
       padding: 80px 0 0 0;
-      min-height: auto; } }
+      min-height: auto;
+      margin-left: 0px; } }
 
 .works__content5 {
   padding: 80px 50px 0 0;
@@ -8274,6 +8277,9 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media (max-width: 768px) {
+    .works__number {
+      margin-left: 15px; } }
 
 .works__number-bg {
   margin-left: -35px;
@@ -10035,9 +10041,12 @@ html {
     margin: 5px; }
 
 .integrations .active {
-  color: #00A0B6 !important;
-  background-color: #ffffff !important;
-  border-bottom: 5px solid #00A0B6 !important; }
+  color: #ffffff !important;
+  background-color: #00A0B6 !important;
+  border: 1px solid #00A0B6 !important;
+  border-radius: 25px !important;
+  padding: 0 30px;
+  margin: 10px !important; }
 
 .integrations ul.pagination {
   padding-top: 40px;
@@ -10116,7 +10125,8 @@ html {
       margin-left: auto; } }
 
 .integrations .service__input-form {
-  border: 1px solid #6782A3;
+  -webkit-box-shadow: 0px 3px 12px rgba(64, 120, 186, 0.15) !important;
+  box-shadow: 0px 3px 12px rgba(64, 120, 186, 0.15) !important;
   border-radius: 25px !important;
   background-color: #ffffff;
   overflow: hidden;
@@ -15620,7 +15630,7 @@ html {
   color: #212529;
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #6782A3 !important;
+  color: #00A0B6 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15636,7 +15646,10 @@ html {
   border: none;
   font-size: 16px;
   font-weight: 300;
-  border-bottom: 1px solid #6782A3 !important; }
+  border: 1px solid #00A0B6 !important;
+  border-radius: 25px !important;
+  padding: 0 30px;
+  margin: 10px !important; }
   .btn-sidebar:hover {
     color: #212529;
     background-color: #ececec;
@@ -15658,11 +15671,11 @@ html {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
   .btn-sidebar:hover {
-    color: #8798ad !important;
+    color: #ffffff !important;
     text-decoration: none;
     cursor: pointer;
     padding-top: 0px;
     padding-bottom: 0px;
     border: none;
-    background-color: #ffffff !important;
-    border-bottom: 5px solid #6782A3 !important; }
+    background-color: #00A0B6 !important;
+    border: 1px solid #00A0B6 !important; }

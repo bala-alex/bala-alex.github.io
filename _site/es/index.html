@@ -972,7 +972,7 @@
           <p class="plan__amount mt-0"> ¡Hablemos!</p>
           <div class="d-flex flex-column align-items-center mt-4">
             <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">Acuerdos de custodia <b>ilimitados</b></span></p>
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">Prestaciones totalmente personalizadas que se adaptan a su empresa</span></p>
+            <p class="plan__text-tooltip mt-2 text-center"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text text-center">Prestaciones totalmente personalizadas que se adaptan a su empresa</span></p>
             <a class="button btn-bondi-blue2 mx-auto text-uppercase my-4" href="contact.html">
               Contacte con nosotros
             </a>
@@ -1152,6 +1152,8 @@
 </div>
 
   </div>
+  
+  
 
   <!-- Snippets -->
   <!DOCTYPE html>
@@ -1373,44 +1375,7 @@ document.addEventListener("click", closeAllSelect);
         });
     });
   </script>
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-          function success(response) {
-            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-              $('#developer-monthly').text('€79');
-            }
-            else if (response.currency === 'GBP') {
-              $('#developer-monthly').text('£59');
-            }
-            else if (response.currency === 'INR') {
-              $('#developer-monthly').text('₹5,000');
-            }
-            else if (response.currency === 'AUD') {
-              $('#developer-monthly').text('A$99');
-            }
-            else if (response.currency === 'SGD') {
-              $('#developer-monthly').text('$99');
-            }
-            else if (response.currency === 'ZAR') {
-              $('#developer-monthly').text('R1,099');
-            }
-            else if (response.currency === 'CHF') {
-              $('#developer-monthly').text('CHF89');
-            }
-            else if (response.currency === 'CAD') {
-              $('#developer-monthly').text('CA$99');
-            }
-          },
-          function fail(data, status) {
-              console.log('Request failed.  Returned status of',
-                          status);
-          }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
+
 
 <script>
   // Accordian Action

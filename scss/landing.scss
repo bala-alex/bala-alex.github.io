@@ -486,6 +486,7 @@
       border: none;
       padding: 80px 0 0 0;
       min-height: auto;
+      margin-left: 0px;
     }
   }
 
@@ -533,6 +534,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include screen-sm {
+      margin-left: 15px;
+    }
   }
 
   &__number-bg {
