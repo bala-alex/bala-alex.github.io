@@ -24,17 +24,17 @@
     <div class="header__content overflow-hidden">
       <div class="header__bg">
         <div class="container section-medium">
-          <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['integrations']['integrations'] }}</h1>
-          <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['integrations']['codekeeper_integrates'] }} <a class="text-underline text-white" href="contact.html">{{ site.data[page.lang]['integrations']['let_us_know'] }}</a> {{ site.data[page.lang]['integrations']['and_we_add'] }} </p>
+          <h1 class="header__title mx-auto mt-4 mw-800">{{ site.data[page.lang]['integrations']['our_integrations'] }}</h1>
+          <!-- <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['integrations']['codekeeper_integrates'] }} <a class="text-underline text-white" href="contact.html">{{ site.data[page.lang]['integrations']['let_us_know'] }}</a> {{ site.data[page.lang]['integrations']['and_we_add'] }} </p> -->
         </div>
       </div>
     </div>
     <!-- First Section -->
-    <div class="bg-white pb-5">
+    <div class="pb-5">
       <div class="container-fluid">
         <div class="col-12">
           <div class="cont">
-            <div class="container2 mx-auto"> 
+            <div class="container2 mx-auto mt-negative-280"> 
               <div class="row d-flex flex-wrap mt-5 mobile-center w-100" id="myUL">
                 <div id="test-list" class="w-100">
                   <div class="mw-900 mx-auto d-flex flex-column align-items-center">
@@ -63,7 +63,7 @@
                     
                   </div>
                   
-                  <ul class="list mt-5">
+                  <ul class="list section-large">
                     {% for integration in site.integrations %}
                     <li><a data-name="{{ integration.integration_name }}" class="service__box page-link mt-3 mx-auto" href="">
                       <span class="type d-none">{{ integration.integration_type }}</span>

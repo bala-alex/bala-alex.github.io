@@ -274,27 +274,29 @@
     </div>
     
     <!-- Fifth Section -->
-    <div class="bg-white">
-      <div class="container section-medium resources">
-        <div class="row">
+    <div class="bg-white escrow__content-bg">
+      <div class="container resources">
+        <div class="row column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <img class="image-style" src="/images/homepage/escrow-role.png"/>
+          </div>
           <div class="col-md-6 col-sm-12">
             <div class="escrow__content px-3">
-              <h2 class="escrow3__title">{{ site.data[page.lang]['features']['escrow_agreement_included'] }}</h2>
-              <p class="escrow3__subtitle mt-4">{{ site.data[page.lang]['features']['a_legally_sound_escrow'] }}</p>
-              <div class="d-flex flex-wrap align-items-center my-5">
-                <a class="button btn-cerulean mr-4 my-4" href="pricing.html">
-                  {{ site.data[page.lang]['features']['get_started'] }}
+              <h2 class="escrow3__title text-white">{{ site.data[page.lang]['index']['excrow_agreement_included'] }}</h2>
+              <p class="escrow3__subtitle text-white mt-4">{{ site.data[page.lang]['index']['a_legally_sound_escrow'] }}</p>
+              <div class="d-flex flex-wrap align-items-center my-4">
+                <a class="button btn-yellow mr-4 my-4" href="pricing.html">
+                  {{ site.data[page.lang]['index']['get_started'] }}
                 </a>
-                <a class="button escrow3__link mw-100 text-bondi-blue" data-toggle="modal" data-target="#exampleModal4">
-                  {{ site.data[page.lang]['features']['download_sample'] }}
+                <a class="button escrow3__link mw-100 text-yellow" data-toggle="modal" data-target="#exampleModal4">
+                  {{ site.data[page.lang]['index']['download_sample'] }}
                 </a>
                 </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/homepage/escrow-role.png"/>
-          </div>
+          
         </div>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -321,16 +323,19 @@
                     </script>
                     <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
                   </div>
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <!-- Sixth Section -->
-    {% include security.html %}
+    <div class="mt-negative-150">
+      {% include security.html %}
+    </div>
+    
     <div class="mt-negative-50">
       {% include security-guide.html %}
     </div>

@@ -7711,6 +7711,9 @@ html {
 .mw-900 {
   max-width: 900px; }
 
+.mw-800 {
+  max-width: 800px !important; }
+
 .ml-negative-40 {
   margin-left: -40px !important; }
   @media (max-width: 768px) {
@@ -7775,6 +7778,9 @@ html {
 
 .mt-negative-250 {
   margin-top: -250px; }
+
+.mt-negative-280 {
+  margin-top: -280px; }
 
 .mt-negative-350 {
   margin-top: -350px; }
@@ -14310,6 +14316,203 @@ html {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.confirmation .discount__container {
+  min-height: 800px !important;
+  background: url("../images/resources-page/saas-escrow-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover !important;
+  padding-top: 140px;
+  padding-bottom: 60px; }
+  @media (max-width: 992px) {
+    .confirmation .discount__container {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+
+.confirmation .discount__title {
+  font-size: 55px !important;
+  font-family: 'Muli', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 66px;
+  letter-spacing: -1px;
+  max-width: 535px; }
+  @media (max-width: 768px) {
+    .confirmation .discount__title {
+      font-size: 38px !important;
+      font-weight: 600;
+      line-height: 42px; } }
+
+.confirmation .discount__subtitle {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: 'Muli', sans-serif;
+  max-width: 560px; }
+
+.confirmation .discount__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 400px;
+  max-height: 350px; }
+
+.confirmation .discount__form {
+  width: 100%;
+  min-height: 500px;
+  max-width: 450px;
+  padding: 40px;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.11);
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.11);
+  border-radius: 20px; }
+  @media (max-width: 768px) {
+    .confirmation .discount__form {
+      padding: 40px 15px; } }
+  .confirmation .discount__form-title {
+    color: #00384B;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Muli', sans-serif;
+    text-align: center; }
+  .confirmation .discount__form label {
+    font-size: 16px !important;
+    font-family: 'Muli', sans-serif;
+    color: #6782A3;
+    font-weight: normal;
+    letter-spacing: 0px; }
+  .confirmation .discount__form input {
+    width: 100% !important;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    font-weight: 400;
+    background-clip: padding-box;
+    border: 1px solid rgba(206, 212, 218, 0.5);
+    border-radius: 0.25rem;
+    outline: none; }
+    .confirmation .discount__form input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .confirmation .discount__form label.hs-error-msg {
+    color: red; }
+  .confirmation .discount__form .inputs-list {
+    list-style-type: none;
+    padding-left: 0px; }
+  .confirmation .discount__form textarea {
+    width: 100% !important;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    height: 221px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    font-weight: 400;
+    background-clip: padding-box;
+    border: 1px solid rgba(206, 212, 218, 0.5);
+    border-radius: 0.25rem;
+    outline: none; }
+    .confirmation .discount__form textarea:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .confirmation .discount__form fieldset {
+    max-width: 100% !important; }
+  .confirmation .discount__form .hs-form-booleancheckbox-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .confirmation .discount__form .hs-form-booleancheckbox-display .hs-input {
+      width: auto; }
+    .confirmation .discount__form .hs-form-booleancheckbox-display span {
+      margin-left: 10px !important;
+      margin-top: 7px;
+      color: #7f7f7f;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      font-family: 'Muli', sans-serif; }
+      .confirmation .discount__form .hs-form-booleancheckbox-display span a {
+        color: #00A0B6; }
+  .confirmation .discount__form .hs-button.primary.large {
+    color: #ffffff;
+    background-color: #00A0B6;
+    border-color: #00A0B6;
+    color: #ffffff !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #00A0B6;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px !important;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    .confirmation .discount__form .hs-button.primary.large:hover {
+      color: #ffffff;
+      background-color: #007e90;
+      border-color: #007383; }
+    .confirmation .discount__form .hs-button.primary.large:focus, .confirmation .discount__form .hs-button.primary.large.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 160, 182, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(0, 160, 182, 0.5); }
+    .confirmation .discount__form .hs-button.primary.large.disabled, .confirmation .discount__form .hs-button.primary.large:disabled {
+      color: #ffffff;
+      background-color: #00A0B6;
+      border-color: #00A0B6; }
+    .confirmation .discount__form .hs-button.primary.large:not(:disabled):not(.disabled):active, .confirmation .discount__form .hs-button.primary.large:not(:disabled):not(.disabled).active,
+    .show > .confirmation .discount__form .hs-button.primary.large.dropdown-toggle {
+      color: #212529;
+      background-color: #e7e7e7;
+      border-color: #e1e1e1; }
+      .confirmation .discount__form .hs-button.primary.large:not(:disabled):not(.disabled):active:focus, .confirmation .discount__form .hs-button.primary.large:not(:disabled):not(.disabled).active:focus,
+      .show > .confirmation .discount__form .hs-button.primary.large.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 160, 182, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(0, 160, 182, 0.5); }
+    .confirmation .discount__form .hs-button.primary.large:hover {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer; }
+  .confirmation .discount__form input::-webkit-input-placeholder {
+    color: #BDBDBD !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important; }
+  .confirmation .discount__form input:-ms-input-placeholder {
+    color: #BDBDBD !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important; }
+  .confirmation .discount__form input::-ms-input-placeholder {
+    color: #BDBDBD !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important; }
+  .confirmation .discount__form input::placeholder {
+    color: #BDBDBD !important;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px !important; }
+
 .confirmation .reads__title {
   font-size: 44px !important;
   font-family: 'Muli', sans-serif;
@@ -15406,9 +15609,9 @@ html {
       box-shadow: 0 0 0 0.2rem rgba(255, 209, 45, 0.5); }
   .btn-yellow:hover {
     color: #00384B !important;
-    background-color: #ffc907 !important;
+    background-color: #FFA800 !important;
     text-decoration: none;
-    border: 1px solid #FFD12D;
+    border: 1px solid #FFA800;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
