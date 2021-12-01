@@ -1,358 +1,235 @@
 <body>
-  <!--  Clickcease.com tracking-->
-  <script type='text/javascript'>var script = document.createElement('script');
-    script.async = true; script.type = 'text/javascript';
-    var target = 'https://www.clickcease.com/monitor/stat.js';
-    script.src = target;var elem = document.head;elem.appendChild(script);
-    </script>
-    <noscript>
-    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
-    </noscript>
-    <!--  Clickcease.com tracking-->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJR93GW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Leadinfo tracking code -->
-<script>
-  (function(l,e,a,d,i,n,f,o){if(!l[i]){l.GlobalLeadinfoNamespace=l.GlobalLeadinfoNamespace||[];
-  l.GlobalLeadinfoNamespace.push(i);l[i]=function(){(l[i].q=l[i].q||[]).push(arguments)};l[i].t=l[i].t||n;
-  l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;o.src=d;f.parentNode.insertBefore(o,f);}
-  }(window,document,"script","https://cdn.leadinfo.net/ping.js","leadinfo","LI-615C0E87ED394"));
-  </script>
-  <div class="features bg-white">
-    <!-- Navigation -->
+  <header class="index-header alice-blue-bg mh-700">
     {% include navigation.html %}
-    <!-- Header -->
-    <div class="header__content overflow-hidden">
-      <div class="header__bg2">
-        <div class="container">
-          <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['features']['features_main'] }}</h1>
-          <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['features']['some_of_the_world'] }}</p>
-        </div>
-      </div>
-    </div>
-    <!-- First Section -->
-    <div class="solutions__large-bg">
-      <div class="container d-flex justify-content-center mt-negative-160">
-        <img class="header__screen" src="/images/features-page/features-image.svg"/>
-      </div>
-      <div class="container py-5">
-        <h2 class="solutions__main-title mx-auto text-white">{{ site.data[page.lang]['features']['our_solutions'] }}</h2>
-        <p class="solutions__main-subtitle mx-auto mt-4 text-white">{{ site.data[page.lang]['features']['thanks_to_our'] }}</p>
-        <div class="row mt-5">
-          <div class="col-md-5 col-sm-12">
-            <h2 class="solutions__title-fade mb-5 min-h-110 text-white">{{ site.data[page.lang]['features']['the_traditional_way'] }}</h2>
-            <div class="d-flex justify-content-end mt-2">
-              <div>
-                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['manual_and_outdated'] }}</p>
-                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['traditional_escrows_require'] }}</p>
-              </div>
-              <img class="solutions__icon-fade" src="/images/features-page/circle-feather-white.svg"/>
-            </div>
-            <div class="d-flex justify-content-end mt-2">
-              <div>
-                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['recovery_problems'] }}</p>
-                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['incompatible_code_versions'] }}</p>
-              </div>
-              <img class="solutions__icon-fade" src="/images/features-page/circle-cancel-white.svg"/>
-            </div>
-            <div class="d-flex justify-content-end mt-2">
-              <div>
-                <p class="solutions__subtitle-fade text-white">{{ site.data[page.lang]['features']['expensive_lawyer'] }}</p>
-                <p class="solutions__subtext-fade text-white">{{ site.data[page.lang]['features']['waiting_for_expensive'] }}</p>
-              </div>
-              <img class="solutions__icon-fade" src="/images/features-page/circle-folder-white.svg"/>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-12">
-            <div class="solutions__center">
-              <div class="solutions__center-dot"></div>
-              <div class="solutions__center-line"></div>
-              <div class="solutions__center-dot-yellow"></div>
-            </div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <h2 class="solutions__title mb-5 min-h-110 text-white">{{ site.data[page.lang]['features']['the_codekeeper_source'] }}</h2>
-            <div class="d-flex mt-2">
-              <img class="solutions__icon" src="/images/features-page/circle-automated-blue.svg"/>
-              <div>
-                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['automated_and_up'] }}</p>
-                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['codekeeper_integrates_directly'] }}</p>
-              </div>
-            </div>
-            <div class="d-flex mt-2">
-              <img class="solutions__icon" src="/images/features-page/circle-recovery-blue.svg"/>
-              <div>
-                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['quick_recovery'] }} </p>
-                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['quick_recovery_in_case'] }}</p>
-              </div>
-            </div>
-            <div class="d-flex mt-2">
-              <img class="solutions__icon" src="/images/features-page/circle-support-blue.svg"/>
-              <div>
-                <p class="solutions__subtitle text-white">{{ site.data[page.lang]['features']['end_to_end_concierge'] }}</p>
-                <p class="solutions__subtext text-white">{{ site.data[page.lang]['features']['we_offer_complete'] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="button btn-yellow mx-auto mb-5" href="pricing.html">
-          {{ site.data[page.lang]['features']['get_started'] }}
+
+    <div class="features-header__content container">
+      <h1 class="features-header__content-title">{{ site.data[page.lang]['features']['the_tools_you'] }}</h1>
+      <p class="features-header__content-text mx-auto">{{ site.data[page.lang]['features']['learn_how_tolq'] }}</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="https://calendly.com/tolq">
+          <button class="btn-initial btn-medium index-header__content-btn">{{ site.data[page.lang]['navigation']['book_a_demo'] }}</button>
         </a>
       </div>
     </div>
-    <!-- Second Section -->
-    <div class="py-3 px-3 mt-negative-250 position-relative">
-      <div class="advantages__section-container mx-auto">
-        <div class="container">
-          <h2 class="advantages__title">{{ site.data[page.lang]['features']['key_advantages'] }}</h2>
-          <p class="advantages__subtitle mx-auto">{{ site.data[page.lang]['features']['codekeeper_ensures_you_have'] }}</p>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-file-check.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['free_escrow_agreement'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['eliminate_risks_of'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-usd.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['best_price'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_believe'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-bill.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['no_lawyer_fees_or'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['a_free_and_legally'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-code-branch.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['repository_sync'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['dont_waste'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-strategy.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['data_buckets'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['data_escrow_allows'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-user-exclamation.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['concierge_support'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_offer_complete'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-cloud-database.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['storage_limits'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_apply_a_fair'] }}</p>
-              </div>
-            </div>
-          </div>
-          <a class="button btn-cerulean mx-auto my-5" href="pricing.html">
-            {{ site.data[page.lang]['features']['get_started'] }}
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Guide Section -->
-    <div class="mt-negative-50 pt-0">
-      {% include escrow-introduction.html %}
-    </div>
-
-    <!-- Third Section -->
-    <div class="section-medium">
-      <div class="container">
-        <h2 class="clients__title mt-5">{{ site.data[page.lang]['features']['our_escrow_deposit'] }}</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/source-code-escrow.svg"/>
-              <p class="clients__section-title">{{ site.data[page.lang]['features']['source_code_escrow'] }}</p>
-              <p class="clients__section-subtitle">{{ site.data[page.lang]['features']['a_source_code_repository'] }}</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/data-escrow.svg"/>
-              <p class="clients__section-title">{{ site.data[page.lang]['features']['data_escrow'] }}</p>
-              <p class="clients__section-subtitle">{{ site.data[page.lang]['features']['data_escrow_allows_you'] }} </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/information-escrow.svg"/>
-              <p class="clients__section-title">{{ site.data[page.lang]['features']['information_escrow'] }}</p>
-              <p class="clients__section-subtitle">{{ site.data[page.lang]['features']['store_intellectual'] }}  </p>
-            </div>
-          </div>
-        </div>
-        <a class="button btn-cerulean mx-auto my-5" href="resources.html">
-          {{ site.data[page.lang]['features']['learn_more'] }}
-        </a>
-        <p class="clients__info-text pt-4 text-bondi-blue">{{ site.data[page.lang]['features']['our_source_code'] }}:</p>
-        <div class="resources">
-          <div class="applications__logos mt-5">
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/bitbucket.svg"/>
-              <p class="applications__logo-text">Bitbucket</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/github.svg"/>
-              <p class="applications__logo-text">GitHub</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/gitlab.svg"/>
-              <p class="applications__logo-text">GitLab</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/git.svg"/>
-              <p class="applications__logo-text">Git</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/visual-studio.svg"/>
-              <p class="applications__logo-text">Visual Studio</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/google-cloud2.svg"/>
-              <p class="applications__logo-text">Google Cloud</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/azure2.svg"/>
-              <p class="applications__logo-text">Microsoft Azure</p>
-            </div>
-            <div class="applications__logo">
-              <img class="applications__logo-image" src="/images/homepage/logos/amazon2.svg"/>
-              <p class="applications__logo-text">Amazon Web Services</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fourth Section -->
-    <div class="mt-5 position-relative">
-      <div class="verification__container mx-auto">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/features-page/escrow-management.svg"/>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <h2 class="verification__title">{{ site.data[page.lang]['features']['escrow_management'] }}</h2>
-            <p class="verification__subtitle ml-auto mt-3">{{ site.data[page.lang]['features']['need_to_provide'] }} </p>
-            <a class="button btn-cerulean ml-auto my-4" href="pricing.html">
-              {{ site.data[page.lang]['features']['see_our_pricing'] }}
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/features-page/icon-file.svg"/>
-            <p class="verification__title2 mt-3">{{ site.data[page.lang]['features']['customizable_release'] }}</p>
-            <p class="verification__text">{{ site.data[page.lang]['features']['specify_for_each'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/features-page/icon-data.svg"/>
-            <p class="verification__title2 mt-3">{{ site.data[page.lang]['features']['data_escrow'] }}</p>
-            <p class="verification__text">{{ site.data[page.lang]['features']['we_have_storage'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/features-page/icon-escrow.svg"/>
-            <p class="verification__title2 mt-3">{{ site.data[page.lang]['features']['escrow_agreements'] }}</p>
-            <p class="verification__text">{{ site.data[page.lang]['features']['in_addition_to'] }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Fifth Section -->
-    <div class="bg-white escrow__content-bg">
-      <div class="container resources">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/homepage/escrow-role.png"/>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="escrow__content px-3">
-              <h2 class="escrow3__title text-white">{{ site.data[page.lang]['index']['excrow_agreement_included'] }}</h2>
-              <p class="escrow3__subtitle text-white mt-4">{{ site.data[page.lang]['index']['a_legally_sound_escrow'] }}</p>
-              <div class="d-flex flex-wrap align-items-center my-4">
-                <a class="button btn-yellow mr-4 my-4" href="pricing.html">
-                  {{ site.data[page.lang]['index']['get_started'] }}
-                </a>
-                <a class="button escrow3__link mw-100 text-yellow" data-toggle="modal" data-target="#exampleModal4">
-                  {{ site.data[page.lang]['index']['download_sample'] }}
-                </a>
-                </div>
-            </div>
-          </div>
-          
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content section__modal mx-auto">
-              <div class="modal-body p-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="m-0">
-                  <div class="section__modal-image-content p-0 pt-5">
-                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['resources']['download_this_ebook'] }}</p>
-                  </div>
-                  <div class="section__modal-form p-0">
-                    <img class="section__modal-image" src="/images/resources-page/guide-sample.svg"/>
-                    <!--[if lte IE 8]>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                    <![endif]-->
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
-                    });
-                    </script>
-                    <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="mt-negative-150">
-      {% include security.html %}
-    </div>
-    
-    <div class="mt-negative-50">
-      {% include security-guide.html %}
-    </div>
-    <!-- Seventh Section -->
-    <div class="bg-white section-medium">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.svg"/>
-      </div>
-    </div>
-    <!-- Eight Section -->
-    {% include secure-assets.html %}
-    <!-- Footer -->
-    {% include footer.html %}
-    
+  </header>
+  <div class="d-flex justify-content-center">
+    <img class="features-header__content-img mx-auto" src="/images/features/features-header.svg" alt="" />
   </div>
 
-  <!-- Snippets -->
+  <section class="container">
+    <h2 class="features__section-title mw-600 text-center mx-auto mt-negative">{{ site.data[page.lang]['features']['we_manage_the'] }}</h2>
+    <div class="row mt-5">
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center mt-4">
+        <img class="" src="/images/features/translator-vetting.svg" alt="" />
+        <p class="features__section-text text-center">{{ site.data[page.lang]['features']['translator_vetting'] }}</p>
+        <p class="features__section-subtext text-center mw-320 font-16">{{ site.data[page.lang]['features']['all_translators_and'] }}</p>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center mt-4">
+        <img class="" src="/images/features/quality-management.svg" alt="" />
+        <p class="features__section-text text-center">{{ site.data[page.lang]['features']['quality_management'] }}</p>
+        <p class="features__section-subtext text-center mw-320 font-16">{{ site.data[page.lang]['features']['we_monitor_quality'] }}</p>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center mt-4">
+        <img class="" src="/images/features/operations-monitoring.svg" alt="" />
+        <p class="features__section-text text-center">{{ site.data[page.lang]['features']['operations_monitoring'] }}</p>
+        <p class="features__section-subtext text-center mw-320 font-16">{{ site.data[page.lang]['features']['each_translation_task'] }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="features__section-title text-center mt-0 pb-5">{{ site.data[page.lang]['features']['translation_process'] }}</h2>
+    <div class="row py-5 column-reverse-mobile2">
+      <div class="col-12 col-md-5">
+        <img class="image-style-mobile" src="/images/features/quality-dimension.svg" alt="" />
+      </div>
+      <div class="col-12 col-md-2 d-flex flex-column align-items-center">
+        <img class="features__section-dotted-line" src="/images/features/dotted-line.svg" alt="" />
+      </div>
+      <div class="col-12 col-md-5">
+        <p class="features__section-subtitle">{{ site.data[page.lang]['features']['streamline_your'] }}</p>
+        <p class="features__section-subtext">{{ site.data[page.lang]['features']['using_state'] }}</p>
+        <p class="features__section-subtext mb-4">{{ site.data[page.lang]['features']['our_machine'] }}</p>
+      </div>
+    </div>
+    <div class="row pt-5 mt-negative2">
+      <div class="col-12 col-md-5">
+        <p class="features__section-subtitle text-right">{{ site.data[page.lang]['features']['increase_agility'] }}</p>
+        <p class="features__section-subtext text-right">{{ site.data[page.lang]['features']['after_your_content'] }}</p>
+        <p class="features__section-subtext text-right mb-4">{{ site.data[page.lang]['features']['want_human_quality'] }}</p>
+      </div>
+      <div class="col-12 col-md-2 d-flex flex-column align-items-center">
+        
+      </div>
+      <div class="col-12 col-md-5">
+        <img class="image-style-mobile" src="/images/features/verdicts2.svg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="alice-blue-bg">
+    <div class="container">
+      <h2 class="features__section-title text-center mt-0 pb-5">{{ site.data[page.lang]['features']['translation_management'] }}</h2>
+      <div class="row py-5">
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520">{{ site.data[page.lang]['features']['manage_your_translation'] }}</p>
+          <p class="features__section-subtext mw-520">{{ site.data[page.lang]['features']['managing_translations'] }}</p>
+          <p class="features__section-subtext mw-520 mb-4">{{ site.data[page.lang]['features']['you_can_easily'] }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="image-style-mobile" src="/images/features/manage-translation.svg" alt="" />
+        </div>
+      </div>
+      <div class="row py-5 column-reverse-mobile2">
+        <div class="col-12 col-md-6">
+          <img class="image-style-mobile" src="/images/features/use-workflows.svg" alt="" />
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520">{{ site.data[page.lang]['features']['use_workflows_to'] }}</p>
+          <p class="features__section-subtext mw-520">{{ site.data[page.lang]['features']['workflows_are_the'] }}:</p>
+          <p class="features__section-subtext mt-4 mb-2 text-font-base">
+            <img class="features-translation__col-check" src="/images/features/check-icon-small.svg" alt="" />
+            {{ site.data[page.lang]['features']['human_translation'] }}
+          </p>
+          <p class="features__section-subtext mb-2 text-font-base">
+            <img class="features-translation__col-check" src="/images/features/check-icon-small.svg" alt="" />
+            {{ site.data[page.lang]['features']['human_proofreading'] }}
+          </p>
+          <p class="features__section-subtext mb-2 text-font-base">
+            <img class="features-translation__col-check" src="/images/features/check-icon-small.svg" alt="" />
+            {{ site.data[page.lang]['features']['neural_machine'] }}
+          </p>
+          <p class="features__section-subtext mb-2 text-font-base">
+            <img class="features-translation__col-check" src="/images/features/check-icon-small.svg" alt="" />
+            {{ site.data[page.lang]['features']['nmt_post_editing'] }}
+          </p>
+          <p class="features__section-subtext mb-2 text-font-base">
+            <img class="features-translation__col-check" src="/images/features/check-icon-small.svg" alt="" />
+            {{ site.data[page.lang]['features']['statistical_machine'] }}
+          </p>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520">{{ site.data[page.lang]['features']['translate_thousands'] }}</p>
+          <p class="features__section-subtext mw-520">{{ site.data[page.lang]['features']['translate_up_to'] }}</p>
+          <p class="features__section-subtext mw-520 mb-4">{{ site.data[page.lang]['features']['amongst_others'] }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="image-style-mobile" src="/images/features/translate-file.svg" alt="" />
+        </div>
+      </div>
+      <div class="row py-5 column-reverse-mobile2">
+        <div class="col-12 col-md-6">
+          <img class="image-style-mobile" src="/images/features/generate-key.svg" alt="" />
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520">{{ site.data[page.lang]['features']['get_more_done'] }}</p>
+          <p class="features__section-subtext mw-520">{{ site.data[page.lang]['features']['with_a_wide'] }}</p>
+          <p class="features__section-subtext mw-520">{{ site.data[page.lang]['features']['if_you_dont'] }} <a
+            href="contact.html">{{ site.data[page.lang]['features']['let_us_know'] }}</a> {{ site.data[page.lang]['features']['and_we'] }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Guide -->
+  {% include download-guide.html %}
+
+  <!-- Our Pricing -->
+  {% include our-pricing.html %}
+
+  <section class="bg-white">
+    <div class="container">
+      <h2 class="features__section-title text-center mt-0 pb-5">{{ site.data[page.lang]['features']['quality_control'] }}</h2>
+      <div class="row py-5">
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520 mt-4">{{ site.data[page.lang]['features']['manage_all_of'] }}</p>
+          <img class="image-style2" src="/images/features/centralized-platform.svg" alt="" />
+          <p class="features__section-subtext mw-520 mb-4">{{ site.data[page.lang]['features']['continuous_localization'] }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex mt-4">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['style_guides'] }}</span> {{ site.data[page.lang]['features']['ensure_consistency'] }}
+            </p>
+          </div>
+          <div class="d-flex">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['glossary_and'] }}</span> {{ site.data[page.lang]['features']['ensure_your_translations'] }}
+            </p>
+          </div>
+          <div class="d-flex">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['translation_memory'] }}</span> {{ site.data[page.lang]['features']['ensures_you_never'] }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col-12 col-md-6">
+          <p class="features__section-subtitle mw-520 mt-4">{{ site.data[page.lang]['features']['take_control_of'] }}</p>
+          <img class="image-style2 my-4" src="/images/features/take-control.svg" alt="" />
+          <p class="features__section-subtext mw-520 mb-4">{{ site.data[page.lang]['features']['tolqs_set_of'] }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex mt-4">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['translator_chat'] }}</span> {{ site.data[page.lang]['features']['forget_messy'] }}
+            </p>
+          </div>
+          <div class="d-flex">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['in_context_view'] }}</span> {{ site.data[page.lang]['features']['eliminate_misunderstandings'] }}
+            </p>
+          </div>
+          <div class="d-flex">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['translations_review'] }}</span> {{ site.data[page.lang]['features']['not_satisfied'] }}
+            </p>
+          </div>
+          <div class="d-flex">
+            <img class="features__section-icon mr-2" src="/images/features/check-icon-large.svg" alt="" />
+            <p class="features__section-subtext text-font-base">
+              <span>{{ site.data[page.lang]['features']['mix_and_match'] }}</span> {{ site.data[page.lang]['features']['use_smart'] }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book a Demo -->
+  {% include book-a-demo.html %}
+
+  <!-- Footer -->
+  <footer class="alice-blue-bg">
+    {% include footer.html %}
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   {% include snippets.html %}
 </body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5626357.js"></script>
+<!-- End of HubSpot Embed Code -->
+</html>
