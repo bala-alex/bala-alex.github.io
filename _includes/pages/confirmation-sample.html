@@ -1,0 +1,41 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+    <!-- Leadinfo tracking code -->
+<script>
+  (function(l,e,a,d,i,n,f,o){if(!l[i]){l.GlobalLeadinfoNamespace=l.GlobalLeadinfoNamespace||[];
+  l.GlobalLeadinfoNamespace.push(i);l[i]=function(){(l[i].q=l[i].q||[]).push(arguments)};l[i].t=l[i].t||n;
+  l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;o.src=d;f.parentNode.insertBefore(o,f);}
+  }(window,document,"script","https://cdn.leadinfo.net/ping.js","leadinfo","LI-615C0E87ED394"));
+  </script>
+  <div class="confirmation bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content">
+      <div class="header__bg">
+        <div class="container">
+          <h1 class="header__title mx-auto">{{ site.data[page.lang]['confirmation_sample']['thank_you'] }}</h1>
+          <p class="header__subtitle my-4 mx-auto">{{ site.data[page.lang]['confirmation_sample']['thank_you_for_registering'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    {% include check-blog.html %}
+    <!-- Second Section -->
+    {% include secure-assets.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>

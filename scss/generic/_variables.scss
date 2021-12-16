@@ -1,124 +1,53 @@
-//-------------------------------------//
-// COLORS
-
-// colors: base font
-$light-grey: #d8d8d8;
-$font-base: #004E82;
-$font-dark: #1c1c3d;
-$dark-grey: #191e2f;
-$grey-2: #8f9096;
-$grey-3: #a3a5ac;
-$grey-4: #818181;
-$white: #ffffff;
-$alice-blue: #F7FBFD;
-
-$dark-cerulean: #004E82;
-
-// colors: brand
-$color-light-blue: #5183BB;
-
-// colors: border
-$border-color: #a3a5ac;
-
-// color: background
-$grey-bg: #f0f5f8;
-
-//-------------------------------------//
-// MEDIA QUERIES
-
+// Screen size
 $media-lg: 1200px;
 $media-md: 992px;
 $media-sm: 768px;
 $media-xs: 480px;
 
-.btn-blue {
-  padding: 0 30px;
+// Colors
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6B717B !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 
-  &:hover {
-    color: #fff;
-    background-color: darken($color-light-blue, 15%);
-    border-color: darken($color-light-blue, 15%);
-    transition: .3s;
-  }
-}
+$forest-green: #00887f !default;
+$dark-green:   #0b7a76 !default;
+$darker-green: #067774 !default;
+$night-black:  #333333 !default;
+$light-gray:   #FAFAFA !default;
+$lighter-gray: #ececec !default;
+$faded-gray:   #F4F4F4 !default;
+$faded-black:  #2e384d !default;
+$soft-black:   #3e3f42 !default;
+$black:        #000000 !default;
+$dust-gray:    #8798ad !default;
+$soft-gray:    #7f7f7f !default;
+$softer-gray:  #d4d4d4 !default;
+$dark-gray:    #818181 !default;
+$darker-gray:  #4a4a4a !default;
+$charcoal:     #444444 !default;
+$eclipse:      #3f3f3f !default;
+$jumbo:        #8e8e8d !default;
 
-.btn-green {
-  padding: 0 30px;
-  background: linear-gradient(180deg, #B0E7C6 0%, #5DD1B3 100%);
-  box-shadow: 0px 2px 24px rgba(83, 169, 230, 0.19);
 
-  &:hover {
-    color: #fff;
-    background: linear-gradient(180deg, #5DD1B3 0%, #B0E7C6 100%);
-    transition: .3s;
-  }
-}
+$purple:       #7450C8 !default;
+$light-purple: #DFE4EE !default;
+$sky-blue:     #3377c6 !default;
 
-.btn-white {
-  padding: 0 30px;
-  background: $white;
-  color: $font-base;
+$sherpa-blue: #00384B !default;
+$bondi-blue: #00A0B6 !default;
+$air-force-blue: #6782A3 !default;
+$cerulean: #00769D !default;
+$snow: #FBFBFB !default;
+$pewter-blue: #9AABBF !default;
+$alice-blue: #F9FCFF !default;
+$azure: #F3FDFF !default;
 
-  &:hover {
-    color: $white;
-    background: transparent;
-    transition: .3s;
-    border: 1px solid $white;
-  }
-}
 
-.btn-small {
-  padding: 0 30px;
-  height: 37px;
-  min-width: 129px;
-  color: #fff;
-  background-color: darken($color-light-blue, 5%);
-  border-color: darken($color-light-blue, 5%);
-  transition: .3s;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
-
-  &:hover {
-    color: $color-light-blue;
-    background-color: transparent;
-    border: 1px solid $color-light-blue;
-    transition: .3s;
-  }
-}
-
-.btn-medium {
-  padding: 0 30px;
-  height: 37px;
-  min-width: 200px;
-  color: #fff;
-  background-color: darken($color-light-blue, 5%);
-  border-color: darken($color-light-blue, 5%);
-  transition: .3s;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 19px;
-
-  &:hover {
-    color: $color-light-blue;
-    background-color: transparent;
-    border: 1px solid $color-light-blue;
-    transition: .3s;
-  }
-}
-
-.btn-outline {
-  padding: 0 30px;
-  color: $color-light-blue !important;
-  border: 1px solid #5183BB;
-  height: 50px;
-
-  &:hover {
-    color: #fff !important;
-    text-decoration: none;
-    background-color: $color-light-blue !important;
-    border: 1px solid $color-light-blue;
-    cursor: pointer;
-    transition: .3s;
-  }
-}
+$yellow: #FFD12D !default;

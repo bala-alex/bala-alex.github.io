@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<div class="resources">
+  <div class="container-fluid px-0">
+    <div class="guide__bg-security">
+      <div class="container">
+        <div class="guide__content2 d-flex align-items-center justify-content-between">
+          <img class="guide__image2 my-4" src="/images/resources-page/guide-introduction.svg"/>
+          <div>
+            <p class="verification__add-on text-uppercase mt-4">{{ site.data[page.lang]['resources']['ebook'] }} </p>
+            <h2 class="guide__title2">{{ site.data[page.lang]['includes']['escrow_introduction']['introduction_to_software'] }}: {{ site.data[page.lang]['includes']['escrow_introduction']['a_guide'] }}</h2>
+            <p class="guide__subtitle2 mt-3">{{ site.data[page.lang]['includes']['escrow_introduction']['learn_how'] }}</p>
+            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal">
+              {{ site.data[page.lang]['includes']['escrow_introduction']['download_free_guide'] }}
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal mx-auto">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">{{ site.data[page.lang]['resources']['download_this_ebook'] }}</p>
+              </div>
+              <div class="section__modal-form p-0">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.svg"/>
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "5365877",
+                  formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

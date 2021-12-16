@@ -1,0 +1,423 @@
+.btn-secondary-lg {
+  @include button-variant(transparent, transparent, $active-background: darken(transparent, 7.5%), $active-border: darken(transparent, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 1px solid $bondi-blue;
+  height: 50px;
+  width: max-content;
+  min-width: 170px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-secondary-large {
+  @include button-variant(transparent, transparent, $active-background: darken(transparent, 7.5%), $active-border: darken(transparent, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 1px solid $bondi-blue;
+  height: 50px;
+  width: max-content;
+  min-width: 170px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-lg {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  min-width: 200px;
+  padding: 0 20px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-lg2 {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  min-width: 200px;
+  padding: 0 20px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $cerulean !important;
+    background-color: #F3FDFF !important;
+    text-decoration: none;
+    border: 1px solid #F3FDFF;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-bondi-blue {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($bondi-blue, 7.5%), $active-border: darken($bondi-blue, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: $cerulean !important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-bondi-blue2 {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($bondi-blue, 7.5%), $active-border: darken($bondi-blue, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: $cerulean !important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-cerulean {
+  @include button-variant($cerulean, $cerulean, $active-background: darken($cerulean, 7.5%), $active-border: darken($cerulean, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $cerulean;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($cerulean, 7.5%) !important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-cerulean2 {
+  @include button-variant($cerulean, $cerulean, $active-background: darken($cerulean, 7.5%), $active-border: darken($cerulean, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $cerulean;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($cerulean, 7.5%)!important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-white-sm {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: #6D9EDE !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 38px;
+  min-width: 117px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-xl {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 257px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white-xl2 {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 257px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $cerulean !important;
+    background-color: #F3FDFF !important;
+    text-decoration: none;
+    border: 1px solid #F3FDFF;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-yellow {
+  @include button-variant($yellow, $yellow, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $sherpa-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $sherpa-blue !important;
+    background-color: #FFA800 !important;
+    text-decoration: none;
+    border: 1px solid #FFA800;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-primary-xl {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 25px;
+  height: 50px;
+  min-width: 257px;
+  padding: 0 20px;
+  width: max-content;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+}
+
+.btn-primary-square-xl {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-primary-lg {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
+  min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+}
+
+.btn-primary-sm {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 25px;
+  height: 35px;
+  width: 141px;
+  font-weight: normal;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-learn-more {
+  text-decoration: underline;
+  color: $white;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Muli', sans-serif;
+  &:hover {
+    color: $white;
+    opacity: .7;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-sidebar {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 0px;
+  height: 55px;
+  padding: 0 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid $bondi-blue !important;
+  border-radius: 25px !important;
+  padding: 0 30px;
+  margin: 10px !important;
+  
+  &:hover {
+    color: $white !important;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+    background-color: $bondi-blue !important;
+    border: 1px solid $bondi-blue !important;
+  }
+}
