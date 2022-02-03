@@ -55,7 +55,7 @@
             <p class="info__section-subtitle">{{ site.data[page.lang]['information_escrow']['information_escrow_is_most'] }}</p>
           </div>
           <div class="col-md-5 col-sm-12">
-            <img class="image-style mt-4 p-4" src="/images/resources-page/information-escrow-image.svg"/>
+            <img class="image-style mt-4 p-4" src="/images/resources-page/what-is-information-escrow.svg"/>
           </div>
         </div>
         <h2 class="info__section-title mt-5">{{ site.data[page.lang]['information_escrow']['what_kind_of'] }}</h2>
@@ -174,43 +174,7 @@
       {% include escrow-introduction.html %}
     </div>
     <!-- Fifth Section -->
-    <div class="section-medium px-3 features my-5">
-      <div class="explore__section-container mx-auto">
-        <div class="container">
-          <h2 class="discover__title">{{ site.data[page.lang]['resources']['explore_the_codekeeper'] }}</h2>
-          <p class="discover__subtitle mx-auto mt-4">{{ site.data[page.lang]['resources']['visit_our_blog'] }}</p>
-          <div class="row mt-4">
-            <div class="col-md-3 col-sm-12 content-center mt-4">
-              <a class="explore__box" href="https://blog.codekeeper.co/reducing-enterprise-risk-using-source-code" target="_blank">
-                <img class="explore__box-image" src="/images/resources-page/blog-image1.svg"/>
-                <p class="explore__box-text">{{ site.data[page.lang]['resources']['reducing_enterprise'] }} </p>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-12 content-center mt-4">
-              <a class="explore__box" href="https://blog.codekeeper.co/5-tips-for-securing-your-development-outsourcing" target="_blank">
-                <img class="explore__box-image" src="/images/resources-page/blog-image2.svg"/>
-                <p class="explore__box-text">{{ site.data[page.lang]['resources']['5_tips_for'] }} </p>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-12 content-center mt-4">
-              <a class="explore__box" href="https://blog.codekeeper.co/best-practices-for-software-escrow-in-licensing-agreements" target="_blank">
-                <img class="explore__box-image" src="/images/resources-page/blog-image3.svg"/>
-                <p class="explore__box-text">{{ site.data[page.lang]['resources']['best_practices'] }}</p>
-              </a>
-            </div>
-            <div class="col-md-3 col-sm-12 content-center mt-4">
-              <a class="explore__box" href="https://blog.codekeeper.co/how-i-saved-55000-on-outsourcing" target="_blank">
-                <img class="explore__box-image" src="/images/resources-page/blog-image4.svg"/>
-                <p class="explore__box-text">{{ site.data[page.lang]['resources']['how_i_saved'] }} </p>
-              </a>
-            </div>
-          </div>
-          <a class="button btn-cerulean my-5 mx-auto" href="https://blog.codekeeper.co" target="_blank">
-            {{ site.data[page.lang]['resources']['see_all_articles'] }} 
-          </a>
-        </div>
-      </div>
-    </div>
+    {% include blog-articles.html %}
     <!-- Section -->
     {% include secure-assets.html %}
     <!-- Footer -->

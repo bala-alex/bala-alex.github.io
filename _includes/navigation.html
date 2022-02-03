@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
   <div class="container p-3">
-    <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
+    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link m-2" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+          <a class="nav-link nav-margin features-href" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-2" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+          <a class="nav-link nav-margin pricing-href" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-2" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
         </li>
         <li class="nav-item show-mobile">
-          <a class="nav-link m-2" href="what-is-saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
+          <a class="nav-link nav-margin saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
         </li>
         <li class="nav-item show-mobile">
-          <a class="nav-link m-2" href="verification.html">{{ site.data[page.lang]['navigation']['verification'] }}</a>
+          <a class="nav-link nav-margin" href="verification.html">{{ site.data[page.lang]['navigation']['verification'] }}</a>
         </li>
         <li class="nav-item show-mobile">
-          <a class="nav-link m-2" href="resources.html">{{ site.data[page.lang]['navigation']['all_resources'] }}</a>
+          <a class="nav-link nav-margin" href="resources.html">{{ site.data[page.lang]['navigation']['all_resources'] }}</a>
         </li>
         <li class="nav-item show-mobile">
-          <a class="nav-link m-2" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
+          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
         </li>
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ site.data[page.lang]['navigation']['add_ons'] }} <img class="ml-1" src="/images/integrations/icon-down.svg"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item py-2" href="saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
+            <a class="dropdown-item py-2 saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
             <a class="dropdown-item py-2" href="verification.html">{{ site.data[page.lang]['navigation']['verification'] }}</a>
           </div>
         </div>
@@ -48,12 +48,12 @@
         </div> 
         
         <li class="nav-item">
-          <a class="nav-link m-2" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-2 space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
+          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
         </li>
-        <a class="button btn-secondary-large mx-2 my-lg-1 my-2" href="pricing.html">
+        <a class="button btn-secondary-large nav-margin pricing-href" href="pricing.html">
           {{ site.data[page.lang]['navigation']['get_started'] }}
         </a>
       </ul>

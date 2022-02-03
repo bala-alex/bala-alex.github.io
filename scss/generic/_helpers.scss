@@ -52,6 +52,14 @@ html {
   }
 }
 
+.nav-margin {
+  margin: 8px;
+
+  @media (min-width: 990px) and (max-width: 1200px) { 
+    margin: 8px 0px;  
+  }
+}
+
 .image-style {
 	width: 100%;
 	height: 100%;
@@ -96,6 +104,8 @@ html {
 
 .plan-custom-width {
   max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @include screen-sm {
     max-width: 96%;
@@ -305,6 +315,16 @@ html {
   .custom-select {
     position: relative;
   }
+
+  .custom-select-width {
+    width: 200px;
+    height: auto;
+    padding: 0px;
+
+    @media (min-width: 767px) and (max-width: 1000px) { 
+      width: 170px; 
+    }
+  }
   
   .custom-select select {
     display: none; /*hide original SELECT element:*/
@@ -430,7 +450,7 @@ html {
 .ml-negative-80 {
   margin-left: -80px !important;
 
-  @include screen-sm {
+  @include screen-md {
     margin-left: 0 !important;
   }
 }
@@ -493,6 +513,14 @@ html {
   }
 }
 
+.mt-negative-180 {
+  margin-top: -180px;
+
+  @include screen-sm {
+    margin-top: -140px;
+  }
+}
+
 .mt-negative-160 {
   margin-top: -160px;
 }
@@ -529,4 +557,27 @@ html {
 .bottom-radius-0 {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+}
+
+.article-section {
+  background-color: $alice-blue;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
+}
+
+.max-h-900 {
+  max-height: 900px;
+}
+
+.max-h-600 {
+  max-height: 600px;
+}
+
+.negative-right-100 {
+  margin-right: -100px;
+
+  @include screen-md {
+    margin-right: 0px;
+  }
 }

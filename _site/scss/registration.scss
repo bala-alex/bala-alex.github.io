@@ -36,7 +36,7 @@
         text-align: center;
         z-index: 999 !important;
   
-        color: $forest-green;
+        color: $bondi-blue;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 0px;
@@ -150,18 +150,18 @@
           font-family: 'Muli', sans-serif;
 
           a {
-            color: $forest-green;
+            color: $bondi-blue;
           }
         }
       }
 
       .hs-button.primary.large {
-        @include button-variant($forest-green, $forest-green, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+        @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
         color: $white !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: $forest-green;
+        background: $bondi-blue;
         border-radius: 25px;
         height: 50px;
         width: 200px;
@@ -269,7 +269,7 @@
           content: '';
           height: 100%;
           width: 12px;
-          background-color: $forest-green;
+          background-color: $bondi-blue;
           display: block;
           position: absolute;
           left: 0;
@@ -289,7 +289,7 @@
     }
 
     &__subtitle {
-      color: $forest-green;
+      color: $bondi-blue;
       font-size: 18px;
       font-weight: normal;
       letter-spacing: 0px;
@@ -298,7 +298,7 @@
     }
 
     &__amount {
-      color: $forest-green;
+      color: $bondi-blue;
       font-size: 44px;
       font-weight: normal;
       letter-spacing: -0.6px;

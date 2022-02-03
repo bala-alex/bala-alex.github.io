@@ -181,6 +181,10 @@
       align-items: center;
 
       @include screen-md {
+        margin-top: 70px;
+      }
+
+      @include screen-sm {
         display: none;
       }
     }

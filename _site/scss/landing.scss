@@ -57,7 +57,7 @@
     font-family: 'Roboto', sans-serif !important;
     font-weight: bold;
     font-size: 18px;
-    color: $forest-green;
+    color: $bondi-blue;
     letter-spacing: 0px;
     span {
       color: $night-black;
@@ -83,7 +83,7 @@
 
   &__image {
     min-height: 650px !important;
-    background: url('../images/Background-fill.png');
+    background: url('../images/Background-fill.webp');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover !important;
@@ -180,7 +180,7 @@
 
   &__background {
     min-height: 950px !important;
-    background: url('../images/homepage/protect-software-bg.png');
+    background: url('../images/homepage/protect-software-bg.webp');
     background-repeat: no-repeat;
     background-position: top; 
     background-size: cover !important;
@@ -227,7 +227,7 @@
   &__divider {
     height: 4px;
     width: 60px;
-    border-top: 4px solid $forest-green;
+    border-top: 4px solid $bondi-blue;
     margin-bottom: 16px;
   }
 
@@ -274,7 +274,7 @@
     border-bottom-left-radius: 30px;
     min-height: 350px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 0 0 10px 0;
       margin-right: 0px;
@@ -293,11 +293,12 @@
     border-bottom-right-radius: 30px;
     min-height: 490px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 10px 0 60px 0;
       margin-left: 0px;
       min-height: auto;
+      margin-top: 70px;
     }
   }
 
@@ -307,7 +308,15 @@
     display: flex;
 
     @include screen-md {
+      margin-top: 0px;
+    }
+
+    @include screen-lg {
       padding: 0 0 10px 0;
+    }
+
+    @include screen-sm {
+      margin-top: 50px;
     }
   }
 
@@ -325,8 +334,9 @@
     min-height: 400px;
 
     @include screen-lg {
-      margin-top: -126px;
+      // margin-top: -126px;
       margin-left: 1px;
+      border: none;
     }
 
     @include screen-md {
@@ -334,6 +344,10 @@
       padding: 80px 0 40px 0;
       margin-right: 0px;
       min-height: auto;
+    }
+
+    @include screen-sm {
+      padding-top: 0px;
     }
   }
 
@@ -349,7 +363,7 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 80px 0 40px 0;
       margin-right: 0px;
@@ -372,6 +386,8 @@
     @include screen-lg {
       margin-top: -87px;
       margin-left: -2px;
+      border: none;
+      margin-top: 0px;
     }
 
     @include screen-md {
@@ -379,6 +395,7 @@
       padding: 80px 0 40px 0;
       margin-right: 0px;
       min-height: auto;
+      margin-top: 0px;
     }
   }
 
@@ -395,6 +412,7 @@
 
     @include screen-lg {
       margin-left: 39px;
+      border: none;
     }
 
     @include screen-md {
@@ -416,6 +434,7 @@
 
     @include screen-lg {
       margin-left: 46px;
+      border: none;
     }
 
     @include screen-md {
@@ -435,7 +454,7 @@
     border-left: 1px dashed #6782A3;
     border-bottom-left-radius: 30px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 0 0 10px 0;
     }
@@ -452,10 +471,15 @@
     border-bottom-right-radius: 30px;
     min-height: 330px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 10px 0 60px 0;
       min-height: auto;
+      margin-top: 70px;
+    }
+
+    @include screen-sm {
+      margin-top: 0px;
     }
   }
 
@@ -466,6 +490,11 @@
 
     @include screen-md {
       padding: 0 0 10px 0;
+      margin-top: 50px;
+    }
+
+    @include screen-sm {
+      margin-top: 50px;
     }
   }
 
@@ -482,11 +511,15 @@
     border-top-left-radius: 30px;
     min-height: 350px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 80px 0 0 0;
       min-height: auto;
       margin-left: 0px;
+    }
+
+    @include screen-sm {
+      margin-bottom: 20px;
     }
   }
 
@@ -499,10 +532,15 @@
     border-right: 1px dashed #6782A3;
     border-top-right-radius: 30px;
 
-    @include screen-md {
+    @include screen-lg {
       border: none;
       padding: 20px 0 60px 0;
       margin-left: 0;
+      margin-top: 60px;
+    }
+
+    @include screen-sm {
+      margin-top: 0px;
     }
   }
 
@@ -580,6 +618,10 @@
 
     @include screen-md {
       margin-left: 0;
+    }
+
+    @include screen-sm {
+      height: 200px;
     }
   }
 
@@ -671,7 +713,7 @@
 
   &__content-bg {
     min-height: 750px !important;
-    background: url('../images/homepage/escrow-role-bg.png');
+    background: url('../images/homepage/escrow-role-bg.webp');
     background-repeat: no-repeat;
     background-position: top; 
     background-size: cover !important;
@@ -840,7 +882,7 @@
     max-width: 326px;
     min-width: 260px;
     padding: 32px;
-    border-top: 6px solid $forest-green;
+    border-top: 6px solid $bondi-blue;
     pointer-events: none;
   }
   
@@ -1473,7 +1515,7 @@
   }
 
   &__box-title {
-    color: $forest-green;
+    color: $bondi-blue;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1625,17 +1667,18 @@
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0px;
-    line-height: 32px;
+    line-height: 28px;
     font-family: 'Muli', sans-serif;
+    min-height: 170px;
   }
 
   &__box {
     background: $white;
     border-radius: 20px;
     box-shadow: 2px 9px 20px #EEF1F6;
-    min-height: 300px;
-    max-width: 370px;
-    padding: 32px;
+    min-height: 340px;
+    max-width: 350px;
+    padding: 25px;
     margin-top: 60px;
     @include screen-md {
       margin-top: 50px;
@@ -1677,7 +1720,27 @@
   &__logo {
     height: 55px;
     max-width: 170px;
-    margin-top: 40px;
+    margin-top: 15px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 30px;
+    text-decoration: underline;
+    color: $bondi-blue;
+    text-transform: lowercase !important;
+    font-family: 'Muli', sans-serif;
+
+    &:hover {
+      color: $cerulean;
+    }
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 }
 
@@ -1739,7 +1802,7 @@
       color: $cerulean;
     }
 
-    @include screen-md {
+    @include screen-sm {
       margin-top: 30px !important;
     }
   }
@@ -1824,7 +1887,7 @@
     padding: 12px 14px 14px 14px !important;
     
     h3 {
-      color: $forest-green !important;
+      color: $bondi-blue !important;
     }
     p {
       opacity: 1 !important;

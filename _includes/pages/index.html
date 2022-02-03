@@ -36,7 +36,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center pt-4">
-                <img class="image-style" src="/images/Dashboard-escrow.svg"/>
+                <img loading="lazy" class="image-style" src="/images/Dashboard-escrow.webp" alt="Dashboard escrow"/>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@
         <div class="container pb-0">
           <div class="row column-reverse-mobile">
             <div class="col-md-6 col-sm-12">
-              <img class="image-style" src="/images/homepage/protect-software-icon.svg"/>
+              <img loading="lazy" class="image-style" src="/images/homepage/protect-software-icon.webp" alt="Protect software"/>
             </div>
             <div class="col-md-6 col-sm-12">
               <h2 class="protect__title ml-auto text-white">{{ site.data[page.lang]['index']['protect_your_software'] }}</h2>
@@ -159,7 +159,7 @@
               </a>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="automated__image mt-5" src="/images/homepage/automated-deposit.svg"/>
+              <img loading="lazy" class="automated__image mt-5" src="/images/homepage/automated-deposit.webp" alt="Automated deposit"/>
               <p class="automated__text my-0">{{ site.data[page.lang]['index']['some_of_our_source'] }}: </p>
               <div class="resources">
                 <div class="applications__logos mt-5">
@@ -283,7 +283,7 @@
                 <div class="works__number">1</div>
               </div>
               <div>
-                <p class="works__text">{{ site.data[page.lang]['index']['set_up'] }}<img class="works__icon" src="/images/homepage/icon-file.svg"/></p>
+                <p class="works__text space-no-wrap">{{ site.data[page.lang]['index']['set_up'] }}<img class="works__icon" src="/images/homepage/icon-file.svg"/></p>
                 <p class="works__subtext">{{ site.data[page.lang]['index']['setting_up_an_escrow'] }}</p>
               </div>
             </div>
@@ -304,7 +304,7 @@
                 <div class="works__number">2</div>
               </div>
               <div>
-                <p class="works__text">{{ site.data[page.lang]['index']['deposit'] }}<img class="works__icon" src="/images/homepage/icon-code.svg"/></p>
+                <p class="works__text space-no-wrap">{{ site.data[page.lang]['index']['deposit'] }}<img class="works__icon" src="/images/homepage/icon-code.svg"/></p>
                 <p class="works__subtext">{{ site.data[page.lang]['index']['the_deposit_materials'] }}</p>
               </div>
             </div>
@@ -317,7 +317,7 @@
                 <div class="works__number">3</div>
               </div>
               <div>
-                <p class="works__text">{{ site.data[page.lang]['index']['activation'] }}<img class="works__icon" src="/images/homepage/icon-check.svg"/></p>
+                <p class="works__text space-no-wrap">{{ site.data[page.lang]['index']['activation'] }}<img class="works__icon" src="/images/homepage/icon-check.svg"/></p>
                 <p class="works__subtext">{{ site.data[page.lang]['index']['your_new_source'] }}</p>
               </div>
             </div>
@@ -338,7 +338,7 @@
                 <div class="works__number">4</div>
               </div>
               <div>
-                <p class="works__text">{{ site.data[page.lang]['index']['management'] }}<img class="works__icon" src="/images/homepage/icon-cog.svg"/></p>
+                <p class="works__text space-no-wrap">{{ site.data[page.lang]['index']['management'] }}<img class="works__icon" src="/images/homepage/icon-cog.svg"/></p>
                 <p class="works__subtext2">{{ site.data[page.lang]['index']['easily_add_your'] }}</p>
               </div>
             </div>
@@ -355,7 +355,7 @@
       <div class="container resources">
         <div class="row column-reverse-mobile">
           <div class="col-md-6 col-sm-12">
-            <img class="image-style" src="/images/homepage/escrow-role.png"/>
+            <img loading="lazy" class="image-style" src="/images/homepage/escrow-role.webp" alt="Escrow role"/>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="escrow__content px-3">
@@ -509,7 +509,7 @@
         <a class="button btn-cerulean mx-auto my-4" href="integrations.html">
           {{ site.data[page.lang]['index']['see_all_integrations'] }}
         </a>
-        <img class="image-style" src="/images/homepage/integrations.svg"/>
+        <img loading="lazy" class="image-style" src="/images/homepage/integrations.webp" alt="Integrations"/>
         <p class="integration__subtext mt-4 mx-auto">{{ site.data[page.lang]['index']['need_another_integration'] }} <a class="text-underline fw-bold" href="contact.html">{{ site.data[page.lang]['index']['contact_us'] }}.</a></p>
       </div>
     </div>
@@ -826,36 +826,33 @@
       {% include escrow-introduction.html %}
     </div>
     <!-- Eleventh Section -->
-    <div class="px-3 overflow-hidden mt-negative-50">
-      <div class="people__section-container mx-auto bg-white bottom-radius-0 py-0 overflow-hidden">
-        <div class="bg-alice-blue">
+    <div class="overflow-hidden section-medium">
+      <div class="mx-auto bg-white my-4">
           <div class="row">
             <div class="col-md-5 col-sm-12 bg-white p-5">
-              <h2 class="mentions__title mt-5">{{ site.data[page.lang]['index']['recent_updates'] }}</h2>
-              <img class="image-style mt-negative-50" src="/images/homepage/ck-sales.svg"/>
+              <h2 class="mentions__title mt-5 mb-4">{{ site.data[page.lang]['index']['recent_updates'] }}</h2>
+              <img class="image-style max-h-600" src="/images/homepage/ck-sales.svg"/>
             </div>
-            <div class="col-md-7 col-sm-12 p-5 pb-0">
+            <div class="col-md-7 col-sm-12 py-5 pl-5 pr-0 article-section">
               <h2 class="mentions__title mt-5">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
               <p class="mentions__subtitle mt-4 mw-100">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
-              <div class="row">
-                <div class="col-md-6 col-sm-12">
-                  <div class="mentions__box-second mb-4">
+              <div class="row negative-right-100">
+                <div class="col-md-4 col-sm-12">
+                  <div class="mentions__box">
                     <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
                     <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
                     <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
                   </div>
-                  <div class="mentions__box-negative mt-4">
-                    <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
-                    <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['compared_to_traditional'] }}</p>
-                  </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                   <div class="mentions__box">
                     <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
                     <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
                     <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
                   </div>
-                  <div class="mentions__box mt-4">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <div class="mentions__box">
                     <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
                     <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
                     <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
@@ -864,7 +861,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <!-- Section -->

@@ -709,7 +709,7 @@
     }
 
     &__amount {
-      color: $forest-green;
+      color: $bondi-blue;
       font-size: 38px;
       font-weight: normal;
       letter-spacing: -0.6px;
@@ -826,7 +826,7 @@
         // }
 
         @include screen-md {
-          color: $forest-green;
+          color: $bondi-blue;
         }
       }
     }
@@ -1158,7 +1158,7 @@
       box-shadow: 2px 4px 10px #E8ECF2;
       border-radius: 10px;
       width: 271px;
-      height: 242px;
+      min-height: 220px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1171,9 +1171,9 @@
     }
 
     &__box-image {
-      height: 180px;
+      height: 155px;
       margin-top: -8px;
-      width: 113%;
+      width: 100%;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       background-repeat: no-repeat;

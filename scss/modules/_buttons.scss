@@ -138,6 +138,11 @@
   font-weight: bold;
   font-family: 'Muli', sans-serif;
   font-size: 16px;
+
+  @media (min-width: 767px) and (max-width: 1000px) { 
+    min-width: 150px; 
+  }
+
   &:hover {
     color: $white !important;
     background-color: $cerulean !important;
@@ -184,6 +189,30 @@
   height: 50px;
   width: max-content;
   min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($cerulean, 7.5%)!important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-cerulean3 {
+  @include button-variant($cerulean, $cerulean, $active-background: darken($cerulean, 7.5%), $active-border: darken($cerulean, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $cerulean;
+  border-radius: 25px;
+  height: 50px;
+  width: max-content;
   padding: 0 20px;
   font-weight: bold;
   font-family: 'Muli', sans-serif;
