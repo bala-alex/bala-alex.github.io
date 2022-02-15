@@ -266,9 +266,20 @@
     }
 
     &__header {
-      background-color: $faded-gray;
+      background: url('../images/features-page/features-header.webp');
       height: 528px;
       margin-top: 85px;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover !important;
+
+      // min-height: 490px !important;
+      // background: url('../images/features-page/features-header.webp');
+      // background-repeat: no-repeat;
+      // background-position: center; 
+      // background-size: cover !important;
+      // padding-top: 100px !important;
+      // padding-bottom: 180px !important;
     }
 
     &__header-title {
