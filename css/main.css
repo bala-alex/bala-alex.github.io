@@ -7502,6 +7502,9 @@ html {
 .fw-bold {
   font-weight: bold !important; }
 
+.fw-600 {
+  font-weight: 600 !important; }
+
 @media (max-width: 992px) {
   .overflow-x-hidden {
     overflow-x: hidden !important; } }
@@ -7511,6 +7514,12 @@ html {
   @media (max-width: 992px) {
     .mt-large {
       margin-top: 50px; } }
+
+.mt-150 {
+  margin-top: 150px !important; }
+  @media (max-width: 992px) {
+    .mt-150 {
+      margin-top: 60px !important; } }
 
 .mt-200 {
   margin-top: 200px; }
@@ -7802,6 +7811,12 @@ html {
 
 .mt-negative-280 {
   margin-top: -280px; }
+
+.mt-negative-240 {
+  margin-top: -240px; }
+  @media (max-width: 767px) {
+    .mt-negative-240 {
+      margin-top: -50px; } }
 
 .mt-negative-350 {
   margin-top: -350px; }
@@ -8986,7 +9001,6 @@ html {
 
 .people__section-container {
   max-width: 1320px;
-  min-height: 690px;
   border-radius: 25px;
   background-color: #F9FCFF;
   -webkit-box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
@@ -9040,6 +9054,26 @@ html {
   padding: 25px;
   margin-top: 30px; }
 
+.people__section-col3 {
+  max-width: 370px;
+  width: 100%;
+  min-height: 400px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
+  box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
+  border-radius: 20px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .people__section-title {
   color: #00384B;
   font-size: 14px;
@@ -9056,6 +9090,14 @@ html {
   line-height: 28px;
   font-family: 'Muli', sans-serif;
   max-width: 295px; }
+
+.people__section-subtitle2 {
+  color: #6782A3;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 28px;
+  font-family: 'Muli', sans-serif;
+  max-width: 330px; }
 
 .people__section-text {
   color: #00384B;
@@ -9382,7 +9424,7 @@ html {
   -webkit-box-shadow: 2px 9px 20px #EEF1F6;
   box-shadow: 2px 9px 20px #EEF1F6;
   min-height: 340px;
-  max-width: 350px;
+  max-width: 370px;
   padding: 25px;
   margin-top: 60px; }
   @media (max-width: 992px) {
@@ -9400,7 +9442,7 @@ html {
   margin-top: 60px; }
   @media (max-width: 992px) {
     .mentions__box-second {
-      margin-top: 50px; } }
+      margin-top: -20px; } }
 
 .mentions__box-negative {
   background: #ffffff;

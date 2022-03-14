@@ -183,6 +183,10 @@ html {
   font-weight: bold !important;
 }
 
+.fw-600 {
+  font-weight: 600 !important;
+}
+
 .overflow-x-hidden {
 
   @include screen-md {
@@ -194,6 +198,13 @@ html {
   margin-top: 110px;
   @include screen-md {
     margin-top: 50px;
+  }
+}
+
+.mt-150 {
+  margin-top: 150px !important;
+  @include screen-md {
+    margin-top: 60px !important;
   }
 }
 
@@ -531,6 +542,14 @@ html {
 
 .mt-negative-280 {
   margin-top: -280px;
+}
+
+.mt-negative-240 {
+  margin-top: -240px;
+
+  @include screen-sm {
+    margin-top: -50px;
+  }
 }
 
 .mt-negative-350 {

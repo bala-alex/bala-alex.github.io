@@ -290,9 +290,6 @@
                 </div>
                 <div class="section__modal-form p-0">
                   <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
-                  <!--[if lte IE 8]>
-                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                  <![endif]-->
                   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                   <script>
                     hbspt.forms.create({
@@ -302,6 +299,45 @@
                   </script>
                   <p class="section__modal-subtext mt-5">*E-book alleen beschikbaar in het Engels</p>
                 </div>
+                <!-- <div class="section__modal-form p-0 spanish-guide">
+                  <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
+                  
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5365877",
+                    formId: "7ed62b5f-41d8-4968-8bfb-b3e88334cc7e"
+                  });
+                  </script>
+                  <p class="section__modal-subtext mt-5">*E-book alleen beschikbaar in het Engels</p>
+                </div> -->
+                <!-- <div class="section__modal-form p-0 german-guide">
+                  <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
+
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5365877",
+                    formId: "39f6f598-5b94-49dc-9589-944cf52d5ddb"
+                  });
+                  </script>
+                  <p class="section__modal-subtext mt-5">*E-book alleen beschikbaar in het Engels</p>
+                </div> -->
+                <!-- <div class="section__modal-form p-0 dutch-guide">
+                  <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
+
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5365877",
+                    formId: "5e1f4742-22b5-4e75-9f72-419e20ff3b2d"
+                  });
+                  </script>
+                  <p class="section__modal-subtext mt-5">*E-book alleen beschikbaar in het Engels</p>
+                </div> -->
               </div>
             </div>
           </div>
@@ -717,6 +753,33 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-source-code-escrow-href').attr('href', 'wat-is-source-code-escrow.html')
     }
   })
+  </script>
+
+  <script>
+    var pathname = location.pathname;
+
+    if (pathname.includes('/es/')) {
+      $('.english-guide').remove();
+      $('.dutch-guide').remove();
+      $('.german-guide').remove();
+    }
+    else if (pathname.includes('/nl/')) {
+      $('.english-guide').remove();
+      $('.spanish-guide').remove();
+      $('.german-guide').remove();
+    }
+
+    else if (pathname.includes('/de/')) {
+      $('.english-guide').remove();
+      $('.dutch-guide').remove();
+      $('.spanish-guide').remove();
+    }
+
+    else {
+      $('.spanish-guide').remove();
+      $('.dutch-guide').remove();
+      $('.german-guide').remove();
+    }
   </script>
 
   <script>

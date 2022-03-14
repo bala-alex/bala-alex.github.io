@@ -914,6 +914,33 @@ document.addEventListener("click", closeAllSelect);
     }
   })
   </script>
+
+  <script>
+    var pathname = location.pathname;
+
+    if (pathname.includes('/es/')) {
+      $('.english-guide').remove();
+      $('.dutch-guide').remove();
+      $('.german-guide').remove();
+    }
+    else if (pathname.includes('/nl/')) {
+      $('.english-guide').remove();
+      $('.spanish-guide').remove();
+      $('.german-guide').remove();
+    }
+
+    else if (pathname.includes('/de/')) {
+      $('.english-guide').remove();
+      $('.dutch-guide').remove();
+      $('.spanish-guide').remove();
+    }
+
+    else {
+      $('.spanish-guide').remove();
+      $('.dutch-guide').remove();
+      $('.german-guide').remove();
+    }
+  </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
   <script>
     $('.page-link').each(function() {
