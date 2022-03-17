@@ -1,0 +1,469 @@
+<body>
+  <header class="index-header alice-blue-bg mh-700">
+
+    {% include navigation.html %}
+
+    <div class="features-header__content -is-product mb-5">
+      <div class="container"> 
+        <div class="row pt-5">
+          <div class="col-12 col-lg-8">
+            <p class="customer__header-subtitle mt-5">{{ site.data[page.lang]['corporate_translation']['corporate_translation'] }}</p>
+            <p class="customer__header-text2">{{ site.data[page.lang]['corporate_translation']['we_offer_different'] }}</p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img src="/images//homepage/translation-image.svg" alt="Corporate Image" class="my-4 image-style mw-250" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Section -->
+  <div class="container translators-request">
+    <div class="contact-speak__box mx-auto mb-100 upload-file">
+      <p class="index-experienced__title mw-100 text-center my-4">{{ site.data[page.lang]['corporate_translation']['get_an_instant'] }}</p>
+      <div class="my-2 w-100">
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+          region: "na1",
+          portalId: "5626357",
+          formId: "3d7f913c-3ac2-4189-b703-5f158030953a"
+        });
+        </script>
+      </div>
+    </div>
+    <!-- <div class="row pt-5">
+      <div class="col-12 col-lg-8">
+        <div class="translators-request__box min-h-430 my-2">
+          <div class="select-source">
+            <p class="translators-request__title">{{ site.data[page.lang]['corporate_translation']['select_the_source'] }}:</p>
+            <div class="row mt-4">
+              <div class="col-12 col-lg-6">
+                <div class="translators-request__box h-230 content-center my-2 cursor-pointer" onclick="toggleViews()">
+                  <img src="/images//translators/type-paste.svg" class="translators-request__image" />
+                  <p class="translators-request__subtitle mt-3">{{ site.data[page.lang]['corporate_translation']['type_or_paste'] }}</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="translators-request__box h-230 content-center my-2 cursor-pointer">
+                  <img src="/images//translators/upload.svg" class="translators-request__image" />
+                  <p class="translators-request__subtitle mt-3">{{ site.data[page.lang]['corporate_translation']['upload_a_document'] }}</p>
+                </div>
+                <p class="translators-request__text mt-3">{{ site.data[page.lang]['corporate_translation']['supported_formats'] }}:</p>
+                <p class="translators-request__text fw-bold">csv, xliff 2.0, xlsx, docx, pptx, idml, dfxp, dsxml, mmxml, html, md, po, json, properties, strings, yml, yaml, xml-ttaf1</p>
+              </div>
+            </div>
+          </div>
+          <div class="type-text my-2 d-none">
+            <textarea placeholder="Add text here" name="myTextArea">Hello how are you today?</textarea>
+            <p onclick="toggleViews()"> < {{ site.data[page.lang]['corporate_translation']['back_to'] }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="translators-request__box min-h-430 my-2">
+          <p class="translators-request__title">{{ site.data[page.lang]['corporate_translation']['language_pair'] }}</p>
+          <p class="translators-request__subtitle2">{{ site.data[page.lang]['corporate_translation']['from'] }}</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Dutch</option>
+            <option value="1">English</option>
+            <option value="2">German</option>
+            <option value="3">French</option>
+            <option value="4">Italian</option>
+          </select>
+          <p class="translators-request__subtitle2 mt-3">{{ site.data[page.lang]['corporate_translation']['to'] }}</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>English</option>
+            <option value="1">Dutch</option>
+            <option value="2">German</option>
+            <option value="3">French</option>
+            <option value="4">Italian</option>
+          </select>
+
+          <p class="translators-request__subtext mt-4 block add">+ {{ site.data[page.lang]['corporate_translation']['add_new'] }}</p>
+
+          <a href="" class="mt-5">
+            <button class="btn-initial btn-small mt-5 mx-auto w-100">{{ site.data[page.lang]['corporate_translation']['update_order'] }}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="translators-request__box min-h-175 mt-5 p-0 overflow-hidden">
+      <div class="translators-request__order">
+        <div class="translators-request__order-header">
+          <img src="/images//translators/translation-illustration.svg" class="translators-request__order-header-image" />
+          <div>
+            <p class="translators-request__order-header-title">{{ site.data[page.lang]['corporate_translation']['translation'] }}</p>
+            <p class="translators-request__order-header-subtitle">{{ site.data[page.lang]['corporate_translation']['equivalent_to'] }}</p>
+          </div>
+        </div>
+        <div class="translators-request__order-content">
+          <div>
+            <div class="d-flex">
+              <p class="translators-request__order-content-text">{{ site.data[page.lang]['corporate_translation']['words'] }}</p>
+              <p class="translators-request__order-content-text fw-bold">: 112</p>
+            </div>
+            <div class="d-flex">
+              <p class="translators-request__order-content-text">Dutch-English</p>
+              <p class="translators-request__order-content-text fw-bold">: €0.08 / {{ site.data[page.lang]['corporate_translation']['word'] }}</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div>
+              <p class="translators-request__order-content-text text-right pr-2">{{ site.data[page.lang]['corporate_translation']['total'] }}</p>
+              <p class="translators-request__order-content-price">€24.8</p>
+            </div>
+            <a href="" class="ml-2">
+              <button class="btn-initial btn-small">{{ site.data[page.lang]['corporate_translation']['order'] }}</button>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div> -->
+  </div>
+
+  <!-- Section -->
+  <div class="container my-5">
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 mt-2">
+        <img src="/images//homepage/experienced-translators.webp" class="my-4 image-style" alt="Translators Image" />
+      </div>
+      <div class="col-12 col-lg-6 mt-5">
+        <p class="index-experienced__title">{{ site.data[page.lang]['homepage']['experienced_translators'] }}</p>
+        <p class="index-experienced__subtitle mt-4">{{ site.data[page.lang]['homepage']['our_community_of'] }}</p>
+        <a href="translators.html" class="mt-4 mb-5">
+          <button class="btn-initial btn-small">{{ site.data[page.lang]['homepage']['become_a_translator'] }}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <section class="customer-apps bg-white">
+    <img class="image-style" src="/images/translators/waves-light.webp" alt="Waves Light Image" />
+    <div class="mt-negative-200">
+      <h2 class="customer-provider__title mt-0 mb-3 container">{{ site.data[page.lang]['product_catalog']['integrate_with_your'] }}</h2>
+      <p class="features-header__content-text mb-4 darker-grey container">{{ site.data[page.lang]['product_catalog']['make_your'] }}</p>
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex mt-2 mb-4 flex-wrap justify-content-center">
+          <div class="d-flex flex-column align-items-center mx-3">
+            <p class="index-integrations__text">3000+</p>
+            <p class="index-integrations__subtext">{{ site.data[page.lang]['homepage']['smb_integrations'] }}</p>
+          </div>
+          <div class="d-flex flex-column align-items-center mx-3">
+            <p class="index-integrations__text">150+</p>
+            <p class="index-integrations__subtext">{{ site.data[page.lang]['homepage']['enterprise_integrations'] }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- Integrations slideshow -->
+      {% include slideshow.html %}
+    </div>
+  </section>
+
+  <!-- Download Guide -->
+  {% include download-guide.html %}
+
+  <!-- Our Pricing -->
+  <div class="pb-5">
+    {% include our-pricing.html %}
+  </div>
+
+  <!-- Book a Demo -->
+  {% include book-a-demo.html %}
+
+  <!-- Footer -->
+  <footer class="alice-blue-bg">
+    {% include footer.html %}
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  {% include snippets.html %}
+</body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+  function toggleViews() {
+  // var x = document.getElementById("myDIV");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+
+  $('.type-text').toggleClass('d-block d-none');
+  $('.select-source').toggle();
+}
+</script>
+<script>
+  $(document).ready(function () {
+    $('.index-partners__tabs-title').on('click', function () {
+      $('.index-partners__tabs-title').removeClass('-is-selected');
+      $('.index-partners__tabs-text').removeClass('-is-visible');
+      $('.index-partners__tabs-border').removeClass('-selected');
+
+      if ($(this).hasClass('-is-selected') && $(this).siblings().hasClass('-is-visible') && $(this).parent()
+        .parent().next().hasClass('-selected')) {
+        return;
+      }
+      $(this).addClass('-is-selected');
+      $(this).siblings().addClass('-is-visible');
+      $(this).parent().parent().next().addClass('-selected')
+    });
+
+    $('.index-enterprise__col').mouseover(function (e) {
+      $('.index-enterprise__col').removeClass('-is-active')
+      if ($(this).hasClass('-is-active')) {
+        return;
+      }
+      $(this).addClass('-is-active');
+    });
+
+    $('.translators-financial__col').mouseover(function (e) {
+      $('.translators-financial__col').removeClass('-is-active')
+      if ($(this).hasClass('-is-active')) {
+        return;
+      }
+      $(this).addClass('-is-active');
+    });
+  });
+</script>
+
+<script>
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    controls: false,
+    mode: 'gallery',
+    speed: 0,
+    responsive: {
+      900: {
+        items: 1
+      }
+    }
+  });
+
+  var info = slider.getInfo(),
+    indexPrev = info.indexCached,
+    indexCurrent = info.index;
+
+  $('.first').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(0);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.second').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(1);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.third').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(2);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.fourth').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(3);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.fifth').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(4);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.sixth').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(5);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.seventh').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(6);
+      $(this).addClass('slide-active');
+    },
+});
+
+$('.eight').on({
+    mouseenter: function () {
+      $('.slide-active').removeClass('slide-active');
+      slider.goTo(7);
+      $(this).addClass('slide-active');
+    },
+});
+
+$("button[data-nav='0']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(0);
+      $('.first').addClass('slide-active');
+});
+
+$("button[data-nav='1']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(1);
+      $('.second').addClass('slide-active');
+});
+$("button[data-nav='2']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(2);
+      $('.third').addClass('slide-active');
+});
+$("button[data-nav='3']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(3);
+      $('.fourth').addClass('slide-active');
+});
+$("button[data-nav='4']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(4);
+      $('.fifth').addClass('slide-active');
+});
+$("button[data-nav='5']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(5);
+      $('.sixth').addClass('slide-active');
+});
+$("button[data-nav='6']").click(function(){
+  $('.slide-active').removeClass('slide-active');
+      slider.goTo(6);
+      $('.seventh').addClass('slide-active');
+});
+</script>
+
+<script>
+  var video20 = document.getElementById('video20'), fraction = 0.6;
+  var video21 = document.getElementById('video21');
+
+  function checkScroll() {
+    var x = video20.offsetLeft, y = video20.offsetTop, w = video20.offsetWidth, h = video20.offsetHeight, r = x + w, //right
+    b = y + h, //bottom
+    visibleX, visibleY, visible;
+
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+    visible = visibleX * visibleY / (w * h);
+
+    const player = document.getElementById('lottie20'),
+        lottie = player.getLottie();
+
+    if (visible > fraction) {
+      lottie.loop = true;
+      lottie.play();
+    } else {
+      lottie.stop();
+    }
+  }
+
+  checkScroll();
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
+</script>
+
+<script>
+  var video = document.getElementById('video12'), fraction = 0.6;
+  var video1 = document.getElementById('video1');
+
+  function checkScroll() {
+    var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+    b = y + h, //bottom
+    visibleX, visibleY, visible;
+
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+    visible = visibleX * visibleY / (w * h);
+
+    const player = document.getElementById('lottie1'),
+        lottie = player.getLottie();
+
+    if (visible > fraction) {
+      lottie.loop = true;
+      lottie.play();
+    } else {
+      lottie.stop();
+    }
+  }
+
+  checkScroll();
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
+</script>
+
+<script>
+  var video13 = document.getElementById('video13'), fraction = 0.6;
+  var video2 = document.getElementById('video2');
+
+  function checkScroll() {
+    var x = video13.offsetLeft, y = video13.offsetTop, w = video13.offsetWidth, h = video13.offsetHeight, r = x + w, //right
+    b = y + h, //bottom
+    visibleX, visibleY, visible;
+
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+    visible = visibleX * visibleY / (w * h);
+
+    const player = document.getElementById('lottie'),
+        lottie = player.getLottie();
+
+    if (visible > fraction) {
+      lottie.loop = true;
+      lottie.play();
+    } else {
+      lottie.stop();
+    }
+  }
+
+  checkScroll();
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
+</script>
+
+<!-- Add/Remove Language -->
+<script>
+  $('.add').click(function () {
+    $('.block:last').before(' <div class="block mt-2"><select class="form-select" aria-label="Default select example"><option selected>English</option><option value="1">Dutch</option><option value="2">German</option><option value="3">French</option><option value="4">Italian</option></select><span class="remove">X</span></div>');
+  });
+
+  $('body').on('click', '.remove', function () {
+      $(this).parent('.block').remove();
+  });
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5626357.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+</html>

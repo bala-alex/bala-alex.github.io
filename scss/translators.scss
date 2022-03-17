@@ -1,0 +1,431 @@
+.translators {
+  &-projects {
+    padding-top: 200px;
+
+    @include screen-sm {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 42px;
+      font-weight: 700;
+      color: $font-dark;
+      line-height: 58px;
+
+      @include screen-sm {
+        font-size: 30px;
+        letter-spacing: -0.29px;
+        line-height: 32px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $grey-3;
+      line-height: 28px;
+      max-width: 700px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      &.-has-margin {
+        margin-bottom: 160px;
+
+        @include screen-sm {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  &-how {
+    @include screen-sm {
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+
+    &__box {
+      background: #FFFFFF;
+      box-shadow: 2px 8px 35px rgba(0, 90, 109, 0.15);
+      border-radius: 30px;
+      width: 263px;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+
+      @include screen-md {
+        height: auto;
+      }
+
+      @include screen-sm {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__box-title {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 48px;
+      color: $font-base;
+      letter-spacing: -0.5px;
+      font-family: 'Ubuntu', sans-serif;
+      max-width: 490px;
+    }
+
+    &__box-subtitle {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      color: #354C6D;
+      max-width: 522px;
+    }
+
+    &__col {
+      @include screen-sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 42px;
+      font-weight: 700;
+      color: $font-dark;
+      line-height: 58px;
+
+      @include screen-sm {
+        font-size: 30px;
+        letter-spacing: -0.29px;
+        line-height: 32px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $grey-3;
+      line-height: 28px;
+      max-width: 700px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 120px;
+
+      @include screen-sm {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__no {
+      border: 2px solid #0099FF;
+      height: 40px;
+      min-width: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: $color-light-blue;
+      margin-right: 27px;
+
+      @include screen-sm {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      color: $dark-grey;
+      margin-bottom: 15px;
+    }
+
+    &__subtext {
+      font-size: 16px;
+      line-height: 26px;
+      color: $grey-3;
+      margin-bottom: 60px;
+    }
+  }
+
+  &-financial {
+    background: $grey-bg;
+
+    @include screen-sm {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 42px;
+      font-weight: 700;
+      color: $font-dark;
+      line-height: 58px;
+
+      @include screen-sm {
+        font-size: 30px;
+        letter-spacing: -0.29px;
+        line-height: 32px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      color: $grey-3;
+      line-height: 28px;
+      max-width: 611px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 121px;
+
+      @include screen-sm {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__col {
+      width: 260px;
+      max-width: 260px;
+      border-radius: 10px;
+      border: 1px solid rgba(208, 212, 214, 0.39);
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 18px;
+      cursor: default;
+      transition: all 0.5s ease;
+      align-items: flex-start;
+      margin: 15px;
+      background: #fff;
+      transition: all 0.5s ease;
+
+      &:hover {
+        border: 1px solid rgb(110, 182, 233);
+        box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.08);
+        transition: box-shadow .5s ease-in-out;
+        transform: scale(1.01);
+        background: #fff;
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: $font-dark;
+        margin-bottom: 18px;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 28px;
+        color: $grey-3;
+      }
+
+      &.-is-active {
+        border: 1px solid rgb(110, 182, 233);
+        box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.08);
+        transition: box-shadow .5s ease-in-out;
+        transform: scale(1.01);
+        background: #fff;
+      }
+    }
+  }
+
+  &-request {
+    margin-top: -260px;
+
+    @include screen-md {
+      margin-top: -120px;
+    }
+
+    &__box {
+      background: $white;
+      box-shadow: 0px 9px 30px rgba(151, 180, 224, 0.25);
+      border-radius: 15px;
+      padding: 30px 45px;
+
+      select {
+        width: 95%;
+        height: 50px;
+        padding: 12px;
+        border: 1px solid $color-light-blue;
+        border-radius: 7px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #354C6D;
+      }
+
+      .block {
+        position: relative;
+        .remove {
+          display: none;
+        }
+
+        &:hover {
+          .remove {
+            display: block;
+            position: absolute;
+            right: -5px;
+            top: 11px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      color: $dark-cerulean;
+      line-height: 30px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: normal;
+      color: $color-light-blue;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-size: 10px;
+      font-weight: normal;
+      color: $color-light-blue;
+      line-height: 15px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    &__subtitle2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: $dark-cerulean;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+
+    &__subtext {
+      font-size: 14px;
+      font-weight: bold;
+      color: $color-light-blue;
+      line-height: 14px;
+      margin-bottom: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    &__order {
+      display: flex;
+    }
+
+    &__order-header {
+      display: flex;
+      align-items: center;
+      background-color: #F8FCFE;
+      width: fit-content;
+      padding: 30px;
+
+      &-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $dark-cerulean;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+
+      &-subtitle {
+        font-size: 12px;
+        font-weight: normal;
+        color: $dark-cerulean;
+        line-height: 16px;
+        max-width: 225px;
+        min-width: 225px;
+      }
+
+      &-image {
+        width: 120px;
+      }
+    }
+
+    &__order-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      width: 100%;
+
+      &-text {
+        font-size: 16px;
+        font-weight: normal;
+        color: $color-light-blue;
+        line-height: 24px;
+        min-width: 120px;
+        margin-bottom: 5px;
+      }
+
+      &-price {
+        font-size: 40px;
+        font-weight: bold;
+        color: $dark-cerulean;
+        margin-bottom: 5px;
+      }
+    }
+
+    .type-text {
+      textarea{
+        width: 100%;
+        min-height: 340px;
+        padding: 20px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-cerulean;
+        border: 1px solid #5183BB;
+        border-radius: 7px;
+      }
+
+      p {
+        color: $color-light-blue;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        cursor: pointer;
+        width: fit-content;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+#drift-widget-container {
+  display: none !important;
+}
+
+#drift-frame-chat {
+	display: none !important;
+}
+
+#drift-frame-controller {
+	display: none !important;
+}
