@@ -497,16 +497,10 @@
 
     &__image {
 
-      @include screen-lg {
-        max-width: 450px;
-      }
-
-      @include screen-sm {
-        width: 100%;
+      width: 100%;
         height: 100%;
         object-fit: contain;
         max-width: 450px;
-      }
     }
 
     &__title {
