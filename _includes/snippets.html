@@ -153,6 +153,56 @@
       $('.german-guide').remove();
     }
   </script>
+
+<script>
+  $(document).ready(function() {
+
+    if (window.location.pathname.includes('/de/')) {
+
+      $('.contact-href').attr('href', 'kontakt.html')
+      $('.corporate-translation-href').attr('href', 'unternehmensübersetzung.html')
+      $('.customer-service-href').attr('href', 'kundenservice.html')
+      $('.features-href').attr('href', 'merkmale.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'produktkatalog.html')
+      $('.translators-href').attr('href', 'übersetzer.html')
+    }
+
+    if (window.location.pathname.includes('/fr/')) {
+
+      $('.contact-href').attr('href', 'contact.html')
+      $('.corporate-translation-href').attr('href', 'traduction-en-entreprise.html')
+      $('.customer-service-href').attr('href', 'service-client.html')
+      $('.features-href').attr('href', 'caractéristiques.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'catalogue-de-produits.html')
+      $('.translators-href').attr('href', 'traducteurs.html')
+    }
+
+    if (window.location.pathname.includes('/it/')) {
+
+      $('.contact-href').attr('href', 'contatti.html')
+      $('.corporate-translation-href').attr('href', 'traduzione-aziendale.html')
+      $('.customer-service-href').attr('href', 'assistenza-clienti.html')
+      $('.features-href').attr('href', 'caratteristiche.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'catalogo-prodotti.html')
+      $('.translators-href').attr('href', 'traduttori.html')
+      }
+
+    if (window.location.pathname.includes('/nl/')) {
+
+      $('.contact-href').attr('href', 'contact.html')
+      $('.corporate-translation-href').attr('href', 'bedrijfsvertalingen.html')
+      $('.customer-service-href').attr('href', 'klantenservice.html')
+      $('.features-href').attr('href', 'features.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'productcatalogus.html')
+      $('.translators-href').attr('href', 'vertalers.html')
+    }
+  })
+  </script>
+
   <script>
     // $( document ).ready(function() {
       var lang = location.pathname.substring(0, 3);

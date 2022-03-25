@@ -46,13 +46,13 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav mr-auto ml-sm-0 ml-lg-4 mt-0 mt-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="features.html">Zo werkt het</a>
+              <a class="nav-link features-href" href="features.html">Zo werkt het</a>
             </li>
             <span class="-is-mobile">
-              <li class="nav-item"><a class="nav-link" href="product-catalog.html">Productcatalogus</a></li>
-              <li class="nav-item"><a class="nav-link" href="customer-service.html">Klantenservice</a></li>
-              <li class="nav-item"><a class="nav-link" href="marketing.html">Marketing</a></li>
-              <li class="nav-item"><a class="nav-link" href="corporate-translation.html.html">Corporate Translation</a></li>
+              <li class="nav-item"><a class="nav-link product-catalog-href" href="product-catalog.html">Productcatalogus</a></li>
+              <li class="nav-item"><a class="nav-link customer-service-href" href="customer-service.html">Klantenservice</a></li>
+              <li class="nav-item"><a class="nav-link marketing-href" href="marketing.html">Marketing</a></li>
+              <li class="nav-item"><a class="nav-link corporate-translation-href" href="corporate-translation.html.html">Corporate Translation</a></li>
               <li class="nav-item"><a class="nav-link" href="https://calendly.com/tolq">Boek een demo</a></li>
             </span>
             <li class="features-header__dropdown">
@@ -60,19 +60,19 @@
                   class="fas fa-chevron-down ml-1 features-header__dropdown-icon"></i></a>
               <ul class="dropdown">
                 <div class="dropdown-content">
-                  <li><a href="product-catalog.html">Productcatalogus</a></li>
-                  <li><a href="customer-service.html">Klantenservice</a></li>
-                  <li><a href="marketing.html">Marketing</a></li>
-                  <li><a href="corporate-translation.html">Corporate Translation</a></li>
+                  <li><a class="product-catalog-href" href="product-catalog.html">Productcatalogus</a></li>
+                  <li><a class="customer-service-href" href="customer-service.html">Klantenservice</a></li>
+                  <li><a class="marketing-href" href="marketing.html">Marketing</a></li>
+                  <li><a class="corporate-translation-href" href="corporate-translation.html">Corporate Translation</a></li>
                 </div>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link contact-href" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="translators.html">Vertalers</a>
+              <a class="nav-link translators-href" href="translators.html">Vertalers</a>
             </li>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
@@ -265,19 +265,19 @@
     </div>
     <div class="d-flex flex-column pr-2 pl-4">
       <p class="index-footer__cat">Bedrijf</p>
-      <a class="index-footer__link" href="translators.html">Vertalers</a>
-      <a class="index-footer__link" href="contact.html">Contact</a>
+      <a class="index-footer__link translators-href" href="translators.html">Vertalers</a>
+      <a class="index-footer__link contact-href" href="contact.html">Contact</a>
     </div>
     <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Oplossingen</p>
-      <a class="index-footer__link" href="product-catalog.html">Productcatalogus</a>
-      <a class="index-footer__link" href="customer-service.html">Klantenservice</a>
-      <a class="index-footer__link" href="marketing.html">Marketing</a>
-      <a class="index-footer__link" href="corporate-translation.html">Corporate Translation</a>
+      <a class="index-footer__link product-catalog-href" href="product-catalog.html">Productcatalogus</a>
+      <a class="index-footer__link customer-service-href" href="customer-service.html">Klantenservice</a>
+      <a class="index-footer__link marketing-href" href="marketing.html">Marketing</a>
+      <a class="index-footer__link corporate-translation-href" href="corporate-translation.html">Corporate Translation</a>
     </div>
     <div class="d-flex flex-column px-2">
       <p class="index-footer__cat">Product</p>
-      <a class="index-footer__link" href="features.html">Zo werkt het</a>
+      <a class="index-footer__link features-href" href="features.html">Zo werkt het</a>
       <a class="index-footer__link" href="https://docs.tolq.com/docs">API documentatie</a>
     </div>
     <div class="d-flex flex-column px-2">
@@ -459,6 +459,56 @@
       $('.german-guide').remove();
     }
   </script>
+
+<script>
+  $(document).ready(function() {
+
+    if (window.location.pathname.includes('/de/')) {
+
+      $('.contact-href').attr('href', 'kontakt.html')
+      $('.corporate-translation-href').attr('href', 'unternehmensübersetzung.html')
+      $('.customer-service-href').attr('href', 'kundenservice.html')
+      $('.features-href').attr('href', 'merkmale.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'produktkatalog.html')
+      $('.translators-href').attr('href', 'übersetzer.html')
+    }
+
+    if (window.location.pathname.includes('/fr/')) {
+
+      $('.contact-href').attr('href', 'contact.html')
+      $('.corporate-translation-href').attr('href', 'traduction-en-entreprise.html')
+      $('.customer-service-href').attr('href', 'service-client.html')
+      $('.features-href').attr('href', 'caractéristiques.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'catalogue-de-produits.html')
+      $('.translators-href').attr('href', 'traducteurs.html')
+    }
+
+    if (window.location.pathname.includes('/it/')) {
+
+      $('.contact-href').attr('href', 'contatti.html')
+      $('.corporate-translation-href').attr('href', 'traduzione-aziendale.html')
+      $('.customer-service-href').attr('href', 'assistenza-clienti.html')
+      $('.features-href').attr('href', 'caratteristiche.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'catalogo-prodotti.html')
+      $('.translators-href').attr('href', 'traduttori.html')
+      }
+
+    if (window.location.pathname.includes('/nl/')) {
+
+      $('.contact-href').attr('href', 'contact.html')
+      $('.corporate-translation-href').attr('href', 'bedrijfsvertalingen.html')
+      $('.customer-service-href').attr('href', 'klantenservice.html')
+      $('.features-href').attr('href', 'features.html')
+      $('.marketing-href').attr('href', 'marketing.html')
+      $('.product-catalog-href').attr('href', 'productcatalogus.html')
+      $('.translators-href').attr('href', 'vertalers.html')
+    }
+  })
+  </script>
+
   <script>
     // $( document ).ready(function() {
       var lang = location.pathname.substring(0, 3);
