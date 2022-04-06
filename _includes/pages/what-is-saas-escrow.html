@@ -1,0 +1,158 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+    <!-- Leadinfo tracking code -->
+<script>
+  (function(l,e,a,d,i,n,f,o){if(!l[i]){l.GlobalLeadinfoNamespace=l.GlobalLeadinfoNamespace||[];
+  l.GlobalLeadinfoNamespace.push(i);l[i]=function(){(l[i].q=l[i].q||[]).push(arguments)};l[i].t=l[i].t||n;
+  l[i].q=l[i].q||[];o=e.createElement(a);f=e.getElementsByTagName(a)[0];o.async=1;o.src=d;f.parentNode.insertBefore(o,f);}
+  }(window,document,"script","https://cdn.leadinfo.net/ping.js","leadinfo","LI-615C0E87ED394"));
+  </script>
+  <div class="resources bg-alice-blue">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content overflow-hidden">
+      <div class="header__bg2 pb-4">
+        <div class="container">
+          <p class="product__title mx-auto text-air-force-blue mt-4">{{ site.data[page.lang]['resources']['guide_informations'] }}</p>
+          <div class="product__header-devider mx-auto"></div>
+          <h1 class="header__title mx-auto text-cerulean mt-3">{{ site.data[page.lang]['saas_escrow']['saas_escrow'] }}</h1>
+          <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['saas_escrow']['learn_how'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- First Section -->
+    <div class="container section-medium">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <p class="info__source-title mt-4">{{ site.data[page.lang]['saas_escrow']['what_is_saas'] }}</p>
+          <p class="info__source-subtitle mt-4 mb-5">{{ site.data[page.lang]['saas_escrow']['in_simple_terms'] }}</p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <div class="info__box-definition mx-auto mt-5">
+            <p class="info__definition-title">{{ site.data[page.lang]['saas_escrow']['definition'] }}</p>
+            <p class="info__definition-subtitle mt-2">{{ site.data[page.lang]['saas_escrow']['saas_escrow_is'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="info__section-container mx-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h2 class="info__section-title mt-5">{{ site.data[page.lang]['saas_escrow']['who_is_saas'] }}</h2>
+            <p class="info__section-subtitle">{{ site.data[page.lang]['saas_escrow']['it_is_intended'] }}</p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style mt-4 p-4" src="/images/resources-page/who-is-saas-escrow.webp"/>
+          </div>
+        </div>
+        <div class="info__section-devider"></div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__section-title mt-3">{{ site.data[page.lang]['saas_escrow']['why_do_developers'] }}</h2>
+            <p class="info__section-subtitle2">{{ site.data[page.lang]['saas_escrow']['modern_saas_escrow'] }}</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h2 class="info__section-title mt-3">{{ site.data[page.lang]['saas_escrow']['why_do_end_users'] }}</h2>
+            <p class="info__section-subtitle3">{{ site.data[page.lang]['saas_escrow']['licensees'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="container section-medium">
+      <div class="row column-reverse-mobile">
+        <div class="col-md-6 col-sm-12">
+          <img class="image-style" src="/images/features-page/escrow-management.webp"/>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2 class="protect__title ml-auto">{{ site.data[page.lang]['saas_escrow']['saas_escrow_for'] }}</h2>
+          <p class="protect__subtitle ml-auto mt-3">{{ site.data[page.lang]['saas_escrow']['discover_how'] }}</p>
+          <a class="button btn-secondary-large ml-auto my-5 resources-href" href="resources.html">
+            {{ site.data[page.lang]['index']['learn_more'] }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth Section -->
+    <div class="pt-5 px-3 features position-relative">
+      <div class="explore__section-container2 mx-auto">
+        <div class="container">
+          <h2 class="discover__title">{{ site.data[page.lang]['saas_escrow']['how_does'] }}</h2>
+          <p class="discover__subtitle2 mx-auto mt-4">{{ site.data[page.lang]['saas_escrow']['as_a_trusted'] }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Guide Section -->
+    <div class="mt-negative-50">
+      {% include escrow-introduction.html %}
+    </div>
+    <!-- Fifth Section -->
+    {% include blog-articles.html %}
+    <!-- Sixth Section -->
+    {% include secure-assets.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+        function success(response) {
+          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            $('.setup-fee').text('€249');
+            $('#developer-monthly').text('€79');
+          }
+          else if (response.currency === 'GBP') {
+            $('.setup-fee').text('£199');
+            $('#developer-monthly').text('£59');
+          }
+          else if (response.currency === 'INR') {
+            $('.setup-fee').text('₹15,000');
+            $('#developer-monthly').text('₹5,000');
+          }
+          else if (response.currency === 'AUD') {
+            $('.setup-fee').text('A$299');
+            $('#developer-monthly').text('A$99');
+          }
+          else if (response.currency === 'SGD') {
+            $('.setup-fee').text('$299');
+            $('#developer-monthly').text('$99');
+          }
+          else if (response.currency === 'ZAR') {
+            $('.setup-fee').text('R3,499');
+            $('#developer-monthly').text('R1,099');
+          }
+          else if (response.currency === 'CHF') {
+            $('.setup-fee').text('CHF275');
+            $('#developer-monthly').text('CHF89');
+          }
+          else if (response.currency === 'CAD') {
+            $('.setup-fee').text('CA$299');
+            $('#developer-monthly').text('CA$99');
+          }
+        },
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
+</body>

@@ -1,62 +1,62 @@
 <!DOCTYPE html>
-<div class="features-header__container container">
-  <div class="row">
-    <div class="col">
-      <nav class="navbar navbar-expand-lg navbar-light index-header__container-nav position-relative">
-        <a href="index.html"><img src="/images/logo.svg" class="features-header__logo" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
-          aria-controls="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mr-auto ml-sm-0 ml-lg-4 mt-0 mt-lg-1">
-            <li class="nav-item">
-              <a class="nav-link features-href" href="features.html">{{ site.data[page.lang]['navigation']['how_it_works'] }}</a>
-            </li>
-            <span class="-is-mobile">
-              <li class="nav-item"><a class="nav-link product-catalog-href" href="product-catalog.html">{{ site.data[page.lang]['navigation']['product_catalog'] }}</a></li>
-              <li class="nav-item"><a class="nav-link customer-service-href" href="customer-service.html">{{ site.data[page.lang]['navigation']['customer_service'] }}</a></li>
-              <li class="nav-item"><a class="nav-link marketing-href" href="marketing.html">{{ site.data[page.lang]['navigation']['marketing'] }}</a></li>
-              <li class="nav-item"><a class="nav-link corporate-translation-href" href="corporate-translation.html.html">{{ site.data[page.lang]['navigation']['corporate_translation'] }}</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://calendly.com/tolq">{{ site.data[page.lang]['navigation']['book_a_demo'] }}</a></li>
-            </span>
-            <li class="features-header__dropdown">
-              <a href="#" class="nav-link">{{ site.data[page.lang]['navigation']['solutions'] }} <i
-                  class="fas fa-chevron-down ml-1 features-header__dropdown-icon"></i></a>
-              <ul class="dropdown z-index-9">
-                <div class="dropdown-content">
-                  <li><a class="product-catalog-href" href="product-catalog.html">{{ site.data[page.lang]['navigation']['product_catalog'] }}</a></li>
-                  <li><a class="customer-service-href" href="customer-service.html">{{ site.data[page.lang]['navigation']['customer_service'] }}</a></li>
-                  <li><a class="marketing-href" href="marketing.html">{{ site.data[page.lang]['navigation']['marketing'] }}</a></li>
-                  <li><a class="corporate-translation-href" href="corporate-translation.html">{{ site.data[page.lang]['navigation']['corporate_translation'] }}</a></li>
-                </div>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link contact-href" href="contact.html">{{ site.data[page.lang]['navigation']['contact_us'] }}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link translators-href" href="translators.html">{{ site.data[page.lang]['navigation']['translator'] }}</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav my-2 my-lg-0">
-            <li class="nav-item mt-lg-1 features-header__login">
-              <a href="https://clients.tolq.com/sign_in">{{ site.data[page.lang]['navigation']['login'] }}</a>
-            </li>
-            <li class="nav-item features-header__book">
-              <!-- <a href="https://calendly.com/tolq">
-                <button class="btn-initial btn-outline">{{ site.data[page.lang]['navigation']['book_a_demo'] }}</button>
-              </a> -->
-              <a href="https://clients.tolq.com/sign_up">
-                <button class="btn-initial btn-outline">{{ site.data[page.lang]['homepage']['sign_up_for'] }}</button>
-              </a>
-              <!-- <button class="btn-initial btn-outline" type="button" id="button-addon2"><a
-                href="https://clients.tolq.com/sign_up">{{ site.data[page.lang]['homepage']['sign_up_for'] }}</a></button> -->
-            </li>
-          </ul>
+<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+  <div class="container p-3">
+    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link nav-margin features-href" href="features.html">{{ site.data[page.lang]['navigation']['features'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-margin pricing-href" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">{{ site.data[page.lang]['navigation']['integrations'] }}</a>
+        </li>
+        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
+        </li>
+        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin verification-href" href="verification.html">{{ site.data[page.lang]['navigation']['verification'] }}</a>
+        </li>
+        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin resources-href" href="resources.html">{{ site.data[page.lang]['navigation']['all_resources'] }}</a>
+        </li>
+        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
+        </li>
+        <div class="dropdown show-desktop">
+          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ site.data[page.lang]['navigation']['add_ons'] }} <img class="ml-1" src="/images/integrations/icon-down.svg"/>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item py-2 saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['navigation']['saas_escrow'] }}</a>
+            <a class="dropdown-item py-2 verification-href" href="verification.html">{{ site.data[page.lang]['navigation']['verification'] }}</a>
+          </div>
         </div>
-      </nav>
+        <div class="dropdown show-desktop">
+          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ site.data[page.lang]['navigation']['resources'] }} <img class="ml-1" src="/images/integrations/icon-down.svg"/>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <a class="dropdown-item py-2 resources-href" href="resources.html">{{ site.data[page.lang]['navigation']['all_resources'] }}</a>
+            <a class="dropdown-item py-2" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
+          </div>
+        </div> 
+        
+        <li class="nav-item">
+          <a class="nav-link nav-margin contact-href" href="contact.html">{{ site.data[page.lang]['navigation']['contact'] }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
+        </li>
+        <a class="button btn-secondary-large nav-margin pricing-href" href="pricing.html">
+          {{ site.data[page.lang]['navigation']['get_started'] }}
+        </a>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
