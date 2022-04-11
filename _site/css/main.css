@@ -7499,6 +7499,26 @@ html {
 .overflow-hidden {
   overflow: hidden !important; }
 
+.overflow-visible {
+  overflow: visible !important; }
+
+.container-ml-spacing {
+  margin-left: 15% !important; }
+  @media (max-width: 992px) {
+    .container-ml-spacing {
+      margin-left: 5% !important; } }
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  height: 0;
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
+
+.overflow-x-scroll {
+  overflow-x: scroll !important;
+  scrollbar-width: none !important; }
+
 .fw-bold {
   font-weight: bold !important; }
 
@@ -9424,12 +9444,9 @@ html {
   -webkit-box-shadow: 2px 9px 20px #EEF1F6;
   box-shadow: 2px 9px 20px #EEF1F6;
   min-height: 340px;
-  max-width: 370px;
+  min-width: 370px;
   padding: 25px;
-  margin-top: 60px; }
-  @media (max-width: 992px) {
-    .mentions__box {
-      margin-top: 50px; } }
+  margin-top: 10px; }
 
 .mentions__box-second {
   background: #ffffff;
