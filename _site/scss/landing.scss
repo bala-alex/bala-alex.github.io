@@ -1698,10 +1698,14 @@
     background: $white;
     border-radius: 20px;
     box-shadow: 2px 9px 20px #EEF1F6;
-    min-height: 300px;
-    min-width: 370px;
+    min-height: 340px;
+    max-width: 370px;
     padding: 25px;
-    margin-top: 10px;
+    margin-top: 60px;
+    @include screen-md {
+      margin-top: 50px;
+    }
+
   }
 
   &__box-second {
