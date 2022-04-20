@@ -441,7 +441,7 @@
               <div class="col-md-5 col-sm-12">
                 <div class="steps__content">
                   <p class="steps__title ml-auto">Pasul 1</p>
-                  <p class="steps__subtitle ml-auto text-right">Pentru a activa o integrare, trebuie să vă conectați la <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> și accesați tabloul de bord, selectați <strong>Integrații</strong> situat în meniul din bara laterală din stânga a ecranului dvs.:</p>
+                  <p class="steps__subtitle ml-auto text-right">Pentru a activa o integrare, trebuie să vă conectați la <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> și accesați tabloul de bord, selectați <strong>Integrările</strong> situate în meniul din bara laterală din stânga a ecranului dvs.:</p>
                 </div>
               </div>
               <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
@@ -486,7 +486,7 @@
 
           <div class="container steps__mobile">
             <p class="steps__title">Pasul 1</p>
-            <p class="steps__subtitle">Pentru a activa o integrare, trebuie să vă conectați la <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> și accesați tabloul de bord, selectați <strong>Integrații</strong> situat în meniul din bara laterală din stânga a ecranului dvs.:</p>
+            <p class="steps__subtitle">Pentru a activa o integrare, trebuie să vă conectați la <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> și accesați tabloul de bord, selectați <strong>Integrările</strong> situate în meniul din bara laterală din stânga a ecranului dvs.:</p>
             <img class="steps__image mt-4" src="/images/integration-page/step-1.webp"/>
             <p class="steps__title mt-5">Pasul 2</p>
             <p class="steps__subtitle text-start">Odată ajuns pe pagină, veți vedea toate aplicațiile noastre încorporate cu care ne integrăm. De aici veți selecta platforma de integrare dorită și faceți clic pe butonul <strong>„Activați”</strong>.</p>
@@ -541,6 +541,7 @@
             <option value="2" id="dutch">Olandeză</option>
             <option value="3" id="german">Germană</option>
             <option value="4" id="spanish">Spaniolă</option>
+            <option value="5" id="romanian">Romană</option>
           </select>
         </div>
       </div>
@@ -734,17 +735,20 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés')) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză')) {
     window.location = '/index.html';
   }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés')) {
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană')) {
     window.location = '/de/index.html';
   }
-  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española')) {
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă')) {
     window.location = '/es/index.html';
+  }
+  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') | (lang === 'Romană')) {
+    window.location = '/ro/index.html';
   }
 
 }
@@ -761,22 +765,27 @@ document.addEventListener("click", closeAllSelect);
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés')) {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') ) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană')) {
           $element.remove();
         }
       }
       else if (lang === '/es') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española')) {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/ro') {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Romană')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză')) {
           $element.remove();
         }
       }

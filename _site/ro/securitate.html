@@ -186,12 +186,12 @@
             <h2 class="infrastructure__title">Criptarea datelor</h2>
             <p class="infrastructure__subtitle mt-4">Utilizăm criptarea pentru a adăuga un nivel suplimentar de securitate datelor dvs. aflate în repaus în cloud, folosind funcții de criptare scalabile și eficiente. Ei includ:</p>
             <p class="infrastructure__text"><i class="fas fa-circle fa-xs text-white mr-2"></i>criptarea datelor;</p>
-            <p class="infrastructure__text"><i class="fas fa-circle fa-xs text-white mr-2"></i></p>
+            <p class="infrastructure__text"><i class="fas fa-circle fa-xs text-white mr-2"></i>management flexibil al cheilor;</p>
             <p class="infrastructure__text"><i class="fas fa-circle fa-xs text-white mr-2"></i>cozi de mesaje criptate;</p>
           </div>
           <div class="col-md-5 col-sm-12 mt-5">
             <h2 class="infrastructure__title">Atenuare DDos</h2>
-            <p class="infrastructure__subtitle2 mt-4 text-white">puteți folosi o combinație de servicii pentru a implementa o strategie de apărare aprofundată și a contracara atacurile DDoS. Serviciile noastre sunt concepute cu un răspuns automat la DDoS, ceea ce ajută la minimizarea timpului necesar pentru atenuarea și reducerea impactului.</p>
+            <p class="infrastructure__subtitle2 mt-4 text-white">Puteți folosi o combinație de servicii pentru a implementa o strategie de apărare aprofundată și a contracara atacurile DDoS. Serviciile noastre sunt concepute cu un răspuns automat la DDoS, ceea ce ajută la minimizarea timpului necesar pentru atenuarea și reducerea impactului.</p>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
         <div class="container section-small">
           <div class="row pb-5">
             <div class="col-md-6 col-sm-12">
-              <h2 class="infrastructure__title text-sherpa-blue">certificări</h2>
+              <h2 class="infrastructure__title text-sherpa-blue">Certificări</h2>
               <p class="infrastructure__subtitle text-air-force-blue mt-4">Funcționăm în conformitate cu regulile ISO27001.<br> Certificari pentru centre de date:</p>
               <p class="infrastructure__text2"><i class="fas fa-circle fa-xs text-bondi-blue mr-2"></i>Cloud Security Alliance Controls (CSA)</p>
               <p class="infrastructure__text2"><i class="fas fa-circle fa-xs text-bondi-blue mr-2"></i>ISO 9001 - Standard global de calitate</p>
@@ -359,7 +359,7 @@
           </li>
           <li class="a section__text">ÎNTREȚINERE ECHIPAMENTE<br>Partenerul nostru din centrul de date monitorizează și efectuează întreținerea preventivă a echipamentelor electrice și mecanice pentru a menține operabilitatea continuă a sistemelor din centrele de date. Procedurile de întreținere a echipamentelor sunt efectuate de persoane calificate și finalizate conform unui program de întreținere documentat.<br><br>MANAGEMENTUL MEDIULUI<br>Partenerul nostru din centrul de date monitorizează sistemele și echipamentele electrice și mecanice pentru a permite identificarea imediată a problemelor. Acest lucru se realizează prin utilizarea instrumentelor de audit continuu și a informațiilor furnizate prin sistemele noastre de management al clădirilor și de monitorizare electrică. Întreținerea preventivă este efectuată pentru a menține funcționarea continuă a echipamentului.</li>
           <li class="q d-flex align-items-center justify-content-between q-border">
-            <p class="section__subtitle mt-3"></p>
+            <p class="section__subtitle mt-3">Guvernare și risc</p>
             <img src="/images/integrations/icon-down.svg"/>
           </li>
           <li class="a section__text">GESTIONAREA RISCURILOR CENTRULUI DE DATE<br>Partenerul nostru din centrul de date efectuează periodic analize ale amenințărilor și vulnerabilităților centrelor de date. Evaluarea continuă și atenuarea vulnerabilităților potențiale se realizează prin activități de evaluare a riscurilor din centrul de date. Această evaluare este efectuată în plus față de procesul de evaluare a riscurilor la nivel de întreprindere utilizat pentru a identifica și gestiona riscurile prezentate afacerii în ansamblu. Acest proces ia în considerare, de asemenea, riscurile regionale de reglementare și de mediu.<br><br>ATESTAREA DE SECURITATE DE LA TERȚI PĂRȚI<br>Testările de la terțe părți ale centrelor de date, așa cum sunt documentate în rapoartele noastre terță parte, asigură că partenerul nostru din centrele de date are în mod corespunzător a implementat măsuri de securitate aliniate la regulile stabilite necesare pentru obținerea certificărilor de securitate. În funcție de programul de conformitate și de cerințele acestuia, auditorii externi pot efectua testarea eliminării materialelor media, pot analiza imaginile camerelor de securitate, pot observa intrările și holurile într-un centru de date, pot testa dispozitivele electronice de control al accesului și pot examina echipamentele centrului de date.</li>
@@ -401,6 +401,7 @@
             <option value="2" id="dutch">Olandeză</option>
             <option value="3" id="german">Germană</option>
             <option value="4" id="spanish">Spaniolă</option>
+            <option value="5" id="romanian">Romană</option>
           </select>
         </div>
       </div>
@@ -594,17 +595,20 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés')) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză')) {
     window.location = '/index.html';
   }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés')) {
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană')) {
     window.location = '/de/index.html';
   }
-  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española')) {
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă')) {
     window.location = '/es/index.html';
+  }
+  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') | (lang === 'Romană')) {
+    window.location = '/ro/index.html';
   }
 
 }
@@ -621,22 +625,27 @@ document.addEventListener("click", closeAllSelect);
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés')) {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') ) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană')) {
           $element.remove();
         }
       }
       else if (lang === '/es') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española')) {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/ro') {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Romană')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză')) {
           $element.remove();
         }
       }

@@ -144,6 +144,7 @@
             <option value="2" id="dutch">Neerlandés</option>
             <option value="3" id="german">Alemán</option>
             <option value="4" id="spanish">Española</option>
+            <option value="5" id="romanian">Rumano</option>
           </select>
         </div>
       </div>
@@ -336,17 +337,20 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés')) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză')) {
     window.location = '/index.html';
   }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés')) {
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană')) {
     window.location = '/de/index.html';
   }
-  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española')) {
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă')) {
     window.location = '/es/index.html';
+  }
+  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') | (lang === 'Romană')) {
+    window.location = '/ro/index.html';
   }
 
 }
@@ -363,22 +367,27 @@ document.addEventListener("click", closeAllSelect);
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés')) {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') ) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană')) {
           $element.remove();
         }
       }
       else if (lang === '/es') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española')) {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/ro') {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Romană')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză')) {
           $element.remove();
         }
       }
