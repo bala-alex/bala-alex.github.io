@@ -8075,10 +8075,11 @@ html {
   margin-bottom: 16px; }
 
 .protect__logos {
-  max-width: 120px;
-  min-width: 120px;
+  width: 120px;
   max-height: 51px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  -o-object-fit: contain;
+  object-fit: contain; }
 
 .works__title {
   font-size: 42px !important;
@@ -8097,7 +8098,9 @@ html {
 
 .works__icon {
   width: 20px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  -o-object-fit: contain;
+  object-fit: contain; }
 
 .works__config {
   padding: 0;

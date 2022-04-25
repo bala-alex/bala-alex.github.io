@@ -232,10 +232,10 @@
   }
 
   &__logos {
-    max-width: 120px;
-    min-width: 120px;
+    width: 120px;
     max-height: 51px;
     margin-top: 20px;
+    object-fit: contain;
   }
 }
 
@@ -262,6 +262,7 @@
   &__icon {
     width: 20px;
     margin-left: 15px;
+    object-fit: contain;
   }
 
   &__config {
