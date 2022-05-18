@@ -12,6 +12,10 @@
   <link href="/images/logos/logo.png" rel="icon" sizes="16x16" type="image/png" />
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
@@ -306,15 +310,29 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <h2 class="software__title">Protect your most critical code and data </h2>
+          <h2 class="software__title mt-4">Protect your most critical code and data </h2>
           <p class="software__subtitle mt-4">Set up your first software escrow agreement today and secure your assets in minutes. Take advantage of industry-leading automation, security, and recovery features at the best price on the market. </p>
-          <a class="button btn-yellow my-5 pricing-href" href="pricing.html">
-            GET STARTED
-          </a>
+          <div class="my-4">
+            <a data-toggle="modal" data-target="#meetingModal" class="button btn-yellow outline-none underline-none">
+              Book a Demo 
+            </a>
+          </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <img class="software__image" src="/images/homepage/ipad-screen.webp"/>
+          <img class="software__image" src="/images/landing/laptop.webp"/>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Book a demo modal -->
+  <div class="modal fade meeting-modal" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-content bg-transparent border-0">
+        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/danny70?embed=true"></div>
+        <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
       </div>
     </div>
   </div>
@@ -326,7 +344,7 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
-        <p class="footer__subtitle">Source Code Escrow for Developers </p>
+        <p class="footer__subtitle">Software Escrow </p>
         <div class="custom-select custom-select-width">
           <select>
             <option value="0">Select language</option>
@@ -531,7 +549,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/ro') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Romană')) {
+        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană')) {
           $element.remove();
         }
       }
@@ -546,7 +564,7 @@ document.addEventListener("click", closeAllSelect);
 
 <script>
   $(document).ready(function() {
-
+    const isClient = window?.location?.search;
     if (window.location.pathname.includes('/es/')) {
 
       $('.check-email-href').attr('href', 'comprobar-correo.html')
@@ -587,6 +605,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'qué-es-el-depósito-de-información.html')
       $('.what-is-saas-escrow-href').attr('href', 'qué-es-el-depósito-de-saas.html')
       $('.what-is-source-code-escrow-href').attr('href', 'qué-es-el-depósito-de-código-fuente.html')
+      $('.book-a-demo-href').attr('href', 'reservar-una-demostración.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -629,6 +648,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'was-ist-information-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'was-ist-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'was-ist-quellcode-escrow.html')
+      $('.book-a-demo-href').attr('href', 'demo-buchen.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -671,6 +691,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'wat-is-informatie-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'wat-is-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'wat-is-source-code-escrow.html')
+      $('.book-a-demo-href').attr('href', 'boek-een-demot.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -712,47 +733,65 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'ce-este-informații-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'ce-este-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'ce-este-escrow-cod-sursă.html')
+      $('.book-a-demo-href').attr('href', 'rezerva-o-demonstrație.html')
       }
   })
-  </script>
+</script>
 
-  <script>
-    var pathname = location.pathname;
+<script>
+  var pathname = location.pathname;
 
-    if (pathname.includes('/es/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
-    else if (pathname.includes('/nl/')) {
-      $('.english-guide').remove();
-      $('.spanish-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
+  if (pathname.includes('/es/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
+  else if (pathname.includes('/nl/')) {
+    $('.english-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
 
-    else if (pathname.includes('/de/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.spanish-guide').remove();
-      $('.romanian-guide').remove();
-    }
+  else if (pathname.includes('/de/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.romanian-guide').remove();
+  }
 
-    else if (pathname.includes('/ro/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.spanish-guide').remove();
-      $('.german-guide').remove();
-    }
+  else if (pathname.includes('/ro/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+  }
 
-    else {
-      $('.spanish-guide').remove();
-      $('.dutch-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
-  </script>
+  else {
+    $('.spanish-guide').remove();
+    $('.dutch-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
+</script>
+
+<script>
+  $( document ).ready(function() {
+    const isClient = window?.location?.search;
+
+  if (isClient) {
+    $('.is-client').removeClass('d-none');
+    $('.is-developer').addClass('d-none');
+  } else {
+    $('.is-developer').removeClass('d-none');
+    $('.is-client').addClass('d-none');
+  }
+  });
+
+
+</script>
+
 
   <script>
     $( document ).ready(function() {

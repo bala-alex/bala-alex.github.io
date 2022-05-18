@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border-radius: 5px;
   border: 1px solid $bondi-blue;
   height: 50px;
   width: max-content;
@@ -12,7 +12,7 @@
   padding: 0 30px;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   &:hover {
     color: $white !important;
     text-decoration: none;
@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border-radius: 5px;
   border: 1px solid $bondi-blue;
   height: 50px;
   width: max-content;
@@ -37,12 +37,37 @@
   padding: 0 30px;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   &:hover {
     color: $white !important;
     text-decoration: none;
     background-color: $bondi-blue !important;
     border: 1px solid $bondi-blue;
+    cursor: pointer;
+    transition: .3s;
+  }
+}
+
+.btn-white {
+  @include button-variant($white, $white, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $bondi-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 5px;
+  height: 50px;
+  min-width: 200px;
+  padding: 0 20px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  &:hover {
+    color: $bondi-blue !important;
+    text-decoration: none;
+    background-color: darken($white, 7.5%) !important;;
+    border: 1px solid $white;
     cursor: pointer;
     transition: .3s;
   }
@@ -55,13 +80,13 @@
   align-items: center;
   justify-content: center;
   background: $white;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   min-width: 200px;
   padding: 0 20px;
   width: fit-content;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
@@ -80,13 +105,13 @@
   align-items: center;
   justify-content: center;
   background: $white;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   min-width: 200px;
   padding: 0 20px;
   width: fit-content;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $cerulean !important;
@@ -105,17 +130,17 @@
   align-items: center;
   justify-content: center;
   background: $bondi-blue;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 250px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
-    background-color: $cerulean !important;
+    background-color: darken($bondi-blue, 7.5%) !important;
     text-decoration: none;
     border: 1px solid $cerulean;
     transition: all .3s;
@@ -130,13 +155,13 @@
   align-items: center;
   justify-content: center;
   background: $bondi-blue;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 200px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
 
   @media (min-width: 767px) and (max-width: 1000px) { 
@@ -145,9 +170,59 @@
 
   &:hover {
     color: $white !important;
-    background-color: $cerulean !important;
+    background-color: darken($bondi-blue, 7.5%) !important;
     text-decoration: none;
     border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-developer {
+  @include button-variant($primary-default, $primary-default, $active-background: darken($primary-default, 7.5%), $active-border: darken($primary-default, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary-default;
+  border-radius: 5px;
+  height: 50px;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($primary-default, 7.5%) !important;
+    text-decoration: none;
+    border: 1px solid $primary-default;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-client {
+  @include button-variant($secondary-default, $secondary-default, $active-background: darken($secondary-default, 7.5%), $active-border: darken($secondary-default, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary-default;
+  border-radius: 5px;
+  height: 50px;
+  width: max-content;
+  min-width: 250px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $white !important;
+    background-color: darken($secondary-default, 7.5%) !important;
+    text-decoration: none;
+    border: 1px solid $secondary-default;
     transition: all .3s;
     cursor: pointer;
   }
@@ -160,13 +235,13 @@
   align-items: center;
   justify-content: center;
   background: $cerulean;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 250px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
@@ -185,13 +260,13 @@
   align-items: center;
   justify-content: center;
   background: $cerulean;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 200px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
@@ -210,12 +285,12 @@
   align-items: center;
   justify-content: center;
   background: $cerulean;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
@@ -234,12 +309,12 @@
   align-items: center;
   justify-content: center;
   background: $white;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 38px;
   min-width: 117px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 12px;
   &:hover {
     color: $white !important;
@@ -258,13 +333,13 @@
   align-items: center;
   justify-content: center;
   background: $white;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 257px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $white !important;
@@ -283,13 +358,13 @@
   align-items: center;
   justify-content: center;
   background: $white;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 257px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $cerulean !important;
@@ -308,13 +383,13 @@
   align-items: center;
   justify-content: center;
   background: $yellow;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 200px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     color: $sherpa-blue !important;
@@ -333,13 +408,13 @@
   align-items: center;
   justify-content: center;
   background: $bondi-blue;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   min-width: 257px;
   padding: 0 20px;
   width: max-content;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     transition: all .3s;
@@ -359,7 +434,7 @@
   height: 40px;
   width: 100%;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     transition: all .3s;
@@ -374,13 +449,13 @@
   align-items: center;
   justify-content: center;
   background: $bondi-blue;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 50px;
   width: max-content;
   min-width: 200px;
   padding: 0 20px;
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     transition: all .3s;
@@ -396,11 +471,11 @@
   align-items: center;
   justify-content: center;
   background: $bondi-blue;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 35px;
   width: 141px;
   font-weight: normal;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   &:hover {
     transition: all .3s;
@@ -413,7 +488,7 @@
   color: $white;
   font-size: 16px;
   font-weight: normal;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   &:hover {
     color: $white;
     opacity: .7;

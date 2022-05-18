@@ -32,7 +32,7 @@ html {
 
 .nav-link {
   color: $sherpa-blue !important;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -160,7 +160,7 @@ html {
 
 .text-underline {
   text-decoration: underline;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .text-uppercase {
@@ -204,6 +204,10 @@ html {
 
 .fw-bold {
   font-weight: bold !important;
+}
+
+.fw-light {
+  font-weight: 300 !important;
 }
 
 .fw-600 {
@@ -269,12 +273,40 @@ html {
 	}
 }
 
+.fw-400 {
+  font-weight: 400 !important;
+}
+ 
 .max-w100 {
   max-width: 100% !important;
 }
 
 .bg-faded-gray {
   background-color: $faded-gray;
+}
+
+.bg-primary-default {
+  background-color: $primary-default;
+}
+
+.bg-secondary-default {
+  background-color: $secondary-default;
+}
+
+.text-primary {
+  color: $primary-default !important;
+}
+
+.text-secondary {
+  color: $secondary-default !important;
+}
+
+.border-primary {
+  border: 1px solid $primary-default !important;;
+}
+
+.border-secondary {
+  border: 1px solid $secondary-default !important;;
 }
 
 .bg-snow {
@@ -307,7 +339,7 @@ html {
 
 .questions-text {
   color: $bondi-blue;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -432,7 +464,7 @@ html {
   p {
     color: #fff;
     margin-bottom: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-weight: bold;
     font-size: 18px;
   }
@@ -587,7 +619,7 @@ html {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #818181;
 
   a {

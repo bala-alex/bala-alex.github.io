@@ -17,7 +17,7 @@
 }
 
 .navbar {
-  box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.06);
+  // box-shadow: 2px 4px 16px 0px rgba(51, 51, 51, 0.06);
 
   .dropdown-toggle::after {
     display: none !important;
@@ -25,7 +25,7 @@
 
   a.dropdown-item {
     color: $sherpa-blue !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -73,7 +73,7 @@
     text-align: center;
     line-height: 18px;
     height: 50px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__content {
@@ -83,7 +83,7 @@
 
   &__image {
     min-height: 650px !important;
-    background: url('../images/Background-fill.webp');
+    background: url('../images/landing/background-fill.webp');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover !important;
@@ -96,9 +96,9 @@
   &__title {
     font-size: 55px !important;
     line-height: 65px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 700;
+    font-weight: 200;
     letter-spacing: -0.42px;
     max-width: 531px;
     @include screen-sm {
@@ -109,11 +109,11 @@
   &__subtitle {
     color: $air-force-blue;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 32px;
     max-width: 443px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     @include screen-sm {
       text-align: center;
     }
@@ -128,7 +128,7 @@
     max-width: 443px;
     text-align: center;
     margin-top: -100px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     @include screen-md {
       margin-top: -140px;
     }
@@ -180,7 +180,7 @@
 
   &__background {
     min-height: 950px !important;
-    background: url('../images/homepage/protect-software-bg.webp');
+    background: url('../images/landing/protect-software-bg.webp');
     background-repeat: no-repeat;
     background-position: top; 
     background-size: cover !important;
@@ -195,9 +195,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     max-width: 460px;
     text-align: right;
@@ -206,11 +206,11 @@
   &__subtitle {
     color: $air-force-blue;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 32px;
     max-width: 473px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: right;
   }
 
@@ -220,7 +220,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
   }
 
@@ -244,9 +244,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: center;
   }
@@ -564,7 +564,7 @@
     height: 40px;
     border-radius: 20px;
     background-color: $bondi-blue;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $white;
     font-weight: 800;
     font-size: 24px;
@@ -629,9 +629,9 @@
   &__text {
     font-size: 30px !important;
     line-height: 38px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $cerulean;
-    font-weight: 600;
+    font-weight: 200;
     text-transform: lowercase;
 
     &::first-letter {
@@ -642,9 +642,9 @@
   &__subtext {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 345px;
   }
 
@@ -653,16 +653,16 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 400px;
   }
 
   &__info-text {
     color: $cerulean;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     line-height: 30px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
   }
 
@@ -714,7 +714,7 @@
 
   &__content-bg {
     min-height: 750px !important;
-    background: url('../images/homepage/escrow-role-bg.webp');
+    background: url('../images/landing/escrow-role-bg.webp');
     background-repeat: no-repeat;
     background-position: top; 
     background-size: cover !important;
@@ -729,7 +729,7 @@
 
   &__title {
     font-size: 44px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $night-black;
     font-weight: normal;
     letter-spacing: -0.42px;
@@ -744,7 +744,7 @@
     letter-spacing: 0px;
     line-height: 32px;
     max-width: 338px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: start;
   }
 
@@ -754,7 +754,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: start;
     max-width: 353px;
   }
@@ -791,9 +791,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: center;
   }
@@ -804,7 +804,7 @@
     font-weight: bold;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: end;
   }
 
@@ -814,7 +814,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: end;
     max-width: 351px;
   }
@@ -829,23 +829,23 @@
 .escrow3 {
 
   &__title {
-    font-size: 42px !important;
-    line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-size: 45px !important;
+    line-height: 55px;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     max-width: 465px;
   }
 
   &__subtitle {
     color: $air-force-blue;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 30px;
     max-width: 438px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__link {
@@ -854,7 +854,7 @@
     font-weight: bold;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 200px;
     text-decoration: underline !important;
     &:hover {
@@ -895,7 +895,7 @@
   &__number {
     font-size: 48px;
     line-height: 48px;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.6px;
     font-family: 'Rubik', sans-serif;
   }
@@ -913,7 +913,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 22px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 }
 
@@ -935,9 +935,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: right;
   }
@@ -945,7 +945,7 @@
   &__add-on {
     font-size: 20px !important;
     line-height: 25px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: #F7FBFF;
     font-weight: 700;
     letter-spacing: -0.42px;
@@ -961,36 +961,36 @@
   &__subtitle {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0px;
-    line-height: 32px;
+    line-height: 24px;
     max-width: 552px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: right;
   }
 
   &__title4 {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
   }
 
   &__subtitle4 {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0px;
-    line-height: 32px;
+    line-height: 24px;
     max-width: 552px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__title3 {
     font-size: 44px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $night-black;
     font-weight: normal;
     letter-spacing: -0.42px;
@@ -1005,14 +1005,14 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: end;
     max-width: 535px;
   }
 
   &__title2 {
     font-size: 14px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $cerulean;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1022,10 +1022,10 @@
   &__text {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: 0px;
-    line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    line-height: 24px;
+    font-family: 'Mulish', sans-serif;
     max-width: 295px;
     min-height: 80px;
 
@@ -1040,7 +1040,7 @@
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__image {
@@ -1061,7 +1061,7 @@
     font-weight: bold;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     &:hover {
       color: $bondi-blue;
       text-decoration: none;
@@ -1145,7 +1145,7 @@
 
   &__title {
     font-size: 28px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $white;
     font-weight: bold;
     letter-spacing: -0.2px;
@@ -1159,15 +1159,15 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 24px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 410px;
   }
 
   &__title2 {
     font-size: 42px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: bold;
+    font-weight: 200;
     letter-spacing: -0.2px;
     max-width: 547px;
     line-height: 42px;
@@ -1175,11 +1175,11 @@
 
   &__subtitle2 {
     color: $sherpa-blue;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 24px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 570px;
   }
 
@@ -1222,9 +1222,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: center;
     margin-bottom: 30px;
@@ -1235,19 +1235,19 @@
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0px;
-    line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    line-height: 24px;
+    font-family: 'Mulish', sans-serif;
     max-width: 852px;
     text-align: center;
   }
 
   &__subtext {
     color: $air-force-blue;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: 200;
     letter-spacing: 0px;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
 
     a {
@@ -1274,9 +1274,9 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: center;
     margin-bottom: 30px;
@@ -1284,10 +1284,10 @@
 
   &__subtitle {
     color: $air-force-blue;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 974px;
     text-align: center;
   }
@@ -1336,7 +1336,7 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 311px;
     margin-bottom: 10px;
   }
@@ -1344,9 +1344,9 @@
   &__section-subtitle {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 295px;
   }
 
@@ -1355,22 +1355,22 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 330px;
   }
 
   &__section-text {
     color: $sherpa-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 200;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
 
     a {
       color: $bondi-blue;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 
@@ -1395,29 +1395,29 @@
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
   }
 
   &__subtitle {
-    color: $air-force-blue;
-    font-size: 18px;
-    font-weight: normal;
+    color: $complementary-dull;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 32px;
     max-width: 540px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__subtext {
-    color: $air-force-blue;
+    color: $sherpa-blue;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0px;
     line-height: 22px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__text {
@@ -1426,7 +1426,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: right;
   }
 
@@ -1480,21 +1480,21 @@
   }
 
   &__section-title {
-    color: $sherpa-blue;
+    color: $complementary-dark;
     font-size: 16px;
     line-height: 32px;
     font-weight: 700;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
   }
 
   &__section-subtitle {
     color: $air-force-blue;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
     line-height: 30px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 303px;
   }
 
@@ -1503,7 +1503,7 @@
     font-size: 16px;
     line-height: 32px;
     font-weight: 700;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__section-subtitle2 {
@@ -1512,16 +1512,16 @@
     font-weight: normal;
     line-height: 27px;
     font-weight: 400;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 303px;
   }
 
   &__title {
     font-size: 42px !important;
     line-height: 53px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     text-align: center;
     margin-bottom: 30px;
@@ -1533,7 +1533,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
   }
 
@@ -1543,7 +1543,7 @@
     font-weight: bold;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
   }
 
   &__item-box {
@@ -1580,7 +1580,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 660px;
   }
 
@@ -1589,7 +1589,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     text-align: center;
   }
 
@@ -1632,7 +1632,7 @@
 
   &__title {
     font-size: 44px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $night-black;
     font-weight: normal;
     letter-spacing: -0.42px;
@@ -1641,7 +1641,7 @@
 
   &__title2 {
     font-size: 14px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $night-black;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1654,7 +1654,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 295px;
     min-height: 160px;
   }
@@ -1669,8 +1669,8 @@
 
   &__title {
     font-size: 44px !important;
-    font-weight: 300;
-    font-family: 'Muli', sans-serif;
+    font-weight: 200;
+    font-family: 'Mulish', sans-serif;
     color: $sherpa-blue;
     letter-spacing: -0.42px;
   }
@@ -1681,7 +1681,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     max-width: 280px;
   }
 
@@ -1691,7 +1691,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 28px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     min-height: 150px;
   }
 
@@ -1756,7 +1756,7 @@
     text-decoration: underline;
     color: $bondi-blue;
     text-transform: lowercase !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
 
     &:hover {
       color: $cerulean;
@@ -1773,9 +1773,9 @@
 
   &__title {
     font-size: 44px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $white;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: -0.42px;
     max-width: 434px;
   }
@@ -1783,10 +1783,10 @@
   &__subtitle {
     color: $white;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0px;
-    line-height: 32px;
-    font-family: 'Muli', sans-serif;
+    line-height: 24px;
+    font-family: 'Mulish', sans-serif;
     max-width: 504px;
   }
 
@@ -1800,15 +1800,17 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover !important;
-    padding-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   &__image {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    margin-bottom: -100px;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 470px;
   }
 }
 
@@ -1816,7 +1818,7 @@
 
   &__text {
     font-size: 14px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $cerulean;
     font-weight: 700;
     letter-spacing: 0px;
@@ -1833,9 +1835,9 @@
 
   &__text2 {
     font-size: 16px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $air-force-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 0px;
     line-height: 32px;
 
@@ -1846,16 +1848,16 @@
 
   &__subtitle {
     font-size: 16px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $air-force-blue;
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 0px;
     line-height: 26px;
   }
 
   &__subtext {
     font-size: 14px !important;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: $air-force-blue;
     letter-spacing: 0px;
     line-height: 18px;

@@ -12,6 +12,10 @@
   <link href="/images/logos/logo.png" rel="icon" sizes="16x16" type="image/png" />
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
@@ -104,17 +108,25 @@
         <div class="header__image">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-sm-12 mobile-centered pb-5">
-                <h1 class="header__title">Source code escrow for developers</h1>
+              <div class="col-md-6 col-sm-12 mobile-centered pb-5 pt-4">
+                <h1 class="header__title mt-4">Source code escrow for developers</h1>
                 <p class="header__subtitle mt-3 mt-lg-4">An all-in-one solution for software developers and publishers to provide source code escrow as part of service level and license agreements.</p>
-                <div class="mb-5 mt-3 mt-lg-4">
-                  <a class="button btn-cerulean pricing-href" href="pricing.html">
-                    GET STARTED
+                <div class="my-4">
+                  <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
+                    Book a Demo
                   </a>
                 </div>
+                <!-- <div class="my-5 d-flex">
+                  <a class="button btn-developer mr-2 features-href" href="features.html">
+                    I’m a Software Developer
+                  </a>
+                  <a class="button btn-client mr-2 features-href" href="features.html?client">
+                    I’m a Software Client
+                  </a>
+                </div> -->
               </div>
-              <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center pt-4">
-                <img loading="lazy" class="image-style" src="/images/Dashboard-escrow.webp" alt="Dashboard escrow"/>
+              <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+                <img loading="lazy" class="image-style" src="/images/landing/laptop.webp" alt="Dashboard escrow"/>
               </div>
             </div>
           </div>
@@ -122,7 +134,7 @@
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
-        <p class="protect__subtext text-bondi-blue fw-bold">Trusted partner of these great brands from around the world!</p>
+        <p class="protect__subtext text-bondi-blue fw-light">Trusted partner of these great brands from around the world!</p>
         <div class="tech-slideshow">
           <div class="slideshow-brands">
             <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
@@ -175,14 +187,16 @@
         <div class="container pb-0">
           <div class="row column-reverse-mobile">
             <div class="col-md-6 col-sm-12">
-              <img loading="lazy" class="image-style" src="/images/homepage/protect-software-icon.webp" alt="Protect software"/>
+              <img loading="lazy" class="image-style" src="/images/landing/protect-software-icon.webp" alt="Protect software"/>
             </div>
             <div class="col-md-6 col-sm-12">
               <h2 class="protect__title ml-auto text-white">Protect your software and save your money</h2>
               <p class="protect__subtitle ml-auto mt-3 text-white">Software escrow secures the source code needed to be recovered if a supplier is no longer able to provide access or support the software you need for your business operations with an independent 3rd party.</p>
-              <a class="button btn-yellow ml-auto mt-4 mb-5 pricing-href" href="pricing.html">
-                GET STARTED
-              </a>
+              <div class="my-4">
+                <a class="button btn-yellow ml-auto book-a-demo-href" href="book-a-demo.html">
+                  Book a Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -196,21 +210,21 @@
         <div class="row">
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/source-code-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/source-code-icon.webp"/>
               <p class="clients__section-title">SOURCE CODE ESCROW</p>
               <p class="clients__section-subtitle">A source code repository sometimes called a "project", is where developers store and work on software. It usually contains all versions of the code created.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/data-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/data-escrow-icon.webp"/>
               <p class="clients__section-title">DATA ESCROW</p>
               <p class="clients__section-subtitle">Data escrow allows you to store data as part of your escrow arrangement. Have access not just to the application, but also the data you need to pick up where you left off. </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/information-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/info-escrow-icon.webp"/>
               <p class="clients__section-title">INFORMATION ESCROW</p>
               <p class="clients__section-subtitle">Store intellectual property, passwords, designs, or other important digital assets using this option. </p>
             </div>
@@ -232,9 +246,11 @@
               <p class="automated__subtext mt-4 mb-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Automated and up-to-date deposits</p>
               <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Integrated with developer workflows</p>
               <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>No coding required </p>
-              <a class="button btn-cerulean my-5 integrations-href" href="integrations.html">
-                GET STARTED
-              </a>
+              <div class="my-4">
+                <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
+                  Book a Demo
+                </a>
+              </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <img loading="lazy" class="automated__image mt-5" src="/images/homepage/automated-deposit.webp" alt="Automated deposit"/>
@@ -313,9 +329,11 @@
             </div>
           </div>
         </div>
-        <a class="button btn-cerulean mx-auto my-5 pricing-href" href="pricing.html">
-          GET STARTED
-        </a>
+        <div class="my-5">
+          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
+            Book a Demo
+          </a>
+        </div>
       </div>
     </div>
     <!-- Fifth Section -->
@@ -423,9 +441,11 @@
           </div>
         </div>
         <p class="works__info-text">Find out more about our configuration process</p>
-        <a class="button btn-cerulean mx-auto mb-5 how-it-works-href" href="how-it-works.html">
-          LEARN MORE
-        </a>
+        <div class="my-4">
+          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
+            Book a Demo
+          </a>
+        </div>
       </div>
     </div>
     <!-- Seventh Section -->
@@ -440,9 +460,11 @@
               <h2 class="escrow3__title text-white">Escrow agreement included</h2>
               <p class="escrow3__subtitle text-white mt-4">A legally sound escrow agreement comes with each Codekeeper account. Together we customize it to fit your situation. No lawyer required!</p>
               <div class="d-flex flex-wrap align-items-center my-4">
-                <a class="button btn-yellow mr-4 my-4 pricing-href" href="pricing.html">
-                  GET STARTED
-                </a>
+                <div class="mr-4 my-4">
+                  <a class="button btn-yellow book-a-demo-href" href="book-a-demo.html">
+                    Book a Demo
+                  </a>
+                </div>
                 <a class="button escrow3__link mw-100 text-yellow" data-toggle="modal" data-target="#exampleModal4">
                   Download sample agreement
                 </a>
@@ -1235,19 +1257,120 @@
       
     <!-- Section -->
     <!DOCTYPE html>
-<div class="software__content overflow-hidden">
-  <div class="software__bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <h2 class="software__title">Protect your most critical code and data </h2>
-          <p class="software__subtitle mt-4">Set up your first software escrow agreement today and secure your assets in minutes. Take advantage of industry-leading automation, security, and recovery features at the best price on the market. </p>
-          <a class="button btn-yellow my-5 pricing-href" href="pricing.html">
-            GET STARTED
-          </a>
+<div class="resources">
+  <div class="container-fluid px-0">
+    <div class="intro__bg">
+      <div class="intro__col-green">
+        <div class="ml-2">
+          <img class="intro__image" src="/images/landing/intro-guide.webp"/>
+          <p class="intro__add-on text-uppercase">Ebook </p>
+          <h2 class="intro__title">Introduction to Software Escrow: A Guide</h2>
+          <p class="intro__subtitle mt-3">Learn how software escrow helps you mitigate risk and ensure your mission-critical systems remain unaffected through any circumstance.</p>
+          <div class="d-flex flex-wrap align-items-center my-4">
+            <a class="button btn-white my-4 mr-4" data-toggle="modal" data-target="#exampleModal22">
+              Download Guide
+            </a>
+            <a class="button intro__link mw-100 resources-href" href="resources.html">
+              More Free Resources
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <img class="software__image" src="/images/homepage/ipad-screen.webp"/>
+      </div>
+      <div class="intro__col">
+        <div class="ml-2">
+          <img class="intro__image mt-3 pb-3" src="/images/landing/get-started.webp"/>
+          <h2 class="intro__title2 mt-4">Protect your source code with Codekeeper</h2>
+          <p class="intro__subtitle2 mt-3">Software escrow secures the source code needed to recover if a supplier is no longer able to provide access or support the software you need for your business operations with an independent 3rd party.</p>
+          <div class="d-flex flex-wrap align-items-center my-4">
+            <a class="button btn-bondi-blue my-4 mr-4 pricing-href" href="pricing.html">
+              Get Started
+            </a>
+            <a class="button intro__link2 mw-100 book-a-demo-href" href="book-a-demo.html">
+              Book a Demo
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container">
+        <div class="guide__content2 d-flex align-items-center justify-content-between">
+          <img class="guide__image2 my-4" src="/images/resources-page/guide-introduction.webp"/>
+          <div>
+            <p class="verification__add-on text-uppercase mt-4">Ebook </p>
+            <h2 class="guide__title2">Introduction to Software Escrow: A Guide</h2>
+            <p class="guide__subtitle2 mt-3">Learn how software escrow helps you mitigate risk and ensure your mission-critical systems remain unaffected through any circumstance.</p>
+            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal22">
+              DOWNLOAD FREE GUIDE
+            </a>
+          </div>
+          
+        </div>
+      </div> -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content section__modal mx-auto">
+          <div class="modal-body p-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="m-0">
+              <div class="section__modal-image-content p-0 pt-5">
+                <p class="section__modal-title mt-3">Download this ebook for free!</p>
+              </div>
+              <div class="section__modal-form p-0 ">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  portalId: "5365877",
+                  formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*E-book available only in English</p>
+              </div>
+              <!-- <div class="section__modal-form p-0 spanish-guide">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5365877",
+                  formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*E-book available only in English</p>
+              </div> -->
+              <!-- <div class="section__modal-form p-0 german-guide">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5365877",
+                  formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*E-book available only in English</p>
+              </div> -->
+              <!-- <div class="section__modal-form p-0 dutch-guide">
+                <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+ 
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5365877",
+                  formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                });
+                </script>
+                <p class="section__modal-subtext mt-5">*E-book available only in English</p>
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1260,7 +1383,7 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
-        <p class="footer__subtitle">Source Code Escrow for Developers </p>
+        <p class="footer__subtitle">Software Escrow </p>
         <div class="custom-select custom-select-width">
           <select>
             <option value="0">Select language</option>
@@ -1468,7 +1591,7 @@ document.addEventListener("click", closeAllSelect);
         }
       }
       else if (lang === '/ro') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Romană')) {
+        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană')) {
           $element.remove();
         }
       }
@@ -1483,7 +1606,7 @@ document.addEventListener("click", closeAllSelect);
 
 <script>
   $(document).ready(function() {
-
+    const isClient = window?.location?.search;
     if (window.location.pathname.includes('/es/')) {
 
       $('.check-email-href').attr('href', 'comprobar-correo.html')
@@ -1524,6 +1647,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'qué-es-el-depósito-de-información.html')
       $('.what-is-saas-escrow-href').attr('href', 'qué-es-el-depósito-de-saas.html')
       $('.what-is-source-code-escrow-href').attr('href', 'qué-es-el-depósito-de-código-fuente.html')
+      $('.book-a-demo-href').attr('href', 'reservar-una-demostración.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -1566,6 +1690,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'was-ist-information-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'was-ist-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'was-ist-quellcode-escrow.html')
+      $('.book-a-demo-href').attr('href', 'demo-buchen.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1608,6 +1733,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'wat-is-informatie-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'wat-is-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'wat-is-source-code-escrow.html')
+      $('.book-a-demo-href').attr('href', 'boek-een-demot.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1649,47 +1775,65 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'ce-este-informații-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'ce-este-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'ce-este-escrow-cod-sursă.html')
+      $('.book-a-demo-href').attr('href', 'rezerva-o-demonstrație.html')
       }
   })
-  </script>
+</script>
 
-  <script>
-    var pathname = location.pathname;
+<script>
+  var pathname = location.pathname;
 
-    if (pathname.includes('/es/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
-    else if (pathname.includes('/nl/')) {
-      $('.english-guide').remove();
-      $('.spanish-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
+  if (pathname.includes('/es/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
+  else if (pathname.includes('/nl/')) {
+    $('.english-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
 
-    else if (pathname.includes('/de/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.spanish-guide').remove();
-      $('.romanian-guide').remove();
-    }
+  else if (pathname.includes('/de/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.romanian-guide').remove();
+  }
 
-    else if (pathname.includes('/ro/')) {
-      $('.english-guide').remove();
-      $('.dutch-guide').remove();
-      $('.spanish-guide').remove();
-      $('.german-guide').remove();
-    }
+  else if (pathname.includes('/ro/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+  }
 
-    else {
-      $('.spanish-guide').remove();
-      $('.dutch-guide').remove();
-      $('.german-guide').remove();
-      $('.romanian-guide').remove();
-    }
-  </script>
+  else {
+    $('.spanish-guide').remove();
+    $('.dutch-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
+  }
+</script>
+
+<script>
+  $( document ).ready(function() {
+    const isClient = window?.location?.search;
+
+  if (isClient) {
+    $('.is-client').removeClass('d-none');
+    $('.is-developer').addClass('d-none');
+  } else {
+    $('.is-developer').removeClass('d-none');
+    $('.is-client').addClass('d-none');
+  }
+  });
+
+
+</script>
+
   <script src="/js/easyResponsiveTabs.js"></script>
   <!--Plug-in Initialisation-->
 	<script type="text/javascript">

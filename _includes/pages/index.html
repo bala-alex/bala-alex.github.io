@@ -19,17 +19,25 @@
         <div class="header__image">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-sm-12 mobile-centered pb-5">
-                <h1 class="header__title">{{ site.data[page.lang]['index']['source_code_escrow_for'] }}</h1>
+              <div class="col-md-6 col-sm-12 mobile-centered pb-5 pt-4">
+                <h1 class="header__title mt-4">{{ site.data[page.lang]['index']['source_code_escrow_for'] }}</h1>
                 <p class="header__subtitle mt-3 mt-lg-4">{{ site.data[page.lang]['index']['an_all_in_one'] }}</p>
-                <div class="mb-5 mt-3 mt-lg-4">
-                  <a class="button btn-cerulean pricing-href" href="pricing.html">
-                    {{ site.data[page.lang]['index']['get_started'] }}
+                <div class="my-4">
+                  <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
+                    {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
                   </a>
                 </div>
+                <!-- <div class="my-5 d-flex">
+                  <a class="button btn-developer mr-2 features-href" href="features.html">
+                    I’m a Software Developer
+                  </a>
+                  <a class="button btn-client mr-2 features-href" href="features.html?client">
+                    I’m a Software Client
+                  </a>
+                </div> -->
               </div>
-              <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center pt-4">
-                <img loading="lazy" class="image-style" src="/images/Dashboard-escrow.webp" alt="Dashboard escrow"/>
+              <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+                <img loading="lazy" class="image-style" src="/images/landing/laptop.webp" alt="Dashboard escrow"/>
               </div>
             </div>
           </div>
@@ -37,7 +45,7 @@
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
-        <p class="protect__subtext text-bondi-blue fw-bold">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+        <p class="protect__subtext text-bondi-blue fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
         <div class="tech-slideshow">
           <div class="slideshow-brands">
             <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
@@ -90,14 +98,16 @@
         <div class="container pb-0">
           <div class="row column-reverse-mobile">
             <div class="col-md-6 col-sm-12">
-              <img loading="lazy" class="image-style" src="/images/homepage/protect-software-icon.webp" alt="Protect software"/>
+              <img loading="lazy" class="image-style" src="/images/landing/protect-software-icon.webp" alt="Protect software"/>
             </div>
             <div class="col-md-6 col-sm-12">
               <h2 class="protect__title ml-auto text-white">{{ site.data[page.lang]['index']['protect_your_software'] }}</h2>
               <p class="protect__subtitle ml-auto mt-3 text-white">{{ site.data[page.lang]['index']['software_escrow_secures'] }}</p>
-              <a class="button btn-yellow ml-auto mt-4 mb-5 pricing-href" href="pricing.html">
-                {{ site.data[page.lang]['index']['get_started'] }}
-              </a>
+              <div class="my-4">
+                <a class="button btn-yellow ml-auto book-a-demo-href" href="book-a-demo.html">
+                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -111,21 +121,21 @@
         <div class="row">
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/source-code-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/source-code-icon.webp"/>
               <p class="clients__section-title">{{ site.data[page.lang]['index']['source_code_escrow'] }}</p>
               <p class="clients__section-subtitle">{{ site.data[page.lang]['index']['a_source_code_repository'] }}</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/data-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/data-escrow-icon.webp"/>
               <p class="clients__section-title">{{ site.data[page.lang]['index']['data_escrow'] }}</p>
               <p class="clients__section-subtitle">{{ site.data[page.lang]['index']['data_escrow_allows'] }} </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 content-center">
             <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/homepage/information-escrow.svg"/>
+              <img class="clients__section-image" src="/images/landing/info-escrow-icon.webp"/>
               <p class="clients__section-title">{{ site.data[page.lang]['index']['information_escrow'] }}</p>
               <p class="clients__section-subtitle">{{ site.data[page.lang]['index']['store_intellectual_property'] }} </p>
             </div>
@@ -147,9 +157,11 @@
               <p class="automated__subtext mt-4 mb-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['index']['automated_and_up'] }}</p>
               <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['index']['integrated_with_developer'] }}</p>
               <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['index']['no_coding_required'] }} </p>
-              <a class="button btn-cerulean my-5 integrations-href" href="integrations.html">
-                {{ site.data[page.lang]['index']['get_started'] }}
-              </a>
+              <div class="my-4">
+                <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
+                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                </a>
+              </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <img loading="lazy" class="automated__image mt-5" src="/images/homepage/automated-deposit.webp" alt="Automated deposit"/>
@@ -228,9 +240,11 @@
             </div>
           </div>
         </div>
-        <a class="button btn-cerulean mx-auto my-5 pricing-href" href="pricing.html">
-          {{ site.data[page.lang]['index']['get_started'] }}
-        </a>
+        <div class="my-5">
+          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
+            {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+          </a>
+        </div>
       </div>
     </div>
     <!-- Fifth Section -->
@@ -338,9 +352,11 @@
           </div>
         </div>
         <p class="works__info-text">{{ site.data[page.lang]['index']['find_out_more'] }}</p>
-        <a class="button btn-cerulean mx-auto mb-5 how-it-works-href" href="how-it-works.html">
-          {{ site.data[page.lang]['index']['learn_more'] }}
-        </a>
+        <div class="my-4">
+          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
+            {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+          </a>
+        </div>
       </div>
     </div>
     <!-- Seventh Section -->
@@ -355,9 +371,11 @@
               <h2 class="escrow3__title text-white">{{ site.data[page.lang]['index']['excrow_agreement_included'] }}</h2>
               <p class="escrow3__subtitle text-white mt-4">{{ site.data[page.lang]['index']['a_legally_sound_escrow'] }}</p>
               <div class="d-flex flex-wrap align-items-center my-4">
-                <a class="button btn-yellow mr-4 my-4 pricing-href" href="pricing.html">
-                  {{ site.data[page.lang]['index']['get_started'] }}
-                </a>
+                <div class="mr-4 my-4">
+                  <a class="button btn-yellow book-a-demo-href" href="book-a-demo.html">
+                    {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                  </a>
+                </div>
                 <a class="button escrow3__link mw-100 text-yellow" data-toggle="modal" data-target="#exampleModal4">
                   {{ site.data[page.lang]['index']['download_sample'] }}
                 </a>
@@ -941,7 +959,7 @@
     </div>
       
     <!-- Section -->
-    {% include secure-assets.html %}
+    {% include intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>

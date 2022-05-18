@@ -4,15 +4,29 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <h2 class="software__title">{{ site.data[page.lang]['includes']['secure_assets']['protect_your'] }} </h2>
+          <h2 class="software__title mt-4">{{ site.data[page.lang]['includes']['secure_assets']['protect_your'] }} </h2>
           <p class="software__subtitle mt-4">{{ site.data[page.lang]['includes']['secure_assets']['set_up_your'] }} </p>
-          <a class="button btn-yellow my-5 pricing-href" href="pricing.html">
-            {{ site.data[page.lang]['includes']['secure_assets']['get_started'] }}
-          </a>
+          <div class="my-4">
+            <a data-toggle="modal" data-target="#meetingModal" class="button btn-yellow outline-none underline-none">
+              {{ site.data[page.lang]['book_demo']['book_a_demo'] }} 
+            </a>
+          </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <img class="software__image" src="/images/homepage/ipad-screen.webp"/>
+          <img class="software__image" src="/images/landing/laptop.webp"/>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Book a demo modal -->
+  <div class="modal fade meeting-modal" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-content bg-transparent border-0">
+        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/danny70?embed=true"></div>
+        <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
       </div>
     </div>
   </div>
