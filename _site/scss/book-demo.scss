@@ -120,9 +120,13 @@
     }
 
     &__bg2 {
-      background: linear-gradient(180deg, #F8FBFF -9.77%, rgba(248, 251, 255, 0) 82.6%);
+      background: linear-gradient(180deg, #F8FBFF -9.77%, rgba(248, 251, 255, 0) 42.6%);
       padding-top: 150px;
-      padding-bottom: 150px;
+      padding-bottom: 50px;
+
+      @include screen-sm {
+        padding-bottom: 0px;
+      }
     }
 
     &__title {
