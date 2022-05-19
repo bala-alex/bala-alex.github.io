@@ -114,6 +114,12 @@
 
   .questions {
     &__bg {
+      background: $alice-blue;
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+
+    &__bg2 {
       background: linear-gradient(180deg, #F8FBFF -9.77%, rgba(248, 251, 255, 0) 82.6%);
       padding-top: 150px;
       padding-bottom: 150px;
@@ -126,6 +132,13 @@
       font-size: 45px;
       line-height: 55px;
       color: $sherpa-blue;
+    }
+
+    &__image {
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     &__box {
@@ -144,7 +157,6 @@
         font-weight: 300;
         font-size: 32px;
         line-height: 40px;
-        color: $white;
         margin-bottom: 25px;
       }
 
@@ -154,8 +166,8 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 24px;
-        color: $white;
-        max-width: 385px;
+        color: #003543;
+        max-width: 480px;
         margin-bottom: 20px;
       }
     }

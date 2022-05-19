@@ -7779,6 +7779,9 @@ html {
 .mw-900 {
   max-width: 900px; }
 
+.mw-530 {
+  max-width: 530px; }
+
 .mw-800 {
   max-width: 800px !important; }
 
@@ -13990,7 +13993,7 @@ html {
       width: 100%; } }
 
 .resources .intro__bg {
-  background-color: #F9FCFF;
+  background-color: #ffffff;
   min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14013,14 +14016,16 @@ html {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-left: 4%; }
+  .resources .intro__col-spacing {
+    margin-right: auto; }
 
 .resources .intro__col-green {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   background-color: #009CB7;
-  border-top-right-radius: 200px;
   padding-top: 140px;
   padding-bottom: 100px;
   display: -webkit-box;
@@ -14028,7 +14033,11 @@ html {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-right: 4%;
+  padding-left: 15px; }
+  .resources .intro__col-green-spacing {
+    margin-left: auto; }
   @media (max-width: 992px) {
     .resources .intro__col-green {
       border-top-right-radius: 140px; } }
@@ -14100,7 +14109,7 @@ html {
   font-family: 'Mulish', sans-serif;
   max-width: 200px;
   text-decoration: underline !important;
-  color: #FFDF34; }
+  color: #ffffff; }
   .resources .intro__link:hover {
     opacity: 0.8;
     cursor: pointer; }
@@ -15378,6 +15387,11 @@ html {
       box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1) !important; }
 
 .book-demo .questions__bg {
+  background: #F9FCFF;
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.book-demo .questions__bg2 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-9.77%, #F8FBFF), color-stop(82.6%, rgba(248, 251, 255, 0)));
   background: -webkit-linear-gradient(top, #F8FBFF -9.77%, rgba(248, 251, 255, 0) 82.6%);
   background: -o-linear-gradient(top, #F8FBFF -9.77%, rgba(248, 251, 255, 0) 82.6%);
@@ -15393,6 +15407,13 @@ html {
   line-height: 55px;
   color: #00384B; }
 
+.book-demo .questions__image {
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain; }
+
 .book-demo .questions__box {
   width: 100%;
   min-height: 500px;
@@ -15407,7 +15428,6 @@ html {
     font-weight: 300;
     font-size: 32px;
     line-height: 40px;
-    color: #ffffff;
     margin-bottom: 25px; }
   .book-demo .questions__box-subtitle {
     font-family: 'Mulish';
@@ -15415,8 +15435,8 @@ html {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-    color: #ffffff;
-    max-width: 385px;
+    color: #003543;
+    max-width: 480px;
     margin-bottom: 20px; }
 
 .btn-secondary-lg {

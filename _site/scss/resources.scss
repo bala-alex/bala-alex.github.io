@@ -1308,7 +1308,7 @@
 
   .intro {
     &__bg {
-      background-color: $alice-blue;
+      background-color: $white;
       min-height: 800px;
       display: flex;
       @include screen-md {
@@ -1322,16 +1322,27 @@
       padding-bottom: 100px;
       display: flex;
       justify-content: center;
+      padding-left: 4%;
+
+      &-spacing {
+        margin-right: auto;
+      }
     }
 
     &__col-green {
       flex: 1;
       background-color: $primary-default;
-      border-top-right-radius: 200px;
+      // border-top-right-radius: 200px;
       padding-top: 140px;
       padding-bottom: 100px;
       display: flex;
       justify-content: center;
+      padding-right: 4%;
+      padding-left: 15px;
+
+      &-spacing {
+        margin-left: auto;
+      }
 
       @include screen-md {
         border-top-right-radius: 140px;
@@ -1409,7 +1420,7 @@
       font-family: 'Mulish', sans-serif;
       max-width: 200px;
       text-decoration: underline !important;
-      color: #FFDF34;
+      color: $white;
       &:hover {
         opacity: 0.8;
         cursor: pointer;
