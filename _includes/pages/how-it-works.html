@@ -156,23 +156,12 @@
     <div class="section-medium pricing">
       <h2 class="offer__main-title mt-5">{{ site.data[page.lang]['how_it_works']['let_us_guide'] }}</h2>
       <p class="offer__main-subtitle mt-4 mx-auto mw-100">{{ site.data[page.lang]['how_it_works']['every_codekeeper_account'] }}</p>
-      <a data-toggle="modal" data-target="#meetingModal" class="button btn-cerulean mx-auto my-5 outline-none underline-none">
+      <a class="button btn-cerulean book-a-demo-href mx-auto mt-4" href="book-a-demo.html">
         {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
       </a>
-      <div class="modal fade meeting-modal" id="meetingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span class="text-white" aria-hidden="true">&times;</span>
-            </button>
-          <div class="modal-content bg-transparent border-0">
-            <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/danny70?embed=true"></div>
-            <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Section -->
-    {% include get-started.html %}
+    {% include intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
