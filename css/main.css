@@ -15372,7 +15372,10 @@ html {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1) !important;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1) !important; }
 
 .book-demo .questions__bg {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-9.77%, #F8FBFF), color-stop(82.6%, rgba(248, 251, 255, 0)));
