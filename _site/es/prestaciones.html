@@ -808,6 +808,7 @@
             <option value="3" id="german">Alemán</option>
             <option value="4" id="spanish">Española</option>
             <option value="5" id="romanian">Rumano</option>
+            <option value="6" id="french">Francés</option>
           </select>
         </div>
       </div>
@@ -961,20 +962,23 @@ function closeAllSelect(elmnt) {
 
   const lang = $('.select-selected').text();
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză')) {
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză') || (lang === 'Anglais')) {
     window.location = '/index.html';
   }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză')) {
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză') || (lang === 'Néerlandais')) {
     window.location = '/nl/index.html';
   }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană')) {
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană') || (lang === 'Allemand')) {
     window.location = '/de/index.html';
   }
-  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă')) {
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă') || (lang === 'Espanol')) {
     window.location = '/es/index.html';
   }
-  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') | (lang === 'Romană')) {
+  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') || (lang === 'Romană') || (lang === 'Roumain')) {
     window.location = '/ro/index.html';
+  }
+  else if ((lang === 'French') || (lang === 'Frans') || (lang === 'Französisch') || (lang === 'Francés') || (lang === 'Franceză') || (lang === 'Français')) {
+    window.location = '/fr/index.html';
   }
 
 }
@@ -991,27 +995,32 @@ document.addEventListener("click", closeAllSelect);
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') ) {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') || ($.trim( $element.html() ) === 'Néerlandais') ) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană')) {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană') || ($.trim( $element.html() ) === 'Allemand')) {
           $element.remove();
         }
       }
       else if (lang === '/es') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă')) {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă') || ($.trim( $element.html() ) === 'Espanol')) {
           $element.remove();
         }
       }
       else if (lang === '/ro') {
-        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană')) {
+        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană') || ($.trim( $element.html() ) === 'Roumain')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/fr') {
+        if ( ($.trim( $element.html() ) === 'French') || ($.trim( $element.html() ) === 'Frans') || ($.trim( $element.html() ) === 'Französisch') || ($.trim( $element.html() ) === 'Francés') || ($.trim( $element.html() ) === 'Franceză') || ($.trim( $element.html() ) === 'Français')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză')) {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză') || ($.trim( $element.html() ) === 'Anglais')) {
           $element.remove();
         }
       }
@@ -1148,7 +1157,7 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-information-escrow-href').attr('href', 'wat-is-informatie-escrow.html')
       $('.what-is-saas-escrow-href').attr('href', 'wat-is-saas-escrow.html')
       $('.what-is-source-code-escrow-href').attr('href', 'wat-is-source-code-escrow.html')
-      $('.book-a-demo-href').attr('href', 'boek-een-demot.html')
+      $('.book-a-demo-href').attr('href', 'boek-een-demo.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1192,6 +1201,48 @@ document.addEventListener("click", closeAllSelect);
       $('.what-is-source-code-escrow-href').attr('href', 'ce-este-escrow-cod-sursă.html')
       $('.book-a-demo-href').attr('href', 'rezerva-o-demonstrație.html')
       }
+
+      if (window.location.pathname.includes('/fr/')) {
+
+        $('.check-email-href').attr('href', 'verifier-email.html')
+        $('.confirm-message-href').attr('href', 'confirmer-message.html')
+        $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')
+        $('.confirmation-anatomy-href').attr('href', 'confirmation-anatomy.html')
+        $('.confirmation-expert-insights-href').attr('href', 'confirmation-expert-insights.html')
+        $('.confirmation-guide-href').attr('href', 'confirmation-guide.html')
+        $('.confirmation-introduction-href').attr('href', 'confirmation-introduction.html')
+        $('.confirmation-offer-href').attr('href', 'confirmation-offre.html')
+        $('.confirmation-pricelist-href').attr('href', 'confirmation-grille-tarifaire.html')
+        $('.confirmation-sample-href').attr('href', 'confirmation-modele.html')
+        $('.confirmation-security-href').attr('href', 'confirmation-securite.html')
+        $('.confirmation-href').attr('href', 'confirmation.html')
+        $('.contact-href').attr('href', 'contact.html')
+        $('.create-custom-software-escrow-agreement-href').attr('href', 'creer-contrat-d-entiercement-de-logiciel-personnalise.html')
+        $('.data-escrow-href').attr('href', 'entiercement-de-donnees.html')
+        $('.depositing-features-href').attr('href', 'fonctionnalites-de-depot.html')
+        $('.discount-form-href').attr('href', 'formulaire-de-reduction.html')
+        $('.escrow-agreement-href').attr('href', 'contrat-d-entiercement.html')
+        $('.features-href').attr('href', 'fonctionnalites.html')
+        $('.how-it-works-href').attr('href', 'fonctionnement.html')
+        $('.integrations-href').attr('href', 'integrations.html')
+        $('.plan-comparison-href').attr('href', 'comparaison-des-forfaits.html')
+        $('.pricing-features-href').attr('href', 'fonctionnalites-des-tarifs.html')
+        $('.pricing-href').attr('href', 'tarifs.html')
+        $('.resources-href').attr('href', 'ressources.html')
+        $('.saas-escrow-href').attr('href', 'entiercement-de-saas.html')
+        $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
+        $('.secure-guide-href').attr('href', 'guide-de-securite.html')
+        $('.security-href').attr('href', 'securite.html')
+        $('.sign-up-href').attr('href', 'inscription.html')
+        $('.source-code-escrow-href').attr('href', 'entiercement-de-code-source.html')
+        $('.start-guide-href').attr('href', 'guide-de-demarrage.html')
+        $('.verification-href').attr('href', 'verification.html')
+        $('.what-is-data-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-donnees.html')
+        $('.what-is-information-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-informations.html')
+        $('.what-is-saas-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-saas.html')
+        $('.what-is-source-code-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-code-source.html')
+        $('.book-a-demo-href').attr('href', 'reserver-une-demo.html')
+        }
   })
 </script>
 
