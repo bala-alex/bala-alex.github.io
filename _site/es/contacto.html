@@ -234,10 +234,10 @@
               <p class="contact__box-title">Hable con Ventas</p>
               <p class="contact__box-subtitle">¿Está interesado en nuestras soluciones de custodia? Elija el método que prefiera para ponerse en contacto con nosotros.</p>
               <div class="contact__box-content">
-                <div class="contact__box-btn" aria-label="Open live chat">
+                <a class="contact__box-btn" href="#hs-chat-open">
                   <img class="mt-1" src="/images/landing/icon-chat.svg"/>
                   <p class="contact__box-text">Hable con nosotros por chat</p>
-                </div>
+                </a>
                 <a class="contact__box-btn book-a-demo-href" href="book-a-demo.html">
                   <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
                   <p class="contact__box-text">Programe una reunión</p>
@@ -257,13 +257,13 @@
               <p class="contact__box-white-subtitle">¿Ya es cliente? Estamos listos para responder cualquier duda o pregunta que pueda tener.</p>
               <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp"/>
               <div class="contact__box-white-content">
-                <div class="contact__box-white-btn">
+                <a class="contact__box-white-btn" href="#hs-chat-open">
                   <img class="mt-1" src="/images/landing/icon-chat.svg"/>
                   <p class="contact__box-white-text">Hable con nosotros por chat</p>
-                </div>
-                <a class="contact__box-white-btn book-a-demo-href" href="book-a-demo.html">
-                  <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
-                  <p class="contact__box-white-text">Programe una reunión</p>
+                </a>
+                <a class="contact__box-white-btn" data-toggle="modal" data-target="#exampleModal27">
+                  <img class="mt-1" src="/images/landing/icon-message.svg"/>
+                  <p class="contact__box-white-text">Envíenos un mensaje</p>
                 </a>
               </div>
             </div>
@@ -308,12 +308,14 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                   <div class="m-0">
-                    <div class="section__modal-image-content p-0 pt-5">
-                      <p class="section__modal-title mt-4">Solicite una llamada</p>
-                    </div>
-                    <div class="section__modal-form p-0 ">
-                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
-
+                    <!-- <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">Envíenos un mensaje</p>
+                    </div> -->
+                    <div class="section__modal-form2 p-0 bg-bondi-blue">
+                      <div class="d-flex align-items-center mt-3">
+                        <p class="section__modal-title2 text-white">Solicite una llamada</p>
+                        <img class="section__modal-image4 ml-auto" src="/images/landing/callback-sales.svg"/>
+                      </div>
                       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                       <script>
                         hbspt.forms.create({
@@ -376,12 +378,83 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                   <div class="m-0">
-                    <div class="section__modal-image-content p-0 pt-5">
+                    <!-- <div class="section__modal-image-content p-0 pt-5">
                       <p class="section__modal-title mt-4">Envíenos un mensaje</p>
+                    </div> -->
+                    <div class="section__modal-form2 p-0 bg-bondi-blue">
+                      <div class="d-flex align-items-center mt-3">
+                        <p class="section__modal-title2 text-white">Envíenos un mensaje</p>
+                        <img class="section__modal-image4 ml-auto" src="/images/landing/message-sales.svg"/>
+                      </div>
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+                      });
+                      </script>
                     </div>
-                    <div class="section__modal-form p-0 ">
-                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
+                    <!-- <div class="section__modal-form p-0 spanish-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
 
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 german-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 dutch-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+      
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade resources" id="exampleModal27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content section__modal mx-auto">
+                <div class="modal-body p-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="m-0">
+                    <!-- <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">Envíenos un mensaje</p>
+                    </div> -->
+                    <div class="section__modal-form p-0 bg-white">
+                      <div class="d-flex align-items-center mt-3">
+                        <p class="section__modal-title2">Envíenos un mensaje</p>
+                        <img class="section__modal-image4 ml-auto" src="/images/landing/message-support.svg"/>
+                      </div>
                       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                       <script>
                         hbspt.forms.create({
