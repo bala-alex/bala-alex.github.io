@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -168,7 +168,7 @@
       <div class="explore__section-container2 mx-auto">
         <div class="container">
           <h2 class="discover__title">Comment Codekeeper peut-il vous aider ?</h2>
-          <p class="discover__subtitle2 mx-auto mt-4">En tant qu’agent d’entiercement de confiance, Codekeeper a pour rôle de récupérer, de stocker et de protéger les données qui sont indispensables à la mission d’entreprise. Grâce à des tarifs avantageux, vous pouvez stocker en toute sécurité des copies de vos données dans nos centres de données de classe internationale à partir de <strong><span id=\"developer-monthly\">79 $</span> par mois</strong>, avec des frais de mise en place à seulement <span class=\"setup-fee\">249 $</span>.<br><br>Tous les forfaits incluent une <strong>technologie d’automatisation de pointe</strong>, des fonctionnalités de <strong>sécurité avancées</strong>, des <strong>intégrations</strong> riches, des <strong>dépôts continus</strong> illimités, des <strong>contrats</strong> et des <strong>confirmations</strong>d’entiercement gratuits, et bien plus encore.</p>
+          <p class="discover__subtitle2 mx-auto mt-4">En tant qu’agent d’entiercement de confiance, Codekeeper a pour rôle de récupérer, de stocker et de protéger les données qui sont indispensables à la mission d’entreprise. Grâce à des tarifs avantageux, vous pouvez stocker en toute sécurité des copies de vos données dans nos centres de données de classe internationale à partir de <strong><span id="developer-monthly">79 $</span> par mois</strong>, avec des frais de mise en place à seulement <span class="setup-fee">249 $</span>.<br><br>Tous les forfaits incluent une <strong>technologie d’automatisation de pointe</strong>, des fonctionnalités de <strong>sécurité avancées</strong>, des <strong>intégrations</strong> riches, des <strong>dépôts continus</strong> illimités, des <strong>contrats</strong> et des <strong>confirmations</strong>d’entiercement gratuits, et bien plus encore.</p>
         </div>
       </div>
     </div>
@@ -883,12 +883,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -896,6 +898,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -903,6 +906,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -910,6 +922,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 

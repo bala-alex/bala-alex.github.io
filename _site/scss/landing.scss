@@ -1768,6 +1768,45 @@
   }
 }
 
+.demo {
+  &__bg {
+    min-height: 540px !important;
+    background: url('../images/landing/book-demo-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover !important;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 60px !important;
+    font-family: 'Mulish', sans-serif;
+    color: #003543;
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 70px;
+  }
+
+  &__subtitle {
+    color: #48748C;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-family: 'Mulish', sans-serif;
+    max-width: 582px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    max-width: 430px;
+  }
+}
+
 .software {
   overflow: hidden;
 

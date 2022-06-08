@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -101,24 +101,13 @@
     <div class="header__content">
       <div class="header__bg">
         <div class="container">
-          <div class="header__container mx-auto">
-            <div class="row">
-              <div class="col-md-7 col-sm-12">
-                <h1 class="header__title mt-4">Contacte con nosotros</h1>
-                <p class="header__subtitle my-4">Deje un mensaje y nos pondremos en contacto con usted.</p>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <div class="mt-2">
-                  <img class="image-style" src="/images/contact/contact-image.svg"/>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1 class="header__title mt-4 text-center mx-auto">Contacte con nosotros</h1>
+          <p class="header__subtitle my-4 text-center mx-auto">Estamos a su disposición para ayudarle con todos los apartados del proceso de custodia. A continuación puede encontrar distintas formas de contactar con nosotros. </p>
         </div>
       </div>
     </div>
     <!-- First Section -->
-    <div class="pb-5">
+    <!-- <div class="pb-5">
       <div class="container">
         <div class="section__container-bg mx-auto">
           <div class="section__container mx-auto english-guide">
@@ -179,9 +168,9 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Second Section -->
-    <div class="bg-white section-medium">
+    <!-- <div class="bg-white section-medium">
       <div class="container">
         <p class="info__main-title mt-2">Nuestras oficinas</p>
         <p class="info__main-subtitle mt-2 mx-auto">Nuestro equipo está repartido entre dos ubicaciones: la sede de la compañía en La Haya, en los Países Bajos, y nuestra segunda oficina en San Francisco, California.</p>
@@ -234,127 +223,241 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Third Section -->
-    <div class="pt-5 px-3 position-relative">
-      <div class="about__container mx-auto">
-        <div class="row">
-          <div class="col-md-3 col-sm-12">
-            <h2 class="about__title">Acerca de nosotros</h2>
+    </div> -->
+
+    <!-- First Section -->
+    <div class="book-demo bg-white">
+      <div class="questions__bg2">
+        <div class="container">
+          <div class="contact__info">
+            <div class="contact__box mt-3">
+              <p class="contact__box-title">Hable con Ventas</p>
+              <p class="contact__box-subtitle">¿Está interesado en nuestras soluciones de custodia? Elija el método que prefiera para ponerse en contacto con nosotros.</p>
+              <div class="contact__box-content">
+                <div class="contact__box-btn" aria-label="Open live chat">
+                  <img class="mt-1" src="/images/landing/icon-chat.svg"/>
+                  <p class="contact__box-text">Hable con nosotros por chat</p>
+                </div>
+                <a class="contact__box-btn book-a-demo-href" href="book-a-demo.html">
+                  <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
+                  <p class="contact__box-text">Programe una reunión</p>
+                </a>
+                <a class="contact__box-btn" data-toggle="modal" data-target="#exampleModal28">
+                  <img class="mt-1" src="/images/landing/icon-message.svg"/>
+                  <p class="contact__box-text">Envíenos un mensaje</p>
+                </a>
+                <a class="contact__box-btn" data-toggle="modal" data-target="#exampleModal29">
+                  <img class="mt-1" src="/images/landing/icon-call.svg"/>
+                  <p class="contact__box-text">Solicite una llamada</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact__box-white mt-4">
+              <p class="contact__box-white-title text-primary">Contacte con el servicio de atención al cliente</p>
+              <p class="contact__box-white-subtitle">¿Ya es cliente? Estamos listos para responder cualquier duda o pregunta que pueda tener.</p>
+              <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp"/>
+              <div class="contact__box-white-content">
+                <div class="contact__box-white-btn">
+                  <img class="mt-1" src="/images/landing/icon-chat.svg"/>
+                  <p class="contact__box-white-text">Hable con nosotros por chat</p>
+                </div>
+                <a class="contact__box-white-btn book-a-demo-href" href="book-a-demo.html">
+                  <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
+                  <p class="contact__box-white-text">Programe una reunión</p>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-9 col-sm-12">
-            <p class="about__text">Codekeeper fue fundado por personas del mundo de la tecnología. No tenía sentido que el depósito de código fuente no pudiera integrarse directamente con las plataformas modernas de desarrollo de software. Por eso creamos una plataforma completamente nueva y actualizada para el depósito de código fuente que combinara la seguridad legal tradicional con los flujos de trabajo de la tecnología moderna.</p>
-            <p class="about__text">Después del lanzamiento inicial hace cinco años, lanzamos nuestras soluciones de SaaS hace tan solo tres. En la actualidad, Codekeeper garantiza que nuestros clientes dispongan de depósitos de código fuente actualizados de forma fiable, y también ofrecemos acuerdos de custodia oficiales, condiciones de entrega, gestión de beneficiarios, depósitos de datos, verificación y muchos otros servicios.</p>
+          <div class="section-medium pricing">
+            <p class="questions__title mt-5">Obtenga la información<br> que busca ya mismo</p>
+            <ul class="faq mt-5 pl-0">
+              <li class="q d-flex align-items-center justify-content-between bg-white">
+                <p class="section__subtitle mt-3">¿Me estoy comprometiendo a algo al reservar una demostración?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">Asistir a nuestra reunión de demostración no conlleva ningún tipo de compromiso o coste. Estaremos encantados de examinar con usted los pormenores de la custodia de software.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">¿Puedo hacer que mi cliente se una a la llamada? </p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">Sí, a menudo realizamos llamadas en grupo para asegurarnos de que todas las partes de la custodia estén de acuerdo.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">¿Cuáles son los requisitos técnicos para ver la demostración?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">Nuestra herramienta de reunión por defecto es Google Meet, que funciona directamente en su navegador (sin necesidad de descargas). Pero, si las prácticas de seguridad de su red no lo permiten, también podemos utilizar Zoom, Teams o la herramienta que prefiera. Como última alternativa, podemos hablar por teléfono.</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">¿Necesito reservar una llamada de demostración si estoy listo para establecer un depósito de custodia?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">También puede proceder registrándose aquí. Todo el proceso está libre de riesgos, porque ofrecemos una garantía de devolución de dinero si no podemos configurar la custodia para usted. </li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">¿Podemos hablar del acuerdo de custodia?</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">Estaremos encantados de responder a cualquier duda o pregunta que pueda tener. Si quiere sugerir cláusulas legales específicas, podemos ocuparnos de ellas durante el proceso de incorporación (posterior al registro) para asegurarnos de que lo gestionamos de forma eficiente.</li>
+            </ul>
           </div>
-        </div>
-        <div class="about__devider"></div>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="about__subtitle">Filosofía de precios</p>
-            <p class="about__text2">El depósito de software es comparable al seguro del hogar: Es necesario, aunque rara vez se utiliza. En Codekeeper, creemos que todos los sistemas de misión crítica deberían poder acceder a este tipo de seguro, algo que está reflejado en nuestra filosofía de precios.</p>
-            <p class="about__text2">Mantenemos los costes bajos desde el principio. Los únicos cargos adicionales están destinados a realizar un análisis jurídico y técnico exhaustivo de los materiales en custodia, si lo necesitara en caso de que se produzca una entrega. Nuestros precios son claros y están diseñados para satisfacer las necesidades de las empresas dinámicas, al tiempo que les permiten ahorrar miles de dólares que normalmente tendrían que pagar por adelantado.</p>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <p class="about__subtitle">Expertos en seguridad</p>
-            <p class="about__text3">La seguridad de los datos está profundamente arraigada en nuestro ADN. Mantenemos una seguridad física y digital de categoría mundial en todos los aspectos de nuestro servicio. Siga leyendo <a class="text-underline security-href" href="security.html">acerca de nuestras prácticas de seguridad aquí.</a></p>
-            <p class="about__subtitle mt-4">Una empresa internacional</p>
-            <p class="about__text3">Tenemos oficinas en los Estados Unidos y en los Países Bajos, y somos el socio de confianza de grandes empresas de todo el mundo.</p>
-          </div>
-        </div>
-      </div>
+
+          <!-- Modal -->
+          <div class="modal fade resources" id="exampleModal29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content section__modal mx-auto">
+                <div class="modal-body p-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="m-0">
+                    <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">Solicite una llamada</p>
+                    </div>
+                    <div class="section__modal-form p-0 ">
+                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+                      });
+                      </script>
+                    </div>
+                    <!-- <div class="section__modal-form p-0 spanish-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 german-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 dutch-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
       
-    </div>
-    <div class="mt-negative-50">
-      <!DOCTYPE html>
-<div class="resources">
-  <div class="container-fluid px-0">
-    <div class="guide__bg-security">
-      <div class="container">
-        <div class="guide__content2 d-flex align-items-center justify-content-between">
-          <div>
-            <p class="verification__add-on text-uppercase">E-book </p>
-            <h2 class="guide__title2">Guía de seguridad de la información</h2>
-            <p class="guide__subtitle2 mt-3">Descargue nuestra guía para conocer las medidas que toma Codekeeper para garantizar la máxima seguridad en su depósito de código fuente.</p>
-            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal3">
-              DESCARGAR GUÍA GRATUITA
-            </a>
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <img class="guide__image2 mt-4" src="/images/resources-page/guide-information.webp"/>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-image-content p-0 pt-5">
-                <p class="section__modal-title mt-3">¡Descargue el e-book gratis!</p>
+
+          <!-- Modal -->
+          <div class="modal fade resources" id="exampleModal28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content section__modal mx-auto">
+                <div class="modal-body p-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="m-0">
+                    <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">Envíenos un mensaje</p>
+                    </div>
+                    <div class="section__modal-form p-0 ">
+                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+                      });
+                      </script>
+                    </div>
+                    <!-- <div class="section__modal-form p-0 spanish-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 german-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 dutch-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+      
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    </div> -->
+                  </div>
+                </div>
               </div>
-              <div class="section__modal-form p-0 ">
-                <img class="section__modal-image" src="/images/resources-page/guide-information.webp"/>
-
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                  portalId: "5365877",
-                  formId: "4ecdb6ad-f33c-4059-bc23-89c465ae1216"
-                });
-                </script>
-                <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
-              </div>
-              <!-- <div class="section__modal-form p-0 spanish-guide">
-                <img class="section__modal-image" src="/images/resources-page/guide-information.webp"/>
-
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                  region: "na1",
-                  portalId: "5365877",
-                  formId: "f61292bb-a3fb-4cec-b9ed-2f31332a0b7c"
-                });
-                </script>
-                <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
-              </div> -->
-              <!-- <div class="section__modal-form p-0 german-guide">
-                <img class="section__modal-image" src="/images/resources-page/guide-information.webp"/>
-
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                  region: "na1",
-                  portalId: "5365877",
-                  formId: "efaf21e9-bc83-45cd-9acb-3c43adc205b0"
-                });
-                </script>
-                <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
-              </div> -->
-              <!-- <div class="section__modal-form p-0 dutch-guide">
-                <img class="section__modal-image" src="/images/resources-page/guide-information.webp"/>
-
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                <script>
-                  hbspt.forms.create({
-                  region: "na1",
-                  portalId: "5365877",
-                  formId: "0ab39215-8554-4186-bf89-acb969fd3894"
-                });
-                </script>
-                <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Section -->
+    <!DOCTYPE html>
+<div class="software__content overflow-hidden">
+  <div class="demo__bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2 class="demo__title mt-5">Reservar una demostración</h2>
+          <p class="demo__subtitle mt-4">Pida cita con uno de nuestros asesores para obtener una demostración personalizada y examinar su situación. ¡Plantee todas sus preguntas legales, técnicas y demás! </p>
+          <a class="button btn-bondi-blue my-5 book-a-demo-href" href="book-a-demo.html">
+            Reservar una demostración
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="demo__image" src="/images/landing/book-demo-image.webp"/>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-    </div>
-    <!-- Fourth Section -->
+    <!-- Section -->
     <!DOCTYPE html>
 <div class="resources">
   <div class="container-fluid px-0">
@@ -936,12 +1039,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -949,6 +1054,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -956,6 +1062,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -963,6 +1078,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 
@@ -982,5 +1098,42 @@ document.addEventListener("click", closeAllSelect);
 
 </script>
 
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+  <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 </body>
 </html>

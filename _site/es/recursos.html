@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -298,7 +298,7 @@
               <h3 class="section__title">Muestra de acuerdo de custodia de software</h3>
               <p class="section__subtitle mt-4">En este acuerdo de custodia de software con anotaciones se explican algunos de los términos y condiciones más comunes (y más importantes) que deben figurar en todo acuerdo de custodia de software eficaz, desde el depósito de materiales en garantía hasta la verificación y la entrega. </p>
               <a class="button btn-cerulean mt-4 mb-5" data-toggle="modal" data-target="#exampleModal4">
-                DESCARGAR E-BOOK
+                DESCARGAR MUESTRA
               </a>
             </div>
           </div>
@@ -313,7 +313,7 @@
                 </button>
                 <div class="m-0">
                   <div class="section__modal-image-content p-0 pt-5">
-                    <p class="section__modal-title mt-3">¡Descargue el e-book gratis!</p>
+                    <p class="section__modal-title mt-3">Descargue esta muestra de forma gratuita.</p>
                   </div>
                   <div class="section__modal-form p-0">
                     <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
@@ -325,7 +325,7 @@
                       formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
                     });
                     </script>
-                    <p class="section__modal-subtext mt-5">*Libro electrónico disponible solo en inglés</p>
+                    <p class="section__modal-subtext mt-5">*Muestra disponible sólo en inglés</p>
                   </div>
                   <!-- <div class="section__modal-form p-0 spanish-guide">
                     <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
@@ -1194,12 +1194,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -1207,6 +1209,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -1214,6 +1217,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -1221,6 +1233,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 

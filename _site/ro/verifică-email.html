@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -531,12 +531,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -544,6 +546,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -551,6 +554,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -558,6 +570,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 

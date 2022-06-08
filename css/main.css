@@ -9535,6 +9535,40 @@ html {
   .mentions__link::first-letter {
     text-transform: capitalize; }
 
+.demo__bg {
+  min-height: 540px !important;
+  background: url("../images/landing/book-demo-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover !important;
+  padding-top: 90px;
+  padding-bottom: 40px; }
+
+.demo__title {
+  font-size: 60px !important;
+  font-family: 'Mulish', sans-serif;
+  color: #003543;
+  font-weight: 200;
+  letter-spacing: -1px;
+  line-height: 70px; }
+
+.demo__subtitle {
+  color: #48748C;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 28px;
+  font-family: 'Mulish', sans-serif;
+  max-width: 582px; }
+
+.demo__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 20px;
+  max-width: 430px; }
+
 .software {
   overflow: hidden; }
   .software__title {
@@ -15349,11 +15383,10 @@ html {
 
 .book-demo .contact__box {
   width: 100%;
-  min-height: 400px;
-  padding: 50px 35px;
+  min-height: 332px;
+  padding: 40px;
   border-radius: 10px;
-  background: #ffffff;
-  border: 0.5px solid #DCE5F2;
+  background: #009CB7;
   -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
   box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05); }
   @media (max-width: 767px) {
@@ -15364,15 +15397,15 @@ html {
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
-    line-height: 40px; }
+    line-height: 40px;
+    color: #ffffff; }
   .book-demo .contact__box-subtitle {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #48748C;
-    max-width: 344px; }
+    color: #ffffff; }
   .book-demo .contact__box-text {
     font-family: 'Mulish';
     font-style: normal;
@@ -15380,22 +15413,36 @@ html {
     font-size: 16px;
     line-height: 24px;
     color: #48748C;
-    margin-bottom: 0px; }
-  .book-demo .contact__box-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 200px; }
-  .book-demo .contact__box-btn {
-    width: 215px;
-    min-height: 70px;
-    -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
-    box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
-    border-radius: 10px;
-    padding: 15px 10px;
+    margin-bottom: 0px;
+    margin-top: 5px; }
+  .book-demo .contact__box-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @media (max-width: 992px) {
+      .book-demo .contact__box-content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  .book-demo .contact__box-btn {
+    width: 240px;
+    min-height: 140px;
+    -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+    box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -15404,6 +15451,97 @@ html {
     background-color: #ffffff;
     z-index: 9; }
     .book-demo .contact__box-btn:hover {
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1) !important;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1) !important; }
+
+.book-demo .contact__box-white {
+  width: 100%;
+  min-height: 330px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  position: relative; }
+  @media (max-width: 767px) {
+    .book-demo .contact__box-white {
+      padding: 40px 15px;
+      min-height: 730px; } }
+  .book-demo .contact__box-white-title {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    color: #009CB7; }
+  .book-demo .contact__box-white-subtitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #48748C; }
+  .book-demo .contact__box-white-text {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #48748C;
+    margin-bottom: 0px;
+    margin-top: 5px; }
+  .book-demo .contact__box-white-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @media (max-width: 992px) {
+      .book-demo .contact__box-white-content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  .book-demo .contact__box-white-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px; }
+  .book-demo .contact__box-white-btn {
+    width: 240px;
+    min-height: 140px;
+    -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+    box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+    border-radius: 10px;
+    border: 1px solid #009CB7;
+    padding: 15px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    z-index: 9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .book-demo .contact__box-white-btn:hover {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;

@@ -42,7 +42,7 @@
       <!-- Navigation -->
       <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -254,7 +254,7 @@
             </div>
             <div class="col-md-6 col-sm-12">
               <img loading="lazy" class="automated__image mt-5" src="/images/homepage/automated-deposit.webp" alt="Automated deposit"/>
-              <p class="automated__text my-0">Certaines de nos intégrations de code source et d’entiercement de données: </p>
+              <p class="automated__text my-0">Certaines de nos intégrations de code source et d’entiercement de données&nbsp;: </p>
               <div class="resources">
                 <div class="applications__logos mt-5">
                   <div class="applications__logo mx-0">
@@ -555,7 +555,7 @@
             <a class="button btn-cerulean my-4 pricing-href" href="pricing.html">
               VOIR NOS TARIFS
             </a>
-            <p class="verification__text2 mt-5">Les plateformes que nous prenons en charge: </p>
+            <p class="verification__text2 mt-5">Les plateformes que nous prenons en charge&nbsp;: </p>
             <div class="resources">
               <div class="applications__logos justify-content-start mt-5">
                 <div class="applications__logo mx-1">
@@ -833,7 +833,7 @@
               <p class="plan__period">par mois, facturé annuellement</p>
               <div class="plan__devider mx-auto"></div>
               <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Frais de mise en place:</p>
+                <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
                 <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
               </div>
               <div class="plan__content-info">
@@ -898,7 +898,7 @@
               <p class="plan__period">par mois, facturé annuellement</p>
               <div class="plan__devider mx-auto"></div>
               <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Frais de mise en place:</p>
+                <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
                 <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
               </div>
               <div class="plan__content-info">
@@ -970,7 +970,7 @@
               <p class="plan__period">par mois, facturé annuellement</p>
               <div class="plan__devider mx-auto"></div>
               <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Frais de mise en place:</p>
+                <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
                 <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
               </div>
               <div class="plan__content-info">
@@ -1041,7 +1041,7 @@
               <p class="plan__period">par mois, facturé annuellement</p>
               <div class="plan__devider mx-auto"></div>
               <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Frais de mise en place:</p>
+                <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
                 <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
               </div>
               <div class="plan__content-info">
@@ -1839,12 +1839,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -1852,6 +1854,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -1859,6 +1862,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -1866,6 +1878,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 

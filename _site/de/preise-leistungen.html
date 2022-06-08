@@ -41,7 +41,7 @@
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container p-3">
+  <div class="container-fluid p-3">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -756,9 +756,9 @@
                   <div class="section__modal-image-content p-0 pt-5">
                     <p class="section__modal-title mt-3">Erhalten Sie unsere Preisliste</p>
                   </div>
-                  <div class="section__modal-form p-0">
+                  <div class="section__modal-form p-0 english-guide">
                     <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
- 
+
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                     <script>
                       hbspt.forms.create({
@@ -768,7 +768,7 @@
                     });
                     </script>
                   </div>
-                  <!-- <div class="section__modal-form p-0 spanish-guide">
+                  <div class="section__modal-form p-0 spanish-guide">
                     <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
 
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
@@ -779,8 +779,8 @@
                       formId: "cb04f974-f821-41da-959f-255e5f981eaf"
                     });
                     </script>
-                  </div> -->
-                  <!-- <div class="section__modal-form p-0 german-guide">
+                  </div>
+                  <div class="section__modal-form p-0 german-guide">
                     <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
 
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
@@ -791,10 +791,10 @@
                       formId: "6a9fcf61-0bed-431d-8f1b-3d9e3ef08d1e"
                     });
                     </script>
-                  </div> -->
-                  <!-- <div class="section__modal-form p-0 dutch-guide">
+                  </div>
+                  <div class="section__modal-form p-0 dutch-guide">
                     <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
-
+ 
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                     <script>
                       hbspt.forms.create({
@@ -803,7 +803,31 @@
                       formId: "3298428a-dcec-4eef-b682-9f5b62aeb19d"
                     });
                     </script>
-                  </div> -->
+                  </div>
+                  <div class="section__modal-form p-0 romanian-guide">
+                    <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
+ 
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "36defdc7-6405-4992-8f49-e451b1d5a6c2"
+                      });
+                    </script>
+                  </div>
+                  <div class="section__modal-form p-0 french-guide">
+                    <img class="section__modal-image2" src="/images/resources-page/pricelist.svg"/>
+ 
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "69d35200-cf61-4276-ab76-ec3d2743e106"
+                      });
+                    </script>
+                  </div>
 
                 </div>
               </div>
@@ -2452,6 +2476,16 @@
           });
           </script>
         </div>
+        <div class="section__container mx-auto mt-5 offer__container french-guide">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "97bbbcf4-1870-455f-8f21-4efb64cbb758"
+            });
+          </script>
+        </div>
       </div>
     </div>
     <!-- Fifth Section -->
@@ -3296,12 +3330,14 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
   else if (pathname.includes('/nl/')) {
     $('.english-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/de/')) {
@@ -3309,6 +3345,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 
   else if (pathname.includes('/ro/')) {
@@ -3316,6 +3353,15 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.spanish-guide').remove();
     $('.german-guide').remove();
+    $('.french-guide').remove();
+  }
+
+  else if (pathname.includes('/fr/')) {
+    $('.english-guide').remove();
+    $('.dutch-guide').remove();
+    $('.spanish-guide').remove();
+    $('.german-guide').remove();
+    $('.romanian-guide').remove();
   }
 
   else {
@@ -3323,6 +3369,7 @@ document.addEventListener("click", closeAllSelect);
     $('.dutch-guide').remove();
     $('.german-guide').remove();
     $('.romanian-guide').remove();
+    $('.french-guide').remove();
   }
 </script>
 

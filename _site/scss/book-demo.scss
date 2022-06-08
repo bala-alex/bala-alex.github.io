@@ -43,11 +43,10 @@
 
     &__box {
       width: 100%;
-      min-height: 400px;
-      padding: 50px 35px;
+      min-height: 332px;
+      padding: 40px;
       border-radius: 10px;
-      background: $white;
-      border: 0.5px solid #DCE5F2;
+      background: $bondi-blue;
       box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
 
       @include screen-sm {
@@ -60,6 +59,7 @@
         font-weight: 300;
         font-size: 32px;
         line-height: 40px;
+        color: $white;
       }
 
       &-subtitle {
@@ -68,8 +68,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #48748C;
-        max-width: 344px;
+        color: $white;
       }
 
       &-text {
@@ -80,27 +79,119 @@
         line-height: 24px;
         color: #48748C;
         margin-bottom: 0px;
+        margin-top: 5px;
+      }
+
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include screen-md {
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &-btn {
+        width: 240px;
+        min-height: 140px;
+        box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+        border-radius: 10px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15px;
+        margin-top: 15px;
+        background-color: $white;
+        z-index: 9;
+
+        &:hover {
+          transition: all .3s;
+          cursor: pointer;
+          text-decoration: none;
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.10) !important;
+        }
+      }
+    }
+
+    &__box-white {
+      width: 100%;
+      min-height: 330px;
+      padding: 40px;
+      border-radius: 10px;
+      background: $white;
+      border: 1px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      position: relative;
+
+      @include screen-sm {
+        padding: 40px 15px;
+        min-height: 730px;
+      }
+
+      &-title {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        color: $bondi-blue;
+      }
+
+      &-subtitle {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #48748C;
+      }
+
+      &-text {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #48748C;
+        margin-bottom: 0px;
+        margin-top: 5px;
+      }
+
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include screen-md {
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       &-image {
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 200px;
+        width: 100%;
+        max-width: 300px;
       }
 
       &-btn {
-        width: 215px;
-        min-height: 70px;
+        width: 240px;
+        min-height: 140px;
         box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
         border-radius: 10px;
+        border: 1px solid $bondi-blue;
         padding: 15px 10px;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-right: 15px;
         margin-top: 15px;
         background-color: $white;
         z-index: 9;
+        flex-direction: column;
 
         &:hover {
           transition: all .3s;

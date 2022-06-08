@@ -17,24 +17,13 @@
     <div class="header__content">
       <div class="header__bg">
         <div class="container">
-          <div class="header__container mx-auto">
-            <div class="row">
-              <div class="col-md-7 col-sm-12">
-                <h1 class="header__title mt-4">{{ site.data[page.lang]['contact']['contact_us'] }}</h1>
-                <p class="header__subtitle my-4">{{ site.data[page.lang]['contact']['leave_us_a_message'] }}</p>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <div class="mt-2">
-                  <img class="image-style" src="/images/contact/contact-image.svg"/>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1 class="header__title mt-4 text-center mx-auto">{{ site.data[page.lang]['contact']['get_in_touch'] }}</h1>
+          <p class="header__subtitle my-4 text-center mx-auto">{{ site.data[page.lang]['contact']['we_are_here'] }} </p>
         </div>
       </div>
     </div>
     <!-- First Section -->
-    <div class="pb-5">
+    <!-- <div class="pb-5">
       <div class="container">
         <div class="section__container-bg mx-auto">
           <div class="section__container mx-auto english-guide">
@@ -95,9 +84,9 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Second Section -->
-    <div class="bg-white section-medium">
+    <!-- <div class="bg-white section-medium">
       <div class="container">
         <p class="info__main-title mt-2">{{ site.data[page.lang]['contact']['our_offices'] }}</p>
         <p class="info__main-subtitle mt-2 mx-auto">{{ site.data[page.lang]['contact']['our_team_is'] }}</p>
@@ -150,40 +139,223 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Third Section -->
-    <div class="pt-5 px-3 position-relative">
-      <div class="about__container mx-auto">
-        <div class="row">
-          <div class="col-md-3 col-sm-12">
-            <h2 class="about__title">{{ site.data[page.lang]['contact']['about_us'] }}</h2>
+    </div> -->
+
+    <!-- First Section -->
+    <div class="book-demo bg-white">
+      <div class="questions__bg2">
+        <div class="container">
+          <div class="contact__info">
+            <div class="contact__box mt-3">
+              <p class="contact__box-title">{{ site.data[page.lang]['contact']['talk_to_sales'] }}</p>
+              <p class="contact__box-subtitle">{{ site.data[page.lang]['contact']['interested_in_our'] }}</p>
+              <div class="contact__box-content">
+                <div class="contact__box-btn" aria-label="Open live chat">
+                  <img class="mt-1" src="/images/landing/icon-chat.svg"/>
+                  <p class="contact__box-text">{{ site.data[page.lang]['contact']['chat_with_us'] }}</p>
+                </div>
+                <a class="contact__box-btn book-a-demo-href" href="book-a-demo.html">
+                  <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
+                  <p class="contact__box-text">{{ site.data[page.lang]['contact']['book_a_meeting'] }}</p>
+                </a>
+                <a class="contact__box-btn" data-toggle="modal" data-target="#exampleModal28">
+                  <img class="mt-1" src="/images/landing/icon-message.svg"/>
+                  <p class="contact__box-text">{{ site.data[page.lang]['contact']['send_us'] }}</p>
+                </a>
+                <a class="contact__box-btn" data-toggle="modal" data-target="#exampleModal29">
+                  <img class="mt-1" src="/images/landing/icon-call.svg"/>
+                  <p class="contact__box-text">{{ site.data[page.lang]['contact']['request_a'] }}</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact__box-white mt-4">
+              <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['contact_customer'] }}</p>
+              <p class="contact__box-white-subtitle">{{ site.data[page.lang]['contact']['already_a'] }}</p>
+              <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp"/>
+              <div class="contact__box-white-content">
+                <div class="contact__box-white-btn">
+                  <img class="mt-1" src="/images/landing/icon-chat.svg"/>
+                  <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['chat_with_us'] }}</p>
+                </div>
+                <a class="contact__box-white-btn book-a-demo-href" href="book-a-demo.html">
+                  <img class="mt-1" src="/images/landing/icon-meeting.svg"/>
+                  <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['book_a_meeting'] }}</p>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-9 col-sm-12">
-            <p class="about__text">{{ site.data[page.lang]['contact']['codekeeper_was_founded'] }}</p>
-            <p class="about__text">{{ site.data[page.lang]['contact']['after_our_soft'] }}</p>
+          <div class="section-medium pricing">
+            <p class="questions__title mt-5">{{ site.data[page.lang]['contact']['get_the'] }}</p>
+            <ul class="faq mt-5 pl-0">
+              <li class="q d-flex align-items-center justify-content-between bg-white">
+                <p class="section__subtitle mt-3">{{ site.data[page.lang]['book_demo']['am_i_committing'] }}</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">{{ site.data[page.lang]['book_demo']['joining_our'] }}</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">{{ site.data[page.lang]['book_demo']['can_i_have'] }} </p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">{{ site.data[page.lang]['book_demo']['yes_we_often'] }}</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">{{ site.data[page.lang]['book_demo']['what_are_the'] }}</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">{{ site.data[page.lang]['book_demo']['by_default_our'] }}</li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">{{ site.data[page.lang]['book_demo']['do_i_need'] }}</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">{{ site.data[page.lang]['book_demo']['you_can'] }} </li>
+              <li class="q d-flex align-items-center justify-content-between q-border bg-white">
+                <p class="section__subtitle mt-3">{{ site.data[page.lang]['book_demo']['can_we_discuss'] }}</p>
+                <img src="/images/integrations/icon-down.svg"/>
+              </li>
+              <li class="a section__text bg-white">{{ site.data[page.lang]['book_demo']['we_are_happy'] }}</li>
+            </ul>
           </div>
-        </div>
-        <div class="about__devider"></div>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="about__subtitle">{{ site.data[page.lang]['contact']['pricing_philosophy'] }}</p>
-            <p class="about__text2">{{ site.data[page.lang]['contact']['software_escrow'] }}: {{ site.data[page.lang]['contact']['you_need_it'] }}</p>
-            <p class="about__text2">{{ site.data[page.lang]['contact']['we_keep'] }}</p>
+
+          <!-- Modal -->
+          <div class="modal fade resources" id="exampleModal29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content section__modal mx-auto">
+                <div class="modal-body p-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="m-0">
+                    <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">{{ site.data[page.lang]['contact']['request_a'] }}</p>
+                    </div>
+                    <div class="section__modal-form p-0 ">
+                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+                      });
+                      </script>
+                    </div>
+                    <!-- <div class="section__modal-form p-0 spanish-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 german-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 dutch-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+      
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-5 col-sm-12">
-            <p class="about__subtitle">{{ site.data[page.lang]['contact']['expert_security'] }}</p>
-            <p class="about__text3">{{ site.data[page.lang]['contact']['data_security_runs'] }} <a class="text-underline security-href" href="security.html">{{ site.data[page.lang]['contact']['our_security'] }}</a></p>
-            <p class="about__subtitle mt-4">{{ site.data[page.lang]['contact']['global_company'] }}</p>
-            <p class="about__text3">{{ site.data[page.lang]['contact']['we_have_offices'] }}</p>
+
+          <!-- Modal -->
+          <div class="modal fade resources" id="exampleModal28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content section__modal mx-auto">
+                <div class="modal-body p-0">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="m-0">
+                    <div class="section__modal-image-content p-0 pt-5">
+                      <p class="section__modal-title mt-4">{{ site.data[page.lang]['contact']['send_us'] }}</p>
+                    </div>
+                    <div class="section__modal-form p-0 ">
+                      <img class="section__modal-image3" src="/images/contact/contact-image.svg"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "6100599c-f628-4cd4-aff0-87041faa8c31"
+                      });
+                      </script>
+                    </div>
+                    <!-- <div class="section__modal-form p-0 spanish-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "179065e1-f3f9-46f4-81ec-efab51308dd7"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 german-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "047ec24f-67b1-43a8-a6b3-02f533758e95"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                    <!-- <div class="section__modal-form p-0 dutch-guide">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+      
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "22833ac7-23a5-4725-95ea-71d25737ca21"
+                      });
+                      </script>
+                      <p class="section__modal-subtext mt-5">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
-    <div class="mt-negative-50">
-      {% include security-guide.html %}
-    </div>
-    <!-- Fourth Section -->
+    <!-- Section -->
+    {% include book-demo.html %}
+    <!-- Section -->
     {% include intro.html %}
     <!-- Footer -->
     {% include footer.html %}
@@ -191,4 +363,41 @@
 
   <!-- Snippets -->
   {% include snippets.html %}
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+  <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 </body>
