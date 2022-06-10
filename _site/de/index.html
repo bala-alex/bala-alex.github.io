@@ -1221,7 +1221,8 @@
     <div class="bg-alice-blue section-medium overflow-hidden">
       <h2 class="mentions__title my-5 text-center">Neuigkeiten</h2>
       <div class="container pt-4">
-        <div class="taggbox-container" style="width:100%;height:100%;overflow: auto;"><div class="taggbox-socialwall" data-wall-id="93301" view-url="https://widget.taggbox.com/93301"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script></div>
+        <!-- <div class="taggbox-container" style="width:100%;height:100%;overflow: auto;"><div class="taggbox-socialwall" data-wall-id="93301" view-url="https://widget.taggbox.com/93301"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script></div> -->
+        <div class="tagembed-container" style=" width:100%;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="46894" view-url="https://widget.tagembed.com/46894?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
       </div>
       <p class="people__section-subtitle2 mt-5 mw-100 text-center"> </p>
       <a class="button btn-cerulean2 mx-auto mb-5 mt-3" href="https://www.linkedin.com/company/codekeeper/">
@@ -1886,13 +1887,13 @@ document.addEventListener("click", closeAllSelect);
   $( document ).ready(function() {
     const isClient = window?.location?.search;
 
-  if (isClient) {
-    $('.is-client').removeClass('d-none');
-    $('.is-developer').addClass('d-none');
-  } else {
-    $('.is-developer').removeClass('d-none');
-    $('.is-client').addClass('d-none');
-  }
+    if (isClient) {
+      $('.is-client').removeClass('d-none');
+      $('.is-developer').addClass('d-none');
+    } else {
+      $('.is-developer').removeClass('d-none');
+      $('.is-client').addClass('d-none');
+    }
   });
 
 

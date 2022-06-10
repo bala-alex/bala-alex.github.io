@@ -596,13 +596,13 @@ document.addEventListener("click", closeAllSelect);
   $( document ).ready(function() {
     const isClient = window?.location?.search;
 
-  if (isClient) {
-    $('.is-client').removeClass('d-none');
-    $('.is-developer').addClass('d-none');
-  } else {
-    $('.is-developer').removeClass('d-none');
-    $('.is-client').addClass('d-none');
-  }
+    if (isClient) {
+      $('.is-client').removeClass('d-none');
+      $('.is-developer').addClass('d-none');
+    } else {
+      $('.is-developer').removeClass('d-none');
+      $('.is-client').addClass('d-none');
+    }
   });
 
 
