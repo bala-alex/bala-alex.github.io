@@ -923,7 +923,8 @@
     background: $alice-blue;
     border-radius: 25px;
     min-height: 960px !important;
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
     padding: 100px 80px 100px;
     box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
     @include screen-lg {

@@ -8739,7 +8739,8 @@ html {
   background: #F9FCFF;
   border-radius: 25px;
   min-height: 960px !important;
-  width: 1320px;
+  max-width: 1320px;
+  width: 100%;
   padding: 100px 80px 100px;
   -webkit-box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
   box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1); }
@@ -14054,7 +14055,8 @@ html {
   height: 100%;
   max-height: 280px;
   -o-object-fit: contain;
-  object-fit: contain; }
+  object-fit: contain;
+  margin-top: 0px !important; }
 
 .resources .section__modal-image2 {
   width: 100%;
@@ -14082,7 +14084,7 @@ html {
 .resources .section__modal-title {
   color: #00384B;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 300;
   font-family: 'Mulish', sans-serif;
   margin-left: 15px; }
 
@@ -14096,8 +14098,8 @@ html {
 
 .resources .section__modal-subtext {
   color: #009CB7;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 400;
   font-family: 'Mulish', sans-serif;
   margin-left: 15px;
   margin-bottom: 20px !important; }
