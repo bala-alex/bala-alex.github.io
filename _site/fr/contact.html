@@ -234,7 +234,7 @@
               <p class="contact__box-title">Parlez au service commercial</p>
               <p class="contact__box-subtitle">Nos solutions d'entiercement vous intéressent ? Choisissez ci-dessous votre méthode préférée pour nous contacter.</p>
               <div class="contact__box-content">
-                <a class="contact__box-btn open-chat">
+                <a class="contact__box-btn open-chat contact-href" href="contact.html">
                   <img class="mt-1" src="/images/landing/icon-chat.svg"/>
                   <p class="contact__box-text">Chattez avec nous</p>
                 </a>
@@ -257,10 +257,10 @@
               <p class="contact__box-white-subtitle">Vous êtes déjà client(e) ? Nous répondons à toutes vos questions à tout moment.</p>
               <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp"/>
               <div class="contact__box-white-content">
-                <div class="contact__box-white-btn open-chat">
+                <a class="contact__box-white-btn open-chat contact-href" href="contact.html?support">
                   <img class="mt-1" src="/images/landing/icon-chat.svg"/>
                   <p class="contact__box-white-text">Chattez avec nous</p>
-                </div>
+                </a>
                 <a class="contact__box-white-btn" data-toggle="modal" data-target="#exampleModal27">
                   <img class="mt-1" src="/images/landing/icon-message.svg"/>
                   <p class="contact__box-white-text">Écrivez-nous</p>
@@ -760,7 +760,7 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://d16ahjtmf9d1au.cloudfront.net/inject.bundle.js" async data-id="ToyboxSnippet" data-token="ullmwqAjDj17" ></script>
 <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5365877.js"></script>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script>
 <!-- End of HubSpot Embed Code -->
 
 <!-- Segment -->
@@ -1251,6 +1251,7 @@ document.addEventListener("click", closeAllSelect);
   <script>
     $( document ).ready(function() {
       $('.open-chat').click(function(){
+
         window.HubSpotConversations.widget.open();
       });
     });
