@@ -502,7 +502,7 @@ html {
 }
 
 .mw-530 {
-  max-width: 530px;
+  max-width: 530px !important;
 }
 
 .mw-800 {
@@ -654,6 +654,12 @@ html {
 
 .max-h-600 {
   max-height: 600px;
+}
+
+.template-image {
+  width: 150px !important;
+  height: 190px !important;
+  object-fit: contain;
 }
 
 .negative-right-100 {

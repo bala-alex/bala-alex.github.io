@@ -822,7 +822,7 @@
     }
 
     &__modal-form {
-      background-color: #DCE5F2;
+      background-color: #F9FCFF;
       min-height: 450px;
       padding: 20px !important;
 
@@ -1464,6 +1464,146 @@
       &:hover {
         opacity: 0.8;
         cursor: pointer;
+      }
+    }
+  }
+
+  .escrow {
+    &__customised {
+
+      &-bg {
+        background-color: $cerulean;
+        min-height: 600px;
+        position: relative;
+        padding-top: 220px;
+
+        @include screen-md {
+          padding-top: 150px;
+        }
+      }
+
+      &-left {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-width: 400px;
+
+        @include screen-md {
+          max-width: 200px;
+        }
+      }
+
+      &-right {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        max-width: 400px;
+
+        @include screen-md {
+          max-width: 200px;
+        }
+      }
+
+      &-title {
+        color: $white;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+      }
+
+      &-subtitle {
+        color: $white;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 463px;
+      }
+    }
+
+    &__agreement {
+
+      &-box {
+        min-height: 350px;
+        width: 100%;
+        max-width: 1000px;
+        background: $white;
+        border: 0.5px solid rgba(0, 54, 134, 0.05);
+        box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+        border-radius: 10px;
+        padding: 90px 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+
+        @include screen-sm {
+          padding: 30px 20px;
+        }
+      }
+
+      &-spacing-top {
+        margin-top: -100px;
+      }
+
+      &-spacing-bottom {
+        margin-bottom: -100px;
+        z-index: 10;
+      }
+
+      &-title {
+        color: #003543;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      &-subtitle {
+        color: #48748C;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 460px;
+      }
+  
+      &-bg-right {
+        width: 30%;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        object-fit: contain;
+      }
+
+      &-bg-left {
+        width: 30%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        object-fit: contain;
+      }
+
+      &-image-right {
+        width: 150px;
+        height: 190px;
+        object-fit: contain;
+        z-index: 10;
+      }
+
+      &-image-left {
+        width: 150px;
+        height: 190px;
+        object-fit: contain;
+        z-index: 10;
+        margin-right: 100px;
       }
     }
   }
