@@ -508,6 +508,28 @@
   }
 }
 
+.btn-primary-small {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 5px;
+  min-height: 35px;
+  width: fit-content;
+  font-weight: normal;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  padding: 5px 15px;
+  text-align: center;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
 .btn-learn-more {
   text-decoration: underline;
   color: $white;

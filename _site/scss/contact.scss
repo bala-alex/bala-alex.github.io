@@ -19,6 +19,17 @@
       max-width: 754px;
     }
 
+    &__text {
+      font-family: 'Muli';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #00889F;
+      max-width: 900px;
+    }
+
     &__image {
       margin-top: 80px;
     }
@@ -37,6 +48,437 @@
       background-color: $white;
       padding-top: 100px;
       padding-bottom: 250px;
+    }
+  }
+
+  .history {
+    &__container {
+      background-color: $cerulean;
+      min-height: 1600px;
+      position: relative;
+      padding-bottom: 400px;
+      z-index: 0;
+    }
+
+    &__desktop {
+      margin-top: 100px;
+
+      @include screen-md {
+        display: none;
+      }
+    }
+
+    &__mobile {
+      display: none;
+
+      @include screen-md {
+        margin-top: 100px;
+        display: block;
+      }
+    }
+
+    &__top {
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: contain !important;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__bottom {
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: contain !important;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 45px;
+      line-height: 55px;
+      color: $white;
+      text-align: center;
+      padding-top: 150px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -1px;
+      color: $white;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: $white;
+    }
+
+    &__subtext {
+      font-family: 'Mulish';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: $white;
+      max-width: 660px;
+    }
+
+    &__dash {
+      width: 2px;
+      height: 300px;
+      border-left: 2px solid $white;
+      opacity: 0.5;
+    }
+
+    &__left-line {
+      top: 118px;
+      left: -15px;
+      height: 2px;
+      width: 55%;
+      position: absolute;
+      background-color: $white;
+      opacity: 0.5;
+
+    }
+
+    &__right-line {
+      top: 118px;
+      right: -15px;
+      height: 2px;
+      width: 55%;
+      position: absolute;
+      background-color: $white;
+      opacity: 0.5;
+
+    }
+
+    &__dot-top {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__dot {
+      position: absolute;
+      margin-top: 110px;
+    }
+
+    &__dash2 {
+      width: 2px;
+      height: 100px;
+      border-left: 2px solid $white;
+      opacity: 0.5;
+    }
+
+    &__dot2 {
+      position: absolute;
+      margin-top: -10px;
+    }
+
+    &__future {
+      margin-bottom: -200px;
+    }
+
+    &__badge {
+      position: absolute;
+      right: 100px;
+      top: -20px;
+      min-width: 156px;
+      height: 44px;
+      background: #FFDF34;
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #003543;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include screen-md {
+        left: 20px !important;
+        right: auto;
+      }
+    }
+
+    &__box {
+      width: auto;
+      height: 230px;
+      background-color: $white;
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+
+      &-side {
+        width: 230px;
+        height: 230px;
+        background-color: #008298;
+        position: relative;
+      }
+
+      &-chat {
+        position: absolute;
+        left: 140px;
+        bottom: -40px;
+        height: 80px;
+      }
+
+      &-date {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $white;
+        margin-top: 103px;
+      }
+
+      &-title {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #003543;
+        width: 100%;
+        max-width: 272px;
+      }
+
+      &-subtitle {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #003543;
+        width: 100%;
+        max-width: 247px;
+      }
+
+      &-content {
+        padding: 20px;
+      }
+
+      &-image {
+        width: 140px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+      }
+
+      &-image2 {
+        width: 140px;
+        object-fit: contain;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+      }
+
+      &-image3 {
+        width: 150px;
+        object-fit: contain;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+      }
+
+      &-image4 {
+        width: 140px;
+        object-fit: contain;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+      }
+
+      &-image5 {
+        width: 150px;
+        object-fit: contain;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+      }
+
+      &-image6 {
+        width: 180px;
+        object-fit: contain;
+        position: absolute;
+        top: 110px;
+        left: 20px;
+
+        @include screen-xs {
+          width: 120px;
+        }
+      }
+
+      &-image7 {
+        width: 210px;
+        object-fit: contain;
+        margin-left: 0px;
+
+        @include screen-xs {
+          width: 150px;
+        }
+      }
+
+      &-image8 {
+        width: 100px;
+        object-fit: contain;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+      }
+
+      &-arrows {
+        margin-top: -10px;
+        width: 25px;
+      }
+    }
+  }
+
+  .about {
+    &__office-bg {
+      min-height: 800px !important;
+      background: url('../images/about-page/office-map.webp');
+      background-color: $cerulean;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: contain !important;
+      padding: 100px;
+      position: relative;
+
+      @include screen-lg {
+        min-height: 600px !important;
+      }
+
+      @include screen-md {
+        min-height: 500px !important;
+      }
+
+      @include screen-sm {
+        min-height: 300px !important;
+      }
+    }
+
+    &__main-title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -1px;
+      color: $bondi-blue;
+    }
+
+    &__main-subtitle {
+      font-family: 'Muli';
+      font-style: italic;
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 32px;
+      color: $complementary-dull;
+    }
+
+    &__main-text {
+      font-family: 'Muli';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      color: $complementary-dull;
+    }
+
+    &__office-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-height: 500px;
+      background-repeat: no-repeat;
+      background-size: contain !important;
+      max-width: 70%;
+    }
+
+    &__office-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-height: 260px;
+      background-repeat: no-repeat;
+      background-size: contain !important;
+      max-width: 90%;
+    }
+
+    &__office-title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 45px;
+      line-height: 55px;
+      color: $white;
+      padding-top: 100px;
+
+      @include screen-lg {
+        padding-top: 130px;
+      }
+
+      @include screen-md {
+        font-size: 22px;
+        line-height: 26px;
+        padding-top: 80px;
+      }
+
+      @include screen-sm {
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 10px;
+      }
+    }
+
+    &__office-subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $white;
+      max-width: 305px;
+
+      @include screen-md {
+        font-size: 11px;
+        line-height: 13px;
+        max-width: 200px;
+      }
+
+      @include screen-sm {
+        font-size: 8px;
+        line-height: 11px;
+        max-width: 130px;
+      }
     }
   }
 

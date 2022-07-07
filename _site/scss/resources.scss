@@ -1475,10 +1475,11 @@
         background-color: $cerulean;
         min-height: 600px;
         position: relative;
-        padding-top: 220px;
+        padding-top: 200px;
 
         @include screen-md {
-          padding-top: 150px;
+          padding-top: 100px;
+          padding-bottom: 100px;
         }
       }
 
@@ -1499,8 +1500,19 @@
         right: 0px;
         max-width: 400px;
 
-        @include screen-md {
-          max-width: 200px;
+        @include screen-sm {
+          max-width: 300px;
+        }
+      }
+
+      &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        @include screen-sm {
+          margin: 30px 15px 50px;
+          max-width: 80%;
         }
       }
 
@@ -1511,49 +1523,63 @@
         font-weight: 200;
         font-size: 45px;
         line-height: 55px;
-        text-align: center;
       }
 
       &-subtitle {
         color: $white;
         font-family: 'Mulish';
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        max-width: 463px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 600px;
       }
     }
 
     &__agreement {
 
       &-box {
-        min-height: 350px;
+        min-height: 340px;
         width: 100%;
-        max-width: 1000px;
         background: $white;
         border: 0.5px solid rgba(0, 54, 134, 0.05);
         box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
         border-radius: 10px;
-        padding: 90px 70px;
+        padding: 30px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         position: relative;
+        margin-top: 40px;
+        display: flex;
+
+        @include screen-md {
+          flex-wrap: wrap;
+        }
 
         @include screen-sm {
-          padding: 30px 20px;
+          padding: 30px 15px;
         }
       }
 
       &-spacing-top {
         margin-top: -100px;
+        padding-bottom: 100px;
       }
 
       &-spacing-bottom {
         margin-bottom: -100px;
         z-index: 10;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 320px;
+
+        @include screen-sm {
+          min-height: fit-content;
+        }
       }
 
       &-title {
@@ -1563,22 +1589,41 @@
         font-weight: 300;
         font-size: 32px;
         line-height: 40px;
+        max-width: 340px;
       }
 
       &-subtitle {
-        color: #48748C;
+        color: $complementary-dull;
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        max-width: 460px;
+        max-width: 340px;
+      }
+
+      &-info {
+        color: $complementary-dull;
+        font-family: 'Muli';
+        font-style: italic;
+        font-weight: 200;
+        font-size: 45px;
+        line-height: 55px;
+        max-width: 540px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+
+        @include screen-sm {
+          font-weight: 300;
+          font-size: 32px;
+          line-height: 40px;
+        }
       }
   
       &-bg-right {
-        width: 30%;
+        width: 15%;
         position: absolute;
-        bottom: 0px;
+        top: 0px;
         right: 0px;
         object-fit: contain;
       }
@@ -1592,10 +1637,14 @@
       }
 
       &-image-right {
-        width: 150px;
-        height: 190px;
+        width: 110px;
+        height: 135px;
         object-fit: contain;
         z-index: 10;
+
+        @include screen-md {
+          margin-top: 30px;
+        }
       }
 
       &-image-left {
@@ -1604,6 +1653,95 @@
         object-fit: contain;
         z-index: 10;
         margin-right: 100px;
+      }
+    }
+
+    &__how {
+      &-container {
+        width: 100%;
+        min-height: 320px;
+        background: $white;
+        border: 0.5px solid #DCE5F2;
+        box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+        border-radius: 10px;
+        padding: 50px;
+
+        @include screen-sm {
+          padding: 50px 20px;
+        }
+      }
+
+      &-content {
+        display: flex;
+
+        @include screen-sm {
+          flex-direction: column;
+        }
+      }
+
+      &-col {
+        width: 33%;
+        border-top: 1px dashed $complementary-dull;
+        padding-right: 20px;
+  
+        @include screen-sm {
+          border-top: none;
+          width: 100%;
+        }
+      }
+
+      &-col:last-child {
+        border-top: none;
+      }
+
+      &-title {
+        color: $sherpa-blue;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 40px;
+      }
+
+      &-text {
+        color: $complementary-dark;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 290px;
+      }
+
+      &-subtext {
+        color: $complementary-dull;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 80px;
+      }
+
+      &-number {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: 'Mulish', sans-serif;
+        color: $white;
+        width: 40px;
+        height: 40px;
+        background-color: $primary-default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        margin-top: -20px;
+
+        @include screen-sm {
+          margin-top: 30px;
+        }
       }
     }
   }
