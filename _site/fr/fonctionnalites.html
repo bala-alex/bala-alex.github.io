@@ -50,8 +50,11 @@
           <a class="nav-link nav-margin pricing-href" href="pricing.html">TARIFS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin integrations-href" href="integrations.html">INTÉGRATIONS</a>
+          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Contrats d’entiercement</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">INTÉGRATIONS</a>
+        </li> -->
         <li class="nav-item show-mobile">
           <a class="nav-link nav-margin saas-escrow-href" href="saas-escrow.html">Entiercement de SaaS</a>
         </li>
@@ -84,11 +87,14 @@
         </div> 
         
         <li class="nav-item">
-          <a class="nav-link nav-margin contact-href" href="contact.html">CONTACT</a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">À propos de nous</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">SE CONNECTER</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">CONTACT</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">SE CONNECTER</a>
+        </li> -->
         <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
           Réserver une démo
         </a>
@@ -669,6 +675,7 @@
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">RESSOURCES</p>
             <a class="footer__subtext mt-2 resources-href" href="resources.html">Toutes les ressources</a>
+            <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">Contrats d’entiercement</a>
             <a class="footer__subtext mt-2 what-is-source-code-escrow-href" href="what-is-source-code-escrow.html">Entiercement de code source</a>
             <a class="footer__subtext mt-2 what-is-data-escrow-href" href="what-is-data-escrow.html">Entiercement de données</a>
             <a class="footer__subtext mt-2 what-is-saas-escrow-href" href="what-is-saas-escrow.html">Entiercement de SaaS</a>
@@ -680,6 +687,7 @@
             <p class="footer__text mt-2 mb-0 fw-bold">ASSISTANCE</p>
             <a class="footer__subtext mt-2 contact-href" href="contact.html">Contact</a>
             <a class="footer__subtext mt-2 security-href" href="security.html">Sécurité</a>
+            <a class="footer__subtext mt-2 about-us-href" href="about-us.html">À propos de nous</a>
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">MENTIONS LÉGALES</p>
@@ -876,6 +884,7 @@ document.addEventListener("click", closeAllSelect);
     const isClient = window?.location?.search;
     if (window.location.pathname.includes('/es/')) {
 
+      $('.about-us-href').attr('href', 'acerca-de-nosotros.html')
       $('.check-email-href').attr('href', 'comprobar-correo.html')
       $('.confirm-message-href').attr('href', 'confirmar-mensaje.html')
       $('.confirm-plan-href').attr('href', 'confirmar-plan.html')
@@ -921,6 +930,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/de/')) {
 
+      $('.about-us-href').attr('href', 'über-uns.html')
       $('.check-email-href').attr('href', 'e-mail-prüfen.html')
       $('.confirm-message-href').attr('href', 'nachricht-bestätigen.html')
       $('.confirm-plan-href').attr('href', 'tarif-bestätigen.html')
@@ -966,6 +976,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/nl/')) {
 
+      $('.about-us-href').attr('href', 'over-ons.html')
       $('.check-email-href').attr('href', 'check-email.html')
       $('.confirm-message-href').attr('href', 'bevestig-bericht.html')
       $('.confirm-plan-href').attr('href', 'bevestig-pakket.html')
@@ -1011,6 +1022,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/ro/')) {
 
+      $('.about-us-href').attr('href', 'despre-noi.html')
       $('.check-email-href').attr('href', 'verifică-email.html')
       $('.confirm-message-href').attr('href', 'mesaj-de-confirmare.html')
       $('.confirm-plan-href').attr('href', 'confirmă-plan.html')
@@ -1055,6 +1067,7 @@ document.addEventListener("click", closeAllSelect);
 
       if (window.location.pathname.includes('/fr/')) {
 
+        $('.about-us-href').attr('href', 'à-propos-de-nous.html')
         $('.check-email-href').attr('href', 'verifier-email.html')
         $('.confirm-message-href').attr('href', 'confirmer-message.html')
         $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')

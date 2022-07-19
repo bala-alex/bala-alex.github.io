@@ -267,6 +267,7 @@
         color: #003543;
         width: 100%;
         max-width: 272px;
+        overflow-wrap: anywhere;
       }
 
       &-subtitle {
@@ -440,10 +441,10 @@
       font-size: 45px;
       line-height: 55px;
       color: $white;
-      padding-top: 100px;
+      padding-top: 150px;
 
       @include screen-lg {
-        padding-top: 130px;
+        padding-top: 150px;
       }
 
       @include screen-md {

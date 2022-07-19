@@ -7383,8 +7383,10 @@ html {
   .nav-link::first-letter {
     text-transform: capitalize; }
   .nav-link:hover {
-    opacity: 0.8;
-    text-decoration: none; }
+    opacity: 0.9;
+    text-decoration: none;
+    color: #009CB7 !important;
+    font-weight: bold; }
   .nav-link:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
@@ -9259,9 +9261,10 @@ html {
       padding-bottom: 100px; } }
 
 .clients__section-image {
-  width: 80px;
   height: 80px;
-  margin: 30px 0; }
+  margin: 30px 0;
+  -o-object-fit: contain;
+  object-fit: contain; }
 
 .clients__section-image2 {
   width: 130px;
@@ -9660,9 +9663,10 @@ html {
   line-height: 18px;
   margin-bottom: 12px; }
   .footer__subtext:hover {
-    color: #6782A3;
-    opacity: 0.8;
-    text-decoration: none; }
+    color: #009CB7;
+    opacity: 0.9;
+    text-decoration: none;
+    font-weight: bold; }
 
 .vertical-tabs {
   /*-----------Vertical tabs-----------*/
@@ -12427,7 +12431,8 @@ html {
     line-height: 32px;
     color: #003543;
     width: 100%;
-    max-width: 272px; }
+    max-width: 272px;
+    overflow-wrap: anywhere; }
   .contact .history__box-subtitle {
     font-family: 'Mulish';
     font-style: normal;
@@ -12572,10 +12577,10 @@ html {
   font-size: 45px;
   line-height: 55px;
   color: #ffffff;
-  padding-top: 100px; }
+  padding-top: 150px; }
   @media (max-width: 1200px) {
     .contact .about__office-title {
-      padding-top: 130px; } }
+      padding-top: 150px; } }
   @media (max-width: 992px) {
     .contact .about__office-title {
       font-size: 22px;

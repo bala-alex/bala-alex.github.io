@@ -55,8 +55,11 @@
           <a class="nav-link nav-margin pricing-href" href="pricing.html">PREISE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin integrations-href" href="integrations.html">INTEGRATIONEN</a>
+          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Escrow-Verträge</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">INTEGRATIONEN</a>
+        </li> -->
         <li class="nav-item show-mobile">
           <a class="nav-link nav-margin saas-escrow-href" href="saas-escrow.html">SaaS-Escrow</a>
         </li>
@@ -89,11 +92,14 @@
         </div> 
         
         <li class="nav-item">
-          <a class="nav-link nav-margin contact-href" href="contact.html">KONTAKT</a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">Über uns</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">ANMELDEN</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">KONTAKT</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">ANMELDEN</a>
+        </li> -->
         <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
           Demo buchen
         </a>
@@ -1073,6 +1079,7 @@ document.addEventListener("click", closeAllSelect);
     const isClient = window?.location?.search;
     if (window.location.pathname.includes('/es/')) {
 
+      $('.about-us-href').attr('href', 'acerca-de-nosotros.html')
       $('.check-email-href').attr('href', 'comprobar-correo.html')
       $('.confirm-message-href').attr('href', 'confirmar-mensaje.html')
       $('.confirm-plan-href').attr('href', 'confirmar-plan.html')
@@ -1118,6 +1125,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/de/')) {
 
+      $('.about-us-href').attr('href', 'über-uns.html')
       $('.check-email-href').attr('href', 'e-mail-prüfen.html')
       $('.confirm-message-href').attr('href', 'nachricht-bestätigen.html')
       $('.confirm-plan-href').attr('href', 'tarif-bestätigen.html')
@@ -1163,6 +1171,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/nl/')) {
 
+      $('.about-us-href').attr('href', 'over-ons.html')
       $('.check-email-href').attr('href', 'check-email.html')
       $('.confirm-message-href').attr('href', 'bevestig-bericht.html')
       $('.confirm-plan-href').attr('href', 'bevestig-pakket.html')
@@ -1208,6 +1217,7 @@ document.addEventListener("click", closeAllSelect);
 
     if (window.location.pathname.includes('/ro/')) {
 
+      $('.about-us-href').attr('href', 'despre-noi.html')
       $('.check-email-href').attr('href', 'verifică-email.html')
       $('.confirm-message-href').attr('href', 'mesaj-de-confirmare.html')
       $('.confirm-plan-href').attr('href', 'confirmă-plan.html')
@@ -1252,6 +1262,7 @@ document.addEventListener("click", closeAllSelect);
 
       if (window.location.pathname.includes('/fr/')) {
 
+        $('.about-us-href').attr('href', 'à-propos-de-nous.html')
         $('.check-email-href').attr('href', 'verifier-email.html')
         $('.confirm-message-href').attr('href', 'confirmer-message.html')
         $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')
@@ -1639,7 +1650,7 @@ document.addEventListener("click", closeAllSelect);
             $('.increased-repository').text('CHF18');
             $('.increased-storage').text('CHF5');
             $('.storage-selection').text('CHF8');
-            $('.deposit-connections').text('CHF90');
+            $('.deposit-connections').text('CHF99');
             $('.release-processing').text('CHF219');
             $('.saas-continuity').text('CHF329');
             $('.verification-advanced').text('CHF2,749');
