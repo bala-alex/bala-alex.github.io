@@ -1,3 +1,9 @@
+@mixin screen-xl {
+	@media (max-width: $media-xl) {
+		@content;
+	}
+}
+
 @mixin screen-lg {
 	@media (max-width: $media-lg) {
 		@content;
@@ -511,8 +517,24 @@ html {
   max-width: 900px;
 }
 
+.mw-700 {
+  max-width: 700px !important;
+}
+
+.mw-770 {
+  max-width: 770px !important;
+}
+
 .mw-530 {
   max-width: 530px !important;
+}
+
+.mw-420 {
+  max-width: 420px !important;
+}
+
+.mw-350 {
+  max-width: 350px !important;
 }
 
 .mw-800 {
