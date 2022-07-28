@@ -23,6 +23,29 @@
       text-align: center;
     }
 
+    &__title2 {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 68px;
+      letter-spacing: -1px;
+      max-width: 700px;
+      color: $complementary-dark;
+      position: relative;
+    }
+  
+    &__subtitle2 {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $complementary-dull;
+      max-width: 667px;
+      position: relative;
+    }
+
     &__content {
       background-size: 100%;
       margin-top: 85px;
@@ -40,6 +63,14 @@
 
     &__bg-new {
       min-height: 700px !important;
+      background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%) !important;
+      padding-top: 180px !important;
+      padding-bottom: 180px !important;
+      position: relative;
+    }
+
+    &__bg-landing {
+      min-height: 900px !important;
       background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%) !important;
       padding-top: 180px !important;
       padding-bottom: 180px !important;
@@ -70,6 +101,61 @@
       right: 0;
     }
 
+    &__bg-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-height: 100px;
+
+      @include screen-xl {
+        max-width: 20%;
+      }
+    }
+
+    &__bg-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-height: 200px;
+
+      @include screen-xl {
+        max-width: 50%;
+      }
+    }
+
+    &__bg-screen {
+      position: absolute;
+      bottom: 173px;
+      right: 0;
+      max-width: 700px;
+      object-fit: contain;
+
+      @include screen-xl {
+        max-width: 40%;
+        bottom: 120px;
+      }
+
+      @include screen-lg {
+        max-width: 40%;
+        bottom: 100px;
+      }
+
+      @include screen-md {
+        max-width: 40%;
+        bottom: 80px;
+      }
+
+      @include screen-sm {
+        max-width: 40%;
+        bottom: 50px;
+      }
+
+      @include screen-xs {
+        max-width: 40%;
+        bottom: 30px;
+      }
+    }
+
     &__bg3 {
       min-height: 290px !important;
       background: url('../images/landing/background-fill.webp');
@@ -88,6 +174,84 @@
       background-size: cover !important;
       padding-top: 80px !important;
       padding-bottom: 180px !important;
+    }
+  }
+
+  .guide {
+    &__box {
+      width: 100%;
+      min-height: 700px;
+      background: $white;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      margin-top: 30px;
+
+      &-header {
+        height: 330px;
+        background-color: #F3F6FC;
+        border-radius: 10px 10px 0px 0px;
+        padding: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &-image {
+        max-width: 320px;
+        object-fit: contain;
+      }
+
+      &-content {
+        padding: 30px 40px;
+      }
+
+      &-title {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        max-width: 448px;
+        color: $sherpa-blue;
+        min-height: 80px;
+      }
+
+      &-subtitle {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 512px;
+        color: $sherpa-blue;
+        min-height: 180px;
+      }
+
+      &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-badge {
+        width: 100px;
+        height: 35px;
+        background: #DFECFF;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 12px;
+        color: #417BD2;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+      }
     }
   }
 
