@@ -7379,7 +7379,8 @@ html {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 22px;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  text-align: center; }
   .nav-link::first-letter {
     text-transform: capitalize; }
   .nav-link:hover {
@@ -13706,6 +13707,10 @@ html {
     max-width: 700px;
     -o-object-fit: contain;
     object-fit: contain; }
+    @media only screen and (min-width: 1400px) and (max-width: 1550px) {
+      .resources .header__bg-screen {
+        max-width: 620px;
+        bottom: 176px; } }
     @media (max-width: 1400px) {
       .resources .header__bg-screen {
         max-width: 40%;
@@ -16933,7 +16938,8 @@ html {
   padding: 0 30px;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Mulish', sans-serif; }
+  font-family: 'Mulish', sans-serif;
+  text-align: center; }
   .btn-secondary-large:hover {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0);
