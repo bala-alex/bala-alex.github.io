@@ -73,7 +73,7 @@
         <li class="nav-item show-mobile">
           <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
         </li>
-        <div class="dropdown show-desktop">
+        <!-- <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Add-ons <img class="ml-1" src="/images/integrations/icon-down.svg"/>
           </button>
@@ -81,7 +81,7 @@
             <a class="dropdown-item py-2 saas-escrow-href" href="saas-escrow.html">SaaS Escrow</a>
             <a class="dropdown-item py-2 verification-href" href="verification.html">Verificatie</a>
           </div>
-        </div>
+        </div> -->
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Resources <img class="ml-1" src="/images/integrations/icon-down.svg"/>
@@ -111,16 +111,61 @@
 
       <!-- Header -->
       <div class="header__bg-landing">
-        <img class="header__bg-left" src="/images/landing/bg-left.webp" alt="Background Image"/>
-        <img class="header__bg-right" src="/images/landing/bg-right.webp" alt="Background Image"/>
-        <img class="header__bg-screen" src="/images/landing/bg-screen.webp" alt="Background Image"/>
+        <img class="header__bg-left" src="/images/landing/illustration-top.webp" alt="Background Image"/>
+        <img class="header__bg-right" src="/images/landing/illustration-bottom.webp" alt="Background Image"/>
         <div class="container section-medium">
-          <h1 class="header__title2 mt-4">Sluit risico's van derden uit in uw bedrijfsactiviteiten</h1>
-          <p class="header__subtitle2 my-4">Codekeeper biedt geavanceerde <strong>oplossingen voor software-escrow</strong> die zekerheid geven aan zowel klanten als softwareontwikkelaars.</p>
-          <div class="my-4">
-            <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
-              Boek een Demo
-            </a>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h1 class="header__title2 mt-4">Sluit risico's van derden uit in uw bedrijfsactiviteiten</h1>
+              <p class="header__subtitle2 my-4">We bieden geavanceerde <strong>oplossingen voor software-escrow</strong> om risico’s van derden weg te nemen in uw bedrijfsactiviteiten.</p>
+              <div class="d-flex flex-wrap">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  Boek een Demo
+                </a>
+                <div>
+                  <p class="header__text">Of bekijk onze</p>
+                  <a class="header__link pricing-href" href="pricing.html">Prijsopties <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+              <p class="header__subtext mt-4">We bieden ondersteuning voor alle populaire ontwikkelaarsplatformen. Meer dan 50 integraties beschikbaar. </p>
+              <div class="resources">
+                <div class="applications__logos mt-4">
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"/>
+                    <p class="applications__logo-text">Bitbucket</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"/>
+                    <p class="applications__logo-text">GitHub</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3" src="/images/homepage/logos/gitlab-large.svg"/>
+                    <p class="applications__logo-text">GitLab</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg"/>
+                    <p class="applications__logo-text">Git</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3" src="/images/homepage/logos/google-cloud-large.svg"/>
+                    <p class="applications__logo-text">Google<br> Cloud</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/azure-large.svg"/>
+                    <p class="applications__logo-text">Microsoft Azure</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"/>
+                    <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="image-style" src="/images/landing/home-screen.webp" alt="Background Image"/>
+            </div>
           </div>
         </div>
         <!-- <div class="my-5 d-flex">
@@ -134,7 +179,7 @@
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
-        <p class="protect__subtext text-bondi-blue fw-light">Vertrouwd partner van deze bekende internationale bedrijven!</p>
+        <p class="protect__subtext text-slate-gray fw-light">Vertrouwd partner van deze bekende internationale bedrijven!</p>
         <div class="tech-slideshow">
           <div class="slideshow-brands">
             <div class="d-flex align-items-center justify-content-around mt-4 flex-wrap">
@@ -183,299 +228,243 @@
           </div>
         </div>
       </div>
-      <div class="protect__background">
-        <div class="container pb-0">
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <img loading="lazy" class="image-style" src="/images/landing/protect-software-icon.webp" alt="Protect software"/>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <h2 class="protect__title ml-auto text-white">Bescherm uw software en bespaar geld</h2>
-              <p class="protect__subtitle ml-auto mt-3 text-white">Software-escrow beveiligt de broncode die hersteld moet worden als een leverancier niet langer in staat is toegang of ondersteuning te verlenen voor de software die u nodig heeft voor uw bedrijfsactiviteiten met een onafhankelijke derde partij.</p>
-              <div class="my-4">
-                <a class="button btn-yellow ml-auto book-a-demo-href" href="book-a-demo.html">
-                  Boek een Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <!-- Second Section -->
-    <div class="mt-negative-350 pb-5">
-      <div class="container">
-        <h2 class="clients__title text-white mt-5">Onze Escrowdiensten</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 content-center">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/landing/source-code-icon.webp"/>
-              <p class="clients__section-title">BRONCODE-ESCROW</p>
-              <p class="clients__section-subtitle">Ontwikkelaars slaan hun software op en bewerken deze in een broncoderepository, ook wel een "project" genoemd. Meestal bevat deze databank alle versies van de code.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 content-center">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/landing/data-escrow-icon.webp"/>
-              <p class="clients__section-title">DATA-ESCROW</p>
-              <p class="clients__section-subtitle">Met data-escrow kunt u data opslaan als onderdeel van uw escrowovereenkomst. Zo heeft u niet alleen toegang tot de applicatie, maar ook tot de data die u nodig heeft om verder te kunnen gaan waar u gebleven was. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 content-center">
-            <div class="clients__item-box">
-              <img class="clients__section-image" src="/images/landing/info-escrow-icon.webp"/>
-              <p class="clients__section-title">INFORMATIE-ESCROW</p>
-              <p class="clients__section-subtitle">Met deze optie slaat u intellectuele eigendommen, wachtwoorden, ontwerpen of andere belangrijke informatie op. </p>
-            </div>
-          </div>
-        </div>
-        <a class="button btn-cerulean mx-auto my-5 resources-href" href="resources.html">
-          MEER WETEN
-        </a>
-      </div>
-    </div>
-    <!-- Third Section -->
-    <div class="bg-white py-5 px-3">
-      <div class="automated__container mx-auto">
+
+      <div class="software-escrow__bg-gray">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="automated__title mt-5">Gebruik integraties voor automatisch deponeren</h2>
-              <p class="automated__subtitle mt-4">Met onze bibliotheek van integratiemogelijkheden kunnen uw ontwikkelaars de gedeponeerde broncode en data gemakkelijk up-to-date houden. We ondersteunen alle grote platforms, waaronder Github, Bitbucket, Gitlab en AzureDevops.</p>
-              <p class="automated__subtext mt-4 mb-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Automatisch en up-to-date deponeren</p>
-              <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Geïntegreerd met workflows van ontwikkelaars</p>
-              <p class="automated__subtext my-2"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Programmeren is niet nodig </p>
-              <div class="my-4">
-                <a class="button btn-cerulean book-a-demo-href" href="book-a-demo.html">
-                  Boek een Demo
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img loading="lazy" class="automated__image mt-5" src="/images/homepage/automated-deposit.webp" alt="Automated deposit"/>
-              <p class="automated__text my-0">Een aantal van onze integraties voor broncode- en data-escrow: </p>
-              <div class="resources">
-                <div class="applications__logos mt-5">
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"/>
-                    <p class="applications__logo-text">Bitbucket</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"/>
-                    <p class="applications__logo-text">GitHub</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3" src="/images/homepage/logos/gitlab-large.svg"/>
-                    <p class="applications__logo-text">GitLab</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg"/>
-                    <p class="applications__logo-text">Git</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/visual-studio-large.svg"/>
-                    <p class="applications__logo-text">Visual<br> Studio</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3" src="/images/homepage/logos/google-cloud-large.svg"/>
-                    <p class="applications__logo-text">Google<br> Cloud</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/azure-large.svg"/>
-                    <p class="applications__logo-text">Microsoft Azure</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"/>
-                    <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fourth Section -->
-    <div class="bg-white section-medium">
-      <div class="container">
-        <h2 class="clients__title mt-5">Voor wie is Codekeeper?</h2>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 content-center">
-            <div class="clients__item-box2">
-              <img class="clients__section-image2" src="/images/homepage/first-illustration.webp"/>
-              <div>
-                <p class="clients__section-title2">SOFTWAREONTWIKKELAARS</p>
-                <p class="clients__section-subtitle2">Is in uw voordeel bij onderhandelingen over overeenkomsten, maakt uw bedrijf geloofwaardiger, geeft een gevoel van vertrouwen en partnerschap, beschermt uw intellectuele eigendomsrechten en helpt rechtszaken en geschillen te vermijden.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 content-center">
-            <div class="clients__item-box2">
-              <img class="clients__section-image2" src="/images/homepage/second-illustration.webp"/>
-              <div>
-                <p class="clients__section-title2">BEDRIJVEN EN ONDERNEMINGEN</p>
-                <p class="clients__section-subtitle2">U bent beschermd als uw softwareleverancier failliet gaat of het onderhoud van bedrijfskritische applicaties staakt. Bovendien kunt u uitgebreider risicobeheer toepassen en voldoen aan wettelijke verplichtingen.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-center">
-          <div class="clients__item-box2">
-            <img class="clients__section-image2" src="/images/homepage/third-illustration.webp"/>
-            <div>
-              <p class="clients__section-title2">JURIDISCHE ADVISEURS</p>
-              <p class="clients__section-subtitle2">We ondersteunen u bij het opzetten van broncode- en software-escrow voor uw klanten. Bied een complete oplossing, zonder compromissen.</p>
-            </div>
-          </div>
-        </div>
-        <div class="my-5">
-          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
-            Boek een Demo
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Fifth Section -->
-    <div class="bg-white section-medium px-3">
-      <div class="people__section-container mx-auto">
-        <div class="container">
-          <h2 class="people__title">Waarom mensen voor Codekeeper kiezen</h2>
-          <div class="row">
-            <div class="col-md-4 col-sm-12 content-center">
-              <div class="people__section-col">
-                <img class="people__section-image" src="/images/homepage/pricing.svg"/>
-                <p class="people__section-title">BESTE PRIJS OP DE MARKT <img class="ml-2" src="/images/homepage/circle-check.svg"/></p>
-                <p class="people__section-subtitle">Dankzij onze krachtige automatiseringstechnologie en unieke werkwijze kunnen we u superieure service bieden voor de beste prijs op de markt.</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12 content-center">
-              <div class="people__section-col">
-                <img class="people__section-image" src="/images/homepage/checked.svg"/>
-                <p class="people__section-title">AL ONZE PAKKETTEN ZIJN INCLUSIEF SOFTWARE-, DATA- & INFORMATIE-ESCROW <img class="ml-2" src="/images/homepage/circle-check.svg"/></p>
-                <p class="people__section-subtitle">Voor moderne webapplicaties moet u misschien meer dan alleen broncode opslaan. Met onze pakketten kunt u data en informatie opslaan zonder extra kosten.</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12 content-center">
-              <div class="people__section-col">
-                <img class="people__section-image" src="/images/homepage/puzzle.svg"/>
-                <p class="people__section-title">INCLUSIEF ALLE INTEGRATIES VOOR AUTOMATISCH EN HANDMATIG WERKEN <img class="ml-2" src="/images/homepage/circle-check.svg"/></p>
-                <p class="people__section-subtitle">Niet meer handmatig deponeren. Codekeeper is volledig geautomatiseerd en geïntegreerd met moderne workflows op SCM-platforms zoals Github, Bitbucket, Gitlab en meer.</p>
-              </div>
-            </div>
-          </div>
-          <p class="people__section-text mt-5 mx-auto">Heeft u vereisten die wij hier niet hebben genoemd? <a class="text-underline contact-href" href="contact.html">Neem contact met ons op</a>.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="bg-white">
-      <div class="container pt-5 works__custom-padding">
-        <h2 class="works__title mb-5">Zo werkt het</h2>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content">
-              <div class="works__number-bg">
-                <div class="works__number">1</div>
-              </div>
-              <div>
-                <p class="works__text space-no-wrap">SETUP<img class="works__icon" src="/images/homepage/icon-file.svg"/></p>
-                <p class="works__subtext">Het opzetten van een escrow is gemakkelijk en intuïtief, maar indien nodig staat onze assistent altijd klaar om u te helpen.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="works__image" src="/images/homepage/image-setup.webp" alt="Image Setup"/>
-          </div>
-        </div>
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content2">
-              <img class="works__image ml-negative-40" src="/images/homepage/image-deposit.webp" alt="Image Deposit"/>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content3">
-              <div class="works__number-bg2">
-                <div class="works__number">2</div>
-              </div>
-              <div>
-                <p class="works__text space-no-wrap">DEPONEREN<img class="works__icon" src="/images/homepage/icon-code.svg"/></p>
-                <p class="works__subtext">Al het materiaal dat in uw escrow volledig automatisch wordt gedeponeerd is end-to-end beveiligd. Uw code is veilig en u bent altijd 'in compliance'.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content4">
-              <div class="works__number-bg">
-                <div class="works__number">3</div>
-              </div>
-              <div>
-                <p class="works__text space-no-wrap">ACTIVERING<img class="works__icon" src="/images/homepage/icon-check.svg"/></p>
-                <p class="works__subtext">Uw nieuwe source code escrow is succesvol geactiveerd.  U kunt de details bewerken en andere escrows beheren als leverancier of begunstigde.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img class="works__image" src="/images/homepage/image-activation.webp" alt="Image Activation"/>
-          </div>
-        </div>
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content5">
-              <img class="works__image ml-negative-40" src="/images/homepage/image-management.webp" alt="Image Management"/>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="works__content3">
-              <div class="works__number-bg3">
-                <div class="works__number">4</div>
-              </div>
-              <div>
-                <p class="works__text space-no-wrap">BEHEER<img class="works__icon" src="/images/homepage/icon-cog.svg"/></p>
-                <p class="works__subtext2">Voeg uw licentienemers toe als begunstigden van de gedeponeerde broncode en houd ze eenvoudig up-to-date. Als licentiegever kunt u ook leveranciers toevoegen en in slechts een paar klikken nieuwe escrows opzetten. Alle bevestigingen zijn geautomatiseerd, er komen geen extra formulieren aan te pas.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="works__info-text">Meer lezen over ons configuratieproces</p>
-        <div class="my-4">
-          <a class="button btn-cerulean mx-auto book-a-demo-href" href="book-a-demo.html">
-            Boek een Demo
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Seventh Section -->
-    <div class="bg-white escrow__content-bg">
-      <div class="container resources">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-6 col-sm-12">
-            <img loading="lazy" class="image-style" src="/images/homepage/escrow-role.webp" alt="Escrow role"/>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="escrow__content px-3">
-              <h2 class="escrow3__title text-white">Inclusief escrow-overeenkomst</h2>
-              <p class="escrow3__subtitle text-white mt-4">Bij elk Codekeeper account krijgt u gratis een juridisch correcte escrowovereenkomst. We maken deze samen op maat voor uw specifieke situatie. Geen jurist nodig!</p>
-              <div class="d-flex flex-wrap align-items-center my-4">
-                <div class="mr-4 my-4">
-                  <a class="button btn-yellow book-a-demo-href" href="book-a-demo.html">
-                    Boek een Demo
-                  </a>
-                </div>
-                <a class="button escrow3__link mw-100 text-yellow" data-toggle="modal" data-target="#exampleModal4">
-                  Download voorbeeldovereenkomst
-                </a>
-                </div>
-            </div>
-          </div>
+          <p class="software-escrow__main-title">Kan software-escrow echt niet eenvoudiger?</p>
+          <p class="software-escrow__main-subtitle mx-auto">Codekeeper is opgericht door mensen uit de technologiesector om escrow naar de cloud te brengen en de oplossing eenvoudiger te maken voor softwareontwikkelaars en softwareklanten.</p>
           
+        </div>
+      </div>
+
+      <div class="software-escrow__bg-gray2 section-medium">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Gaat alles nog steeds handmatig?</p>
+              <p class="software-escrow__subtitle">Traditionele escrows vereisen dure, handmatige deponeringen tegen extra kosten en hebben een lange verwerkingstijd.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-times text-light-red mr-2"></i>Tijdrovende, handmatige deponeringen</p>
+              <p class="software-escrow__text"><i class="fa fa-times text-light-red mr-2"></i>Complexe deponeringsprocedures</p>
+              <p class="software-escrow__text"><i class="fa fa-times text-light-red mr-2"></i>Een duur proces waarvoor advocaten nodig zijn</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/still-manual.webp" alt="Still Manual Image"/>
+            </div>
+          </div>
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/certain-path.webp" alt="Certain Path Image"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Geen betrouwbaar hersteltraject?</p>
+              <p class="software-escrow__subtitle">Oudere escrow-oplossingen zijn niet voorbereid op de vereisten van het in realtime werken in de SaaS-cloud.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-times text-light-red mr-2"></i>Gedateerde en onvolledige deponeringen</p>
+              <p class="software-escrow__text"><i class="fa fa-times text-light-red mr-2"></i>Ontbrekende informatie over implementatieconfiguratie</p>
+              <p class="software-escrow__text"><i class="fa fa-times text-light-red mr-2"></i>Geen team beschikbaar voor snelle herimplementatie</p>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">U lijdt verlies als u veel tijd en geld spendeert aan een oplossing waarop uw team niet kan rekenen wanneer dit cruciaal is.</p>
+              <p class="software-escrow__subtitle">We laten u zien hoe het anders kan!</p>
+              <div class="d-flex flex-wrap mt-4">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  Boek een Demo
+                </a>
+                <div>
+                  <p class="header__text">Of bekijk onze</p>
+                  <a class="header__link pricing-href" href="pricing.html">Prijsopties <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/losing-out.webp" alt="Losing out Image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="people-choose__main-title">Waarom mensen voor Codekeeper kiezen</p>
+        <p class="people-choose__main-subtitle mx-auto">Eén gecentraliseerd platform voor uw volledige escrow-beheer zowel voor softwareontwikkelaars als -klanten.</p>
+      </div>
+      <div class="people-choose__bg">
+        <div class="container">
+          <div class="content-center mt-5">
+            <img class="people-choose__image mx-auto" src="/images/landing/people-choose.webp" alt="Losing out Image"/>
+          </div>
+          <p class="people-choose__info mx-auto my-4">Ontdek meer over oplossingen voor snel herstel en volledige continuïteit die eenvoudig aansluiten op uw bestaande workflows en procedures.</p>
+          <a class="button btn-cerulean3 book-a-demo-href mx-auto" href="book-a-demo.html">
+            Bekijk onze oplossingen
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-100">
+        
+        <div class="container">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/designed-for.webp" alt="Design For Image"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Ontworpen voor softwarecontinuïteit</p>
+              <p class="software-escrow__subtitle">Meerlaagse bescherming biedt u alles wat nodig is voor succesvol herstel en continuïteit.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Software-escrow</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>SaaS-escrow</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Aangepaste escrow</p>
+            </div>
+          </div>
+        </div>
+        <div class="software-escrow__bg-gray3"></div>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Geautomatiseerde deponeringen</p>
+              <p class="software-escrow__subtitle">Integreert rechtstreeks met workflows van ontwikkelaars. Deponeringen zijn versleuteld en volledig geautomatiseerd.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Recente versie altijd gedeponeerd binnen 24 uur</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Meer dan 50 integraties beschikbaar</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Beveiliging op basis van AES256-versleuteling</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/automated-deposits.webp" alt="Automated Deposits Image"/>
+            </div>
+          </div>
+        </div>
+        <div class="software-escrow__bg-gray3"></div>
+
+        <div class="container">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/legal-framework.webp" alt="Legal Framework Image"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Een solide juridisch kader inbegrepen</p>
+              <p class="software-escrow__subtitle">Voor elk Codekeeper-account wordt een juridisch sluitende escrow-overeenkomst opgesteld die we samen aanpassen aan uw situatie. Hier komt geen advocaat aan te pas.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Juridisch werk inbegrepen</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Snelle afhandeling</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Voorbereid op allerlei scenario’s</p>
+            </div>
+          </div>
+        </div>
+        <div class="software-escrow__bg-gray3"></div>
+        <div class="container pb-200">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">Gegarandeerd herstel</p>
+              <p class="software-escrow__subtitle">Snel herstel in het geval van een vrijgavegebeurtenis. Vrijgaveprocedures worden 24 uur per dag, 7 dagen per week, 365 dagen per jaar verwerkt. En waar nodig krijgt u deskundige ondersteuning bij de herimplementatie.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Veel <a class="text-underline verification-href text-bondi-blue" href="verification.html">verificatieopties</a> beschikbaar</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Betalingsgaranties</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Volledige ondersteuning bij herstel</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/assured-recovery.webp" alt="Assured Recovery Image"/>
+            </div>
+          </div>
+        </div>
+        <div class="software-escrow__bg-gray3 mb-0"></div>
+      </div>
+
+      <div class="container">
+        <div class="best-price__bg">
+          <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small Shape Image"/>
+          <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium Shape Image"/>
+          <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large Shape Image"/>
+          <div class="row mt-5">
+            <div class="col-md-5 col-sm-12 content-center">
+              <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Best Price Image"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="best-price__text">En niet geheel onbelangrijk</p>
+              <p class="best-price__title">De beste prijs op de markt!</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Duidelijke en eenvoudige prijzen</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Geen kosten per deponering</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Bespaar tot 80% per escrow!</p>
+              <a class="button btn-yellow pricing-href my-4" href="pricing.html">
+                Bekijk onze prijzen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section-large">
+        <h2 class="mentions__title mt-5">Verschenen op...</h2>
+        <p class="software-escrow__subtitle">Een aantal van onze reviews op het internet.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">Uitstekende dienstverlening. Dit is absoluut de beste manier, zowel voor uzelf als voor de klant.</p>
+              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">Codekeeper is een nieuwe dienst waarmee escrow overeenkomsten voor broncode worden gemaakt die de juridische omstandigheden voor toegang tot de broncode specificeren.</p>
+              <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">Source code escrow is een ideale service. Sterk aan te bevelen voor ALLE ontwikkelaars die projecten voor verschillende klanten uitvoeren.</p>
+              <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img class="image-style" src="/images/landing/companies.webp"/>
+      </div>
+
+      <div class="container content-center">
+        <p class="people-choose__main-title mw-800 text-bondi-blue">Deze bedrijven hebben hun softwarecontinuïteit al veiliggesteld. <br>Begint u vandaag?</p>
+      </div>
+      <div class="people-choose__bg">
+        <div class="container">
+          <p class="people-choose__main-subtitle2 mx-auto mt-4">Software-escrow stelt de broncode veilig die nodig is voor herstel als een leverancier niet meer in staat is om toegang te bieden tot of ondersteuning te leveren voor de software die u nodig hebt voor uw bedrijfsactiviteiten met een onafhankelijke derde partij.</p>
+          <a class="button btn-cerulean3 pricing-href mx-auto px-5 mt-5" href="pricing.html">
+            Beginnen
+          </a>
+          <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Gegarandeerd de beste prijs</p>
+          <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Geen verborgen kosten</p>
+        </div>
+      </div>
+
+
+      <div class="mt-150 position-relative">
+        <div class="container">
+          <div class="intro-guide__bg">
+            <img class="intro-guide__image" src="/images/landing/shape-intro.webp" alt="Shape Intro Image"/>
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <p class="intro-guide__title">Software Escrow Introductie: Een gids</p>
+                <div class="d-flex align-items-center">
+                  <p class="intro-guide__badge">e-book</p>
+                  <p class="intro-guide__text">12 pagina's</p>
+                </div>
+                <p class="intro-guide__subtitle">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
+                <a class="button btn-secondary-large mt-4" data-toggle="modal" data-target="#exampleModal33">
+                  Download Gids
+                </a>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img class="intro-guide__illustration mt-4" src="/images/landing/intro-guide-image.webp" alt="Intro Guide Image"/>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content section__modal mx-auto">
               <div class="modal-body p-0">
@@ -484,18 +473,18 @@
                 </button>
                 <div class="m-0">
                   <div class="section__modal-form p-0 ">
-                    <p class="section__modal-title mt-3">Download dit voorbeeld gratis!</p>
+                    <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
                     <div class="row">
                       <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image" src="/images/resources-page/guide-sample.webp"/>
-                        <p class="section__modal-subtext mt-0">*Voorbeeld alleen beschikbaar in het Engels</p>
+                        <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+                        <p class="section__modal-subtext mt-0">*E-book alleen beschikbaar in het Engels</p>
                       </div>
                       <div class="col-md-6 col-sm-12 pt-3">
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                         <script>
                           hbspt.forms.create({
                           portalId: "5365877",
-                          formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
+                          formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
                         });
                         </script>
                       </div>
@@ -507,610 +496,29 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Eight Section -->
-    <div class="my-5">
-      <div class="verification__container mx-auto mt-negative-150">
-        <div class="row verification__devider">
-          <div class="col-md-7 col-sm-12">
-            <p class="verification__add-on text-uppercase">Add-on </p>
-            <h2 class="verification__title4">SaaS-applicaties</h2>
-            <p class="verification__subtitle4 mt-3">Bied uw klanten SaaS-escrow aan en implementeer uw applicaties in onze multicloudomgeving, zodat ze indien nodig meteen vrijgegeven kunnen worden. </p>
-            <a class="button btn-cerulean my-4 pricing-href" href="pricing.html">
-              BEKIJK ONZE PRIJZEN
-            </a>
-            <p class="verification__text2 mt-5">Platforms die wij ondersteunen: </p>
-            <div class="resources">
-              <div class="applications__logos justify-content-start mt-5">
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/aws-small.svg"/>
-                  <p class="applications__logo-text">AWS</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/google-cloud-small.svg"/>
-                  <p class="applications__logo-text">Google<br> Cloud</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/ibm-cloud-small.svg"/>
-                  <p class="applications__logo-text">IBM<br> Cloud</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/microsoft-azure-small.svg"/>
-                  <p class="applications__logo-text">Microsoft<br> Azure</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/oracle-cloud-small.svg"/>
-                  <p class="applications__logo-text">Oracle<br> Cloud</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/alibaba-cloud-small.svg"/>
-                  <p class="applications__logo-text">Alibaba<br> Cloud</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/digital-ocean-small.svg"/>
-                  <p class="applications__logo-text">Digital<br> Ocean</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/rockspace-small.svg"/>
-                  <p class="applications__logo-text">Rockspace</p>
-                </div>
-                <div class="applications__logo mx-1">
-                  <img class="applications__logo-image3" src="/images/homepage/logos/heroku-small.svg"/>
-                  <p class="applications__logo-text">Heroku</p>
-                </div>
-              </div>
+        
+      <div class="intro-guide__container">
+        <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Background Image"/>
+        <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Background Image"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <img class="image-style" src="/images/landing/our-experts.webp" alt="Our Expert Image"/>
             </div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <img class="image-style" src="/images/homepage/saas-applications.webp" alt="Saas Applications"/>
-          </div>
-        </div>
-        <div class="row column-reverse-mobile">
-          <div class="col-md-5 col-sm-12">
-            <img class="image-style" src="/images/homepage/verification-image.webp" alt="Verification Image"/>
-          </div>
-          <div class="col-md-7 col-sm-12">
-            <p class="verification__add-on ml-auto text-uppercase">Add-on </p>
-            <h2 class="verification__title">Verificatiediensten</h2>
-            <p class="verification__subtitle ml-auto mt-3">Moet u aanvullende garanties verlenen met betrekking tot de inhoud van de gedeponeerde code? Wij kunnen de volledigheid, juistheid en bruikbaarheid van de materialen die in de escrow zijn gedeponeerd, verifiëren. </p>
-            <a class="button btn-cerulean ml-auto my-4 pricing-href" href="pricing.html">
-              BEKIJK ONZE PRIJZEN
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/homepage/verification-micro.svg"/>
-            <p class="verification__title2 mt-3">VERIFICATIE VAN DE INHOUD</p>
-            <p class="verification__text">U krijgt een profiel van de gedeponeerde inhoud in de vorm van een rapport.</p>
-            <a class="verification__link verification-href" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/homepage/verification-basic.svg"/>
-            <p class="verification__title2 mt-3">VERIFICATIE VAN DE ACTIVITEIT</p>
-            <p class="verification__text">Een profiel van de ontwikkelingsactiviteit (aanpassingen) van de broncode of de data.</p>
-            <a class="verification__link verification-href" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-          <div class="col-md-4 col-sm-12 mt-4">
-            <img class="verification__icon" src="/images/homepage/verification-advanced.svg"/>
-            <p class="verification__title2 mt-3">SAAS-VERIFICATIE</p>
-            <p class="verification__text">Controle van de beschikbaarheid van actieve SaaS-applicaties.</p>
-            <a class="verification__link verification-href" href="verification.html">MEER WETEN <i class="fas fa-arrow-right ml-2"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Ninth Section -->
-    <div class="bg-white section-medium">
-      <div class="container">
-        <h2 class="integration__title mx-auto">Integraties</h2>
-        <p class="integration__subtitle mt-5 mx-auto">Codekeeper wordt rechtstreeks met de workflows van Github en andere populaire SCM-platforms en CI/CI/CD-tools geïntegreerd. Alle source code die in de escrow wordt gedeponeerd is versleuteld en volledig geautomatiseerd verbonden.  U voldoet altijd aan alle compliance eisen!</p>
-        <a class="button btn-cerulean mx-auto my-4 integrations-href" href="integrations.html">
-          BEKIJK ALLE INTEGRATIES
-        </a>
-        <img loading="lazy" class="image-style" src="/images/homepage/CK-integrations.webp" alt="Integrations"/>
-        <p class="integration__subtext mt-4 mx-auto">Heeft u een andere integratie nodig? We voegen graag nieuwe integraties toe om uw gebruikssituatie te ondersteunen! <a class="text-underline fw-bold contact-href" href="contact.html">Neem contact met ons op.</a></p>
-      </div>
-    </div>
-    <!-- Tenth Section -->
-    <!DOCTYPE html>
-<div class="pt-5 px-3">
-  <div class="people__section-container mx-auto position-relative">
-    <div class="container">
-      <h2 class="people__title">Beveiliging</h2>
-      <div class="row">
-        <div class="col-md-4 col-sm-12 content-center">
-          <div class="people__section-col2">
-            <img class="people__section-image mt-3" src="/images/homepage/data-security.svg"/>
-            <p class="people__section-title">ISO27001 DATA SECURITY</p>
-            <p class="people__section-subtitle">Onze datacenters hebben de strengste beveiligingsnormen en het striktste veiligheidsbeleid. Veiligheid staat bij ons altijd voorop.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12 content-center">
-          <div class="people__section-col2">
-            <img class="people__section-image mt-3" src="/images/homepage/encryption.svg"/>
-            <p class="people__section-title">END-TO-END BEVEILIGING</p>
-            <p class="people__section-subtitle">Data is bij ons altijd beveiligd, zowel te verzenden data als opgeslagen data zijn versleuteld met AES256/512.</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12 content-center">
-          <div class="people__section-col2">
-            <img class="people__section-image mt-3" src="/images/homepage/secure-upload.svg"/>
-            <p class="people__section-title">VEILIG UPLOADEN</p>
-            <p class="people__section-subtitle">Wie liever handmatig wil uploaden, kan gebruik maken van een beveiligde uploadfolder, waarmee u uw broncode op een veilige manier kunt deponeren.</p>
-          </div>
-        </div>
-      </div>
-      <a class="button btn-cerulean2 mx-auto my-5 security-href" href="security.html">
-        MEER WETEN
-      </a>
-    </div>
-  </div>
-</div>
-
-    <div class="section-medium mt-negative-50 pt-0">
-      <!DOCTYPE html>
-<div class="resources">
-  <div class="container-fluid px-0">
-    <div class="guide__bg-security">
-      <div class="container">
-        <div class="guide__content2 d-flex align-items-center justify-content-between">
-          <div>
-            <p class="verification__add-on text-uppercase">E-book </p>
-            <h2 class="guide__title2">Gegevensbeveiliging Gids</h2>
-            <p class="guide__subtitle2 mt-3">Download onze gids en lees meer over de maatregelen die Codekeeper neemt om de hoogste veiligheid van uw source code escrow te verzekeren.</p>
-            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal3">
-              GRATIS GIDS DOWNLOADEN
-            </a>
-          </div>
-          <img class="guide__image2 mt-4" src="/images/resources-page/guide-information.webp"/>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-form p-0 ">
-                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <img class="section__modal-image" src="/images/resources-page/guide-information.webp"/>
-                    <p class="section__modal-subtext mt-0">*E-book alleen beschikbaar in het Engels</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 pt-3">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "4ecdb6ad-f33c-4059-bc23-89c465ae1216"
-                    });
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    <!-- Section -->
-    <div class="px-3 overflow-hidden section-medium">
-      <div class="people__section-container mx-auto bg-white py-0">
-        <div class="bg-alice-blue overflow-hidden border-radius-25">
-          <div class="container mx-auto">
-            <div class="row">
-              <!-- <div class="col-md-5 col-sm-12 bg-white p-5">
-                <h2 class="mentions__title mt-5 mb-4">Recente updates</h2>
-                <img class="image-style mt-negative-50" src="/images/homepage/ck-sales.svg"/>
-              </div> -->
-              <div class="col-md-4 col-sm-12">
-                <h2 class="mentions__title mt-5">Verschenen op...</h2>
-                <p class="mentions__subtitle mt-4 mw-100">Een aantal van onze reviews op het internet.</p>
-                <div class="mentions__box mb-5">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
-                  <p class="mentions__text mt-4">Uitstekende dienstverlening. Dit is absoluut de beste manier, zowel voor uzelf als voor de klant.</p>
-                  <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-                </div>
-              </div>
-                
-              <div class="col-md-4 col-sm-12">
-                <div class="mentions__box-second mb-4">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
-                  <p class="mentions__text mt-4">Codekeeper is een nieuwe dienst waarmee escrow overeenkomsten voor broncode worden gemaakt die de juridische omstandigheden voor toegang tot de broncode specificeren.</p>
-                  <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
-                </div>
-                <div class="mentions__box-negative mt-4">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
-                  <p class="mentions__text mt-4">Vergeleken met traditionele escrow-leveranciers is Codekeeper een ware verademing.</p>
-                  <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="mentions__box mt-150 mb-5">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
-                  <p class="mentions__text mt-4">Source code escrow is een ideale service. Sterk aan te bevelen voor ALLE ontwikkelaars die projecten voor verschillende klanten uitvoeren.</p>
-                  <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
-                </div>
-              </div>  
+            <div class="col-md-7 col-sm-12">
+              <p class="intro-guide__main-title mt-4">Een sessie met onze experts</p>
+              <p class="intro-guide__main-subtitle">Plan een sessie met een van onze adviseurs voor een gepersonaliseerde demo en om uw situatie te bespreken. Stel al uw juridische, technische en overige vragen!</p>
+              <a class="button btn-cerulean3 book-a-demo-href my-4" href="book-a-demo.html">
+                Boek een Demo
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
     
-
     <!-- Section -->
-    <div class="pricing section-medium">
-      <h2 class="integration__title mx-auto">Bescherm uw software en bespaar geld</h2>
-      <div class="pricing-container mx-auto overflow-x-hidden">
-        <div class="row my-4">
-          <div class="col-md-3 col-sm-12 px-2 mt-4">
-            <div class="plan__box">
-              <h2 class="plan__title">DEVELOPER PLAN</h2>
-              <p class="plan__amount" id="developer-yearly"><span>$</span> 89</p>
-              <p class="plan__period">per maand, jaarlijks gefactureerd</p>
-              <div class="plan__devider mx-auto"></div>
-              <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Setupkosten:</p>
-                <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
-              </div>
-              <div class="plan__content-info">
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Escrow overeenkomsten</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal escrowovereenkomsten met klanten of leveranciers dat u in uw account mag hebben." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Broncoderepository's</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal broncoderepository's dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Het aantal is gebaseerd op de unieke URL's naar de repository's." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>1</b> Databucket</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal databuckets dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Gebaseerd op het aantal buckets/blobs/mappen." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>1</b> Informatie Escrow</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal beveiligde mappen dat u in uw account mag hebben voor het uploaden van informatie zoals documenten." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-              </div>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-eu" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-in" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-in" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-au" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-au" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-sg" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-rsa" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-ch" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="developer-plan-annual-ca" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 px-2 mt-4">
-            <div class="plan__box">
-              <h2 class="plan__title">TEAM PLAN</h2>
-              <p class="plan__amount" id="team-yearly"><span>$</span> 225</p>
-              <p class="plan__period">per maand, jaarlijks gefactureerd</p>
-              <div class="plan__devider mx-auto"></div>
-              <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Setupkosten:</p>
-                <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
-              </div>
-              <div class="plan__content-info">
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Escrow overeenkomsten</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal escrowovereenkomsten met klanten of leveranciers dat u in uw account mag hebben." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Broncoderepository's</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal broncoderepository's dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Het aantal is gebaseerd op de unieke URL's naar de repository's." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Databuckets</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal databuckets dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Gebaseerd op het aantal buckets/blobs/mappen." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>2</b> Informatie Escrows</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal beveiligde mappen dat u in uw account mag hebben voor het uploaden van informatie zoals documenten." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>SaaS</b>-Escrow van <span class="saas-continuity">$299</span></span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="De mogelijkheid om SaaS-escrow als add-on toe te voegen aan uw software-escrow." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-              </div>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 px-2 mt-4">
-            <div class="plan__box -active">
-              <h2 class="plan__title">BUSINESS PLAN</h2>
-              <p class="plan__banner">MEEST GEKOZEN</p>
-              <p class="plan__amount" id="business-yearly"><span>$</span> 399</p>
-              <p class="plan__period">per maand, jaarlijks gefactureerd</p>
-              <div class="plan__devider mx-auto"></div>
-              <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Setupkosten:</p>
-                <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
-              </div>
-              <div class="plan__content-info">
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Escrow overeenkomsten</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal escrowovereenkomsten met klanten of leveranciers dat u in uw account mag hebben." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>25</b> Broncoderepository's</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal broncoderepository's dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Het aantal is gebaseerd op de unieke URL's naar de repository's." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Databuckets</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal databuckets dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Gebaseerd op het aantal buckets/blobs/mappen." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>5</b> Informatie Escrows</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal beveiligde mappen dat u in uw account mag hebben voor het uploaden van informatie zoals documenten." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>SaaS</b>-Escrow van <span class="saas-continuity">$299</span></span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="De mogelijkheid om SaaS-escrow als add-on toe te voegen aan uw software-escrow." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-              </div>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 px-2 mt-4">
-            <div class="plan__box">
-              <h2 class="plan__title">ENTERPRISE PLAN</h2>
-              <p class="plan__amount" id="enterprise-yearly"><span>$</span> 1,349</p>
-              <p class="plan__period">per maand, jaarlijks gefactureerd</p>
-              <div class="plan__devider mx-auto"></div>
-              <div class="d-flex align-items-center mx-auto">
-                <p class="plan__fee-text mb-0">Setupkosten:</p>
-                <p class="plan__fee-amount setup-fee mb-0 ml-2"><sup>$</sup> 249</p>
-              </div>
-              <div class="plan__content-info">
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>25</b> Escrow overeenkomsten</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal escrowovereenkomsten met klanten of leveranciers dat u in uw account mag hebben." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>75</b> Broncoderepository's</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal broncoderepository's dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Het aantal is gebaseerd op de unieke URL's naar de repository's." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Databuckets</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal databuckets dat u in uw account mag hebben die gedeponeerd worden in de escrow(s). Gebaseerd op het aantal buckets/blobs/mappen." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>10</b> Informatie Escrows</span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="Het aantal beveiligde mappen dat u in uw account mag hebben voor het uploaden van informatie zoals documenten." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-                <div class="plan__content-tooltip mt-2">
-                  <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>SaaS</b>-Escrow van <span class="saas-continuity">$299</span></span></p>
-                  <div class="d-flex" data-html="true" data-tooltip="De mogelijkheid om SaaS-escrow als add-on toe te voegen aan uw software-escrow." data-tooltip-position="top">
-                    <i class="fa fa-location-arrow mt-2 ml-2 text-bondi-blue"></i>
-                  </div>
-                </div>
-              </div>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-              <a class="button btn-bondi-blue2 mx-auto mt-5 d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
-                AAN DE SLAG
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="plan__box mx-auto plan-custom-width">
-          <h2 class="plan__title">PAKKET OP MAAT</h2>
-          <p class="plan__amount mt-0"> We overleggen graag met u!</p>
-          <div class="d-flex flex-column align-items-center mt-4">
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text"><b>Onbeperkte</b> Escrowafspraken</span></p>
-            <p class="plan__text-tooltip mt-2 text-center"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text text-center">Mogelijkheden op maat voor uw onderneming</span></p>
-            <a class="button btn-bondi-blue2 mx-auto text-uppercase my-4 contact-href" href="contact.html">
-              Neem contact met ons op
-            </a>
-          </div>
-        </div>
-      </div>
-      <a class="button btn-cerulean mx-auto my-5 pricing-href" href="pricing.html">
-        VERGELIJK PAKKETTEN
-      </a>
-    </div>
-
-    <!-- Section -->
-    <div class="mt-5">
-      <!DOCTYPE html>
-<div class="resources">
-  <div class="container-fluid px-0">
-    <div class="guide__bg-security">
-      <div class="container">
-        <div class="guide__content2 d-flex align-items-center justify-content-between">
-          <img class="guide__image2 my-4" src="/images/resources-page/guide-introduction.webp"/>
-          <div>
-            <p class="verification__add-on text-uppercase mt-4">E-book </p>
-            <h2 class="guide__title2">Software Escrow Introductie: Een gids</h2>
-            <p class="guide__subtitle2 mt-3">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
-            <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal22">
-              GRATIS GIDS DOWNLOADEN
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-form p-0 ">
-                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
-                    <p class="section__modal-subtext mt-0">*E-book alleen beschikbaar in het Engels</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 pt-3">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
-                    });
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    
-    <!-- Section -->
-    
-    <div class="bg-alice-blue section-medium overflow-hidden">
+    <div class="bg-white section-medium overflow-hidden">
       <h2 class="mentions__title my-5 text-center">Recente updates</h2>
       <div class="container pt-4">
         <!-- <div class="taggbox-container" style="width:100%;height:100%;overflow: auto;"><div class="taggbox-socialwall" data-wall-id="93301" view-url="https://widget.taggbox.com/93301"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script></div> -->
@@ -1148,78 +556,6 @@
       </div> -->
     </div>
       
-    <!-- Section -->
-    <!DOCTYPE html>
-<div class="resources">
-  <div class="container-fluid px-0">
-    <div class="intro__bg">
-      <div class="intro__col-green">
-        <div class="intro__col-green-spacing">
-          <img class="intro__image" src="/images/landing/intro-guide.webp"/>
-          <p class="intro__add-on text-uppercase">E-book </p>
-          <h2 class="intro__title">Software Escrow Introductie: Een gids</h2>
-          <p class="intro__subtitle mt-3">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
-          <div class="d-flex flex-wrap align-items-center my-4">
-            <a class="button btn-white my-4 mr-4" data-toggle="modal" data-target="#exampleModal22">
-              Download Gids
-            </a>
-            <a class="button intro__link mw-100 resources-href" href="resources.html">
-              Meer Gratis Informatie
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="intro__col">
-        <div class="intro__col-spacing">
-          <img class="intro__image pb-3" src="/images/landing/get-started.webp"/>
-          <h2 class="intro__title2 mt-4">Bescherm uw source code met Codekeeper</h2>
-          <p class="intro__subtitle2 mt-3">Software escrow stelt de noodzakelijke broncode veilig bij een onafhankelijke 3de partij, om zo te kunnen herstellen wanneer uw leverancier geen toegang meer geeft tot de software die u nodig heeft voor uw bedrijfsprocessen.</p>
-          <div class="d-flex flex-wrap align-items-center my-4">
-            <a class="button btn-bondi-blue my-4 mr-4 pricing-href" href="pricing.html">
-              Beginnen
-            </a>
-            <a class="button intro__link2 mw-100 book-a-demo-href" href="book-a-demo.html">
-              Boek een Demo
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-form p-0 ">
-                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
-                    <p class="section__modal-subtext mt-0">*E-book alleen beschikbaar in het Engels</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 pt-3">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
-                    });
-                    </script>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     <!-- Footer -->
     <!DOCTYPE html>
 <div class="bg-light-gray py-5">

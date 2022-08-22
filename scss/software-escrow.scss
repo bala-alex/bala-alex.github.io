@@ -1,0 +1,509 @@
+.software-escrow {
+  .header {
+    overflow: hidden;
+  
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -1px;
+      color: $dark-cyan;
+      max-width: 615px;
+
+      @include screen-sm {
+        font-size: 50px !important;
+        line-height: 55px;
+      }
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: $dark-cyan;
+      max-width: 611px;
+    }
+
+    &__bg-software-escrow {
+      min-height: 700px !important;
+      background: linear-gradient(180deg, #FFFFFF 22.17%, #EBFAFC 129.81%);
+      padding-top: 150px !important;
+      padding-bottom: 180px !important;
+      position: relative;
+      border-radius: 0 0 60% 40% / 0 0 40% 15%;
+    }
+
+    &__bg-saas-escrow {
+      min-height: 700px !important;
+      background: linear-gradient(180deg, #FFFFFF 22.17%, #ECF5FF 129.81%);
+      padding-top: 150px !important;
+      padding-bottom: 180px !important;
+      position: relative;
+      border-radius: 0 0 60% 40% / 0 0 40% 15%;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      color: $slate-gray;
+      margin-bottom: 5px;
+    }
+
+    &__info {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: $bondi-blue;
+    }
+
+    &__subtext {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: $slate-gray;
+      max-width: 295px;
+    }
+
+    &__link {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #417BD2;
+    }
+  }
+
+  .difference {
+  
+    &__main-title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 70px;
+      text-align: center;
+      color: $dark-cyan;
+      margin-bottom: 100px;
+    }
+
+    &__table {
+
+      &-title {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 40px;
+        color: #6A8493;
+      }
+
+      &-recovery {
+        background-color: $bondi-blue;
+        border-radius: 5px 0px 0px 0px;
+        color: $white;
+        padding-bottom: 15px;
+      }
+
+      &-continuity {
+        background-color: $secondary-default;
+        border-radius: 0px 5px 0px 0px;
+        color: $white;
+        padding-bottom: 15px;
+      }
+
+      &-text {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: $dark-cyan;
+        padding-top: 15px;
+      }
+
+      &-subtext {
+        font-family: 'Muli';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $slate-gray;
+      }
+    }
+  }
+
+  .information {
+  
+    &__main-title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 70px;
+      text-align: center;
+      color: $dark-cyan;
+      margin-bottom: 100px;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 40px;
+      color: $dark-cyan;
+      margin-top: 80px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: $dark-cyan;
+      max-width: 500px;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      color: $dark-cyan;
+      text-align: center;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 500px;
+      object-fit: contain;
+    }
+  }
+
+  .your-protection {
+  
+    &__bg {
+      min-height: 700px;
+      background: linear-gradient(125.78deg, rgba(244, 249, 255, 0.53) 29.06%, #EDF3FE 125.1%);
+      position: relative;
+      margin-top: 100px;
+      padding: 150px 0;
+
+      @include screen-md {
+        padding: 100px 0;
+      }
+    }
+
+    &__bg2 {
+      min-height: 700px;
+      background: linear-gradient(131.83deg, #F9FEFF 26.38%, #E9F6FB 172.43%);
+      position: relative;
+      margin-top: 100px;
+      padding: 150px 0;
+
+      @include screen-md {
+        padding: 100px 0;
+      }
+    }
+
+    &__info {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #417BD2;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 50px;
+      color: $dark-cyan;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $dark-cyan;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-cyan;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 370px;
+      object-fit: contain;
+    }
+
+    &__shape-left {
+      width: 128px;
+      height: 348px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      object-fit: contain;
+
+      @include screen-md {
+        max-width: 20%;
+      }
+    }
+
+    &__shape-right {
+      width: 467px;
+      height: 653px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      object-fit: contain;
+
+      @include screen-md {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .easy {
+  
+    &__main-title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+      max-width: 673px;
+    }
+
+    &__box {
+      width: 100%;
+      max-width: 390px;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: $dark-cyan;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $slate-gray;
+      max-width: 322px;
+      min-height: 100px;
+    }
+
+    &__link {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $bondi-blue;
+    }
+
+    &__icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .we-support {
+
+    &__bg {
+      min-height: 600px;
+      background: linear-gradient(166.24deg, #FFFFFF 35.05%, #F0FCFD 137.53%);
+      border-radius: 0px 0px 377px 0px;
+      padding-top: 150px;
+    }
+
+    &__bg2 {
+      min-height: 600px;
+      background: linear-gradient(166.24deg, #FFFFFF 35.05%, #ECF5FE 137.53%);
+      border-radius: 0px 0px 377px 0px;
+      padding-top: 150px;
+    }
+  
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+      color: $dark-cyan;
+      max-width: 985px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: $dark-cyan;
+      max-width: 682px;
+    }
+  }
+
+  .scenario {
+  
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      text-align: center;
+      color: $dark-cyan;
+      max-width: 800px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: $slate-gray;
+    }
+
+    &__text {
+      font-family: 'Muli';
+      font-style: italic;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      max-width: 346px;
+      color: $dark-cyan;
+    }
+
+    &__subtext {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      max-width: 950px;
+      margin-top: 80px;
+      color: $slate-gray;
+    }
+  }
+
+  .risks {
+
+    &__bg {
+      min-height: 900px;
+      background: #F6FDFE;
+      padding-top: 180px;
+      padding-bottom: 300px;
+    }
+  
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $slate-gray;
+      max-width: 804px;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: $dark-cyan;
+    }
+
+    &__box {
+      min-height: 350px;
+      background: $white;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      margin-top: -175px;
+      position: relative;
+      padding: 60px;
+    }
+
+    &__box-shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 247px;
+      height: 310px;
+    }
+
+    &__box-text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 585px;
+      color: $dark-cyan;
+    }
+
+    &__box-image {
+      width: 100%;
+      max-width: 265px;
+      object-fit: contain;
+
+      @include screen-sm {
+        margin-top: 50px;
+      }
+    }
+  }
+}
