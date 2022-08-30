@@ -135,7 +135,9 @@
     }
 
     &__badge-recovery {
-      width: 250px;
+      min-width: 250px;
+      width: fit-content;
+      padding: 0 15px;
       height: 55px;
       background: #45B4C8;
       border-radius: 0px 0px 10px 10px;
@@ -153,7 +155,9 @@
     }
 
     &__badge-continuity {
-      width: 250px;
+      min-width: 250px;
+      width: fit-content;
+      padding: 0 15px;
       height: 55px;
       background: #417BD2;;
       border-radius: 0px 0px 10px 10px;

@@ -77,7 +77,7 @@
                   </div>
                   <div class="select-level__devider"></div>
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span>$89</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
+                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="software-escrow-monthly">$89</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
                     <a class="button btn-cerulean3 software-escrow-href" href="software-escrow.html">
                       {{ site.data[page.lang]['solutions']['more_about_software'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
@@ -112,7 +112,7 @@
                   </div>
                   <div class="select-level__devider"></div>
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span>$199</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
+                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="saas-escrow-monthly">$199</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
                     <a class="button btn-cerulean3 saas-escrow-href" href="saas-escrow.html">
                       {{ site.data[page.lang]['solutions']['more_about_saas'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
@@ -337,6 +337,58 @@
   
           window.HubSpotConversations.widget.open();
         });
+      });
+    </script>
+
+    <script>
+      $( document ).ready(function() {
+        $.ajax('https://ipapi.co/json')
+        .then(
+          function success(response) {
+            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+              $('.software-escrow-monthly').text('€89');
+              $('.saas-escrow-monthly').text('€199');
+            }
+            else if (response.currency === 'GBP') {
+              
+              $('.software-escrow-monthly').text('£79');
+              $('.saas-escrow-monthly').text('£149');
+            }
+            else if (response.currency === 'INR') {
+              $('.software-escrow-monthly').text('₹6,995');
+              $('.saas-escrow-monthly').text('₹12,500');
+            }
+            else if (response.currency === 'AUD') {
+              $('.software-escrow-monthly').text('A$109');
+              $('.saas-escrow-monthly').text('A$250');
+            }
+
+            else if (response.currency === 'SGD') {
+              $('.software-escrow-monthly').text('$109');
+              $('.saas-escrow-monthly').text('$249');
+            }
+
+            else if (response.currency === 'ZAR') {
+              $('.software-escrow-monthly').text('R1,395');
+              $('.saas-escrow-monthly').text('R2,799');
+            }
+
+            else if (response.currency === 'CHF') {
+              $('.software-escrow-monthly').text('CHF89');
+              $('.saas-escrow-monthly').text('CHF219');
+            }
+
+            else if (response.currency === 'CAD') {
+              $('.software-escrow-monthly').text('CA$110');
+              $('.saas-escrow-monthly').text('CA$249');
+            }
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+        )
+        .catch((e) => console.log(e))
       });
     </script>
   

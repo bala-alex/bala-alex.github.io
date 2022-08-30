@@ -318,6 +318,12 @@
   font-weight: bold;
   font-family: 'Mulish', sans-serif;
   font-size: 18px;
+
+  @include screen-md {
+    padding: 10px 20px;
+    height: fit-content;
+  }
+
   &:hover {
     color: $white !important;
     background-color: darken($cerulean, 7.5%)!important;
