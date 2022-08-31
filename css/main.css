@@ -12321,15 +12321,19 @@ html {
 }
 
 .footer__text {
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-family: "Mulish", sans-serif;
-  color: #009CB7;
-  font-weight: 700;
+  color: #1A5261;
+  font-weight: 600;
   letter-spacing: 0px;
   line-height: 32px;
+  text-transform: lowercase;
 }
 .footer__text a {
-  color: #009CB7;
+  color: #1A5261;
+}
+.footer__text::first-letter {
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .footer__text {
@@ -12350,15 +12354,31 @@ html {
 .footer__subtitle {
   font-size: 16px !important;
   font-family: "Mulish", sans-serif;
-  color: #6782A3;
-  font-weight: 200;
+  color: #009CB7;
+  font-weight: 400;
   letter-spacing: 0px;
-  line-height: 26px;
+  line-height: 20px;
+  max-width: 206px;
+}
+.footer__devider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.5px solid #6782A3;
+  padding-top: 20px;
 }
 .footer__subtext {
   font-size: 14px !important;
   font-family: "Mulish", sans-serif;
-  color: #6782A3;
+  color: #6A8493;
   letter-spacing: 0px;
   line-height: 18px;
   margin-bottom: 12px;

@@ -1858,15 +1858,20 @@
 .footer {
 
   &__text {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-family: 'Mulish', sans-serif;
-    color: $cerulean;
-    font-weight: 700;
+    color: $dark-cyan;
+    font-weight: 600;
     letter-spacing: 0px;
     line-height: 32px;
+    text-transform: lowercase;
 
     a {
-      color: $cerulean;
+      color: $dark-cyan;
+    }
+
+    &::first-letter {
+      text-transform: capitalize;
     }
 
     @include screen-sm {
@@ -1890,16 +1895,26 @@
   &__subtitle {
     font-size: 16px !important;
     font-family: 'Mulish', sans-serif;
-    color: $air-force-blue;
-    font-weight: 200;
+    color: $bondi-blue;
+    font-weight: 400;
     letter-spacing: 0px;
-    line-height: 26px;
+    line-height: 20px;
+    max-width: 206px;
+  }
+
+  &__devider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 0.5px solid $air-force-blue;
+    padding-top: 20px;
   }
 
   &__subtext {
     font-size: 14px !important;
     font-family: 'Mulish', sans-serif;
-    color: $air-force-blue;
+    color: $slate-gray;
     letter-spacing: 0px;
     line-height: 18px;
     margin-bottom: 12px;

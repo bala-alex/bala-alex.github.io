@@ -4,7 +4,7 @@
     <div class="row mt-5">
       <div class="col-md-3 col-sm-12 footer-dropdown">
         <a class="navbar-brand d-flex align-items-center" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg"/></a>
-        <p class="footer__subtitle">{{ site.data[page.lang]['pricing']['software_escrow'] }} </p>
+        <p class="footer__subtitle">{{ site.data[page.lang]['footer']['state_of_the_art'] }} </p>
         <div class="custom-select custom-select-width">
           <select>
             <option value="0">{{ site.data[page.lang]['footer']['select_language'] }}</option>
@@ -20,39 +20,49 @@
       <div class="col-md-9 col-sm-12">
         <div class="row">
           <div class="col-md-3 col-sm-12 d-flex flex-column">
-            <p class="footer__text fw-bold mb-0 mt-2">{{ site.data[page.lang]['footer']['codekeeper'] }}</p>
+            <p class="footer__text fw-bold mb-0 mt-2">{{ site.data[page.lang]['footer']['company'] }}</p>
             <a class="footer__subtext mt-2" href="index.html">{{ site.data[page.lang]['footer']['home'] }}</a>
             <a class="footer__subtext mt-2 features-href" href="features.html">{{ site.data[page.lang]['footer']['features'] }}</a>
-            <a class="footer__subtext mt-2 how-it-works-href" href="how-it-works.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
-            <a class="footer__subtext mt-2 integrations-href" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
+            <a class="footer__subtext mt-2 solutions-href" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a>
             <a class="footer__subtext mt-2 pricing-href" href="pricing.html">{{ site.data[page.lang]['footer']['pricing'] }}</a>
-            <a class="footer__subtext mt-2 verification-href" href="verification.html">{{ site.data[page.lang]['footer']['verification'] }}</a>
+            <a class="footer__subtext mt-2 integrations-href" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
+            <a class="footer__subtext mt-2 about-us-href" href="about-us.html">{{ site.data[page.lang]['navigation']['about_us'] }}</a>
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex flex-column">
+            <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['our_solutions'] }}</p>
+            <a class="footer__subtext mt-2 software_escrow-href" href="software-escrow.html">{{ site.data[page.lang]['footer']['software_escrow'] }}</a>
+            <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
+
+            <p class="footer__text mt-4 mb-0 fw-bold">{{ site.data[page.lang]['footer']['add_ons'] }}</p>
+            <a class="footer__subtext mt-2 verification-href" href="verification.html">{{ site.data[page.lang]['footer']['verification_services'] }}</a>
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['resources'] }}</p>
-            <a class="footer__subtext mt-2 resources-href" href="resources.html">{{ site.data[page.lang]['footer']['all_resources'] }}</a>
-            <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">{{ site.data[page.lang]['navigation']['escrow_agreements'] }}</a>
-            <a class="footer__subtext mt-2 what-is-source-code-escrow-href" href="what-is-source-code-escrow.html">{{ site.data[page.lang]['footer']['source_code_escrow'] }}</a>
-            <a class="footer__subtext mt-2 what-is-data-escrow-href" href="what-is-data-escrow.html">{{ site.data[page.lang]['footer']['data_escrow'] }}</a>
-            <a class="footer__subtext mt-2 what-is-saas-escrow-href" href="what-is-saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
-            <a class="footer__subtext mt-2 what-is-information-escrow-href" href="what-is-information-escrow.html">{{ site.data[page.lang]['footer']['information_escrow'] }}</a>
-            <!-- <a class="footer__subtext mt-2" href="create-custom-software-escrow-agreement.html">Custom Escrow</a> -->
+            <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">{{ site.data[page.lang]['footer']['escrow_agreements'] }}</a>
+            <a class="footer__subtext mt-2 resources-href" href="resources.html">{{ site.data[page.lang]['footer']['guides_informations'] }}</a>
             <a class="footer__subtext mt-2" href="https://blog.codekeeper.co" target="_blank">{{ site.data[page.lang]['footer']['blog'] }}</a>
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['support'] }}</p>
             <a class="footer__subtext mt-2 contact-href" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
+            <a class="footer__subtext mt-2 book-a-demo-href" href="book-a-demo.html">{{ site.data[page.lang]['footer']['book_a_demo'] }}</a>
+            <a class="footer__subtext mt-2 how-it-works-href" href="how-it-works.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
             <a class="footer__subtext mt-2 security-href" href="security.html">{{ site.data[page.lang]['footer']['security'] }}</a>
-            <a class="footer__subtext mt-2 about-us-href" href="about-us.html">{{ site.data[page.lang]['navigation']['about_us'] }}</a>
           </div>
-          <div class="col-md-3 col-sm-12 d-flex flex-column">
+          <!-- <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">{{ site.data[page.lang]['footer']['legal'] }}</p>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">{{ site.data[page.lang]['footer']['privacy_policy'] }}</a>
             <a class="footer__subtext mt-2" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">{{ site.data[page.lang]['footer']['terms_conditions'] }}</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <p class="footer__text2 text-center mt-5"> <a class="underline-none" href="https://www.codekeeper.co">www.codekeeper.co - {{ site.data[page.lang]['footer']['codekeeper_inc'] }} </a> - {{ site.data[page.lang]['footer']['all_rights_reserved'] }} <script>document.write( new Date().getFullYear() );</script>.</p>
+    <div class="footer__devider mt-5">
+      <p class="footer__text2 my-2">Codekeeper, Inc. - {{ site.data[page.lang]['footer']['all_rights_reserved'] }} <script>document.write( new Date().getFullYear() );</script>.</p>
+      <div class="d-flex">
+        <a class="footer__subtext my-2 mr-3 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">{{ site.data[page.lang]['footer']['privacy_policy'] }}</a>
+        <a class="footer__subtext my-2 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">{{ site.data[page.lang]['footer']['terms_conditions'] }}</a>
+      </div>
+    </div>
   </div>
 </div>
