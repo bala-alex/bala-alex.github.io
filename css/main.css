@@ -9938,6 +9938,10 @@ html {
   padding-bottom: 100px !important;
 }
 
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
 @media (max-width: 767px) {
   .mobile-center {
     -webkit-box-pack: center;
@@ -10254,12 +10258,24 @@ html {
   max-width: 530px !important;
 }
 
+.mw-570 {
+  max-width: 570px !important;
+}
+
 .mw-420 {
   max-width: 420px !important;
 }
 
 .mw-350 {
   max-width: 350px !important;
+}
+
+.mh-50 {
+  max-height: 50px !important;
+}
+
+.mw-260 {
+  max-width: 260px !important;
 }
 
 .mw-800 {
@@ -10305,6 +10321,10 @@ html {
 
 .pt-100 {
   padding-top: 100px !important;
+}
+
+.pt-150 {
+  padding-top: 150px !important;
 }
 
 .min-h-110 {
@@ -17436,6 +17456,25 @@ html {
           justify-content: center;
   margin-right: 15px;
 }
+.resources .legal-hurdles__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+  color: #6A8493;
+  text-align: center;
+}
+.resources .legal-hurdles__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6A8493;
+  text-align: center;
+  max-width: 250px;
+}
 .resources .applications__box {
   width: 100%;
   max-width: 567px;
@@ -18997,22 +19036,14 @@ html {
   max-width: 340px;
 }
 .resources .escrow__agreement-info {
-  color: #48748C;
-  font-family: "Muli";
-  font-style: italic;
-  font-weight: 200;
-  font-size: 45px;
-  line-height: 55px;
-  max-width: 540px;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-@media (max-width: 767px) {
-  .resources .escrow__agreement-info {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 40px;
-  }
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #6A8493;
+  max-width: 420px;
 }
 .resources .escrow__agreement-bg-right {
   width: 15%;
@@ -19549,6 +19580,31 @@ html {
   font-size: 18px;
   line-height: 22px;
   color: #417BD2;
+}
+.software-escrow .framework__bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.57%, #F6FDFE), to(#FFFFFF));
+  background: -o-linear-gradient(top, #F6FDFE -15.57%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #F6FDFE -15.57%, #FFFFFF 100%);
+  min-height: 200px;
+  padding-top: 120px;
+}
+.software-escrow .framework__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 53px;
+  text-align: center;
+  color: #1A5261;
+}
+.software-escrow .framework__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #1A5261;
 }
 .software-escrow .difference__main-title {
   font-family: "Mulish";

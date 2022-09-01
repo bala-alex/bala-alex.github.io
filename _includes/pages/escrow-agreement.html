@@ -14,8 +14,36 @@
     <!-- Navigation -->
     {% include navigation.html %}
     <!-- Header -->
-    <div class="resources">
-      <div class="header__content overflow-hidden">
+    <div class="solutions pb-100">
+      <div class="header__content">
+        <div class="header__bg-new">
+          <img class="header__bg-top-left" src="/images/solutions/top-left.webp" alt="Background Image"/>
+          <img class="header__bg-bottom-right" src="/images/solutions/bottom-right.webp" alt="Background Image"/>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="header__title text-align-start mt-4 mw-700">{{ site.data[page.lang]['escrow_agreements']['a_solid_legal_framework'] }}</h1>
+                <p class="header__subtitle text-align-start mt-4 mw-570">{{ site.data[page.lang]['escrow_agreements']['battle_tested'] }}</p>
+                <div class="d-flex flex-wrap resources mt-4">
+                  <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="#agreement-templates">
+                    {{ site.data[page.lang]['escrow_agreements']['download_our_escrow'] }}
+                  </a>
+                  <div>
+                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12 content-center">
+                <img class="image-style mw-530 mt-4" src="/images/landing/header-agreements.webp" alt="Background Image"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resources pb-100">
+      <!-- <div class="header__content overflow-hidden">
         <div class="header__bg-new">
           <img class="header__bg-top-left" src="/images/landing/header-top-left.svg" alt="Background Image"/>
           <img class="header__bg-top-right" src="/images/landing/header-top-right.svg" alt="Background Image"/>
@@ -33,31 +61,85 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+      <div class="container section-medium">
+        <p class="legal-hurdles__title pb-4">{{ site.data[page.lang]['escrow_agreements']['legal_hurdles'] }}</p>
+        <div class="row mt-5">
+          <div class="col-md-3 col-sm-12">
+            <img class="mx-auto d-block my-2" src="/images/escrow-page/icons/expensive.svg"/>
+            <p class="legal-hurdles__subtitle mw-260 mt-4 mx-auto">{{ site.data[page.lang]['escrow_agreements']['expensive_and_slow'] }}</p>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img class="mx-auto d-block my-2" src="/images/escrow-page/icons/language.svg"/>
+            <p class="legal-hurdles__subtitle mt-4 mx-auto">{{ site.data[page.lang]['escrow_agreements']['language_not'] }}</p>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img class="mx-auto d-block my-2" src="/images/escrow-page/icons/too-slow.svg"/>
+            <p class="legal-hurdles__subtitle mt-4 mx-auto">{{ site.data[page.lang]['escrow_agreements']['too_slow'] }}</p>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img class="mx-auto d-block my-2" src="/images/escrow-page/icons/ambiguous.svg"/>
+            <p class="legal-hurdles__subtitle mt-4 mx-auto">{{ site.data[page.lang]['escrow_agreements']['ambiguous_escrow'] }}</p>
+          </div>
+        </div>
       </div>
-      <div class="escrow__agreement-spacing-top">
-        <div class="container">
-          <div class="escrow__how-container mx-auto">
-            <p class="escrow__how-title">{{ site.data[page.lang]['escrow_agreements']['how_it_works'] }}</p>
-            <div class="escrow__how-content">
-              <div class="escrow__how-col">
-                <p class="escrow__how-number">1</p>
-                <p class="escrow__how-text">{{ site.data[page.lang]['escrow_agreements']['register_and'] }}</p>
-              </div>
-              <div class="escrow__how-col">
-                <p class="escrow__how-number">2</p>
-                <p class="escrow__how-text">{{ site.data[page.lang]['escrow_agreements']['we_provide'] }}</p>
-              </div>
-              <div class="escrow__how-col">
-                <p class="escrow__how-number">3</p>
-                <p class="escrow__how-text">{{ site.data[page.lang]['escrow_agreements']['signing_of'] }}</p>
-              </div>
+
+      <div class="software-escrow">
+        <div class="framework__bg">
+          <p class="framework__title">{{ site.data[page.lang]['escrow_agreements']['software_escrow_legal'] }}</p>
+          <p class="framework__subtitle">{{ site.data[page.lang]['escrow_agreements']['a_legal_process'] }}</p>
+        </div>
+
+        <div class="container section-medium">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <img class="information__image content-center mt-5" src="/images/escrow-page/agreements-for.webp"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="information__title">{{ site.data[page.lang]['escrow_agreements']['agreements_for'] }}</p>
+              <p class="information__subtitle">{{ site.data[page.lang]['escrow_agreements']['theres_no'] }} <a class="text-bondi-blue" href="#agreement-templates">{{ site.data[page.lang]['escrow_agreements']['download_samples_here'] }}</a></p>
             </div>
           </div>
-          <p class="escrow__how-subtext">{{ site.data[page.lang]['escrow_agreements']['you_may_be'] }}</p>
+          <div class="row py-5 column-reverse-mobile">
+            <div class="col-md-6 col-sm-12">
+              <p class="information__title text-align-end">{{ site.data[page.lang]['escrow_agreements']['customisable_release'] }}</p>
+              <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['escrow_agreements']['its_very'] }}</p>
+            </div>
+            <div class="col-md-6 col-sm-12 content-center">
+              <img class="information__image mt-5" src="/images/escrow-page/customisable.webp"/>
+            </div>
+          </div>
+          <div class="row py-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="information__image content-center mt-5" src="/images/escrow-page/bi-tripartite.webp"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="information__title">{{ site.data[page.lang]['escrow_agreements']['bi_tripartite'] }}</p>
+              <p class="information__subtitle">{{ site.data[page.lang]['escrow_agreements']['we_support_both'] }}</p>
+            </div>
+          </div>
+          <div class="row py-5 column-reverse-mobile">
+            <div class="col-md-6 col-sm-12">
+              <p class="information__title text-align-end mw-420 ml-auto">{{ site.data[page.lang]['escrow_agreements']['legal_sla'] }}</p>
+              <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['escrow_agreements']['many_companies'] }}</p>
+            </div>
+            <div class="col-md-6 col-sm-12 content-center">
+              <img class="information__image mt-5" src="/images/escrow-page/legal-sla.webp"/>
+            </div>
+          </div>
         </div>
         
-        <div class="container">
-          <div class="row">
+      </div>
+
+      <div class="mt-5 bg-alice-blue">
+        <div class="container section-large">
+          <div class="software-escrow">
+            <p class="framework__title">{{ site.data[page.lang]['escrow_agreements']['our_escrow_agreement'] }}</p>
+            <p class="framework__subtitle mw-900 mx-auto mt-4">{{ site.data[page.lang]['escrow_agreements']['you_may_be'] }}</p>
+          </div>
+          
+          <div class="row pt-5" id="agreement-templates">
             <div class="col-md-6 col-sm-12">
               <div class="escrow__agreement-box column-reverse-mobile">
                 <div class="escrow__agreement-content">
@@ -66,7 +148,7 @@
                     <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_for_all'] }}</p>
                   </div>
                   <a class="button btn-developer text-center my-2" data-toggle="modal" data-target="#exampleModal01">
-                    {{ site.data[page.lang]['escrow_agreements']['download_a_template'] }}
+                    {{ site.data[page.lang]['escrow_agreements']['download_sample'] }}
                   </a>
                 </div>
                 <img class="escrow__agreement-image-right" src="/images/escrow-page/software-licensing.webp" alt="Image Background"/>
@@ -81,7 +163,7 @@
                     <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_when_outsourcing'] }}</p>
                   </div>
                   <a class="button btn-client text-center my-2" data-toggle="modal" data-target="#exampleModal02">
-                    {{ site.data[page.lang]['escrow_agreements']['download_a_template'] }}
+                    {{ site.data[page.lang]['escrow_agreements']['download_sample'] }}
                   </a>
                 </div>
                 <img class="escrow__agreement-image-right" src="/images/escrow-page/software-development.webp" alt="Image Background"/>
@@ -91,8 +173,9 @@
           </div>
 
           <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <p class="escrow__agreement-info">{{ site.data[page.lang]['escrow_agreements']['all_escrow'] }}</p>
+            <div class="col-md-6 col-sm-12 content-center flex-column">
+              <img class="image-style mw-260 mx-auto mh-50 mt-4" src="/images/escrow-page/icons/all-escrow.svg" alt="Image Background"/>
+              <p class="escrow__agreement-info mx-auto mt-4">{{ site.data[page.lang]['escrow_agreements']['all_escrow'] }}</p>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="escrow__agreement-box column-reverse-mobile">
@@ -102,7 +185,7 @@
                     <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_when_applying'] }}</p>
                   </div>
                   <a class="button btn-developer text-center my-2" data-toggle="modal" data-target="#exampleModal03">
-                    {{ site.data[page.lang]['escrow_agreements']['download_a_template'] }}
+                    {{ site.data[page.lang]['escrow_agreements']['download_sample'] }}
                   </a>
                 </div>
                 <img class="escrow__agreement-image-right" src="/images/escrow-page/compliance.webp" alt="Image Background"/>
@@ -117,10 +200,10 @@
                 <div class="escrow__agreement-content">
                   <div>
                     <p class="escrow__agreement-title">{{ site.data[page.lang]['escrow_agreements']['security_operational'] }}</p>
-                    <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_when_applying'] }}</p>
+                    <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_when'] }}</p>
                   </div>
                   <a class="button btn-developer text-center my-2" data-toggle="modal" data-target="#exampleModal05">
-                    {{ site.data[page.lang]['escrow_agreements']['download_a_template'] }}
+                    {{ site.data[page.lang]['escrow_agreements']['download_sample'] }}
                   </a>
                 </div>
                 <img class="escrow__agreement-image-right" src="/images/escrow-page/security-operational.webp" alt="Image Background"/>
@@ -135,7 +218,7 @@
                     <p class="escrow__agreement-subtitle">{{ site.data[page.lang]['escrow_agreements']['use_when_ip'] }} </p>
                   </div>
                   <a class="button btn-client text-center my-2" data-toggle="modal" data-target="#exampleModal04">
-                    {{ site.data[page.lang]['escrow_agreements']['download_a_template'] }}
+                    {{ site.data[page.lang]['escrow_agreements']['download_sample'] }}
                   </a>
                 </div>
                 <img class="escrow__agreement-image-right" src="/images/escrow-page/transactions.webp" alt="Image Background"/>
@@ -333,9 +416,7 @@
       </div>
     </div>
     <!-- Section -->
-    {% include book-demo.html %}
-    <!-- Section -->
-    {% include intro.html %}
+    {% include demo-intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>

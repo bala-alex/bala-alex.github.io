@@ -643,6 +643,29 @@
     }
   }
 
+  .legal-hurdles {
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      color: $slate-gray;
+      text-align: center;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: $slate-gray;
+      text-align: center;
+      max-width: 250px;
+    }
+  }
+
   .applications {
     &__box {
       width: 100%;
@@ -2192,21 +2215,14 @@
       }
 
       &-info {
-        color: $complementary-dull;
-        font-family: 'Muli';
-        font-style: italic;
-        font-weight: 200;
-        font-size: 45px;
-        line-height: 55px;
-        max-width: 540px;
-        margin-top: 80px;
-        margin-bottom: 40px;
-
-        @include screen-sm {
-          font-weight: 300;
-          font-size: 32px;
-          line-height: 40px;
-        }
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: $slate-gray;
+        max-width: 420px;
       }
   
       &-bg-right {
