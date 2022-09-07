@@ -19538,6 +19538,21 @@ html {
   position: relative;
   border-radius: 0 0 60% 40%/0 0 40% 15%;
 }
+.software-escrow .header__source-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  max-width: 30%;
+}
+.software-escrow .header__bg-source-code {
+  min-height: 700px !important;
+  background: -o-linear-gradient(89.42deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
+  background: linear-gradient(0.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
+  padding-top: 150px !important;
+  padding-bottom: 180px !important;
+  position: relative;
+}
 .software-escrow .header__bg-saas-escrow {
   min-height: 700px !important;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(22.17%, #FFFFFF), color-stop(129.81%, #ECF5FF));
@@ -19606,6 +19621,56 @@ html {
   line-height: 32px;
   text-align: center;
   color: #1A5261;
+}
+.software-escrow .depositing__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+  color: #1A5261;
+}
+.software-escrow .depositing__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1A5261;
+}
+.software-escrow .depositing__bg {
+  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-15.57%, #F6FDFE), to(#FFFFFF));
+  background: -o-linear-gradient(top, #F6FDFE -15.57%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #F6FDFE -15.57%, #FFFFFF 100%);
+}
+.software-escrow .depositing__margin {
+  margin-top: -250px;
+  padding-bottom: 100px;
+}
+.software-escrow .datacenters__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1A5261;
+}
+.software-escrow .datacenters__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A8493;
+  max-width: 350px;
+}
+.software-escrow .datacenters__bg {
+  min-height: 1000px;
+  background: -o-linear-gradient(88.62deg, #F8FBFF -35%, #FFFFFF 60.1%);
+  background: linear-gradient(1.38deg, #F8FBFF -35%, #FFFFFF 60.1%);
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .software-escrow .difference__main-title {
   font-family: "Mulish";
@@ -19791,11 +19856,21 @@ html {
 }
 .software-escrow .easy__main-title {
   font-style: normal;
+  font-family: "Mulish";
   font-weight: 300;
   font-size: 50px;
   line-height: 53px;
   color: #1A5261;
   max-width: 673px;
+}
+.software-escrow .easy__main-subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A8493;
+  max-width: 625px;
 }
 .software-escrow .easy__box {
   width: 100%;
@@ -19836,6 +19911,14 @@ html {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
+}
+.software-escrow .easy__bg {
+  min-height: 1000px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.98%, #F9FCFF), to(rgba(249, 252, 255, 0)));
+  background: -o-linear-gradient(top, #F9FCFF 2.98%, rgba(249, 252, 255, 0) 100%);
+  background: linear-gradient(180deg, #F9FCFF 2.98%, rgba(249, 252, 255, 0) 100%);
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .software-escrow .we-support__bg {
   min-height: 600px;
