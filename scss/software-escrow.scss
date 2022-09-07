@@ -467,6 +467,64 @@
     }
   }
 
+  .setting-up {
+
+    &__container {
+      width: 100%;
+      max-width: 1300px;
+      background: #F9FCFF;
+      border: 0.5px solid #DCE5F2;
+      border-radius: 10px;
+      min-height: 1000px;
+      margin: 15px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+    }
+
+    &__title-small {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      color: $dark-cyan;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: $dark-cyan;
+      max-width: 553px;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-cyan;
+      max-width: 553px;
+    }
+
+    &__devider {
+      width: 100%;
+      border: 1px dashed #6A8493;
+    }
+  }
+
   .we-support {
 
     &__bg {
