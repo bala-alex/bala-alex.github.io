@@ -9988,6 +9988,14 @@ html {
   background-color: #F4F4F4;
 }
 
+.bg-azure-blue {
+  background-color: #F8FEFF;
+}
+
+.bg-paper-white {
+  background-color: #F9FBFF;
+}
+
 .bg-primary-default {
   background-color: #009CB7;
 }
@@ -12353,7 +12361,7 @@ html {
   color: #1A5261;
 }
 .footer__text::first-letter {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 @media (max-width: 767px) {
   .footer__text {
@@ -19545,6 +19553,28 @@ html {
   width: 340px;
   max-width: 30%;
 }
+.software-escrow .header__shape-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+}
+@media (max-width: 767px) {
+  .software-escrow .header__shape-top {
+    height: 150px;
+  }
+}
+.software-escrow .header__shape-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 180px;
+}
+@media (max-width: 767px) {
+  .software-escrow .header__shape-bottom {
+    height: 150px;
+  }
+}
 .software-escrow .header__bg-source-code {
   min-height: 700px !important;
   background: -o-linear-gradient(89.42deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
@@ -19702,6 +19732,12 @@ html {
   color: #ffffff;
   padding-bottom: 15px;
 }
+.software-escrow .difference__table-ck {
+  background-color: #6A8493;
+  border-radius: 0px;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
 .software-escrow .difference__table-text {
   font-family: "Mulish";
   font-style: normal;
@@ -19853,6 +19889,180 @@ html {
   .software-escrow .your-protection__shape-right {
     max-width: 50%;
   }
+}
+.software-escrow .how-works__box {
+  width: 100%;
+  min-height: 440px;
+  background: #ffffff;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.1);
+  border-radius: 10px;
+  position: relative;
+  margin-top: -150px;
+}
+.software-escrow .how-works__box-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+  color: #1A5261;
+  max-width: 253px;
+  width: 100%;
+}
+.software-escrow .how-works__box-subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A5261;
+  max-width: 263px;
+  width: 100%;
+}
+.software-escrow .how-works__box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .software-escrow .how-works__box-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.software-escrow .how-works__box-content {
+  padding: 50px;
+}
+.software-escrow .how-works__box-text {
+  width: 90px;
+}
+.software-escrow .how-works__box-text2 {
+  width: 100%;
+  max-width: 216px;
+  height: 55px;
+  padding-top: 23px;
+}
+.software-escrow .how-works__box-bg {
+  width: 100%;
+  max-width: 65%;
+  height: 100%;
+  min-height: 440px;
+  background: -o-linear-gradient(298.33deg, #009CB7 17.51%, #008FA9 88.11%);
+  background: linear-gradient(151.67deg, #009CB7 17.51%, #008FA9 88.11%);
+  border-radius: 0px 10px 10px 116px;
+  padding: 80px;
+}
+@media (max-width: 992px) {
+  .software-escrow .how-works__box-bg {
+    max-width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+.software-escrow .how-works__box-bg-continuity {
+  width: 100%;
+  max-width: 65%;
+  height: 100%;
+  min-height: 540px;
+  background: -o-linear-gradient(298.33deg, #3C75CB 17.51%, #245CB0 88.11%);
+  background: linear-gradient(151.67deg, #3C75CB 17.51%, #245CB0 88.11%);
+  border-radius: 0px 10px 10px 116px;
+  padding: 80px;
+}
+@media (max-width: 992px) {
+  .software-escrow .how-works__box-bg-continuity {
+    max-width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+.software-escrow .more-about__box {
+  width: 100%;
+  max-width: 390px;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 10px;
+  padding: 35px 20px;
+  min-height: 255px;
+  background-color: #ffffff;
+}
+.software-escrow .more-about__box2 {
+  width: 100%;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 10px;
+  padding: 35px;
+  min-height: 200px;
+  background-color: #ffffff;
+}
+.software-escrow .more-about__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1A5261;
+}
+.software-escrow .more-about__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A8493;
+  max-width: 322px;
+  min-height: 100px;
+}
+.software-escrow .more-about__subtitle2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A8493;
+  max-width: 322px;
+}
+.software-escrow .more-about__subtitle3 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1A5261;
+  max-width: 550px;
+  text-align: center;
+}
+.software-escrow .more-about__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+.software-escrow .more-about__bg-shape {
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38.38%, rgba(248, 254, 255, 0)), color-stop(120.07%, #D5F3F7));
+  background: -o-linear-gradient(top, rgba(248, 254, 255, 0) 38.38%, #D5F3F7 120.07%);
+  background: linear-gradient(180deg, rgba(248, 254, 255, 0) 38.38%, #D5F3F7 120.07%);
+  border-radius: 0 0 60% 60%;
+}
+.software-escrow .more-about__bg-shape2 {
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38.38%, rgba(249, 251, 255, 0)), color-stop(120.07%, #E0EDFF));
+  background: -o-linear-gradient(top, rgba(249, 251, 255, 0) 38.38%, #E0EDFF 120.07%);
+  background: linear-gradient(180deg, rgba(249, 251, 255, 0) 38.38%, #E0EDFF 120.07%);
+  border-radius: 0 0 60% 60%;
 }
 .software-escrow .easy__main-title {
   font-style: normal;

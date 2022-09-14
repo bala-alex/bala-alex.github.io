@@ -10,42 +10,381 @@
     </noscript>
     <!--  Clickcease.com tracking-->
 
-  <div class="registration bg-white">
+  <div class="bg-white software-escrow">
     <!-- Navigation -->
     {% include navigation.html %}
     <!-- Header -->
-    <div class="container-fluid sign-up__content">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 bg-light-gray sign-up__box">
-          <img class="sign-up__image" src="/images/Dashboard-escrow.webp"/>
-          <div class="sign-up__partners mt-3">
-            <p class="sign-up__text text-center">{{ site.data[page.lang]['check_email']['trusted_partner'] }}</p>
-            <img class="image-style" src="/images/homepage/partner-logos.svg"/>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 bg-white sign-up__box">
-          <div class="my-5 content-center flex-column">
-            <h1 class="sign-up__title">{{ site.data[page.lang]['check_email']['check_your_email'] }}</h1>
-            <p class="sign-up__subtitle mt-3">{{ site.data[page.lang]['check_email']['we_have_sent'] }}</p>
-            <img class="sign-up__image2 mx-auto" src="/images/homepage/email-image.svg"/>
+    <div class="header__content mb-5">
+      <div class="header__bg-source-code">
+        <img class="header__shape-top" src="/images/continuity/continuity-top.webp" alt="Background Image"/>
+        <img class="header__shape-bottom" src="/images/continuity/continuity-bottom.webp" alt="Background Image"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <p class="header__info">{{ site.data[page.lang]['continuity']['software'] }}</p>
+              <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['continuity']['ready_for_continuity'] }}</h1>
+              <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['continuity']['when_your'] }}</p>
+              
+            </div>
+            <div class="col-md-4 col-sm-12 content-center flex-column">
+              <img class="image-style mw-530" src="/images/continuity/header-continuity.webp" alt="Header Image"/>
+              
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="how-works__box">
+        <div class="how-works__box-container">
+          <div class="how-works__box-content">
+            <p class="how-works__box-title">{{ site.data[page.lang]['recovery']['how_does'] }}</p>
+            <p class="how-works__box-subtitle">{{ site.data[page.lang]['recovery']['its_a_simple'] }}</p>
+            
+            <div class="d-flex mt-2">
+              <img class="how-works__box-steps mt-4" src="/images/continuity/steps-continuity.svg" alt="Image"/>
+              <div class="ml-3">
+                <p class="how-works__box-text2">{{ site.data[page.lang]['continuity']['store_assets'] }}</p>
+                <p class="how-works__box-text2">{{ site.data[page.lang]['continuity']['release_access'] }}</p>
+                <p class="how-works__box-text2">{{ site.data[page.lang]['continuity']['immediate_use'] }}</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="how-works__box-bg-continuity">
+            <img class="image-style mw-530" src="/images/continuity/continuity-how.webp" alt="Image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section-large pb-0">
+      <p class="header__info text-secondary-light text-center"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-continuity.svg"/>{{ site.data[page.lang]['software_escrow']['ready_for_continuity'] }}</p>
+      <p class="information__main-title mb-4 mw-900 mx-auto pb-5">{{ site.data[page.lang]['continuity']['who_does_what'] }}</p>
+      <div class="table-responsive">
+        <table class="table my-5">
+          <thead>
+            <tr>
+              <th scope="col" class="difference__table-title border-none break-spaces">{{ site.data[page.lang]['continuity']['role_responsabilities'] }}</th>
+              <th scope="col" class="difference__table-recovery border-none text-center break-spaces px-5">{{ site.data[page.lang]['continuity']['depositor'] }}</th>
+              <th scope="col" class="difference__table-ck border-none text-center break-spaces px-5">Codekeeper</th>
+              <th scope="col" class="difference__table-continuity border-none text-center break-spaces px-5">{{ site.data[page.lang]['continuity']['beneficiary'] }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <th class="difference__table-text border-none break-spaces fw-light" scope="row"><strong class="fw-bold">{{ site.data[page.lang]['continuity']['prepare_deposit_materials'] }}</strong>: {{ site.data[page.lang]['continuity']['source_code_data'] }}</th>
+              <td class="text-center pt-4 border-none bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 border-none bg-recovery">-</td>
+              <td class="text-center pt-4 border-none bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['deposit_hosting'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['take_deposit'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['update_deposited'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['store_updated'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['release_conditions'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['release_materials'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['use_deployed'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['redeploy_materials'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['continuity']['suport_redeployment'] }}</th>
+              <td class="text-center pt-4 bg-recovery">-</td>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-recovery">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="software-escrow section-large">
+      <div class="framework__bg">
+        <p class="header__info text-secondary-light text-center"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-continuity.svg"/>{{ site.data[page.lang]['software_escrow']['ready_for_continuity'] }}</p>
+        <p class="information__main-title mb-4">{{ site.data[page.lang]['continuity']['recovery_and'] }}</p>
+      </div>
+
+      <div class="container section-medium">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img class="information__image content-center mt-5" src="/images/continuity/continuity-ready.webp"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title">{{ site.data[page.lang]['recovery']['ready_to_help'] }}</p>
+            <p class="information__subtitle">{{ site.data[page.lang]['recovery']['codekeeper_has'] }}</p>
+          </div>
+        </div>
+        <div class="row py-5 column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title text-align-end">{{ site.data[page.lang]['recovery']['recovery_heroes'] }}</p>
+            <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['recovery']['internally_we'] }}: {{ site.data[page.lang]['recovery']['redeploy_maintenance'] }}</p>
+          </div>
+          <div class="col-md-6 col-sm-12 content-center">
+            <img class="information__image mt-5" src="/images/continuity/continuity-heroes.webp"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="software-escrow section-large bg-paper-white mb-100">
+      <p class="header__info text-secondary-light text-center"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-continuity.svg"/>{{ site.data[page.lang]['software_escrow']['ready_for_continuity'] }}</p>
+      <p class="information__main-title mb-4">{{ site.data[page.lang]['continuity']['saas_escrow'] }}</p>
+      <img class="mw-260 mt-5 mx-auto d-block" src="/images/software-escrow/protection-image.webp"/>
+      <p class="more-about__subtitle3 mx-auto mt-5">{{ site.data[page.lang]['continuity']['includes_all'] }}</p>
+      <div class="more-about__bg-shape2"></div>
+      <div class="container mt-negative-180">
+        <div class="row pt-5">
+          <div class="col-md-6 col-sm-12 content-center">
+            <div class="more-about__box2 mt-4">
+              <img class="more-about__icon" src="/images/continuity/icons/protect.svg"/>
+              <p class="more-about__title">{{ site.data[page.lang]['continuity']['protect_hosting'] }}</p>
+              <p class="more-about__subtitle2">{{ site.data[page.lang]['continuity']['include_the'] }}</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 content-center">
+            <div class="more-about__box2 mt-4">
+              <img class="more-about__icon" src="/images/continuity/icons/immediate.svg"/>
+              <p class="more-about__title">{{ site.data[page.lang]['continuity']['immediate_recovery'] }}</p>
+              <p class="more-about__subtitle2">{{ site.data[page.lang]['continuity']['no_downtime'] }}</p>
+            </div>
+          </div>
+        </div>
+        <a class="button btn-cerulean3 saas-escrow-href mx-auto mt-5" href="saas-escrow.html">
+          {{ site.data[page.lang]['solutions']['more_about_saas'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div> 
+
+    <div class="container section-large">
+      <p class="information__main-title mb-4 mw-900 mx-auto pb-5">{{ site.data[page.lang]['continuity']['recovery_what'] }}</p>
+      <div class="table-responsive">
+        <table class="table my-5">
+          <thead>
+            <tr>
+              <th scope="col" class="difference__table-title border-none break-spaces">{{ site.data[page.lang]['saas_escrow']['feature_comparison'] }}</th>
+              <th scope="col" class="difference__table-recovery border-none text-center break-spaces"> <img class="mr-2 mb-1" src="/images/software-escrow/icons/recovery-white.svg"/>{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</th>
+              <th scope="col" class="difference__table-continuity border-none text-center break-spaces"><img class="mr-2 mb-1" src="/images/software-escrow/icons/continuity-white.svg"/>{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <th class="difference__table-text border-none break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['securely_handle'] }}</th>
+              <td class="text-center pt-4 border-none bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 border-none bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['solid_escrow'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['legal_process'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['automated_and'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['integrated_with'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</th>
+              <td class="text-center pt-4 bg-recovery"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['protect_hosting'] }}</th>
+              <td class="text-center pt-4 bg-recovery"></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['include_3rd'] }}</th>
+              <td class="text-center pt-4 bg-recovery"></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+            <tr class="bg-white">
+              <th class="difference__table-text break-spaces" scope="row">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</th>
+              <td class="text-center pt-4 bg-recovery"></td>
+              <td class="text-center pt-4 bg-continuity"><img class="mb-2" src="/images/software-escrow/icons/icon-check.svg"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="difference__table-subtext">{{ site.data[page.lang]['saas_escrow']['do_you_have'] }} <a href="contact.html" class="text-underline contact-href text-bondi-blue">{{ site.data[page.lang]['saas_escrow']['customer_service'] }}</a> {{ site.data[page.lang]['saas_escrow']['to_get_custom'] }}</p>
+      </div>
+    </div>
+
+    <!-- Section -->
+    {% include demo-intro.html %}
+    <!-- Footer -->
+    {% include footer.html %}
   </div>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-  <script>
-    hbspt.forms.create({
-    portalId: "5365877",
-    formId: "c40c5263-c8b7-4e5f-8084-3e475bf2d97d",
-    onFormReady: function($form) {
-      $form.hide()
-      $('input[name=accept_terms_conditions]')[0].checked = true;
-      $form[0].submit();
-    },
-  });
-  </script>
 
   <!-- Snippets -->
   {% include snippets.html %}
+
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+        function success(response) {
+          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            $('.software-escrow-monthly').text('€89');
+            $('.saas-escrow-monthly').text('€199');
+          }
+          else if (response.currency === 'GBP') {
+            
+            $('.software-escrow-monthly').text('£79');
+            $('.saas-escrow-monthly').text('£149');
+          }
+          else if (response.currency === 'INR') {
+            $('.software-escrow-monthly').text('₹6,995');
+            $('.saas-escrow-monthly').text('₹12,500');
+          }
+          else if (response.currency === 'AUD') {
+            $('.software-escrow-monthly').text('A$109');
+            $('.saas-escrow-monthly').text('A$250');
+          }
+
+          else if (response.currency === 'SGD') {
+            $('.software-escrow-monthly').text('$109');
+            $('.saas-escrow-monthly').text('$249');
+          }
+
+          else if (response.currency === 'ZAR') {
+            $('.software-escrow-monthly').text('R1,395');
+            $('.saas-escrow-monthly').text('R2,799');
+          }
+
+          else if (response.currency === 'CHF') {
+            $('.software-escrow-monthly').text('CHF89');
+            $('.saas-escrow-monthly').text('CHF219');
+          }
+
+          else if (response.currency === 'CAD') {
+            $('.software-escrow-monthly').text('CA$110');
+            $('.saas-escrow-monthly').text('CA$249');
+          }
+        },
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $('.open-chat').click(function(){
+
+        window.HubSpotConversations.widget.open();
+      });
+    });
+  </script>
+
+  <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+
+  <!-- Start of HubSpot Embed Code -->
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
+  <!-- End of HubSpot Embed Code -->
 </body>
