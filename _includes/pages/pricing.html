@@ -1192,6 +1192,8 @@
     });
   </script>
   <script>
+    var pathname = location.pathname;
+
     $( document ).ready(function() {
       $.ajax('https://ipapi.co/json')
       .then(
@@ -1202,23 +1204,36 @@
             $('#developer-monthly').text('€89');
             $('#team-monthly').text('€225');
             $('#business-monthly').text('€399');
-            $('#enterprise-monthly').text('€1,399');
+            if (pathname.includes('/fr/')) {
+              $('#enterprise-monthly').text('€1399');
+              $('.enterprise-monthly').text('€1399');
+              $('#enterprise-yearly').text('€1299');
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('#enterprise-monthly').text('€1,399');
+              $('.enterprise-monthly').text('€1,399');
+              $('#enterprise-yearly').text('€1,299');
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
+            
             $('.developer-monthly').text('€89');
             $('.team-monthly').text('€225');
             $('.business-monthly').text('€399');
-            $('.enterprise-monthly').text('€1,399');
+            
             $('#developer-yearly').text('€79');
             $('#team-yearly').text('€199');
             $('#business-yearly').text('€349');
-            $('#enterprise-yearly').text('€1,299');
+            
             $('.increased-repository').text('€19');
             $('.increased-storage').text('€5');
             $('.storage-selection').text('€9');
             $('.deposit-connections').text('€99');
             $('.release-processing').text('€199');
             $('.saas-continuity').text('€299');
-            $('.verification-advanced').text('€2,495');
-            $('.verification-complete').text('€3,995');
+            
             $('.plan-eu').removeClass('d-none');
             $('.plan-us').remove();
             $('.plan-uk').remove();
@@ -1484,6 +1499,8 @@
       )
       .catch((e) => console.log(e))
     });
+
+    
   </script>
 
   <script>
@@ -1502,5 +1519,9 @@
       $('html, body').animate({scrollTop:0}, '2000');
     });
   </script>
+
+<script>
+  
+</script>
 
 </body>

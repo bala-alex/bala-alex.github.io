@@ -1031,7 +1031,7 @@
           <img class="guide__image2 my-4" src="/images/resources-page/guide-introduction.webp"/>
           <div>
             <p class="verification__add-on text-uppercase mt-4">Ebook </p>
-            <h2 class="guide__title2">Introduction to Software Escrow: A Guide</h2>
+            <h2 class="guide__title2">Introduction to Software Escrow&nbsp;: A Guide</h2>
             <p class="guide__subtitle2 mt-3">Apprenez comment l’entiercement de logiciel peut vous aider à atténuer les risques et à garantir que les systèmes indispensables à votre mission d’entreprise ne soient pas affectés, quelles que soient les circonstances.</p>
             <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal22">
               TÉLÉCHARGER LE GUIDE GRATUIT
@@ -1232,7 +1232,7 @@
           <img class="guide__image2 my-4" src="/images/resources-page/expert-insights.webp"/>
           <div>
             <p class="verification__add-on text-uppercase">Ebook </p>
-            <h2 class="guide__title2">Avis d’experts: Contrats d’entiercement de logiciel</h2>
+            <h2 class="guide__title2">Avis d’experts&nbsp;: Contrats d’entiercement de logiciel</h2>
             <p class="guide__subtitle2 mt-3">Apprenez tout ce que vous devez savoir sur l’exécution d’un contrat d’entiercement de logiciel réussi, de la négociation des conditions à la gestion rapide de la libération et de la récupération.</p>
             <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal2">
               TÉLÉCHARGER LE GUIDE GRATUIT
@@ -1955,6 +1955,8 @@ document.addEventListener("click", closeAllSelect);
     });
   </script>
   <script>
+    var pathname = location.pathname;
+
     $( document ).ready(function() {
       $.ajax('https://ipapi.co/json')
       .then(
@@ -1965,23 +1967,36 @@ document.addEventListener("click", closeAllSelect);
             $('#developer-monthly').text('€89');
             $('#team-monthly').text('€225');
             $('#business-monthly').text('€399');
-            $('#enterprise-monthly').text('€1,399');
+            if (pathname.includes('/fr/')) {
+              $('#enterprise-monthly').text('€1399');
+              $('.enterprise-monthly').text('€1399');
+              $('#enterprise-yearly').text('€1299');
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('#enterprise-monthly').text('€1,399');
+              $('.enterprise-monthly').text('€1,399');
+              $('#enterprise-yearly').text('€1,299');
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
+            
             $('.developer-monthly').text('€89');
             $('.team-monthly').text('€225');
             $('.business-monthly').text('€399');
-            $('.enterprise-monthly').text('€1,399');
+            
             $('#developer-yearly').text('€79');
             $('#team-yearly').text('€199');
             $('#business-yearly').text('€349');
-            $('#enterprise-yearly').text('€1,299');
+            
             $('.increased-repository').text('€19');
             $('.increased-storage').text('€5');
             $('.storage-selection').text('€9');
             $('.deposit-connections').text('€99');
             $('.release-processing').text('€199');
             $('.saas-continuity').text('€299');
-            $('.verification-advanced').text('€2,495');
-            $('.verification-complete').text('€3,995');
+            
             $('.plan-eu').removeClass('d-none');
             $('.plan-us').remove();
             $('.plan-uk').remove();
@@ -2247,6 +2262,8 @@ document.addEventListener("click", closeAllSelect);
       )
       .catch((e) => console.log(e))
     });
+
+    
   </script>
 
   <script>
@@ -2265,6 +2282,10 @@ document.addEventListener("click", closeAllSelect);
       $('html, body').animate({scrollTop:0}, '2000');
     });
   </script>
+
+<script>
+  
+</script>
 
 </body>
 </html>

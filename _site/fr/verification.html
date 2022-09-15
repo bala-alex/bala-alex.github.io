@@ -125,7 +125,7 @@
     </div>
     <!-- First Section -->
     <div class="container pricing py-5">
-      <p class="verify__section-title text-center text-bondi-blue">Nos services de vérification automatisée:</p>
+      <p class="verify__section-title text-center text-bondi-blue">Nos services de vérification automatisée&nbsp;:</p>
       <div class="row">
         <div class="col-lg-3 col-md-12 content-center mt-4">
           <div class="verify__col-box">
@@ -163,7 +163,7 @@
     <div class="pt-5 container-fluid pricing position-relative">
       <div class="verify__section-container bg-alice-blue mx-auto">
         <div class="container">
-          <p class="verify__section-main-title">Nos services de vérification manuelle:</p>
+          <p class="verify__section-main-title">Nos services de vérification manuelle&nbsp;:</p>
           <div class="row">
             <div class="col-lg-6 col-md-12 mt-4">
               <div class="verify__section-box">
@@ -172,9 +172,9 @@
                   <p class="verify__section-title">Vérification Advanced</p>
                 </div>
                 <p class="verify__col-text"><span class="verify__col-text verification-advanced"><sup>$</sup>2,495</span><span>/ rapport</span></p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: code source</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: matériels de configuration</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: autres matériels</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: code source</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: matériels de configuration</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: autres matériels</p>
                 <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Installation du logiciel</p>
                 <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Réalisez une version opérationnelle du logiciel</p>
               </div>
@@ -186,9 +186,9 @@
                   <p class="verify__section-title">Vérification Complete</p>
                 </div>
                 <p class="verify__col-text"><span class="verify__col-text verification-complete"><sup>$</sup>3,995</span><span>/ rapport</span></p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: code source</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: matériels de configuration</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code: autres matériels</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: code source</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: matériels de configuration</p>
+                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Inspection du code&nbsp;: autres matériels</p>
                 <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Installation du logiciel</p>
                 <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Réalisez une version opérationnelle du logiciel</p>
                 <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>Test d’un maximum de 20 fonctionnalités clés</p>
@@ -394,7 +394,7 @@
           <img class="guide__image2 my-4" src="/images/resources-page/expert-insights.webp"/>
           <div>
             <p class="verification__add-on text-uppercase">Ebook </p>
-            <h2 class="guide__title2">Avis d’experts: Contrats d’entiercement de logiciel</h2>
+            <h2 class="guide__title2">Avis d’experts&nbsp;: Contrats d’entiercement de logiciel</h2>
             <p class="guide__subtitle2 mt-3">Apprenez tout ce que vous devez savoir sur l’exécution d’un contrat d’entiercement de logiciel réussi, de la négociation des conditions à la gestion rapide de la libération et de la récupération.</p>
             <a class="button btn-cerulean mt-4" data-toggle="modal" data-target="#exampleModal2">
               TÉLÉCHARGER LE GUIDE GRATUIT
@@ -455,7 +455,7 @@
         <div class="intro__col-green-spacing">
           <img class="intro__image" src="/images/landing/intro-guide.webp"/>
           <p class="intro__add-on text-uppercase">Ebook </p>
-          <h2 class="intro__title">Introduction to Software Escrow: A Guide</h2>
+          <h2 class="intro__title">Introduction to Software Escrow&nbsp;: A Guide</h2>
           <p class="intro__subtitle mt-3">Apprenez comment l’entiercement de logiciel peut vous aider à atténuer les risques et à garantir que les systèmes indispensables à votre mission d’entreprise ne soient pas affectés, quelles que soient les circonstances.</p>
           <div class="d-flex flex-wrap align-items-center my-4">
             <a class="button btn-white my-4 mr-4" data-toggle="modal" data-target="#exampleModal22">
@@ -1114,6 +1114,8 @@ document.addEventListener("click", closeAllSelect);
   </script>
 
 <script>
+  var pathname = location.pathname;
+  
   $( document ).ready(function() {
     $.ajax('https://ipapi.co/json')
     .then(
@@ -1128,6 +1130,14 @@ document.addEventListener("click", closeAllSelect);
           $('.activity-verification').text('€19');
           $('.verification-advanced').text('€2,495');
           $('.verification-complete').text('€3,995');
+            if (pathname.includes('/fr/')) {
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
         }
         else if (response.currency === 'GBP') {
           $('.saas-continuity').text('£225');

@@ -1114,6 +1114,8 @@ document.addEventListener("click", closeAllSelect);
   </script>
 
 <script>
+  var pathname = location.pathname;
+  
   $( document ).ready(function() {
     $.ajax('https://ipapi.co/json')
     .then(
@@ -1128,6 +1130,14 @@ document.addEventListener("click", closeAllSelect);
           $('.activity-verification').text('€19');
           $('.verification-advanced').text('€2,495');
           $('.verification-complete').text('€3,995');
+            if (pathname.includes('/fr/')) {
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
         }
         else if (response.currency === 'GBP') {
           $('.saas-continuity').text('£225');
