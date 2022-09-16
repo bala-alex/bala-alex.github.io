@@ -130,6 +130,12 @@
       padding-top: 120px;
     }
 
+    &__bg2 {
+      background: linear-gradient(180deg, #F9FBFF -15.57%, #FFFFFF 100%);
+      min-height: 200px;
+      padding-top: 120px;
+    }
+
     &__title {
       font-family: 'Mulish';
       font-style: normal;
@@ -492,7 +498,8 @@
         @include screen-md {
           max-width: 100%;
           border-radius: 0px 0px 10px 10px;
-          min-height: fit-content
+          min-height: fit-content;
+          padding: 30px;
         }
       }
 
@@ -508,7 +515,8 @@
         @include screen-md {
           max-width: 100%;
           border-radius: 0px 0px 10px 10px;
-          min-height: fit-content
+          min-height: fit-content;
+          padding: 30px;
         }
       }
     }
