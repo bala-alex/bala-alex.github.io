@@ -53,7 +53,6 @@ html {
     opacity: 0.9;
     text-decoration: none;
     color: $bondi-blue !important;
-    font-weight: bold;
   }
 
   &:focus {
@@ -193,7 +192,19 @@ html {
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
+}
+
+.text-first-capitalize {
+  text-transform: lowercase !important;
+
+  &::first-letter {
+    text-transform: capitalize !important;
+  }
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
 }
 
 .underline-none {
@@ -264,6 +275,13 @@ html {
   }
 }
 
+.mt-80 {
+  margin-top: 80px !important;
+  @include screen-md {
+    margin-top: 20px !important;
+  }
+}
+
 .mt-200 {
   margin-top: 200px;
 }
@@ -282,6 +300,10 @@ html {
 
 .mb-100 {
   margin-bottom: 100px !important;
+}
+
+.mb-200 {
+  margin-bottom: 200px !important;
 }
 
 .mb-negative-200 {
@@ -596,6 +618,10 @@ html {
   max-width: 350px !important;
 }
 
+.mw-35 {
+  max-width: 35px !important;
+}
+
 .mh-50 {
   max-height: 50px !important;
 }
@@ -666,6 +692,13 @@ html {
 
 .font-22 {
   font-size: 22px !important;
+}
+
+.how-bg-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F9FEFF 100%) !important;
+  border: 0.5px solid #DCE5F2 !important;
+  box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05) !important;
+  border-radius: 10px !important;
 }
 
 .comparison-devider {

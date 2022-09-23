@@ -57,6 +57,82 @@
       right: 0;
       height: 300px;
     }
+
+    &__bg-left-shape {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 155px;
+      max-width: 10%;
+      object-fit: contain;
+    }
+
+    &__bg-right-shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 412px;
+      max-width: 25%;
+      object-fit: contain;
+    }
+  }
+
+  .escrow-works {
+    &__bg {
+      min-height: 800px !important;
+      background: #009CB7;
+      padding-top: 100px !important;
+      padding-bottom: 150px !important;
+      position: relative;
+    }
+
+    &__bg-shape {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(0, 136, 159, 0) 5.99%, #00889F 57.85%);
+      opacity: 0.5;
+      border-radius: 0px 0px 0px 255px;
+
+      @include screen-sm {
+        max-height: 400px;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $white;
+      max-width: 493px;
+      margin-top: 100px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $white;
+      max-width: 447px;
+    }
+
+    &__image {
+      width: 100%;
+      object-fit: contain;
+      max-width: 560px;
+      padding: 50px;
+
+      @include screen-sm {
+        max-width: 100%;
+      }
+    }
   }
 
   .select-level {
