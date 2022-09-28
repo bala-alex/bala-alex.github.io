@@ -11390,6 +11390,13 @@ html {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.deposit-assets__dotted-line {
+  border-left: 1px dashed #6A8493;
+  height: 100%;
+  position: absolute;
+  left: 13px;
+  top: 30px;
+}
 
 .escrow__image-box {
   margin-top: -30px;
@@ -13892,13 +13899,12 @@ html {
   margin-top: 85px;
 }
 .pricing .header__bg {
-  min-height: 490px !important;
-  background: url("../images/landing/background-fill.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover !important;
-  padding-top: 100px;
-  padding-bottom: 180px;
+  min-height: 500px !important;
+  background: -o-linear-gradient(88.42deg, #F8FBFF 1.71%, #FFFFFF 82.27%) !important;
+  background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%) !important;
+  padding-top: 160px !important;
+  padding-bottom: 160px !important;
+  position: relative;
 }
 .pricing .header__screen {
   width: 100%;
@@ -17189,6 +17195,28 @@ html {
     max-width: 50%;
   }
 }
+.resources .header__shape-left {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  max-width: 170px;
+}
+@media (max-width: 767px) {
+  .resources .header__shape-left {
+    max-width: 30%;
+  }
+}
+.resources .header__shape-right {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  max-width: 170px;
+}
+@media (max-width: 767px) {
+  .resources .header__shape-right {
+    max-width: 30%;
+  }
+}
 .resources .header__bg-screen {
   position: absolute;
   bottom: 173px;
@@ -20236,6 +20264,7 @@ html {
 }
 .software-escrow .how-works__box-text {
   width: 90px;
+  word-wrap: break-word;
 }
 .software-escrow .how-works__box-text2 {
   width: 100%;
