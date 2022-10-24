@@ -270,6 +270,12 @@
       bottom: 0;
       width: 357px;
       height: 156px;
+
+      @include screen-sm {
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+      }
     }
 
     &__image {

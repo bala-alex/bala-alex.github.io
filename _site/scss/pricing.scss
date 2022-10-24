@@ -706,13 +706,14 @@
     }
 
     &__col-box {
-      max-width: 270px;
+      max-width: 370px;
       width: 100%;
-      min-height: 330px;
+      min-height: 300px;
       padding: 40px 20px 20px 30px;
-      background: linear-gradient(180deg, #FFFFFF 0%, #F5FAFF 100%);
-      border: 1px solid #CDE2EE;
-      border-radius: 20px;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      background-color: $white;
     }
 
     &__col-title {
@@ -725,12 +726,12 @@
     }
 
     &__section-main-title {
-      font-size: 28px !important;
-      line-height: 34px;
+      font-size: 24px !important;
+      line-height: 32px;
       font-family: 'Mulish', sans-serif;
-      color: $cerulean;
-      font-weight: 200;
-      letter-spacing: -0.2px;
+      color: $secondary-default;
+      font-weight: 700;
+      text-align: center;
     }
 
     &__section-title {
@@ -747,7 +748,7 @@
       font-size: 14px !important;
       line-height: 22px;
       font-family: 'Mulish', sans-serif;
-      color: $cerulean;
+      color: $dark-cyan;
       font-weight: 400;
       letter-spacing: 0.3px;
       margin-bottom: 0px;
@@ -765,11 +766,17 @@
 
     &__section-box {
       max-width: 568px;
-      min-height: 389px;
+      min-height: 410px;
       background: #FFFFFF;
-      box-shadow: 2px 9px 20px #EEF1F6;
-      border-radius: 20px;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
       padding: 35px;
+    }
+
+    &__section-devider {
+      width: 100%;
+      border: 1px dashed #6A8493;
     }
 
     &__col-subtitle {
@@ -778,20 +785,27 @@
       font-family: 'Mulish', sans-serif;
       color: $air-force-blue;
       font-weight: normal;
-      max-width: 206px;
-      min-height: 110px;
+      max-width: 300px;
+      min-height: 90px;
+    }
+
+    &__bg-gray {
+      background: linear-gradient(180deg, #FFFFFF 41.69%, #E0EAFF 151.15%);
+      min-height: 400px;
+      border-radius: 0 0 80% 80%;
+      padding-bottom: 50px;
     }
 
     &__col-text {
-      font-size: 48px !important;
-      line-height: 22px;
+      font-size: 35px !important;
+      line-height: 35px;
       font-family: 'Mulish', sans-serif;
-      color: $cerulean;
+      color: $dark-cyan;
       font-weight: bold;
       margin-top: 30px;
 
       sup {
-        font-size: 20px;
+        font-size: 14px;
       }
 
       span {

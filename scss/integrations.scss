@@ -195,10 +195,10 @@
       &:hover {
         border: 1px solid $bondi-blue;
       }
-      // @include screen-lg {
-      //   max-width: 100%;
-      //   min-width: 100%;
-      // }
+      @include screen-xs {
+        max-width: 260px;
+        min-width: 260px;
+      }
     }
 
     &__image {
@@ -345,6 +345,11 @@
       height: 206px;
       box-shadow: 0px 15px 45px rgba(183, 191, 203, 0.25);
       border-radius: 10px;
+
+      @include screen-xs {
+        width: 90%;
+        height: auto;
+      }
     }
 
     &__image3 {

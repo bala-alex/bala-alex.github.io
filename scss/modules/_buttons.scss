@@ -330,7 +330,6 @@
     color: $white !important;
     background-color: darken($cerulean, 7.5%)!important;
     text-decoration: none;
-    border: 1px solid $cerulean;
     transition: all .3s;
     cursor: pointer;
   }
@@ -421,6 +420,31 @@
   height: 50px;
   width: max-content;
   min-width: 200px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  &:hover {
+    color: $sherpa-blue !important;
+    background-color: #FFA800 !important;
+    text-decoration: none;
+    border: 1px solid #FFA800;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
+.btn-yellow-small {
+  @include button-variant($yellow, $yellow, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $sherpa-blue !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  border-radius: 5px;
+  height: 50px;
+  width: max-content;
+  min-width: fit-content;
   padding: 0 20px;
   font-weight: bold;
   font-family: 'Mulish', sans-serif;

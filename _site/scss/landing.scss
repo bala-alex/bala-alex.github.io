@@ -672,7 +672,7 @@
     }
 
     @include screen-sm {
-      height: 200px;
+      height: 120px;
     }
   }
 
@@ -772,6 +772,10 @@
   &__active-icon {
     margin-top: -35px;
     margin-right: 30px;
+
+    @include screen-sm {
+      margin-top: 100px;
+    }
   }
 }
 
@@ -1616,10 +1620,7 @@
 
   &__content-bg {
     min-height: 850px !important;
-    background: url('../images/verification-page/verification-content-bg.webp');
-    background-repeat: no-repeat;
-    background-position: top; 
-    background-size: cover !important;
+    background: linear-gradient(167.51deg, #4781D9 6.57%, #245CB0 98.55%);
     padding-top: 200px;
     padding-bottom: 200px;
     @include screen-md {
@@ -1680,6 +1681,62 @@
     font-weight: 400;
     font-family: 'Mulish', sans-serif;
     max-width: 303px;
+  }
+
+  &__content-image {
+    height: 70px;
+    margin: 30px 0;
+    object-fit: contain;
+  }
+
+  &__content-title {
+    color: $white;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  &__content-subtitle {
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Mulish', sans-serif;
+    max-width: 360px;
+  }
+
+  &__content-line {
+    width: 100%;
+    border: 1px dashed #F3F6FC;
+    margin-right: -30px;
+
+    @include screen-md {
+      display: none;
+    }
+  }
+
+  &__bg-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    max-width: 700px;
+
+    @include screen-md {
+      max-width: 40%;
+    }
+  }
+
+  &__bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+
+    @include screen-md {
+      max-width: 30%;
+    }
   }
 
   &__title {

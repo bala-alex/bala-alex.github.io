@@ -51,11 +51,22 @@
       height: 180px;
     }
 
+    &__bg-top-left2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      max-width: 30%;
+      object-fit: contain;
+    }
+
     &__bg-bottom-right {
       position: absolute;
       bottom: 0;
       right: 0;
-      height: 300px;
+      width: 120px;
+      max-width: 15%;
+      object-fit: contain;
     }
 
     &__bg-left-shape {

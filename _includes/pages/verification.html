@@ -14,305 +14,223 @@
     <!-- Navigation -->
     {% include navigation.html %}
     <!-- Header -->
-    <div class="resources">
-      <div class="header__content overflow-hidden">
-        <div class="header__bg p-0 d-flex align-items-center justify-content-center flex-column">
+    <div class="solutions">
+      <div class="header__content">
+        <div class="header__bg-new">
+          <img class="header__bg-top-left2" src="/images/verification-page/top-left.webp" alt="Background Image"/>
+          <img class="header__bg-bottom-right" src="/images/verification-page/bottom-right.webp" alt="Background Image"/>
           <div class="container">
-            <p class="product__title mx-auto mt-4">{{ site.data[page.lang]['verification']['add_ons'] }}</p>
-            <div class="product__header-devider mx-auto"></div>
-            <h1 class="header__title mx-auto">{{ site.data[page.lang]['verification']['ensure_complete'] }}</h1>
-            <p class="header__subtitle mx-auto mt-4">{{ site.data[page.lang]['verification']['learn_how_software'] }}</p>
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <div class="resources">
+                  <p class="header__link">{{ site.data[page.lang]['verification']['add_ons'] }}</p>
+                </div>
+                <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['verification']['ensure_complete'] }}</h1>
+                <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['verification']['learn_how_software'] }}</p>
+                <div class="d-flex flex-wrap resources mt-4">
+                  <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                    {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                  </a>
+                  <div>
+                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12 content-center">
+                <img class="image-style mw-530 mt-4" src="/images/verification-page/verify-header.webp" alt="Verification Image"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container pricing section-medium">
-      <div class="row my-5">
-        <div class="col-md-6 col-sm-12">
-          <h2 class="verify__main-text2">{{ site.data[page.lang]['verification']['codekeeper_verification'] }}</h2>
-          <p class="verify__main-subtext2 mt-3">{{ site.data[page.lang]['verification']['we_offer_four'] }}</p>
-          <a class="button btn-cerulean mt-4 pricing-href" href="pricing.html">
-            {{ site.data[page.lang]['index']['get_started'] }}
-          </a>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <img class="image-style" src="/images/homepage/verification-image.webp" alt="Verification Image"/>
-        </div>
-      </div>
+    <div class="container pricing mt-150">
+      <h2 class="verify__main-text2 text-center">{{ site.data[page.lang]['verification']['codekeeper_verification'] }}</h2>
+      <p class="verify__main-subtext2 mt-3 text-center mx-auto mw-700">{{ site.data[page.lang]['verification']['we_offer_four'] }}</p>
     </div>
     <!-- First Section -->
-    <div class="container pricing py-5">
-      <p class="verify__section-title text-center text-bondi-blue">{{ site.data[page.lang]['verification']['our_automated'] }}:</p>
-      <div class="row">
-        <div class="col-lg-3 col-md-12 content-center mt-4">
-          <div class="verify__col-box">
-            <p class="verify__col-title">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
-            <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of'] }}</p>
-            <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+    <div class="pricing bg-paper-white">
+      <div class="verify__bg-gray"></div>
+    
+      <div class="container mt-negative-250">
+        <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_automated'] }}:</p>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box">
+              <p class="verify__col-title">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
+              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of'] }}</p>
+              <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box">
+              <p class="verify__col-title">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
+              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
+              <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box">
+              <p class="verify__col-title">{{ site.data[page.lang]['verification']['saas_verification'] }}</p>
+              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_check_of'] }}</p>
+              <p class="verify__col-text"><span class="verify__col-text saas-verification"><sup>$</sup>29</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+            </div>
+          </div>
+
+        </div>
+        <p class="section__text mt-5 mb-0 text-center">{{ site.data[page.lang]['verification']['need_a_different'] }}</p>
+        <p class="section__text text-center fw-bold text-first-capitalize"><a href="contact.html" class="text-underline contact-href">{{ site.data[page.lang]['verification']['let_us_know'] }}</a></p>
+      </div>
+      <div class="container section-medium">
+        <div class="verify__section-devider"></div>
+      </div>
+      <!-- Second Section -->
+      <div class="pt-5 position-relative z-index-1">
+  
+          <div class="container">
+            <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_manual_verification'] }}:</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mt-4">
+                <div class="verify__section-box">
+                  <p class="verify__section-title pb-3">{{ site.data[page.lang]['verification']['verification_advanced2'] }}</p>
+                  <p class="verify__section-text mt-4"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
+                  <p class="verify__section-text mb-5"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
+                  <p class="verify__col-text"><span class="verify__col-text verification-advanced"><sup>$</sup>2,495</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mt-4">
+                <div class="verify__section-box">
+                  <p class="verify__section-title">{{ site.data[page.lang]['verification']['verification_complete2'] }}</p>
+                  <p class="verify__section-text mt-4"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
+                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['testing_of_up'] }}</p>
+                  <p class="verify__col-text"><span class="verify__col-text verification-complete"><sup>$</sup>3,995</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="clients__content-bg mt-negative-80 position-relative">
+      <img class="clients__bg-left" src="/images/verification-page/bg-bottom-left.webp" alt="Background Image"/>
+      <img class="clients__bg-right" src="/images/verification-page/bg-top-right.webp" alt="Background Image"/>
+      <div class="container">
+        <h2 class="clients__title mt-3 text-white">{{ site.data[page.lang]['verification']['secure_your_code'] }}</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="d-flex align-items-center">
+              <img class="clients__content-image" src="/images/verification-page/icon-deposit.svg"/>
+              <div class="clients__content-line"></div>
+            </div>
+            <p class="clients__content-title">{{ site.data[page.lang]['verification']['deposit'] }}</p>
+            <p class="clients__content-subtitle">{{ site.data[page.lang]['verification']['escrow_deposits_sometimes'] }}</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="d-flex align-items-center">
+              <img class="clients__content-image" src="/images/verification-page/icon-verify.svg"/>
+              <div class="clients__content-line"></div>
+            </div>
+            <p class="clients__content-title ">{{ site.data[page.lang]['verification']['verify'] }}</p>
+            <p class="clients__content-subtitle">{{ site.data[page.lang]['verification']['different_levels'] }}</p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <img class="clients__content-image" src="/images/verification-page/icon-release.svg"/>
+            <p class="clients__content-title">{{ site.data[page.lang]['verification']['release'] }}</p>
+            <p class="clients__content-subtitle">{{ site.data[page.lang]['verification']['verification_provides'] }}</p>
+            <div class="d-flex flex-wrap my-5">
+              <a class="button btn-yellow-small pricing-href mr-4 mb-4" href="pricing.html">
+                {{ site.data[page.lang]['index']['get_started'] }}
+              </a>
+              <div class="resources">
+                <p class="header__text text-white">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                <a class="header__link pricing-href text-yellow" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 content-center mt-4">
-          <div class="verify__col-box">
-            <p class="verify__col-title">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
-            <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
-            <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+        
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="software-escrow">
+      <div class="datacenters__bg pb-300">
+        <div class="container d-flex flex-column align-items-center">
+          <p class="scenario__title mx-auto mw-100 pb-3">{{ site.data[page.lang]['source_code_escrow']['securely_stored'] }}</p>
+          <p class="protect__subtext text-dark-cyan">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
+          <img class="datacenter-image pb-5" src="/images/logos/datacenter-certifications.webp"/>
+        </div>
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/data-security.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['data_security'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['our_data'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/encryption.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['end_to_end'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['data_is_secured'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/audit.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['deposit_audit'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['review_the'] }}</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/upload-folder.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['secure_upload'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_you_prefer'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/gdpr.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['gdpr_compliance'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your_deposits'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/hipaa.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['hipaa_compliance'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your'] }}</p>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 content-center mt-4">
-          <div class="verify__col-box">
-            <p class="verify__col-title">{{ site.data[page.lang]['verification']['saas_verification'] }}</p>
-            <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_check_of'] }}</p>
-            <p class="verify__col-text"><span class="verify__col-text saas-verification"><sup>$</sup>29</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+      </div>
+    </div>
+
+    <div class="container resources mb-200">
+      <div class="best-price__bg">
+        <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small Shape Image"/>
+        <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium Shape Image"/>
+        <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large Shape Image"/>
+        <div class="row mt-3">
+          <div class="col-md-5 col-sm-12 content-center">
+            <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Best Price Image"/>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-12 content-center mt-4">
-          <div class="verify__col-box">
-            <p class="verify__col-title">{{ site.data[page.lang]['verification']['custom_verification'] }}</p>
-            <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['need_a_different'] }}</p>
-            <a class="button btn-cerulean3 my-4 w-100 text-center contact-href" href="contact.html">
-              {{ site.data[page.lang]['verification']['let_us_know'] }}
+          <div class="col-md-7 col-sm-12"> 
+            <p class="best-price__title">{{ site.data[page.lang]['information_escrow']['industry_leading'] }}</p>
+            <p class="best-price__text">{{ site.data[page.lang]['information_escrow']['you_dont_need_to'] }}</p>
+            <a class="button btn-yellow pricing-href my-4" href="pricing.html">
+              {{ site.data[page.lang]['index']['explore_our_pricing'] }}
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Second Section -->
-    <div class="pt-5 container-fluid pricing position-relative">
-      <div class="verify__section-container bg-alice-blue mx-auto">
-        <div class="container">
-          <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_manual_verification'] }}:</p>
-          <div class="row">
-            <div class="col-lg-6 col-md-12 mt-4">
-              <div class="verify__section-box">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2" src="/images/verification-page/verification-advanced.svg"/>
-                  <p class="verify__section-title">{{ site.data[page.lang]['verification']['verification_advanced2'] }}</p>
-                </div>
-                <p class="verify__col-text"><span class="verify__col-text verification-advanced"><sup>$</sup>2,495</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 mt-4">
-              <div class="verify__section-box">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2" src="/images/verification-page/verification-complete.svg"/>
-                  <p class="verify__section-title">{{ site.data[page.lang]['verification']['verification_complete2'] }}</p>
-                </div>
-                <p class="verify__col-text"><span class="verify__col-text verification-complete"><sup>$</sup>3,995</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
-                <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-small.svg"/>{{ site.data[page.lang]['verification']['testing_of_up'] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Third Section -->
-    <div class="clients__content-bg mt-negative-100">
-      <div class="container">
-        <h2 class="clients__title mt-3 text-white">{{ site.data[page.lang]['verification']['secure_your_code'] }}</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/deposit-white.webp"/>
-            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['deposit'] }}</p>
-            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['escrow_deposits_sometimes'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/verify-white.webp"/>
-            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['verify'] }}</p>
-            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['different_levels'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img class="clients__section-image" src="/images/verification-page/release-white.webp"/>
-            <p class="clients__section-title text-white">{{ site.data[page.lang]['verification']['release'] }}</p>
-            <p class="clients__section-subtitle text-white">{{ site.data[page.lang]['verification']['verification_provides'] }}</p>
-          </div>
-        </div>
-        <a class="button btn-yellow my-5 mx-auto pricing-href" href="pricing.html">
-          {{ site.data[page.lang]['index']['get_started'] }}
-        </a>
-      </div>
-    </div>
-    <!-- Fourth Section -->
-    <div class="px-3 features mt-negative-100">
-      <div class="advantages__section-container mx-auto">
-        <div class="container">
-          <h2 class="advantages__title">{{ site.data[page.lang]['data_escrow_product']['trusted_by'] }}</h2>
-          <p class="advantages__subtitle mx-auto">{{ site.data[page.lang]['data_escrow_product']['take_advantage'] }}</p>
-          <div class="row mt-5">
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/platform-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['platform'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['we_help_global'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/framework-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['frameworks'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['codekeeper_supports'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/availability-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['availability'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['securely_store'] }}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/scalability-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['scalability'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['scale_your'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/flexibility-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['flexibility'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['organize_your'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/verification-page/integrations-icon.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['data_escrow_product']['integrations'] }}</p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['data_escrow_product']['whether_you_use'] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fifth Section -->
-    <div class="pricing">
-      <div class="section-medium offer">
-        <h2 class="offer__main-title">{{ site.data[page.lang]['data_escrow_product']['industry_leading'] }}</h2>
-        <p class="offer__main-subtitle mt-4 mx-auto mw-100">{{ site.data[page.lang]['data_escrow_product']['you_dont_need_to'] }}</p>
-        <span class="offer-btns">
-          <button class="button btn-cerulean mx-auto mt-4 btn-offer-style open" id="openButton">
-            {{ site.data[page.lang]['data_escrow_product']['get_offer'] }}
-          </button>
-          <button class="button btn-cerulean mx-auto mt-4 btn-offer-style open" id="closeButton">
-            {{ site.data[page.lang]['data_escrow_product']['hide_offer'] }}
-          </button>
-        </span>
-        <div class="bg-white py-5" id="offer">
-          <div class="section__container mx-auto mt-5 offer__container english-guide">
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              portalId: "5365877",
-              formId: "681409cd-f59f-49d5-836b-527607996aaf"
-            });
-            </script>
-          </div>
-          <div class="section__container mx-auto mt-5 offer__container spanish-guide">
-  
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              region: "na1",
-              portalId: "5365877",
-              formId: "43a4244a-893f-46bf-8c61-34c3997057c1"
-            });
-            </script>
-          </div>
-          <div class="section__container mx-auto mt-5 offer__container german-guide">
-  
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              region: "na1",
-              portalId: "5365877",
-              formId: "dc19e2de-7490-4dc2-93af-33163dd2c5f5"
-            });
-            </script>
-          </div>
-          <div class="section__container mx-auto mt-5 offer__container dutch-guide">
-  
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              region: "na1",
-              portalId: "5365877",
-              formId: "68712126-4f0b-4277-84b9-65706aa3d9b6"
-            });
-            </script>
-          </div>
-          <div class="section__container mx-auto mt-5 offer__container romanian-guide">
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({
-              region: "na1",
-              portalId: "5365877",
-              formId: "932218e5-c58d-4390-95ca-d74a7218cf24"
-            });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="pt-5 px-3 position-relative">
-      <div class="people__section-container mx-auto people__guide-spacing">
-        <div class="container">
-          <h2 class="people__title">{{ site.data[page.lang]['verification']['best_in_class'] }}</h2>
-          <p class="people__subtitle mx-auto">{{ site.data[page.lang]['verification']['we_build_the'] }}</p>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/data-security.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['data_security'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['our_data_centers'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/encryption.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['end_to_end'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['data_is_secured'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people__section-col">
-                <img class="people__section-image mt-3" src="/images/homepage/secure-upload.svg"/>
-                <p class="people__section-title">{{ site.data[page.lang]['includes']['security']['secure_upload'] }}</p>
-                <p class="people__section-subtitle">{{ site.data[page.lang]['includes']['security']['if_you_prefer'] }}</p>
-              </div>
-            </div>
-          </div>
-          <a class="button btn-cerulean mx-auto my-5 security-href" href="security.html">
-            {{ site.data[page.lang]['includes']['security']['learn_more'] }}
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="mt-negative-50">
-      {% include anatomy-escrow.html %}
-    </div>
-    <!-- Seventh Section -->
-    <!-- <div class="bg-white py-5">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">{{ site.data[page.lang]['verification']['we_operate_within'] }}:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.webp"/>
-      </div>
-    </div> -->
-    <!-- Eight Section -->
-    {% include intro.html %}
+
+
+    <!-- Section -->
+    {% include demo-intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>

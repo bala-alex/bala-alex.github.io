@@ -30,7 +30,7 @@
             <div class="container2 mx-auto mt-negative-280"> 
               <div class="row d-flex flex-wrap mt-5 mobile-center w-100" id="myUL">
                 <div id="test-list" class="w-100">
-                  <div class="mw-900 mx-auto d-flex flex-column align-items-center">
+                  <div class="mw-900 mx-auto d-flex flex-column align-items-center mt-5">
                     <div class="pt-3">
                       <div class="input-group mb-3 service__input mx-auto">
                         <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="Search integrations" aria-label="Type to search" aria-describedby="basic-addon2" />
@@ -41,7 +41,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="pt-0">
+                    <!-- <div class="pt-0">
                       <div class="btn-group btn-group-toggle mt-2 d-flex align-items-center mx-auto" data-toggle="buttons">
                         <label class="btn btn-sidebar" id='all'>
                           <input type="radio" name="options" id="option1" autocomplete="off" checked> {{ site.data[page.lang]['integrations']['see_all'] }}
@@ -52,7 +52,7 @@
                         </label>
                         {% endfor %}
                       </div>
-                    </div>
+                    </div> -->
                     
                   </div>
                   
@@ -83,7 +83,7 @@
       <div class="container-fluid section-medium">
         <div class="steps__container mx-auto">
           <h1 class="steps__main-title">{{ site.data[page.lang]['integrations']['how_to_activate'] }}</h1>
-          <div class="container steps__desktop">
+          <div class="container steps__desktop pb-300">
             <div class="row">
               <div class="col-md-5 col-sm-12">
                 <div class="steps__content">
@@ -128,10 +128,15 @@
                 <img class="steps__image3" src="/images/integration-page/step-3.webp"/>
               </div>
             </div>
-            <p class="steps__text mt-5">{{ site.data[page.lang]['integrations']['if_you_dont'] }} <a href="https://codekeeper.co/sign-up.html"> {{ site.data[page.lang]['integrations']['codekeeper_account'] }}</a></p>
+
+            <div class="d-flex align-items-start resources mx-auto mw-570 mt-2">
+              <img class="mr-3 mw-35 mt-2" src="/images/source-code-escrow/icons/info.svg"/>
+              <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->
+              <p class="setting-up__text mb-0 text-air-force-blue">{{ site.data[page.lang]['source_code_escrow']['for_non'] }} <a class="text-bondi-blue contact-href" href="contact.html">{{ site.data[page.lang]['source_code_escrow']['contact_us'] }}</a></p>
+            </div>
           </div>
 
-          <div class="container steps__mobile">
+          <div class="container steps__mobile pb-200">
             <p class="steps__title">{{ site.data[page.lang]['integrations']['step_1'] }}</p>
             <p class="steps__subtitle">{{ site.data[page.lang]['integrations']['to_activate_an'] }} <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> {{ site.data[page.lang]['integrations']['and_go_to'] }}:</p>
             <img class="steps__image mt-4" src="/images/integration-page/step-1.webp"/>
@@ -141,10 +146,35 @@
             <p class="steps__title mt-5">{{ site.data[page.lang]['integrations']['step_3'] }}</p>
             <p class="steps__subtitle">{{ site.data[page.lang]['integrations']['once_you_click'] }}</p>
             <img class="steps__image3 mt-4" src="/images/integration-page/step-3.webp"/>
-            <p class="steps__text mt-5">{{ site.data[page.lang]['integrations']['if_you_dont'] }}  <a href="https://codekeeper.co/sign-up.html"> {{ site.data[page.lang]['integrations']['codekeeper_account'] }}</a></p>
+            <div class="d-flex align-items-start resources mx-auto mw-570 mt-5">
+              <img class="mr-3 mw-35 mt-2" src="/images/source-code-escrow/icons/info.svg"/>
+              <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->
+              <p class="setting-up__text mb-0 text-air-force-blue">{{ site.data[page.lang]['source_code_escrow']['for_non'] }} <a class="text-bondi-blue contact-href" href="contact.html">{{ site.data[page.lang]['source_code_escrow']['contact_us'] }}</a></p>
+            </div>
           </div>
         </div>
-        <div class="container mt-5">
+
+        <div class="container resources">
+          <div class="best-price__bg">
+            <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small Shape Image"/>
+            <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium Shape Image"/>
+            <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large Shape Image"/>
+            <div class="row mt-3">
+              <div class="col-md-5 col-sm-12 content-center">
+                <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Best Price Image"/>
+              </div>
+              <div class="col-md-7 col-sm-12"> 
+                <p class="best-price__title">{{ site.data[page.lang]['information_escrow']['industry_leading'] }}</p>
+                <p class="best-price__text">{{ site.data[page.lang]['information_escrow']['you_dont_need_to'] }}</p>
+                <a class="button btn-yellow pricing-href my-4" href="pricing.html">
+                  {{ site.data[page.lang]['index']['explore_our_pricing'] }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-150">
           <h1 class="steps__main-title">{{ site.data[page.lang]['integrations']['more_assistance'] }}</h1>
           <p class="steps__text mt-4">{{ site.data[page.lang]['integrations']['if_you_need'] }}</p>
           <a class="button btn-cerulean mx-auto my-4 contact-href" href="contact.html">
@@ -153,8 +183,54 @@
         </div>
       </div>
     </div>
-    <!-- Third Section -->
-    {% include intro.html %}
+    <!-- Section -->
+    <div class="bg-white software-escrow">
+      <div class="datacenters__bg pt-5 mb-200">
+        <div class="container d-flex flex-column align-items-center">
+          <p class="scenario__title mx-auto mw-100 pb-3">{{ site.data[page.lang]['source_code_escrow']['securely_stored'] }}</p>
+          <p class="protect__subtext text-dark-cyan">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
+          <img class="datacenter-image pb-5" src="/images/logos/datacenter-certifications.webp"/>
+        </div>
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/data-security.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['data_security'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['our_data'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/encryption.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['end_to_end'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['data_is_secured'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/audit.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['deposit_audit'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['review_the'] }}</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/upload-folder.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['secure_upload'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_you_prefer'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/gdpr.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['gdpr_compliance'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your_deposits'] }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="mt-5" src="/images/source-code-escrow/icons/hipaa.svg"/>
+              <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['hipaa_compliance'] }}</p>
+              <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    {% include demo-intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
