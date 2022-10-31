@@ -71,17 +71,25 @@
       min-height: 700px !important;
       background: linear-gradient(0.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
       padding-top: 150px !important;
-      padding-bottom: 180px !important;
+      padding-bottom: 150px !important;
       position: relative;
+
+      @include screen-sm {
+        padding-bottom: 80px !important;
+      }
     }
 
     &__bg-saas-escrow {
       min-height: 700px !important;
       background: linear-gradient(180deg, #FFFFFF 22.17%, #ECF5FF 129.81%);
       padding-top: 150px !important;
-      padding-bottom: 180px !important;
+      padding-bottom: 150px !important;
       position: relative;
       border-radius: 0 0 60% 40% / 0 0 40% 15%;
+
+      @include screen-sm {
+        padding-bottom: 80px !important;
+      }
     }
 
     &__text {
@@ -685,8 +693,9 @@
     &__container {
       width: 100%;
       max-width: 1300px;
-      background: #F9FCFF;
-      border: 0.5px solid #DCE5F2;
+      background: $white;
+      border: 0.5px solid #DCE4F2;
+      box-shadow: 0px 7px 35px rgba(61, 114, 194, 0.18);
       border-radius: 10px;
       min-height: 1000px;
       margin: 15px;
