@@ -1157,6 +1157,30 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Despre noi - Povestea călătoriei Codekeeper pentru modernizarea software-ului escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper inovează din 2014 pe piața de escrow software, facilitând dezvoltatorilor de software și clienților software să utilizeze escrow software pentru a elimina riscul terților. Citiți totul despre călătoria noastră aici.";
   }
+  else if (!(pathname.includes('/es')) && !(pathname.includes('/de')) && !(pathname.includes('/nl')) && !(pathname.includes('/fr')) && !(pathname.includes('/ro')) &&pathname.includes('/index.html')) {
+    document.title = "Codekeeper | Easy Online Platform for Software Escrow, SaaS Escrow and Source Code Escrow Agreements "
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
+  }
+  else if (pathname.includes('/es/index.html')) {
+    document.title = "Codekeeper | Plataforma en línea sencilla para acuerdos de custodia de software, custodia de SaaS y custodia de código fuente"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper proporciona soluciones de custodia de software de última generación para eliminar cualquier riesgo de terceros de sus operaciones empresariales.";
+  }
+  else if (pathname.includes('/de/index.html')) {
+    document.title = "Codekeeper | Einfache Online-Plattform für Software-Escrow-, SaaS-Escrow- und Quellcode-Escrow-Vereinbarungen"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet hochmoderne Software-Escrow-Lösungen, um Drittanbieter-Risiken aus Ihrem Geschäftsbetrieb zu beseitigen.";
+  }
+  else if (pathname.includes('/nl/index.html')) {
+    document.title = "Codekeeper | Gemakkelijk online platform voor Software Escrow, SaaS Escrow en Source Code Escrow-overeenkomsten"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt de nieuwste oplossingen voor software-escrow, om het risico van derden uit uw zakelijke activiteiten te halen.";
+  }
+  else if (pathname.includes('/fr/index.html')) {
+    document.title = "Codekeeper | Plateforme en ligne simple pour les contrats d’entiercement de logiciel, d’entiercement de code source et d’entiercement de SaaS  "
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper fournit des solutions d’entiercement de logiciel de pointe, afin d’éliminer les risques tiers de vos activités opérationnelles.";
+  }
+  else if (pathname.includes('/ro/index.html')) {
+    document.title = "Codekeeper | Platformă online ușoară pentru contracte de escrow software, escrow SaaS și acorduri de escrow cod sursă"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă soluții software de ultimă generație, pentru a elimina riscul terților din operațiunile dvs. de afaceri.";
+  }
   else if (pathname.includes('/book-a-demo.html')) {
     document.title = "Book a Demo with a Software Escrow Expert | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Learn all about setting up a software escrow that fits your situation. Our experts will explain all steps in the process, including the legal aspects of the escrow and the technical setup. Don't worry, we make it easy!";
