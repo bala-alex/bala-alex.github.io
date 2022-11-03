@@ -230,7 +230,7 @@
             </div>
             <div class="col-md-7 col-sm-12">
               <p class="setting-up__title-small mt-4">Integrate the platform of your choice</p>
-              <p class="setting-up__subtitle">We support most commercially available environments with 50+ Integrations available! <a class="text-bondi-blue integrations-href fw-bold" href="integrations.html">see all integrations.</a></p>
+              <p class="setting-up__subtitle">We support most commercially available environments with 50+ Integrations available! <a class="text-bondi-blue integrations-href fw-bold" href="integrations.html">See all integrations</a></p>
               <div class="resources">
                 <div class="applications__logos mt-4 justify-content-start">
                   <div class="applications__logo mx-0">
@@ -1198,6 +1198,25 @@ document.addEventListener("click", closeAllSelect);
       $('.is-developer').removeClass('d-none');
       $('.is-client').addClass('d-none');
     }
+
+    if (pathname.includes('/es')) {
+      document.documentElement.setAttribute("lang", 'es');
+    }
+    else if (pathname.includes('/de')) {
+      document.documentElement.setAttribute("lang", 'de');
+    }
+    else if (pathname.includes('/nl')) {
+      document.documentElement.setAttribute("lang", 'nl');
+    }
+    else if (pathname.includes('/fr')) {
+      document.documentElement.setAttribute("lang", 'fr');
+    }
+    else if (pathname.includes('/ro')) {
+      document.documentElement.setAttribute("lang", 'ro');
+    }
+    else {
+      document.documentElement.setAttribute("lang", 'en');
+    }
   });
 
 
@@ -1644,6 +1663,7 @@ document.addEventListener("click", closeAllSelect);
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
   }
 </script>
+
 
 
   <script>

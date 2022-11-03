@@ -20,7 +20,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-12">
-              <p class="header__info">{{ site.data[page.lang]['source_code_escrow']['saas_escrow_assets'] }}</p>
+              <p class="header__info text-secondary">{{ site.data[page.lang]['source_code_escrow']['saas_escrow_assets'] }}</p>
               <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['source_code_escrow']['3rd_party'] }}</h1>
               <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['source_code_escrow']['these_days_many'] }}</p>
               <div class="d-flex flex-wrap resources mt-4">
@@ -34,10 +34,87 @@
               </div>            
             </div>
             <div class="col-md-4 col-sm-12 content-center flex-column">
-              <img class="image-style mw-530 mt-4" src="/images/escrow-assets/hosting-environment-escrow.webp" alt="Hosting Environment Escrow Image"/>   
+              <img class="image-style mw-530 mt-4" src="/images/escrow-assets/3rd-party-dependencies.webp" alt="3rd Party Dependencies Image"/>   
             </div>
           </div>
           
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div class="container section-large">
+        <p class="verify__section-main-title2 pb-4">{{ site.data[page.lang]['source_code_escrow']['some_popuar_products'] }}</p>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Adyen.svg"/>
+              <p class="verify__col-title text-center">Adyen</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['prevent_payment'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Mailchimp.svg"/>
+              <p class="verify__col-title text-center">Mailchimp</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['keep_your_sales'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Twilio.svg"/>
+              <p class="verify__col-title text-center">Mailchimp</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['keep_your_customers'] }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Okta.svg"/>
+              <p class="verify__col-title text-center">Okta</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['prevent_payment'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Chargebee.svg"/>
+              <p class="verify__col-title text-center">Chargebee</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['keep_your_sales'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Sendbird.png"/>
+              <p class="verify__col-title text-center">Sendbird</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['keep_your_customers'] }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Shopify.svg"/>
+              <p class="verify__col-title text-center">Shopify</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['prevent_payment'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <img class="mb-3 mw-90 mx-auto w-100" src="/images/escrow-assets/icons/Stripe.svg"/>
+              <p class="verify__col-title text-center">Stripe</p>
+              <p class="verify__col-subtitle text-center">{{ site.data[page.lang]['source_code_escrow']['keep_your_sales'] }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 content-center mt-4">
+            <div class="verify__col-box content-center flex-column">
+              <p class="verify__section-main-title text-center text-dark-cyan">{{ site.data[page.lang]['source_code_escrow']['we_can_support'] }}</p>
+              <a class="button btn-cerulean book-a-demo-href mx-auto mb-4" href="book-a-demo.html">
+                {{ site.data[page.lang]['source_code_escrow']['get_started'] }}
+              </a>
+              <a class="header__link integrations-href text-center text-primary" href="integrations.html">{{ site.data[page.lang]['source_code_escrow']['see_all_integrations'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,42 +196,43 @@
               <div class="resources">
                 <div class="applications__logos mt-4 justify-content-start">
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/AWS.svg"/>
-                    <p class="applications__logo-text">AWS</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Adyen.svg"/>
+                    <p class="applications__logo-text">Adyen</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Google-Cloud-Platform.svg"/>
-                    <p class="applications__logo-text">Google Cloud Platform</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Mailchimp.svg"/>
+                    <p class="applications__logo-text">Mailchimp</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/IBM-Cloud.svg"/>
-                    <p class="applications__logo-text">IBM Cloud</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Twilio.svg"/>
+                    <p class="applications__logo-text">Twilio</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Azure-Cloud.svg"/>
-                    <p class="applications__logo-text">Azure</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Okta.svg"/>
+                    <p class="applications__logo-text">Okta</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Oracle-Database.svg"/>
-                    <p class="applications__logo-text">Oracle Cloud</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Chargebee.svg"/>
+                    <p class="applications__logo-text">Chargebee</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Alibaba-Cloud.svg"/>
-                    <p class="applications__logo-text">Alibaba Cloud</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Sendbird.png"/>
+                    <p class="applications__logo-text">Sendbird</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Digital-Ocean.svg"/>
-                    <p class="applications__logo-text">Digital Ocean</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Shopify.svg"/>
+                    <p class="applications__logo-text">Shopify</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Rackspace.svg"/>
-                    <p class="applications__logo-text">Rackspace</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Stripe.svg"/>
+                    <p class="applications__logo-text">Stripe</p>
                   </div>
                   <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Heroku.svg"/>
-                    <p class="applications__logo-text">Heroku</p>
+                    <img class="applications__logo-image3 p-1" src="/images/escrow-assets/icons/Zendesk.svg"/>
+                    <p class="applications__logo-text">Zendesk</p>
                   </div>
                 </div>
+              </div>
               <div class="d-flex align-items-center pb-4">
                 <img class="mr-3 mw-35" src="/images/source-code-escrow/icons/info.svg"/>
                 <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->

@@ -1012,6 +1012,25 @@ document.addEventListener("click", closeAllSelect);
       $('.is-developer').removeClass('d-none');
       $('.is-client').addClass('d-none');
     }
+
+    if (pathname.includes('/es')) {
+      document.documentElement.setAttribute("lang", 'es');
+    }
+    else if (pathname.includes('/de')) {
+      document.documentElement.setAttribute("lang", 'de');
+    }
+    else if (pathname.includes('/nl')) {
+      document.documentElement.setAttribute("lang", 'nl');
+    }
+    else if (pathname.includes('/fr')) {
+      document.documentElement.setAttribute("lang", 'fr');
+    }
+    else if (pathname.includes('/ro')) {
+      document.documentElement.setAttribute("lang", 'ro');
+    }
+    else {
+      document.documentElement.setAttribute("lang", 'en');
+    }
   });
 
 
@@ -1458,6 +1477,7 @@ document.addEventListener("click", closeAllSelect);
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
   }
 </script>
+
 
 
   <script>
