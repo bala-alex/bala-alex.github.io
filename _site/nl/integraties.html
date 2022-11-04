@@ -97,20 +97,29 @@
 </nav>
 
     <!-- Header -->
-    <div class="header__content overflow-hidden">
-      <div class="header__bg">
-        <div class="container section-medium">
-          <h1 class="header__title mx-auto mt-4 mw-800">Onze Integraties</h1>
-          <!-- <p class="header__subtitle mx-auto mt-5">Codekeeper wordt rechtstreeks met de werkprocessen op Github en andere populaire SCM-platforms geïntegreerd. Alle source code die in de escrow wordt gedeponeerd, wordt versleuteld en volledig geautomatiseerd opgehaald.  Staat het door u gebruikte platform er niet bij, <a class="text-underline text-white" href="contact.html">neem dan contact met ons op</a> dan voegen we hem toe. </p> -->
+    <div class="header__content solutions">
+      <div class="header__bg-new">
+        <img class="header__bg-top-left" src="/images/solutions/top-left.webp" alt="Background Image"/>
+        <img class="header__bg-bottom-right" src="/images/solutions/bottom-right.webp" alt="Background Image"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <h1 class="header__title text-align-start mt-5 mw-570">Explore our integrations & platforms</h1>
+              <p class="header__subtitle text-align-start mt-4">Codekeeper works with the tools you already use, which means you can easily deposit your source code and keep it in sync. </p>
+            </div>
+            <div class="col-md-5 col-sm-12 content-center">
+              <img class="image-style mw-350 mt-4" src="/images/integration-page/integrations-header-image.webp" alt="Background Image"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- First Section -->
+    <!-- Section -->
     <div class="pb-5">
       <div class="container-fluid">
         <div class="col-12">
           <div class="cont">
-            <div class="container2 mx-auto mt-negative-280"> 
+            <div class="container2 mx-auto mt-2"> 
               <div class="row d-flex flex-wrap mt-5 mobile-center w-100" id="myUL">
                 <div id="test-list" class="w-100">
                   <div class="mw-900 mx-auto d-flex flex-column align-items-center mt-5">
@@ -215,7 +224,7 @@
                     
                   </div>
                   
-                  <ul class="list section-large">
+                  <ul class="list section-medium">
                     
                     <li><a data-name="Amazon CodeCommit" class="service__box page-link mt-3 mx-auto" href="">
                       <span class="type d-none">Source Code Escrow</span>
@@ -424,111 +433,43 @@
             </div>
           </div>
         </div>
-        <p class="header__subtitle mx-auto mt-3">Staat uw favoriete platform er niet tussen? <a class="text-underline text-white contact-href" href="contact.html">Laat het ons weten,</a> dan voegen we het toe. </p>
-      </div>
-    </div>
-    <!-- Second Section -->
-    <div class="bg-white pb-5">
-      <div class="container-fluid section-medium">
-        <div class="steps__container mx-auto">
-          <h1 class="steps__main-title">Hoe activeert u integraties</h1>
-          <div class="container steps__desktop pb-300">
-            <div class="row">
-              <div class="col-md-5 col-sm-12">
-                <div class="steps__content">
-                  <p class="steps__title ml-auto">Stap 1</p>
-                  <p class="steps__subtitle ml-auto text-right">Om een Integratie te activeren moet u zich aanmelden bij <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> en naar uw dashboard gaan. Kies daar voor <strong>Integrations</strong> in de menubalk links op uw scherm:</p>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
-                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
-                <div class="steps__dash mx-auto"></div>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="steps__image" src="/images/integration-page/step-1.webp"/>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-5 col-sm-12 d-flex justify-content-end">
-                <img class="steps__image2" src="/images/integration-page/step-2.webp"/>
-              </div>
-              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
-                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
-                <div class="steps__dash mx-auto"></div>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <div class="steps__content">
-                  <p class="steps__title">Stap 2</p>
-                  <p class="steps__subtitle text-start">Als u op de pagina bent, ziet u alle ingebouwde apps waar we mee integreren. Vanaf hier selecteert u het integratieplatform van uw keuze en klikt u op de knop <strong>“Activate”</strong>.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-5 col-sm-12">
-                <div class="steps__content">
-                  <p class="steps__title ml-auto">Stap 3</p>
-                  <p class="steps__subtitle ml-auto text-right">Als u op <strong>“Activate”</strong> heeft geklikt, wordt u gevraagd of u uw Codekeeperaccount wilt verbinden aan het account van de geselecteerde integratie, of of u de integratie handmatig wilt activeren volgens de instructies aan de rechterkant.</p>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-12 d-flex flex-column align-items-center">
-                <img class="steps__dot" src="/images/integration-page/integration-dot.svg"/>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="steps__image3" src="/images/integration-page/step-3.webp"/>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-start resources mx-auto mw-570 mt-2">
-              <img class="mr-3 mw-35 mt-2" src="/images/source-code-escrow/icons/info.svg"/>
-              <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->
-              <p class="setting-up__text mb-0 text-air-force-blue">Voor niet-OAuth-integraties bieden we een simpele instructie die u kunt volgen en zelf kunt configureren. Mocht u meer hulp nodig hebben dan kunt u <a class="text-bondi-blue contact-href" href="contact.html">contact met ons opnemen</a></p>
-            </div>
-          </div>
-
-          <div class="container steps__mobile pb-200">
-            <p class="steps__title">Stap 1</p>
-            <p class="steps__subtitle">Om een Integratie te activeren moet u zich aanmelden bij <a href="https://codekeeper.co/sign-up.html"> Codekeeper</a> en naar uw dashboard gaan. Kies daar voor <strong>Integrations</strong> in de menubalk links op uw scherm:</p>
-            <img class="steps__image mt-4" src="/images/integration-page/step-1.webp"/>
-            <p class="steps__title mt-5">Stap 2</p>
-            <p class="steps__subtitle text-start">Als u op de pagina bent, ziet u alle ingebouwde apps waar we mee integreren. Vanaf hier selecteert u het integratieplatform van uw keuze en klikt u op de knop <strong>“Activate”</strong>.</p>
-            <img class="steps__image2 mt-4" src="/images/integration-page/step-2.webp"/>
-            <p class="steps__title mt-5">Stap 3</p>
-            <p class="steps__subtitle">Als u op <strong>“Activate”</strong> heeft geklikt, wordt u gevraagd of u uw Codekeeperaccount wilt verbinden aan het account van de geselecteerde integratie, of of u de integratie handmatig wilt activeren volgens de instructies aan de rechterkant.</p>
-            <img class="steps__image3 mt-4" src="/images/integration-page/step-3.webp"/>
-            <div class="d-flex align-items-start resources mx-auto mw-570 mt-5">
-              <img class="mr-3 mw-35 mt-2" src="/images/source-code-escrow/icons/info.svg"/>
-              <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->
-              <p class="setting-up__text mb-0 text-air-force-blue">Voor niet-OAuth-integraties bieden we een simpele instructie die u kunt volgen en zelf kunt configureren. Mocht u meer hulp nodig hebben dan kunt u <a class="text-bondi-blue contact-href" href="contact.html">contact met ons opnemen</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container resources">
-          <div class="best-price__bg">
-            <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small Shape Image"/>
-            <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium Shape Image"/>
-            <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large Shape Image"/>
-            <div class="row mt-3">
+        <!-- Section -->
+        <div class="resources container">
+          <div class="how-bg-gradient mt-4 mb-100 p-5">
+            <div class="row pt-5">
               <div class="col-md-5 col-sm-12 content-center">
-                <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Best Price Image"/>
+                <img class="best-price__image mw-260" src="../images/integration-page/preferred-platform.webp" alt="Best Price Image"/>
               </div>
               <div class="col-md-7 col-sm-12"> 
-                <p class="best-price__title">Toonaangevende mogelijkheden voor de beste prijs</p>
-                <p class="best-price__text">Het beschermen van uw activa met ongeëvenaarde beveiliging, schaalbaarheid en beschikbaarheid hoeft niet de hoofdprijs te kosten.<br> Vertel ons wat u op dit moment nodig heeft en we doen u een aanbod op maat.</p>
-                <a class="button btn-yellow pricing-href my-4" href="pricing.html">
-                  Bekijk onze prijzen
+                <p class="best-price__title text-air-force-blue">Staat uw favoriete platform er niet tussen?</p>
+                <a class="button btn-cerulean3 contact-href my-4 text-uppercase" href="../contact.html">
+                  contact met ons opnemen
                 </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="container mt-150">
-          <h1 class="steps__main-title">Meer hulp</h1>
-          <p class="steps__text mt-4">Wij bieden extra hulp bij integraties aan onze klanten die daar behoefte aan hebben.<br> Vul dit formulier in en er neemt snel iemand contact met u op!</p>
-          <a class="button btn-cerulean mx-auto my-4 contact-href" href="contact.html">
-            NEEM CONTACT OP
-          </a>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="resources">
+      <div class="best-price__bg mt-4 mb-100 border-radius-0">
+        <div class="container resources section-medium">
+          <img class="best-price__small-shape" src="../images/landing/small-shape.webp" alt="Small Shape Image"/>
+          <img class="best-price__medium-shape" src="../images/landing/medium-shape.webp" alt="Medium Shape Image"/>
+          <img class="best-price__large-shape" src="../images/landing/large-shape.webp" alt="Large Shape Image"/>
+          <div class="row">
+            <div class="col-md-7 col-sm-12"> 
+              <p class="best-price__title2">Toonaangevende mogelijkheden voor de beste prijs</p>
+              <p class="best-price__text">Het beschermen van uw activa met ongeëvenaarde beveiliging, schaalbaarheid en beschikbaarheid hoeft niet de hoofdprijs te kosten.<br> Vertel ons wat u op dit moment nodig heeft en we doen u een aanbod op maat.</p>
+              <a class="button btn-yellow pricing-href my-4" href="../pricing.html">
+                Bekijk onze prijzen
+              </a>
+            </div>
+            <div class="col-md-5 col-sm-12 content-center">
+              <img class="best-price__image mw-420" src="../images/integration-page/leading-features.webp" alt="Best Price Image"/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
