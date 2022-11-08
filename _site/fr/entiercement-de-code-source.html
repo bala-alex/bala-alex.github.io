@@ -458,8 +458,8 @@
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <p class="header__info mt-2">Facile et automatisé</p>
-            <p class="easy__main-title">Autres actifs logiciels critiques que vous pouvez protéger</p>
-            <p class="easy__main-subtitle">Dépôt automatisé de tous les actifs dont vous aurez besoin comme le code source, les données, les informations et les scripts de configuration, pour une récupération rapide.</p>
+            <p class="easy__main-title mw-660">Autres actifs logiciels critiques que vous pouvez protéger</p>
+            <p class="easy__main-subtitle mt-4">Dépôt automatisé de tous les actifs dont vous aurez besoin comme le code source, les données, les informations et les scripts de configuration, pour une récupération rapide.</p>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="easy__box mt-4">
@@ -469,7 +469,6 @@
               <a class="easy__link data-escrow-href" href="data-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
-          
         </div>
         <div class="row mt-2">
           <div class="col-md-4 col-sm-12">
@@ -477,15 +476,7 @@
               <img class="easy__icon" src="/images/software-escrow/icons/documents.svg"/>
               <p class="easy__title">Documents</p>
               <p class="easy__subtitle">Déposez tous types de propriété intellectuelle, d’informations sensibles et d’autres documents essentiels.</p>
-              <a class="easy__link data-escrow-href" href="data-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="easy__box mt-4">
-              <img class="easy__icon" src="/images/software-escrow/icons/credentials.svg"/>
-              <p class="easy__title">Identifiants</p>
-              <p class="easy__subtitle">L’un des aspects les plus importants de la reprise. Déposez des identifiants en toute simplicité.</p>
-              <a class="easy__link data-escrow-href" href="data-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="easy__link document-escrow-href" href="document-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="col-md-4 col-sm-12">
@@ -493,10 +484,17 @@
               <img class="easy__icon" src="/images/software-escrow/icons/technology.svg"/>
               <p class="easy__title">Technologie et conception</p>
               <p class="easy__subtitle">Utilisez l’entiercement pour déposer des données relevant de la propriété intellectuelle.</p>
-              <a class="easy__link data-escrow-href" href="data-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="easy__link technology-designs-escrow-href" href="technology-designs-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
-          
+          <div class="col-md-4 col-sm-12">
+            <div class="easy__box mt-4">
+              <img class="easy__icon" src="/images/software-escrow/icons/credentials.svg"/>
+              <p class="easy__title">Identifiants</p>
+              <p class="easy__subtitle">L’un des aspects les plus importants de la reprise. Déposez des identifiants en toute simplicité.</p>
+              <a class="easy__link credentials-escrow-href" href="credentials-escrow.html">En savoir plus <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -930,6 +928,11 @@ document.addEventListener("click", closeAllSelect);
       $('.software-escrow-href').attr('href', 'custodia-software.html')
       $('.recovery-href').attr('href', 'recuperación.html')
       $('.continuity-href').attr('href', 'continuidad.html')
+      $('.document-escrow-href').attr('href', 'custodia-documentos.html')
+      $('.technology-designs-escrow-href').attr('href', 'custodia-tecnologia-disenos.html')
+      $('.credentials-escrow-href').attr('href', 'custodia-credenciales.html')
+      $('.hosting-environment-escrow-href').attr('href', 'custodia-entorno-alojamiento.html')
+      $('.3rd-party-dependencies-href').attr('href', 'dependencias-terceros.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -981,6 +984,11 @@ document.addEventListener("click", closeAllSelect);
       $('.software-escrow-href').attr('href', 'software-escrow.html')
       $('.recovery-href').attr('href', 'wiederherstellung.html')
       $('.continuity-href').attr('href', 'kontinuität.html')
+      $('.document-escrow-href').attr('href', 'dokument-escrow.html')
+      $('.technology-designs-escrow-href').attr('href', 'technologie-design-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'anmeldedaten-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-umgebungs-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'drittanbieter-abhaengigkeiten.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1032,6 +1040,11 @@ document.addEventListener("click", closeAllSelect);
       $('.software-escrow-href').attr('href', 'software-escrow.html')
       $('.recovery-href').attr('href', 'recovery.html')
       $('.continuity-href').attr('href', 'continuïteit.html')
+      $('.document-escrow-href').attr('href', 'documenten-escrow.html')
+      $('.technology-designs-escrow-href').attr('href', 'technologie-designs-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'toegangsgegevens-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-omgeving-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'externe-afhankelijkheden.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1082,6 +1095,11 @@ document.addEventListener("click", closeAllSelect);
       $('.software-escrow-href').attr('href', 'software-escrow.html')
       $('.recovery-href').attr('href', 'recuperare.html')
       $('.continuity-href').attr('href', 'continuitate.html')
+      $('.document-escrow-href').attr('href', 'escrow-document.html')
+      $('.technology-designs-escrow-href').attr('href', 'tehnologie-design-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'acreditări-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-mediu-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'dependențe-de-la-terți.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1132,6 +1150,11 @@ document.addEventListener("click", closeAllSelect);
         $('.software-escrow-href').attr('href', 'entiercement-de-logiciel.html')
         $('.recovery-href').attr('href', 'reprise-après-sinistre.html')
         $('.continuity-href').attr('href', 'continuité.html')
+        $('.document-escrow-href').attr('href', 'document-entiercement.html')
+        $('.technology-designs-escrow-href').attr('href', 'technologie-conception-entiercement.html')
+        $('.credentials-escrow-href').attr('href', 'identifiants-entiercement.html')
+        $('.hosting-environment-escrow-href').attr('href', 'entiercement-environnement-d-herbergement.html')
+        $('.3rd-party-dependencies-href').attr('href', 'dependences-de-tiers.html')
         }
   })
 </script>
