@@ -9771,6 +9771,10 @@ html {
   min-height: 110px;
 }
 
+.min-h-700 {
+  min-height: 701px !important;
+}
+
 .h-400 {
   height: 400px !important;
 }
@@ -16924,6 +16928,12 @@ html {
   width: 221px;
   height: 82px;
 }
+@media (max-width: 480px) {
+  .resources .intro-guide__shape-left {
+    max-width: 130px;
+    height: auto;
+  }
+}
 .resources .intro-guide__shape-right {
   position: absolute;
   bottom: 0;
@@ -16931,11 +16941,23 @@ html {
   width: 118px;
   height: 279px;
 }
+@media (max-width: 480px) {
+  .resources .intro-guide__shape-right {
+    max-width: 50px;
+    height: auto;
+  }
+}
 .resources .intro-guide__image {
   position: absolute;
   top: 0;
   right: 0;
   width: 220px;
+}
+@media (max-width: 480px) {
+  .resources .intro-guide__image {
+    max-width: 100px;
+    height: auto;
+  }
 }
 .resources .intro-guide__illustration {
   width: 100%;
@@ -17385,7 +17407,7 @@ html {
 }
 .resources .applications__logo {
   margin: 0 10px;
-  width: 70px;
+  width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

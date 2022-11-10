@@ -350,6 +350,11 @@
       left: 0;
       width: 221px;
       height: 82px;
+
+      @include screen-xs {
+        max-width: 130px;
+        height: auto;
+      }
     }
 
     &__shape-right {
@@ -358,6 +363,11 @@
       right: 0;
       width: 118px;
       height: 279px;
+
+      @include screen-xs {
+        max-width: 50px;
+        height: auto;
+      }
     }
 
     &__image {
@@ -365,6 +375,11 @@
       top: 0;
       right: 0;
       width: 220px;
+
+      @include screen-xs {
+        max-width: 100px;
+        height: auto;
+      }
     }
 
     &__illustration {
@@ -827,7 +842,7 @@
 
     &__logo {
       margin: 0 10px;
-      width: 70px;
+      width: 60px;
       display: flex;
       flex-direction: column;
       align-items: center;
