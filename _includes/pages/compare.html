@@ -1,0 +1,217 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+  <div class="bg-white solutions">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="header__content">
+      <div class="header__bg-new">
+        <img class="header__bg-top-left" src="/images/solutions/top-left.webp" alt="Background Image"/>
+        <img class="header__bg-bottom-right" src="/images/solutions/bottom-right.webp" alt="Background Image"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['compare']['compare_codekeeper'] }}</h1>
+              <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['compare']['learn_how'] }}</p>
+              <div class="d-flex flex-wrap resources mt-5">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  {{ site.data[page.lang]['compare']['get_our'] }}
+                </a>
+                <div>
+                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                  <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 content-center">
+              <img class="image-style mw-530 mt-4" src="/images/solutions/solutions-image.webp" alt="Background Image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="compare__bg-gray">
+      <div class="container">
+        
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="resources">
+      <div class="best-price__bg mb-100 border-radius-0">
+        <div class="container resources section-medium">
+          <img class="best-price__small-shape" src="../images/landing/small-shape.webp" alt="Small Shape Image"/>
+          <img class="best-price__medium-shape" src="../images/landing/medium-shape.webp" alt="Medium Shape Image"/>
+          <img class="best-price__large-shape" src="../images/landing/large-shape.webp" alt="Large Shape Image"/>
+          <div class="row">
+            <div class="col-md-7 col-sm-12"> 
+              <p class="best-price__title2">{{ site.data[page.lang]['compare']['upgrade_to'] }}</p>
+              <div class="d-flex flex-wrap resources mt-5">
+                <a class="button btn-white book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  {{ site.data[page.lang]['compare']['get_our'] }}
+                </a>
+                <div>
+                  <p class="header__text text-white">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                  <a class="header__link pricing-href text-yellow" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12 content-center">
+              <img class="best-price__image mw-420" src="../images/integration-page/leading-features.webp" alt="Best Price Image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
+    <div class="resources">
+      <div class="container section-large pt-4 mb-5">
+        <h2 class="mentions__title mt-5 text-center text-bondi-blue">{{ site.data[page.lang]['compare']['dont_just_take'] }}</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
+              <img class="mentions__logo" src="/images/logos/product-hunt.svg"/>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
+              <img class="mentions__logo" src="/images/logos/fast-company.svg"/>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mentions__box">
+              <img class="mentions__icon" src="/images/homepage/quotes.svg"/>
+              <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
+              <img class="mentions__logo" src="/images/logos/hacker-news.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Section -->
+    {% include demo-intro.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $('.open-chat').click(function(){
+
+        window.HubSpotConversations.widget.open();
+      });
+    });
+  </script>
+
+  <script>
+    $( document ).ready(function() {
+      $.ajax('https://ipapi.co/json')
+      .then(
+        function success(response) {
+          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            $('.software-escrow-monthly').text('€89');
+            $('.saas-escrow-monthly').text('€199');
+          }
+          else if (response.currency === 'GBP') {
+            
+            $('.software-escrow-monthly').text('£79');
+            $('.saas-escrow-monthly').text('£149');
+          }
+          else if (response.currency === 'INR') {
+            $('.software-escrow-monthly').text('₹6,995');
+            $('.saas-escrow-monthly').text('₹12,500');
+          }
+          else if (response.currency === 'AUD') {
+            $('.software-escrow-monthly').text('A$109');
+            $('.saas-escrow-monthly').text('A$250');
+          }
+
+          else if (response.currency === 'SGD') {
+            $('.software-escrow-monthly').text('$109');
+            $('.saas-escrow-monthly').text('$249');
+          }
+
+          else if (response.currency === 'ZAR') {
+            $('.software-escrow-monthly').text('R1,395');
+            $('.saas-escrow-monthly').text('R2,799');
+          }
+
+          else if (response.currency === 'CHF') {
+            $('.software-escrow-monthly').text('CHF89');
+            $('.saas-escrow-monthly').text('CHF219');
+          }
+
+          else if (response.currency === 'CAD') {
+            $('.software-escrow-monthly').text('CA$110');
+            $('.saas-escrow-monthly').text('CA$249');
+          }
+        },
+        function fail(data, status) {
+            console.log('Request failed.  Returned status of',
+                        status);
+        }
+      )
+      .catch((e) => console.log(e))
+    });
+  </script>
+
+  <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+
+  <!-- Start of HubSpot Embed Code -->
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
+  <!-- End of HubSpot Embed Code -->
+</body>
