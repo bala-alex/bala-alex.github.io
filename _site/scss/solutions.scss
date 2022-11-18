@@ -94,6 +94,35 @@
       max-width: 25%;
       object-fit: contain;
     }
+
+    &__info {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: $bondi-blue;
+    }
+
+    &__left-shape {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 132px;
+      height: 233px;
+      background: linear-gradient(187.4deg, rgba(65, 123, 210, 0.1) -78.56%, rgba(255, 255, 255, 0) 161.22%);
+      border-radius: 0px 106px 0px 0px;
+    }
+
+    &__right-shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 129px;
+      width: 287px;
+      background: linear-gradient(187.4deg, rgba(65, 123, 210, 0.1) -78.56%, rgba(255, 255, 255, 0) 161.22%);
+      border-radius: 0px 0px 0px 106px;
+    }
   }
 
   .escrow-works {
@@ -441,6 +470,73 @@
       background: linear-gradient(180deg, #F0F9FC 0%, #FAFDFF 100%);
       padding-top: 150px;
       padding-bottom: 200px;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+      max-width: 520px;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 40px;
+      color: $dark-cyan;
+      max-width: 420px;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: $dark-cyan;
+      max-width: 520px;
+    }
+
+    &__subtext {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 28px;
+      color: $slate-gray;
+      max-width: 520px;
+    }
+
+    &__shape-left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+      max-width: 50%;
+      object-fit: contain;
+
+      @include screen-sm {
+        max-width: 50%;
+      }
+    }
+
+    &__shape-right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 245px;
+      width: 137px;
+
+      @include screen-sm {
+        width: 15%;
+        height: auto;
+      }
     }
   }
 }

@@ -238,6 +238,13 @@
       margin-bottom: 100px;
     }
 
+    &__competitor-box {
+      background: $white;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+    }
+
     &__table {
 
       &-title {
@@ -312,6 +319,17 @@
       line-height: 40px;
       color: $dark-cyan;
       margin-top: 80px;
+    }
+
+    &__title2 {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+      max-width: 900px;
+      text-align: center;
     }
 
     &__subtitle {
@@ -488,11 +506,23 @@
         word-wrap: break-word;
       }
 
+      &-text:nth-of-type(3) {
+        width: 130px;
+        word-wrap: break-word;
+      }
+
       &-text2 {
         width: 100%;
         max-width: 216px;
         height: 55px;
         padding-top: 23px;
+      }
+
+      &-text2:nth-of-type(2) {
+        width: 100%;
+        max-width: 216px;
+        height: 55px;
+        padding-top: 32px;
       }
 
       &-bg {

@@ -24,7 +24,7 @@
               <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['compare']['compare_codekeeper'] }}</h1>
               <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['compare']['learn_how'] }}</p>
               <div class="d-flex flex-wrap resources mt-5">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" data-toggle="modal" data-target="#exampleModal5">
                   {{ site.data[page.lang]['compare']['get_our'] }}
                 </a>
                 <div>
@@ -34,16 +34,70 @@
               </div>
             </div>
             <div class="col-md-6 col-sm-12 content-center">
-              <img class="image-style mw-530 mt-4" src="/images/solutions/solutions-image.webp" alt="Background Image"/>
+              <img class="image-style mw-420 mt-4" src="/images/compare-page/compare-header.webp" alt="Header Image"/>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Section -->
+    <div class="bg-white section-large position-relative">
+      <img class="compare__shape-left" src="/images/compare-page/gray-shape-left.webp" alt="Background Image"/>
+      <img class="compare__shape-right" src="/images/compare-page/gray-shape-right.webp" alt="Background Image"/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12"> 
+            <p class="compare__subtitle">{{ site.data[page.lang]['compare']['what_to_consider'] }}</p>
+            <img class="mw-420 mt-4" src="/images/compare-page/dashboard-screen.webp" alt="Dashboard Screen Image"/>
+          </div>
+          <div class="col-md-6 col-sm-12"> 
+            <p class="compare__text">{{ site.data[page.lang]['compare']['is_the_solution'] }}</p>
+            <p class="compare__subtext">{{ site.data[page.lang]['compare']['whether_you_are'] }}</p>
+            <p class="compare__text">{{ site.data[page.lang]['compare']['are_deposits'] }}</p>
+            <p class="compare__subtext">{{ site.data[page.lang]['compare']['to_make_sure'] }}</p>
+            <p class="compare__text">{{ site.data[page.lang]['compare']['is_the_legal'] }}</p>
+            <p class="compare__subtext">{{ site.data[page.lang]['compare']['each_situation'] }}</p>
+            <p class="compare__text">{{ site.data[page.lang]['compare']['are_there_integrations'] }}</p>
+            <p class="compare__subtext">{{ site.data[page.lang]['compare']['ease_of_use'] }}</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- Section -->
     <div class="compare__bg-gray">
       <div class="container">
-        
+        <div class="row">
+          <div class="col-md-8 col-sm-12"> 
+            <p class="compare__title">{{ site.data[page.lang]['compare']['learn_how_codekeeper'] }}</p>
+          </div>
+          <div class="col-md-4 col-sm-12"> 
+            <img class="image-style mw-350 mt-2 ml-auto" src="/images/compare-page/other-providers.webp" alt="Other Providers Image"/>
+          </div>
+        </div> 
+      </div>
+      <div class="integrations container-fluid">
+        <div class="col-12">
+          <div class="cont">
+            <div class="container2 mx-auto mt-2"> 
+              <div class="row d-flex flex-wrap mobile-center w-100" id="myUL">
+                <div id="test-list" class="w-100">
+                  <div class="mw-100 mx-auto d-flex flex-column align-items-center mt-5">
+                    <ul class="list section-medium pt-5">
+                      {% for competitor in site.competitors %}
+                      <li><a data-name="{{ competitor.integration_name }}" class="service__box2 page-link mt-3 mx-auto" href="">
+                        <span class="type d-none">{{ competitor.integration_type }}</span>
+
+                        <span class="service__title2 name">Codekeeper <br><span>vs.</span> {{ competitor.integration_name }}</span>
+                        <p class="d-none">{{ competitor.integration_type }}</p>
+                      </a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -51,14 +105,12 @@
     <div class="resources">
       <div class="best-price__bg mb-100 border-radius-0">
         <div class="container resources section-medium">
-          <img class="best-price__small-shape" src="../images/landing/small-shape.webp" alt="Small Shape Image"/>
-          <img class="best-price__medium-shape" src="../images/landing/medium-shape.webp" alt="Medium Shape Image"/>
-          <img class="best-price__large-shape" src="../images/landing/large-shape.webp" alt="Large Shape Image"/>
+          <img class="best-price__large-shape2" src="/images/compare-page/shape-large-right.webp" alt="Large Shape Image"/>
           <div class="row">
             <div class="col-md-7 col-sm-12"> 
               <p class="best-price__title2">{{ site.data[page.lang]['compare']['upgrade_to'] }}</p>
               <div class="d-flex flex-wrap resources mt-5">
-                <a class="button btn-white book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                <a class="button btn-white book-a-demo-href mr-4 mb-4" data-toggle="modal" data-target="#exampleModal5">
                   {{ site.data[page.lang]['compare']['get_our'] }}
                 </a>
                 <div>
@@ -68,7 +120,7 @@
               </div>
             </div>
             <div class="col-md-5 col-sm-12 content-center">
-              <img class="best-price__image mw-420" src="../images/integration-page/leading-features.webp" alt="Best Price Image"/>
+              <img class="best-price__image mw-420" src="/images/integration-page/leading-features.webp" alt="Best Price Image"/>
             </div>
           </div>
         </div>
@@ -103,6 +155,39 @@
         </div>
       </div>
 
+    </div>
+    <div class="resources">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-form p-0 min-h-600">
+                  <p class="section__modal-title mt-5 pt-5">{{ site.data[page.lang]['compare']['get_your_offer_to'] }}</p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image" src="/images/compare-page/compare-header.webp"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
+                      });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Section -->
     {% include demo-intro.html %}
@@ -145,6 +230,20 @@
         img.toggleClass('rotate');
 
       });
+    });
+  </script>
+
+  <script>
+    $('.page-link').each(function() {
+      var serviceUrl = $(this).attr('data-name').toLowerCase();
+
+      if (serviceUrl.match(/^[a-z\.]+ [a-z]+/i)) {
+        
+        $(this).attr('href', 'competitors/' + serviceUrl.split(' ').join("_") + '.html');
+      }
+      else {
+        $(this).attr('href', 'competitors/' + serviceUrl + '.html');
+      }
     });
   </script>
 
