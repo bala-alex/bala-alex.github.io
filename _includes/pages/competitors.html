@@ -84,10 +84,13 @@
                   <div class="mw-100 mx-auto d-flex flex-column align-items-center mt-5">
                     <ul class="list section-medium pt-5">
                       {% for competitor in site.competitors %}
-                      <li><a data-name="{{ competitor.integration_name }}" class="service__box2 page-link mt-3 mx-auto" href="">
+                      <li><a data-name="{{ competitor.integration_name }}" class="service__box2 page-link mt-3 mx-auto px-4" href="">
                         <span class="type d-none">{{ competitor.integration_type }}</span>
-
-                        <span class="service__title2 name">Codekeeper <br><span>vs.</span> {{ competitor.integration_name }}</span>
+                        <div class="d-flex align-items-center justify-content-between w-100">
+                          <span class="service__title2 name text-align-start">Codekeeper <br><span>vs.</span> {{ competitor.integration_name }}</span>
+                          <img class="ml-2" src="/images/compare-page/arrow-right-default.svg" alt="Arrow Right Icon"/>
+                        </div>
+                        
                         <p class="d-none">{{ competitor.integration_type }}</p>
                       </a></li>
                       {% endfor %}
@@ -166,22 +169,16 @@
                 <span aria-hidden="true">&times;</span>
               </button>
               <div class="m-0">
-                <div class="section__modal-form p-0 min-h-600">
-                  <p class="section__modal-title mt-5 pt-5">{{ site.data[page.lang]['compare']['get_your_offer_to'] }}</p>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                      <img class="section__modal-image" src="/images/compare-page/compare-header.webp"/>
-                    </div>
-                    <div class="col-md-6 col-sm-12 pt-3">
-                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                      <script>
-                        hbspt.forms.create({
-                        portalId: "5365877",
-                        formId: "bce2ad68-43f6-4f71-842a-aa44edaf6489"
-                      });
-                      </script>
-                    </div>
-                  </div>
+                <div class="section__modal-form p-0 min-h-600 content-center flex-column align-items-center">
+                  <p class="section__modal-title mt-5 pt-5 mw-700">{{ site.data[page.lang]['compare']['get_your_offer_to'] }}</p>
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                  <script>
+                    hbspt.forms.create({
+                      region: "na1",
+                      portalId: "5365877",
+                      formId: "18745139-007b-43c6-9fa9-d10f197fa4cb"
+                    });
+                  </script>
                 </div>
               </div>
             </div>

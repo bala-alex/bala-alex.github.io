@@ -1549,6 +1549,26 @@
         }
       }
 
+      select {
+        width: 100% !important;
+        background-color: $light-gray;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid rgba(206,212,218, 0.5);
+        border-radius: 0.25rem;
+        outline: none;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
       input {
         width: 100% !important;
         background-color: $light-gray;
