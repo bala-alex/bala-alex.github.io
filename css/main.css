@@ -9891,6 +9891,33 @@ html {
   color: #00A0B6;
 }
 
+.table-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261 !important;
+}
+
+.table-subtext {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261 !important;
+}
+
+.table-position-relative {
+  position: relative;
+  margin-top: -150px;
+  overflow-x: visible;
+}
+@media (max-width: 992px) {
+  .table-position-relative {
+    overflow-x: scroll;
+  }
+}
+
 .bottom-radius-0 {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -19831,6 +19858,43 @@ html {
   -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
           box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
   border-radius: 10px;
+}
+.software-escrow .difference__price-badge {
+  width: 140px;
+  height: 70px;
+  background: -o-linear-gradient(194.8deg, #13AFCA -5.22%, #019DB8 112.9%);
+  background: linear-gradient(255.2deg, #13AFCA -5.22%, #019DB8 112.9%);
+  position: absolute;
+  right: -40px;
+  top: 124px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 15px;
+}
+@media (max-width: 992px) {
+  .software-escrow .difference__price-badge {
+    display: none;
+  }
+}
+.software-escrow .difference__price-corner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 0;
+  border-color: #09778B transparent transparent transparent;
+  position: absolute;
+  right: -40px;
+  top: 194px;
+}
+@media (max-width: 992px) {
+  .software-escrow .difference__price-corner {
+    display: none;
+  }
 }
 .software-escrow .difference__table-title {
   font-family: "Mulish";

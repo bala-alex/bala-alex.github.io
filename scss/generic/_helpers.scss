@@ -816,6 +816,32 @@ html {
 
 }
 
+.table-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Mulish', sans-serif;
+  color: $dark-cyan !important;
+}
+
+.table-subtext {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: 'Mulish', sans-serif;
+  color: $dark-cyan !important;
+}
+
+.table-position-relative {
+  position: relative;
+  margin-top: -150px;
+  overflow-x: visible;
+
+  @include screen-md {
+    overflow-x: scroll;
+  }
+}
+
 .bottom-radius-0 {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
