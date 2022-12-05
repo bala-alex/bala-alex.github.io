@@ -658,6 +658,14 @@ html {
   max-width: 800px !important;
 }
 
+.min-width-230 {
+  min-width: 230px !important;
+}
+
+.min-width-300 {
+  min-width: 300px !important;
+}
+
 .ml-negative-40 {
   margin-left: -40px !important;
 
@@ -885,5 +893,15 @@ html {
 
   @include screen-md {
     margin-right: 0px;
+  }
+}
+
+.competitors {
+  fieldset {
+    max-width: 700px !important;
+  }
+
+  .section__modal-form textarea {
+    background-color: #FAFAFA !important;
   }
 }
