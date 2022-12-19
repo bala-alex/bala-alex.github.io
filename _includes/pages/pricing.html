@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <!-- First Section -->
+    <!-- Section -->
     <div class="pricing-tabs container-fluid">
       <div class="pricing-container mx-auto">
         <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -33,7 +33,7 @@
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}</a>
           
         </div>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content mt-5" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="row my-4">
               <div class="col-md-3 col-sm-12 px-2 mt-4">
@@ -601,207 +601,153 @@
             </div>
           </div>
         </div>
-        <div class="plan__box mx-auto plan-custom-width">
-          <h2 class="plan__title">{{ site.data[page.lang]['pricing']['custom_plan'] }}</h2>
-          <p class="plan__amount mt-0"> {{ site.data[page.lang]['pricing']['lets_talk'] }}</p>
-          <div class="d-flex flex-column align-items-center mt-4">
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['unlimited_escrow'] }}</span></p>
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['fully_customized'] }}</span></p>
-            <a class="button btn-bondi-blue2 mx-auto text-uppercase my-4 contact-href" href="contact.html">
-              {{ site.data[page.lang]['pricing']['contact_us'] }}
-            </a>
-          </div>
-        </div>
       </div>
     </div>
     <!-- Section -->
-    <div class="offer__content-bg">
-      <div class="container resources">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-8 col-sm-12">
-            <h2 class="offer__main-title2 mt-5 text-white">{{ site.data[page.lang]['pricing']['complete_service'] }}</h2>
-            <p class="offer__main-subtitle2 mt-3 text-white">{{ site.data[page.lang]['pricing']['we_have_many'] }}</p>
-            <a class="button btn-yellow text-uppercase my-4" data-toggle="modal" data-target="#exampleModal">
-              {{ site.data[page.lang]['pricing']['get_price_list'] }}
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-            <img class="image-style" src="/images/homepage/pricelist-illustration.webp"/>
+    <div class="resources">
+      <div class="people-choose__bg pb-5 mt-150 min-h-300">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 d-flex justify-content-end mobile-centered">
+              <img class="image-style mw-260" src="/images/pricing-page/custom-plan.webp"/>
+            </div>
+            <div class="col-md-7 col-sm-12 mobile-centered">
+              <p class="pricing-plan__custom-title"> {{ site.data[page.lang]['pricing']['custom_plan'] }}</p>
+              <p class="pricing-plan__custom-subtitle"> {{ site.data[page.lang]['pricing_plan']['need_something'] }}</p>
+              <p class="plan__text-tooltip mt-2 text-dark-cyan"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['unlimited_escrow'] }}</span></p>
+              <p class="plan__text-tooltip mt-2 text-dark-cyan"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['fully_customized'] }}</span></p>
+              <a class="button btn-bondi-blue2 text-uppercase my-4 contact-href" href="contact.html">
+                {{ site.data[page.lang]['pricing']['contact_us'] }}
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="pricing-plan__complete-bg">
+        <img class="pricing-plan__complete-bg-shape" src="/images/pricing-page/services-shape-right.webp"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <p class="pricing-plan__complete-title"> {{ site.data[page.lang]['pricing_plan']['get_our_complete'] }}</p>
+              <p class="pricing-plan__complete-subtitle"> {{ site.data[page.lang]['pricing']['we_have_many'] }}</p>
+              <a class="button btn-bondi-blue2 text-uppercase my-4" data-toggle="modal" data-target="#exampleModal">
+                {{ site.data[page.lang]['pricing_plan']['get_pricing_list'] }}
+              </a>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="image-style mw-420" src="/images/pricing-page/complete-services.webp"/>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content section__modal mx-auto">
-              <div class="modal-body p-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="m-0">
-                  <div class="section__modal-form p-0 ">
-                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['pricing']['get_our_price'] }}</p>
-                    <div class="row english-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-form p-0 ">
+                  <p class="section__modal-title mt-3">{{ site.data[page.lang]['pricing']['get_our_price'] }}</p>
+                  <div class="row english-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "cd3b35ed-b4f2-4948-97fe-4212186f6b17"
+                      });
+                      </script>
+                    </div>
+                  </div>
+
+                  <div class="row spanish-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "cb04f974-f821-41da-959f-255e5f981eaf"
+                      });
+                      </script>
+                    </div>
+                  </div>
+
+                  <div class="row german-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "6a9fcf61-0bed-431d-8f1b-3d9e3ef08d1e"
+                      });
+                      </script>
+                    </div>
+                  </div>
+
+                  <div class="row dutch-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "3298428a-dcec-4eef-b682-9f5b62aeb19d"
+                      });
+                      </script>
+                    </div>
+                  </div>
+
+                  <div class="row romanian-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
                           region: "na1",
                           portalId: "5365877",
-                          formId: "cd3b35ed-b4f2-4948-97fe-4212186f6b17"
+                          formId: "36defdc7-6405-4992-8f49-e451b1d5a6c2"
                         });
-                        </script>
-                      </div>
+                      </script>
                     </div>
+                  </div>
 
-                    <div class="row spanish-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
+                  <div class="row french-guide">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
                           region: "na1",
                           portalId: "5365877",
-                          formId: "cb04f974-f821-41da-959f-255e5f981eaf"
+                          formId: "69d35200-cf61-4276-ab76-ec3d2743e106"
                         });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row german-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "6a9fcf61-0bed-431d-8f1b-3d9e3ef08d1e"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row dutch-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "3298428a-dcec-4eef-b682-9f5b62aeb19d"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row romanian-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5365877",
-                            formId: "36defdc7-6405-4992-8f49-e451b1d5a6c2"
-                          });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row french-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5365877",
-                            formId: "69d35200-cf61-4276-ab76-ec3d2743e106"
-                          });
-                        </script>
-                      </div>
+                      </script>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    
-    <!-- Third Section -->
-    <div class="features container-fluid mt-negative-150">
-      <div class="advantages__section-container mx-auto">
-        <div class="container">
-          <h2 class="advantages__title">{{ site.data[page.lang]['features']['key_advantages'] }}</h2>
-          <p class="advantages__subtitle mx-auto">{{ site.data[page.lang]['pricing']['no_matter_your'] }}</p>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-file-check.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['free_escrow_agreement'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['eliminate_risks_of'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-usd.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['best_price'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_believe'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-bill.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['no_lawyer_fees_or'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['a_free_and_legally'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-code-branch.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['repository_sync'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['dont_waste'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-strategy.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['data_buckets'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['data_escrow_allows'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-user-exclamation.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['concierge_support'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_offer_complete'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-cloud-database.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['storage_limits'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_apply_a_fair'] }}</p>
               </div>
             </div>
           </div>
@@ -810,90 +756,117 @@
     </div>
     
     <!-- Fourth Section -->
-    <div class="container section-large offer">
-      <div class="row column-reverse-mobile">
-        <div class="col-md-8 col-sm-12">
-          <h2 class="offer__main-title2 mt-5">{{ site.data[page.lang]['pricing']['get_an_offer'] }}</h2>
-          <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}</p>
-          <span class="offer-btns">
-            <button class="button btn-cerulean mt-4 btn-offer-style open" id="openButton">
-              {{ site.data[page.lang]['pricing']['get_offer'] }}
-            </button>
-            <button class="button btn-cerulean mt-4 btn-offer-style open" id="closeButton">
-              {{ site.data[page.lang]['pricing']['hide_offer'] }}
-            </button>
-          </span>
-        </div>
-        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-          <img class="image-style" src="/images/homepage/get-offer-image.svg"/>
-        </div>
-      </div>
-      <div class="bg-white py-5" id="offer">
-        <div class="section__container mx-auto mt-5 offer__container english-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            portalId: "5365877",
-            formId: "681409cd-f59f-49d5-836b-527607996aaf"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container spanish-guide">
+    <div class="position-relative">
 
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "43a4244a-893f-46bf-8c61-34c3997057c1"
-          });
-          </script>
+      <div class="container section-large offer">
+        <img class="offer__bg-shape" src="/images/pricing-page/get-offer-shape.webp"/>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+            <img class="image-style mw-300 mt-4" src="/images/pricing-page/offer-made.webp"/>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <h2 class="offer__main-title2 mt-5">{{ site.data[page.lang]['pricing']['get_an_offer'] }}</h2>
+            <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}</p>
+            <span class="offer-btns">
+              <button class="button btn-cerulean mt-4 btn-offer-style open" id="openButton">
+                {{ site.data[page.lang]['pricing']['get_offer'] }}
+              </button>
+              <button class="button btn-cerulean mt-4 btn-offer-style open" id="closeButton">
+                {{ site.data[page.lang]['pricing']['hide_offer'] }}
+              </button>
+            </span>
+          </div>
         </div>
-        <div class="section__container mx-auto mt-5 offer__container german-guide">
+        <div class="bg-white py-5" id="offer">
+          <div class="section__container mx-auto mt-5 offer__container english-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "5365877",
+              formId: "681409cd-f59f-49d5-836b-527607996aaf"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container spanish-guide">
 
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "dc19e2de-7490-4dc2-93af-33163dd2c5f5"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container dutch-guide">
-
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "68712126-4f0b-4277-84b9-65706aa3d9b6"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container romanian-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "932218e5-c58d-4390-95ca-d74a7218cf24"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container french-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
               region: "na1",
               portalId: "5365877",
-              formId: "97bbbcf4-1870-455f-8f21-4efb64cbb758"
+              formId: "43a4244a-893f-46bf-8c61-34c3997057c1"
             });
-          </script>
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container german-guide">
+
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "dc19e2de-7490-4dc2-93af-33163dd2c5f5"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container dutch-guide">
+
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "68712126-4f0b-4277-84b9-65706aa3d9b6"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container romanian-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "932218e5-c58d-4390-95ca-d74a7218cf24"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container french-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "5365877",
+                formId: "97bbbcf4-1870-455f-8f21-4efb64cbb758"
+              });
+            </script>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Fifth Section -->
+    <!-- Section -->
+    <div class="resources">
+      <div class="escrow__customised-bg2 mt-0">
+        <div class="container">
+          <img class="escrow__customised-right-shape" src="/images/pricing-page/philosophy-right.webp" alt="Image Background"/>
+          <img class="escrow__customised-left-shape" src="/images/pricing-page/philosophy-left.webp" alt="Image Background"/>
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <h1 class="pricing-plan__philosophy-title mt-4">{{ site.data[page.lang]['pricing_plan']['ck_pricing'] }}</h1>
+              <p class="pricing-plan__philosophy-subtitle mt-4">{{ site.data[page.lang]['pricing_plan']['software_escrow_is'] }} </p>
+              <p class="pricing-plan__philosophy-text mt-4">{{ site.data[page.lang]['pricing_plan']['we_use'] }} </p>
+              <!-- <a class="button btn-yellow create-custom-software-escrow-agreement-href" href="create-custom-software-escrow-agreement.html">
+                {{ site.data[page.lang]['escrow_agreements']['request_custom'] }}
+              </a> -->
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="escrow__customised-image mw-300" src="/images/pricing-page/philosophy.webp" alt="Image Customised Escrow"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Section -->
     <div class="container section-large pricing pt-5">
       <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
       <ul class="faq mt-5 pb-5 pl-0">

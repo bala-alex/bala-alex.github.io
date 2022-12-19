@@ -68,6 +68,14 @@ html {
   text-transform: capitalize !important;
 }
 
+.text-capitalize {
+  text-transform: lowercase !important;
+
+  &::first-letter {
+    text-transform: capitalize !important;
+  }
+}
+
 .nav-margin {
   margin: 8px;
 
@@ -372,6 +380,28 @@ html {
   background-color: $secondary-default;
 }
 
+.bg-cool-white {
+  background-color: $cool-white;
+}
+
+.bg-clear-skies {
+  background-color: $clear-skies;
+}
+
+.border-left-bondi-blue {
+  position: relative;
+}
+
+.border-left-bondi-blue:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 10px solid $bondi-blue;
+}
+
 .text-primary {
   color: $primary-default !important;
 }
@@ -666,6 +696,10 @@ html {
   min-width: 300px !important;
 }
 
+.min-h-300 {
+  min-height: 300px !important;
+}
+
 .ml-negative-40 {
   margin-left: -40px !important;
 
@@ -683,9 +717,8 @@ html {
 }
 
 .pricing-box-shadow {
-  box-shadow: 0px 4px 15px rgba(0, 77, 148, 0.12);
-  border-radius: 20px;
-  padding: 15px !important;
+  border: 0.5px solid #95B1C1;
+  border-radius: 0px;
   margin-top: 20px;
   overflow-x: scroll;
 }
@@ -832,6 +865,19 @@ html {
   color: $dark-cyan !important;
 }
 
+.table-border-right {
+  border-right: 1px solid #dee2e6;
+}
+
+.pricing-table-devider {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 15.95%, #E6F7FB 100%);
+  opacity: 0.36;
+  border-radius: 0px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 200px;
+  width: 100%;
+}
+
 .table-subtext {
   font-weight: 400;
   font-size: 28px;
@@ -901,7 +947,38 @@ html {
     max-width: 700px !important;
   }
 
+  label {
+    margin-top: 10px;
+    max-width: 330px;
+  }
+
+  .section__modal-form input {
+    max-width: 300px !important;
+  }
+
+  .section__modal-form select {
+    max-width: 300px !important;
+  }
+
+  .section__modal-form textarea {
+    max-width: 300px !important;
+  }
+
   .section__modal-form textarea {
     background-color: #FAFAFA !important;
+  }
+
+  input.hs-button {
+    max-width: 100% !important;
+  }
+
+  .submitted-message {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #6A8493 !important;
   }
 }

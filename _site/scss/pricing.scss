@@ -117,9 +117,10 @@
   
     &__box {
       width: 100%;
-      background: linear-gradient(180deg, #FFFFFF 0%, #F5FAFF 100%);
-      border: 1px solid #CDE2EE;
-      border-radius: 20px;
+      background: $white;
+      border: 1px solid #C0CFE9;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
       min-height: auto;
       display: flex;
       flex-direction: column;
@@ -130,7 +131,7 @@
       }
 
       .plan__banner {
-        top: 0px;
+        top: -36px;
         color: $white;
         position: absolute;
         left: 0;
@@ -138,20 +139,25 @@
         margin-left: auto;
         margin-right: auto;
         min-width: 140px;
-        width: fit-content;
+        width: 75%;
         text-align: center;
         display: block;
-        background-color: $bondi-blue;
+        background-color: #417BD2;
         padding-left: 20px;
         padding-bottom: 5px;
         padding-top: 12px;
-        height: 38px;
+        height: 36px;
         padding-right: 20px;
         font-family: 'Mulish', sans-serif;
         font-size: 10px;
         font-weight: bold;
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+        @include screen-sm {
+          top: 0px;
+          border-radius: 0 0 10px 10px;
+        }
       }
 
       .plan__amount {
@@ -162,10 +168,10 @@
         min-height: auto;
         padding-bottom: 30px;
         margin-top: 0px;
-        background-color: linear-gradient(180deg, #FFFFFF 0%, #F5FAFF 100%);
+        background-color: $white;
         border: 1.5px solid #00A0B6;
         box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
-        border-radius: 20px;
+        border-radius: 10px;
 
         // .plan__title {
         //   background-color: $bondi-blue;
@@ -229,19 +235,36 @@
 
       &-title {
         font-weight: 600;
-        font-size: 30px;
-        line-height: 38px;
-        color: $cerulean;
+        font-size: 35px;
+        line-height: 40px;
+        color: #00384B;
         font-family: 'Mulish', sans-serif;
-        max-width: 400px;
         white-space: nowrap;
       }
 
+      &-title-up {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: $cerulean;
+        font-family: 'Mulish', sans-serif;
+        white-space: nowrap;
+      }
+
+      &-title-down {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        color: $dark-cyan;
+        font-family: 'Mulish', sans-serif;
+        max-width: 490px;
+      }
+
       &-subtitle {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 32px;
-        color: $bondi-blue;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: $dark-cyan;
         font-family: 'Mulish', sans-serif;
         white-space: nowrap;
       }
@@ -891,6 +914,19 @@
       }
     }
 
+    &__bg-shape {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 341px;
+      height: 186px;
+      object-fit: contain;
+
+      @include screen-sm {
+        display: none;
+      }
+    }
+
     .btn-offer-style {
       border: none !important;
       outline: none !important;
@@ -1355,7 +1391,7 @@
   #button {
     display: inline-block;
     position: fixed;
-    top: 80px;
+    top: 90px;
     right: 0;
     left: 0;
     margin-left: auto;

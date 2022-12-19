@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <!-- First Section -->
+    <!-- Section -->
     <div class="pricing-tabs container-fluid">
       <div class="pricing-container mx-auto">
         <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -33,7 +33,7 @@
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}</a>
           
         </div>
-        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content mt-5" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="row my-4">
               <div class="col-md-3 col-sm-12 px-2 mt-4">
@@ -601,15 +601,26 @@
             </div>
           </div>
         </div>
-        <div class="plan__box mx-auto plan-custom-width">
-          <h2 class="plan__title">{{ site.data[page.lang]['pricing']['custom_plan'] }}</h2>
-          <p class="plan__amount mt-0"> {{ site.data[page.lang]['pricing']['lets_talk'] }}</p>
-          <div class="d-flex flex-column align-items-center mt-4">
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['unlimited_escrow'] }}</span></p>
-            <p class="plan__text-tooltip mt-2"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['fully_customized'] }}</span></p>
-            <a class="button btn-bondi-blue2 mx-auto text-uppercase my-4 contact-href" href="contact.html">
-              {{ site.data[page.lang]['pricing']['contact_us'] }}
-            </a>
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="resources">
+      <div class="people-choose__bg pb-5 mt-150 min-h-300">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 d-flex justify-content-end mobile-centered">
+              <img class="image-style mw-260" src="/images/pricing-page/custom-plan.webp"/>
+            </div>
+            <div class="col-md-7 col-sm-12 mobile-centered">
+              <p class="pricing-plan__custom-title"> {{ site.data[page.lang]['pricing']['custom_plan'] }}</p>
+              <p class="pricing-plan__custom-subtitle"> {{ site.data[page.lang]['pricing_plan']['need_something'] }}</p>
+              <p class="plan__text-tooltip mt-2 text-dark-cyan"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['unlimited_escrow'] }}</span></p>
+              <p class="plan__text-tooltip mt-2 text-dark-cyan"><i class="fas fa-check text-bondi-blue mr-2"></i><span class="tooltip-text">{{ site.data[page.lang]['pricing']['fully_customized'] }}</span></p>
+              <a class="button btn-bondi-blue2 text-uppercase my-4 contact-href" href="contact.html">
+                {{ site.data[page.lang]['pricing']['contact_us'] }}
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -633,241 +644,55 @@
         <a class="plan__see-item underline-none" href="#see-security-compliance-features">
           {{ site.data[page.lang]['pricing']['see_security'] }}
         </a>
-        <a class="plan__see-item underline-none" href="#see-support-features">
-          {{ site.data[page.lang]['pricing']['see_support'] }}
-        </a>
-        <a class="plan__see-item underline-none" href="#see-administrative-features">
-          {{ site.data[page.lang]['pricing']['see_administrative'] }}
+        <a class="plan__see-item underline-none" href="#see-other-features">
+          {{ site.data[page.lang]['pricing_plan']['see_other'] }}
         </a>
       </div>
     </div>
-    <!-- Section -->
-    <div class="offer__content-bg">
-      <div class="container resources">
-        <div class="row column-reverse-mobile">
-          <div class="col-md-8 col-sm-12">
-            <h2 class="offer__main-title2 mt-5 text-white">{{ site.data[page.lang]['pricing']['complete_service'] }}</h2>
-            <p class="offer__main-subtitle2 mt-3 text-white">{{ site.data[page.lang]['pricing']['we_have_many'] }}</p>
-            <a class="button btn-yellow text-uppercase my-4" data-toggle="modal" data-target="#exampleModal">
-              {{ site.data[page.lang]['pricing']['get_price_list'] }}
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-            <img class="image-style" src="/images/homepage/pricelist-illustration.webp"/>
-          </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content section__modal mx-auto">
-              <div class="modal-body p-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="m-0">
-                  <div class="section__modal-form p-0 ">
-                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['pricing']['get_our_price'] }}</p>
-                    <div class="row english-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "cd3b35ed-b4f2-4948-97fe-4212186f6b17"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row spanish-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "cb04f974-f821-41da-959f-255e5f981eaf"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row german-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "6a9fcf61-0bed-431d-8f1b-3d9e3ef08d1e"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row dutch-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "3298428a-dcec-4eef-b682-9f5b62aeb19d"
-                        });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row romanian-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5365877",
-                            formId: "36defdc7-6405-4992-8f49-e451b1d5a6c2"
-                          });
-                        </script>
-                      </div>
-                    </div>
-
-                    <div class="row french-guide">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image pt-5" src="/images/resources-page/pricelist.svg"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5365877",
-                            formId: "69d35200-cf61-4276-ab76-ec3d2743e106"
-                          });
-                        </script>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
-    <!-- Third Section -->
-    <div class="features container-fluid mt-negative-150">
-      <div class="advantages__section-container mx-auto">
-        <div class="container">
-          <h2 class="advantages__title">{{ site.data[page.lang]['features']['key_advantages'] }}</h2>
-          <p class="advantages__subtitle mx-auto">{{ site.data[page.lang]['pricing']['no_matter_your'] }}</p>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-file-check.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['free_escrow_agreement'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['eliminate_risks_of'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-usd.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['best_price'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_believe'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-bill.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['no_lawyer_fees_or'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['a_free_and_legally'] }}</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-code-branch.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['repository_sync'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['dont_waste'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-strategy.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['data_buckets'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['data_escrow_allows'] }}</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-user-exclamation.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['concierge_support'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_offer_complete'] }} </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="advantages__section-col">
-                <img class="advantages__section-image" src="/images/features-page/icon-cloud-database.svg"/>
-                <p class="advantages__section-title">{{ site.data[page.lang]['features']['storage_limits'] }} <img class="ml-1 mb-1" src="/images/features-page/circle-checkbox.svg"/></p>
-                <p class="advantages__section-subtitle">{{ site.data[page.lang]['features']['we_apply_a_fair'] }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container section-large content-center flex-column pb-0">
+      <img class="image-style mw-900 mx-auto" src="/images/pricing-page/developers.webp"/>
+      <h2 class="offer__main-title2 mt-5 text-center mw-700 mx-auto">{{ site.data[page.lang]['pricing_plan']['from_developers'] }}</h2>
+      <p class="offer__main-subtitle2 mt-3 text-center" id="see-legal-features">{{ site.data[page.lang]['pricing_plan']['learn_more'] }}</p>
     </div>
 
-
-    <div class="pricing bg-white">
-      
+    <div class="pricing bg-white"> 
       <!-- Section -->
-      <div class="container-fluid overflow-x-hidden section-small mt-5">
-        <div class="plan__table-container mx-auto section-medium mt-5">
-          <p class="plan__table-main-title text-center my-5 pb-5">{{ site.data[page.lang]['pricing']['pricing_feature_comparison'] }}</p>
+      <div class="container-fluid overflow-x-hidden mt-150">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between mt-5 flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing']['legal_features'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['key_to_a'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/legal-features.webp"/>
+          </div>
           <div class="pricing-box-shadow">
-  
-            <table class="table my-5" id="see-legal-features">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['legal_features'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-bondi-blue">
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-3 ml-3 fw-bold text-white">{{ site.data[page.lang]['pricing']['escrow_arrangements'] }}</p>
+                <tr>
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['escrow_arrangements'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['the_agreement_that_covers'] }} " data-tooltip-position="right">
-                        <i class="fa fa-info-circle ml-2 text-white"></i>
+                        <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">2</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">5</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">10</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">25</td>
+                  <td class="plan__table-text text-center pt-4">2</td>
+                  <td class="plan__table-text text-center pt-4">5</td>
+                  <td class="plan__table-text text-center pt-4">10</td>
+                  <td class="plan__table-text text-center pt-4">25</td>
                 </tr>
                 <!-- <tr>
                   <th class="border-none" scope="row">
@@ -881,23 +706,23 @@
                   <td class="border-none"> </td>
                 </tr> -->
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['high_quality'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_legally_sound'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['for_software_licensing'] }} </p>
+                  <th class="border-left-bondi-blue table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-1 ml-4">{{ site.data[page.lang]['pricing']['for_software_licensing'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_software_escrow'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
@@ -909,9 +734,9 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['for_software_development'] }} </p>
+                  <th class="border-left-bondi-blue table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-1 ml-4">{{ site.data[page.lang]['pricing']['for_software_development'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_software_escrow_agreement'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
@@ -923,9 +748,9 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['for_software_transactions'] }} </p>
+                  <th class="border-left-bondi-blue table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-1 ml-4">{{ site.data[page.lang]['pricing']['for_software_transactions'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_software_escrow_sale'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
@@ -937,9 +762,9 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['for_saas_agreements'] }} </p>
+                  <th class="border-left-bondi-blue table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-1 ml-4">{{ site.data[page.lang]['pricing']['for_saas_agreements'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_software_escrow_contracting'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
@@ -951,8 +776,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['customisable_release_terms'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['we_support_many'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -965,8 +790,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['escrow_agreement_management'] }}  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['you_can_control_all'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -979,8 +804,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['supplier_beneficiary'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['adding_new'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -993,8 +818,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['automated_notification'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['the_platform_will_handle'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1007,8 +832,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['optional_login'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['both_sides_have'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1021,8 +846,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['two_tri'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['you_have_your'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1035,8 +860,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['jurisdiction_choices'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['select_your_preferred'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1049,8 +874,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['release_processing'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['if_you_need_a_release'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1065,74 +890,63 @@
               </tbody>
             </table>
           </div>
-  
-          <div class="pricing-box-shadow" id="see-depositing-features">
-            <table class="table my-5">
+        </div>
+      </div>
+      <div class="pricing-table-devider" id="see-depositing-features"></div>
+
+      <div class="container-fluid overflow-x-hidden mt-150">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing']['depositing_features'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['industry_leading'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/depositing-features.webp"/>
+          </div>
+          <div class="pricing-box-shadow">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['depositing_features'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-bondi-blue">
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-3 ml-3 fw-bold text-white">{{ site.data[page.lang]['pricing']['source_code_repositories'] }}</p>
+                <tr>
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['source_code_repositories'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_source_code_repository'] }}" data-tooltip-position="right">
-                        <i class="fa fa-info-circle ml-2 text-white"></i>
+                        <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">2</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">5</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">25</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">75</td>
+                  <td class="plan__table-text text-center pt-4">2</td>
+                  <td class="plan__table-text text-center pt-4">5</td>
+                  <td class="plan__table-text text-center pt-4">25</td>
+                  <td class="plan__table-text text-center pt-4">75</td>
                 </tr>
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text fw-bold my-3 text-cerulean ml-3 font-22" id="see-software-escrow-features">{{ site.data[page.lang]['pricing']['source_code_deposits'] }} </p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-0 ml-3 fw-bold">{{ site.data[page.lang]['footer']['features'] }}:</p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-  
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['repository_sync'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['by_default_we'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['fair_use'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['we_apply_a'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1145,8 +959,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['increased_repository'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['double_the_deposit'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1159,8 +973,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="increased-repository">$19</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['increased_storage'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['store_a_lot_of'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1173,8 +987,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="increased-storage">$5</span> / gb</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['storage_region'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['limit_storage_of'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1187,8 +1001,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="storage-selection">$9</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['history_version'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['store_the_entire'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1202,35 +1016,23 @@
                 </tr>
   
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-0 ml-3 fw-bold">{{ site.data[page.lang]['footer']['integrations'] }}:</p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-  
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['secure_upload'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_secure_upload_folder'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
   
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Github </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_github'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1244,8 +1046,8 @@
                 </tr>
   
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Github Enterprise </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_github_enterprise'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1258,8 +1060,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Bitbucket </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_bitbucket'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1272,8 +1074,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Bitbucket ({{ site.data[page.lang]['pricing']['private_server'] }}) </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_bitbucket_instance'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1286,8 +1088,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Gitlab  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_gitlab'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1300,8 +1102,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Gitlab ({{ site.data[page.lang]['pricing']['private_server'] }}) </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_gitlab_instance'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1314,8 +1116,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Visual Studio / Azure DevOps </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_azure'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1328,8 +1130,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Git </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_git'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1342,8 +1144,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">AWS CodeCommit  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_codecommit'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1356,8 +1158,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Google Cloud  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_google_cloud'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1371,8 +1173,8 @@
                 </tr>
                 
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['custom_integrations'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['need_another_integration'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1384,36 +1186,11 @@
                   <td class="plan__table-text text-center pt-3"><a class="text-bondi-blue contact-href" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a></td>
                   <td class="plan__table-text text-center pt-3"><a class="text-bondi-blue contact-href" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a></td>
                 </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['your_preferred'] }} <a class="text-bondi-blue fw-bold text-underline contact-href" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> {{ site.data[page.lang]['pricing']['and_we'] }} </p>
-                      
-                    </div>
-                  </th>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                </tr>
   
-                
-  
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text fw-bold my-3 text-cerulean ml-3 font-22" id="see-data-depositing-features">{{ site.data[page.lang]['pricing']['data_deposits'] }} </p>
-                    </div>
-                    
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
+              
                 <tr class="bg-bondi-blue">
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3 fw-bold text-white">{{ site.data[page.lang]['pricing']['data_buckets_blobs'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['data_escrow_allows'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-white"></i>
@@ -1425,22 +1202,11 @@
                   <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">5</td>
                   <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">10</td>
                 </tr>
+
   
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-0 ml-3 fw-bold">{{ site.data[page.lang]['footer']['features'] }}:</p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-  
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['bucket_sync'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['increase_the_frequency'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1453,8 +1219,8 @@
                   <td class="plan__table-text text-center border-none pt-4">{{ site.data[page.lang]['pricing']['add_on'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['increased_storage'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['increase_the_storage'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1467,8 +1233,8 @@
                   <td class="plan__table-text text-center pt-4">{{ site.data[page.lang]['pricing']['add_on'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-5">{{ site.data[page.lang]['pricing']['storage_region'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['limit_storage_of'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1482,33 +1248,22 @@
                 </tr>
   
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-0 ml-3 fw-bold">{{ site.data[page.lang]['footer']['integrations'] }}:</p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Amazon S3 </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_amazon'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Google Cloud Platform </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_google_cloud_storage'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1521,8 +1276,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['microsoft_azure_blob'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['automated_deposits_azure_blobs'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1535,8 +1290,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['secure_upload'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_secure_upload_folder'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1550,8 +1305,8 @@
                 </tr>
                 
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['custom_integrations'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['need_another_integration'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1574,50 +1329,33 @@
                   <td> </td>
                   <td> </td>
                   <td> </td>
-                </tr>
-  
-                
-                
-                <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text fw-bold my-3 text-cerulean font-22" id="see-information-escrow-features">{{ site.data[page.lang]['pricing']['information_deposits'] }} </p>
-                    </div>
-                  </th>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                  <td class="border-none"> </td>
-                </tr>
-                <tr class="bg-bondi-blue">
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
-                      <p class="plan__table-text my-3 ml-3 fw-bold text-white">{{ site.data[page.lang]['pricing']['information_document'] }}</p>
-                      <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['a_secure_folder'] }} " data-tooltip-position="right">
-                        <i class="fa fa-info-circle ml-2 text-white"></i>
-                      </div>
-                    </div>
-                  </th>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">1</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">2</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">5</td>
-                  <td class="plan__table-text text-center pt-4 border-none text-white fw-bold">10</td>
-                </tr>
-                
+                </tr>              
               </tbody>
             </table>
           </div>
-  
+        </div>
+      </div>
+      <div class="pricing-table-devider" id="see-saas-escrow-features"></div>
+
+      <div class="container-fluid overflow-x-hidden mt-150">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing']['saas_escrow_add_on'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['eliminate_3rd'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/saas-escrow.webp"/>
+          </div>
           <div class="pricing-box-shadow">
-            <table class="table my-5">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['saas_escrow_add_on'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces" id="see-saas-escrow-features"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
@@ -1657,22 +1395,22 @@
                   <td class="border-none"> </td>
                 </tr>
                 <tr>
-                  <th class="border-none" scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Amazon Web Services </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_amazon'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
                       </div>
                     </div>
                   </th>
-                  <td class="text-center border-none">-</td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                  <td class="text-center border-none"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center">-</td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                  <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Google Cloud  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_google_cloud'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1685,8 +1423,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Microsoft Azure  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_azure'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1699,8 +1437,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">IBM Cloud Services </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_ibm_cloud'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1713,8 +1451,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Oracle Cloud </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_oracle_cloud'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1727,8 +1465,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Alibaba Cloud </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_alibaba_cloud'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1741,8 +1479,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">RackSpace Cloud </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_rackspace_cloud'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1755,8 +1493,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Digital Ocean </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_digital_ocean'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1769,8 +1507,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">Heroku </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['deploy_powered_heroku'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1783,8 +1521,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-1 ml-5">{{ site.data[page.lang]['pricing']['custom_cloud_platforms'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['need_another_environment'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1811,23 +1549,34 @@
               </tbody>
             </table>
           </div>
-  
+        </div>
+      </div>
+      <div class="pricing-table-devider" id="see-verification-features"></div>
+      <div class="container-fluid overflow-x-hidden mt-150">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between mt-5 flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing']['verification_features'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['verification_is_used'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/verification-services.webp"/>
+          </div>
           <div class="pricing-box-shadow">
-            <table class="table my-5">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['verification_features'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces" id="see-verification-features"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['content_verification'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['profile_of_the_content'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1841,8 +1590,8 @@
                 </tr>
                 
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['activity_verification'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['profile_of_the_development'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1855,8 +1604,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="increased-repository">$19</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['saas_verification'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['check_of_the_availability'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1869,8 +1618,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="amazon-deposit">$29</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['verification']['verification_advanced2'] }}  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['our_advanced_verification'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1883,8 +1632,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="verification-advanced">$2,495</span> / {{ site.data[page.lang]['verification']['report'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['verification']['verification_complete2'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['our_complete_verification'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1897,8 +1646,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="verification-complete">$3,995</span> / {{ site.data[page.lang]['verification']['report'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['custom_verification'] }}  </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['need_a_different_form'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1914,23 +1663,34 @@
               </tbody>
             </table>
           </div>
-  
+        </div>
+      </div>
+      <div class="pricing-table-devider" id="see-security-compliance-features"></div>
+      <div class="container-fluid overflow-x-hidden mt-150">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between mt-5 flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing']['security_compliance'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['maximized_security'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/security.webp"/>
+          </div>
           <div class="pricing-box-shadow">
-            <table class="table my-5">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['security_compliance'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces" id="see-security-compliance-features"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['dedicated_ip'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['if_your_privately_hosted'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1943,8 +1703,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="deposit-connections">$99</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['end_to_end'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['all_data_is_transferred'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1957,8 +1717,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['iso_data'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['our_data_centers'] }} " data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1971,8 +1731,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['deposit_audit'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['review_the_deposit_history'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1985,8 +1745,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['gdpr_compliant'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['if_your_deposits_contain_gdpr'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -1999,8 +1759,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="amazon-deposit">$29</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['hipaa_compliant'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['if_your_deposits_contain_hipaa'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2013,8 +1773,8 @@
                   <td class="plan__table-text text-center pt-4"><span class="amazon-deposit">$29</span> / {{ site.data[page.lang]['pricing']['month'] }}</td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['iso_compliance'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['we_can_assist_you'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2029,23 +1789,45 @@
               </tbody>
             </table>
           </div>
-  
+        </div>
+      </div>
+      <div class="pricing-table-devider" id="see-other-features"></div>
+      <div class="container-fluid overflow-x-hidden mt-150 mb-200">
+        <div class="plan__table-container mx-auto">
+          <div class="d-flex justify-content-between mt-5 flex-wrap">
+            <div>
+              <p class="plan__table-title-up break-spaces">{{ site.data[page.lang]['pricing']['feature_comparison'] }}</p>
+              <p class="plan__table-title break-spaces mb-2">{{ site.data[page.lang]['pricing_plan']['other_features'] }}</p>
+              <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['pricing_plan']['fully_integrated'] }}</p>
+            </div>
+            <img class="image-style mw-300" src="/images/pricing-page/other-features.webp"/>
+          </div>
           <div class="pricing-box-shadow">
-            <table class="table my-5">
+            <table class="table mb-0">
               <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['support_features'] }}</p>
                 <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces" id="see-support-features"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white">{{ site.data[page.lang]['pricing_plan']['plans'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['developer'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['team'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['business'] }}</th>
+                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces text-capitalize bg-clear-skies">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">
                     <div class="d-flex align-items-center">
+                      <p class="plan__table-text fw-bold my-3 ml-3">{{ site.data[page.lang]['pricing']['support_features'] }} </p>
+                    </div>
+                  </th>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['onboarding_concierge'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['step_by_step_via_email'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2058,8 +1840,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['phone_support'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['support_via_scheduled'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2072,8 +1854,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['email_support'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['step_by_step_via_email'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2086,8 +1868,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['chat_support'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['step_by_step_via_chat'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2099,26 +1881,20 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-  
-          <div class="pricing-box-shadow">
-            <table class="table my-5">
-              <thead>
-                <p class="plan__table-title break-spaces text-center mx-auto mt-5 mw-100">{{ site.data[page.lang]['pricing']['administrative_features'] }}</p>
-                <tr>
-                  <th scope="col" class="plan__table-title border-none break-spaces" id="see-administrative-features"></th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['developer'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['team'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['business'] }}</th>
-                  <th scope="col" class="plan__table-subtitle border-none text-center break-spaces">{{ site.data[page.lang]['pricing']['enterprise'] }}</th>
-                </tr>
-              </thead>
-              <tbody>
                 <tr>
                   <th scope="row">
                     <div class="d-flex align-items-center">
+                      <p class="plan__table-text fw-bold my-3 ml-3">{{ site.data[page.lang]['pricing']['administrative_features'] }} </p>
+                    </div>
+                  </th>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['payment_options'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['pay_via_credit_card'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2131,8 +1907,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['account_access'] }}</p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['allow_multiple_team'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2145,8 +1921,8 @@
                   <td class="text-center"><i class="fas fa-check text-bondi-blue my-3"></i></td>
                 </tr>
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
+                  <th class="table-border-right" scope="row">
+                    <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__table-text my-3 ml-3">{{ site.data[page.lang]['pricing']['annual_invoicing'] }} </p>
                       <div class="d-flex" data-html="true" data-tooltip="{{ site.data[page.lang]['pricing']['receive_a_discount'] }}" data-tooltip-position="right">
                         <i class="fa fa-info-circle ml-2 text-bondi-blue"></i>
@@ -2339,91 +2115,117 @@
       </div>
     </div>
     
-    <!-- Fourth Section -->
-    <div class="container section-large offer">
-      <div class="row column-reverse-mobile">
-        <div class="col-md-8 col-sm-12">
-          <h2 class="offer__main-title2 mt-5">{{ site.data[page.lang]['pricing']['get_an_offer'] }}</h2>
-          <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}</p>
-          <span class="offer-btns">
-            <button class="button btn-cerulean mt-4 btn-offer-style open" id="openButton">
-              {{ site.data[page.lang]['pricing']['get_offer'] }}
-            </button>
-            <button class="button btn-cerulean mt-4 btn-offer-style open" id="closeButton">
-              {{ site.data[page.lang]['pricing']['hide_offer'] }}
-            </button>
-          </span>
-        </div>
-        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-          <img class="image-style" src="/images/homepage/get-offer-image.svg"/>
-        </div>
-      </div>
-      <div class="bg-white py-5" id="offer">
-        <div class="section__container mx-auto mt-5 offer__container english-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            portalId: "5365877",
-            formId: "681409cd-f59f-49d5-836b-527607996aaf"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container spanish-guide">
+    <!-- Section -->
+    <div class="position-relative">
 
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "43a4244a-893f-46bf-8c61-34c3997057c1"
-          });
-          </script>
+      <div class="container section-large offer">
+        <img class="offer__bg-shape" src="/images/pricing-page/get-offer-shape.webp"/>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+            <img class="image-style mw-300 mt-4" src="/images/pricing-page/offer-made.webp"/>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <h2 class="offer__main-title2 mt-5">{{ site.data[page.lang]['pricing']['get_an_offer'] }}</h2>
+            <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}</p>
+            <span class="offer-btns">
+              <button class="button btn-cerulean mt-4 btn-offer-style open" id="openButton">
+                {{ site.data[page.lang]['pricing']['get_offer'] }}
+              </button>
+              <button class="button btn-cerulean mt-4 btn-offer-style open" id="closeButton">
+                {{ site.data[page.lang]['pricing']['hide_offer'] }}
+              </button>
+            </span>
+          </div>
         </div>
-        <div class="section__container mx-auto mt-5 offer__container german-guide">
+        <div class="bg-white py-5" id="offer">
+          <div class="section__container mx-auto mt-5 offer__container english-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "5365877",
+              formId: "681409cd-f59f-49d5-836b-527607996aaf"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container spanish-guide">
 
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "dc19e2de-7490-4dc2-93af-33163dd2c5f5"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container dutch-guide">
-
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "68712126-4f0b-4277-84b9-65706aa3d9b6"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container romanian-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5365877",
-            formId: "932218e5-c58d-4390-95ca-d74a7218cf24"
-          });
-          </script>
-        </div>
-        <div class="section__container mx-auto mt-5 offer__container french-guide">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-          <script>
-            hbspt.forms.create({
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
               region: "na1",
               portalId: "5365877",
-              formId: "97bbbcf4-1870-455f-8f21-4efb64cbb758"
+              formId: "43a4244a-893f-46bf-8c61-34c3997057c1"
             });
-          </script>
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container german-guide">
+
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "dc19e2de-7490-4dc2-93af-33163dd2c5f5"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container dutch-guide">
+
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "68712126-4f0b-4277-84b9-65706aa3d9b6"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container romanian-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+              region: "na1",
+              portalId: "5365877",
+              formId: "932218e5-c58d-4390-95ca-d74a7218cf24"
+            });
+            </script>
+          </div>
+          <div class="section__container mx-auto mt-5 offer__container french-guide">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "5365877",
+                formId: "97bbbcf4-1870-455f-8f21-4efb64cbb758"
+              });
+            </script>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Fifth Section -->
+    <!-- Section -->
+    <div class="resources">
+      <div class="escrow__customised-bg2 mt-0">
+        <div class="container">
+          <img class="escrow__customised-right-shape" src="/images/pricing-page/philosophy-right.webp" alt="Image Background"/>
+          <img class="escrow__customised-left-shape" src="/images/pricing-page/philosophy-left.webp" alt="Image Background"/>
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <h1 class="pricing-plan__philosophy-title mt-4">{{ site.data[page.lang]['pricing_plan']['ck_pricing'] }}</h1>
+              <p class="pricing-plan__philosophy-subtitle mt-4">{{ site.data[page.lang]['pricing_plan']['software_escrow_is'] }} </p>
+              <p class="pricing-plan__philosophy-text mt-4">{{ site.data[page.lang]['pricing_plan']['we_use'] }} </p>
+              <!-- <a class="button btn-yellow create-custom-software-escrow-agreement-href" href="create-custom-software-escrow-agreement.html">
+                {{ site.data[page.lang]['escrow_agreements']['request_custom'] }}
+              </a> -->
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <img class="escrow__customised-image mw-300" src="/images/pricing-page/philosophy.webp" alt="Image Customised Escrow"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section -->
     <div class="container section-large pricing pt-5">
       <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
       <ul class="faq mt-5 pb-5 pl-0">

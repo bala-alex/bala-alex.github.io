@@ -2178,6 +2178,20 @@
         }
       }
 
+      &-bg2 {
+        background-color: $cerulean;
+        min-height: 650px;
+        position: relative;
+        padding-top: 180px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        @include screen-md {
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+      }
+
       &-left {
         position: absolute;
         top: 0px;
@@ -2197,6 +2211,31 @@
 
         @include screen-sm {
           max-width: 300px;
+        }
+      }
+
+      &-left-shape {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-width: 210px;
+        object-fit: contain;
+        max-width: 15%;
+
+        @include screen-md {
+          max-width: 15%;
+        }
+      }
+
+      &-right-shape {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 600px;
+        max-width: 40%;
+
+        @include screen-sm {
+          max-width: 40%;
         }
       }
 
@@ -2435,6 +2474,98 @@
         @include screen-sm {
           margin-top: 30px;
         }
+      }
+    }
+  }
+
+  .pricing-plan {
+    &__custom {
+      &-title {
+        color: $dark-cyan;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      &-subtitle {
+        color: $slate-gray;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__complete {
+
+      &-bg {
+        min-height: 650px;
+        background: linear-gradient(6.27deg, #EEFBFD 8.63%, #FFFFFF 78.31%);
+        padding-top: 100px;
+        position: relative;
+        margin-top: 150px;
+      }
+
+      &-bg-shape {
+        position: absolute !important;
+        width: 100%;
+        height: auto;
+        max-width: 25%;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+      }
+
+      &-title {
+        color: $dark-cyan;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -1px;
+        max-width: 550px;
+      }
+
+      &-subtitle {
+        color: $slate-gray;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    &__philosophy {
+      &-title {
+        color: $white;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 53px;
+      }
+
+      &-subtitle {
+        color: $white;
+        font-family: 'Mulish';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      &-text {
+        color: $white;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
