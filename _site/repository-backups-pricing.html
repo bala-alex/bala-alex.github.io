@@ -1937,33 +1937,48 @@ document.addEventListener("click", closeAllSelect);
   </script>
   <!-- End of Google Analytics -->
   <script>
+    var pathname = location.pathname;
+
     $( document ).ready(function() {
       $.ajax('https://ipapi.co/json')
       .then(
         function success(response) {
           if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-            $('.setup-fee').text('€249');
+            $('.setup-fee').text('€199');
             $('.amazon-deposit').text('€29');
-            $('#developer-monthly').text('€89');
-            $('#team-monthly').text('€225');
-            $('#business-monthly').text('€399');
-            $('#enterprise-monthly').text('€1,399');
-            $('.developer-monthly').text('€89');
-            $('.team-monthly').text('€225');
-            $('.business-monthly').text('€399');
-            $('.enterprise-monthly').text('€1,399');
-            $('#developer-yearly').text('€79');
-            $('#team-yearly').text('€199');
-            $('#business-yearly').text('€349');
-            $('#enterprise-yearly').text('€1,299');
+            $('#developer-monthly').text('€99');
+            $('#team-monthly').text('€249');
+            $('#business-monthly').text('€449');
+            if (pathname.includes('/fr/')) {
+              $('#enterprise-monthly').text('€1499');
+              $('.enterprise-monthly').text('€1499');
+              $('#enterprise-yearly').text('€1349');
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('#enterprise-monthly').text('€1,499');
+              $('.enterprise-monthly').text('€1,499');
+              $('#enterprise-yearly').text('€1,349');
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
+            
+            $('.developer-monthly').text('€99');
+            $('.team-monthly').text('€249');
+            $('.business-monthly').text('€449');
+            
+            $('#developer-yearly').text('€89');
+            $('#team-yearly').text('€225');
+            $('#business-yearly').text('€399');
+            
             $('.increased-repository').text('€19');
             $('.increased-storage').text('€5');
             $('.storage-selection').text('€9');
             $('.deposit-connections').text('€99');
             $('.release-processing').text('€199');
             $('.saas-continuity').text('€299');
-            $('.verification-advanced').text('€2,495');
-            $('.verification-complete').text('€3,995');
+            
             $('.plan-eu').removeClass('d-none');
             $('.plan-us').remove();
             $('.plan-uk').remove();
@@ -2043,17 +2058,17 @@ document.addEventListener("click", closeAllSelect);
           else if (response.currency === 'AUD') {
             $('.setup-fee').text('A$299');
             $('.amazon-deposit').text('A$29');
-            $('#developer-monthly').text('A$109');
-            $('#team-monthly').text('A$275');
-            $('#business-monthly').text('A$549');
+            $('#developer-monthly').text('A$119');
+            $('#team-monthly').text('A$299');
+            $('#business-monthly').text('A$599');
             $('#enterprise-monthly').text('A$1,899');
-            $('.developer-monthly').text('A$109');
-            $('.team-monthly').text('A$275');
-            $('.business-monthly').text('A$549');
+            $('.developer-monthly').text('A$119');
+            $('.team-monthly').text('A$299');
+            $('.business-monthly').text('A$599');
             $('.enterprise-monthly').text('A$1,899');
-            $('#developer-yearly').text('A$99');
+            $('#developer-yearly').text('A$109');
             $('#team-yearly').text('A$249');
-            $('#business-yearly').text('A$499');
+            $('#business-yearly').text('A$549');
             $('#enterprise-yearly').text('A$1,699');
             $('.increased-repository').text('A$25');
             $('.increased-storage').text('A$7');
@@ -2073,22 +2088,22 @@ document.addEventListener("click", closeAllSelect);
             $('.plan-ch').remove();
             $('.plan-ca').remove();
           }
-  
+
           else if (response.currency === 'SGD') {
             $('.setup-fee').text('$299');
             $('.amazon-deposit').text('$39');
-            $('#developer-monthly').text('$109');
-            $('#team-monthly').text('$275');
-            $('#business-monthly').text('$549');
+            $('#developer-monthly').text('$119');
+            $('#team-monthly').text('$299');
+            $('#business-monthly').text('$599');
             $('#enterprise-monthly').text('$1,899');
-            $('.developer-monthly').text('$109');
-            $('.team-monthly').text('$275');
-            $('.business-monthly').text('$549');
+            $('.developer-monthly').text('$119');
+            $('.team-monthly').text('$299');
+            $('.business-monthly').text('$599');
             $('.enterprise-monthly').text('$1,899');
-            $('#developer-yearly').text('$99');
-            $('#team-yearly').text('$249');
-            $('#business-yearly').text('$499');
-            $('#enterprise-yearly').text('$1,699');
+            $('#developer-yearly').text('$109');
+            $('#team-yearly').text('$275');
+            $('#business-yearly').text('$549');
+            $('#enterprise-yearly').text('$1,899');
             $('.increased-repository').text('$25');
             $('.increased-storage').text('$7');
             $('.storage-selection').text('$12');
@@ -2107,7 +2122,7 @@ document.addEventListener("click", closeAllSelect);
             $('.plan-ch').remove();
             $('.plan-ca').remove();
           }
-  
+
           else if (response.currency === 'ZAR') {
             $('.setup-fee').text('R3,499');
             $('.amazon-deposit').text('R399');
@@ -2141,7 +2156,7 @@ document.addEventListener("click", closeAllSelect);
             $('.plan-ch').remove();
             $('.plan-ca').remove();
           }
-  
+
           else if (response.currency === 'CHF') {
             $('.setup-fee').text('CHF275');
             $('.amazon-deposit').text('CHF29');
@@ -2175,7 +2190,7 @@ document.addEventListener("click", closeAllSelect);
             $('.plan-sg').remove();
             $('.plan-ca').remove();
           }
-  
+
           else if (response.currency === 'CAD') {
             $('.setup-fee').text('CA$299');
             $('.amazon-deposit').text('CA$39');
@@ -2209,7 +2224,7 @@ document.addEventListener("click", closeAllSelect);
             $('.plan-ch').remove();
             $('.plan-au').remove();
           }
-  
+
           else {
             $('.plan-us').removeClass('d-none');
             $('.plan-eu').remove();
@@ -2229,6 +2244,8 @@ document.addEventListener("click", closeAllSelect);
       )
       .catch((e) => console.log(e))
     });
+
+    
   </script>
 </body>
 </html>
