@@ -57,7 +57,7 @@
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin escrow-agreement-href text-transform-capitalize" href="escrow-agreement.html">Escrow-Verträge</a>
+          <a class="nav-link nav-margin escrow-agreement-href text-transform-capitalize" href="escrow-agreement.html">Escrow-Vereinbarungen</a>
         </li>
 
         <!-- <li class="nav-item show-mobile">
@@ -71,7 +71,7 @@
             Infomaterial <img class="ml-1" src="/images/integrations/icon-down.svg"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item py-2 escrow-agreement-href" href="escrow-agreement.html">Escrow-Verträge</a>
+            <a class="dropdown-item py-2 escrow-agreement-href" href="escrow-agreement.html">Escrow-Vereinbarungen</a>
             <a class="dropdown-item py-2 resources-href" href="resources.html">Gesamtes Infomaterial</a>
             <a class="dropdown-item py-2" href="https://blog.codekeeper.co">Blog</a>
           </div>
@@ -1871,7 +1871,52 @@ document.addEventListener("click", closeAllSelect);
       $.ajax('https://ipapi.co/json')
         .then(
           function success(response) {
-            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            if (response.timezone && (response.timezone).includes('Europe') && (response.country_name === 'Germany')) {
+
+              $('.competitor-name').each(function () {
+                const competitorName = $(this).attr('data-competitor');
+
+                if (competitorName === 'GuardIT' ||
+                  competitorName === 'Continew' ||
+                  competitorName === 'Escrow London' ||
+                  competitorName === 'FGE' ||
+                  competitorName === 'Praxis' ||
+                  competitorName === 'Escrow4all' ||
+                  competitorName === 'L1Escrow' ||
+                  competitorName === 'LE AS' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'National Software Escrow' ||
+                  competitorName === 'Ses Escrow' ||
+                  competitorName === 'Vaultinum') {
+                  $(this).hide();
+                }
+              })
+            }
+
+            if (response.timezone && (response.timezone).includes('Europe') && (response.country_name === 'Netherlands')) {
+
+              $('.competitor-name').each(function () {
+                const competitorName = $(this).attr('data-competitor');
+
+                if (competitorName === 'GuardIT' ||
+                  competitorName === 'Continew' ||
+                  competitorName === 'Escrow London' ||
+                  competitorName === 'Escrowtech' ||
+                  competitorName === 'FGE' ||
+                  competitorName === 'Praxis' ||
+                  competitorName === 'eCambria' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'L1Escrow' ||
+                  competitorName === 'LE AS' ||
+                  competitorName === 'National Software Escrow' ||
+                  competitorName === 'Ses Escrow' ||
+                  competitorName === 'Vaultinum') {
+                  $(this).hide();
+                }
+              })
+            }
+
+            else if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.country_name !== 'Netherlands') && (response.country_name !== 'Germany')) {
 
               $('.competitor-name').each(function () {
                 const competitorName = $(this).attr('data-competitor');
@@ -1891,8 +1936,6 @@ document.addEventListener("click", closeAllSelect);
                   $(this).hide();
                 }
               })
-
-
             }
             else if (response.currency === 'GBP') {
 
@@ -1902,7 +1945,9 @@ document.addEventListener("click", closeAllSelect);
                 if (competitorName === 'GuardIT' ||
                   competitorName === 'Continew' ||
                   competitorName === 'FGE' ||
-                  competitorName === 'Praxis' ||
+                  competitorName === 'Softcrow' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'Escrow4all' ||
                   competitorName === 'National Software Escrow' ||
                   competitorName === 'eCambria') {
                   $(this).hide();
@@ -1922,6 +1967,7 @@ document.addEventListener("click", closeAllSelect);
                   competitorName === 'Escrow London' ||
                   competitorName === 'Escrow4all' ||
                   competitorName === 'FGE' ||
+                  competitorName === 'NCC' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
                   competitorName === 'National Software Escrow' ||
@@ -1947,9 +1993,9 @@ document.addEventListener("click", closeAllSelect);
                   competitorName === 'Escrow Alliance' ||
                   competitorName === 'Escrow4all' ||
                   competitorName === 'FGE' ||
+                  competitorName === 'NCC' ||
                   competitorName === 'Softcrow' ||
-                  competitorName === 'Swiss Escrow' ||
-                  competitorName === 'Vaultinum') {
+                  competitorName === 'Swiss Escrow') {
                   $(this).hide();
                 }
               })
@@ -1964,6 +2010,9 @@ document.addEventListener("click", closeAllSelect);
                   competitorName === 'Continew' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
+                  competitorName === 'Escrow4all' ||
+                  competitorName === 'Softcrow' ||
+                  competitorName === 'Swiss Escrow' ||
                   competitorName === 'FGE' ||
                   competitorName === 'Vaultinum') {
                   $(this).hide();
@@ -1976,13 +2025,10 @@ document.addEventListener("click", closeAllSelect);
                 const competitorName = $(this).attr('data-competitor');
 
                 if (competitorName === 'GuardIT' ||
-                  competitorName === 'eCambria' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
-                  competitorName === 'InnovaSafe' ||
                   competitorName === 'Ses Escrow' ||
                   competitorName === 'National Software Escrow' ||
-                  competitorName === 'Escrow Alliance' ||
                   competitorName === 'Vaultinum') {
                   $(this).hide();
                 }

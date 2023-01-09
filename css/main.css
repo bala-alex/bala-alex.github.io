@@ -13976,9 +13976,11 @@ html {
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.3px;
-  text-transform: capitalize;
   margin-right: 15px;
   margin-top: 15px;
+}
+.pricing .plan__see-item::first-letter {
+  text-transform: capitalize;
 }
 .pricing .plan__see-item:hover {
   background-color: #009CB7;
@@ -14844,7 +14846,7 @@ html {
   font-weight: 300;
   letter-spacing: 0.3px;
   line-height: 20px;
-  min-width: 200px;
+  min-width: 255px;
   text-align: center;
   border-radius: 4px;
 }

@@ -274,7 +274,52 @@
       $.ajax('https://ipapi.co/json')
         .then(
           function success(response) {
-            if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+            if (response.timezone && (response.timezone).includes('Europe') && (response.country_name === 'Germany')) {
+
+              $('.competitor-name').each(function () {
+                const competitorName = $(this).attr('data-competitor');
+
+                if (competitorName === 'GuardIT' ||
+                  competitorName === 'Continew' ||
+                  competitorName === 'Escrow London' ||
+                  competitorName === 'FGE' ||
+                  competitorName === 'Praxis' ||
+                  competitorName === 'Escrow4all' ||
+                  competitorName === 'L1Escrow' ||
+                  competitorName === 'LE AS' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'National Software Escrow' ||
+                  competitorName === 'Ses Escrow' ||
+                  competitorName === 'Vaultinum') {
+                  $(this).hide();
+                }
+              })
+            }
+
+            if (response.timezone && (response.timezone).includes('Europe') && (response.country_name === 'Netherlands')) {
+
+              $('.competitor-name').each(function () {
+                const competitorName = $(this).attr('data-competitor');
+
+                if (competitorName === 'GuardIT' ||
+                  competitorName === 'Continew' ||
+                  competitorName === 'Escrow London' ||
+                  competitorName === 'Escrowtech' ||
+                  competitorName === 'FGE' ||
+                  competitorName === 'Praxis' ||
+                  competitorName === 'eCambria' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'L1Escrow' ||
+                  competitorName === 'LE AS' ||
+                  competitorName === 'National Software Escrow' ||
+                  competitorName === 'Ses Escrow' ||
+                  competitorName === 'Vaultinum') {
+                  $(this).hide();
+                }
+              })
+            }
+
+            else if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.country_name !== 'Netherlands') && (response.country_name !== 'Germany')) {
 
               $('.competitor-name').each(function () {
                 const competitorName = $(this).attr('data-competitor');
@@ -294,8 +339,6 @@
                   $(this).hide();
                 }
               })
-
-
             }
             else if (response.currency === 'GBP') {
 
@@ -305,7 +348,9 @@
                 if (competitorName === 'GuardIT' ||
                   competitorName === 'Continew' ||
                   competitorName === 'FGE' ||
-                  competitorName === 'Praxis' ||
+                  competitorName === 'Softcrow' ||
+                  competitorName === 'Swiss Escrow' ||
+                  competitorName === 'Escrow4all' ||
                   competitorName === 'National Software Escrow' ||
                   competitorName === 'eCambria') {
                   $(this).hide();
@@ -325,6 +370,7 @@
                   competitorName === 'Escrow London' ||
                   competitorName === 'Escrow4all' ||
                   competitorName === 'FGE' ||
+                  competitorName === 'NCC' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
                   competitorName === 'National Software Escrow' ||
@@ -350,9 +396,9 @@
                   competitorName === 'Escrow Alliance' ||
                   competitorName === 'Escrow4all' ||
                   competitorName === 'FGE' ||
+                  competitorName === 'NCC' ||
                   competitorName === 'Softcrow' ||
-                  competitorName === 'Swiss Escrow' ||
-                  competitorName === 'Vaultinum') {
+                  competitorName === 'Swiss Escrow') {
                   $(this).hide();
                 }
               })
@@ -367,6 +413,9 @@
                   competitorName === 'Continew' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
+                  competitorName === 'Escrow4all' ||
+                  competitorName === 'Softcrow' ||
+                  competitorName === 'Swiss Escrow' ||
                   competitorName === 'FGE' ||
                   competitorName === 'Vaultinum') {
                   $(this).hide();
@@ -379,13 +428,10 @@
                 const competitorName = $(this).attr('data-competitor');
 
                 if (competitorName === 'GuardIT' ||
-                  competitorName === 'eCambria' ||
                   competitorName === 'L1Escrow' ||
                   competitorName === 'LE AS' ||
-                  competitorName === 'InnovaSafe' ||
                   competitorName === 'Ses Escrow' ||
                   competitorName === 'National Software Escrow' ||
-                  competitorName === 'Escrow Alliance' ||
                   competitorName === 'Vaultinum') {
                   $(this).hide();
                 }
