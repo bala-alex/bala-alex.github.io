@@ -1,0 +1,242 @@
+.eu-react {
+  overflow: hidden;
+  font-family: 'Mulish', sans-serif;
+
+  .header {
+
+    &__background {
+      
+      min-height: 800px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        border-radius: 100%;
+        position: absolute;
+        background: linear-gradient(180deg, #FFFFFF 37.42%, #ECF5FF 122.14%);
+        right: -400px;
+        left: -400px;
+        top: -200px;
+        content: '';
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @include screen-sm {
+        height: 1000px;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      right: 0px;
+      top: 100px;
+      width: 50%;
+      max-width: 500px;
+
+      @include screen-sm {
+        position: relative;
+        width: 80%;
+        top: 0px
+      }
+
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 65px;
+      line-height: 70px;
+      letter-spacing: -0.02em;
+      max-width: 500px;
+      color: #1A5261;
+      margin-top: 100px;
+    }
+
+    &__subtitle {
+      max-width: 633px;
+      color: #1A5261;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .info {
+
+    &__content {
+      margin-top: -120px;
+
+      @include screen-sm {
+        margin-top: 50px;
+      }
+    }
+
+    &__box {
+      width: 100%;
+      min-height: 318px;
+      box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.25);
+      border-radius: 5px;
+      background-color: $white;
+      padding: 50px 40px 30px 30px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #001767;
+      margin-top: 50px;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: #001767;
+      margin-top: 20px;
+    }
+  }
+
+  .sync {
+
+    &__title {
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: #001767;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #001767;
+      margin-top: 30px;
+      max-width: 713px;
+    }
+  }
+
+  .get {
+
+    &__title {
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: $white;
+      max-width: 334px;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-bottom: 0px;
+      margin-left: 20px;
+    }
+
+    &__text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: $white;
+      max-width: 372px;
+      text-align: center;
+    }
+
+    &__subtext {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  .flag {
+    &__text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-family: 'Bookmania Semibold' !important;
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+      font-family: 'Bookmania Semibold' !important;
+    }
+  }
+
+  .footer {
+
+    padding: 60px 40px;
+    background: #404247;
+    display: flex;
+    justify-content: space-between;
+
+    @include screen-sm {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 92px;
+      height: 21px;
+    }
+
+    &__bullet {
+      color: $white;
+      font-size: 18px;
+
+      @include screen-sm {
+        margin-top: 10px;
+      }
+    }
+
+    &__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-bottom: 0px;
+
+      @include screen-sm {
+        margin-top: 10px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
