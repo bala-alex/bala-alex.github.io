@@ -2,102 +2,89 @@
   overflow: hidden;
   font-family: 'Mulish', sans-serif;
 
-  .header {
+  .eu-header {
 
     &__background {
       
-      min-height: 800px;
-      position: relative;
+      min-height: 850px;
       overflow: hidden;
-
-      &::before {
-        border-radius: 100%;
-        position: absolute;
-        background: linear-gradient(180deg, #FFFFFF 37.42%, #ECF5FF 122.14%);
-        right: -400px;
-        left: -400px;
-        top: -200px;
-        content: '';
-        bottom: 0;
-        z-index: -1;
-      }
-
-      @include screen-sm {
-        height: 1000px;
-      }
+      background: url("/images//eu-react/header-bg.webp");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover !important;
+      padding-bottom: 100px !important;
     }
 
     &__image {
-      position: absolute;
-      right: 0px;
-      top: 100px;
-      width: 50%;
+      width: 100%;
       max-width: 500px;
+      object-fit: contain;
 
       @include screen-sm {
-        position: relative;
-        width: 80%;
-        top: 0px
+        margin-bottom: 80px !important;
       }
-
     }
 
     &__title {
       font-weight: 300;
-      font-size: 65px;
-      line-height: 70px;
-      letter-spacing: -0.02em;
-      max-width: 500px;
+      font-size: 55px;
+      line-height: 65px;
+      letter-spacing: -1px;
       color: #1A5261;
-      margin-top: 100px;
+      max-width: fit-content;
+      margin-top: 150px;
+
+      @include screen-sm {
+        margin-top: 80px;
+      }
     }
 
     &__subtitle {
-      max-width: 633px;
-      color: #1A5261;
       font-weight: 300;
+      font-size: 35px;
+      line-height: 40px;
+      color: #1A5261;
+      max-width: 690px;
+    }
+
+    &__text {
+      font-weight: 600;
       font-size: 20px;
       line-height: 28px;
-      letter-spacing: -0.02em;
+      color: #009CB7;
+    }
+
+    &__subtext {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1A5261;
+      max-width: 690px;
+      text-align: left;
     }
   }
 
-  .info {
-
-    &__content {
-      margin-top: -120px;
-
-      @include screen-sm {
-        margin-top: 50px;
-      }
-    }
-
-    &__box {
-      width: 100%;
-      min-height: 318px;
-      box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.25);
-      border-radius: 5px;
-      background-color: $white;
-      padding: 50px 40px 30px 30px;
-      margin-bottom: 30px;
-    }
+  .eu-info {
 
     &__title {
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: -0.02em;
-      color: #001767;
-      margin-top: 50px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 40px;
+      color: #1A5261;
     }
 
     &__subtitle {
       font-weight: 300;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: -0.02em;
-      color: #001767;
-      margin-top: 20px;
+      font-size: 18px;
+      line-height: 28px;
+      color: #1A5261;
+      max-width: 450px;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 500px;
+      object-fit: contain;
     }
   }
 
@@ -122,48 +109,7 @@
     }
   }
 
-  .get {
-
-    &__title {
-      font-weight: 300;
-      font-size: 35px;
-      line-height: 40px;
-      letter-spacing: -0.02em;
-      color: $white;
-      max-width: 334px;
-    }
-
-    &__subtitle {
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 28px;
-      letter-spacing: -0.02em;
-      color: $white;
-      margin-bottom: 0px;
-      margin-left: 20px;
-    }
-
-    &__text {
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 28px;
-      letter-spacing: -0.02em;
-      color: $white;
-      max-width: 372px;
-      text-align: center;
-    }
-
-    &__subtext {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: -0.02em;
-      color: $white;
-      text-align: center;
-    }
-  }
-
-  .flag {
+  .eu-flag {
     &__text {
       font-weight: 300;
       font-size: 20px;
@@ -194,12 +140,110 @@
       text-align: center;
       font-family: 'Bookmania Semibold' !important;
     }
+
+    &__shape-right {
+      position: absolute;
+      width: 110px;
+      top: 0;
+      right: 0;
+      object-fit: contain;
+
+      @include screen-sm {
+        width: 60px;
+      }
+    }
+
+    &__shape-left {
+      position: absolute;
+      width: 380px;
+      bottom: 0;
+      left: 0;
+      object-fit: contain;
+
+      @include screen-sm {
+        width: 200px;
+      }
+    }
   }
 
-  .footer {
+  .eu-protect {
+    min-height: 1200px;
+    background: linear-gradient(180deg, #F6FDFF 47.18%, rgba(249, 252, 255, 0) 100%);
+
+    &__main-title {
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -1px;
+      color: #1A5261;
+      text-align: center;
+    }
+
+    &__main-subtitle {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      color: #1A5261;
+      text-align: center;
+      max-width: 660px;
+    }
+
+    &__box {
+      width: 100%;
+      background: #FFFFFF;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      min-height: 410px;
+      padding: 60px;
+      position: relative;
+
+      @include screen-sm {
+        padding: 60px 20px;
+      }
+    }
+
+    &__shape-right {
+      position: absolute;
+      width: 150px;
+      top: 0;
+      right: 0;
+    }
+
+    &__shape-left {
+      position: absolute;
+      width: 150px;
+      top: 0;
+      left: 0;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #245CB0;
+    }
+
+    &__text {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 53px;
+      color: #00384B;
+    }
+
+    &__subtext {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: #1A5261;
+      max-width: 670px;
+    }
+  }
+
+  .eu-footer {
 
     padding: 60px 40px;
-    background: #404247;
+    background: #6A8493;
     display: flex;
     justify-content: space-between;
 
@@ -213,6 +257,13 @@
       height: 21px;
     }
 
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+    }
+
     &__bullet {
       color: $white;
       font-size: 18px;
@@ -223,10 +274,9 @@
     }
 
     &__link {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: -0.02em;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
       color: $white;
       margin-bottom: 0px;
 

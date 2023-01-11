@@ -22399,93 +22399,81 @@ html {
   overflow: hidden;
   font-family: "Mulish", sans-serif;
 }
-.eu-react .header__background {
-  min-height: 800px;
-  position: relative;
+.eu-react .eu-header__background {
+  min-height: 850px;
   overflow: hidden;
+  background: url("/images//eu-react/header-bg.webp");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover !important;
+  padding-bottom: 100px !important;
 }
-.eu-react .header__background::before {
-  border-radius: 100%;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37.42%, #FFFFFF), color-stop(122.14%, #ECF5FF));
-  background: -o-linear-gradient(top, #FFFFFF 37.42%, #ECF5FF 122.14%);
-  background: linear-gradient(180deg, #FFFFFF 37.42%, #ECF5FF 122.14%);
-  right: -400px;
-  left: -400px;
-  top: -200px;
-  content: "";
-  bottom: 0;
-  z-index: -1;
+.eu-react .eu-header__image {
+  width: 100%;
+  max-width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 767px) {
-  .eu-react .header__background {
-    height: 1000px;
+  .eu-react .eu-header__image {
+    margin-bottom: 80px !important;
   }
 }
-.eu-react .header__image {
-  position: absolute;
-  right: 0px;
-  top: 100px;
-  width: 50%;
-  max-width: 500px;
+.eu-react .eu-header__title {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 65px;
+  letter-spacing: -1px;
+  color: #1A5261;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-top: 150px;
 }
 @media (max-width: 767px) {
-  .eu-react .header__image {
-    position: relative;
-    width: 80%;
-    top: 0px;
+  .eu-react .eu-header__title {
+    margin-top: 80px;
   }
 }
-.eu-react .header__title {
+.eu-react .eu-header__subtitle {
   font-weight: 300;
-  font-size: 65px;
-  line-height: 70px;
-  letter-spacing: -0.02em;
-  max-width: 500px;
+  font-size: 35px;
+  line-height: 40px;
   color: #1A5261;
-  margin-top: 100px;
+  max-width: 690px;
 }
-.eu-react .header__subtitle {
-  max-width: 633px;
-  color: #1A5261;
-  font-weight: 300;
+.eu-react .eu-header__text {
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.02em;
+  color: #009CB7;
 }
-.eu-react .info__content {
-  margin-top: -120px;
+.eu-react .eu-header__subtext {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1A5261;
+  max-width: 690px;
+  text-align: left;
 }
-@media (max-width: 767px) {
-  .eu-react .info__content {
-    margin-top: 50px;
-  }
+.eu-react .eu-info__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1A5261;
 }
-.eu-react .info__box {
-  width: 100%;
-  min-height: 318px;
-  -webkit-box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.25);
-          box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.25);
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 50px 40px 30px 30px;
-  margin-bottom: 30px;
-}
-.eu-react .info__title {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-  color: #001767;
-  margin-top: 50px;
-}
-.eu-react .info__subtitle {
+.eu-react .eu-info__subtitle {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.02em;
-  color: #001767;
-  margin-top: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1A5261;
+  max-width: 450px;
+}
+.eu-react .eu-info__image {
+  width: 100%;
+  max-width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .eu-react .sync__title {
   font-weight: normal;
@@ -22503,41 +22491,7 @@ html {
   margin-top: 30px;
   max-width: 713px;
 }
-.eu-react .get__title {
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 40px;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  max-width: 334px;
-}
-.eu-react .get__subtitle {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  margin-bottom: 0px;
-  margin-left: 20px;
-}
-.eu-react .get__text {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  max-width: 372px;
-  text-align: center;
-}
-.eu-react .get__subtext {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  text-align: center;
-}
-.eu-react .flag__text {
+.eu-react .eu-flag__text {
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -22545,7 +22499,7 @@ html {
   color: #333333;
   text-align: center;
 }
-.eu-react .flag__title {
+.eu-react .eu-flag__title {
   font-weight: 500;
   font-size: 35px;
   line-height: 40px;
@@ -22556,7 +22510,7 @@ html {
   margin-bottom: 5px;
   font-family: "Bookmania Semibold" !important;
 }
-.eu-react .flag__subtitle {
+.eu-react .eu-flag__subtitle {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -22565,9 +22519,104 @@ html {
   text-align: center;
   font-family: "Bookmania Semibold" !important;
 }
-.eu-react .footer {
+.eu-react .eu-flag__shape-right {
+  position: absolute;
+  width: 110px;
+  top: 0;
+  right: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .eu-react .eu-flag__shape-right {
+    width: 60px;
+  }
+}
+.eu-react .eu-flag__shape-left {
+  position: absolute;
+  width: 380px;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .eu-react .eu-flag__shape-left {
+    width: 200px;
+  }
+}
+.eu-react .eu-protect {
+  min-height: 1200px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(47.18%, #F6FDFF), to(rgba(249, 252, 255, 0)));
+  background: -o-linear-gradient(top, #F6FDFF 47.18%, rgba(249, 252, 255, 0) 100%);
+  background: linear-gradient(180deg, #F6FDFF 47.18%, rgba(249, 252, 255, 0) 100%);
+}
+.eu-react .eu-protect__main-title {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  color: #1A5261;
+  text-align: center;
+}
+.eu-react .eu-protect__main-subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1A5261;
+  text-align: center;
+  max-width: 660px;
+}
+.eu-react .eu-protect__box {
+  width: 100%;
+  background: #FFFFFF;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 10px;
+  min-height: 410px;
+  padding: 60px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .eu-react .eu-protect__box {
+    padding: 60px 20px;
+  }
+}
+.eu-react .eu-protect__shape-right {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  right: 0;
+}
+.eu-react .eu-protect__shape-left {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: 0;
+}
+.eu-react .eu-protect__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #245CB0;
+}
+.eu-react .eu-protect__text {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 53px;
+  color: #00384B;
+}
+.eu-react .eu-protect__subtext {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1A5261;
+  max-width: 670px;
+}
+.eu-react .eu-footer {
   padding: 60px 40px;
-  background: #404247;
+  background: #6A8493;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22576,7 +22625,7 @@ html {
           justify-content: space-between;
 }
 @media (max-width: 767px) {
-  .eu-react .footer {
+  .eu-react .eu-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -22586,33 +22635,38 @@ html {
             align-items: center;
   }
 }
-.eu-react .footer__logo {
+.eu-react .eu-footer__logo {
   width: 92px;
   height: 21px;
 }
-.eu-react .footer__bullet {
+.eu-react .eu-footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.eu-react .eu-footer__bullet {
   color: #ffffff;
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .eu-react .footer__bullet {
+  .eu-react .eu-footer__bullet {
     margin-top: 10px;
   }
 }
-.eu-react .footer__link {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.02em;
+.eu-react .eu-footer__link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   color: #ffffff;
   margin-bottom: 0px;
 }
 @media (max-width: 767px) {
-  .eu-react .footer__link {
+  .eu-react .eu-footer__link {
     margin-top: 10px;
   }
 }
-.eu-react .footer__link:hover {
+.eu-react .eu-footer__link:hover {
   text-decoration: none;
 }
 
