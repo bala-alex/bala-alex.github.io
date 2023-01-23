@@ -2678,6 +2678,21 @@
           }
 
           else {
+            if (pathname.includes('/fr/')) {
+              $('#enterprise-monthly').text('$1499');
+              $('.enterprise-monthly').text('$1499');
+              $('#enterprise-yearly').text('$1349');
+              $('.verification-advanced').text('$2495');
+              $('.verification-complete').text('$3995');
+            }
+            else {
+              $('#enterprise-monthly').text('$1,499');
+              $('.enterprise-monthly').text('$1,499');
+              $('#enterprise-yearly').text('$1,349');
+              $('.verification-advanced').text('$2,495');
+              $('.verification-complete').text('$3,995');
+            }
+            
             $('.plan-us').removeClass('d-none');
             $('.plan-eu').remove();
             $('.plan-uk').remove();

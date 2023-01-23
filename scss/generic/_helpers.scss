@@ -150,6 +150,10 @@ html {
   color: $bondi-blue !important;
 }
 
+.text-ocean-blue {
+  color: $ocean-blue !important;
+}
+
 .text-yellow {
   color: $yellow !important;
 }
@@ -358,6 +362,10 @@ html {
 
 .bg-faded-gray {
   background-color: $faded-gray;
+}
+
+.bg-azure-light {
+  background-color: $azure-light;
 }
 
 .bg-gradient-gray {
@@ -630,6 +638,11 @@ html {
 .banner-button {
   cursor: pointer;
   text-decoration: underline !important;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .mw-900 {

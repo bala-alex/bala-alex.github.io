@@ -2508,13 +2508,17 @@
         padding-top: 100px;
         position: relative;
         margin-top: 150px;
+
+        @include screen-sm {
+          margin-top: 50px;
+        }
       }
 
       &-bg-shape {
         position: absolute !important;
-        width: 100%;
+        width: 25%;
         height: auto;
-        max-width: 25%;
+        max-width: 480px;
         bottom: 0;
         right: 0;
         object-fit: contain;

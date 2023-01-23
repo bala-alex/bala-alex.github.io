@@ -130,6 +130,102 @@
         padding-top: 50px;
       }
 
+      .plan__subtitle {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 0;
+        margin-left: 8px;
+      }
+
+      .plan__badge {
+        background: #D3F2F7;
+        box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        width: fit-content;
+        padding: 0px 15px;
+        min-height: 32px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        color: #00889F;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .plan__badge-saas {
+        background: linear-gradient(90deg, #D3F2F7 41.69%, #DDEAFC 151.15%);
+        box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        width: fit-content;
+        padding: 0px 15px;
+        min-height: 32px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        color: #00889F;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .form-control {
+        background-color: transparent !important;
+        border: transparent !important;
+        min-height: 200px;
+        height: fit-content;
+        padding-top: 15px;
+        margin-bottom: 0px;
+      }
+      
+      .form-control:focus-within {
+        background-color: $azure-light !important;
+      }
+
+      .form-control:active {
+        background-color: $azure-light !important;
+      }
+      
+      input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: var(--form-background);
+        /* Not removed via appearance */
+        margin: 0;
+      
+        font: inherit;
+        color: currentColor;
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid $bondi-blue;
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+        display: grid;
+        place-content: center;
+      }
+      
+      input[type="radio"]::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        /* Windows High Contrast Mode */
+        background-color: $bondi-blue;
+      }
+      
+      input[type="radio"]:checked::before {
+        transform: scale(1);
+        color: $bondi-blue;
+      }
+
       .plan__banner {
         top: -36px;
         color: $white;
@@ -161,15 +257,18 @@
       }
 
       .plan__amount {
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 24px;
+        color: $dark-cyan;
       }
       &.-active {
         min-height: auto;
         padding-bottom: 30px;
         margin-top: 0px;
         background-color: $white;
-        border: 1.5px solid #00A0B6;
+        // border: 1.5px solid #00A0B6;
         box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
         border-radius: 10px;
 
@@ -358,39 +457,40 @@
     }
 
     &__period {
-      color: $cerulean;
-      font-size: 14px;
-      font-weight: bold;
+      color: $dark-cyan !important;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 20px;
       letter-spacing: 0px;
-      line-height: 26px;
-      font-family: 'Rubik', sans-serif;
-      text-align: center;
+      font-family: 'Mulish', sans-serif;
+      text-transform: lowercase;
+      margin-left: 10px;
+      margin-bottom: 0px;
+      margin-top: 7px;
     }
 
     &__devider {
       background-color: #E7EEF5;
       height: 1px;
-      width: 111px;
+      width: 90%;
     }
 
     &__fee-text {
-      color: $air-force-blue;
+      color: $dark-cyan !important;
       font-size: 12px;
       font-weight: 300;
       letter-spacing: 0px;
       line-height: 15px;
       font-family: 'Mulish', sans-serif;
-      text-align: center;
+      margin-left: 10px;
     }
 
     &__fee-amount {
-      color: $cerulean;
-      font-size: 20px;
-      font-weight: normal;
-      letter-spacing: -0.27px;
-      line-height: 48px;
+      color: $dark-cyan;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
       font-family: 'Mulish', sans-serif;
-      text-align: center;
 
       sup {
         font-size: 10px;
@@ -434,14 +534,18 @@
       .tooltip-text {
         font-weight: 400;
         line-height: 27px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: $dark-cyan;
       }
 
-      &:hover {
-        .tooltip-text {
-          text-decoration: underline;
-          color: $bondi-blue;
-        }
-      }
+      // &:hover {
+      //   .tooltip-text {
+      //     text-decoration: underline;
+      //     color: $bondi-blue;
+      //   }
+      // }
     }
 
     &__see-container {
@@ -692,13 +796,12 @@
     }
 
     &__period {
-      color: $dark-gray;
-      font-size: 14px;
+      color: $dark-cyan !important;
+      font-size: 12px;
       font-weight: 300;
+      line-height: 20px;
       letter-spacing: 0px;
-      line-height: 26px;
-      font-family: 'Rubik', sans-serif;
-      text-align: center;
+      font-family: 'Mulish', sans-serif;
     }
 
     &__column {
@@ -928,6 +1031,17 @@
       border-radius: 10px;
       margin-top: -400px;
       margin-bottom: 150px;
+      padding: 20px;
+
+      @include screen-md {
+        padding: 20px;
+        margin-top: -250px;
+      }
+
+      @include screen-sm {
+        padding: 20px;
+        margin-top: 0px;
+      }
     }
 
     &__bg-shape {

@@ -9179,6 +9179,10 @@ html {
   color: #009CB7 !important;
 }
 
+.text-ocean-blue {
+  color: #169DFF !important;
+}
+
 .text-yellow {
   color: #FFD12D !important;
 }
@@ -9404,6 +9408,10 @@ html {
 
 .bg-faded-gray {
   background-color: #F4F4F4;
+}
+
+.bg-azure-light {
+  background-color: #F0FBFD;
 }
 
 .bg-gradient-gray {
@@ -9693,6 +9701,11 @@ html {
 .banner-button {
   cursor: pointer;
   text-decoration: underline !important;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .mw-900 {
@@ -13697,6 +13710,124 @@ html {
 .pricing .plan__box .plan__title {
   padding-top: 50px;
 }
+.pricing .plan__box .plan__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+.pricing .plan__box .plan__badge {
+  background: #D3F2F7;
+  -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 15px;
+  min-height: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #00889F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+.pricing .plan__box .plan__badge-saas {
+  background: -webkit-gradient(linear, left top, right top, color-stop(41.69%, #D3F2F7), color-stop(151.15%, #DDEAFC));
+  background: -o-linear-gradient(left, #D3F2F7 41.69%, #DDEAFC 151.15%);
+  background: linear-gradient(90deg, #D3F2F7 41.69%, #DDEAFC 151.15%);
+  -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 15px;
+  min-height: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #00889F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+.pricing .plan__box .form-control {
+  background-color: transparent !important;
+  border: transparent !important;
+  min-height: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+.pricing .plan__box .form-control:focus-within {
+  background-color: #F0FBFD !important;
+}
+.pricing .plan__box .form-control:active {
+  background-color: #F0FBFD !important;
+}
+.pricing .plan__box input[type=radio] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  -moz-appearance: none;
+       appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #009CB7;
+  border-radius: 50%;
+  -webkit-transform: translateY(-0.075em);
+      -ms-transform: translateY(-0.075em);
+          transform: translateY(-0.075em);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+.pricing .plan__box input[type=radio]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  -o-transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  /* Windows High Contrast Mode */
+  background-color: #009CB7;
+}
+.pricing .plan__box input[type=radio]:checked::before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  color: #009CB7;
+}
 .pricing .plan__box .plan__banner {
   top: -36px;
   color: #ffffff;
@@ -13728,15 +13859,17 @@ html {
   }
 }
 .pricing .plan__box .plan__amount {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1A5261;
 }
 .pricing .plan__box.-active {
   min-height: auto;
   padding-bottom: 30px;
   margin-top: 0px;
   background-color: #ffffff;
-  border: 1.5px solid #00A0B6;
   -webkit-box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
           box-shadow: 0px 14px 25px rgba(0, 90, 109, 0.1);
   border-radius: 10px;
@@ -13863,36 +13996,37 @@ html {
   margin-bottom: 100px;
 }
 .pricing .plan__period {
-  color: #009CB7;
-  font-size: 14px;
-  font-weight: bold;
+  color: #1A5261 !important;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
   letter-spacing: 0px;
-  line-height: 26px;
-  font-family: "Rubik", sans-serif;
-  text-align: center;
+  font-family: "Mulish", sans-serif;
+  text-transform: lowercase;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 7px;
 }
 .pricing .plan__devider {
   background-color: #E7EEF5;
   height: 1px;
-  width: 111px;
+  width: 90%;
 }
 .pricing .plan__fee-text {
-  color: #6782A3;
+  color: #1A5261 !important;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0px;
   line-height: 15px;
   font-family: "Mulish", sans-serif;
-  text-align: center;
+  margin-left: 10px;
 }
 .pricing .plan__fee-amount {
-  color: #009CB7;
-  font-size: 20px;
-  font-weight: normal;
-  letter-spacing: -0.27px;
-  line-height: 48px;
+  color: #1A5261;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
   font-family: "Mulish", sans-serif;
-  text-align: center;
 }
 .pricing .plan__fee-amount sup {
   font-size: 10px;
@@ -13934,10 +14068,10 @@ html {
 .pricing .plan__content-tooltip .tooltip-text {
   font-weight: 400;
   line-height: 27px;
-}
-.pricing .plan__content-tooltip:hover .tooltip-text {
-  text-decoration: underline;
-  color: #009CB7;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #1A5261;
 }
 .pricing .plan__see-container {
   max-width: 1100px;
@@ -14181,13 +14315,12 @@ html {
   font-size: 28px;
 }
 .pricing .verify__period {
-  color: #818181;
-  font-size: 14px;
+  color: #1A5261 !important;
+  font-size: 12px;
   font-weight: 300;
+  line-height: 20px;
   letter-spacing: 0px;
-  line-height: 26px;
-  font-family: "Rubik", sans-serif;
-  text-align: center;
+  font-family: "Mulish", sans-serif;
 }
 .pricing .verify__column {
   display: -webkit-box;
@@ -14408,6 +14541,19 @@ html {
   border-radius: 10px;
   margin-top: -400px;
   margin-bottom: 150px;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .pricing .offer__box-container {
+    padding: 20px;
+    margin-top: -250px;
+  }
+}
+@media (max-width: 767px) {
+  .pricing .offer__box-container {
+    padding: 20px;
+    margin-top: 0px;
+  }
 }
 .pricing .offer__bg-shape {
   position: absolute;
@@ -19308,11 +19454,16 @@ html {
   position: relative;
   margin-top: 150px;
 }
+@media (max-width: 767px) {
+  .resources .pricing-plan__complete-bg {
+    margin-top: 50px;
+  }
+}
 .resources .pricing-plan__complete-bg-shape {
   position: absolute !important;
-  width: 100%;
+  width: 25%;
   height: auto;
-  max-width: 25%;
+  max-width: 480px;
   bottom: 0;
   right: 0;
   -o-object-fit: contain;
@@ -20134,6 +20285,29 @@ html {
     display: none;
   }
 }
+.software-escrow .difference__setup-fee {
+  width: 140px;
+  height: 50px;
+  background: -o-linear-gradient(194.8deg, #13AFCA -5.22%, #019DB8 112.9%);
+  background: linear-gradient(255.2deg, #13AFCA -5.22%, #019DB8 112.9%);
+  position: absolute;
+  right: -40px;
+  bottom: 45px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 15px;
+  white-space: nowrap;
+}
+@media (max-width: 992px) {
+  .software-escrow .difference__setup-fee {
+    display: none;
+  }
+}
 .software-escrow .difference__price-corner {
   width: 0;
   height: 0;
@@ -20146,6 +20320,21 @@ html {
 }
 @media (max-width: 992px) {
   .software-escrow .difference__price-corner {
+    display: none;
+  }
+}
+.software-escrow .difference__setup-corner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 40px 0 0;
+  border-color: #09778B transparent transparent transparent;
+  position: absolute;
+  right: -40px;
+  bottom: 15px;
+}
+@media (max-width: 992px) {
+  .software-escrow .difference__setup-corner {
     display: none;
   }
 }
