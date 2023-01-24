@@ -201,9 +201,9 @@
       
         font: inherit;
         color: currentColor;
-        width: 1.15em;
-        height: 1.15em;
-        border: 0.15em solid $bondi-blue;
+        width: 18px;
+        height: 18px;
+        border: 0.15em solid #6A8493;
         border-radius: 50%;
         transform: translateY(-0.075em);
         display: grid;
@@ -212,13 +212,14 @@
       
       input[type="radio"]::before {
         content: "";
-        width: 0.65em;
-        height: 0.65em;
-        border-radius: 50%;
+        width: 18px;
+        height: 18px;
         transform: scale(0);
         transition: 120ms transform ease-in-out;
         /* Windows High Contrast Mode */
-        background-color: $bondi-blue;
+        background-image: url("../images/pricing-page/icons/check-icon.svg");
+        background-repeat: no-repeat;
+        object-fit: cover;
       }
       
       input[type="radio"]:checked::before {

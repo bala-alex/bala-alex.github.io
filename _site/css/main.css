@@ -9092,6 +9092,13 @@ html {
   text-transform: capitalize !important;
 }
 
+.pricing-info-icon {
+  color: white;
+  border: 1px solid #169DFF;
+  border-radius: 50%;
+  background-color: #169DFF;
+}
+
 .nav-margin {
   margin: 8px;
 }
@@ -13795,9 +13802,9 @@ html {
   margin: 0;
   font: inherit;
   color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid #009CB7;
+  width: 18px;
+  height: 18px;
+  border: 0.15em solid #6A8493;
   border-radius: 50%;
   -webkit-transform: translateY(-0.075em);
       -ms-transform: translateY(-0.075em);
@@ -13808,9 +13815,8 @@ html {
 }
 .pricing .plan__box input[type=radio]::before {
   content: "";
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 50%;
+  width: 18px;
+  height: 18px;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -13820,7 +13826,10 @@ html {
   transition: 120ms transform ease-in-out;
   transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
   /* Windows High Contrast Mode */
-  background-color: #009CB7;
+  background-image: url("../images/pricing-page/icons/check-icon.svg");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .pricing .plan__box input[type=radio]:checked::before {
   -webkit-transform: scale(1);
