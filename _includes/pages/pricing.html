@@ -42,7 +42,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
-
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('developer-plan-software')" />
@@ -55,7 +55,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -65,7 +65,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -90,7 +90,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -100,7 +100,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -110,7 +110,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>1</b> {{ site.data[page.lang]['pricing_plan']['hosting_environment']
+                          class="tooltip-text">1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -120,7 +120,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>3</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -129,12 +129,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -144,77 +145,77 @@
                     </div>
                   </div>
                   <div class="developer-plan-software d-none btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                     data-cb-plan-id="developer-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="developer-plan-saas">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                     data-cb-plan-id="developer-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-eu" data-cb-addons_id_0="saas-escrow-developer-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
@@ -224,6 +225,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-software')" />
@@ -236,7 +238,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -246,7 +248,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -271,7 +273,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -281,7 +283,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -291,7 +293,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -301,7 +303,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>6</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -310,12 +312,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -326,77 +329,77 @@
                   </div>
                   
                   <div class="team-plan-software btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                     data-cb-plan-id="team-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="team-plan-saas btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                     data-cb-plan-id="team-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-eu" data-cb-addons_id_0="saas-escrow-team-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="team-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
@@ -407,6 +410,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box -active">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
+                  <div class="plan__devider mx-auto"></div>
                   <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
 
                   <label class="form-control">
@@ -421,7 +425,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -431,7 +435,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -456,7 +460,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -466,7 +470,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -476,7 +480,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>3</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -486,7 +490,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -495,12 +499,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -510,77 +515,77 @@
                     </div>
                   </div>
                   <div class="business-plan-software btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="business-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="business-plan-saas btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="business-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-eu" data-cb-addons_id_0="saas-escrow-business-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="business-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
@@ -590,6 +595,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-software')" />
@@ -602,7 +608,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -612,7 +618,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>75</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -637,7 +643,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -647,7 +653,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>75</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -657,7 +663,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -667,7 +673,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -676,12 +682,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -691,77 +698,77 @@
                     </div>
                   </div>
                   <div class="enterprise-plan-software btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="enterprise-plan-saas btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-eu" data-cb-addons_id_0="saas-escrow-enterprise-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="enterprise-plan-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
@@ -775,7 +782,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['developer_plan'] }}</h2>
-
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('developer-plan-software2')" />
@@ -788,7 +795,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -798,7 +805,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -823,7 +830,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -833,7 +840,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -843,7 +850,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>1</b> {{ site.data[page.lang]['pricing_plan']['hosting_environment']
+                          class="tooltip-text">1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -853,7 +860,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>3</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -862,12 +869,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -877,77 +885,77 @@
                     </div>
                   </div>
                   <div class="developer-plan-software2 btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="developer-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-eu" data-cb-addons_id_0="saas-escrow-developer-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout"
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
                       data-cb-plan-id="developer-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
@@ -957,6 +965,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['team_plan'] }}</h2>
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-software2')" />
@@ -969,7 +978,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -979,7 +988,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1004,7 +1013,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1014,7 +1023,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1024,7 +1033,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>2</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1034,7 +1043,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>6</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1043,12 +1052,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -1059,60 +1069,60 @@
                   </div>
                   
                   <div class="team-plan-software2 btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="team-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" data-cb-addons_id_0="saas-escrow-team-plan-(eur)" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" data-cb-addons_id_0="saas-escrow-team-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -1123,6 +1133,7 @@
                 <div class="plan__box -active">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['business_plan'] }}</h2>
                   <p class="plan__banner">{{ site.data[page.lang]['pricing']['most_popular'] }}</p>
+                  <div class="plan__devider mx-auto"></div>
 
                   <label class="form-control">
                     <div class="d-flex align-items-center">
@@ -1136,7 +1147,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1146,7 +1157,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1171,7 +1182,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>10</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1181,7 +1192,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1191,7 +1202,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>3</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1201,7 +1212,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>15</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1210,12 +1221,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -1225,60 +1237,60 @@
                     </div>
                   </div>
                   <div class="business-plan-software2 btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="business-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" data-cb-addons_id_0="saas-escrow-business-plan-(eur)" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" data-cb-addons_id_0="saas-escrow-business-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -1287,6 +1299,7 @@
               <div class="col-md-3 col-sm-12 px-2 mt-4">
                 <div class="plan__box">
                   <h2 class="plan__title">{{ site.data[page.lang]['pricing']['enterprise_plan'] }}</h2>
+                  <div class="plan__devider mx-auto"></div>
                   <label class="form-control">
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-software2')" />
@@ -1299,7 +1312,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1309,7 +1322,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>75</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1334,7 +1347,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1344,7 +1357,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>75</b> {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1354,7 +1367,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>5</b> {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1364,7 +1377,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text"><b>25</b> {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1373,12 +1386,13 @@
                       </div>
                     </div>
                   </label>
+                  <div class="plan__devider mx-auto"></div>
                   <div class="w-100 my-3">
                     <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
                       <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0"><sup>$</sup> 249</p>
+                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
                         <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
                         data-tooltip-position="top">
@@ -1388,60 +1402,60 @@
                     </div>
                   </div>
                   <div class="enterprise-plan-software2 btn-disabled d-none">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu w-100" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
                   <div class="enterprise-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" data-cb-addons_id_0="saas-escrow-enterprise-plan-(eur)" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" data-cb-addons_id_0="saas-escrow-enterprise-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue2 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>

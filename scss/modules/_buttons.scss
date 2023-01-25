@@ -203,6 +203,37 @@
   }
 }
 
+.btn-bondi-blue3 {
+  @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($bondi-blue, 7.5%), $active-border: darken($bondi-blue, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bondi-blue;
+  border-radius: 5px;
+  height: 50px;
+  width: max-content;
+  min-width: 290px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  @include screen-lg {
+    min-width: fit-content;
+  }
+  @include screen-sm {
+    min-width: 250px;
+  }
+  &:hover {
+    color: $white !important;
+    background-color: darken($bondi-blue, 7.5%) !important;
+    text-decoration: none;
+    border: 1px solid $cerulean;
+    transition: all .3s;
+    cursor: pointer;
+  }
+}
+
 .btn-developer {
   @include button-variant($primary-default, $primary-default, $active-background: darken($primary-default, 7.5%), $active-border: darken($primary-default, 10%));
   color: $white !important;
