@@ -246,6 +246,9 @@
       padding: 50px;
       position: relative;
       margin-top: -215px;
+      @include screen-sm {
+        padding: 15px;
+      }
     }
 
     &__small-shape {
@@ -2488,6 +2491,10 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
+        text-transform: lowercase;
+        &::first-letter {
+          text-transform: capitalize;
+        }
       }
 
       &-subtitle {

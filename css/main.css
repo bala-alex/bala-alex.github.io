@@ -9094,9 +9094,9 @@ html {
 
 .pricing-info-icon {
   color: white;
-  border: 1px solid #169DFF;
+  border: 1px solid #A6C4D5;
   border-radius: 50%;
-  background-color: #169DFF;
+  background-color: #A6C4D5;
 }
 
 .nav-margin {
@@ -9314,6 +9314,10 @@ html {
   .overflow-x-hidden {
     overflow-x: hidden !important;
   }
+}
+
+.text-line-through {
+  text-decoration: line-through;
 }
 
 .mt-large {
@@ -13713,6 +13717,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px;
+  font-family: "Mulish", sans-serif;
 }
 .pricing .plan__box .plan__title {
   padding-top: 20px;
@@ -13732,6 +13737,22 @@ html {
   line-height: 28px;
   margin-bottom: 0;
   margin-left: 8px;
+}
+.pricing .plan__box .plan__add-on {
+  background: #417BD2;
+  -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 8px;
+  margin-left: 8px;
+  font-family: "Mulish", sans-serif;
 }
 .pricing .plan__box .plan__badge {
   background: #D3F2F7;
@@ -14028,7 +14049,6 @@ html {
   text-transform: lowercase;
   margin-left: 15px;
   margin-bottom: 0px;
-  margin-top: 7px;
 }
 .pricing .plan__devider {
   background-color: #E7EEF5;
@@ -14053,6 +14073,10 @@ html {
 }
 .pricing .plan__fee-amount sup {
   font-size: 10px;
+}
+.pricing .plan__fee-amount span {
+  font-weight: 400;
+  text-decoration: line-through;
 }
 .pricing .plan__text {
   color: #4a4a4a;
@@ -17215,6 +17239,11 @@ html {
   position: relative;
   margin-top: -215px;
 }
+@media (max-width: 767px) {
+  .resources .best-price__bg {
+    padding: 15px;
+  }
+}
 .resources .best-price__small-shape {
   position: absolute;
   right: 0;
@@ -19460,6 +19489,10 @@ html {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  text-transform: lowercase;
+}
+.resources .pricing-plan__custom-title::first-letter {
+  text-transform: capitalize;
 }
 .resources .pricing-plan__custom-subtitle {
   color: #6A8493;
@@ -20010,6 +20043,16 @@ html {
   line-height: 40px;
   color: #1A5261;
   max-width: 420px;
+}
+.solutions .compare__screen-img {
+  max-width: 420px !important;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .solutions .compare__screen-img {
+    max-width: 90%;
+    padding-bottom: 30px;
+  }
 }
 .solutions .compare__text {
   font-family: "Mulish";

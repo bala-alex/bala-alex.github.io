@@ -126,6 +126,7 @@
       flex-direction: column;
       align-items: center;
       padding-bottom: 30px;
+      font-family: 'Mulish', sans-serif;
       .plan__title {
         padding-top: 20px;
         font-family: 'Muli';
@@ -145,6 +146,20 @@
         line-height: 28px;
         margin-bottom: 0;
         margin-left: 8px;
+      }
+
+      .plan__add-on {
+        background: #417BD2;
+        box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+        border-radius: 100px;
+        width: fit-content;
+        padding: 4px 6px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 8px;
+        margin-left: 8px;
+        font-family: 'Mulish', sans-serif;
       }
 
       .plan__badge {
@@ -482,7 +497,6 @@
       text-transform: lowercase;
       margin-left: 15px;
       margin-bottom: 0px;
-      margin-top: 7px;
     }
 
     &__devider {
@@ -510,6 +524,11 @@
 
       sup {
         font-size: 10px;
+      }
+
+      span {
+        font-weight: 400;
+        text-decoration: line-through;
       }
     }
 

@@ -492,6 +492,16 @@
       max-width: 420px;
     }
 
+    &__screen-img {
+      max-width: 420px !important;
+      width: 100%;
+
+      @include screen-sm {
+        max-width: 90%;
+        padding-bottom: 30px;
+      }
+    }
+
     &__text {
       font-family: 'Mulish';
       font-style: normal;

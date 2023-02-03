@@ -108,9 +108,7 @@
         <img class="header__shape-left" src="/images/pricing-page/shape-left.webp" alt="Background Image" />
         <img class="header__shape-right" src="/images/pricing-page/shape-right.webp" alt="Background Image" />
         <div class="container">
-          <p class="product__title mx-auto mt-4">Entiercement de code source</p>
-          <div class="product__header-devider mx-auto"></div>
-          <h1 class="header__title mx-auto max-w100">Tarifs</h1>
+          <h1 class="header__title mx-auto max-w100 mt-5 pt-5">Choisissez le forfait qui correspond à vos besoins</h1>
         </div>
       </div>
     </div>
@@ -165,36 +163,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" checked onclick="showBtn('developer-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span> 99</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">1 Environnement d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>1 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -203,7 +188,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -212,18 +197,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                  <div class="w-100 my-3 developer-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly mb-0 fw-400">$99</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 developer-plan-saas">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly-saas2 mb-0 fw-400">$198</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="developer-plan-software d-none btn-disabled">
@@ -342,36 +353,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 team-monthly-saas"><span>$</span> 149</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>2 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -380,7 +378,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">6 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>6 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -389,18 +387,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                  <div class="w-100 my-3 team-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly mb-0 fw-400">$249</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 team-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly-saas2 mb-0 fw-400">$398</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   
@@ -523,36 +547,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('business-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 business-monthly-saas"><span>$</span> 249</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -561,7 +572,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">15 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>15 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -570,18 +581,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                  <div class="w-100 my-3 business-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly mb-0 fw-400">$499</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 business-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly-saas2 mb-0 fw-400">$698</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="business-plan-software btn-disabled d-none">
@@ -700,36 +737,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span> 499</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>5 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -738,7 +762,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>25 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -747,18 +771,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                  <div class="w-100 my-3 enterprise-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly mb-0 fw-400">$1,499</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 enterprise-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé mensuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 fw-400">$1,998</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="enterprise-plan-software btn-disabled d-none">
@@ -881,36 +931,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('developer-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span> 99</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">1 Environnement d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>1 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -919,7 +956,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -928,18 +965,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">Facturation annuelle</p>
+                  <div class="w-100 my-3 developer-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly mb-0 text-line-through fw-400">$99</p>&nbsp;
+                          <p class="plan__fee-amount developer-yearly mb-0">$89</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 developer-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly-saas2 mb-0 text-line-through fw-400">$198</p>&nbsp;
+                        <p class="plan__fee-amount developer-yearly-saas2 mb-0">$188</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="developer-plan-software2 btn-disabled d-none">
@@ -982,7 +1047,7 @@
                   </div>
                   <div class="developer-plan-saas2 btn-disabled">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual" data-cb-addons_id_0="saas-escrow-developer-plan" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -990,31 +1055,31 @@
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-in" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-au" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-sg" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-ch" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-ca" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                   </div>
@@ -1058,36 +1123,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 team-monthly-saas"><span>$</span> 149</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>2 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -1096,7 +1148,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">6 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>6 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -1105,18 +1157,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">Facturation annuelle</p>
+                  <div class="w-100 my-3 team-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly mb-0 text-line-through fw-400">$249</p>&nbsp;
+                          <p class="plan__fee-amount team-yearly mb-0">$225</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 team-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly-saas2 mb-0 text-line-through fw-400">$398</p>&nbsp;
+                        <p class="plan__fee-amount team-yearly-saas2 mb-0">$374</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   
@@ -1150,31 +1230,31 @@
                     </a>
                   </div>
                   <div class="team-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" data-cb-addons_id_0="saas-escrow-team-plan" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" data-cb-addons_id_0="saas-escrow-team-plan-(eur)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" data-cb-addons_id_0="saas-escrow-team-plan-(gbp)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" data-cb-addons_id_0="saas-escrow-team-plan-(inr)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" data-cb-addons_id_0="saas-escrow-team-plan-(aud)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" data-cb-addons_id_0="saas-escrow-team-plan-(sgd)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-team-plan-(zar)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" data-cb-addons_id_0="saas-escrow-team-plan-(chf)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" data-cb-addons_id_0="saas-escrow-team-plan-(cad)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                   </div>
@@ -1221,36 +1301,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('business-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 business-monthly-saas"><span>$</span> 249</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -1259,7 +1326,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">15 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>15 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -1268,18 +1335,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">Facturation annuelle</p>
+                  <div class="w-100 my-3 business-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly mb-0 text-line-through fw-400">$449</p>&nbsp;
+                          <p class="plan__fee-amount business-yearly mb-0">$399</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 business-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly-saas2 mb-0 text-line-through fw-400">$698</p>&nbsp;
+                        <p class="plan__fee-amount business-yearly-saas2 mb-0">$648</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="business-plan-software2 btn-disabled d-none">
@@ -1312,31 +1407,31 @@
                     </a>
                   </div>
                   <div class="business-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" data-cb-addons_id_0="saas-escrow-business-plan" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" data-cb-addons_id_0="saas-escrow-business-plan-(eur)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" data-cb-addons_id_0="saas-escrow-business-plan-(gbp)"  href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" data-cb-addons_id_0="saas-escrow-business-plan-(inr)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" data-cb-addons_id_0="saas-escrow-business-plan-(aud)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" data-cb-addons_id_0="saas-escrow-business-plan-(sgd)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-business-plan-(zar)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" data-cb-addons_id_0="saas-escrow-business-plan-(chf)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" data-cb-addons_id_0="saas-escrow-business-plan-(cad)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                   </div>
@@ -1380,36 +1475,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">Préparation à la récupération
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">Préparation à la continuité</span>
                     </div>
                     <div class="d-flex align-items-center">
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
                       <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span> 499</p>
                       <span class="plan__period">/mois</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Contrats d’entiercement</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de contrats d’entiercement que vous pouvez avoir sur votre compte avec des clients ou des fournisseurs."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp </span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 Sources de dépôts d’actifs</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="Le nombre de sources de dépôt que vous pouvez ajouter sur votre compte pour un dépôt automatisé, par exemple Github, Azure, etc."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 Environnements d’hébergement</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>5 Environnement d’hébergement</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’environnements d’hébergement sur le cloud ou sur site que vous pouvez entiercer."
                         data-tooltip-position="top">
@@ -1418,7 +1500,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 Services de dépendance de tiers</span></p>
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>25 Services de dépendance de tiers</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="Le nombre d’applications ou de services tiers dont dépend votre entreprise et qui peuvent être ajoutés à votre compte, par exemple Mailchimp, Twilio, etc."
                         data-tooltip-position="top">
@@ -1427,18 +1509,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">Facturation annuelle</p>
+                  <div class="w-100 my-3 enterprise-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly mb-0 text-line-through fw-400">$1,499</p>&nbsp;
+                          <p class="plan__fee-amount enterprise-yearly mb-0">$1,349</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 enterprise-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period text-capitalize">par mois, facturé annuellement</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 text-line-through fw-400">$1,998</p>&nbsp;
+                        <p class="plan__fee-amount enterprise-yearly-saas2 mb-0">$1,848</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /mois</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">Frais de mise en place&nbsp;</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="La mise en place complète du contrat d’entiercement est incluse, y compris le travail juridique."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$ 249</p>
                     </div>
                   </div>
                   <div class="enterprise-plan-software2 btn-disabled d-none">
@@ -1471,31 +1581,31 @@
                     </a>
                   </div>
                   <div class="enterprise-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" data-cb-addons_id_0="saas-escrow-enterprise-plan" href="javascript:void(0)">
                       COMMENCER
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" data-cb-addons_id_0="saas-escrow-enterprise-plan-(eur)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" data-cb-addons_id_0="saas-escrow-enterprise-plan-(gbp)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" data-cb-addons_id_0="saas-escrow-enterprise-plan-(inr)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" data-cb-addons_id_0="saas-escrow-enterprise-plan-(aud)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" data-cb-addons_id_0="saas-escrow-enterprise-plan-(sgd)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-enterprise-plan-(zar)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" data-cb-addons_id_0="saas-escrow-enterprise-plan-(chf)" href="javascript:void(0)">
                       COMMENCER
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" data-cb-addons_id_0="saas-escrow-enterprise-plan-(cad)" href="javascript:void(0)">
                       COMMENCER
                     </a>
                   </div>
@@ -3333,19 +3443,32 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('€149');
               $('.business-monthly-saas').text('€249');
               $('.enterprise-monthly-saas').text('€499');
+              $('.developer-monthly-saas2').text('€198');
+              $('.team-monthly-saas2').text('€398');
+              $('.business-monthly-saas2').text('€698');
+              $('.developer-yearly-saas2').text('€188');
+              $('.team-yearly-saas2').text('€374');
+              $('.business-yearly-saas2').text('€648');
+              
               if (pathname.includes('/fr/')) {
                 $('#enterprise-monthly').text('€1499');
                 $('.enterprise-monthly').text('€1499');
                 $('#enterprise-yearly').text('€1349');
+                $('.enterprise-yearly').text('€1349');
                 $('.verification-advanced').text('€2495');
                 $('.verification-complete').text('€3995');
+                $('.enterprise-monthly-saas2').text('€1998');
+                $('.enterprise-yearly-saas2').text('€1848');
               }
               else {
                 $('#enterprise-monthly').text('€1,499');
                 $('.enterprise-monthly').text('€1,499');
                 $('#enterprise-yearly').text('€1,349');
+                $('.enterprise-yearly').text('€1,349');
                 $('.verification-advanced').text('€2,495');
                 $('.verification-complete').text('€3,995');
+                $('.enterprise-monthly-saas2').text('€1,998');
+                $('.enterprise-yearly-saas2').text('€1,848');
               }
 
               $('.developer-monthly').text('€99');
@@ -3355,6 +3478,10 @@ document.addEventListener("click", closeAllSelect);
               $('#developer-yearly').text('€89');
               $('#team-yearly').text('€225');
               $('#business-yearly').text('€399');
+
+              $('.developer-yearly').text('€89');
+              $('.team-yearly').text('€225');
+              $('.business-yearly').text('€399');
 
               $('.increased-repository').text('€19');
               $('.increased-storage').text('€5');
@@ -3388,6 +3515,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('£175');
               $('#business-yearly').text('£299');
               $('#enterprise-yearly').text('£999');
+              $('.developer-yearly').text('£69');
+              $('.team-yearly').text('£175');
+              $('.business-yearly').text('£299');
+              $('.enterprise-yearly').text('£999');
               $('.increased-repository').text('£14');
               $('.increased-storage').text('£4');
               $('.storage-selection').text('£7');
@@ -3400,6 +3531,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('£119');
               $('.business-monthly-saas').text('£199');
               $('.enterprise-monthly-saas').text('£399');
+
+              $('.developer-monthly-saas2').text('£158');
+              $('.team-monthly-saas2').text('£318');
+              $('.business-monthly-saas2').text('£548');
+              $('.enterprise-monthly-saas2').text('£1,498');
+              $('.developer-yearly-saas2').text('£148');
+              $('.team-yearly-saas2').text('£294');
+              $('.business-yearly-saas2').text('£498');
+              $('.enterprise-yearly-saas2').text('£1,398');
+
               $('.plan-uk').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3425,6 +3566,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('₹15,995');
               $('#business-yearly').text('₹29,995');
               $('#enterprise-yearly').text('₹99,995');
+              $('.developer-yearly').text('₹6,495');
+              $('.team-yearly').text('₹15,995');
+              $('.business-yearly').text('₹29,995');
+              $('.enterprise-yearly').text('₹99,995');
               $('.increased-repository').text('₹1,415');
               $('.increased-storage').text('₹375');
               $('.storage-selection').text('₹670');
@@ -3437,6 +3582,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('₹11,999');
               $('.business-monthly-saas').text('₹19,999');
               $('.enterprise-monthly-saas').text('₹39,999');
+
+              $('.developer-monthly-saas2').text('₹14,994');
+              $('.team-monthly-saas2').text('₹29,994');
+              $('.business-monthly-saas2').text('₹52,994');
+              $('.enterprise-monthly-saas2').text('₹149,994');
+              $('.developer-yearly-saas2').text('₹14,494');
+              $('.team-yearly-saas2').text('₹27,994');
+              $('.business-yearly-saas2').text('₹49,994');
+              $('.enterprise-yearly-saas2').text('₹139,994');
+
               $('.plan-in').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3462,6 +3617,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('A$249');
               $('#business-yearly').text('A$549');
               $('#enterprise-yearly').text('A$1,699');
+              $('.developer-yearly').text('A$109');
+              $('.team-yearly').text('A$249');
+              $('.business-yearly').text('A$549');
+              $('.enterprise-yearly').text('A$1,699');
               $('.increased-repository').text('A$25');
               $('.increased-storage').text('A$7');
               $('.storage-selection').text('A$12');
@@ -3474,6 +3633,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('A$209');
               $('.business-monthly-saas').text('A$359');
               $('.enterprise-monthly-saas').text('A$719');
+
+              $('.developer-monthly-saas2').text('A$258');
+              $('.team-monthly-saas2').text('A$508');
+              $('.business-monthly-saas2').text('A$958');
+              $('.enterprise-monthly-saas2').text('A$2,618');
+              $('.developer-yearly-saas2').text('A$248');
+              $('.team-yearly-saas2').text('A$458');
+              $('.business-yearly-saas2').text('A$908');
+              $('.enterprise-yearly-saas2').text('A$2,418');
+
               $('.plan-au').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3500,6 +3669,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('$275');
               $('#business-yearly').text('$549');
               $('#enterprise-yearly').text('$1,899');
+              $('.developer-yearly').text('$109');
+              $('.team-yearly').text('$275');
+              $('.business-yearly').text('$549');
+              $('.enterprise-yearly').text('$1,899');
               $('.increased-repository').text('$25');
               $('.increased-storage').text('$7');
               $('.storage-selection').text('$12');
@@ -3512,6 +3685,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('$199');
               $('.business-monthly-saas').text('$329');
               $('.enterprise-monthly-saas').text('$529');
+
+              $('.developer-monthly-saas2').text('$248');
+              $('.team-monthly-saas2').text('$498');
+              $('.business-monthly-saas2').text('$928');
+              $('.enterprise-monthly-saas2').text('$2,428');
+              $('.developer-yearly-saas2').text('$238');
+              $('.team-yearly-saas2').text('$474');
+              $('.business-yearly-saas2').text('$878');
+              $('.enterprise-yearly-saas2').text('$2,428');
+
               $('.plan-sg').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3538,6 +3721,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('R2,950');
               $('#business-yearly').text('R5,490');
               $('#enterprise-yearly').text('R19,995');
+              $('.developer-yearly').text('R1,250');
+              $('.team-yearly').text('R2,950');
+              $('.business-yearly').text('R5,490');
+              $('.enterprise-yearly').text('R19,995');
               $('.increased-repository').text('R270');
               $('.increased-storage').text('R70');
               $('.storage-selection').text('R130');
@@ -3550,6 +3737,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('R2,499');
               $('.business-monthly-saas').text('R4,299');
               $('.enterprise-monthly-saas').text('R8,499');
+
+              $('.developer-monthly-saas2').text('R3,094');
+              $('.team-monthly-saas2').text('R5,844');
+              $('.business-monthly-saas2').text('R10,294');
+              $('.enterprise-monthly-saas2').text('R30,494');
+              $('.developer-yearly-saas2').text('R2,949');
+              $('.team-yearly-saas2').text('R5,449');
+              $('.business-yearly-saas2').text('R9,789');
+              $('.enterprise-yearly-saas2').text('R28,494');
+
               $('.plan-rsa').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3576,6 +3773,10 @@ document.addEventListener("click", closeAllSelect);
               $('#team-yearly').text('CHF199');
               $('#business-yearly').text('CHF349');
               $('#enterprise-yearly').text('CHF1,199');
+              $('.developer-yearly').text('CHF79');
+              $('.team-yearly').text('CHF199');
+              $('.business-yearly').text('CHF349');
+              $('.enterprise-yearly').text('CHF1,199');
               $('.increased-repository').text('CHF18');
               $('.increased-storage').text('CHF5');
               $('.storage-selection').text('CHF8');
@@ -3588,6 +3789,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('CHF139');
               $('.business-monthly-saas').text('CHF229');
               $('.enterprise-monthly-saas').text('CHF459');
+
+              $('.developer-monthly-saas2').text('CHF178');
+              $('.team-monthly-saas2').text('CHF364');
+              $('.business-monthly-saas2').text('CHF628');
+              $('.enterprise-monthly-saas2').text('CHF1,808');
+              $('.developer-yearly-saas2').text('CHF168');
+              $('.team-yearly-saas2').text('CHF338');
+              $('.business-yearly-saas2').text('CHF578');
+              $('.enterprise-yearly-saas2').text('CHF1,658');
+
               $('.plan-ch').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3602,18 +3813,22 @@ document.addEventListener("click", closeAllSelect);
             else if (response.currency === 'CAD') {
               $('.setup-fee').text('CAD299');
               $('.amazon-deposit').text('CAD39');
-              $('#developer-monthly').text('CAD110');
-              $('#team-monthly').text('CAD275');
+              $('#developer-monthly').text('CAD119');
+              $('#team-monthly').text('CAD299');
               $('#business-monthly').text('CAD499');
               $('#enterprise-monthly').text('CAD1,849');
-              $('.developer-monthly').text('CAD110');
-              $('.team-monthly').text('CAD275');
+              $('.developer-monthly').text('CAD119');
+              $('.team-monthly').text('CAD299');
               $('.business-monthly').text('CAD499');
               $('.enterprise-monthly').text('CAD1,849');
-              $('#developer-yearly').text('CAD99');
-              $('#team-yearly').text('CAD249');
+              $('#developer-yearly').text('CAD109');
+              $('#team-yearly').text('CAD275');
               $('#business-yearly').text('CAD449');
               $('#enterprise-yearly').text('CAD1,649');
+              $('.developer-yearly').text('CAD109');
+              $('.team-yearly').text('CAD275');
+              $('.business-yearly').text('CAD449');
+              $('.enterprise-yearly').text('CAD1,649');
               $('.increased-repository').text('CAD25');
               $('.increased-storage').text('CAD7');
               $('.storage-selection').text('CAD12');
@@ -3626,6 +3841,16 @@ document.addEventListener("click", closeAllSelect);
               $('.team-monthly-saas').text('CAD199');
               $('.business-monthly-saas').text('CAD329');
               $('.enterprise-monthly-saas').text('CAD669');
+
+              $('.developer-monthly-saas2').text('CAD258');
+              $('.team-monthly-saas2').text('CAD498');
+              $('.business-monthly-saas2').text('CAD828');
+              
+              $('.developer-yearly-saas2').text('CAD248');
+              $('.team-yearly-saas2').text('CAD474');
+              $('.business-yearly-saas2').text('CAD778');
+            
+
               $('.plan-ca').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -3642,11 +3867,15 @@ document.addEventListener("click", closeAllSelect);
                 $('#enterprise-monthly').text('$1499');
                 $('.enterprise-monthly').text('$1499');
                 $('#enterprise-yearly').text('$1349');
+                $('.enterprise-monthly-saas2').text('CAD2518');
+                $('.enterprise-yearly-saas2').text('CAD2318');
               }
               else {
                 $('#enterprise-monthly').text('$1,499');
                 $('.enterprise-monthly').text('$1,499');
                 $('#enterprise-yearly').text('$1,349');
+                $('.enterprise-monthly-saas2').text('CAD2,518');
+                $('.enterprise-yearly-saas2').text('CAD2,318');
               }
 
               $('.plan-us').removeClass('d-none');
