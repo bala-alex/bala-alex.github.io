@@ -20,8 +20,8 @@
     <div class="pricing-tabs container-fluid">
       <div class="pricing-container mx-auto">
         <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile" aria-selected="false">{{ site.data[page.lang]['pricing']['annual_save'] }}</a>
+          <a class="nav-link space-no-wrap" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+            aria-controls="pills-profile" aria-selected="false">{{ site.data[page.lang]['pricing_plan']['annually_save'] }}</a>
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
             aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}</a>
 
@@ -40,12 +40,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="developer-monthly"><span>$</span> 99</p>
+                      <p class="plan__amount mt-0" id="developer-monthly"><span>$</span>99</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -55,7 +55,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -69,38 +69,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" checked onclick="showBtn('developer-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span> 99</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span>99</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -110,7 +95,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -120,18 +105,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                  <div class="w-100 my-3 developer-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly mb-0 fw-400">$99</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 developer-plan-saas">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly-saas2 mb-0 fw-400">$198</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="developer-plan-software d-none btn-disabled">
@@ -174,7 +185,7 @@
                   </div>
                   <div class="developer-plan-saas">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                    data-cb-plan-id="developer-plan" href="javascript:void(0)">
+                    data-cb-plan-id="developer-plan" data-cb-addons_id_0="saas-escrow-developer-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -182,31 +193,31 @@
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -223,12 +234,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="team-monthly"><span>$</span> 249</p>
+                      <p class="plan__amount mt-0" id="team-monthly"><span>$</span>249</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -238,7 +249,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -252,38 +263,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 team-monthly-saas"><span>$</span> 149</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 team-monthly-saas"><span>$</span>149</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>2 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -293,7 +289,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -303,18 +299,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                  <div class="w-100 my-3 team-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly mb-0 fw-400">$249</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 team-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly-saas2 mb-0 fw-400">$398</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   
@@ -358,7 +380,7 @@
                   </div>
                   <div class="team-plan-saas btn-disabled">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                    data-cb-plan-id="team-plan" href="javascript:void(0)">
+                    data-cb-plan-id="team-plan" data-cb-addons_id_0="saas-escrow-team-plan" href="javascript:void(0)">
                     {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -366,31 +388,31 @@
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-uk" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-uk" data-cb-addons_id_0="saas-escrow-team-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-in" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-in" data-cb-addons_id_0="saas-escrow-team-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-au" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-au" data-cb-addons_id_0="saas-escrow-team-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-sg" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-sg" data-cb-addons_id_0="saas-escrow-team-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-rsa" data-cb-addons_id_0="saas-escrow-team-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-ch" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-ch" data-cb-addons_id_0="saas-escrow-team-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="team-plan-ca" href="javascript:void(0)">
+                      data-cb-plan-id="team-plan-ca" data-cb-addons_id_0="saas-escrow-team-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -410,12 +432,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="business-monthly"><span>$</span> 449</p>
+                      <p class="plan__amount mt-0" id="business-monthly"><span>$</span>449</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -425,7 +447,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -439,38 +461,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('business-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 business-monthly-saas"><span>$</span> 249</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 business-monthly-saas"><span>$</span>249</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -480,7 +487,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -490,18 +497,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                  <div class="w-100 my-3 business-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly mb-0 fw-400">$499</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 business-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly-saas2 mb-0 fw-400">$698</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="business-plan-software btn-disabled d-none">
@@ -544,7 +577,7 @@
                   </div>
                   <div class="business-plan-saas btn-disabled">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan" data-cb-addons_id_0="saas-escrow-business-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -552,31 +585,31 @@
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-uk" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-uk" data-cb-addons_id_0="saas-escrow-business-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-in" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-in" data-cb-addons_id_0="saas-escrow-business-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-au" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-au" data-cb-addons_id_0="saas-escrow-business-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-sg" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-sg" data-cb-addons_id_0="saas-escrow-business-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-rsa" data-cb-addons_id_0="saas-escrow-business-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-ch" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-ch" data-cb-addons_id_0="saas-escrow-business-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="business-plan-ca" href="javascript:void(0)">
+                      data-cb-plan-id="business-plan-ca" data-cb-addons_id_0="saas-escrow-business-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -593,12 +626,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="enterprise-monthly"><span>$</span> 1,499</p>
+                      <p class="plan__amount mt-0" id="enterprise-monthly"><span>$</span>1,499</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -608,7 +641,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -622,38 +655,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-saas')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span> 499</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span>499</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>5 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -663,7 +681,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -673,18 +691,44 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                  <div class="w-100 my-3 enterprise-plan-software d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly mb-0 fw-400">$1,499</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 enterprise-plan-saas btn-disabled">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 fw-400">$1,998</p>&nbsp;
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="enterprise-plan-software btn-disabled d-none">
@@ -727,7 +771,7 @@
                   </div>
                   <div class="enterprise-plan-saas btn-disabled">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan" data-cb-addons_id_0="saas-escrow-enterprise-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -735,31 +779,31 @@
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-uk" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-uk" data-cb-addons_id_0="saas-escrow-enterprise-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-in" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-in" data-cb-addons_id_0="saas-escrow-enterprise-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-au" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-au" data-cb-addons_id_0="saas-escrow-enterprise-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-sg" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-sg" data-cb-addons_id_0="saas-escrow-enterprise-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-rsa" data-cb-addons_id_0="saas-escrow-enterprise-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-ch" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-ch" data-cb-addons_id_0="saas-escrow-enterprise-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="enterprise-plan-ca" href="javascript:void(0)">
+                      data-cb-plan-id="enterprise-plan-ca" data-cb-addons_id_0="saas-escrow-enterprise-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -780,12 +824,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="developer-yearly"><span>$</span> 89</p>
+                      <p class="plan__amount mt-0" id="developer-yearly"><span>$</span>89</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 2 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -795,7 +839,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -809,38 +853,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('developer-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span> 99</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span>99</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>1 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -850,7 +879,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -860,18 +889,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
+                  <div class="w-100 my-3 developer-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly mb-0 text-line-through fw-400">$99</p>&nbsp;
+                          <p class="plan__fee-amount developer-yearly mb-0">$89</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 developer-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount developer-monthly-saas2 mb-0 text-line-through fw-400">$198</p>&nbsp;
+                        <p class="plan__fee-amount developer-yearly-saas2 mb-0">$188</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="developer-plan-software2 btn-disabled d-none">
@@ -914,7 +971,7 @@
                   </div>
                   <div class="developer-plan-saas2 btn-disabled">
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual" data-cb-addons_id_0="saas-escrow-developer-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout"
@@ -922,31 +979,31 @@
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-uk" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-in" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-au" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-sg" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-rsa" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-ch" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout"
-                      data-cb-plan-id="developer-plan-annual-ca" href="javascript:void(0)">
+                      data-cb-plan-id="developer-plan-annual-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -963,12 +1020,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="team-yearly"><span>$</span> 225</p>
+                      <p class="plan__amount mt-0" id="team-yearly"><span>$</span>225</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 5 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -978,7 +1035,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -992,38 +1049,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('team-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 team-monthly-saas"><span>$</span> 149</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 team-monthly-saas"><span>$</span>149</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">2 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>2 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1033,7 +1075,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>6 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1043,18 +1085,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
+                  <div class="w-100 my-3 team-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly mb-0 text-line-through fw-400">$249</p>&nbsp;
+                          <p class="plan__fee-amount team-yearly mb-0">$225</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 team-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount team-monthly-saas2 mb-0 text-line-through fw-400">$398</p>&nbsp;
+                        <p class="plan__fee-amount team-yearly-saas2 mb-0">$374</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   
@@ -1088,31 +1158,31 @@
                     </a>
                   </div>
                   <div class="team-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="team-plan-annual" data-cb-addons_id_0="saas-escrow-team-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-eu" data-cb-addons_id_0="saas-escrow-team-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-uk" data-cb-addons_id_0="saas-escrow-team-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-in" data-cb-addons_id_0="saas-escrow-team-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-au" data-cb-addons_id_0="saas-escrow-team-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-sg" data-cb-addons_id_0="saas-escrow-team-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-team-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ch" data-cb-addons_id_0="saas-escrow-team-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="team-plan-annual-ca" data-cb-addons_id_0="saas-escrow-team-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -1132,12 +1202,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="business-yearly"><span>$</span> 399</p>
+                      <p class="plan__amount mt-0" id="business-yearly"><span>$</span>399</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 10 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1147,7 +1217,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1161,38 +1231,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('business-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 business-monthly-saas"><span>$</span> 249</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 business-monthly-saas"><span>$</span>249</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">10 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">3 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>3 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1202,7 +1257,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>15 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1212,18 +1267,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
+                  <div class="w-100 my-3 business-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly mb-0 text-line-through fw-400">$449</p>&nbsp;
+                          <p class="plan__fee-amount business-yearly mb-0">$399</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 business-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount business-monthly-saas2 mb-0 text-line-through fw-400">$698</p>&nbsp;
+                        <p class="plan__fee-amount business-yearly-saas2 mb-0">$648</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="business-plan-software2 btn-disabled d-none">
@@ -1256,31 +1339,31 @@
                     </a>
                   </div>
                   <div class="business-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="business-plan-annual" data-cb-addons_id_0="saas-escrow-business-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-eu" data-cb-addons_id_0="saas-escrow-business-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-uk" data-cb-addons_id_0="saas-escrow-business-plan-(gbp)"  href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-in" data-cb-addons_id_0="saas-escrow-business-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-au" data-cb-addons_id_0="saas-escrow-business-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-sg" data-cb-addons_id_0="saas-escrow-business-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-business-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ch" data-cb-addons_id_0="saas-escrow-business-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="business-plan-annual-ca" data-cb-addons_id_0="saas-escrow-business-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -1297,12 +1380,12 @@
                     </div>
                     <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0" id="enterprise-yearly"><span>$</span> 1,349</p>
+                      <p class="plan__amount mt-0" id="enterprise-yearly"><span>$</span>1,349</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 25 {{ site.data[page.lang]['pricing']['escrow_agreements']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
@@ -1312,7 +1395,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
+                          class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i> 75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
@@ -1326,38 +1409,23 @@
                     <div class="d-flex align-items-center">
                       <input type="radio" name="radio" onclick="showBtn('enterprise-plan-saas2')" />
                       <p class="plan__subtitle text-secondary">SaaS Escrow</p>
+                      <div class="plan__add-on">Add-on</div>
                     </div>
                     <div class="plan__badge-saas px-2">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}
-                      <img class="mx-1" src="/images/pricing-page/circle-plus.svg" alt="Plus Icon" />
+                      <img class="mx-1" src="/images/pricing-page/circle-plus2.svg" alt="Plus Icon" />
                       <span class="text-secondary">{{ site.data[page.lang]['saas_escrow']['ready_for_continuity'] }}</span>
                     </div>
                     <div class="d-flex align-items-center">
-                      <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span> 499</p>
+                      <i class="fa fa-plus fa-sm"></i>&nbsp
+                      <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span>499</p>
                       <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                     </div>
                     <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing']['escrow_agreements']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing']['the_number_of_escrow'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
+                      <p class="plan__text-tooltip"><span class="tooltip-text"><i class="fa fa-check fa-sm fw-400 text-bondi-blue"></i>&nbsp {{ site.data[page.lang]['pricing_plan']['all_software_escrow']}}</span></p>
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">75 {{ site.data[page.lang]['pricing_plan']['asset_deposit']
-                          }}</span></p>
-                      <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_depositing'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-2 pricing-info-icon"></i>
-                      </div>
-                    </div>
-                    <div class="plan__content-tooltip">
-                      <p class="plan__text-tooltip"><span
-                          class="tooltip-text">5 {{ site.data[page.lang]['pricing_plan']['hosting_environments']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>5 {{ site.data[page.lang]['pricing_plan']['hosting_environment']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_cloud'] }}"
@@ -1367,7 +1435,7 @@
                     </div>
                     <div class="plan__content-tooltip">
                       <p class="plan__text-tooltip"><span
-                          class="tooltip-text">25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
+                          class="tooltip-text"><i class="fa fa-plus fa-sm fw-400 text-secondary mr-2"></i>25 {{ site.data[page.lang]['pricing_plan']['3rd_party']
                           }}</span></p>
                       <div class="d-flex" data-html="true"
                         data-tooltip="{{ site.data[page.lang]['pricing_plan']['the_number_of_3rd'] }}"
@@ -1377,18 +1445,46 @@
                     </div>
                   </label>
                   <div class="plan__devider mx-auto"></div>
-                  <div class="w-100 my-3">
-                    <p class="plan__period text-capitalize">{{ site.data[page.lang]['pricing_plan']['billed_annually'] }}</p>
+                  <div class="w-100 my-3 enterprise-plan-software2 d-none">
                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}:</p>
-                      <div class="d-flex mr-3">
-                        <p class="plan__fee-amount setup-fee mb-0">$ 249</p>
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly mb-0 text-line-through fw-400">$1,499</p>&nbsp;
+                          <p class="plan__fee-amount enterprise-yearly mb-0">$1,349</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
                         <div class="d-flex" data-html="true"
-                        data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                        data-tooltip-position="top">
-                        <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                    </div>
+                  </div>
+                  <div class="w-100 my-3 enterprise-plan-saas2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 text-line-through fw-400">$1,998</p>&nbsp;
+                        <p class="plan__fee-amount enterprise-yearly-saas2 mb-0">$1,848</p>
+                        <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                       </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
+                      </div>
+                      <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
                     </div>
                   </div>
                   <div class="enterprise-plan-software2 btn-disabled d-none">
@@ -1421,31 +1517,31 @@
                     </a>
                   </div>
                   <div class="enterprise-plan-saas2 btn-disabled">
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-us" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual" data-cb-addons_id_0="saas-escrow-enterprise-plan" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                     <a class="button btn-bondi-blue3 mx-auto d-none plan-eu" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-eu" data-cb-addons_id_0="saas-escrow-enterprise-plan-(eur)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-uk" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-uk" data-cb-addons_id_0="saas-escrow-enterprise-plan-(gbp)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-in" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-in" data-cb-addons_id_0="saas-escrow-enterprise-plan-(inr)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-au" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-au" data-cb-addons_id_0="saas-escrow-enterprise-plan-(aud)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-sg" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-sg" data-cb-addons_id_0="saas-escrow-enterprise-plan-(sgd)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-rsa" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-rsa" data-cb-addons_id_0="saas-escrow-enterprise-plan-(zar)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ch" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ch" data-cb-addons_id_0="saas-escrow-enterprise-plan-(chf)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
-                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" href="javascript:void(0)">
+                    <a class="button btn-bondi-blue3 mx-auto d-none plan-ca" data-cb-type="checkout" data-cb-plan-id="enterprise-plan-annual-ca" data-cb-addons_id_0="saas-escrow-enterprise-plan-(cad)" href="javascript:void(0)">
                       {{ site.data[page.lang]['pricing']['get_started'] }}
                     </a>
                   </div>
@@ -1604,19 +1700,32 @@
               $('.team-monthly-saas').text('€149');
               $('.business-monthly-saas').text('€249');
               $('.enterprise-monthly-saas').text('€499');
+              $('.developer-monthly-saas2').text('€198');
+              $('.team-monthly-saas2').text('€398');
+              $('.business-monthly-saas2').text('€698');
+              $('.developer-yearly-saas2').text('€188');
+              $('.team-yearly-saas2').text('€374');
+              $('.business-yearly-saas2').text('€648');
+              
               if (pathname.includes('/fr/')) {
                 $('#enterprise-monthly').text('€1499');
                 $('.enterprise-monthly').text('€1499');
                 $('#enterprise-yearly').text('€1349');
+                $('.enterprise-yearly').text('€1349');
                 $('.verification-advanced').text('€2495');
                 $('.verification-complete').text('€3995');
+                $('.enterprise-monthly-saas2').text('€1998');
+                $('.enterprise-yearly-saas2').text('€1848');
               }
               else {
                 $('#enterprise-monthly').text('€1,499');
                 $('.enterprise-monthly').text('€1,499');
                 $('#enterprise-yearly').text('€1,349');
+                $('.enterprise-yearly').text('€1,349');
                 $('.verification-advanced').text('€2,495');
                 $('.verification-complete').text('€3,995');
+                $('.enterprise-monthly-saas2').text('€1,998');
+                $('.enterprise-yearly-saas2').text('€1,848');
               }
 
               $('.developer-monthly').text('€99');
@@ -1626,6 +1735,10 @@
               $('#developer-yearly').text('€89');
               $('#team-yearly').text('€225');
               $('#business-yearly').text('€399');
+
+              $('.developer-yearly').text('€89');
+              $('.team-yearly').text('€225');
+              $('.business-yearly').text('€399');
 
               $('.increased-repository').text('€19');
               $('.increased-storage').text('€5');
@@ -1659,6 +1772,10 @@
               $('#team-yearly').text('£175');
               $('#business-yearly').text('£299');
               $('#enterprise-yearly').text('£999');
+              $('.developer-yearly').text('£69');
+              $('.team-yearly').text('£175');
+              $('.business-yearly').text('£299');
+              $('.enterprise-yearly').text('£999');
               $('.increased-repository').text('£14');
               $('.increased-storage').text('£4');
               $('.storage-selection').text('£7');
@@ -1671,6 +1788,16 @@
               $('.team-monthly-saas').text('£119');
               $('.business-monthly-saas').text('£199');
               $('.enterprise-monthly-saas').text('£399');
+
+              $('.developer-monthly-saas2').text('£158');
+              $('.team-monthly-saas2').text('£318');
+              $('.business-monthly-saas2').text('£548');
+              $('.enterprise-monthly-saas2').text('£1,498');
+              $('.developer-yearly-saas2').text('£148');
+              $('.team-yearly-saas2').text('£294');
+              $('.business-yearly-saas2').text('£498');
+              $('.enterprise-yearly-saas2').text('£1,398');
+
               $('.plan-uk').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1696,6 +1823,10 @@
               $('#team-yearly').text('₹15,995');
               $('#business-yearly').text('₹29,995');
               $('#enterprise-yearly').text('₹99,995');
+              $('.developer-yearly').text('₹6,495');
+              $('.team-yearly').text('₹15,995');
+              $('.business-yearly').text('₹29,995');
+              $('.enterprise-yearly').text('₹99,995');
               $('.increased-repository').text('₹1,415');
               $('.increased-storage').text('₹375');
               $('.storage-selection').text('₹670');
@@ -1708,6 +1839,16 @@
               $('.team-monthly-saas').text('₹11,999');
               $('.business-monthly-saas').text('₹19,999');
               $('.enterprise-monthly-saas').text('₹39,999');
+
+              $('.developer-monthly-saas2').text('₹14,994');
+              $('.team-monthly-saas2').text('₹29,994');
+              $('.business-monthly-saas2').text('₹52,994');
+              $('.enterprise-monthly-saas2').text('₹149,994');
+              $('.developer-yearly-saas2').text('₹14,494');
+              $('.team-yearly-saas2').text('₹27,994');
+              $('.business-yearly-saas2').text('₹49,994');
+              $('.enterprise-yearly-saas2').text('₹139,994');
+
               $('.plan-in').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1733,6 +1874,10 @@
               $('#team-yearly').text('A$249');
               $('#business-yearly').text('A$549');
               $('#enterprise-yearly').text('A$1,699');
+              $('.developer-yearly').text('A$109');
+              $('.team-yearly').text('A$249');
+              $('.business-yearly').text('A$549');
+              $('.enterprise-yearly').text('A$1,699');
               $('.increased-repository').text('A$25');
               $('.increased-storage').text('A$7');
               $('.storage-selection').text('A$12');
@@ -1745,6 +1890,16 @@
               $('.team-monthly-saas').text('A$209');
               $('.business-monthly-saas').text('A$359');
               $('.enterprise-monthly-saas').text('A$719');
+
+              $('.developer-monthly-saas2').text('A$258');
+              $('.team-monthly-saas2').text('A$508');
+              $('.business-monthly-saas2').text('A$958');
+              $('.enterprise-monthly-saas2').text('A$2,618');
+              $('.developer-yearly-saas2').text('A$248');
+              $('.team-yearly-saas2').text('A$458');
+              $('.business-yearly-saas2').text('A$908');
+              $('.enterprise-yearly-saas2').text('A$2,418');
+
               $('.plan-au').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1771,6 +1926,10 @@
               $('#team-yearly').text('$275');
               $('#business-yearly').text('$549');
               $('#enterprise-yearly').text('$1,899');
+              $('.developer-yearly').text('$109');
+              $('.team-yearly').text('$275');
+              $('.business-yearly').text('$549');
+              $('.enterprise-yearly').text('$1,899');
               $('.increased-repository').text('$25');
               $('.increased-storage').text('$7');
               $('.storage-selection').text('$12');
@@ -1783,6 +1942,16 @@
               $('.team-monthly-saas').text('$199');
               $('.business-monthly-saas').text('$329');
               $('.enterprise-monthly-saas').text('$529');
+
+              $('.developer-monthly-saas2').text('$248');
+              $('.team-monthly-saas2').text('$498');
+              $('.business-monthly-saas2').text('$928');
+              $('.enterprise-monthly-saas2').text('$2,428');
+              $('.developer-yearly-saas2').text('$238');
+              $('.team-yearly-saas2').text('$474');
+              $('.business-yearly-saas2').text('$878');
+              $('.enterprise-yearly-saas2').text('$2,428');
+
               $('.plan-sg').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1809,6 +1978,10 @@
               $('#team-yearly').text('R2,950');
               $('#business-yearly').text('R5,490');
               $('#enterprise-yearly').text('R19,995');
+              $('.developer-yearly').text('R1,250');
+              $('.team-yearly').text('R2,950');
+              $('.business-yearly').text('R5,490');
+              $('.enterprise-yearly').text('R19,995');
               $('.increased-repository').text('R270');
               $('.increased-storage').text('R70');
               $('.storage-selection').text('R130');
@@ -1821,6 +1994,16 @@
               $('.team-monthly-saas').text('R2,499');
               $('.business-monthly-saas').text('R4,299');
               $('.enterprise-monthly-saas').text('R8,499');
+
+              $('.developer-monthly-saas2').text('R3,094');
+              $('.team-monthly-saas2').text('R5,844');
+              $('.business-monthly-saas2').text('R10,294');
+              $('.enterprise-monthly-saas2').text('R30,494');
+              $('.developer-yearly-saas2').text('R2,949');
+              $('.team-yearly-saas2').text('R5,449');
+              $('.business-yearly-saas2').text('R9,789');
+              $('.enterprise-yearly-saas2').text('R28,494');
+
               $('.plan-rsa').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1847,6 +2030,10 @@
               $('#team-yearly').text('CHF199');
               $('#business-yearly').text('CHF349');
               $('#enterprise-yearly').text('CHF1,199');
+              $('.developer-yearly').text('CHF79');
+              $('.team-yearly').text('CHF199');
+              $('.business-yearly').text('CHF349');
+              $('.enterprise-yearly').text('CHF1,199');
               $('.increased-repository').text('CHF18');
               $('.increased-storage').text('CHF5');
               $('.storage-selection').text('CHF8');
@@ -1859,6 +2046,16 @@
               $('.team-monthly-saas').text('CHF139');
               $('.business-monthly-saas').text('CHF229');
               $('.enterprise-monthly-saas').text('CHF459');
+
+              $('.developer-monthly-saas2').text('CHF178');
+              $('.team-monthly-saas2').text('CHF364');
+              $('.business-monthly-saas2').text('CHF628');
+              $('.enterprise-monthly-saas2').text('CHF1,808');
+              $('.developer-yearly-saas2').text('CHF168');
+              $('.team-yearly-saas2').text('CHF338');
+              $('.business-yearly-saas2').text('CHF578');
+              $('.enterprise-yearly-saas2').text('CHF1,658');
+
               $('.plan-ch').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
@@ -1901,6 +2098,25 @@
               $('.team-monthly-saas').text('CAD199');
               $('.business-monthly-saas').text('CAD329');
               $('.enterprise-monthly-saas').text('CAD669');
+
+              $('.developer-monthly-saas2').text('CAD258');
+              $('.team-monthly-saas2').text('CAD498');
+              $('.business-monthly-saas2').text('CAD828');
+              
+              $('.developer-yearly-saas2').text('CAD248');
+              $('.team-yearly-saas2').text('CAD474');
+              $('.business-yearly-saas2').text('CAD778');
+
+              if (pathname.includes('/fr/')) {
+                $('.enterprise-monthly-saas2').text('CAD2518');
+                $('.enterprise-yearly-saas2').text('CAD2318');
+              }
+              else {
+                $('.enterprise-monthly-saas2').text('CAD2,518');
+                $('.enterprise-yearly-saas2').text('CAD2,318');
+              }
+            
+
               $('.plan-ca').removeClass('d-none');
               $('.plan-us').remove();
               $('.plan-eu').remove();
