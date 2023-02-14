@@ -32,7 +32,7 @@
                 </a>
                 <div>
                   <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href" href="pricing.html">{{
+                  <a class="header__link pricing-href" href="how-much-does-software-escrow-cost.html">{{
                     site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
                       aria-hidden="true"></i></a>
                 </div>
@@ -89,18 +89,18 @@
                 <div id="test-list" class="w-100">
                   <div class="mw-100 mx-auto d-flex flex-column align-items-center mt-5">
                     <ul class="list section-medium pt-5">
-                      {% for competitor in site.competitors %}
-                      <li class="competitor-name" data-competitor="{{ competitor.integration_name }}"><a
-                          class="service__box2 page-link mt-3 mx-auto px-4 href="" data-name="{{ competitor.integration_name }}">
-                          <span class=" type d-none">{{ competitor.integration_type }}</span>
+                      {% for comparison in site.comparison %}
+                      <li class="competitor-name" data-competitor="{{ comparison.integration_name }}"><a
+                          class="service__box2 page-link mt-3 mx-auto px-4 href="" data-name="{{ comparison.integration_name }}">
+                          <span class=" type d-none">{{ comparison.integration_type }}</span>
                           <div class="d-flex align-items-center justify-content-between w-100">
                             <span class="service__title2 name text-align-start">Codekeeper <br><span>vs.</span> {{
-                              competitor.integration_name }}</span>
+                              comparison.integration_name }}</span>
                             <img class="ml-2" src="/images/compare-page/arrow-right-default.svg"
                               alt="Arrow Right Icon" />
                           </div>
 
-                          <p class="d-none">{{ competitor.integration_type }}</p>
+                          <p class="d-none">{{ comparison.integration_type }}</p>
                         </a></li>
                       {% endfor %}
                     </ul>
@@ -128,7 +128,7 @@
                 </a>
                 <div>
                   <p class="header__text text-white">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href text-yellow" href="pricing.html">{{
+                  <a class="header__link pricing-href text-yellow" href="how-much-does-software-escrow-cost.html">{{
                     site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
                       aria-hidden="true"></i></a>
                 </div>
@@ -252,10 +252,10 @@
 
       if (serviceUrl.match(/^[a-z\.]+ [a-z]+/i)) {
 
-        $(this).attr('href', 'competitors/' + serviceUrl.split(' ').join("_") + '.html');
+        $(this).attr('href', 'comparison/' + serviceUrl.split(' ').join("_") + '.html');
       }
       else {
-        $(this).attr('href', 'competitors/' + serviceUrl + '.html');
+        $(this).attr('href', 'comparison/' + serviceUrl + '.html');
       }
     });
   </script>
