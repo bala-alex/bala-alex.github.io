@@ -53,7 +53,7 @@
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="what-is-software-escrow.html">Custodia de software</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">Custodia de SaaS</a>
+          <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow-services.html">Custodia de SaaS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-margin escrow-agreement-href text-transform-capitalize" href="software-escrow-agreement.html">Acuerdos de custodia</a>
@@ -77,7 +77,7 @@
         </div>  -->
 
         <li class="nav-item">
-          <a class="nav-link nav-margin resources-href" href="resources.html">Recursos</a>
+          <a class="nav-link nav-margin resources-href" href="software-escrow-resources.html">Recursos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-margin pricing-href" href="how-much-does-software-escrow-cost.html">TARIFAS</a>
@@ -347,7 +347,7 @@ document.addEventListener("click", closeAllSelect);
       $('.pricing-href').attr('href', 'cuánto-cuesta-custodia-software.html')
       $('.repository-backups-pricing-href').attr('href', 'tarifas-copias-seguridad-repositorio.html')
       $('.resources-href').attr('href', 'recursos-custodia-software.html')
-      $('.saas-escrow-href').attr('href', 'custodia-saas.html')
+      $('.saas-escrow-href').attr('href', 'servicios-custodia-saas.html')
       $('.sample-agreement-href').attr('href', 'acuerdo-muestra.html')
       $('.secure-guide-href').attr('href', 'guía-seguro.html')
       $('.security-href').attr('href', 'seguridad-custodia-código-fuente.html')
@@ -404,7 +404,7 @@ document.addEventListener("click", closeAllSelect);
       $('.pricing-href').attr('href', 'was-kostet-software-escrow.html')
       $('.repository-backups-pricing-href').attr('href', 'repository-backups-preise.html')
       $('.resources-href').attr('href', 'software-escrow-ressourcen.html')
-      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.saas-escrow-href').attr('href', 'saas-escrow-dienstleistungen.html')
       $('.sample-agreement-href').attr('href', 'mustervertrag.html')
       $('.secure-guide-href').attr('href', 'sicherer-leitfaden.html')
       $('.security-href').attr('href', 'quellcode-escrow-sicherheit.html')
@@ -461,7 +461,7 @@ document.addEventListener("click", closeAllSelect);
       $('.pricing-href').attr('href', 'hoe-veel-kost-software-escrow.html')
       $('.repository-backups-pricing-href').attr('href', 'repository-backups-prijzen.html')
       $('.resources-href').attr('href', 'software-escrow-informatiebronnen.html')
-      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.saas-escrow-href').attr('href', 'saas-escrow-services.html')
       $('.sample-agreement-href').attr('href', 'voorbeeld-overeenkomst.html')
       $('.secure-guide-href').attr('href', 'beveilig-gids.html')
       $('.security-href').attr('href', 'source-code-escrow-beveiliging.html')
@@ -517,7 +517,7 @@ document.addEventListener("click", closeAllSelect);
       $('.pricing-features-href').attr('href', 'caracteristici-tarife.html')
       $('.pricing-href').attr('href', 'cât-cost-software-escrow.html')
       $('.resources-href').attr('href', 'resurse-software-escrow.html')
-      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.saas-escrow-href').attr('href', 'servicii-saas-escrow.html')
       $('.sample-agreement-href').attr('href', 'exemplu-de-acord.html')
       $('.secure-guide-href').attr('href', 'ghid-securizat.html')
       $('.security-href').attr('href', 'securitate-cod-sursă-escrow.html')
@@ -573,7 +573,7 @@ document.addEventListener("click", closeAllSelect);
         $('.pricing-features-href').attr('href', 'fonctionnalites-des-tarifs.html')
         $('.pricing-href').attr('href', 'combien-coute-l-entiercement-de-logiciel.html')
         $('.resources-href').attr('href', 'ressources-d-entiercement-de-logiciel.html')
-        $('.saas-escrow-href').attr('href', 'entiercement-de-saas.html')
+        $('.saas-escrow-href').attr('href', 'services-d-entiercement-de-saas.html')
         $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
         $('.secure-guide-href').attr('href', 'guide-de-securite.html')
         $('.security-href').attr('href', 'securite-de-l-entiercement-de-code-source.html')
@@ -978,27 +978,27 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Aflați totul despre Software Escrow folosind ghidurile și resursele noastre gratuite | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Citiți despre procesul de configurare a unui escrow, protocoalele de securitate Codekeeper și alte informații de fundal ale codului sursă escrow.";
   }
-  else if (!(pathname.includes('/nl')) && !(pathname.includes('/de')) && !(pathname.includes('/ro')) && pathname.includes('/saas-escrow.html')) {
+  else if (!(pathname.includes('/nl')) && pathname.includes('/saas-escrow-services.html')) {
     document.title = "SaaS Escrow: Ready for Full Continuity | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper SaaS Escrow offers next level protection for cloud-native applications by providing full continuity in case of 3rd party default";
   }
-  else if (pathname.includes('/es/custodia-saas.html')) {
+  else if (pathname.includes('/es/servicios-custodia-saas.html')) {
     document.title = "Custodia de SaaS: listo para la continuidad total | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "La custodia de SaaS de Codekeeper ofrece una protección avanzada para sus aplicaciones nativas de la nube al proporcionar una continuidad total en caso de impago de terceros.";
   }
-  else if (pathname.includes('/de/saas-escrow.html')) {
+  else if (pathname.includes('/de/saas-escrow-dienstleistungen.html')) {
     document.title = "SaaS-Escrow: Bereit für vollständige Kontinuität | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Der SaaS-Escrow von Codekeeper bietet Ihnen einen noch stärkeren Schutz für Cloud-basierte Anwendungen durch die vollständige Kontinuität bei einem Drittanbieter-Versagen.";
   }
-  else if (pathname.includes('/nl/saas-escrow.html')) {
+  else if (pathname.includes('/nl/saas-escrow-services.html')) {
     document.title = "SaaS Escrow: Klaar voor volledige continuïteit | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper SaaS Escrow biedt een extra laag bescherming voor cloud-native applicaties door volledige continuïteit te bieden wanneer een derde partij in gebreke is gesteld.";
   }
-  else if (pathname.includes('/fr/entiercement-de-saas.html')) {
+  else if (pathname.includes('/fr/services-d-entiercement-de-saas.html')) {
     document.title = "Entiercement de SaaS : préparation à la continuité totale | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "L’entiercement de SaaS de Codekeeper offre une protection de niveau supérieur pour les applications natives pour le cloud en assurant une continuité totale en cas de défaillance d’un tiers";
   }
-  else if (pathname.includes('/ro/saas-escrow.html')) {
+  else if (pathname.includes('/ro/servicii-saas-escrow.html')) {
     document.title = "Escrow SaaS: Gata pentru continuitate totală | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper SaaS Escrow oferă protecție la nivelul următor pentru aplicațiile native din cloud, oferind continuitate deplină în cazul implicite de la terți";
   }
