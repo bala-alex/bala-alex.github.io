@@ -978,27 +978,27 @@ document.addEventListener("click", closeAllSelect);
 <script>
   var pathname = location.pathname;
 
-  if (pathname.includes('/about-us.html')) {
+  if (!(pathname.includes('/de')) && !(pathname.includes('/nl')) && !(pathname.includes('/ro')) &&pathname.includes('/software-escrow-agent.html')) {
     document.title = "About Us - The Story of Codekeeper's Journey to Modernize Software Escrow  | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper has been innovating since 2014 in the software escrow market, making it easy for software developers and software clients to use software escrow to eliminate 3rd paryt risk. Read all about our journey here.";
   }
-  else if (pathname.includes('/es/acerca-de-nosotros.html')) {
+  else if (pathname.includes('/es/agente-custodia-software.html')) {
     document.title = "Acerca de nosotros - El viaje de Codekeeper para modernizar la custodia de software | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper ha estado innovando en el mercado de la custodia de software desde 2014, facilitando a los desarrolladores y clientes de software el uso de la custodia de software para eliminar el riesgo de terceros. Léalo todo sobre nuestro trayecto aquí.";
   }
-  else if (pathname.includes('/de/%C3%BCber-uns.html')) {
+  else if (pathname.includes('/de/software-escrow-agent.html')) {
     document.title = "Über uns - Die Geschichte von Codekeepers Reise zur Modernisierung von Software-Escrows | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper stellt seit 2014 seine Innovationskraft auf dem Software-Escrow-Markt unter Beweis und macht die Nutzung von Software-Escrows zur Beseitigung von Drittanbieter-Risiken für Softwareentwickler und Softwarekunden einfacher. Lesen Sie hier alles über unsere Reise.";
   }
-  else if (pathname.includes('/nl/over-ons.html')) {
+  else if (pathname.includes('/nl/software-escrow-agent.html')) {
     document.title = "Over Ons - Het verhaal van Codekeeper over het moderniseren van Software Esrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper innoveert sinds 2014 op de markt voor software escrow door het voor ontwikkelaars en softwareklanten gemakkelijk te maken om software escrow te gebruiken en daarbij risico's van derden uit te sluiten. Lees alles over onze reis hier.";
   }
-  else if (pathname.includes('/fr/%C3%A0-propos-de-nous.html')) {
+  else if (pathname.includes('/fr/agent-d-entiercement-de-logiciel.html')) {
     document.title = "À propos de nous - La quête de Codekeeper pour moderniser l’entiercement de logiciel | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper innove depuis 2014 sur le marché de l’entiercement de logiciel en facilitant son utilisation par les développeurs et les clients de logiciels pour éliminer les risques tiers. Lisez notre histoire ici.";
   }
-  else if (pathname.includes('/ro/despre-noi.html')) {
+  else if (pathname.includes('/ro/software-escrow-agent.html')) {
     document.title = "Despre noi - Povestea călătoriei Codekeeper pentru modernizarea software-ului escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper inovează din 2014 pe piața de escrow software, facilitând dezvoltatorilor de software și clienților software să utilizeze escrow software pentru a elimina riscul terților. Citiți totul despre călătoria noastră aici.";
   }
@@ -1026,27 +1026,27 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Codekeeper | Platformă online ușoară pentru contracte de escrow software, escrow SaaS și acorduri de escrow cod sursă"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă soluții software de ultimă generație, pentru a elimina riscul terților din operațiunile dvs. de afaceri.";
   }
-  else if (pathname.includes('/book-a-demo.html')) {
+  else if (!(pathname.includes('/de')) && !(pathname.includes('/nl')) && !(pathname.includes('/ro')) && pathname.includes('/software-escrow-demo.html')) {
     document.title = "Book a Demo with a Software Escrow Expert | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Learn all about setting up a software escrow that fits your situation. Our experts will explain all steps in the process, including the legal aspects of the escrow and the technical setup. Don't worry, we make it easy!";
   }
-  else if (pathname.includes('/es/reservar-una-demostraci%C3%B3n.html')) {
+  else if (pathname.includes('/es/demostraci%C3%B3n-custodia-software.html')) {
     document.title = "Reserve una demostración con un experto en custodia de software | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Apreda cómo establecer un depósito en custodia de software que se adapte a su situación. Nuestros expertos le explicarán todos los pasos del proceso, incluyendo los aspectos legales de la custodia y la configuración técnica. No se preocupe, ¡lo hacemos fácil!";
   }
-  else if (pathname.includes('/de/demo-buchen.html')) {
+  else if (pathname.includes('/de/software-escrow-demo.html')) {
     document.title = "Buchen Sie eine Demo mit einem Software-Escrow-Experten | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Lernen Sie alles über die Einrichtung eines Software-Escrows, der zu Ihrer Situation passt. Unsere Experten werden Ihnen alle Schritte des Prozesses, wozu auch die rechtlichen Aspekte und die technische Einrichtung des Escrows gehören, erklären. Keine Sorge, wir machen es Ihnen einfach!";
   }
-  else if (pathname.includes('/nl/boek-een-demo.html')) {
+  else if (pathname.includes('/nl/software-escrow-demo.html')) {
     document.title = "Boek een demo met een Expert in Software Escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Leer alles over het opstellen van een software escrow die past bij uw situatie. Onze experts zullen alle stappen in het proces uitleggen, inclusief de juridische aspecten van de escrow en de technische setup. Geen zorgen, we maken het gemakkelijk!";
   }
-  else if (pathname.includes('/fr/reserver-une-demo.html')) {
+  else if (pathname.includes('/fr/demo-d-entiercement-de-logiciel.html')) {
     document.title = "Réservez une démo avec un expert en entiercement de logiciel | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Découvrez comment mettre en place un entiercement de logiciel adapté à votre situation. Nos experts vous expliqueront toutes les étapes du processus, et notamment ses aspects juridiques et sa configuration technique. Ne vous inquiétez pas, nous vous accompagnons de A à Z !";
   }
-  else if (pathname.includes('/ro/rezerva-o-demonstra%C8%9Bie.html')) {
+  else if (pathname.includes('/ro/software-escrow-demo.html')) {
     document.title = "Rezervați o demonstrație cu un expert în software escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Aflați totul despre configurarea unui escrow software care se potrivește situației dvs. Experții noștri vor explica toți pașii procesului, inclusiv aspectele legale ale escrow și configurația tehnică. Nu vă faceți griji, noi o facem ușor!";
   }
@@ -1098,75 +1098,75 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Obțineți un acord de escrow personalizat gratuit pentru software, un acord de escrow pentru codul sursă sau un acord de escrow SaaS | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Rugați experții Codekeeper să elaboreze gratuit un acord de escrow personalizat pentru situația dvs. unică. Fără obligații, fără card de credit necesar.";
   }
-  else if (pathname.includes('/escrow-agreement.html')) {
+  else if (pathname.includes('/software-escrow-agreement.html')) {
     document.title = "Download Free Software Escrow Agreement Templates, Source Code Escrow Agreement Templates and SaaS Escrow Agreement Templates  | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides free downloadable templates for software escrow agreements, source code escrow agreements and SaaS escrow agreement for many different business scenarios, like licensing, M&A and many others.";
   }
-  else if (pathname.includes('/es/acuerdo-custodia.html')) {
+  else if (pathname.includes('/es/acuerdo-custodia-software.html')) {
     document.title = "Descargue gratis plantillas de acuerdos de custodia de software, plantillas de acuerdos de custodia de código fuente y plantillas de acuerdos de custodia de SaaS | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper le proporciona plantillas descargables gratuitas de acuerdos de custodia de software, acuerdos de custodia de código fuente y acuerdos de custodia de SaaS para distintas situaciones empresariales, como licencias, fusiones y adquisiciones, y mucho más.";
   }
-  else if (pathname.includes('/de/escrow-vertrag.html')) {
+  else if (pathname.includes('/de/software-escrow-vereinbarung.html')) {
     document.title = "Laden Sie kostenlose Software-Escrow-Vereinbarungsvorlagen, Quellcode-Escrow-Vereinbarungsvorlagen and SaaS-Escrow-Vereinbarungsvorlagen herunter | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet kostenlose Vorlagen für Software-Escrow-Vereinbarungen, Quellcode-Escrow-Vereinbarungen und SaaS-Escrow-Vereinbarungen für viele verschiedene Geschäftsszenarien wie Lizenzierung, Fusionen & Übernahmen und viele andere zum Herunterladen an.";
   }
-  else if (pathname.includes('/nl/escrow-overeenkomst.html')) {
+  else if (pathname.includes('/nl/software-escrow-overeenkomst.html')) {
     document.title = "Download gratis Software Escrow-overeenkomst templates, Source Code Escrow-overeenkomst templates en SaaS escrow-overeenkomst templates | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt gratis templates van software escrow-overeenkomsten, source code escrow-overeenkomsten en SaaS escrow-overeenkomsten om te downloaden voor veel verschillende situaties, zoals licensing, M&A etc.";
   }
-  else if (pathname.includes('/fr/contrat-d-entiercement.html')) {
+  else if (pathname.includes('/fr/contrat-d-entiercement-de-logiciel.html')) {
     document.title = "Téléchargez gratuitement des modèles de contrat d’entiercement de logiciel, des modèles de contrat d’entiercement de code source ou des modèles de contrat d’entiercement de SaaS | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper met gratuitement à votre disposition des modèles téléchargeables de contrats d’entiercement de logiciel, de contrats d’entiercement de code source et de contrats d’entiercement de SaaS pour de nombreux scénarios commerciaux différents, comme les licences, la fusion-acquisition et bien d’autres.";
   }
-  else if (pathname.includes('/ro/acord-de-escrow.html')) {
+  else if (pathname.includes('/ro/acord-software-escrow.html')) {
     document.title = "Descărcați software gratuit Șabloane de acord de escrow, Șabloane de acord de escrow cod sursă și Șabloane de acord de escrow SaaS | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă șabloane descărcabile gratuite pentru contracte de escrow software, acorduri de escrow cod sursă și acord de escrow SaaS pentru multe scenarii de afaceri diferite, cum ar fi licențiere, fuziuni și achiziții și multe altele.";
   }
-  else if (pathname.includes('/how-it-works.html')) {
+  else if (pathname.includes('/how-does-software-escrow-work.html')) {
     document.title = "How Does Software Escrow Work? A Quick Tour Explaining the Concepts | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper is made for developers and non-developers alike. Whether you write code, handle administrative tasks, or provide legal counsel, we help you set up your escrow quickly and easily. This is how it works.";
   }
-  else if (pathname.includes('/es/c%C3%B3mo-funciona.html')) {
+  else if (pathname.includes('/es/c%C3%B3mo-funciona-custodia-c%C3%B3digo-fuente.html')) {
     document.title = "¿Cómo funciona la custodia de software? Un recorrido rápido para explicar los conceptos | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper está diseñado para desarrolladores y no desarrolladores por igual. Tanto si escribes código como si te encargas de las tareas administrativas o la asesoría legal, te ayudamos a establecer un depósito en custodia de forma rápida y sencilla. Así es como funciona.";
   }
-  else if (pathname.includes('/de/wie-es-funktioniert.html')) {
+  else if (pathname.includes('/de/wie-funktioniert-software-escrow.html')) {
     document.title = "Wie funktioniert Software-Escrow? Ein kurzer Überblick, der die Konzepte erklärt | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper ist für Entwickler und Nicht-Entwickler gleichermaßen geeignet. Egal, ob Sie einen Code schreiben, administrative Aufgaben übernehmen oder Rechtsberatungen anbieten: Wir helfen Ihnen bei der schnellen und einfachen Einrichtung Ihres Escrows. So funktioniert es.";
   }
-  else if (pathname.includes('/nl/zo-werkt-het.html')) {
+  else if (pathname.includes('/nl/hoe-werkt-software-escrow.html')) {
     document.title = "Hoe werkt Software Escrow? Een snelle introductie met uitleg van de concepten | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper is geschikt voor zowel ontwikkelaars als niet-ontwikkelaars. Of u nu code schrijft, administratieve taken uitvoert of juridisch advies geeft, wij helpen u snel en eenvoudig uw escrow op te stellen. Zo werkt het.";
   }
-  else if (pathname.includes('/fr/fonctionnement.html')) {
+  else if (pathname.includes('/fr/commennt-fonctionne-l-entiercement-de-logiciel.html')) {
     document.title = "Comment fonctionne l’entiercement de logiciel ? Aperçu des concepts | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est conçu pour les développeurs et les non-développeurs. Que vous écriviez du code, que vous vous occupiez de tâches administratives ou que vous fournissiez des conseils juridiques, nous vous aidons à mettre en place votre entiercement rapidement et facilement. Voici comment cela fonctionne.";
   }
-  else if (pathname.includes('/ro/cum-func%C8%9Bioneaz%C4%83.html')) {
+  else if (pathname.includes('/ro/cum-func%C8%9Bioneaz%C4%83-software-escrow.html')) {
     document.title = "Cum funcționează escrow software? Un tur rapid care explică conceptele | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper este creat atât pentru dezvoltatori, cât și pentru non-dezvoltatori. Indiferent dacă scrieți cod, vă ocupați de sarcini administrative sau oferiți consiliere juridică, vă ajutăm să vă configurați escrow rapid și ușor. Asa functioneaza.";
   }
-  else if (!(pathname.includes('/fr')) && pathname.includes('/integrations.html')) {
+  else if (pathname.includes('/software-escrow-deposit-integrations.html')) {
     document.title = "Automate your Software Escrow Process using more than 50 integrations | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides a library of integrations with platforms like Github, Gitlab, Bitbucket and Azure, to make syncing your deposits into the escrow easy and automatically. No coding required! ";
   }
-  else if (pathname.includes('/es/integraciones.html')) {
+  else if (pathname.includes('/es/integraciones-depósito-custodia-software.html')) {
     document.title = "Automatice su proceso de custodia de software con más de 50 integraciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper cuenta con una amplia gama de integraciones con plataformas como Github, Gitlab, Bitbucket y Azure, para que pueda sincronizar sus depósitos en custodia de forma fácil y automática. ¡Sin necesidad de programar nada!";
   }
-  else if (pathname.includes('/de/integrationen.html')) {
+  else if (pathname.includes('/de/software-escrow-hinterlegungsintegrationen.html')) {
     document.title = "Automatisieren Sie Ihren Software-Escrow-Prozess unter Verwendung von mehr als 50 Integrationen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet Ihnen eine Integrationsbibliothek mit Plattformen wie Github, Gitlab, Bitbucket und Azure an, um Ihre Hinterlegungen einfach und automatisch mit Ihrem Escrow synchronisieren zu können. Dafür ist keine Kodierung erforderlich!";
   }
-  else if (pathname.includes('/nl/integraties.html')) {
+  else if (pathname.includes('/nl/software-escrow-deponering-integraties.html')) {
     document.title = "Automatiseer uw Software Escrow proces met gebruik van meer dan 50 integraties | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt een bibliotheek van integraties met platforms zoals Github, Gitlab, Bitbucket en Azure, om uw escrow-deponeringen eenvoudig en automatisch te kunnen synchroniseren. Geen codering nodig!";
   }
-  else if (pathname.includes('/fr/integrations.html')) {
+  else if (pathname.includes('/fr/integrations-d-entiercement-de-logiciel.html')) {
     document.title = "Automatisez votre processus d’entiercement de logiciel grâce à plus de 50 intégrations | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper fournit diverses options d’intégration avec des plateformes telles que Github, Gitlab, Bitbucket et Azure, pour rendre la synchronisation de vos dépôts entiercés facile et automatique. Aucun codage requis ! ";
   }
-  else if (pathname.includes('/ro/integr%C4%83ri.html')) {
+  else if (pathname.includes('/ro/software-escrow-depozit-integr%C4%83ri.html')) {
     document.title = "Automatizați-vă procesul de escrow software folosind mai mult de 50 de integrări | Păstrătorul de coduri"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă o bibliotecă de integrări cu platforme precum Github, Gitlab, Bitbucket și Azure, pentru a facilita și automat sincronizarea depozitelor dvs. în escrow. Nu este necesară codarea!";
   }
@@ -1194,27 +1194,27 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Cel mai bun preț pentru Software Escrow și SaaS Escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă prețuri lider pe piață pentru escrow software, escrow cod sursă, escrow saas cu acorduri de escrow incluse. Fără taxe de avocat. Consultați setul nostru complet de funcții aici.";
   }
-  else if (pathname.includes('/pricing.html')) {
+  else if (pathname.includes('/how-much-does-software-escrow-cost.html')) {
     document.title = "Best Price for Software Escrow and SaaS Escrow | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides market leading pricing for software escrow, source code escrow, saas escrow with escrow agreements included. No lawyer fees. ";
   }
-  else if (pathname.includes('/es/tarifas.html')) {
+  else if (pathname.includes('/es/cu%C3%A1nto-cuesta-custodia-software.html')) {
     document.title = "Custodia de software y custodia de SaaS al mejor precio | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper ofrece precios líderes en el mercado para la custodia de software, la custodia de código fuente y la custodia de SaaS, con acuerdos de custodia incluidos. Sin honorarios de abogados. Consulte nuestra gama completa de prestaciones aquí.";
   }
-  else if (pathname.includes('/de/preise.html')) {
+  else if (pathname.includes('/de/was-kostet-software-escrow.html')) {
     document.title = "Bester Preis für Software-Escrow und SaaS-Escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet Ihnen marktführende Preise für Software-Escrow, Quellcode-Escrow und SaaS-Escrow an. Dabei sind Escrow-Vereinbarungen immer inbegriffen. Keine Anwaltskosten. Überprüfen Sie unseren vollen Funktionsumfang hier.";
   }
-  else if (pathname.includes('/nl/pakketten.html')) {
+  else if (pathname.includes('/nl/hoe-veel-kost-software-escrow.html')) {
     document.title = "Beste prijs voor Software Escrow en SaaS Escrow | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt de beste prijzen voor software-escrow, source code-escrow en saas-escrow, inclusief escrow-overeenkomsten. Geen juridische kosten. Bekijk all onze features hier.";
   }
-  else if (pathname.includes('/fr/tarifs.html')) {
+  else if (pathname.includes('/fr/combien-coute-l-entiercement-de-logiciel.html')) {
     document.title = "Entiercement de logiciel et entiercement de SaaS au meilleur prix | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper propose les meilleurs prix du marché pour l’entiercement de logiciel, l’entiercement de code source et l’entiercement de SaaS, contrats inclus. Sans frais d’avocat. Découvrez l’ensemble de nos fonctionnalités ici. ";
   }
-  else if (pathname.includes('/ro/tarife.html')) {
+  else if (pathname.includes('/ro/c%C3%A2t-cost-software-escrow.html')) {
     document.title = "Cel mai bun preț pentru Software Escrow și SaaS Escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă prețuri lider pe piață pentru escrow software, escrow cod sursă, escrow saas cu acorduri de escrow incluse. Fără taxe de avocat. Consultați setul nostru complet de funcții aici.";
   }
@@ -1242,27 +1242,27 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Gata de recuperare: cum funcționează software-ul escrow | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Aflați despre cum software-ul escrow vă asigură procesul de recuperare în cazul în care este declanșat un eveniment de lansare. De la acordul escow la configurarea tehnică, până la eliberare și recuperare este explicat aici.";
   }
-  else if (!(pathname.includes('/nl')) && pathname.includes('/resources.html')) {
+  else if (pathname.includes('/software-escrow-resources.html')) {
     document.title = "Learn all about Software Escrow using our free guides and resources | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Read about the process of setting up an escrow, Codekeeper security protocols and other source code escrow background information.  ";
   }
-  else if (pathname.includes('/es/recursos.html')) {
+  else if (pathname.includes('/es/recursos-custodia-software.html')) {
     document.title = "Apréndalo todo sobre la custodia de software con nuestras guías y recursos gratuitos | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Lea sobre el proceso de establecer un depósito en custodia, los protocolos de seguridad de Codekeeper y otra información sobre la custodia de código fuente.";
   }
-  else if (pathname.includes('/de/infomaterial.html')) {
+  else if (pathname.includes('/de/software-escrow-ressourcen.html')) {
     document.title = "Lernen Sie alles über Software Escrow, indem Sie unsere kostenlosen Leitfäden und Ressourcen nutzen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Lesen Sie alles über den Escrow-Einrichtungsprozess, die Sicherheitsprotokolle von Codekeeper und andere Hintergrundinformationen zum Quellcode-Escrow.";
   }
-  else if (pathname.includes('/nl/resources.html')) {
+  else if (pathname.includes('/nl/software-escrow-informatiebronnen.html')) {
     document.title = "Leer alles over Software Escrow met behulp van onze gratis gidsen en informatiebronnen | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "Lees over het opstellen van een escrow, beveiligingsprotocollen van Codekeeper en andere achtergrondinformatie wat betreft source code escrow.";
   }
-  else if (pathname.includes('/fr/ressources.html')) {
+  else if (pathname.includes('/fr/ressources-d-entiercement-de-logiciel.html')) {
     document.title = "Apprenez tout ce qu’il faut savoir sur l’entiercement de logiciel grâce à nos ressources et guides gratuits | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Découvrez le processus de mise en place d’un entiercement, les protocoles de sécurité de Codekeeper et d’autres renseignements de base sur l’entiercement de code source. ";
   }
-  else if (pathname.includes('/ro/resurse.html')) {
+  else if (pathname.includes('/ro/resurse-software-escrow.html')) {
     document.title = "Aflați totul despre Software Escrow folosind ghidurile și resursele noastre gratuite | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Citiți despre procesul de configurare a unui escrow, protocoalele de securitate Codekeeper și alte informații de fundal ale codului sursă escrow.";
   }
@@ -1290,268 +1290,268 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Escrow SaaS: Gata pentru continuitate totală | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper SaaS Escrow oferă protecție la nivelul următor pentru aplicațiile native din cloud, oferind continuitate deplină în cazul implicite de la terți";
   }
-  else if (pathname.includes('/security.html')) {
+  else if (pathname.includes('/source-code-escrow-security.html')) {
     document.title = "Security and Certifications | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper operates within a multi-layar security framework, designed to protect your source code. ISO27001, SOC2 Datacenters for secure storage. ";
   }
-  else if (pathname.includes('/es/seguridad.html')) {
+  else if (pathname.includes('/es/seguridad-custodia-c%C3%B3digo-fuente.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/sicherheit.html')) {
+  else if (pathname.includes('/de/quellcode-escrow-sicherheit.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/beveiliging.html')) {
+  else if (pathname.includes('/nl/source-code-escrow-beveiliging.html')) {
     document.title = "Beveiliging en certificaten | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper is actief binnen een framework met meerdere beveiligingslagen, ontworpen om uw broncode te beschermen. ISO27001, SOC2 Datacenters voor veilige opslag. ";
   }
-  else if (pathname.includes('/fr/securite.html')) {
+  else if (pathname.includes('/fr/securite-de-l-entiercement-de-code-source.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/securitate.html')) {
+  else if (pathname.includes('/ro/securitate-cod-surs%C4%83-escrow.html')) {
     document.title = "Securitate și certificări | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper operează într-un cadru de securitate cu mai multe straturi, conceput pentru a vă proteja codul sursă. ISO27001, SOC2 Centre de date pentru stocare sigură.";
   }
-  else if (!(pathname.includes('/nl')) && !(pathname.includes('/de')) && !(pathname.includes('/ro')) &&pathname.includes('/software-escrow.html')) {
+  else if (pathname.includes('/what-is-software-escrow.html')) {
     document.title = "Software Escrow: Ready for Quick Recovery | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper Software Escrow allows you to securely store your software assets, ready for quick recovery";
   }
-  else if (pathname.includes('/es/custodia-software.html')) {
+  else if (pathname.includes('/es/qu%C3%A9-es-custodia-software.html')) {
     document.title = "Custodia de software: listo para una recuperación rápida | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "La custodia de software de Codekeeper le permite almacenar de forma segura sus activos de software, listos para una recuperación rápida.";
   }
-  else if (pathname.includes('/de/software-escrow.html')) {
+  else if (pathname.includes('/de/was-ist-software-escrow.html')) {
     document.title = "Software-Escrow: Bereit für eine schnelle Wiederherstellung | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Mit dem Software-Escrow von Codekeeper können Sie Ihre Software-Vermögenswerte sicher speichern, damit sie immer für eine schnelle Wiederherstellung bereit sind.";
   }
-  else if (pathname.includes('/nl/software-escrow.html')) {
+  else if (pathname.includes('/nl/wat-is-software-escrow.html')) {
     document.title = "Software Escrow: Klaar voor snel herstel | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Met Codekeeper Software Escrow kunt u uw software veilig opslaan en bent u klaar voor snel herstel.";
   }
-  else if (pathname.includes('/fr/entiercement-de-logiciel.html')) {
+  else if (pathname.includes('/fr/qu-est-ce-que-l-entiercement-de-logiciel.html')) {
     document.title = "Entiercement de Logiciel : préparation à la récupération rapide | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "L’entiercement de logiciel Codekeeper vous permet de stocker vos actifs logiciels en toute sécurité, prêts pour une récupération rapide ";
   }
-  else if (pathname.includes('/ro/software-escrow.html')) {
+  else if (pathname.includes('/ro/ce-este-software-escrow.html')) {
     document.title = "Software escrow: Gata pentru recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper Software Escrow vă permite să stocați în siguranță activele software, gata pentru recuperare rapidă";
   }
-  else if (!(pathname.includes('/fr')) && pathname.includes('/solutions.html')) {
+  else if (!(pathname.includes('/nl')) && pathname.includes('/software-escrow-services.html')) {
     document.title = "Solutions for Software Escrow, SaaS Escrow and Source Code Escrow Agreements | Codekeeper  "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides software escrow solutions, to provide you quick recovery or full continuity of your mission critical software systems. ";
   }
-  else if (pathname.includes('/es/soluciones.html')) {
+  else if (pathname.includes('/es/servicios-custodia-software.html')) {
     document.title = "Soluciones de acuerdos de custodia de software, custodia de SaaS y custodia de código fuente | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper ofrece soluciones de custodia de software, para proporcionarle una recuperación rápida o la continuidad total de sus sistemas de software de misión crítica.";
   }
-  else if (pathname.includes('/de/l%C3%B6sungen.html')) {
+  else if (pathname.includes('/de/software-escrow-dienstleistungen.html')) {
     document.title = "Lösungen für Software-Escrow-, SaaS-Escrow- und Quellcode-Escrow-Vereinbarungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet Ihnen Software-Escrow-Lösungen an, um eine schnelle Wiederherstellung oder vollständige Kontinuität für Ihre geschäftskritischen Softwaresysteme zu gewährleisten.";
   }
-  else if (pathname.includes('/nl/oplossingen.html')) {
+  else if (pathname.includes('/nl/software-escrow-services.html')) {
     document.title = "Oplossingen voor Software Escrow, SaaS Escrow en Source Code Escrow-overeenkomsten | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt software escrow-oplossingen voor snel herstel of volledige continuïteit van uw bedrijfskritische softwaresystemen.";
   }
-  else if (pathname.includes('/fr/solutions.html')) {
+  else if (pathname.includes('/fr/services-d-entiercement-de-logiciel.html')) {
     document.title = "Solutions pour les contrats d’entiercement de logiciel, d’entiercement de code source et d’entiercement de SaaS | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper fournit des solutions d’entiercement de logiciel qui vous permettent une récupération rapide ou une continuité totale de vos systèmes logiciels critiques.  ";
   }
-  else if (pathname.includes('/ro/solu%C8%9Bii.html')) {
+  else if (pathname.includes('/ro/servicii-software-escrow.html')) {
     document.title = "Soluții pentru escrow software, escrow SaaS și acorduri escrow cod sursă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă soluții software escrow, pentru a vă oferi o recuperare rapidă sau continuitate completă a sistemelor dumneavoastră software esențiale.";
   }
-  else if (!(pathname.includes('/nl')) && pathname.includes('/source-code-escrow.html')) {
+  else if (!(pathname.includes('/nl')) && pathname.includes('/source-code-escrow-saas.html')) {
     document.title = "Source Code Escrow: Securely store your software assets for quick recovery | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Source Code Escrow allows easy depositing directly from platforms like Github, Bitbucket, Azure and Gitlab. ";
   }
-  else if (pathname.includes('/es/dep%C3%B3sito-c%C3%B3digo-fuente.html')) {
+  else if (pathname.includes('/es/custodia-c%C3%B3digo-fuente-saas.html')) {
     document.title = "Custodia de código fuente: almacene sus activos de software de forma segura para una recuperación rápida | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "La custodia de código fuente le permite realizar depósitos fácil y directamente desde plataformas como Github, Bitbucket, Azure y Gitlab.";
   }
-  else if (pathname.includes('/de/quellcode-escrow.html')) {
+  else if (pathname.includes('/de/quellcode-escrow-saas.html')) {
     document.title = "Quellcode-Escrow: Sichere Speicherung Ihrer Software-Vermögenswerte für eine schnelle Wiederherstellung | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Mit dem Quellcode-Escrow können Sie Hinterlegungen einfach direkt von Plattformen wie Github, Bitbucket, Azure und Gitlab aus vornehmen.";
   }
-  else if (pathname.includes('/nl/source-code-escrow.html')) {
+  else if (pathname.includes('/nl/source-code-escrow-saas.html')) {
     document.title = "Source Code Escrow: Sla uw software assets veilig op voor snel herstel | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Source Code Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Github, Bitbucket, Azure and Gitlab. ";
   }
-  else if (pathname.includes('/fr/entiercement-de-code-source.html')) {
+  else if (pathname.includes('/fr/entiercement-de-code-source-de-logiciel.html')) {
     document.title = "Entiercement de code source : stockez vos actifs logiciels en toute sécurité pour une récupération rapide | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "L’entiercement de code source permet un dépôt facile directement à partir de plateformes comme Github, Bitbucket, Azure et Gitlab. ";
   }
-  else if (pathname.includes('/ro/escrow-cod-surs%C4%83.html')) {
+  else if (pathname.includes('/ro/cod-surs%C4%83-escrow-saas.html')) {
     document.title = "Cod sursă escrow: stocați în siguranță activele software pentru o recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codul sursă Escrow permite depunerea ușoară direct de pe platforme precum Github, Bitbucket, Azure și Gitlab.";
   }
-  else if (!(pathname.includes('/fr')) && pathname.includes('/verification.html')) {
+  else if (pathname.includes('/software-escrow-verification-process.html')) {
     document.title = "Software Escrow Verification: Peace of Mind for Software Clients"
     document.getElementsByTagName('meta')["description"].content = "Source Code Verifications services offer an additional layer of security by checking the deposits into the escrow in detail and installing the code to see if it runs properly. This gives you certaintly about the recovery in case of a release situation. ";
   }
-  else if (pathname.includes('/es/verificaci%C3%B3n.html')) {
+  else if (pathname.includes('/es/proceso-verificaci%C3%B3n-custodia-software.html')) {
     document.title = "Verificación de la custodia de software: tranquilidad para los clientes de software"
     document.getElementsByTagName('meta')["description"].content = "Los servicios de verificación del código fuente ofrecen una capa de seguridad adicional, ya que comprueban detalladamente los depósitos en custodia e instalan el código para comprobar que todo funciona correctamente. Esto le aporta certeza sobre la recuperación en caso de un suceso de entrega.";
   }
-  else if (pathname.includes('/de/verifizierung.html')) {
+  else if (pathname.includes('/de/software-escrow-verifizierungsprozess.html')) {
     document.title = "Software-Escrow-Verifizierung: Sorgenfreiheit für Softwarekunden"
     document.getElementsByTagName('meta')["description"].content = "Die Quellcode-Verifizierungsdienstleistungen bieten Ihnen eine zusätzliche Sicherheitsebene, indem die Hinterlegungen im Escrow eingehend geprüft werden und der Code installiert wird, um zu sehen, ob er einwandfrei läuft. Diese Maßnahmen geben Ihnen Sicherheit hinsichtlich der Wiederherstellung bei einer Freigabe.";
   }
-  else if (pathname.includes('/nl/verificatie.html')) {
+  else if (pathname.includes('/nl/software-escrow-verificatie-proces.html')) {
     document.title = "Software Escrow Verificatie: Geen zorgen voor softwareklanten "
     document.getElementsByTagName('meta')["description"].content = "Services voor Source Code Verificaties bieden een extra beveiligingslaag door middel van gedetailleerde controle van escrow-deponeringen en installatie van de code om te zien of deze goed draait. Dit geeft u zekerheid over het herstel in geval van een vrijgavegebeurtenis. ";
   }
-  else if (pathname.includes('/fr/verification.html')) {
+  else if (pathname.includes('/fr/processus-de-verification-d-entiercement-de-logiciel.html')) {
     document.title = "Vérification d’entiercement de logiciel  : la tranquillité d’esprit pour les clients de logiciels"
     document.getElementsByTagName('meta')["description"].content = "Les services de vérification du code source offrent une sécurité supplémentaire grâce à la vérification détaillée des dépôts entiercés et à l’installation du code pour contrôler son fonctionnement. Vous avez ainsi la certitude d’une récupération en cas d’événement libératoire. ";
   }
-  else if (pathname.includes('/ro/verificare.html')) {
+  else if (pathname.includes('/ro/verificare-software-escrow.html')) {
     document.title = "Verificare software escrow: liniște pentru clienții software"
     document.getElementsByTagName('meta')["description"].content = "Serviciile de verificare a codului sursă oferă un nivel suplimentar de securitate, verificând în detaliu depozitele în escrow și instalând codul pentru a vedea dacă funcționează corect. Acest lucru vă oferă cu siguranță despre recuperarea în cazul unei situații de eliberare.";
   }
 
-  else if (!(pathname.includes('/de')) && !(pathname.includes('/nl')) && pathname.includes('/data-escrow.html')) {
+  else if (pathname.includes('/data-escrow-solutions.html')) {
     document.title = "Data Escrow: Securely store your data assets for quick recovery | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Data Escrow allows easy depositing directly from platforms like Amazon Webservices, Google Cloud, Oracle and Azure.";
   }
-  else if (pathname.includes('/es/dep%C3%B3sito-datos.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-datos.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/data-escrow.html')) {
+  else if (pathname.includes('/de/daten-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/data-escrow.html')) {
+  else if (pathname.includes('/nl/data-escrow-oplossingen.html')) {
     document.title = "Data Escrow: Sla uw data assets veilig op voor snel herstel | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Data Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Amazon Webservices, Google Cloud, Oracle en Azure. ";
   }
-  else if (pathname.includes('/fr/entiercement-de-donnees.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-de-donnees.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/date-escrow.html')) {
+  else if (pathname.includes('/ro/solu%C8%9Bii-date-escrow.html')) {
     document.title = "Data Escrow: stocați în siguranță activele de date pentru o recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Data Escrow permite depunerea ușoară direct de pe platforme precum Amazon Web Services, Google Cloud, Oracle și Azure.";
   }
-  else if (pathname.includes('/document-escrow.html')) {
+  else if (pathname.includes('/document-escrow-solutions.html')) {
     document.title = "Document Escrow: Securely store your information assets for quick recovery | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Document Escrow allows easy depositing directly from platforms like Office 365, Google Workspace, Adobe and iCloud.";
   }
-  else if (pathname.includes('/es/custodia-documentos.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-documentos.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/dokument-escrow.html')) {
+  else if (pathname.includes('/de/dokument-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/documenten-escrow.html')) {
+  else if (pathname.includes('/nl/documenten-escrow-oplossingen.html')) {
     document.title = "Documenten Escrow: Sla uw informatie assets veilig op voor snel herstel | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Documenten Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Office 365, Google Workspace, Adobe en iCloud. ";
   }
-  else if (pathname.includes('/fr/document-entiercement.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-de-documents.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/escrow-document.html')) {
+  else if (pathname.includes('/ro/solu%C8%9Bii-document-escrow.html')) {
     document.title = "Document escrow: stocați în siguranță informațiile dvs. pentru recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Document Escrow permite depunerea ușoară direct de pe platforme precum Office 365, Google Workspace, Adobe și iCloud.";
   }
-  else if (pathname.includes('/technology-designs-escrow.html')) {
+  else if (pathname.includes('/IP-escrow-solutions.html')) {
     document.title = "Technology & Design Escrow: Securely store your intellectual property assets for quick recovery | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Technology & Design Escrow allows easy depositing directly from platforms like Adobe Creative Cloud, Sketch Cloud, Figma, Unity and many others.";
   }
-  else if (pathname.includes('/es/custodia-tecnologia-disenos.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-PI.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/technologie-design-escrow.html')) {
+  else if (pathname.includes('/de/IP-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/technologie-designs-escrow.html')) {
+  else if (pathname.includes('/nl/IP-escrow-oplossingen.html')) {
     document.title = "Technologie & Design Escrow: Sla uw intellectual property assets veilig op voor snel herstel | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Technologie & Design Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Adobe Creative Cloud, Sketch Cloud, Figma, Unity en vele anderen. ";
   }
-  else if (pathname.includes('/fr/technologie-conception-entiercement.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-d-adresse-ip.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/tehnologie-design-escrow.html')) {
+  else if (pathname.includes('/ro/IP-escrow-solu%C8%9Bii.html')) {
     document.title = "Tehnologie și design escrow: stocați în siguranță activele de proprietate intelectuală pentru o recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Technology & Design Escrow permite depunerea ușoară direct de pe platforme precum Adobe Creative Cloud, Sketch Cloud, Figma, Unity și multe altele.";
   }
-  else if (pathname.includes('/credentials-escrow.html')) {
+  else if (pathname.includes('/credentials-escrow-solutions.html')) {
     document.title = "Credentials Escrow: Securely store your access information assets for quick recovery | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Credentials Escrow allows easy depositing directly from platforms like 1Password, Okta, Lastpass, Keeper and many others. ";
   }
-  else if (pathname.includes('/es/custodia-credenciales.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-credenciales.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/anmeldedaten-escrow.html')) {
+  else if (pathname.includes('/de/anmeldedaten-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/toegangsgegevens-escrow.html')) {
+  else if (pathname.includes('/nl/credentials-escrow-oplossingen.html')) {
     document.title = "Credentials Escrow: Sla uw toegangsgegevens veilig op voor snel herstel | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Credentials Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals 1Password, Okta, Lastpass, Keeper en vele anderen. ";
   }
-  else if (pathname.includes('/fr/identifiants-entiercement.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-d-identifiants.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/acreditări-escrow.html')) {
+  else if (pathname.includes('/ro/solu%C8%9Bii-acredit%C4%83ri-escrow.html')) {
     document.title = "Acreditări escrow: stocați în siguranță informațiile de acces pentru o recuperare rapidă | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Credentials Escrow permite depunerea ușoară direct de pe platforme precum 1Password, Okta, Lastpass, Keeper și multe altele.";
   }
-  else if (pathname.includes('/hosting-environment-escrow.html')) {
+  else if (pathname.includes('/hosting-escrow-solutions.html')) {
     document.title = "Hosting Escrow: Securely store your deployment environment information for immediate continuity | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Hosting Escrow allows easy depositing directly from platforms like Amazon Web Services (AWS), AzureDevops, Google Cloud, IBM Cloud and many others.";
   }
-  else if (pathname.includes('/es/custodia-entorno-alojamiento.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-alojamiento.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/hosting-umgebungs-escrow.html')) {
+  else if (pathname.includes('/de/hosting-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/hosting-omgeving-escrow.html')) {
+  else if (pathname.includes('/nl/hosting-escrow-oplossingen.html')) {
     document.title = "Hosting Escrow: Sla de informatie van hostomgevingen veilig op voor onmiddellijke continuïteit | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Hosting Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Amazon Web Services (AWS), AzureDevops, Google Cloud, IBM Cloud en vele anderen. ";
   }
-  else if (pathname.includes('/fr/entiercement-environnement-d-herbergement.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-d-hebergement.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/hosting-mediu-escrow.html')) {
+  else if (pathname.includes('/ro/solu%C8%9Bii-g%C4%83zduire-escrow.html')) {
     document.title = "Hosting Escrow: stocați în siguranță informațiile despre mediul de implementare pentru o continuitate imediată | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Hosting Escrow permite depunerea ușoară direct de pe platforme precum Amazon Web Services (AWS), AzureDevops, Google Cloud, IBM Cloud și multe altele.";
   }
-  else if (pathname.includes('/3rd-party-dependencies.html')) {
+  else if (pathname.includes('/3rd-party-escrow-solutions.html')) {
     document.title = "3rd Party Dependency Escrow: Securely store your 3rd party dependency information for immediate continuity | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "3rd Party Dependency Escrow allows easy depositing information directly from platforms like Stripe, Twilio, Adyen, Chargebee, Shopify and many others.";
   }
-  else if (pathname.includes('/es/dependencias-terceros.html')) {
+  else if (pathname.includes('/es/soluciones-custodia-dependencias-terceros.html')) {
     document.title = "Seguridad y certificaciones | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
   }
-  else if (pathname.includes('/de/drittanbieter-abhaengigkeiten.html')) {
+  else if (pathname.includes('/de/drittanbieter-escrow-loesungen.html')) {
     document.title = "Sicherheit und Zertifizierungen | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
   }
-  else if (pathname.includes('/nl/externe-afhankelijkheden.html')) {
+  else if (pathname.includes('/nl/3rd-party-escrow-oplossingen.html')) {
     document.title = "3rd Party Dependency Escrow: Sla de informatie van externe afhankelijke partijen veilig op voor onmiddellijke continuïteit | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "3rd Party Dependency Escrow maakt het gemakkelijk om direct te kunnen deponeren via platfoms zoals Stripe, Twilio, Adyen, Chargebee, Shopify en vele anderen. ";
   }
-  else if (pathname.includes('/fr/dependences-de-tiers.html')) {
+  else if (pathname.includes('/fr/solutions-d-entiercement-de-dependences-tierces.html')) {
     document.title = "Sécurité et certifications | Codekeeper "
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
-  else if (pathname.includes('/ro/dependen%C8%9Be-de-la-ter%C8%9Bi.html')) {
+  else if (pathname.includes('/ro/solu%C8%9Bii-escrow-ter%C8%9B%C4%83-parte.html')) {
     document.title = "Garanție pentru dependențe terță parte: stocați în siguranță informațiile despre dependența terță parte pentru o continuitate imediată | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "3rd Party Dependency Escrow permite depunerea ușoară a informațiilor direct de pe platforme precum Stripe, Twilio, Adyen, Chargebee, Shopify și multe altele.";
   }
