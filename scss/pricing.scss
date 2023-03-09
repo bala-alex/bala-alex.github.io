@@ -1154,6 +1154,13 @@
           }
         }
 
+        input[name=consent] {
+          width: 20px !important;
+          height: 20px !important;
+          margin-right: 5px;
+          margin-top: 10px;
+        }
+
         input::placeholder {
           color: $soft-gray !important;
           font-family: 'Mulish', sans-serif;
@@ -1596,5 +1603,11 @@
   #button.show {
     opacity: 1;
     visibility: visible;
+  }
+
+  input[name=consent] {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px;
   }
 }

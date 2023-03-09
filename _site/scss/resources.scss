@@ -329,6 +329,20 @@
       color: $white;
     }
 
+    &__text2 {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $white;
+
+      span {
+        font-size: 50px;
+        font-weight: 600;
+      }
+    }
+
     &__subtext {
       font-family: 'Mulish';
       font-style: normal;
@@ -1592,6 +1606,13 @@
         }
       }
 
+      input[name=consent] {
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 5px;
+        max-width: 20px !important;
+      }
+
       label.hs-error-msg {
         color: red;
       }
@@ -1623,6 +1644,7 @@
       // max-height: 280px;
       object-fit: contain;
       margin-top: 0px !important;
+      max-height: 300px;
     }
 
     &__modal-image2 {
@@ -2580,5 +2602,11 @@
         line-height: 24px;
       }
     }
+  }
+
+  input[name=consent] {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px;
   }
 }

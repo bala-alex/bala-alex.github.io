@@ -9763,16 +9763,20 @@ html {
   max-height: 50px !important;
 }
 
+.mh-150 {
+  max-height: 150px !important;
+}
+
 .mw-260 {
   max-width: 260px !important;
 }
 
-.mw-160 {
-  max-width: 160px !important;
-}
-
 .mw-90 {
   max-width: 90px !important;
+}
+
+.mw-160 {
+  max-width: 160px !important;
 }
 
 .mw-800 {
@@ -9888,6 +9892,15 @@ html {
 @media (max-width: 767px) {
   .mt-negative-50 {
     margin-top: 50px;
+  }
+}
+
+.mt-negative-6 {
+  margin-top: -6px;
+}
+@media (max-width: 767px) {
+  .mt-negative-6 {
+    margin-top: 0px;
   }
 }
 
@@ -10086,6 +10099,22 @@ html {
   line-height: 24px;
   text-align: center;
   color: #6A8493 !important;
+}
+
+.hs-form-booleancheckbox-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hs-form-booleancheckbox-display span {
+  font-size: 13px;
+}
+
+input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
 }
 
 .section-large {
@@ -14682,6 +14711,12 @@ html {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.pricing .offer .section__container input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+  margin-top: 10px;
+}
 .pricing .offer .section__container input::-webkit-input-placeholder {
   color: #7f7f7f !important;
   font-family: "Mulish", sans-serif;
@@ -15205,6 +15240,11 @@ html {
 .pricing #button.show {
   opacity: 1;
   visibility: visible;
+}
+.pricing input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
 }
 
 .security .header {
@@ -16534,6 +16574,12 @@ html {
   font-family: "Mulish", sans-serif;
   font-size: 16px !important;
 }
+.contact input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+  margin-top: 0px;
+}
 .contact input::-webkit-input-placeholder {
   color: #BDBDBD !important;
   font-family: "Mulish", sans-serif;
@@ -17018,6 +17064,19 @@ html {
   font-weight: normal;
   font-family: "Mulish", sans-serif;
 }
+.contact input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+
+.contact-custom input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+  margin-top: 10px;
+}
 
 .resources .header {
   overflow: hidden;
@@ -17337,6 +17396,18 @@ html {
   font-size: 20px;
   line-height: 28px;
   color: #ffffff;
+}
+.resources .best-price__text2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.resources .best-price__text2 span {
+  font-size: 50px;
+  font-weight: 600;
 }
 .resources .best-price__subtext {
   font-family: "Mulish";
@@ -18573,6 +18644,12 @@ html {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.resources .section__modal-form input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
+  max-width: 20px !important;
+}
 .resources .section__modal-form label.hs-error-msg {
   color: red;
 }
@@ -18623,6 +18700,7 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
   margin-top: 0px !important;
+  max-height: 300px;
 }
 .resources .section__modal-image2 {
   width: 100%;
@@ -19585,6 +19663,11 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.resources input[name=consent] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 5px;
 }
 
 .solutions .header {
