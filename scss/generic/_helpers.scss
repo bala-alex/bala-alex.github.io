@@ -317,6 +317,18 @@ html {
   margin-top: 200px;
 }
 
+.mt-400 {
+  margin-top: 400px;
+}
+
+.mt-350 {
+  margin-top: 350px;
+
+  @include screen-md {
+    margin-top: 250px;
+  }
+}
+
 .pb-300 {
   padding-bottom: 300px !important;
 }
@@ -381,6 +393,10 @@ html {
 
 .bg-gradient-gray {
   background: linear-gradient(180deg, #FAFCFF 92.38%, #F3F7FB 104.08%);
+}
+
+.bg-gradient-night {
+  background: linear-gradient(180deg, #2E66BA -31.74%, #14448C 106.28%);
 }
 
 .bg-azure-blue {
@@ -471,6 +487,10 @@ html {
 
 .bg-alice-blue {
   background-color: $alice-blue !important;
+}
+
+.bg-alice-blue2 {
+  background-color: $alice-blue2 !important;
 }
 
 .bg-error-page {
@@ -801,6 +821,10 @@ html {
 
 .font-22 {
   font-size: 22px !important;
+}
+
+.font-30 {
+  font-size: 30px !important;
 }
 
 .how-bg-gradient {

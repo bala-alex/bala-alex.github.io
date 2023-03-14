@@ -154,6 +154,28 @@
       }
     }
 
+    &__bg-left2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 290px;
+
+      @include screen-sm {
+        max-width: 40%;
+      }
+    }
+
+    &__bg-right2 {
+      position: absolute;
+      top: 95px;
+      right: 0;
+      max-width: 190px;
+
+      @include screen-sm {
+        max-width: 30%;
+      }
+    }
+
     &__shape-left {
       position: absolute;
       top: 10px;
