@@ -6,13 +6,13 @@
 
     &__background {
       
-      min-height: 850px;
+      min-height: 750px;
       overflow: hidden;
       background: url("/images//eu-react/header-bg.webp");
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: cover !important;
-      padding-bottom: 100px !important;
+      padding-bottom: 80px !important;
     }
 
     &__image {
@@ -116,19 +116,20 @@
       line-height: 28px;
       letter-spacing: -0.02em;
       color: #333333;
-      text-align: center;
+
+      span {
+        font-style: italic;
+      }
     }
 
     &__title {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 35px;
       line-height: 40px;
       letter-spacing: -0.02em;
       color: #333333;
-      text-align: center;
       margin-top: 15px;
       margin-bottom: 5px;
-      font-family: 'Bookmania Semibold' !important;
     }
 
     &__subtitle {
