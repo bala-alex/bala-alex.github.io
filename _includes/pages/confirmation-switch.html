@@ -1,0 +1,110 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+  <div class="resources">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="container mt-150 pt-5 content-center flex-column">
+      <img class="my-4 mw-160 mx-auto" src="/images/resources-page/agreement-icon.svg" alt="Shape Intro Image"/>
+      <h1 class="intro-guide__title mx-auto text-center mw-100 fw-400">Thank you for your submission. </h1>
+    </div>
+    <div class="people-choose__bg">
+      <div class="container">
+        <p class="people-choose__main-subtitle2 mx-auto mt-4 mw-800">You will soon receive a confirmation email after which one of our experts will contact you to finalize your switch to Codekeeper.</p>
+        <a class="button btn-cerulean3 pricing-href mx-auto px-5 mt-5" href="pricing.html">
+          {{ site.data[page.lang]['confirmation_custom']['explore_page'] }}
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-150 position-relative">
+      <div class="container">
+        <div class="intro-guide__bg">
+          <img class="intro-guide__image" src="/images/landing/shape-intro.webp" alt="Shape Intro Image"/>
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <p class="intro-guide__title">{{ site.data[page.lang]['includes']['escrow_introduction']['introduction_to_software'] }}: {{ site.data[page.lang]['includes']['escrow_introduction']['a_guide'] }}</p>
+              <div class="d-flex align-items-center">
+                <p class="intro-guide__badge">{{ site.data[page.lang]['index']['e_book'] }}</p>
+                <p class="intro-guide__text">{{ site.data[page.lang]['index']['12_pages'] }}</p>
+              </div>
+              <p class="intro-guide__subtitle">{{ site.data[page.lang]['includes']['escrow_introduction']['learn_how'] }}</p>
+              <a class="button btn-secondary-large mt-4" data-toggle="modal" data-target="#exampleModal33">
+                {{ site.data[page.lang]['includes']['intro']['download_guide'] }}
+              </a>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="intro-guide__illustration mt-4" src="/images/landing/intro-guide-image.webp" alt="Intro Guide Image"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-form p-0 ">
+                  <p class="section__modal-title mt-3">{{ site.data[page.lang]['resources']['download_this_ebook'] }}</p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp"/>
+                      <p class="section__modal-subtext mt-0">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                        portalId: "5365877",
+                        formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
+                      });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro-guide__container">
+      <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Background Image"/>
+      <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Background Image"/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <img class="image-style" src="/images/landing/our-experts.webp" alt="Our Expert Image"/>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <p class="intro-guide__main-title mt-4">{{ site.data[page.lang]['index']['a_session_with'] }}</p>
+            <p class="intro-guide__main-subtitle">{{ site.data[page.lang]['index']['schedule_a_session'] }}</p>
+            <a class="button btn-cerulean3 book-a-demo-href my-4" href="book-a-demo.html">
+              {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+</body>
