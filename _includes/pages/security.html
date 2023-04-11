@@ -192,14 +192,91 @@
         </ul>
       </div>
     </div>
+
+    <!-- Section -->
+    <div class="container section-large pricing">
+      <h4 class="section__title text-align-center">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
+      <ul class="faq mt-5 pb-5 pl-0">
+        <li class="q d-flex align-items-center justify-content-between">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['what_is_the'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_security']['to_ensure'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['how_does'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_security']['using_a_combination'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['what_type'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_security']['industry_standard'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['where_is_my'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_security']['your_source_code'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['how_does_codekeeper'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_security']['we_implement'] }}</li>
+
+        <div class="" id="questions">
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['can_i_trust'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_security']['yes_we_are'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['does_codekeeper'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_security']['yes_we_conduct'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['how'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_security']['in_the_unlikely'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_security']['who_can_i'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_security']['we_are'] }} <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></li>
+        </div>
+        <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+          <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+          <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+        </p>
+      </ul>
+    </div>
     <!-- Fifth Section -->
-    {% include intro.html %}
+    {% include demo-intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
 
   <!-- Snippets -->
   {% include snippets.html %}
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
   <script>
     // Accordian Action
     var action = 'click';

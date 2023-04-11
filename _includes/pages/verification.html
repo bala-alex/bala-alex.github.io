@@ -228,6 +228,76 @@
       </div>
     </div>
 
+    <!-- Section -->
+    <div class="container section-large pricing">
+      <h4 class="section__title text-align-center">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
+      <ul class="faq mt-5 pb-5 pl-0">
+        <li class="q d-flex align-items-center justify-content-between">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['what_is_source'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_verification']['verification_is'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['what_levels'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_verification']['we_offer'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['why_is_code'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_verification']['code_verification'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['how_does'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_verification']['our_verification'] }}</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['what_types'] }}</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">{{ site.data[page.lang]['faq_verification']['codekeeper_verification'] }}</li>
+
+        <div class="" id="questions">
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['can_codekeeper'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['yes_our_verification'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['how_often'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['the_frequency'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['is_my_code'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['yes_we_take'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['can_i_use'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['yes_we_support'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['how_long'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['the_duration'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_verification']['what_happens'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_verification']['if_verification'] }}</li>
+        </div>
+        <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+          <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+          <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+        </p>
+      </ul>
+      <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any'] }} <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+    </div>
+
 
     <!-- Section -->
     {% include demo-intro.html %}
@@ -236,6 +306,60 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
 
   <script>
     $('#offer').hide();

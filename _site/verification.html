@@ -311,6 +311,76 @@
       </div>
     </div>
 
+    <!-- Section -->
+    <div class="container section-large pricing">
+      <h4 class="section__title text-align-center">Frequently Asked Questions</h4>
+      <ul class="faq mt-5 pb-5 pl-0">
+        <li class="q d-flex align-items-center justify-content-between">
+          <p class="section__subtitle mt-3">What is source code verification?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Verification is a process that validates the integrity of your software's source code by checking it against a set of predefined rules and industry best practices. The verification process ensures that your code is free from potential issues, vulnerabilities, or inconsistencies before it is protected, licensed, or distributed.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">What levels of verification does Codekeeper offer?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">We offer automated verification which includes content verification, activity verification, and SaaS verification. We also offer manual verification for which we have two different options available depending on whether you need any features tested.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">Why is code verification important?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Code verification is essential to maintain high-quality software, reduce security risks, and ensure compliance with industry standards. By verifying your code, you can identify and address potential problems early in the development process, saving time and resources while enhancing the overall quality and security of your software.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">How does the Codekeeper verification process work?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Our verification process involves analyzing your source code using a combination of automated tools and manual review by Codekeeper's team of experts. The process checks for potential issues, vulnerabilities, and inconsistencies, ensuring that your code adheres to best practices and industry standards.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">What types of issues does Codekeeper verification identify?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Codekeeper verification identifies a range of potential issues, including code quality problems, security vulnerabilities, compliance concerns, and code obfuscation issues. By identifying and addressing these issues, you can improve the overall quality, security, and reliability of your software.</li>
+
+        <div class="" id="questions">
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Can Codekeeper verification help with regulatory compliance?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, our verification can help ensure that your software complies with industry standards and regulations, such as GDPR, HIPAA, and others. By verifying your code and addressing any identified compliance issues, you can reduce the risk of regulatory penalties and protect your business's reputation.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">How often should I perform code verification?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">The frequency of code verification depends on your specific needs and the nature of your software. It is generally recommended to perform code verification during major updates or when significant changes are made to the codebase. Regular verification can also help identify potential issues early in the development process, reducing the risk of problems later on.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Is my code secure during the verification process?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, we take the security of your code seriously and employ strict measures to ensure its protection during the verification process. Your code is encrypted during transit and storage, and access is restricted to authorized personnel only.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Can I use Codekeeper verification for different programming languages?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, we support a wide range of programming languages for code verification, including popular languages such as Java, C#, Python, JavaScript, and more. Our verification process is designed to be flexible and adaptable to various languages and platforms.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">How long does the code verification process take?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">The duration of the code verification process depends on the size and complexity of your codebase, as well as the specific issues identified during the analysis. Generally, the process takes a few hours to a few days. We will provide you with an estimated time frame for the verification upon submission of your code.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">What happens if verification identifies issues in my code?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">If verification identifies issues in your code, you will receive a detailed report outlining the findings and recommendations for addressing the identified problems. You can then review the report and make the necessary changes to your code before resubmitting it for verification, ensuring that your software meets the highest standards of quality and security.</li>
+        </div>
+        <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+          <span id='show'>Show more questions +</span>
+          <span id='hide'>Show less questions -</span>
+        </p>
+      </ul>
+      <p class="section__text mt-5 mb-5">If you have any other questions or need a custom solution, please feel free to contact our Customer Service team for assistance by sending an email to <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+    </div>
+
 
     <!-- Section -->
     <!DOCTYPE html>
@@ -1664,6 +1734,60 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 
+
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
 
   <script>
     $('#offer').hide();

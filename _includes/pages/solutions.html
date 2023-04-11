@@ -190,6 +190,70 @@
           </div>
         </div>
       </div>
+      <!-- Section -->
+      <div class="container section-large pricing">
+        <h4 class="section__title text-align-center">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
+        <ul class="faq mt-5 pb-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['who_is'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['we_are'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['what_source'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['we_support'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['what_integrations'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['we_support_over'] }} <a href="integrations.html" class="text-underline integrations-href ">{{ site.data[page.lang]['pricing']['here'] }}</a>.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['how_do_i'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['to_get_started'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['is_codekeeper_suitable'] }}</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['yes_we_offer'] }}</li>
+
+          <div class="" id="questions">
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['how_secure_is'] }}</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['faq']['we_operate_within'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['what_kind_of'] }}</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['we_offer_comprehensive'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['can_i_transfer'] }}</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['faq']['absolutely_we_are_here'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_solutions']['do_you_offer'] }}</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['faq_solutions']['absolutely_we'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['i_cant'] }}</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['our_experts'] }} <a href="book-a-demo.html" class="text-underline book-a-demo-href ">{{ site.data[page.lang]['faq_pricing']['here'] }}</a>.</li>
+          </div>
+          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+            <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+            <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+          </p>
+        </ul>
+        <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any'] }} <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+      </div>
 
       <!-- Section -->
       {% include demo-intro.html %}
@@ -199,6 +263,24 @@
   
     <!-- Snippets -->
     {% include snippets.html %}
+
+    <script>
+      $('#questions').hide();
+      $('#hide').hide();
+  
+      $(".openLines").click(function(){      
+          if ($('#hide').is(":visible")) {
+            $('#hide').hide();
+            $('#show').show();
+          }
+          else {
+            $('#show').hide();
+            $('#hide').show();
+          }
+          $('#questions').toggle(300);
+          //  $("div").toggle(300);
+      });
+    </script>
   
     <script>
       // Accordian Action

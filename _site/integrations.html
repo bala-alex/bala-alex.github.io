@@ -590,6 +590,60 @@
       </div>
     </div>
     <!-- Section -->
+    <div class="container section-large pricing pt-5">
+      <h4 class="section__title text-align-start">Frequently Asked Questions</h4>
+      <ul class="faq mt-5 pb-5 pl-0">
+        <li class="q d-flex align-items-center justify-content-between">
+          <p class="section__subtitle mt-3">Which platforms does Codekeeper offer integrations with?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">We offer integrations with over 50 different repositories and platforms. We work with the tools you already use, which means you can easily upload your source code and keep it in sync.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">Are your integration services automated?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Yes, they’re encrypted and fully automated.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">Is there any additional cost for using Codekeeper integrations?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Our integration services are included as part of your subscription, and there is no additional cost for using them. By offering integrations at no extra charge, we aim to provide customers with an enhanced and seamless user experience across different platforms and tools.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">My preferred repository isn’t listed. What do I do?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Not a problem. If you can’t find your preferred platform you can just send us an email at <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a> and we’ll look into a solution for you.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">Are new integrations added regularly?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">We continuously work on expanding our list of supported integrations to cater to a broader range of customers and their specific needs. As new platforms and tools gain popularity or customers request specific integrations, we may add them to the Integrations page.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">Will integrating Codekeeper with other platforms affect the security of my code?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">We prioritize security and ensure that integrating with other platforms does not compromise the protection of your source code. All communications between Codekeeper and the integrated platforms are encrypted, and access to your code is restricted to authorized users only.</li>
+
+        <div class="" id="questions">
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">How do I set up my preferred integration/s?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Once you have set up your account with us, you will be guided through the steps on how to set up your escrow and integrate with your preferred platform for automatic updates.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">I can’t find the solution I’m looking for. Is there someone I can speak to directly?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Our experts are standing by to help you find the solution that will best suit your needs. Please feel free to book a demo call with one of our consultants <a href="book-a-demo.html" class="text-underline book-a-demo-href ">here</a></li>
+        </div>
+        <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+          <span id='show'>Show more questions +</span>
+          <span id='hide'>Show less questions -</span>
+        </p>
+      </ul>
+      <p class="section__text mt-5 mb-5">If you have any other questions or need a custom solution, please feel free to contact our Customer Service team for assistance by sending an email to <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+    </div>
+    <!-- Section -->
     <!DOCTYPE html>
 <div class="resources">
   <div class="container">
@@ -2001,5 +2055,59 @@ document.addEventListener("click", closeAllSelect);
         return false;
     });
   </script>
+
+<script>
+  $('#questions').hide();
+  $('#hide').hide();
+
+  $(".openLines").click(function(){      
+      if ($('#hide').is(":visible")) {
+        $('#hide').hide();
+        $('#show').show();
+      }
+      else {
+        $('#show').hide();
+        $('#hide').show();
+      }
+      $('#questions').toggle(300);
+      //  $("div").toggle(300);
+  });
+</script>
+
+<script>
+// Accordian Action
+var action = 'click';
+var speed = "500";
+$(document).ready(function(){
+  $('.plan__box').mouseover(function(e){
+    $('.plan__box').removeClass('-active')
+    if ($(this).hasClass('-active')) {
+      return;
+    }
+    $(this).addClass('-active');
+
+  });
+// Question handler
+  $('li.q').on(action, function(){
+
+    // gets next element
+    // opens .a of selected question
+    $(this).next().slideToggle(speed)
+
+    // selects all other answers and slides up any open answer
+    .siblings('li.a').slideUp();
+
+    // Grab img from clicked question
+    var img = $(this).children('img');
+
+    // remove Rotate class from all images except the active
+    $('img').not(img).removeClass('rotate');
+
+    // toggle rotate class
+    img.toggleClass('rotate');
+
+  });
+});
+</script>
 </body>
 </html>

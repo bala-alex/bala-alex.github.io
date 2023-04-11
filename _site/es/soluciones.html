@@ -273,6 +273,70 @@
           </div>
         </div>
       </div>
+      <!-- Section -->
+      <div class="container section-large pricing">
+        <h4 class="section__title text-align-center">Preguntas frecuentes</h4>
+        <ul class="faq mt-5 pb-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3"></p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text"></li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3"></p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text"></li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3"></p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text"> <a href="integrations.html" class="text-underline integrations-href ">aquí</a>.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3"></p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text"></li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3"></p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text"></li>
+
+          <div class="" id="questions">
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3"></p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text"></li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3"></p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text"></li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3"></p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text"></li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3"></p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text"></li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3"></p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text"> <a href="book-a-demo.html" class="text-underline book-a-demo-href "></a>.</li>
+          </div>
+          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+            <span id='show'>Mostrar más preguntas +</span>
+            <span id='hide'>Mostrar menos preguntas -</span>
+          </p>
+        </ul>
+        <p class="section__text mt-5 mb-5"> <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+      </div>
 
       <!-- Section -->
       <!DOCTYPE html>
@@ -1627,6 +1691,24 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 
+
+    <script>
+      $('#questions').hide();
+      $('#hide').hide();
+  
+      $(".openLines").click(function(){      
+          if ($('#hide').is(":visible")) {
+            $('#hide').hide();
+            $('#show').show();
+          }
+          else {
+            $('#show').hide();
+            $('#hide').show();
+          }
+          $('#questions').toggle(300);
+          //  $("div").toggle(300);
+      });
+    </script>
   
     <script>
       // Accordian Action

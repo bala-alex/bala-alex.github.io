@@ -273,6 +273,70 @@
           </div>
         </div>
       </div>
+      <!-- Section -->
+      <div class="container section-large pricing">
+        <h4 class="section__title text-align-center">Frequently Asked Questions</h4>
+        <ul class="faq mt-5 pb-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">Who is Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">We are a software escrow provider specializing in software protection and verification services. We offer various products and services to help developers and software users secure their software, manage licenses, and distribute their applications effectively.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">What source code deposit methods do you support?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">We support SFTP, Dropbox, Google Drive, email, and others. Let us know your needs and we’ll make it work.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">What integrations does Codekeeper support?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">We support over 50 popular developer platforms and integrations. You can view the list of available integrations <a href="integrations.html" class="text-underline integrations-href ">here</a>.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">How do I get started with Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">To get started you can simply book a demo call with one of our experts who will be happy to assist you in setting up your account. Alternatively, you can get going right away by visiting our Pricing page and choosing your preferred subscription.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Is Codekeeper suitable for small businesses and individual developers?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, we offer scalable solutions that cater to the needs of both small businesses and individual developers. Our pricing plans are flexible, allowing you to choose the services that best fit your requirements and budget. If you don’t find a solution that best suits your particular needs, we’ll be happy to work out a custom solution for you.</li>
+
+          <div class="" id="questions">
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">How secure is my code when using Codekeeper's services?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">We operate within the ISO27001 security framework and our data centers have multiple certifications to ensure the highest level of security. Deposited assets are encrypted using AES256, ensuring the safety and confidentiality of your software assets.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">What kind of customer support does Codekeeper offer?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">We offer comprehensive customer support through various channels, including email, phone, and live chat. Our support team is available to assist you with any questions or issues you may encounter while using our services.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">Can I transfer my existing software escrow agreement to Codekeeper?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">Absolutely! We are here to support your needs and will make sure your pre-existing agreement is up to date and implement any additional changes needed during the transfer stage.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">Do you offer verification services?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">Absolutely! We offer three levels of automatic verification available as an add-on, including Content, Activity, and SaaS verification.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">I can’t find the solution I’m looking for. Is there someone I can speak to directly?</p>
+              <img src="/images/integrations/icon-down.svg"/>
+            </li>
+            <li class="a section__text">Our experts are standing by to help you find the solution that will best suit your needs. Please feel free to book a demo call with one of our consultants <a href="book-a-demo.html" class="text-underline book-a-demo-href ">here</a>.</li>
+          </div>
+          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+            <span id='show'>Show more questions +</span>
+            <span id='hide'>Show less questions -</span>
+          </p>
+        </ul>
+        <p class="section__text mt-5 mb-5">If you have any other questions or need a custom solution, please feel free to contact our Customer Service team for assistance by sending an email to <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+      </div>
 
       <!-- Section -->
       <!DOCTYPE html>
@@ -1627,6 +1691,24 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 
+
+    <script>
+      $('#questions').hide();
+      $('#hide').hide();
+  
+      $(".openLines").click(function(){      
+          if ($('#hide').is(":visible")) {
+            $('#hide').hide();
+            $('#show').show();
+          }
+          else {
+            $('#show').hide();
+            $('#hide').show();
+          }
+          $('#questions').toggle(300);
+          //  $("div").toggle(300);
+      });
+    </script>
   
     <script>
       // Accordian Action

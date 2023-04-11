@@ -32,7 +32,7 @@
     </noscript>
     <!--  Clickcease.com tracking-->
 
-  <div class="resources bg-white">
+  <div class="bg-white">
     <!-- Navigation -->
     <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
@@ -142,7 +142,7 @@
     </div>
     
     <!-- Second Section -->
-    <div class="container-fluid mb-200">
+    <div class="container-fluid mb-200 resources">
       <div class="beneficiary__container mx-auto mt-negative-50 position-relative how-bg-gradient">
         <div class="container py-5">
           <p class="how-works__main-title mx-auto pb-5">How to activate your software escrow in a few simple steps</p>
@@ -261,7 +261,7 @@
       </div>
     </div>
 
-    <div class="section-large pt-3">
+    <div class="section-large pt-3 resources">
       <div class="container">
         <p class="deposit-assets__main-title pb-5">How to deposit your critical assets</p>
         <p class="deposit-assets__title mt-5">Fully automated repository connection</p>
@@ -375,8 +375,61 @@
             </div>
           </div>
         </div>
-
       </div>
+    </div>
+
+    <!-- Section -->
+    <div class="container section-large pricing">
+      <h4 class="section__title text-align-start">Frequently Asked Questions</h4>
+      <ul class="faq mt-5 pb-5 pl-0">
+        <li class="q d-flex align-items-center justify-content-between">
+          <p class="section__subtitle mt-3">What are the steps in the Codekeeper process?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text"><span><span/>&#x2022; Sign up for your Codekeeper account by choosing your <a href="pricing.html" class="text-underline pricing-href ">plan</a><br><span><span/>&#x2022; Set up your account within the Codekeeper online application<br>&#x2022; Manage the information of the other parties involved in the escrow<br>&#x2022; Define the release triggers<br>&#x2022; Review and sign your escrow agreement<br>&#x2022; Set up and deposit your assets<br>&#x2022; Active your escrow</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">How do I add my software or source code to Codekeeper?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">To add your software or source code to Codekeeper, you can either upload your files directly through our online interface, or use our integrations with popular version control systems like Git, Mercurial, or SVN.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">What kind of settings and access controls can I configure in Codekeeper?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">You can configure settings such as licensing models, distribution restrictions, and access controls. You can define user roles and permissions to ensure that only authorized users can access your code, and set up licensing restrictions to protect your intellectual property.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">How does Codekeeper integrate with my development process?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">We integrate with your development process through our API and by providing direct integrations with popular version control systems and project management tools. This seamless integration allows you to automate tasks, streamline workflows, and ensure that your software is protected at every stage of development.</li>
+        <li class="q d-flex align-items-center justify-content-between q-border">
+          <p class="section__subtitle mt-3">How can I monitor and manage my software protection with Codekeeper?</p>
+          <img src="/images/integrations/icon-down.svg"/>
+        </li>
+        <li class="a section__text">Our state-of-the-art dashboard allows you to monitor the status of your software protection, licensing, and distribution. You can track key metrics, view detailed reports, and manage your software assets all in one place.</li>
+
+        <div class="" id="questions">
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Can I control who has access to my source code with Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, you can set up access controls and define user roles to ensure that only authorized users can access your source code. You can grant or revoke access as needed, providing a secure environment for your software assets.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">Can I use Codekeeper for both open-source and proprietary software?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">Yes, our platform is designed to accommodate a variety of software types and licensing models, giving you the flexibility to protect and manage your software assets effectively.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">I can’t find the answer or solution I’m looking for. Is there someone I can speak to directly?</p>
+            <img src="/images/integrations/icon-down.svg"/>
+          </li>
+          <li class="a section__text">We are here to help. You can schedule a <a href="book-a-demo.html" class="text-underline book-a-demo-href ">demo call</a> with one of our experts who will be happy to help you, or you can send an email to <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></li>
+        </div>
+        <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+          <span id='show'>Show more questions +</span>
+          <span id='hide'>Show less questions -</span>
+        </p>
+      </ul>
     </div>
     <!-- Section -->
     <!DOCTYPE html>
@@ -1730,6 +1783,60 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 
+
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
 
   
 </body>
