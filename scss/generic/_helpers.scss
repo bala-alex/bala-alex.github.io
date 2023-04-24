@@ -353,6 +353,10 @@ html {
   margin-bottom: -200px !important;
 }
 
+.mb-negative-50 {
+  margin-bottom: -50px !important;
+}
+
 .mobile-center {
 	@include screen-sm {
 		justify-content: center;
@@ -395,12 +399,28 @@ html {
   background: linear-gradient(180deg, #FAFCFF 92.38%, #F3F7FB 104.08%);
 }
 
+.bg-gradient-gray2 {
+  background: linear-gradient(1deg, #EEF3F9 -74.79%, #FFFFFF 92.88%);
+}
+
+.bg-gradient-gray3 {
+  background: linear-gradient(180deg, #FFFFFF 25.99%, #F9FCFF 100%);
+}
+
+.bg-gradient-cerulean {
+  background: linear-gradient(180deg, #009CB7 37.58%, #0288A2 113.43%);
+}
+
 .bg-gradient-night {
   background: linear-gradient(180deg, #2E66BA -31.74%, #14448C 106.28%);
 }
 
 .bg-gradient-blue {
   background: linear-gradient(180deg, #F0F9FC 0%, #FAFDFF 100%);
+}
+
+.bg-gradient-dark-blue {
+  background: linear-gradient(218.44deg, #245CB0 22.13%, #164995 123.07%);
 }
 
 .bg-azure-blue {
@@ -681,7 +701,11 @@ html {
 }
 
 .mw-900 {
-  max-width: 900px;
+  max-width: 900px !important;
+}
+
+.mw-1000 {
+  max-width: 1000px !important;
 }
 
 .mw-700 {
@@ -724,6 +748,14 @@ html {
   max-width: 35px !important;
 }
 
+.mw-40 {
+  max-width: 40px !important;
+}
+
+.mw-55 {
+  max-width: 55px !important;
+}
+
 .mh-50 {
   max-height: 50px !important;
 }
@@ -742,6 +774,10 @@ html {
 
 .mw-160 {
   max-width: 160px !important;
+}
+
+.mw-200 {
+  max-width: 200px !important;
 }
 
 .mw-800 {
@@ -795,6 +831,16 @@ html {
   box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
 }
 
+.codebase-padding {
+  padding-top: 400px;
+  padding-bottom: 200px;
+
+  @include screen-sm {
+    padding-top: 700px;
+    padding-bottom: 100px;
+  }
+}
+
 .pt-100 {
   padding-top: 100px !important;
 }
@@ -811,12 +857,28 @@ html {
   min-height: 110px;
 }
 
+.min-h-170 {
+  min-height: 170px !important;
+}
+
 .min-h-700 {
   min-height: 701px !important;
 }
 
+.mh-sm-700 {
+  min-height: 701px !important;
+
+  @include screen-sm {
+    min-height: auto !important;
+  }
+}
+
 .min-h-600 {
   min-height: 600px !important;
+}
+
+.min-h-400 {
+  min-height: 400px !important;
 }
 
 .h-400 {
@@ -831,8 +893,36 @@ html {
   font-size: 22px !important;
 }
 
+.font-50 {
+  font-size: 50px !important;
+}
+
 .font-30 {
   font-size: 30px !important;
+}
+
+.font-35 {
+  font-size: 35px !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+}
+
+.font-15 {
+  font-size: 15px !important;
+}
+
+.font-16 {
+  font-size: 16px !important;
+}
+
+.font-18 {
+  font-size: 18px !important;
+}
+
+.font-24 {
+  font-size: 24px !important;
 }
 
 .how-bg-gradient {
@@ -1072,3 +1162,4 @@ input[name=consent] {
   height: 20px !important;
   margin-right: 5px;
 }
+
