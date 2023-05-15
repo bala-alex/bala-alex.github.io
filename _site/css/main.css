@@ -10274,6 +10274,14 @@ input[name=consent] {
   }
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/logos/menu.svg");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #ffffff !important;
+}
+
 .navbar .dropdown-toggle::after {
   display: none !important;
 }
@@ -10287,6 +10295,9 @@ input[name=consent] {
 }
 .navbar a.dropdown-item:hover {
   background-color: #009CB7 !important;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   color: #ffffff !important;
   cursor: pointer;
 }
