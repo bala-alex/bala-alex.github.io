@@ -9866,6 +9866,10 @@ html {
   min-width: 300px !important;
 }
 
+.min-width-170 {
+  min-width: 170px !important;
+}
+
 .min-h-300 {
   min-height: 300px !important;
 }
@@ -9880,6 +9884,24 @@ html {
 @media (max-width: 767px) {
   .ml-negative-40 {
     margin-left: 0 !important;
+  }
+}
+
+.backups-logo-margin {
+  margin-right: 40px;
+}
+@media (max-width: 767px) {
+  .backups-logo-margin {
+    margin-right: 0px;
+  }
+}
+
+.backups-nav-margin {
+  margin-left: auto;
+}
+@media (max-width: 992px) {
+  .backups-nav-margin {
+    margin-left: 8px;
   }
 }
 

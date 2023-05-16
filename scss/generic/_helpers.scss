@@ -792,6 +792,10 @@ html {
   min-width: 300px !important;
 }
 
+.min-width-170 {
+  min-width: 170px !important;
+}
+
 .min-h-300 {
   min-height: 300px !important;
 }
@@ -805,6 +809,22 @@ html {
 
   @include screen-sm {
     margin-left: 0 !important;
+  }
+}
+
+.backups-logo-margin {
+  margin-right: 40px;
+
+  @include screen-sm {
+    margin-right: 0px;
+  }
+}
+
+.backups-nav-margin {
+  margin-left: auto;
+
+  @include screen-md {
+    margin-left: 8px;
   }
 }
 
