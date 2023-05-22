@@ -3,7 +3,7 @@
   &__subscribe {
     &-box {
       width: 100%;
-      padding: 100px 20px;
+      padding: 50px 20px;
       background: linear-gradient(180deg, #FFFFFF 0%, #EFFBFF 100%);
       border: 0.5px solid #DCE5F2;
       box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
@@ -185,5 +185,67 @@
   form {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &__footer {
+    &-bg {
+      background: #ECEEF4;
+      padding: 60px 10px;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include screen-sm {
+        flex-direction: column;
+      }
+    }
+    
+    &-text {
+      font-size: 16px !important;
+      line-height: 24px;
+      font-family: 'Mulish', sans-serif;
+      color: #6A8493;
+      font-weight: 400;
+
+      @include screen-sm {
+        text-align: center;
+      }
+    }
+
+    &-logo {
+      margin-right: 50px;
+
+      @include screen-sm {
+        margin-right: 0px;
+      }
+    }
+
+    &-bullet {
+      font-size: 20px;
+      color: $bondi-blue;
+      margin: 0 10px;
+
+      @include screen-sm {
+        display: none;
+      }
+    }
+
+    &-link {
+      font-size: 18px !important;
+      line-height: 28px;
+      font-family: 'Mulish', sans-serif;
+      color: $bondi-blue;
+      font-weight: 300;
+      margin: 10px;
+
+      &:hover {
+        color: $primary-dark;
+        text-decoration: none;
+      }
+    }
   }
 }

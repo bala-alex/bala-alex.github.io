@@ -772,8 +772,16 @@ html {
   max-width: 90px !important;
 }
 
+.mw-70 {
+  max-width: 70px !important;
+}
+
 .mw-160 {
   max-width: 160px !important;
+}
+
+.mw-110 {
+  max-width: 110px !important;
 }
 
 .mw-200 {
@@ -1080,6 +1088,10 @@ html {
   @include screen-md {
     overflow-x: scroll;
   }
+}
+
+.line-height-40 {
+  line-height: 40px !important;
 }
 
 .bottom-radius-0 {
