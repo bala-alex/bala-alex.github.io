@@ -40,7 +40,6 @@
   &__unlimited {
     &-box {
       width: 100%;
-      background: linear-gradient(180deg, #17B0CC 0%, #0591AB 100%);
       border: 0.5px solid #DCE5F2;
       box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
       border-radius: 10px;
@@ -48,6 +47,7 @@
       position:relative;
       max-width: 900px;
       min-height: 480px;
+      overflow: hidden;
 
       @include screen-sm {
         width: 96%;
@@ -57,7 +57,7 @@
 
     &-left {
       position: absolute;
-      top: 0;
+      top: 60px;
       left: 0;
       max-width: 180px;
 
@@ -101,6 +101,32 @@
 
     @include screen-sm {
       max-width: 15%;
+    }
+  }
+
+  &__circles-left2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    width: 100%;
+    transform: rotate(180deg);
+
+    @include screen-sm {
+      max-width: 15%;
+    }
+  }
+
+  &__circles-right2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 380px;
+    width: 100%;
+    transform: rotate(0deg);
+
+    @include screen-sm {
+      max-width: 30%;
     }
   }
 
