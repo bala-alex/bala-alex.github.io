@@ -277,6 +277,10 @@ html {
   font-weight: 600 !important;
 }
 
+.fw-700 {
+  font-weight: 700 !important;
+}
+
 .fw-400 {
   font-weight: 400 !important;
 }
@@ -1209,5 +1213,25 @@ input[name=consent] {
   width: 20px !important;
   height: 20px !important;
   margin-right: 5px;
+}
+
+.backups-step-icon {
+  position: absolute;
+  left: -86px;
+  top: 4px;
+
+  @include screen-lg {
+    display: none;
+  }
+}
+
+.backups-step-icon2 {
+  position: absolute;
+  left: -82px;
+  top: 4px;
+
+  @include screen-lg {
+    display: none;
+  }
 }
 

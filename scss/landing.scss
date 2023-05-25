@@ -613,6 +613,26 @@
     }
   }
 
+  &__step2 {
+    height: 40px;
+    border-radius: 20px;
+    min-width: 110px;
+    background: $bondi-blue !important;
+    color: $white !important;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-sm {
+      margin-left: 15px;
+    }
+  }
+
   &__number-bg {
     margin-left: -35px;
     margin-right: 15px;
