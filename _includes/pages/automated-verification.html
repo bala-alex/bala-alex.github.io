@@ -1,0 +1,246 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+  <div class="bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="solutions">
+      <div class="header__content">
+        <div class="header__bg-new">
+          <img class="header__bg-top-left2" src="/images/verification-page/top-left.webp" alt="Background Image"/>
+          <img class="header__bg-bottom-right" src="/images/verification-page/bottom-right.webp" alt="Background Image"/>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="header__title text-align-start mt-4 text-secondary mw-100">{{ site.data[page.lang]['automated_verification']['automated_verification'] }}</h1>
+                <p class="header__subtitle text-align-start mt-4 font-35">{{ site.data[page.lang]['automated_verification']['fast_reliable'] }}</p>
+                <p class="header__subtitle text-align-start mt-4 mw-570">{{ site.data[page.lang]['automated_verification']['experience_our'] }}</p>
+                <div class="d-flex flex-wrap resources mt-4">
+                  <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                    {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                  </a>
+                  <div>
+                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12 content-center">
+                <img class="image-style mw-530 mt-4" src="/images/verification-page/verify-header.webp" alt="Verification Image"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pricing mt-150">
+      <h2 class="verify__main-text2 text-center">{{ site.data[page.lang]['verification']['codekeeper_verification'] }}</h2>
+      <p class="verify__main-subtext2 mt-3 text-center mx-auto mw-700">{{ site.data[page.lang]['verification']['we_offer_four'] }}</p>
+    </div>
+    
+
+
+    <!-- Section -->
+    {% include demo-intro.html %}
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+
+  <script>
+    $('#questions').hide();
+    $('#hide').hide();
+
+    $(".openLines").click(function(){      
+        if ($('#hide').is(":visible")) {
+          $('#hide').hide();
+          $('#show').show();
+        }
+        else {
+          $('#show').hide();
+          $('#hide').show();
+        }
+        $('#questions').toggle(300);
+        //  $("div").toggle(300);
+    });
+  </script>
+
+  <script>
+    // Accordian Action
+    var action = 'click';
+    var speed = "500";
+    $(document).ready(function(){
+      $('.plan__box').mouseover(function(e){
+        $('.plan__box').removeClass('-active')
+        if ($(this).hasClass('-active')) {
+          return;
+        }
+        $(this).addClass('-active');
+
+      });
+    // Question handler
+      $('li.q').on(action, function(){
+
+        // gets next element
+        // opens .a of selected question
+        $(this).next().slideToggle(speed)
+
+        // selects all other answers and slides up any open answer
+        .siblings('li.a').slideUp();
+
+        // Grab img from clicked question
+        var img = $(this).children('img');
+
+        // remove Rotate class from all images except the active
+        $('img').not(img).removeClass('rotate');
+
+        // toggle rotate class
+        img.toggleClass('rotate');
+
+      });
+    });
+  </script>
+
+  <script>
+    $('#offer').hide();
+    $('#closeButton').hide();
+
+    $(".offer-btns").click(function(e){   
+        e.stopPropagation();   
+        if ($('#closeButton').is(":visible")) {
+          $('#closeButton').hide();
+          $('#openButton').show();
+        }
+        else {
+          $('#openButton').hide();
+          $('#closeButton').show();
+        }
+        $('#offer').toggle(300);
+    });
+  </script>
+
+<script>
+  var pathname = location.pathname;
+  
+  $( document ).ready(function() {
+    $.ajax('https://ipapi.co/json')
+    .then(
+      function success(response) {
+        if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+          $('.saas-continuity').text('€299');
+          $('.saas-recovery').text('€599');
+          $('.saas-replication').text('€899');
+          $('.setup-fee').text('€249');
+          $('#developer-monthly').text('€79');
+          $('.saas-verification').text('€29');
+          $('.activity-verification').text('€19');
+          $('.verification-advanced').text('€2,495');
+          $('.verification-complete').text('€3,995');
+            if (pathname.includes('/fr/')) {
+              $('.verification-advanced').text('€2495');
+              $('.verification-complete').text('€3995');
+            }
+            else {
+              $('.verification-advanced').text('€2,495');
+              $('.verification-complete').text('€3,995');
+            }
+        }
+        else if (response.currency === 'GBP') {
+          $('.saas-continuity').text('£225');
+          $('.saas-recovery').text('£449');
+          $('.saas-replication').text('£699');
+          $('.setup-fee').text('£199');
+          $('#developer-monthly').text('£59');
+          $('.saas-verification').text('£29');
+          $('.activity-verification').text('£19');
+          $('.verification-advanced').text('£1,799');
+          $('.verification-complete').text('£2,995');
+        }
+        else if (response.currency === 'INR') {
+          $('.saas-continuity').text('₹19,995');
+          $('.saas-recovery').text('₹39,995');
+          $('.saas-replication').text('₹59,995');
+          $('.setup-fee').text('₹15,000');
+          $('#developer-monthly').text('₹5,000');
+          $('.saas-verification').text('₹1,995');
+          $('.activity-verification').text('₹1,995');
+          $('.verification-advanced').text('₹179,995');
+          $('.verification-complete').text('₹249,995');
+        }
+        else if (response.currency === 'AUD') {
+          $('.saas-continuity').text('A$349');
+          $('.saas-recovery').text('A$699');
+          $('.saas-replication').text('A$995');
+          $('.setup-fee').text('A$299');
+          $('#developer-monthly').text('A$99');
+          $('.saas-verification').text('A$29');
+          $('.activity-verification').text('A$29');
+          $('.verification-advanced').text('A$2,995');
+          $('.verification-complete').text('A$4,995');
+        }
+        else if (response.currency === 'SGD') {
+          $('.saas-continuity').text('$399');
+          $('.saas-recovery').text('$799');
+          $('.saas-replication').text('$999');
+          $('.setup-fee').text('$299');
+          $('#developer-monthly').text('$99');
+          $('.saas-verification').text('$39');
+          $('.activity-verification').text('$39');
+          $('.verification-advanced').text('$3,199');
+          $('.verification-complete').text('$4,999');
+        }
+        else if (response.currency === 'ZAR') {
+          $('.saas-continuity').text('R3,999');
+          $('.saas-recovery').text('R7,999');
+          $('.saas-replication').text('R12,999');
+          $('.setup-fee').text('R3,499');
+          $('#developer-monthly').text('R1,099');
+          $('.saas-verification').text('R399');
+          $('.activity-verification').text('R399');
+          $('.verification-advanced').text('R34,999');
+          $('.verification-complete').text('R54,999');
+        }
+        else if (response.currency === 'CHF') {
+          $('.saas-continuity').text('CHF329');
+          $('.saas-recovery').text('CHF659');
+          $('.saas-replication').text('CHF999');
+          $('.setup-fee').text('CHF275');
+          $('#developer-monthly').text('CHF89');
+          $('.saas-verification').text('CHF29');
+          $('.activity-verification').text('CHF29');
+          $('.verification-advanced').text('CHF2,749');
+          $('.verification-complete').text('CHF4,399');
+        }
+        else if (response.currency === 'CAD') {
+          $('.saas-continuity').text('CAD349');
+          $('.saas-recovery').text('CAD749');
+          $('.saas-replication').text('CAD1,099');
+          $('.setup-fee').text('CAD299');
+          $('#developer-monthly').text('CAD119');
+          $('.saas-verification').text('CAD39');
+          $('.activity-verification').text('CAD39');
+          $('.verification-advanced').text('CAD2,995');
+          $('.verification-complete').text('CAD4,995');
+        }
+      },
+      function fail(data, status) {
+          console.log('Request failed.  Returned status of',
+                      status);
+      }
+    )
+    .catch((e) => console.log(e))
+  });
+</script>
+
+</body>
