@@ -1671,6 +1671,28 @@
     }
   }
 
+  &__content-bg2 {
+    min-height: 750px !important;
+    background: linear-gradient(180deg, #F2F9FF 0%, #F7FBFF 100%);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    @include screen-md {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__content-bg3 {
+    min-height: 850px !important;
+    background: linear-gradient(167.51deg, #255DB1 6.57%, #224983 98.55%);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @include screen-md {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
   &__section-image {
     // width: 80px;
     height: 80px;
@@ -1759,6 +1781,16 @@
     }
   }
 
+  &__content-line2 {
+    width: 100%;
+    border: 1px dashed #6A8493;
+    margin-right: -30px;
+
+    @include screen-md {
+      display: none;
+    }
+  }
+
   &__bg-left {
     position: absolute;
     bottom: 0px;
@@ -1778,6 +1810,43 @@
 
     @include screen-md {
       max-width: 30%;
+    }
+  }
+
+  &__bg-left2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    max-width: 500px;
+    object-fit: contain;
+
+    @include screen-md {
+      max-width: 30%;
+    }
+  }
+
+  &__bg-right2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 350px;
+    object-fit: contain;
+
+    @include screen-md {
+      max-width: 20%;
+    }
+  }
+
+  &__bg-right3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 350px;
+    object-fit: contain;
+    transform: rotate(180deg);
+
+    @include screen-md {
+      max-width: 40%;
     }
   }
 

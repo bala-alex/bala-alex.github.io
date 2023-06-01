@@ -200,6 +200,17 @@
       }
     }
 
+    &__bg-right3 {
+      position: absolute;
+      top: 95px;
+      right: 0;
+      max-width: 190px;
+
+      @include screen-sm {
+        max-width: 30%;
+      }
+    }
+
     &__shape-left {
       position: absolute;
       top: 10px;
@@ -319,12 +330,44 @@
       }
     }
 
+    &__bg2 {
+      background: linear-gradient(55.74deg, #457FD7 7.34%, #255DB1 113.77%);
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      width: 100%;
+      min-height: 367px;
+      padding: 50px;
+      position: relative;
+      @include screen-sm {
+        padding: 50px 15px;
+      }
+    }
+
     &__small-shape {
       position: absolute;
       right: 0;
       top: 0;
       width: 49px;
       height: 138px;
+    }
+
+    &__small-shape3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 238px;
+      max-width: 25%;
+      object-fit: contain;
+    }
+
+    &__large-shape3 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 419px;
+      max-width: 40%;
+      object-fit: contain;
     }
 
     &__medium-shape {

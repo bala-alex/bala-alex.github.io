@@ -919,6 +919,19 @@
       text-align: center;
     }
 
+    &__section-main-title3 {
+      font-size: 50px !important;
+      line-height: 33px;
+      font-family: 'Mulish', sans-serif;
+      color: $white;
+      font-weight: 300;
+      text-align: center;
+
+      @include screen-md {
+        font-size: 35px !important;
+      }
+    }
+
     &__section-title {
       font-size: 28px !important;
       line-height: 32px;

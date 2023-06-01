@@ -27,6 +27,20 @@
       color: $dark-cyan;
     }
 
+    &__add-on {
+      background: #DDEAFC;
+      box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+      border-radius: 100px;
+      width: fit-content;
+      padding: 10px 16px;
+      color: #245CB0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 20px;
+      font-family: 'Mulish', sans-serif;
+    }
+
     &__bg-new {
       min-height: 700px !important;
       background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
@@ -83,6 +97,15 @@
       left: 0;
       width: 155px;
       max-width: 10%;
+      object-fit: contain;
+    }
+
+    &__bg-right-shape2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 552px;
+      max-width: 35%;
       object-fit: contain;
     }
 
