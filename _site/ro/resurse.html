@@ -61,8 +61,8 @@
             Extensii <img class="ml-1" src="/images/integrations/icon-down.svg"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-            <a class="dropdown-item py-2 automated-verification-href" href="automated-verification.html">Verificare automată</a>
-            <a class="dropdown-item py-2 manual-verification-href" href="manual-verification.html">Verificare manuală</a>
+            <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">Verificare automată</a>
+            <a class="dropdown-item py-2 manual-verification-href" href="software-verification-report-manual.html">Verificare manuală</a>
           </div>
         </div> 
 
@@ -535,8 +535,8 @@
             <!-- <a class="footer__subtext mt-2 competitors-href" href="competitors.html">Concurenți</a> -->
 
             <p class="footer__text mt-4 mb-0 fw-bold">Extensii</p>
-            <a class="footer__subtext mt-2 automated-verification-href" href="automated-verification.html">Verificare automată</a>
-            <a class="footer__subtext mt-2 automated-verification-href" href="manual-verification.html">Verificare manuală</a>
+            <a class="footer__subtext mt-2 automated-verification-href" href="software-verification-report-automated.html">Verificare automată</a>
+            <a class="footer__subtext mt-2 manual-verification-href" href="software-verification-report-manual.html">Verificare manuală</a>
           </div>
           <!-- <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold">LEGAL</p>
@@ -794,8 +794,8 @@ document.addEventListener("click", closeAllSelect);
       $('.hosting-environment-escrow-href').attr('href', 'custodia-entorno-alojamiento.html')
       $('.3rd-party-dependencies-href').attr('href', 'dependencias-terceros.html')
       $('.competitors-href').attr('href', 'competidores.html')
-      $('.automated-verification-href').attr('href', 'verificación-automatizados.html')
-      $('.manual-verification-href').attr('href', 'verificación-manuales.html')
+      $('.automated-verification-href').attr('href', 'informe-verificacion-software-automatizado.html')
+      $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -853,8 +853,8 @@ document.addEventListener("click", closeAllSelect);
       $('.hosting-environment-escrow-href').attr('href', 'hosting-umgebungs-escrow.html')
       $('.3rd-party-dependencies-href').attr('href', 'drittanbieter-abhaengigkeiten.html')
       $('.competitors-href').attr('href', 'konkurrenten.html')
-      $('.automated-verification-href').attr('href', 'automatisierten-verifizierungsdienste.html')
-      $('.manual-verification-href').attr('href', 'manuellen-verifizierungsdienste.html')
+      $('.automated-verification-href').attr('href', 'software-verifizierung-automatisierter-bericht.html')
+      $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -912,8 +912,8 @@ document.addEventListener("click", closeAllSelect);
       $('.hosting-environment-escrow-href').attr('href', 'hosting-omgeving-escrow.html')
       $('.3rd-party-dependencies-href').attr('href', 'externe-afhankelijkheden.html')
       $('.competitors-href').attr('href', 'concurrenten.html')
-      $('.automated-verification-href').attr('href', 'geautomatiseerde-verificatie.html')
-      $('.manual-verification-href').attr('href', 'handmatige-verificatie.html')
+      $('.automated-verification-href').attr('href', 'software-verificatierapport-geautomatiseerd.html')
+      $('.manual-verification-href').attr('href', 'software-verificatierapport-handmatig.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -970,8 +970,8 @@ document.addEventListener("click", closeAllSelect);
       $('.hosting-environment-escrow-href').attr('href', 'hosting-mediu-escrow.html')
       $('.3rd-party-dependencies-href').attr('href', 'dependențe-de-la-terți.html')
       $('.competitors-href').attr('href', 'concurenți.html')
-      $('.automated-verification-href').attr('href', 'verificare-automată.html')
-      $('.manual-verification-href').attr('href', 'verificare-manuală.html')
+      $('.automated-verification-href').attr('href', 'verificare-software-raport-automatizat.html')
+      $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1028,8 +1028,8 @@ document.addEventListener("click", closeAllSelect);
         $('.hosting-environment-escrow-href').attr('href', 'entiercement-environnement-d-herbergement.html')
         $('.3rd-party-dependencies-href').attr('href', 'dependences-de-tiers.html')
         $('.competitors-href').attr('href', 'concurrents.html')
-        $('.automated-verification-href').attr('href', 'vérification-automatisée.html')
-        $('.manual-verification-href').attr('href', 'vérification-manuelle.html')
+        $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
+        $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
         }
   })
 </script>
@@ -1148,27 +1148,27 @@ document.addEventListener("click", closeAllSelect);
     document.getElementsByTagName('meta')["description"].content = "Codekeeper inovează din 2014 pe piața de escrow software, facilitând dezvoltatorilor de software și clienților software să utilizeze escrow software pentru a elimina riscul terților. Citiți totul despre călătoria noastră aici.";
   }
   else if (!(pathname.includes('/es')) && !(pathname.includes('/de')) && !(pathname.includes('/nl')) && !(pathname.includes('/fr')) && !(pathname.includes('/ro')) &&pathname.includes('/index.html')) {
-    document.title = "Codekeeper | Easy Online Platform for Software Escrow, SaaS Escrow and Source Code Escrow Agreements "
+    document.title = "Software Escrow | Source Code Escrow | SaaS Escrow | Source Code Escrow Agreements - Best Price Guarantee"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
   }
   else if (pathname.includes('/es/index.html')) {
-    document.title = "Codekeeper | Plataforma en línea sencilla para acuerdos de custodia de software, custodia de SaaS y custodia de código fuente"
+    document.title = "Custodia De Software | Custodia del código fuente | Custodia De SaaS | Acuerdos de custodia del código fuente - Garantía del mejor precio"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper proporciona soluciones de custodia de software de última generación para eliminar cualquier riesgo de terceros de sus operaciones empresariales.";
   }
   else if (pathname.includes('/de/index.html')) {
-    document.title = "Codekeeper | Einfache Online-Plattform für Software-Escrow-, SaaS-Escrow- und Quellcode-Escrow-Vereinbarungen"
+    document.title = "Software-Escrow | Quellcode-Escrow | SaaS Escrow | Quellcode-Escrow-Vereinbarung: Bestpreis-Garantie"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper bietet hochmoderne Software-Escrow-Lösungen, um Drittanbieter-Risiken aus Ihrem Geschäftsbetrieb zu beseitigen.";
   }
   else if (pathname.includes('/nl/index.html')) {
-    document.title = "Codekeeper | Gemakkelijk online platform voor Software Escrow, SaaS Escrow en Source Code Escrow-overeenkomsten"
+    document.title = "Software Escrow | Source Code Escrow | SaaS Escrow | Source Code Escrow Overeenkomsten - Beste Prijsgarantie"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper biedt de nieuwste oplossingen voor software-escrow, om het risico van derden uit uw zakelijke activiteiten te halen.";
   }
   else if (pathname.includes('/fr/index.html')) {
-    document.title = "Codekeeper | Plateforme en ligne simple pour les contrats d’entiercement de logiciel, d’entiercement de code source et d’entiercement de SaaS  "
+    document.title = "Entiercement De Logiciel | Entiercement de code source | Entiercement De SaaS | Contrats d’entiercement de code source - Garantie du meilleur prix"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper fournit des solutions d’entiercement de logiciel de pointe, afin d’éliminer les risques tiers de vos activités opérationnelles.";
   }
   else if (pathname.includes('/ro/index.html')) {
-    document.title = "Codekeeper | Platformă online ușoară pentru contracte de escrow software, escrow SaaS și acorduri de escrow cod sursă"
+    document.title = "Software escrow | Cod sursă escrow | Escrow SaaS | Acorduri de escrow cod sursă - Garanția celui mai bun preț"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper oferă soluții software de ultimă generație, pentru a elimina riscul terților din operațiunile dvs. de afaceri.";
   }
   else if (pathname.includes('/book-a-demo.html')) {
@@ -1730,7 +1730,7 @@ document.addEventListener("click", closeAllSelect);
   }
 
   else {
-    document.title = "Codekeeper | Easy Online Platform for Software Escrow, SaaS Escrow and Source Code Escrow Agreements "
+    document.title = "Software Escrow | Source Code Escrow | SaaS Escrow | Source Code Escrow Agreements - Best Price Guarantee"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
   }
 </script>
