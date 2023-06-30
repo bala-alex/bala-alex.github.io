@@ -9973,6 +9973,10 @@ html {
   padding-top: 100px !important;
 }
 
+.pt-50 {
+  padding-top: 50px !important;
+}
+
 .pt-150 {
   padding-top: 150px !important;
 }
@@ -10240,6 +10244,13 @@ html {
 
 .max-h-900 {
   max-height: 900px;
+}
+
+.image-160 {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-fit-contain {
@@ -19003,6 +19014,12 @@ input[name=consent] {
   color: #1A5261;
   padding-top: 150px;
 }
+@media (max-width: 767px) {
+  .resources .people-choose__main-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 .resources .people-choose__main-subtitle {
   font-family: "Mulish";
   font-style: normal;
@@ -19483,7 +19500,7 @@ input[name=consent] {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(62.03%, rgba(255, 255, 255, 0)), to(#D1EDF2)), -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 62.03%, #D1EDF2 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   padding-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 .resources .how__title {
   font-weight: 200;
@@ -19496,8 +19513,8 @@ input[name=consent] {
   width: 100%;
   border: 1px solid #245CB0;
   opacity: 20%;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .resources .how__col {
   width: 20%;
