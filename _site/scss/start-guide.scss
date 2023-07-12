@@ -98,7 +98,106 @@
         margin-bottom: 0px;
       }
     }
-  }  
+  }
+
+  .conduct {
+    &__header-content {
+      margin-top: 85px;
+      background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
+      min-height: 650px;
+      position: relative;
+    }
+
+    &__header-title {
+      font-size: 60px !important;
+      line-height: 70px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 300;
+      letter-spacing: -1px;
+      padding-top: 100px;
+
+      @include screen-sm {
+        padding-top: 20px;
+      }
+    }
+
+    &__header-small-shape {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 250px;
+      object-fit: contain;
+
+      @include screen-sm {
+        max-width: 20%;
+      }
+    }
+
+    &__header-large-shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 450px;
+      object-fit: contain;
+
+      @include screen-sm {
+        max-width: 40%;
+      }
+    }
+
+    &__bg-gradient {
+      background: linear-gradient(1deg, rgba(204, 248, 255, 0.295) -4.05%, rgba(239, 249, 251, 0) 50%);
+    }
+
+    &__info-title {
+      font-size: 35px !important;
+      line-height: 40px;
+      font-family: 'Mulish', sans-serif;
+      color: $cerulean;
+      font-weight: 400;
+    }
+
+    &__info-text {
+      font-size: 24px !important;
+      line-height: 32px;
+      font-family: 'Mulish', sans-serif;
+      color: $cerulean;
+      font-weight: 400;
+    }
+
+    &__info-text2 {
+      font-size: 20px !important;
+      line-height: 28px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 400;
+    }
+
+    &__info-subtext {
+      font-size: 18px !important;
+      line-height: 28px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 300;
+    }
+
+    &__office-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 650px;
+      object-fit: contain;
+
+      @include screen-lg {
+        max-width: 40%;
+      }
+
+      @include screen-sm {
+        max-width: 50%;
+      }
+    }
+  }
 
   .discover {
     &__title {
