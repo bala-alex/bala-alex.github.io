@@ -329,7 +329,7 @@
                 <p class="section__subtitle mt-3">¿Puedo programar una demostración de sus servicios de custodia?</p>
                 <img src="/images/integrations/icon-down.svg"/>
               </li>
-              <li class="a section__text bg-white">¡Por supuesto! Estaremos encantados de proporcionarle una demostración de nuestros servicios. Para programar una demostración, complete el formulario de contacto en nuestra página de "Contacto" o envíe un correo electrónico a <a href="mailto: sales@codekeeper.co" class="text-underline">sales@codekeeper.co</a> con la fecha y hora de su preferencia.</li>
+              <li class="a section__text bg-white">¡Por supuesto! Estaremos encantados de proporcionarle una demostración de nuestros servicios. Para programar una demostración, complete el formulario de contacto en nuestra página de "Contacto" o envíe un correo electrónico a <a href="mailto:/ sales@codekeeper.co" class="text-underline">sales@codekeeper.co</a> con la fecha y hora de su preferencia.</li>
               <li class="q d-flex align-items-center justify-content-between q-border bg-white">
                 <p class="section__subtitle mt-3">¿Me estoy comprometiendo a algo al reservar una demostración? </p>
                 <img src="/images/integrations/icon-down.svg"/>
@@ -349,7 +349,7 @@
                 <p class="section__subtitle mt-3">¿Puedo contactar con Codekeeper para obtener soporte técnico?</p>
                 <img src="/images/integrations/icon-down.svg"/>
               </li>
-              <li class="a section__text bg-white">Si necesita soporte, puede contactar con nosotros a través de cualquiera de los canales en esta página, o puede enviarnos un correo electrónico a <a href="mailto: service@codekeeper.co" class="text-underline">service@codekeeper.co</a></li>
+              <li class="a section__text bg-white">Si necesita soporte, puede contactar con nosotros a través de cualquiera de los canales en esta página, o puede enviarnos un correo electrónico a <a href="mailto:/ service@codekeeper.co" class="text-underline">service@codekeeper.co</a>.</li>
               
               <li class="q d-flex align-items-center justify-content-between q-border bg-white">
                 <p class="section__subtitle mt-3">¿Podemos hablar del acuerdo de custodia?</p>
@@ -365,7 +365,7 @@
                 <p class="section__subtitle mt-3">Tengo una sugerencia o comentario para Codekeeper. ¿Cómo puedo compartirlo?</p>
                 <img src="/images/integrations/icon-down.svg"/>
               </li>
-              <li class="a section__text bg-white">¡Agradecemos sus comentarios y sugerencias! No dude en compartirlos con nosotros enviándonos un correo electrónico a <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a> o utilizando el formulario de contacto en nuestra página de "Contacto".</li>
+              <li class="a section__text bg-white">¡Agradecemos sus comentarios y sugerencias! No dude en compartirlos con nosotros enviándonos un correo electrónico a <a href="mailto:/ contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a> o utilizando el formulario de contacto en nuestra página de "Contacto".</li>
             </ul>
             
           </div>
@@ -847,7 +847,7 @@
     <div class="footer__devider mt-5">
       <p class="footer__text2 my-2">Codekeeper, Inc. - Todos los derechos reservados <script>document.write( new Date().getFullYear() );</script>.</p>
       <div class="d-flex">
-        <a class="footer__subtext my-2 mr-3 text-bondi-blue" href="code-of-conduct.html">Code of Conduct</a>
+        <a class="footer__subtext my-2 mr-3 text-bondi-blue code-of-conduct-href" href="code-of-conduct.html">Código de conducta</a>
         <a class="footer__subtext my-2 mr-3 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Declaración de privacidad</a>
         <a class="footer__subtext my-2 mr-3 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">Términos y condiciones</a>
         <a class="footer__subtext my-2 text-bondi-blue" target="_blank" href="sitemap.xml">Sitemap</a>
@@ -1095,6 +1095,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'competidores.html')
       $('.automated-verification-href').attr('href', 'informe-verificacion-software-automatizado.html')
       $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
+      $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -1154,6 +1155,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'konkurrenten.html')
       $('.automated-verification-href').attr('href', 'software-verifizierung-automatisierter-bericht.html')
       $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
+      $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1213,6 +1215,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'concurrenten.html')
       $('.automated-verification-href').attr('href', 'software-verificatierapport-geautomatiseerd.html')
       $('.manual-verification-href').attr('href', 'software-verificatierapport-handmatig.html')
+      $('.code-of-conduct-href').attr('href', 'gedragscode.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1271,6 +1274,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'concurenți.html')
       $('.automated-verification-href').attr('href', 'verificare-software-raport-automatizat.html')
       $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
+      $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1329,6 +1333,7 @@ document.addEventListener("click", closeAllSelect);
         $('.competitors-href').attr('href', 'concurrents.html')
         $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
         $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
+        $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
         }
   })
 </script>

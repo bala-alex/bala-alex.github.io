@@ -3771,12 +3771,12 @@
           <p class="section__subtitle mt-3">Acceptați plata prin factură?</p>
           <img src="/images/integrations/icon-down.svg"/>
         </li>
-        <li class="a section__text">Da, facem. Ne puteți trimite pur și simplu un e-mail la <a href="mailto: service@codekeeper.co" class="text-underline">service@codekeeper.co</a> și solicitați ca contul dvs. să fie setat la plata prin factură.</li>
+        <li class="a section__text"></li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">Ce planuri de prețuri oferiți? Există taxe de configurare pentru utilizarea serviciilor de escrow Codekeeper?</p>
           <img src="/images/integrations/icon-down.svg"/>
         </li>
-        <li class="a section__text">Puteți găsi informații despre planurile noastre de prețuri și taxele de configurare pe pagina de mai sus. Dacă aveți întrebări la care nu se răspunde pe această pagină, ne puteți contacta trimițând un e-mail la adresa <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a>.</li>
+        <li class="a section__text">Puteți găsi informații despre planurile noastre de prețuri și taxele de configurare pe pagina de mai sus. Dacă aveți întrebări la care nu se răspunde pe această pagină, ne puteți contacta trimițând un e-mail la adresa <a href="mailto:/ contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a>.</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">Cum funcționează ciclul de facturare?</p>
           <img src="/images/integrations/icon-down.svg"/>
@@ -3804,7 +3804,7 @@
             <p class="section__subtitle mt-3">Pot obține un plan personalizat dacă cerințele mele nu se potrivesc cu niciunul dintre planurile enumerate?</p>
             <img src="/images/integrations/icon-down.svg"/>
           </li>
-          <li class="a section__text">Înțelegem că nevoile fiecărei organizații sunt unice. Dacă cerințele dvs. nu se încadrează în planurile noastre standard de preț, vă rugăm să contactați echipa noastră de vânzări la <a href="mailto: sales@codekeeper.co" class="text-underline">sales@codekeeper.co</a> pentru a discuta despre o soluție personalizată adaptată nevoilor dumneavoastră specifice.</li>
+          <li class="a section__text">Înțelegem că nevoile fiecărei organizații sunt unice. Dacă cerințele dvs. nu se încadrează în planurile noastre standard de preț, vă rugăm să contactați echipa noastră de vânzări la <a href="mailto:/ sales@codekeeper.co" class="text-underline">sales@codekeeper.co</a> pentru a discuta despre o soluție personalizată adaptată nevoilor dumneavoastră specifice.</li>
           <li class="q d-flex align-items-center justify-content-between q-border">
             <p class="section__subtitle mt-3">Există taxe pentru depunerea sau actualizarea codului sursă?</p>
             <img src="/images/integrations/icon-down.svg"/>
@@ -3841,7 +3841,7 @@
           <span id='hide'>Afișează mai puține întrebări -</span>
         </p>
       </ul>
-      <p class="section__text mt-5 mb-5">Dacă aveți alte întrebări sau aveți nevoie de o soluție personalizată, vă rugăm să nu ezitați să contactați echipa noastră de servicii pentru clienți pentru asistență, trimițând un e-mail la <a href="mailto: contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a></p>
+      <p class="section__text mt-5 mb-5">Dacă aveți alte întrebări sau aveți nevoie de o soluție personalizată, vă rugăm să nu ezitați să contactați echipa noastră de servicii pentru clienți pentru asistență, trimițând un e-mail la <a href="mailto:/ contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a>. </p>
     </div>
 
     <!-- Section -->
@@ -4025,7 +4025,7 @@
     <div class="footer__devider mt-5">
       <p class="footer__text2 my-2">Codekeeper, Inc. - Toate drepturile rezervate <script>document.write( new Date().getFullYear() );</script>.</p>
       <div class="d-flex">
-        <a class="footer__subtext my-2 mr-3 text-bondi-blue" href="code-of-conduct.html">Codul de conduită</a>
+        <a class="footer__subtext my-2 mr-3 text-bondi-blue code-of-conduct-href" href="code-of-conduct.html">Codul de conduită</a>
         <a class="footer__subtext my-2 mr-3 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Politica de confidențialitate</a>
         <a class="footer__subtext my-2 mr-3 text-bondi-blue" target="_blank" href="https://legal.codekeeper.co/page?page=TermsConditions">Termeni și condiții</a>
         <a class="footer__subtext my-2 text-bondi-blue" target="_blank" href="sitemap.xml">Sitemap</a>
@@ -4273,6 +4273,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'competidores.html')
       $('.automated-verification-href').attr('href', 'informe-verificacion-software-automatizado.html')
       $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
+      $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -4332,6 +4333,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'konkurrenten.html')
       $('.automated-verification-href').attr('href', 'software-verifizierung-automatisierter-bericht.html')
       $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
+      $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -4391,6 +4393,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'concurrenten.html')
       $('.automated-verification-href').attr('href', 'software-verificatierapport-geautomatiseerd.html')
       $('.manual-verification-href').attr('href', 'software-verificatierapport-handmatig.html')
+      $('.code-of-conduct-href').attr('href', 'gedragscode.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -4449,6 +4452,7 @@ document.addEventListener("click", closeAllSelect);
       $('.competitors-href').attr('href', 'concurenți.html')
       $('.automated-verification-href').attr('href', 'verificare-software-raport-automatizat.html')
       $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
+      $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -4507,6 +4511,7 @@ document.addEventListener("click", closeAllSelect);
         $('.competitors-href').attr('href', 'concurrents.html')
         $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
         $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
+        $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
         }
   })
 </script>
