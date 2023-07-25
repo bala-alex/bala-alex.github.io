@@ -14,7 +14,72 @@
     <!-- Navigation -->
     {% include navigation.html %}
     <!-- Header -->
-    <div class="bg-gradient-blue section-medium pt-150 mb-200">
+    <div class="resources">
+      <div class="header__bg-landing">
+        <img class="header__bg-logo-shape" src="/images/landing/logo-bg-shape.webp" alt="Background Image"/>
+        <div class="container section-medium">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p class="header__subtitle2 my-4 font-16 text-bondi-blue">- W E L C O M E</p>
+              <h1 class="header__title2 mt-3">Technical Needs Assessment</h1>
+              <p class="header__subtitle2 my-4 font-24 text-dark-cyan">Bridging Trust and Expertise: Unleash the Power of Escrow for Technical Need Assessment</p>
+              <div class="d-flex">
+                <img class="image-style mw-35 mt-1 mr-3" src="/images/landing/shield-icon.webp" alt="Shield Icon"/>
+                <div>
+                  <p class="header__subtitle2 font-20 text-slate-gray">Fill out the questionnaire below to help us better understand your specific needs and technical circumstances.</p>
+                  <a class="button btn-cerulean3 my-4" href="#start-assessment">
+                    Start Assessment
+                  </a>
+                </div>
+
+              </div>
+              
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="image-style mh-400" src="/images/landing/dashboard-image.webp" alt="Dashboard Image"/>
+              <p class="header__subtext mt-2 text-center">{{ site.data[page.lang]['index']['we_support_all'] }} </p>
+              <div class="resources">
+                <div class="applications__logos mt-4 justify-content-center">
+                  
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"/>
+                    <p class="applications__logo-text">GitHub</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"/>
+                    <p class="applications__logo-text">Bitbucket</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"/>
+                    <p class="applications__logo-text">GitLab</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg"/>
+                    <p class="applications__logo-text">Git</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"/>
+                    <p class="applications__logo-text">Google<br> Cloud</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg"/>
+                    <p class="applications__logo-text">Microsoft Azure</p>
+                  </div>
+                  <div class="applications__logo mx-0">
+                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"/>
+                    <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-white section-medium pt-200 mb-200" id="start-assessment">
       <div class="container">
         <p class="switch__main-title mt-5 text-center mw-100">Technical Needs Assessment</p>
         <p class="switch__main-subtitle text-center mw-100 pb-4">Please fill out the questionnaire below to help us better understand your specific needs and technical circumstances.</p>

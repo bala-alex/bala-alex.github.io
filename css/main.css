@@ -18586,6 +18586,17 @@ input[name=consent] {
     max-width: 30%;
   }
 }
+.resources .header__bg-logo-shape {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  max-width: 400px;
+}
+@media (max-width: 992px) {
+  .resources .header__bg-logo-shape {
+    max-width: 40%;
+  }
+}
 .resources .header__circles-left {
   position: absolute;
   top: 95px;
