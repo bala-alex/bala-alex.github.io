@@ -2010,6 +2010,12 @@
       label.hs-form-radio-display {
         margin-top: 0px !important;
         background-color: $white;
+        box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+        border-radius: 8px;
+        // border: 8px solid rgba(69, 180, 200, 0.4);
+        border: 8px solid rgba(106, 132, 147, 0.1);
+        height: 53px;
+        padding-left: 8px;
       }
 
       label#label-other-c3525191-4529-4f75-833b-16e7a91f2a56 {
@@ -2183,6 +2189,32 @@
         color: #B7B7B7 !important;
         font-weight: 400;
       }
+
+      // input[type='radio'] {
+      //   width: 20px;
+      //   height: 20px;
+      //   border-radius: 50%;
+      //   outline: none;
+      //   border: 3px solid rgba(106, 132, 147, 0,1);
+      //   margin-top: 10px;
+      // }
+
+      // input[type='radio']:before {
+      //     content: '';
+      //     display: block;
+      //     width: 65%;
+      //     height: 60%;
+      //     margin: 21% auto;
+      //     border-radius: 50%;
+      // }
+
+      // input[type="radio"]:checked:before {
+      //   background: $bondi-blue !important;    
+      // }
+    
+      // input[type="radio"]:checked {
+      //   border-color: $bondi-blue !important;
+      // }
     }
 
     &__modal-form5 {
