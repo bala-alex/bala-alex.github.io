@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <div class="bg-white section-medium pt-200 mb-100" id="start-risk-assessment">
+    <div class="bg-white section-medium pt-200 mb-5" id="start-risk-assessment">
       <div class="container">
         <p class="switch__main-title my-5 text-center mw-100 font-35 line-height-40">What is your role in relation to the software in question?</p>
         <!-- <p class="switch__main-subtitle text-center mw-100 pb-4">Please fill out the questionnaire below</p> -->
@@ -127,13 +127,29 @@
     </div>
       
     <!-- Section -->
-    {% include demo-intro.html %}
+    <div class="resources">
+      <div class="intro-guide__container mt-0 pt-150 min-h-600">
+        <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Background Image"/>
+        <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Background Image"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <img class="image-style" src="/images/landing/our-experts.webp" alt="Our Expert Image"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="intro-guide__main-title mt-4">Book a 1-on-1 Demo</p>
+              <p class="intro-guide__main-subtitle text-slate-gray">Book a demo with one of our experts who will be more than happy to show you around our platform and answer any questions you might have.</p>
+              <a class="button btn-cerulean3 my-4" href="book-a-demo.html">
+                Book a Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     {% include footer.html %}
   </div>
-
-  <!-- Snippets -->
-  {% include snippets.html %}
 
   <script>
     $( document ).ready(function() {
@@ -146,7 +162,10 @@
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 
-  <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
-  <!-- End of HubSpot Embed Code -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d16ahjtmf9d1au.cloudfront.net/inject.bundle.js" async data-id="ToyboxSnippet" data-token="ullmwqAjDj17" ></script>
 </body>
