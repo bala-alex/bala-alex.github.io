@@ -18937,6 +18937,20 @@ input[name=consent] {
     max-width: 40%;
   }
 }
+.resources .header__bg-logo-shape2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media (max-width: 992px) {
+  .resources .header__bg-logo-shape2 {
+    max-width: 40%;
+  }
+}
 .resources .header__circles-left {
   position: absolute;
   top: 95px;

@@ -1,0 +1,51 @@
+<body>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target;var elem = document.head;elem.appendChild(script);
+    </script>
+    <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
+    </noscript>
+    <!--  Clickcease.com tracking-->
+
+  <div class="contact bg-white">
+    <!-- Navigation -->
+    {% include navigation.html %}
+    <!-- Header -->
+    <div class="resources">
+      <div class="header__bg-landing">
+        <img class="header__bg-logo-shape" src="/images/landing/logo-bg-shape.webp" alt="CK Logo Background Image"/>
+        <img class="header__bg-logo-shape2" src="/images/landing/logo-bg-shape.webp" alt="CK Logo Background Image"/>
+        <div class="container section-medium">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <img class="image-style" src="/images/landing/our-experts.webp" alt="Our Expert Image"/>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <p class="header__subtext mt-5 font-35 text-dark-cyan mw-420 line-height-40">Ask us any question,<br> we are ready to assist you!</p>
+              <a class="button btn-cerulean3 my-4 px-5" href="#hs-chat-open">
+                Open Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+
+  <script>
+    $( document ).ready(function() {
+      $('.open-chat').click(function(){
+
+        window.HubSpotConversations.widget.open();
+      });
+    });
+  </script>
+
+</body>

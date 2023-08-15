@@ -244,6 +244,18 @@
       }
     }
 
+    &__bg-logo-shape2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 300px;
+      transform: rotate(180deg);
+
+      @include screen-md {
+        max-width: 40%;
+      }
+    }
+
     &__circles-left {
       position: absolute;
       top: 95px;
