@@ -25,9 +25,6 @@
           <div class="col-md-6 col-sm-12">
             <div class="discount__form mt-5 mx-auto">
               <p class="discount__form-title mb-4">{{ site.data[page.lang]['discount']['fill_the_form'] }}</p>
-              <!--[if lte IE 8]>
-              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-              <![endif]-->
               <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
               <script>
                 hbspt.forms.create({
@@ -41,10 +38,10 @@
         </div>
       </div>
     </div>
-
     <!-- Footer -->
     {% include footer.html %}
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 </body>

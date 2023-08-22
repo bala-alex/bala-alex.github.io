@@ -32,7 +32,6 @@
                   <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
               </div>
-
             </div>
             <div class="col-md-6 col-sm-12">
               <img class="image-style mh-400" src="/images/landing/home-screen-image.webp" alt="Dashboard Image"/>
@@ -42,14 +41,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="my-5 d-flex">
-          <a class="button btn-developer mr-2 features-href" href="features.html">
-            I’m a Software Developer
-          </a>
-          <a class="button btn-client mr-2 features-href" href="features.html?client">
-            I’m a Software Client
-          </a>
-        </div> -->
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
@@ -57,15 +48,12 @@
         <!-- Slideshow Brands -->
         {% include slideshow-brands.html %}
       </div>
-
       <div class="software-escrow__bg-gray min-h-300">
         <div class="container">
           <p class="software-escrow__main-title pt-5">{{ site.data[page.lang]['index']['simplifying_software'] }}</p>
           <p class="software-escrow__main-subtitle mx-auto mw-100 mt-4">{{ site.data[page.lang]['index']['traditional_software'] }}</p>
-          
         </div>
       </div>
-
       <div class="bg-white section-small">
         <div class="container">
           <div class="row mt-5">
@@ -400,7 +388,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="container mb-100">
@@ -445,374 +432,11 @@
         </div>
       </div>
     </div>
-      
     <!-- Footer -->
     {% include footer.html %}
   </div>
-  
-  
-
   <!-- Snippets -->
   {% include snippets.html %}
-  <script src="/js/easyResponsiveTabs.js"></script>
-  <!--Plug-in Initialisation-->
-	<script type="text/javascript">
-    $(document).ready(function() {
-        //Vertical Tab
-        $('#parentVerticalTab').easyResponsiveTabs({
-            type: 'vertical', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo2');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
-            }
-        });
-    });
-  </script>
+  {% include title-tags.html %}
 
-
-<script>
-  // Accordian Action
-    var action = 'click';
-    var speed = "500";
-    $(document).ready(function(){
-      $('.plan__box').mouseover(function(e){
-        $('.plan__box').removeClass('-active')
-        if ($(this).hasClass('-active')) {
-          return;
-        }
-        $(this).addClass('-active');
-
-      });
-    // Question handler
-      $('li.q').on(action, function(){
-
-        // gets next element
-        // opens .a of selected question
-        $(this).next().slideToggle(speed)
-
-        // selects all other answers and slides up any open answer
-        .siblings('li.a').slideUp();
-
-        // Grab img from clicked question
-        var img = $(this).children('img');
-
-        // remove Rotate class from all images except the active
-        $('img').not(img).removeClass('rotate');
-
-        // toggle rotate class
-        img.toggleClass('rotate');
-
-      });
-    });
-  </script>
-
-<script>
-  $( document ).ready(function() {
-    $.ajax('https://ipapi.co/json')
-    .then(
-      function success(response) {
-        if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-          $('.setup-fee').text('€249');
-          $('.amazon-deposit').text('€29');
-          $('#developer-monthly').text('€89');
-          $('#team-monthly').text('€225');
-          $('#business-monthly').text('€399');
-          $('#enterprise-monthly').text('€1,399');
-          $('.developer-monthly').text('€89');
-          $('.team-monthly').text('€225');
-          $('.business-monthly').text('€399');
-          $('.enterprise-monthly').text('€1,399');
-          $('#developer-yearly').text('€79');
-          $('#team-yearly').text('€199');
-          $('#business-yearly').text('€349');
-          $('#enterprise-yearly').text('€1,299');
-          $('.increased-repository').text('€19');
-          $('.increased-storage').text('€5');
-          $('.storage-selection').text('€9');
-          $('.deposit-connections').text('€99');
-          $('.release-processing').text('€199');
-          $('.saas-continuity').text('€299');
-          $('.verification-advanced').text('€2,495');
-          $('.verification-complete').text('€3,995');
-          $('.plan-eu').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-au').remove();
-          $('.plan-sg').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-        else if (response.currency === 'GBP') {
-          $('.setup-fee').text('£199');
-          $('.amazon-deposit').text('£29');
-          $('#developer-monthly').text('£79');
-          $('#team-monthly').text('£199');
-          $('#business-monthly').text('£349');
-          $('#enterprise-monthly').text('£1,099');
-          $('.developer-monthly').text('£79');
-          $('.team-monthly').text('£199');
-          $('.business-monthly').text('£349');
-          $('.enterprise-monthly').text('£1,099');
-          $('#developer-yearly').text('£69');
-          $('#team-yearly').text('£175');
-          $('#business-yearly').text('£299');
-          $('#enterprise-yearly').text('£999');
-          $('.increased-repository').text('£14');
-          $('.increased-storage').text('£4');
-          $('.storage-selection').text('£7');
-          $('.deposit-connections').text('£70');
-          $('.release-processing').text('£149');
-          $('.saas-continuity').text('£225');
-          $('.verification-advanced').text('£1,799');
-          $('.verification-complete').text('£2,995');
-          $('.plan-uk').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-in').remove();
-          $('.plan-au').remove();
-          $('.plan-sg').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-        else if (response.currency === 'INR') {
-          $('.setup-fee').text('₹15,000');
-          $('.amazon-deposit').text('₹1,995');
-          $('#developer-monthly').text('₹6,995');
-          $('#team-monthly').text('₹17,995');
-          $('#business-monthly').text('₹32,995');
-          $('#enterprise-monthly').text('₹109,995');
-          $('.developer-monthly').text('₹6,995');
-          $('.team-monthly').text('₹17,995');
-          $('.business-monthly').text('₹32,995');
-          $('.enterprise-monthly').text('₹109,995');
-          $('#developer-yearly').text('₹6,495');
-          $('#team-yearly').text('₹15,995');
-          $('#business-yearly').text('₹29,995');
-          $('#enterprise-yearly').text('₹99,995');
-          $('.increased-repository').text('₹1,415');
-          $('.increased-storage').text('₹375');
-          $('.storage-selection').text('₹670');
-          $('.deposit-connections').text('₹7,380');
-          $('.release-processing').text('₹12,500');
-          $('.saas-continuity').text('₹19,995');
-          $('.verification-advanced').text('₹179,995');
-          $('.verification-complete').text('₹249,995');
-          $('.plan-in').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-au').remove();
-          $('.plan-sg').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-        else if (response.currency === 'AUD') {
-          $('.setup-fee').text('A$299');
-          $('.amazon-deposit').text('A$29');
-          $('#developer-monthly').text('A$109');
-          $('#team-monthly').text('A$275');
-          $('#business-monthly').text('A$549');
-          $('#enterprise-monthly').text('A$1,899');
-          $('.developer-monthly').text('A$109');
-          $('.team-monthly').text('A$275');
-          $('.business-monthly').text('A$549');
-          $('.enterprise-monthly').text('A$1,899');
-          $('#developer-yearly').text('A$99');
-          $('#team-yearly').text('A$249');
-          $('#business-yearly').text('A$499');
-          $('#enterprise-yearly').text('A$1,699');
-          $('.increased-repository').text('A$25');
-          $('.increased-storage').text('A$7');
-          $('.storage-selection').text('A$12');
-          $('.deposit-connections').text('A$130');
-          $('.release-processing').text('A$250');
-          $('.saas-continuity').text('A$349');
-          $('.verification-advanced').text('A$2,995');
-          $('.verification-complete').text('A$4,995');
-          $('.plan-au').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-sg').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-
-        else if (response.currency === 'SGD') {
-          $('.setup-fee').text('$299');
-          $('.amazon-deposit').text('$39');
-          $('#developer-monthly').text('$109');
-          $('#team-monthly').text('$275');
-          $('#business-monthly').text('$549');
-          $('#enterprise-monthly').text('$1,899');
-          $('.developer-monthly').text('$109');
-          $('.team-monthly').text('$275');
-          $('.business-monthly').text('$549');
-          $('.enterprise-monthly').text('$1,899');
-          $('#developer-yearly').text('$99');
-          $('#team-yearly').text('$249');
-          $('#business-yearly').text('$499');
-          $('#enterprise-yearly').text('$1,699');
-          $('.increased-repository').text('$25');
-          $('.increased-storage').text('$7');
-          $('.storage-selection').text('$12');
-          $('.deposit-connections').text('$130');
-          $('.release-processing').text('$249');
-          $('.saas-continuity').text('$399');
-          $('.verification-advanced').text('$3,199');
-          $('.verification-complete').text('$4,999');
-          $('.plan-sg').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-au').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-
-        else if (response.currency === 'ZAR') {
-          $('.setup-fee').text('R3,499');
-          $('.amazon-deposit').text('R399');
-          $('#developer-monthly').text('R1,395');
-          $('#team-monthly').text('R3,345');
-          $('#business-monthly').text('R5,995');
-          $('#enterprise-monthly').text('R21,995');
-          $('.developer-monthly').text('R1,395');
-          $('.team-monthly').text('R3,345');
-          $('.business-monthly').text('R5,995');
-          $('.enterprise-monthly').text('R21,995');
-          $('#developer-yearly').text('R1,250');
-          $('#team-yearly').text('R2,950');
-          $('#business-yearly').text('R5,490');
-          $('#enterprise-yearly').text('R19,995');
-          $('.increased-repository').text('R270');
-          $('.increased-storage').text('R70');
-          $('.storage-selection').text('R130');
-          $('.deposit-connections').text('R1,410');
-          $('.release-processing').text('R2,799');
-          $('.saas-continuity').text('R3,999');
-          $('.verification-advanced').text('R34,999');
-          $('.verification-complete').text('R54,999');
-          $('.plan-rsa').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-sg').remove();
-          $('.plan-au').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-
-        else if (response.currency === 'CHF') {
-          $('.setup-fee').text('CHF275');
-          $('.amazon-deposit').text('CHF29');
-          $('#developer-monthly').text('CHF89');
-          $('#team-monthly').text('CHF225');
-          $('#business-monthly').text('CHF399');
-          $('#enterprise-monthly').text('CHF1,349');
-          $('.developer-monthly').text('CHF89');
-          $('.team-monthly').text('CHF225');
-          $('.business-monthly').text('CHF399');
-          $('.enterprise-monthly').text('CHF1,349');
-          $('#developer-yearly').text('CHF79');
-          $('#team-yearly').text('CHF199');
-          $('#business-yearly').text('CHF349');
-          $('#enterprise-yearly').text('CHF1,199');
-          $('.increased-repository').text('CHF18');
-          $('.increased-storage').text('CHF5');
-          $('.storage-selection').text('CHF8');
-          $('.deposit-connections').text('CHF99');
-          $('.release-processing').text('CHF219');
-          $('.saas-continuity').text('CHF329');
-          $('.verification-advanced').text('CHF2,749');
-          $('.verification-complete').text('CHF4,399');
-          $('.plan-ch').removeClass('d-none');
-          $('.plan-us').remove();
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-au').remove();
-          $('.plan-rsa').remove();
-          $('.plan-sg').remove();
-          $('.plan-ca').remove();
-        }
-
-        else if (response.currency === 'CAD') {
-              $('.setup-fee').text('CAD299');
-              $('.amazon-deposit').text('CAD39');
-              $('#developer-monthly').text('CAD119');
-              $('#team-monthly').text('CAD299');
-              $('#business-monthly').text('CAD499');
-              $('#enterprise-monthly').text('CAD1,849');
-              $('.developer-monthly').text('CAD119');
-              $('.team-monthly').text('CAD299');
-              $('.business-monthly').text('CAD499');
-              $('.enterprise-monthly').text('CAD1,849');
-              $('#developer-yearly').text('CAD109');
-              $('#team-yearly').text('CAD275');
-              $('#business-yearly').text('CAD449');
-              $('#enterprise-yearly').text('CAD1,649');
-              $('.developer-yearly').text('CAD109');
-              $('.team-yearly').text('CAD275');
-              $('.business-yearly').text('CAD449');
-              $('.enterprise-yearly').text('CAD1,649');
-              $('.increased-repository').text('CAD25');
-              $('.increased-storage').text('CAD7');
-              $('.storage-selection').text('CAD12');
-              $('.deposit-connections').text('CAD130');
-              $('.release-processing').text('CAD249');
-              $('.saas-continuity').text('CAD349');
-              $('.verification-advanced').text('CAD2,995');
-              $('.verification-complete').text('CAD4,995');
-              $('.developer-monthly-saas').text('CAD139');
-              $('.team-monthly-saas').text('CAD199');
-              $('.business-monthly-saas').text('CAD329');
-              $('.enterprise-monthly-saas').text('CAD669');
-              $('.plan-ca').removeClass('d-none');
-              $('.plan-us').remove();
-              $('.plan-eu').remove();
-              $('.plan-uk').remove();
-              $('.plan-in').remove();
-              $('.plan-sg').remove();
-              $('.plan-rsa').remove();
-              $('.plan-ch').remove();
-              $('.plan-au').remove();
-            }
-
-        else {
-          $('.plan-us').removeClass('d-none');
-          $('.plan-eu').remove();
-          $('.plan-uk').remove();
-          $('.plan-in').remove();
-          $('.plan-au').remove();
-          $('.plan-sg').remove();
-          $('.plan-rsa').remove();
-          $('.plan-ch').remove();
-          $('.plan-ca').remove();
-        }
-      },
-      function fail(data, status) {
-          console.log('Request failed.  Returned status of',
-                      status);
-      }
-    )
-    .catch((e) => console.log(e))
-  });
-</script>
 </body>

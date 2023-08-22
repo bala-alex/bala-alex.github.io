@@ -121,18 +121,8 @@
     <div class="section-large bg-white">
       <div class="container">
         <p class="depositing__title pb-3 text-center mb-4">{{ site.data[page.lang]['source_code_escrow']['does_depositing_saas'] }}</p>
-        <div class="row mt-5">
-          <div class="col-md-6 col-sm-12">
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/time-consuming.svg" alt="Icon Time Consuming"/>{{ site.data[page.lang]['source_code_escrow']['time_consuming'] }}</p>
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/complex-deposit.svg" alt="Icon Complex Deposit"/>{{ site.data[page.lang]['source_code_escrow']['complex_deposit'] }}</p>
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/spending-hours.svg" alt="Icon Spending Hours"/>{{ site.data[page.lang]['source_code_escrow']['developers_spending'] }}</p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/outdated-deposit.svg" alt="Icon Outdated Deposit"/>{{ site.data[page.lang]['source_code_escrow']['outdated_and'] }}</p>
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/missing-repositories.svg" alt="Icon Missing Repositories"/>{{ site.data[page.lang]['source_code_escrow']['missing'] }}</p>
-            <p class="depositing__subtitle"><img class="mr-2 pb-1" src="/images/source-code-escrow/icons/unsupported-source.svg" alt="Icon Unsupported Source"/>{{ site.data[page.lang]['source_code_escrow']['unsupported_source'] }}</p>
-          </div>
-        </div>
+        <!-- Section -->
+        {% include depositing-code.html %}
       </div>
     </div>
     <div class="depositing__bg"></div>
@@ -286,49 +276,7 @@
       </div>
     </div>
     <!-- Section -->
-    <div class="datacenters__bg">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="scenario__title mx-auto mw-100 pb-3">{{ site.data[page.lang]['source_code_escrow']['securely_stored'] }}</p>
-        <p class="protect__subtext text-dark-cyan">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
-        <img class="datacenter-image pb-5" src="/images/logos/datacenter-certifications.webp" alt="Logo Datacenter Certification"/>
-      </div>
-      <div class="container">
-        <div class="row mt-3">
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/data-security.svg" alt="Icon Data Security"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['data_security'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['our_data'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/encryption.svg" alt="Icon Encryption"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['end_to_end'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['data_is_secured'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/audit.svg" alt="Icon Audit"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['deposit_audit'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['review_the'] }}</p>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/upload-folder.svg" alt="Icon Upload Folder"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['secure_upload'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_you_prefer'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/gdpr.svg" alt="Icon GDPR"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['gdpr_compliance'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['third_party_escrow']['if_your_deposits_contain_gdpr'] }}</p>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img class="mt-5" src="/images/source-code-escrow/icons/hipaa.svg" alt="Icon HIPAA"/>
-            <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['hipaa_compliance'] }}</p>
-            <p class="datacenters__subtitle">{{ site.data[page.lang]['third_party_escrow']['if_your_deposits_contain_hipaa'] }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include best-datacenters.html %}
     <!-- Section -->
     <div class="container section-large pricing">
       <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
@@ -425,30 +373,7 @@
       </div>
     </div>
     <!-- Section -->
-    <div class="your-protection__bg mb-200">
-      <img class="your-protection__shape-left" src="/images/software-escrow/protection-left.webp" alt="Protection Left Image"/>
-      <img class="your-protection__shape-right" src="/images/software-escrow/protection-right.webp" alt="Protection Right Image"/>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="header__info text-secondary-light"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-continuity.svg" alt="Icon Ready for Continuity"/>{{ site.data[page.lang]['software_escrow']['ready_for_continuity'] }}</p>
-            <p class="your-protection__title my-4">{{ site.data[page.lang]['software_escrow']['take_your_protection'] }}</p>
-            <p class="your-protection__subtitle">{{ site.data[page.lang]['software_escrow']['includes_all'] }}:</p>
-            <div class="d-flex flex-wrap">
-              <p class="your-protection__subtitle fw-bold mr-3"><img class="mr-2 mb-1" src="/images/software-escrow/icons/protect-hosting.svg" alt="Icon Protect Hosting"/>{{ site.data[page.lang]['software_escrow']['protected_hosting'] }}</p>
-              <p class="your-protection__subtitle fw-bold"><img class="mr-2 mb-1" src="/images/software-escrow/icons/immediate.svg" alt="Icon Immediate"/>{{ site.data[page.lang]['software_escrow']['immediate_recovery'] }}</p>
-            </div>
-            <div class="d-flex justify-content-start align-items-center solutions flex-wrap">
-              <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="saas-escrow-monthly">$199</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
-              <a class="button btn-cerulean3 saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['software_escrow']['more_about_saas'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="col-md-5 col-sm-12 content-center">
-            <img class="your-protection__image mt-5" src="/images/software-escrow/protection-image.webp" alt="Background Image Protection"/>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include ready-for-continuity.html %}
     <!-- Section -->
     <div class="resources">
       <div class="container">
@@ -552,125 +477,9 @@
 
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 
-  <script>
-    $('#questions').hide();
-    $('#hide').hide();
-
-    $(".openLines").click(function(){      
-        if ($('#hide').is(":visible")) {
-          $('#hide').hide();
-          $('#show').show();
-        }
-        else {
-          $('#show').hide();
-          $('#hide').show();
-        }
-        $('#questions').toggle(300);
-        //  $("div").toggle(300);
-    });
-  </script>
-
-  <script>
-    // Accordian Action
-    var action = 'click';
-    var speed = "500";
-    $(document).ready(function(){
-      $('.plan__box').mouseover(function(e){
-        $('.plan__box').removeClass('-active')
-        if ($(this).hasClass('-active')) {
-          return;
-        }
-        $(this).addClass('-active');
-
-      });
-    // Question handler
-      $('li.q').on(action, function(){
-
-        // gets next element
-        // opens .a of selected question
-        $(this).next().slideToggle(speed)
-
-        // selects all other answers and slides up any open answer
-        .siblings('li.a').slideUp();
-
-        // Grab img from clicked question
-        var img = $(this).children('img');
-
-        // remove Rotate class from all images except the active
-        $('img').not(img).removeClass('rotate');
-
-        // toggle rotate class
-        img.toggleClass('rotate');
-
-      });
-    });
-  </script>
-
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-        function success(response) {
-          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-            $('.software-escrow-monthly').text('€89');
-            $('.saas-escrow-monthly').text('€199');
-          }
-          else if (response.currency === 'GBP') {
-            
-            $('.software-escrow-monthly').text('£79');
-            $('.saas-escrow-monthly').text('£149');
-          }
-          else if (response.currency === 'INR') {
-            $('.software-escrow-monthly').text('₹6,995');
-            $('.saas-escrow-monthly').text('₹12,500');
-          }
-          else if (response.currency === 'AUD') {
-            $('.software-escrow-monthly').text('A$109');
-            $('.saas-escrow-monthly').text('A$250');
-          }
-
-          else if (response.currency === 'SGD') {
-            $('.software-escrow-monthly').text('$109');
-            $('.saas-escrow-monthly').text('$249');
-          }
-
-          else if (response.currency === 'ZAR') {
-            $('.software-escrow-monthly').text('R1,395');
-            $('.saas-escrow-monthly').text('R2,799');
-          }
-
-          else if (response.currency === 'CHF') {
-            $('.software-escrow-monthly').text('CHF89');
-            $('.saas-escrow-monthly').text('CHF219');
-          }
-
-          else if (response.currency === 'CAD') {
-            $('.software-escrow-monthly').text('CAD119');
-            $('.saas-escrow-monthly').text('CAD299');
-          }
-        },
-        function fail(data, status) {
-            console.log('Request failed.  Returned status of',
-                        status);
-        }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
-
-  <script>
-    $( document ).ready(function() {
-      $('.open-chat').click(function(){
-
-        window.HubSpotConversations.widget.open();
-      });
-    });
-  </script>
-
+  <script src="/js/monthlyEscrowPricing.js"></script>
+  <script src="/js/faqDropdown.js"></script>
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-
-  <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
-  <!-- End of HubSpot Embed Code -->
 </body>

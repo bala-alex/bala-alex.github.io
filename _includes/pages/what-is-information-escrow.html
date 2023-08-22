@@ -215,24 +215,8 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 
-  <script>
-    $('#offer').hide();
-    $('#closeButton').hide();
-
-    $(".offer-btns").click(function(e){   
-        e.stopPropagation();   
-        if ($('#closeButton').is(":visible")) {
-          $('#closeButton').hide();
-          $('#openButton').show();
-        }
-        else {
-          $('#openButton').hide();
-          $('#closeButton').show();
-        }
-        $('#offer').toggle(300);
-    });
-  </script>
 
   <script>
     $( document ).ready(function() {
@@ -280,4 +264,7 @@
       .catch((e) => console.log(e))
     });
   </script>
+
+  <script src="/js/offerRequest.js"></script>
+  <script src="/js/guideTranslation.js"></script>
 </body>

@@ -37,9 +37,6 @@
           <div class="mt-3">
             <h1 class="sign-up__title">{{ site.data[page.lang]['sign_up']['create_an_account'] }}</h1>
             <p class="sign-up__subtitle">{{ site.data[page.lang]['sign_up']['enter_your_name'] }}<br><a href="https://app.codekeeper.co/">{{ site.data[page.lang]['sign_up']['or_log_in'] }}</a></p>
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
             <script>
               hbspt.forms.create({
@@ -55,4 +52,5 @@
 
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 </body>

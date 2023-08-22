@@ -415,134 +415,17 @@
       </ul>
       <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any2'] }} </p>
     </div>
-
     <!-- Section -->
     {% include demo-intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
-
-  <script>
-    $('#questions').hide();
-    $('#hide').hide();
-
-    $(".openLines").click(function(){      
-        if ($('#hide').is(":visible")) {
-          $('#hide').hide();
-          $('#show').show();
-        }
-        else {
-          $('#show').hide();
-          $('#hide').show();
-        }
-        $('#questions').toggle(300);
-        //  $("div").toggle(300);
-    });
-  </script>
-
-  <script>
-    // Accordian Action
-    var action = 'click';
-    var speed = "500";
-    $(document).ready(function(){
-      $('.plan__box').mouseover(function(e){
-        $('.plan__box').removeClass('-active')
-        if ($(this).hasClass('-active')) {
-          return;
-        }
-        $(this).addClass('-active');
-
-      });
-    // Question handler
-      $('li.q').on(action, function(){
-
-        // gets next element
-        // opens .a of selected question
-        $(this).next().slideToggle(speed)
-
-        // selects all other answers and slides up any open answer
-        .siblings('li.a').slideUp();
-
-        // Grab img from clicked question
-        var img = $(this).children('img');
-
-        // remove Rotate class from all images except the active
-        $('img').not(img).removeClass('rotate');
-
-        // toggle rotate class
-        img.toggleClass('rotate');
-
-      });
-    });
-  </script>
-
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-        function success(response) {
-          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-            $('.software-escrow-monthly').text('€89');
-            $('.saas-escrow-monthly').text('€199');
-          }
-          else if (response.currency === 'GBP') {
-            
-            $('.software-escrow-monthly').text('£79');
-            $('.saas-escrow-monthly').text('£149');
-          }
-          else if (response.currency === 'INR') {
-            $('.software-escrow-monthly').text('₹6,995');
-            $('.saas-escrow-monthly').text('₹12,500');
-          }
-          else if (response.currency === 'AUD') {
-            $('.software-escrow-monthly').text('A$109');
-            $('.saas-escrow-monthly').text('A$250');
-          }
-
-          else if (response.currency === 'SGD') {
-            $('.software-escrow-monthly').text('$109');
-            $('.saas-escrow-monthly').text('$249');
-          }
-
-          else if (response.currency === 'ZAR') {
-            $('.software-escrow-monthly').text('R1,395');
-            $('.saas-escrow-monthly').text('R2,799');
-          }
-
-          else if (response.currency === 'CHF') {
-            $('.software-escrow-monthly').text('CHF89');
-            $('.saas-escrow-monthly').text('CHF219');
-          }
-
-          else if (response.currency === 'CAD') {
-            $('.software-escrow-monthly').text('CAD119');
-            $('.saas-escrow-monthly').text('CAD299');
-          }
-        },
-        function fail(data, status) {
-            console.log('Request failed.  Returned status of',
-                        status);
-        }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
-
-  <script>
-    $( document ).ready(function() {
-      $('.open-chat').click(function(){
-
-        window.HubSpotConversations.widget.open();
-      });
-    });
-  </script>
+  {% include title-tags.html %}
+  
+  <script src="/js/faqDropdown.js"></script>
+  <script src="/js/monthlyEscrowPricing.js"></script>
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-
-  <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
-  <!-- End of HubSpot Embed Code -->
 </body>

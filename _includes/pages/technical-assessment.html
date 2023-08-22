@@ -27,7 +27,7 @@
                 <img class="image-style mw-35 mt-1 mr-3" src="/images/landing/shield-icon.webp" alt="Shield Icon"/>
                 <div>
                   <p class="header__subtitle2 font-20 text-slate-gray">Fill out the questionnaire below to help us better understand your specific needs and technical requirements.</p>
-                  <a class="button btn-cerulean3 my-4" href="?support#hs-chat-open">
+                  <a class="button btn-cerulean3 my-4" href="#start-assessment">
                     Start Assessment
                   </a>
                 </div>
@@ -85,14 +85,6 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
-
-  <script>
-    $( document ).ready(function() {
-      $('.open-chat').click(function(){
-
-        window.HubSpotConversations.widget.open();
-      });
-    });
-  </script>
+  {% include title-tags.html %}
 
 </body>

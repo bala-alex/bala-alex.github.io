@@ -19,10 +19,6 @@
         <div class="container">
           <h1 class="header__title mx-auto mt-4">{{ site.data[page.lang]['features']['features_main'] }}</h1>
           <p class="header__subtitle mx-auto mt-5">{{ site.data[page.lang]['features']['some_of_the_world'] }}</p>
-          <!-- <div>
-            <h1 class="header__title mx-auto mt-4 is-developer d-none">I’m a Software Developer</h1>
-            <h1 class="header__title mx-auto mt-4 is-client d-none">I’m a Software Client</h1>
-          </div> -->
         </div>
       </div>
     </div>
@@ -347,9 +343,8 @@
     {% include intro.html %}
     <!-- Footer -->
     {% include footer.html %}
-    
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 </body>

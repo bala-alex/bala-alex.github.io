@@ -579,46 +579,9 @@
     <!-- Footer -->
     {% include footer.html %}
   </div>
-
   <!-- Snippets -->
   {% include snippets.html %}
-
-  <script>
-    // Accordian Action
-    var action = 'click';
-    var speed = "500";
-    $(document).ready(function(){
-      $('.plan__box').mouseover(function(e){
-        $('.plan__box').removeClass('-active')
-        if ($(this).hasClass('-active')) {
-          return;
-        }
-        $(this).addClass('-active');
-
-      });
-    // Question handler
-      $('li.q').on(action, function(){
-
-        // gets next element
-        // opens .a of selected question
-        $(this).next().slideToggle(speed)
-
-        // selects all other answers and slides up any open answer
-        .siblings('li.a').slideUp();
-
-        // Grab img from clicked question
-        var img = $(this).children('img');
-
-        // remove Rotate class from all images except the active
-        $('img').not(img).removeClass('rotate');
-
-        // toggle rotate class
-        img.toggleClass('rotate');
-
-      });
-    });
-  </script>
-
+  {% include title-tags.html %}
   <script>
     $( document ).ready(function() {
       $('.open-chat').click(function(){
@@ -627,10 +590,7 @@
       });
     });
   </script>
-
+  <script src="/js/guideTranslation.js"></script>
+  <script src="/js/faqDropdown.js"></script>
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-
-  <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
-  <!-- End of HubSpot Embed Code -->
 </body>

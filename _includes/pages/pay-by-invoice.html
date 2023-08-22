@@ -43,19 +43,7 @@
 
   <!-- Snippets -->
   {% include snippets.html %}
-
-  <script>
-    $( document ).ready(function() {
-      $('.open-chat').click(function(){
-
-        window.HubSpotConversations.widget.open();
-      });
-    });
-  </script>
+  {% include title-tags.html %}
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-
-  <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script> -->
-  <!-- End of HubSpot Embed Code -->
 </body>

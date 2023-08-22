@@ -43,26 +43,6 @@
       </div>
     </div>
     <div class="resources pb-100">
-      <!-- <div class="header__content overflow-hidden">
-        <div class="header__bg-new">
-          <img class="header__bg-top-left" src="/images/landing/header-top-left.svg" alt="Background Image"/>
-          <img class="header__bg-top-right" src="/images/landing/header-top-right.svg" alt="Background Image"/>
-          <img class="header__bg-bottom-left" src="/images/landing/header-bottom-left.svg" alt="Background Image"/>
-          <img class="header__bg-bottom-right" src="/images/landing/header-bottom-right.svg" alt="Background Image"/>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-7 col-sm-12">
-                <h1 class="header__title text-primary text-align-start mw-420">{{ site.data[page.lang]['escrow_agreements']['agreements_for'] }}</h1>
-                <p class="header__subtitle mt-4 mw-530 text-align-start">{{ site.data[page.lang]['escrow_agreements']['a_solid_legal'] }}</p>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="image-style" src="/images/landing/header-agreements.webp" alt="Background Image"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="container section-medium">
         <p class="legal-hurdles__title pb-4">{{ site.data[page.lang]['escrow_agreements']['legal_hurdles'] }}</p>
         <div class="row mt-5">
@@ -480,58 +460,7 @@
 
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 
-  <script>
-    $('#questions').hide();
-    $('#hide').hide();
-
-    $(".openLines").click(function(){      
-        if ($('#hide').is(":visible")) {
-          $('#hide').hide();
-          $('#show').show();
-        }
-        else {
-          $('#show').hide();
-          $('#hide').show();
-        }
-        $('#questions').toggle(300);
-        //  $("div").toggle(300);
-    });
-  </script>
-
-<script>
-  // Accordian Action
-  var action = 'click';
-  var speed = "500";
-  $(document).ready(function(){
-    $('.plan__box').mouseover(function(e){
-      $('.plan__box').removeClass('-active')
-      if ($(this).hasClass('-active')) {
-        return;
-      }
-      $(this).addClass('-active');
-
-    });
-  // Question handler
-    $('li.q').on(action, function(){
-
-      // gets next element
-      // opens .a of selected question
-      $(this).next().slideToggle(speed)
-
-      // selects all other answers and slides up any open answer
-      .siblings('li.a').slideUp();
-
-      // Grab img from clicked question
-      var img = $(this).children('img');
-
-      // remove Rotate class from all images except the active
-      $('img').not(img).removeClass('rotate');
-
-      // toggle rotate class
-      img.toggleClass('rotate');
-
-    });
-  });
-</script>
+  <script src="/js/faqDropdown.js"></script>
 </body>

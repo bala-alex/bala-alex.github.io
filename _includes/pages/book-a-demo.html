@@ -19,11 +19,6 @@
         <h1 class="header__title">{{ site.data[page.lang]['book_demo']['book_a_demo'] }}</h1>
         <p class="header__subtitle mt-4">{{ site.data[page.lang]['book_demo']['schedule_a_session'] }}</p>
         <div class="header__devider"></div>
-        <!-- <div class="my-4">
-          <a data-toggle="modal" data-target="#meetingModal" class="button btn-cerulean outline-none underline-none">
-            {{ site.data[page.lang]['how_it_works']['schedule_a_demo'] }} 
-          </a>
-        </div> -->
         <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/connor-jackson/demo-meeting?embed=true"></div>
       </div>
     </div>
@@ -129,41 +124,8 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 
-  <script>
-    // Accordian Action
-    var action = 'click';
-    var speed = "500";
-    $(document).ready(function(){
-      $('.plan__box').mouseover(function(e){
-        $('.plan__box').removeClass('-active')
-        if ($(this).hasClass('-active')) {
-          return;
-        }
-        $(this).addClass('-active');
-
-      });
-    // Question handler
-      $('li.q').on(action, function(){
-
-        // gets next element
-        // opens .a of selected question
-        $(this).next().slideToggle(speed)
-
-        // selects all other answers and slides up any open answer
-        .siblings('li.a').slideUp();
-
-        // Grab img from clicked question
-        var img = $(this).children('img');
-
-        // remove Rotate class from all images except the active
-        $('img').not(img).removeClass('rotate');
-
-        // toggle rotate class
-        img.toggleClass('rotate');
-
-      });
-    });
-  </script>
+  <script src="/js/faqDropdown.js"></script>
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 </body>

@@ -179,51 +179,7 @@
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
+  {% include title-tags.html %}
 
-  <script>
-    $( document ).ready(function() {
-      $.ajax('https://ipapi.co/json')
-      .then(
-        function success(response) {
-          if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-            $('.setup-fee').text('€249');
-            $('#developer-monthly').text('€79');
-          }
-          else if (response.currency === 'GBP') {
-            $('.setup-fee').text('£199');
-            $('#developer-monthly').text('£59');
-          }
-          else if (response.currency === 'INR') {
-            $('.setup-fee').text('₹15,000');
-            $('#developer-monthly').text('₹5,000');
-          }
-          else if (response.currency === 'AUD') {
-            $('.setup-fee').text('A$299');
-            $('#developer-monthly').text('A$99');
-          }
-          else if (response.currency === 'SGD') {
-            $('.setup-fee').text('$299');
-            $('#developer-monthly').text('$99');
-          }
-          else if (response.currency === 'ZAR') {
-            $('.setup-fee').text('R3,499');
-            $('#developer-monthly').text('R1,099');
-          }
-          else if (response.currency === 'CHF') {
-            $('.setup-fee').text('CHF275');
-            $('#developer-monthly').text('CHF89');
-          }
-          else if (response.currency === 'CAD') {
-            $('.setup-fee').text('CAD299');
-            $('#developer-monthly').text('CAD119');
-          }
-        },
-        function fail(data, status) {
-            console.log('Request failed.  Returned status of',
-                        status);
-        }
-      )
-      .catch((e) => console.log(e))
-    });
-  </script>
+  <script src="/js/monthlyEscrowPricing.js"></script>
 </body>

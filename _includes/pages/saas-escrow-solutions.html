@@ -71,7 +71,7 @@
             <p class="applications__logo-text">Amazon Web Services</p>
           </div>
           <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/google-cloud.svg" alt="Google Cloud Logo"/>
+            <img class="applications__logo-image" src="/images/homepage/logos/google-cloud-large.svg" alt="Google Cloud Logo"/>
             <p class="applications__logo-text">Google Cloud</p>
           </div>
           <div class="applications__logo">
@@ -94,7 +94,7 @@
             <img class="applications__logo-image" src="/images/homepage/logos/digital-ocean.svg" alt="DigitalOcean Logo"/>
             <p class="applications__logo-text">DigitalOcean</p>
           </div>
-          <div class="applications__logo">
+          <div class="applications__logo mr-4">
             <img class="applications__logo-image" src="/images/homepage/logos/rockspace.svg" alt="Rockspace Logo"/>
             <p class="applications__logo-text">Rockspace</p>
           </div>
@@ -333,37 +333,13 @@
       {% include anatomy-escrow.html %}
     </div>
     <!-- Seventh Section -->
-    <!-- <div class="bg-white py-5">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">{{ site.data[page.lang]['saas_escrow_product']['we_operate_within'] }}:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.webp"/>
-      </div>
-    </div> -->
-    <!-- Eight Section -->
     {% include intro.html %}
     <!-- Footer -->
     {% include footer.html %}
   </div>
   <!-- Snippets -->
   {% include snippets.html %}
-
-  <script>
-    $('#offer').hide();
-    $('#closeButton').hide();
-
-    $(".offer-btns").click(function(e){   
-        e.stopPropagation();   
-        if ($('#closeButton').is(":visible")) {
-          $('#closeButton').hide();
-          $('#openButton').show();
-        }
-        else {
-          $('#openButton').hide();
-          $('#closeButton').show();
-        }
-        $('#offer').toggle(300);
-    });
-  </script>
+  {% include title-tags.html %}
 
   <script>
     $( document ).ready(function() {
@@ -442,4 +418,7 @@
       .catch((e) => console.log(e))
     });
   </script>
+
+  <script src="/js/offerRequest.js"></script>
+  <script src="/js/guideTranslation.js"></script>
 </body>
