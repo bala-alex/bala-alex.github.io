@@ -334,6 +334,10 @@
         border-radius: 5px 0px 0px 0px;
         color: $white;
         padding-bottom: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        font-family: 'Mulish';
       }
 
       &-recovery2 {
@@ -347,6 +351,10 @@
         border-radius: 0px 5px 0px 0px;
         color: $white;
         padding-bottom: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        font-family: 'Mulish';
       }
 
       &-ck {
@@ -354,6 +362,10 @@
         border-radius: 0px;
         color: $white;
         padding-bottom: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        font-family: 'Mulish';
       }
 
       &-text {
@@ -583,6 +595,12 @@
       &-text {
         width: 90px;
         word-wrap: break-word;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-cyan;
       }
 
       &-text:nth-of-type(3) {
@@ -595,6 +613,12 @@
         max-width: 216px;
         height: 55px;
         padding-top: 23px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-cyan;
+        font-family: 'Mulish';
       }
 
       &-text2:nth-of-type(2) {
@@ -1046,7 +1070,7 @@
     }
 
     &__box-text {
-      font-family: 'Mulish';
+      font-family: 'Mulish' !important;
       font-style: normal;
       font-weight: 600;
       font-size: 30px;
