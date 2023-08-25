@@ -660,7 +660,7 @@
           </select>
         </div>
         <div class="d-flex mt-4">
-          <a href="https://twitter.com/codekeeperco"><img class="mr-3" src="/images/logos/twitter.svg" alt="Twitter Icon"/></a>
+          <a href="https://twitter.com/codekeeperco"><img class="mr-3" src="/images/logos/twitter_logo.svg" alt="Twitter Icon"/></a>
           <a href="https://www.linkedin.com/company/codekeeper/"><img class="mr-3" src="/images/logos/linkedin.svg" alt="Linkedin Icon"/></a>
           
         </div>
@@ -959,6 +959,7 @@ document.addEventListener("click", closeAllSelect);
       $('.automated-verification-href').attr('href', 'informe-verificacion-software-automatizado.html')
       $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
       $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
+      $('.verification-href').attr('href', 'verificación.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -1018,6 +1019,7 @@ document.addEventListener("click", closeAllSelect);
       $('.automated-verification-href').attr('href', 'software-verifizierung-automatisierter-bericht.html')
       $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
       $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
+      $('.verification-href').attr('href', 'verifizierung.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1077,6 +1079,7 @@ document.addEventListener("click", closeAllSelect);
       $('.automated-verification-href').attr('href', 'software-verificatierapport-geautomatiseerd.html')
       $('.manual-verification-href').attr('href', 'software-verificatierapport-handmatig.html')
       $('.code-of-conduct-href').attr('href', 'gedragscode.html')
+      $('.verification-href').attr('href', 'verificatie.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1135,6 +1138,7 @@ document.addEventListener("click", closeAllSelect);
       $('.automated-verification-href').attr('href', 'verificare-software-raport-automatizat.html')
       $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
       $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
+      $('.verification-href').attr('href', 'verificare.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1193,6 +1197,7 @@ document.addEventListener("click", closeAllSelect);
         $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
         $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
         $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
+        $('.verification-href').attr('href', 'verification.html')
         }
   })
 </script>
@@ -1829,6 +1834,32 @@ document.addEventListener("click", closeAllSelect);
     document.title = "Raport manual de verificare a software-ului: asigurarea calității prin testare riguroasă"
     document.getElementsByTagName('meta')["description"].content = "Verificarea manuală a codului oferă o revizuire cuprinzătoare a software-ului dvs., asigurând nu doar calitatea și securitatea codului, ci și conformitatea cu reglementările.";
   }
+
+  else if (!(pathname.includes('/fr')) && pathname.includes('/verification.html')) {
+    document.title = "Software Escrow Verification: Peace of Mind for Software Clients"
+    document.getElementsByTagName('meta')["description"].content = "Source Code Verifications services offer an additional layer of security by checking the deposits into the escrow in detail and installing the code to see if it runs properly. This gives you certaintly about the recovery in case of a release situation. ";
+  }
+  else if (pathname.includes('/es/verificaci%C3%B3n.html')) {
+    document.title = "Verificación de la custodia de software: tranquilidad para los clientes de software"
+    document.getElementsByTagName('meta')["description"].content = "Los servicios de verificación del código fuente ofrecen una capa de seguridad adicional, ya que comprueban detalladamente los depósitos en custodia e instalan el código para comprobar que todo funciona correctamente. Esto le aporta certeza sobre la recuperación en caso de un suceso de entrega.";
+  }
+  else if (pathname.includes('/de/verifizierung.html')) {
+    document.title = "Software-Escrow-Verifizierung: Sorgenfreiheit für Softwarekunden"
+    document.getElementsByTagName('meta')["description"].content = "Die Quellcode-Verifizierungsdienstleistungen bieten Ihnen eine zusätzliche Sicherheitsebene, indem die Hinterlegungen im Escrow eingehend geprüft werden und der Code installiert wird, um zu sehen, ob er einwandfrei läuft. Diese Maßnahmen geben Ihnen Sicherheit hinsichtlich der Wiederherstellung bei einer Freigabe.";
+  }
+  else if (pathname.includes('/nl/verificatie.html')) {
+    document.title = "Software Escrow Verificatie: Geen zorgen voor softwareklanten "
+    document.getElementsByTagName('meta')["description"].content = "Services voor Source Code Verificaties bieden een extra beveiligingslaag door middel van gedetailleerde controle van escrow-deponeringen en installatie van de code om te zien of deze goed draait. Dit geeft u zekerheid over het herstel in geval van een vrijgavegebeurtenis. ";
+  }
+  else if (pathname.includes('/fr/verification.html')) {
+    document.title = "Vérification d’entiercement de logiciel  : la tranquillité d’esprit pour les clients de logiciels"
+    document.getElementsByTagName('meta')["description"].content = "Les services de vérification du code source offrent une sécurité supplémentaire grâce à la vérification détaillée des dépôts entiercés et à l’installation du code pour contrôler son fonctionnement. Vous avez ainsi la certitude d’une récupération en cas d’événement libératoire. ";
+  }
+  else if (pathname.includes('/ro/verificare.html')) {
+    document.title = "Verificare software escrow: liniște pentru clienții software"
+    document.getElementsByTagName('meta')["description"].content = "Serviciile de verificare a codului sursă oferă un nivel suplimentar de securitate, verificând în detaliu depozitele în escrow și instalând codul pentru a vedea dacă funcționează corect. Acest lucru vă oferă cu siguranță despre recuperarea în cazul unei situații de eliberare.";
+  }
+
 
   else if (pathname.includes('/eu-react.html')) {
     document.title = "Save 20% or more when you switch from your current service provider to Codekeeper"
