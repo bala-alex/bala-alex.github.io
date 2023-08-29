@@ -1,7 +1,6 @@
 plugins:
   - pagemaster
   - jekyll-sitemap
-
 collections:
   integrations:
     output: true
@@ -9,48 +8,4 @@ collections:
     source: integrations.csv
     layout: service
 
-  comparison:
-    output: true
-    id_key: integration_name
-    source: comparison.csv
-    layout: provider
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: en
-      base-url: "/"
-  -
-    scope:
-      path: nl
-    values:
-      lang: nl
-      base-url: "/nl/"
-  -
-    scope:
-      path: de
-    values:
-      lang: de
-      base-url: "/de/"
-  -
-    scope:
-      path: es
-    values:
-      lang: es
-      base-url: "/es/"
-  -
-    scope:
-      path: ro
-    values:
-      lang: ro
-      base-url: "/ro/"
-  -
-    scope:
-      path: fr
-    values:
-      lang: fr
-      base-url: "/fr/"
-
-url: "https://codekeeper.co" # the base hostname & protocol for your site
+url: "https://codekeeper.co/" # the base hostname & protocol for your site
