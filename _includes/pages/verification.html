@@ -18,12 +18,12 @@
       <div class="header__content">
         <div class="header__bg-new">
           <img class="header__bg-top-left2" src="/images/verification-page/top-left.webp" alt="Background Image"/>
-          <img class="header__bg-bottom-right" src="/images/verification-page/bottom-right.webp" alt="Background Image"/>
+          <img class="header__bg-bottom-shape" src="/images/verification-page/verification-header-bg.webp" alt="Background Image"/>
           <div class="container">
             <div class="row">
               <div class="col-md-7 col-sm-12">
                 <div class="resources">
-                  <p class="header__link">{{ site.data[page.lang]['verification']['add_ons'] }}</p>
+                  <p class="header__link">{{ site.data[page.lang]['verification']['verification_solutions'] }}</p>
                 </div>
                 <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['verification']['ensure_complete'] }}</h1>
                 <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['verification']['learn_how_software'] }}</p>
@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="col-md-5 col-sm-12 content-center">
-                <img class="image-style mw-530 mt-4" src="/images/verification-page/verify-header.webp" alt="Verification Image"/>
+                <img class="image-style mw-530 mt-4" src="/images/verification-page/verification-header-image.webp" alt="Verification Image"/>
               </div>
             </div>
           </div>
@@ -50,73 +50,60 @@
       <p class="verify__main-subtext2 mt-3 text-center mx-auto mw-700">{{ site.data[page.lang]['verification']['we_offer_four'] }}</p>
     </div>
     <!-- First Section -->
-    <div class="pricing bg-paper-white">
-      <div class="verify__bg-gray"></div>
+    <div class="pricing bg-white pb-300">
+      <div class="verify__bg-blue"></div>
     
       <div class="container mt-negative-250">
-        <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_automated'] }}:</p>
         <div class="row mt-4">
-          <div class="col-lg-4 col-md-12 content-center mt-4">
-            <div class="verify__col-box">
-              <p class="verify__col-title">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
-              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of'] }}</p>
-              <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+          <div class="col-lg-6 col-md-12 content-center mt-4">
+            <div class="verify__col-box2 mw-100">
+              <img class="image-style mw-260 mh-150 mt-4" src="/images/verification-page/automated-verification.webp" alt="Verification Image"/>
+              <p class="verify__col-title text-center mt-4 text-secondary">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
+              <p class="verify__col-title2 text-center">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
+              <p class="verify__col-subtitle2 text-center">{{ site.data[page.lang]['verification']['a_profile_of'] }}</p>
+              <a class="button btn-cerulean3 book-a-demo-href" href="book-a-demo.html">
+                {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 content-center mt-4">
-            <div class="verify__col-box">
-              <p class="verify__col-title">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
-              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
-              <p class="verify__col-text"><span class="verify__col-text activity-verification"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+          <div class="col-lg-6 col-md-12 content-center mt-4">
+            <div class="verify__col-box2 mw-100">
+              <img class="image-style mw-260 mh-150 mt-4" src="/images/verification-page/manual-verification.webp" alt="Verification Image"/>
+              <p class="verify__col-title text-center mt-4 text-secondary">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
+              <p class="verify__col-title2 text-center">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
+              <p class="verify__col-subtitle2 text-center">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
+              <a class="button btn-cerulean3 book-a-demo-href" href="book-a-demo.html">
+                {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 content-center mt-4">
-            <div class="verify__col-box">
-              <p class="verify__col-title">{{ site.data[page.lang]['verification']['saas_verification'] }}</p>
-              <p class="verify__col-subtitle">{{ site.data[page.lang]['verification']['a_check_of'] }}</p>
-              <p class="verify__col-text"><span class="verify__col-text saas-verification"><sup>$</sup>29</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
-            </div>
-          </div>
-
         </div>
-        <p class="section__text mt-5 mb-0 text-center">{{ site.data[page.lang]['verification']['need_a_different'] }}</p>
-        <p class="section__text text-center fw-bold text-first-capitalize"><a href="contact.html" class="text-underline contact-href">{{ site.data[page.lang]['verification']['let_us_know'] }}</a></p>
+        <!-- <p class="section__text mt-5 mb-0 text-center">{{ site.data[page.lang]['verification']['need_a_different'] }}</p>
+        <p class="section__text text-center fw-bold text-first-capitalize"><a href="contact.html" class="text-underline contact-href">{{ site.data[page.lang]['verification']['let_us_know'] }}</a></p> -->
       </div>
-      <div class="container section-medium">
-        <div class="verify__section-devider"></div>
-      </div>
-      <!-- Second Section -->
-      <div class="pt-5 position-relative z-index-1">
-  
-          <div class="container">
-            <p class="verify__section-main-title">{{ site.data[page.lang]['verification']['our_manual_verification'] }}:</p>
-            <div class="row">
-              <div class="col-lg-6 col-md-12 mt-4">
-                <div class="verify__section-box">
-                  <p class="verify__section-title pb-3">{{ site.data[page.lang]['verification']['verification_advanced2'] }}</p>
-                  <p class="verify__section-text mt-4"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
-                  <p class="verify__section-text mb-5"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
-                  <p class="verify__col-text"><span class="verify__col-text verification-advanced"><sup>$</sup>2,495</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mt-4">
-                <div class="verify__section-box">
-                  <p class="verify__section-title">{{ site.data[page.lang]['verification']['verification_complete2'] }}</p>
-                  <p class="verify__section-text mt-4"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['source_code'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['configuration_materials'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['code_inspection'] }}: {{ site.data[page.lang]['verification']['other_supporting'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['software_instalation'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['achieve_running'] }}</p>
-                  <p class="verify__section-text"><img class="mr-2" src="/images/homepage/check-icon-green.svg"/>{{ site.data[page.lang]['verification']['testing_of_up'] }}</p>
-                  <p class="verify__col-text"><span class="verify__col-text verification-complete"><sup>$</sup>3,995</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
 
+      <div class="container mt-large">
+        <div class="row mt-4">
+          <div class="col-lg-6 col-md-12 mt-4">
+            <p class="verify__col-title mt-4">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
+            <img class="image-style mw-490 mh-400" src="/images/verification-page/software-escrow-deposit.webp" alt="Verification Image"/>
+          </div>
+          <div class="col-lg-6 col-md-12 mt-4">
+            <div class="d-flex mt-4">
+              <img class="mr-3 pb-5 mt-1" src="/images/verification-page/bullet.svg"/>
+              <p class="verify__col-subtitle2">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
+            </div>
+            <div class="d-flex mt-4">
+              <img class="mr-3 pb-5 mt-1" src="/images/verification-page/bullet.svg"/>
+              <p class="verify__col-subtitle2">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
+            </div>
+            <div class="d-flex mt-4">
+              <img class="mr-3 pb-5 mt-1" src="/images/verification-page/bullet.svg"/>
+              <p class="verify__col-subtitle2">{{ site.data[page.lang]['verification']['a_profile_of_the_development'] }}</p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
     <!-- Third Section -->
