@@ -11252,6 +11252,12 @@ input[name=consent] {
 .how-works__text::first-letter {
   text-transform: capitalize;
 }
+@media (max-width: 480px) {
+  .how-works__text {
+    font-size: 22px !important;
+    line-height: 28px;
+  }
+}
 .how-works__subtext2 {
   color: #1A5261;
   font-size: 16px;
@@ -14762,6 +14768,12 @@ input[name=consent] {
   font-weight: 200;
   letter-spacing: -0.42px;
 }
+@media (max-width: 480px) {
+  .pricing .verify__main-text2 {
+    font-size: 30px !important;
+    line-height: 32px;
+  }
+}
 .pricing .verify__main-subtext2 {
   color: #6782A3;
   font-size: 16px;
@@ -14912,6 +14924,12 @@ input[name=consent] {
   color: #00384B;
   font-weight: 300;
   letter-spacing: -0.42px;
+}
+@media (max-width: 480px) {
+  .pricing .verify__col-title {
+    font-size: 24px !important;
+    line-height: 32px;
+  }
 }
 .pricing .verify__col-title2 {
   font-size: 24px !important;
@@ -21681,10 +21699,16 @@ input[name=consent] {
   color: #1A5261;
   max-width: 551px;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .solutions .header__title {
     font-size: 50px !important;
     line-height: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .solutions .header__title {
+    font-size: 30px !important;
+    line-height: 32px;
   }
 }
 .solutions .header__subtitle {
@@ -22066,6 +22090,12 @@ input[name=consent] {
   line-height: 32px;
   color: #1A5261;
 }
+@media (max-width: 480px) {
+  .solutions .more-about__title {
+    font-size: 22px !important;
+    line-height: 28px;
+  }
+}
 .solutions .more-about__subtitle {
   font-family: "Mulish", sans-serif;
   font-style: normal;
@@ -22242,6 +22272,12 @@ input[name=consent] {
   .software-escrow .header__title {
     font-size: 50px !important;
     line-height: 55px;
+  }
+}
+@media (max-width: 480px) {
+  .software-escrow .header__title {
+    font-size: 28px !important;
+    line-height: 34px;
   }
 }
 .software-escrow .header__subtitle {
@@ -22926,6 +22962,12 @@ input[name=consent] {
   color: #1A5261;
   max-width: 673px;
 }
+@media (max-width: 480px) {
+  .software-escrow .easy__main-title {
+    font-size: 32px !important;
+    line-height: 38px;
+  }
+}
 .software-escrow .easy__main-subtitle {
   font-family: "Mulish";
   font-style: normal;
@@ -23116,6 +23158,12 @@ input[name=consent] {
   text-align: center;
   color: #1A5261;
   max-width: 800px;
+}
+@media (max-width: 480px) {
+  .software-escrow .scenario__title {
+    font-size: 30px !important;
+    line-height: 32px;
+  }
 }
 .software-escrow .scenario__subtitle {
   font-family: "Mulish";

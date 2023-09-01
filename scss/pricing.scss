@@ -763,6 +763,11 @@
       color: $sherpa-blue;
       font-weight: 200;
       letter-spacing: -0.42px;
+
+      @include screen-xs {
+        font-size: 30px !important;
+        line-height: 32px;
+      }
     }
   
     &__main-subtext2 {
@@ -913,6 +918,11 @@
       color: $sherpa-blue;
       font-weight: 300;
       letter-spacing: -0.42px;
+
+      @include screen-xs {
+        font-size: 24px !important;
+        line-height: 32px;
+      }
     }
 
     &__col-title2 {

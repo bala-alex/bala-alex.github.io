@@ -12,9 +12,14 @@
       color: $dark-cyan;
       max-width: 551px;
 
-      @include screen-sm {
+      @include screen-md {
         font-size: 50px !important;
         line-height: 55px;
+      }
+
+      @include screen-xs {
+        font-size: 30px !important;
+        line-height: 32px;
       }
     }
 
@@ -406,6 +411,11 @@
       font-size: 32px;
       line-height: 32px;
       color: $dark-cyan;
+
+      @include screen-xs {
+        font-size: 22px !important;
+        line-height: 28px;
+      }
     }
 
     &__subtitle {

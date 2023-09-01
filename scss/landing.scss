@@ -820,6 +820,11 @@
     &::first-letter {
       text-transform: capitalize;
     }
+
+    @include screen-xs {
+      font-size: 22px !important;
+      line-height: 28px;
+    }
   }
 
   &__subtext2 {

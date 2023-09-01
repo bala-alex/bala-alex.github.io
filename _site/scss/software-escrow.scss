@@ -16,6 +16,11 @@
         font-size: 50px !important;
         line-height: 55px;
       }
+
+      @include screen-xs {
+        font-size: 28px !important;
+        line-height: 34px;
+      }
     }
 
     &__subtitle {
@@ -757,6 +762,11 @@
       line-height: 53px;
       color: $dark-cyan;
       max-width: 673px;
+
+      @include screen-xs {
+        font-size: 32px !important;
+        line-height: 38px;
+      }
     }
 
     &__main-subtitle {
@@ -978,6 +988,11 @@
       text-align: center;
       color: $dark-cyan;
       max-width: 800px;
+
+      @include screen-xs {
+        font-size: 30px !important;
+        line-height: 32px;
+      }
     }
 
     &__subtitle {
