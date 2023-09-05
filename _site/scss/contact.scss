@@ -2499,6 +2499,17 @@
     margin-top: 0px;
   }
 
+  .video-player {
+    width: 100%;
+    height: 500px;
+
+    @include screen-md {
+      width: 100%;
+      height: 40vh;
+      margin-top: 100px;
+    }
+  }
+
 }
 
 .contact-custom {
