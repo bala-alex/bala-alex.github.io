@@ -48,18 +48,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Solutions</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
         </li>
 
+        <div class="dropdown show-solutions">
+          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Solutions <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a>
+            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
+            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
+          </div>
+        </div> 
+
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Add-ons <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -69,11 +80,19 @@
         </div> 
 
         <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin resources-href" href="resources.html">Resources</a>
-        </li>
-        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">Automated Verification</a>
+          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">Manual Verification</a>
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">Integrations</a>
+          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Escrow Agreements</a>
+          <a class="nav-link nav-margin resources-href" href="resources.html">Guides & Case Studies</a>
+          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">How it Works</a>
+          <a class="nav-link nav-margin" href="technical-assessment.html">Technical Assessment</a>
+          <a class="nav-link nav-margin" href="risk-assessment.html">Risk Assessment</a>
           <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">Our Story</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">Contact</a>
         </li>
+
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Resources <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
@@ -90,7 +109,7 @@
         </div> 
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About us <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -103,7 +122,7 @@
           <a class="nav-link nav-margin pricing-href" href="pricing.html">PRICING</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">LOGIN</a>
+          <a class="nav-link nav-margin space-no-wrap text-wrap" href="https://app.codekeeper.co/">LOGIN</a>
         </li>
         <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
           Book a Demo

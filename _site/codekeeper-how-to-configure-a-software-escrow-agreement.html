@@ -43,18 +43,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Solutions</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
         </li>
 
+        <div class="dropdown show-solutions">
+          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Solutions <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a>
+            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
+            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
+          </div>
+        </div> 
+
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Add-ons <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -64,11 +75,19 @@
         </div> 
 
         <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin resources-href" href="resources.html">Resources</a>
-        </li>
-        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">Automated Verification</a>
+          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">Manual Verification</a>
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">Integrations</a>
+          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Escrow Agreements</a>
+          <a class="nav-link nav-margin resources-href" href="resources.html">Guides & Case Studies</a>
+          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">How it Works</a>
+          <a class="nav-link nav-margin" href="technical-assessment.html">Technical Assessment</a>
+          <a class="nav-link nav-margin" href="risk-assessment.html">Risk Assessment</a>
           <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">Our Story</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">Contact</a>
         </li>
+
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Resources <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
@@ -85,7 +104,7 @@
         </div> 
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About us <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -98,7 +117,7 @@
           <a class="nav-link nav-margin pricing-href" href="pricing.html">PRICING</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">LOGIN</a>
+          <a class="nav-link nav-margin space-no-wrap text-wrap" href="https://app.codekeeper.co/">LOGIN</a>
         </li>
         <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
           Book a Demo
@@ -112,79 +131,505 @@
     <div class="container section-large">
       <iframe class="video-player" src="https://www.youtube.com/embed/YnR0iKcnwUU?si=0oQzVbijNOfD2bWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p class="header__subtitle mt-5 mw-100 text-align-start">
-        hi welcome to codekeeper in this video
-        we'll learn how to configure a new
-        software escrow agreement let's get
-        started
-        after you sign up you will see this
-        dashboard when logging into your account
-        we'll start by clicking the create new
-        escrow button and the escrow
-        configuration window will open
-        the setup is done following these four
-        steps on the sidebar and we'll go
-        through each one by one starting with
-        the basics
-        first you will configure the escrow role
-        select whether you are the one who will
-        deposit assets or will receive source
-        code repositories in this case I am the
-        depositor
-        after specifying the role you will
-        select the type of agreement let's
-        select tripertite meaning the agreement
-        will be signed by the depositor codekeeper as the escrow agent and the
-        beneficiary
-        then click save and next
-        after the basics we are going to fill in
-        all required details for both depositor
-        and beneficiary starting with my
-        organization and signatory details we'll
-        need at least one representative for the
-        entire escrow configuration process on
-        the beneficiary side we hit this invite
-        checkbox to invite the beneficiary to
-        access the escrow information once the
-        agreement is generated
-        save and next
-        this is the deposit step where you can
-        configure the deposit notifications for
-        the beneficiary in this process we'll
-        leave it as default
-        next and final step
-        within the agreement settings we will
-        configure the legal context asset types
-        release conditions liability and other
-        agreement related settings
-        in this example we will go for a license
-        and development agreement
-        as deposit type we select source code
-        then for release conditions we select
-        bankruptcy here
-        after all the details are set and
-        entered correctly we save them and get
-        to see this pop-up message
-        confirm by selecting generate agreement
-        the escrow agreement has now been sent
-        to codekeeper for processing and will
-        be shared soon
-        when the agreement is ready for review
-        and approval you and the beneficiary
-        will receive an email
-        visit our website to find out more about
-        software escrow and book your free demo
-        today
-        thanks for watching
+        Hi. Welcome to Codekeeper. In this video, we'll learn how to configure a new software escrow agreement. Let's get started. 
+        After you sign up, you will see this dashboard when logging into your account. We'll start by clicking the create new escrow button, and the escrow configuration window will open. The setup is done following these four steps on the sidebar, and we'll go through each one by one, starting with the basics. 
+        First, you will configure the escrow role. Select whether you are the one who will deposit assets, or will receive source code repositories. In this case, I am the depositor. After specifying the role, you will select the type of agreement. Let's select tripartite, meaning the agreement will be signed by the depositor, Codekeeper as the escrow agent, and the beneficiary. Then click save and next. 
+        After the basics, we are going to fill in all required details for both depositor and beneficiary, starting with my organization and signatory details. We'll need at least one representative for the entire escrow configuration process. On the beneficiary side, we hit this invite checkbox to invite the beneficiary to access the escrow information once the agreement is generated. Save and next. 
+        This is the deposit step, where you can configure the deposit notifications for the beneficiary. In this process, we'll leave it as default. 
+        Next and final step: within the agreement settings, we will configure the legal context, asset types, release conditions, liability and other agreement-related settings. In this example, we will go for a license- and development agreement. As deposit type, we select source code. Then, for release conditions, we select bankruptcy here.
+        After all the details are set and entered correctly, we save them and get to see this pop-up message. Confirm by selecting “Generate agreement”. The escrow agreement has now been sent to Codekeeper for processing, and will be shared soon. When the agreement is ready for review and approval, you and the beneficiary will receive an email. 
+        Visit our website to find out more about software escrow and book your free demo today. Thanks for watching.
+
       </p>
     </div>
     
   </div>
+  <!DOCTYPE html>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://d16ahjtmf9d1au.cloudfront.net/inject.bundle.js" async data-id="ToyboxSnippet" data-token="ullmwqAjDj17" ></script>
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Segment -->
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("kS7MfzQKC6q4Z256S4COmij9oHjObrrL");
+  analytics.page();
+  }}();
+</script>
+<!-- End Segment -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100639203-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-100639203-1');
+  gtag('config', 'G-308ZCMY73H');
+  gtag('config', 'AW-865197017');
+</script>
+<!-- End of Google Analytics -->
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+
+  const lang = $('.select-selected').text();
+
+  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză') || (lang === 'Anglais')) {
+    window.location = '/index.html';
+  }
+  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză') || (lang === 'Néerlandais')) {
+    window.location = '/nl/index.html';
+  }
+  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană') || (lang === 'Allemand')) {
+    window.location = '/de/index.html';
+  }
+  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă') || (lang === 'Espanol')) {
+    window.location = '/es/index.html';
+  }
+  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') || (lang === 'Romană') || (lang === 'Roumain')) {
+    window.location = '/ro/index.html';
+  }
+  else if ((lang === 'French') || (lang === 'Frans') || (lang === 'Französisch') || (lang === 'Francés') || (lang === 'Franceză') || (lang === 'Français')) {
+    window.location = '/fr/index.html';
+  }
+
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+</script>
+<script>
+  $( document ).ready(function() {
+    var lang = location.pathname.substring(0, 3);
+
+    $( ".select-items" ).find( "*" ).each( function(){
+      var $element = $(this);
+
+      if (lang === '/nl') {
+        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') || ($.trim( $element.html() ) === 'Néerlandais') ) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/de') {
+        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană') || ($.trim( $element.html() ) === 'Allemand')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/es') {
+        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă') || ($.trim( $element.html() ) === 'Espanol')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/ro') {
+        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană') || ($.trim( $element.html() ) === 'Roumain')) {
+          $element.remove();
+        }
+      }
+      else if (lang === '/fr') {
+        if ( ($.trim( $element.html() ) === 'French') || ($.trim( $element.html() ) === 'Frans') || ($.trim( $element.html() ) === 'Französisch') || ($.trim( $element.html() ) === 'Francés') || ($.trim( $element.html() ) === 'Franceză') || ($.trim( $element.html() ) === 'Français')) {
+          $element.remove();
+        }
+      }
+      else {
+        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză') || ($.trim( $element.html() ) === 'Anglais')) {
+          $element.remove();
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+    const isClient = window?.location?.search;
+    if (window.location.pathname.includes('/es/')) {
+
+      $('.about-us-href').attr('href', 'acerca-de-nosotros.html')
+      $('.check-email-href').attr('href', 'comprobar-correo.html')
+      $('.confirm-message-href').attr('href', 'confirmar-mensaje.html')
+      $('.confirm-plan-href').attr('href', 'confirmar-plan.html')
+      $('.confirmation-anatomy-href').attr('href', 'confirmación-anatomía.html')
+      $('.confirmation-expert-insights-href').attr('href', 'confirmación-opiniones-expertos.html')
+      $('.confirmation-guide-href').attr('href', 'confirmación-guía.html')
+      $('.confirmation-introduction-href').attr('href', 'confirmación-introducción.html')
+      $('.confirmation-offer-href').attr('href', 'confirmación-oferta.html')
+      $('.confirmation-pricelist-href').attr('href', 'confirmación-lista-precios.html')
+      $('.confirmation-sample-href').attr('href', 'confirmación-muestra.html')
+      $('.confirmation-security-href').attr('href', 'confirmación-seguridad.html')
+      $('.confirmation-href').attr('href', 'confirmación.html')
+      $('.contact-href').attr('href', 'contacto.html')
+      $('.contact-support-href').attr('href', 'contacto.html?support#hs-chat-open')
+      $('.contact-sales-href').attr('href', 'contacto.html#hs-chat-open')
+      $('.create-custom-software-escrow-agreement-href').attr('href', 'crear-acuerdo-custodia-software-personalizado.html')
+      $('.data-escrow-href').attr('href', 'depósito-datos.html')
+      $('.depositing-features-href').attr('href', 'prestaciones-depósito.html')
+      $('.discount-form-href').attr('href', 'formulario-descuento.html')
+      $('.escrow-agreement-href').attr('href', 'acuerdo-custodia.html')
+      $('.features-href').attr('href', 'prestaciones.html')
+      $('.how-it-works-href').attr('href', 'cómo-funciona.html')
+      $('.integrations-href').attr('href', 'integraciones.html')
+      $('.plan-comparison-href').attr('href', 'comparación-planes.html')
+      $('.pricing-features-href').attr('href', 'prestaciones-tarifas.html')
+      $('.pricing-href').attr('href', 'tarifas.html')
+      $('.repository-backups-pricing-href').attr('href', 'tarifas-copias-seguridad-repositorio.html')
+      $('.resources-href').attr('href', 'recursos.html')
+      $('.saas-escrow-href').attr('href', 'custodia-saas.html')
+      $('.sample-agreement-href').attr('href', 'acuerdo-muestra.html')
+      $('.secure-guide-href').attr('href', 'guía-seguro.html')
+      $('.security-href').attr('href', 'seguridad.html')
+      $('.sign-up-href').attr('href', 'registro.html')
+      $('.source-code-escrow-href').attr('href', 'depósito-código-fuente.html')
+      $('.start-guide-href').attr('href', 'guía-inicio.html')
+      $('.what-is-data-escrow-href').attr('href', 'qué-es-el-depósito-de-datos.html')
+      $('.what-is-information-escrow-href').attr('href', 'qué-es-el-depósito-de-información.html')
+      $('.what-is-saas-escrow-href').attr('href', 'qué-es-el-depósito-de-saas.html')
+      $('.what-is-source-code-escrow-href').attr('href', 'qué-es-el-depósito-de-código-fuente.html')
+      $('.book-a-demo-href').attr('href', 'reservar-una-demostración.html')
+      $('.solutions-href').attr('href', 'soluciones.html')
+      $('.situations-href').attr('href', 'situaciones.html')
+      $('.software-escrow-href').attr('href', 'custodia-software.html')
+      $('.recovery-href').attr('href', 'recuperación.html')
+      $('.continuity-href').attr('href', 'continuidad.html')
+      $('.document-escrow-href').attr('href', 'custodia-documentos.html')
+      $('.technology-designs-escrow-href').attr('href', 'custodia-tecnologia-disenos.html')
+      $('.credentials-escrow-href').attr('href', 'custodia-credenciales.html')
+      $('.hosting-environment-escrow-href').attr('href', 'custodia-entorno-alojamiento.html')
+      $('.3rd-party-dependencies-href').attr('href', 'dependencias-terceros.html')
+      $('.competitors-href').attr('href', 'competidores.html')
+      $('.automated-verification-href').attr('href', 'informe-verificacion-software-automatizado.html')
+      $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
+      $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
+      $('.verification-href').attr('href', 'verificación.html')
+    }
+
+    if (window.location.pathname.includes('/de/')) {
+
+      $('.about-us-href').attr('href', 'über-uns.html')
+      $('.check-email-href').attr('href', 'e-mail-prüfen.html')
+      $('.confirm-message-href').attr('href', 'nachricht-bestätigen.html')
+      $('.confirm-plan-href').attr('href', 'tarif-bestätigen.html')
+      $('.confirmation-anatomy-href').attr('href', 'bestätigung-anatomie.html')
+      $('.confirmation-expert-insights-href').attr('href', 'bestätigung-experteneinblicke.html')
+      $('.confirmation-guide-href').attr('href', 'bestätigung-leitfaden.html')
+      $('.confirmation-introduction-href').attr('href', 'bestätigung-einführung.html')
+      $('.confirmation-offer-href').attr('href', 'bestätigung-angebot.html')
+      $('.confirmation-pricelist-href').attr('href', 'bestätigung-preisliste.html')
+      $('.confirmation-sample-href').attr('href', 'bestätigung-mustervertrag.html')
+      $('.confirmation-security-href').attr('href', 'bestätigung-sicherheit.html')
+      $('.confirmation-href').attr('href', 'bestätigung.html')
+      $('.contact-href').attr('href', 'kontakt.html')
+      $('.contact-support-href').attr('href', 'kontakt.html?support#hs-chat-open')
+      $('.contact-sales-href').attr('href', 'kontakt.html#hs-chat-open')
+      $('.create-custom-software-escrow-agreement-href').attr('href', 'kundenspezifischen-software-escrow-vertrag-erstellen.html')
+      $('.data-escrow-href').attr('href', 'data-escrow.html')
+      $('.depositing-features-href').attr('href', 'leistungen-für-hinterlegungen.html')
+      $('.discount-form-href').attr('href', 'rabatt-formular.html')
+      $('.escrow-agreement-href').attr('href', 'escrow-vertrag.html')
+      $('.features-href').attr('href', 'leistungen.html')
+      $('.how-it-works-href').attr('href', 'wie-es-funktioniert.html')
+      $('.integrations-href').attr('href', 'integrationen.html')
+      $('.plan-comparison-href').attr('href', 'tarifvergleich.html')
+      $('.pricing-features-href').attr('href', 'preise-leistungen.html')
+      $('.pricing-href').attr('href', 'preise.html')
+      $('.repository-backups-pricing-href').attr('href', 'repository-backups-preise.html')
+      $('.resources-href').attr('href', 'infomaterial.html')
+      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.sample-agreement-href').attr('href', 'mustervertrag.html')
+      $('.secure-guide-href').attr('href', 'sicherer-leitfaden.html')
+      $('.security-href').attr('href', 'sicherheit.html')
+      $('.sign-up-href').attr('href', 'anmelden.html')
+      $('.source-code-escrow-href').attr('href', 'quellcode-escrow.html')
+      $('.start-guide-href').attr('href', 'erste-schritte-leitfaden.html')
+      $('.what-is-data-escrow-href').attr('href', 'was-ist-data-escrow.html')
+      $('.what-is-information-escrow-href').attr('href', 'was-ist-information-escrow.html')
+      $('.what-is-saas-escrow-href').attr('href', 'was-ist-saas-escrow.html')
+      $('.what-is-source-code-escrow-href').attr('href', 'was-ist-quellcode-escrow.html')
+      $('.book-a-demo-href').attr('href', 'demo-buchen.html')
+      $('.solutions-href').attr('href', 'lösungen.html')
+      $('.situations-href').attr('href', 'situationen.html')
+      $('.software-escrow-href').attr('href', 'software-escrow.html')
+      $('.recovery-href').attr('href', 'wiederherstellung.html')
+      $('.continuity-href').attr('href', 'kontinuität.html')
+      $('.document-escrow-href').attr('href', 'dokument-escrow.html')
+      $('.technology-designs-escrow-href').attr('href', 'technologie-design-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'anmeldedaten-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-umgebungs-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'drittanbieter-abhaengigkeiten.html')
+      $('.competitors-href').attr('href', 'konkurrenten.html')
+      $('.automated-verification-href').attr('href', 'software-verifizierung-automatisierter-bericht.html')
+      $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
+      $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
+      $('.verification-href').attr('href', 'verifizierung.html')
+    }
+
+    if (window.location.pathname.includes('/nl/')) {
+
+      $('.about-us-href').attr('href', 'over-ons.html')
+      $('.check-email-href').attr('href', 'check-email.html')
+      $('.confirm-message-href').attr('href', 'bevestig-bericht.html')
+      $('.confirm-plan-href').attr('href', 'bevestig-pakket.html')
+      $('.confirmation-anatomy-href').attr('href', 'bevestiging-anatomie.html')
+      $('.confirmation-expert-insights-href').attr('href', 'bevestiging-inzichten-van-experts.html')
+      $('.confirmation-guide-href').attr('href', 'bevestiging-gids.html')
+      $('.confirmation-introduction-href').attr('href', 'bevestiging-introductie.html')
+      $('.confirmation-offer-href').attr('href', 'bevestiging-aanbieding.html')
+      $('.confirmation-pricelist-href').attr('href', 'bevestiging-prijslijst.html')
+      $('.confirmation-sample-href').attr('href', 'bevestiging-voorbeeld.html')
+      $('.confirmation-security-href').attr('href', 'bevestiging-beveiliging.html')
+      $('.confirmation-href').attr('href', 'bevestiging.html')
+      $('.contact-href').attr('href', 'contact.html')
+      $('.contact-support-href').attr('href', 'contact.html?support#hs-chat-open')
+      $('.contact-sales-href').attr('href', 'contact.html#hs-chat-open')
+      $('.create-custom-software-escrow-agreement-href').attr('href', 'maak-software-escrow-overeenkomst-op-maat.html')
+      $('.data-escrow-href').attr('href', 'data-escrow.html')
+      $('.depositing-features-href').attr('href', 'deponeringsmogelijkheden.html')
+      $('.discount-form-href').attr('href', 'kortingsformulier.html')
+      $('.escrow-agreement-href').attr('href', 'escrow-overeenkomst.html')
+      $('.features-href').attr('href', 'features.html')
+      $('.how-it-works-href').attr('href', 'zo-werkt-het.html')
+      $('.integrations-href').attr('href', 'integraties.html')
+      $('.plan-comparison-href').attr('href', 'vergelijk-pakketten.html')
+      $('.pricing-features-href').attr('href', 'features-pakketten.html')
+      $('.pricing-href').attr('href', 'pakketten.html')
+      $('.repository-backups-pricing-href').attr('href', 'repository-backups-prijzen.html')
+      $('.resources-href').attr('href', 'resources.html')
+      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.sample-agreement-href').attr('href', 'voorbeeld-overeenkomst.html')
+      $('.secure-guide-href').attr('href', 'beveilig-gids.html')
+      $('.security-href').attr('href', 'beveiliging.html')
+      $('.sign-up-href').attr('href', 'aanmelden.html')
+      $('.source-code-escrow-href').attr('href', 'source-code-escrow.html')
+      $('.start-guide-href').attr('href', 'start-gids.html')
+      $('.what-is-data-escrow-href').attr('href', 'wat-is-data-escrow.html')
+      $('.what-is-information-escrow-href').attr('href', 'wat-is-informatie-escrow.html')
+      $('.what-is-saas-escrow-href').attr('href', 'wat-is-saas-escrow.html')
+      $('.what-is-source-code-escrow-href').attr('href', 'wat-is-source-code-escrow.html')
+      $('.book-a-demo-href').attr('href', 'boek-een-demo.html')
+      $('.solutions-href').attr('href', 'oplossingen.html')
+      $('.situations-href').attr('href', 'scenarios.html')
+      $('.software-escrow-href').attr('href', 'software-escrow.html')
+      $('.recovery-href').attr('href', 'recovery.html')
+      $('.continuity-href').attr('href', 'continuïteit.html')
+      $('.document-escrow-href').attr('href', 'documenten-escrow.html')
+      $('.technology-designs-escrow-href').attr('href', 'technologie-designs-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'toegangsgegevens-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-omgeving-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'externe-afhankelijkheden.html')
+      $('.competitors-href').attr('href', 'concurrenten.html')
+      $('.automated-verification-href').attr('href', 'software-verificatierapport-geautomatiseerd.html')
+      $('.manual-verification-href').attr('href', 'software-verificatierapport-handmatig.html')
+      $('.code-of-conduct-href').attr('href', 'gedragscode.html')
+      $('.verification-href').attr('href', 'verificatie.html')
+    }
+
+    if (window.location.pathname.includes('/ro/')) {
+
+      $('.about-us-href').attr('href', 'despre-noi.html')
+      $('.check-email-href').attr('href', 'verifică-email.html')
+      $('.confirm-message-href').attr('href', 'mesaj-de-confirmare.html')
+      $('.confirm-plan-href').attr('href', 'confirmă-plan.html')
+      $('.confirmation-anatomy-href').attr('href', 'confirmă-anatomie.html')
+      $('.confirmation-expert-insights-href').attr('href', 'confirmă-perspective-experti.html')
+      $('.confirmation-guide-href').attr('href', 'confirmare-ghid.html')
+      $('.confirmation-introduction-href').attr('href', 'confirmare-introducere.html')
+      $('.confirmation-offer-href').attr('href', 'confirmare-oferta.html')
+      $('.confirmation-pricelist-href').attr('href', 'confirmare-lista-preturi.html')
+      $('.confirmation-sample-href').attr('href', 'confirmare-mostră.html')
+      $('.confirmation-security-href').attr('href', 'confirmare-securitate.html')
+      $('.confirmation-href').attr('href', 'confirmare.html')
+      $('.contact-href').attr('href', 'contact.html')
+      $('.contact-support-href').attr('href', 'contact.html?support#hs-chat-open')
+      $('.contact-sales-href').attr('href', 'contact.html#hs-chat-open')
+      $('.create-custom-software-escrow-agreement-href').attr('href', 'creat-acord-software-escrow-personalizat.html')
+      $('.data-escrow-href').attr('href', 'date-escrow.html')
+      $('.depositing-features-href').attr('href', 'caracteristici-de-depunere.html')
+      $('.discount-form-href').attr('href', 'formular-reducere.html')
+      $('.escrow-agreement-href').attr('href', 'acord-de-escrow.html')
+      $('.features-href').attr('href', 'caracteristici.html')
+      $('.how-it-works-href').attr('href', 'cum-funcționează.html')
+      $('.integrations-href').attr('href', 'integrări.html')
+      $('.plan-comparison-href').attr('href', 'plan-comparație.html')
+      $('.pricing-features-href').attr('href', 'caracteristici-tarife.html')
+      $('.pricing-href').attr('href', 'tarife.html')
+      $('.resources-href').attr('href', 'resurse.html')
+      $('.saas-escrow-href').attr('href', 'saas-escrow.html')
+      $('.sample-agreement-href').attr('href', 'exemplu-de-acord.html')
+      $('.secure-guide-href').attr('href', 'ghid-securizat.html')
+      $('.security-href').attr('href', 'securitate.html')
+      $('.sign-up-href').attr('href', 'înscrie-te.html')
+      $('.source-code-escrow-href').attr('href', 'escrow-cod-sursă.html')
+      $('.start-guide-href').attr('href', 'ghid-de-pornire.html')
+      $('.what-is-data-escrow-href').attr('href', 'ce-este-data-escrow.html')
+      $('.what-is-information-escrow-href').attr('href', 'ce-este-informații-escrow.html')
+      $('.what-is-saas-escrow-href').attr('href', 'ce-este-saas-escrow.html')
+      $('.what-is-source-code-escrow-href').attr('href', 'ce-este-escrow-cod-sursă.html')
+      $('.book-a-demo-href').attr('href', 'rezerva-o-demonstrație.html')
+      $('.solutions-href').attr('href', 'soluții.html')
+      $('.situations-href').attr('href', 'situații.html')
+      $('.software-escrow-href').attr('href', 'software-escrow.html')
+      $('.recovery-href').attr('href', 'recuperare.html')
+      $('.continuity-href').attr('href', 'continuitate.html')
+      $('.document-escrow-href').attr('href', 'escrow-document.html')
+      $('.technology-designs-escrow-href').attr('href', 'tehnologie-design-escrow.html')
+      $('.credentials-escrow-href').attr('href', 'acreditări-escrow.html')
+      $('.hosting-environment-escrow-href').attr('href', 'hosting-mediu-escrow.html')
+      $('.3rd-party-dependencies-href').attr('href', 'dependențe-de-la-terți.html')
+      $('.competitors-href').attr('href', 'concurenți.html')
+      $('.automated-verification-href').attr('href', 'verificare-software-raport-automatizat.html')
+      $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
+      $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
+      $('.verification-href').attr('href', 'verificare.html')
+      }
+
+      if (window.location.pathname.includes('/fr/')) {
+
+        $('.about-us-href').attr('href', 'à-propos-de-nous.html')
+        $('.check-email-href').attr('href', 'verifier-email.html')
+        $('.confirm-message-href').attr('href', 'confirmer-message.html')
+        $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')
+        $('.confirmation-anatomy-href').attr('href', 'confirmation-anatomy.html')
+        $('.confirmation-expert-insights-href').attr('href', 'confirmation-expert-insights.html')
+        $('.confirmation-guide-href').attr('href', 'confirmation-guide.html')
+        $('.confirmation-introduction-href').attr('href', 'confirmation-introduction.html')
+        $('.confirmation-offer-href').attr('href', 'confirmation-offre.html')
+        $('.confirmation-pricelist-href').attr('href', 'confirmation-grille-tarifaire.html')
+        $('.confirmation-sample-href').attr('href', 'confirmation-modele.html')
+        $('.confirmation-security-href').attr('href', 'confirmation-securite.html')
+        $('.confirmation-href').attr('href', 'confirmation.html')
+        $('.contact-href').attr('href', 'contact.html')
+        $('.contact-support-href').attr('href', 'contact.html?support#hs-chat-open')
+        $('.contact-sales-href').attr('href', 'contact.html#hs-chat-open')
+        $('.create-custom-software-escrow-agreement-href').attr('href', 'creer-contrat-d-entiercement-de-logiciel-personnalise.html')
+        $('.data-escrow-href').attr('href', 'entiercement-de-donnees.html')
+        $('.depositing-features-href').attr('href', 'fonctionnalites-de-depot.html')
+        $('.discount-form-href').attr('href', 'formulaire-de-reduction.html')
+        $('.escrow-agreement-href').attr('href', 'contrat-d-entiercement.html')
+        $('.features-href').attr('href', 'fonctionnalites.html')
+        $('.how-it-works-href').attr('href', 'fonctionnement.html')
+        $('.integrations-href').attr('href', 'integrations.html')
+        $('.plan-comparison-href').attr('href', 'comparaison-des-forfaits.html')
+        $('.pricing-features-href').attr('href', 'fonctionnalites-des-tarifs.html')
+        $('.pricing-href').attr('href', 'tarifs.html')
+        $('.resources-href').attr('href', 'ressources.html')
+        $('.saas-escrow-href').attr('href', 'entiercement-de-saas.html')
+        $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
+        $('.secure-guide-href').attr('href', 'guide-de-securite.html')
+        $('.security-href').attr('href', 'securite.html')
+        $('.sign-up-href').attr('href', 'inscription.html')
+        $('.source-code-escrow-href').attr('href', 'entiercement-de-code-source.html')
+        $('.start-guide-href').attr('href', 'guide-de-demarrage.html')
+        $('.what-is-data-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-donnees.html')
+        $('.what-is-information-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-informations.html')
+        $('.what-is-saas-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-saas.html')
+        $('.what-is-source-code-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-code-source.html')
+        $('.book-a-demo-href').attr('href', 'reserver-une-demo.html')
+        $('.solutions-href').attr('href', 'solutions.html')
+        $('.situations-href').attr('href', 'situations.html')
+        $('.software-escrow-href').attr('href', 'entiercement-de-logiciel.html')
+        $('.recovery-href').attr('href', 'reprise-après-sinistre.html')
+        $('.continuity-href').attr('href', 'continuité.html')
+        $('.document-escrow-href').attr('href', 'document-entiercement.html')
+        $('.technology-designs-escrow-href').attr('href', 'technologie-conception-entiercement.html')
+        $('.credentials-escrow-href').attr('href', 'identifiants-entiercement.html')
+        $('.hosting-environment-escrow-href').attr('href', 'entiercement-environnement-d-herbergement.html')
+        $('.3rd-party-dependencies-href').attr('href', 'dependences-de-tiers.html')
+        $('.competitors-href').attr('href', 'concurrents.html')
+        $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
+        $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
+        $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
+        $('.verification-href').attr('href', 'verification.html')
+        }
+  })
+</script>
+
+
   <script>
     var pathname = location.pathname;
   
     if (pathname.includes('/codekeeper-how-to-configure-a-software-escrow-agreement.html')) {
     document.title = "Codekeeper - How to Configure a Software Escrow Agreement"
-    document.getElementsByTagName('meta')["description"].content = "Learn how to configure a software escrow agreement with ease on Codekeeper. Follow four simple steps to set up roles, agreement types, and details for both the depositor and beneficiary. Save time and ensure a smooth escrow process. Visit our website for a free demo and discover more about software escrow.";
+    document.getElementsByTagName('meta')["description"].content = "Learn how to configure a software escrow agreement with ease on Codekeeper. Follow four simple steps to set up roles, agreement types, and details for both the depositor and beneficiary. Save time and ensure a smooth escrow process. Book a free demo and discover more about software escrow.";
   }
   </script>
   <!-- Snippets -->

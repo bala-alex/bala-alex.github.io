@@ -9087,6 +9087,11 @@ html {
     margin: 8px 0px;
   }
 }
+@media (max-width: 992px) {
+  .nav-margin {
+    margin: 0px;
+  }
+}
 
 .image-style {
   width: 100%;
@@ -9156,6 +9161,10 @@ html {
 
 .text-white {
   color: #ffffff;
+}
+
+.text-wrap {
+  text-wrap: wrap !important;
 }
 
 .text-air-force-blue {
@@ -9604,6 +9613,24 @@ html {
 }
 @media (max-width: 992px) {
   .show-mobile {
+    display: block;
+  }
+}
+
+.hide-solutions {
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+  .hide-solutions {
+    display: none;
+  }
+}
+
+.show-solutions {
+  display: none;
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+  .show-solutions {
     display: block;
   }
 }

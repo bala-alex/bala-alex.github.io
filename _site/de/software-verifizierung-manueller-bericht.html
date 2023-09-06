@@ -43,18 +43,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Lösungen</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software-Escrow</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
         </li>
 
+        <div class="dropdown show-solutions">
+          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lösungen <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Lösungen</a>
+            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software-Escrow</a>
+            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
+          </div>
+        </div> 
+
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Erweiterungen (Add-ons) <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -64,11 +75,19 @@
         </div> 
 
         <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin resources-href" href="resources.html">Infomaterial</a>
-        </li>
-        <li class="nav-item show-mobile">
+          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">Automatisierten Verifizierungsdienste</a>
+          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">Manuellen Verifizierungsdienste</a>
+          <a class="nav-link nav-margin integrations-href" href="integrations.html">Integrationen</a>
+          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Escrow-Vereinbarungen</a>
+          <a class="nav-link nav-margin resources-href" href="resources.html">Leitfäden & Fallstudien</a>
+          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">So geht's</a>
+          <a class="nav-link nav-margin" href="technical-assessment.html">Technische Einschätzung</a>
+          <a class="nav-link nav-margin" href="risk-assessment.html">Risikoeinschätzung</a>
           <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">Unsere Geschichte</a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">Kontakt</a>
         </li>
+
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Infomaterial <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
@@ -85,7 +104,7 @@
         </div> 
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn bg-white dropdown-toggle nav-link text-wrap" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Über uns <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -98,7 +117,7 @@
           <a class="nav-link nav-margin pricing-href" href="pricing.html">PREISE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-margin space-no-wrap" href="https://app.codekeeper.co/">ANMELDEN</a>
+          <a class="nav-link nav-margin space-no-wrap text-wrap" href="https://app.codekeeper.co/">ANMELDEN</a>
         </li>
         <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
           Demo buchen

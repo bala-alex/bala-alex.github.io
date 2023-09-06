@@ -89,6 +89,10 @@ html {
   @media (min-width: 990px) and (max-width: 1200px) { 
     margin: 8px 0px;  
   }
+
+  @include screen-md {
+    margin: 0px;
+  }
 }
 
 .image-style {
@@ -147,6 +151,10 @@ html {
 
 .text-white {
   color: $white;
+}
+
+.text-wrap {
+  text-wrap: wrap !important;
 }
 
 .text-air-force-blue {
@@ -571,6 +579,22 @@ html {
   display: none;
 
   @include screen-md {
+		display: block;
+	}
+}
+
+.hide-solutions {
+  display: block;
+
+  @media (min-width:992px) and (max-width:1500px) {
+		display: none;
+	}
+}
+
+.show-solutions {
+  display: none;
+
+  @media (min-width:992px) and (max-width:1500px) {
 		display: block;
 	}
 }
