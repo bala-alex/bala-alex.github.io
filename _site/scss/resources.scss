@@ -142,12 +142,20 @@
       position: absolute;
       top: 0;
       right: 0;
+      width: 240px !important;
+      @include screen-md {
+        max-width: 150px !important;
+      }
     }
 
     &__bg-bottom-left {
       position: absolute;
       bottom: 0;
       left: 0;
+      width: 140px !important;
+      @include screen-md {
+        max-width: 90px;
+      }
     }
 
     &__bg-bottom-right {
@@ -160,10 +168,10 @@
       position: absolute;
       top: 95px;
       left: 0;
-      max-width: 170px;
+      width: 170px;
 
       @include screen-sm {
-        max-width: 40%;
+        max-width: 35%;
       }
     }
 
@@ -171,10 +179,10 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      max-width: 400px;
+      max-width: 370px;
 
-      @include screen-sm {
-        max-width: 50%;
+      @include screen-md {
+        max-width: 35%;
       }
     }
 
@@ -1120,9 +1128,13 @@
       width: 100%;
       display: flex;
       justify-content: space-around;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      margin-bottom: 50px;
+      @include screen-sm {
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+      }
 
     }
 
