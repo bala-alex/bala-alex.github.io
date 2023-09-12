@@ -9057,6 +9057,13 @@ html {
           box-shadow: none;
 }
 
+.darken-effect:hover div {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .text-transform-none {
   text-transform: none !important;
 }
@@ -18967,6 +18974,19 @@ input[name=consent] {
   padding-bottom: 180px !important;
   position: relative;
 }
+.resources .header__bg-new2 {
+  min-height: 700px !important;
+  background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%) !important;
+  padding-top: 180px !important;
+  padding-bottom: 180px !important;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .resources .header__bg-new2 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+}
 .resources .header__bg-landing {
   min-height: 800px !important;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 251, 255, 0)), color-stop(82.6%, #F4F9FF));
@@ -19794,10 +19814,31 @@ input[name=consent] {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.resources .guide__box-header2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .resources .guide__box-image {
   max-width: 320px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.resources .guide__box-image2 {
+  max-width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .resources .guide__box-content {
   padding: 30px 40px;
@@ -19821,6 +19862,22 @@ input[name=consent] {
   max-width: 512px;
   color: #00384B;
   min-height: 180px;
+}
+.resources .guide__box-info-text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #009CB7 !important;
+}
+.resources .guide__box-time {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #6A8493 !important;
 }
 .resources .guide__box-footer {
   display: -webkit-box;

@@ -60,6 +60,11 @@ html {
   }
 }
 
+.darken-effect:hover div {
+  filter: brightness(95%);
+  transition: all 0.5s ease;
+}
+
 .text-transform-none {
   text-transform: none !important;
 }
