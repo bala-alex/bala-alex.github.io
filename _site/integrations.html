@@ -1109,7 +1109,7 @@ document.addEventListener("click", closeAllSelect);
       $('.manual-verification-href').attr('href', 'informe-verificacion-software-manual.html')
       $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
       $('.verification-href').attr('href', 'verificación.html')
-      $('.video-guides-href').attr('href', 'video-guides.html')
+      $('.video-guides-href').attr('href', 'guías-de-vídeo.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -1170,7 +1170,7 @@ document.addEventListener("click", closeAllSelect);
       $('.manual-verification-href').attr('href', 'software-verifizierung-manueller-bericht.html')
       $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
       $('.verification-href').attr('href', 'verifizierung.html')
-      $('.video-guides-href').attr('href', 'video-guides.html')
+      $('.video-guides-href').attr('href', 'video-leitfäden.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1291,7 +1291,7 @@ document.addEventListener("click", closeAllSelect);
       $('.manual-verification-href').attr('href', 'verificare-software-raport-manual.html')
       $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
       $('.verification-href').attr('href', 'verificare.html')
-      $('.video-guides-href').attr('href', 'video-guides.html')
+      $('.video-guides-href').attr('href', 'ghiduri-video.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1351,7 +1351,7 @@ document.addEventListener("click", closeAllSelect);
         $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
         $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
         $('.verification-href').attr('href', 'verification.html')
-        $('.video-guides-href').attr('href', 'video-guides.html')
+        $('.video-guides-href').attr('href', 'guides-vidéo.html')
         }
   })
 </script>
@@ -2012,6 +2012,31 @@ document.addEventListener("click", closeAllSelect);
   else if (pathname.includes('/ro/verificare.html')) {
     document.title = "Verificare software escrow: liniște pentru clienții software"
     document.getElementsByTagName('meta')["description"].content = "Serviciile de verificare a codului sursă oferă un nivel suplimentar de securitate, verificând în detaliu depozitele în escrow și instalând codul pentru a vedea dacă funcționează corect. Acest lucru vă oferă cu siguranță despre recuperarea în cazul unei situații de eliberare.";
+  }
+
+  else if (!(pathname.includes('/nl')) && pathname.includes('/video-guides.html')) {
+    document.title = "Learn about software escrow and our platform using our video guides"
+    document.getElementsByTagName('meta')["description"].content = "Explore our wide array of demo and explanation videos to master the Codekeeper platform and safeguard your software assets with confidence.";
+  }
+  else if (pathname.includes('/es/gu%C3%ADas-de-v%C3%ADdeo.html')) {
+    document.title = "Obtenga más información sobre el depósito en garantía de software y nuestra plataforma utilizando nuestras guías en vídeo."
+    document.getElementsByTagName('meta')["description"].content = "Explore nuestra amplia gama de videos explicativos y de demostración para dominar la plataforma Codekeeper y proteger sus activos de software con confianza.";
+  }
+  else if (pathname.includes('/de/video-leitf%C3%A4den.html')) {
+    document.title = "Lernen Sie Software-Escrow und unsere Plattform kennen, indem Sie unsere Video-Leitfäden nutzen."
+    document.getElementsByTagName('meta')["description"].content = "Erkunden Sie unsere große Auswahl an Demo- und Erklärvideos, um die Codekeeper-Plattform zu beherrschen und Ihre Software-Vermögenswerte mit Vertrauen zu schützen.";
+  }
+  else if (pathname.includes('/nl/video-guides.html')) {
+    document.title = "Leer meer over software escrow en ons platform met behulp van onze video guides "
+    document.getElementsByTagName('meta')["description"].content = "Verken onze uitgebreide reeks demo- en uitlegvideo's om het Codekeeper-platform onder de knie te krijgen en uw software assets met vertrouwen veilig te stellen. ";
+  }
+  else if (pathname.includes('/fr/guides-vid%C3%A9o.html')) {
+    document.title = "Découvrez l’entiercement de logiciel et notre plateforme grâce à nos guides vidéo"
+    document.getElementsByTagName('meta')["description"].content = "Explorez nos différentes vidéos de démonstration et d’explication pour maîtriser la plateforme Codekeeper et protéger vos actifs logiciels en toute confiance.";
+  }
+  else if (pathname.includes('/ro/ghiduri-video.html')) {
+    document.title = "Aflați despre software escrow și platforma noastră folosind ghidurile noastre video"
+    document.getElementsByTagName('meta')["description"].content = "Explorați gama noastră largă de videoclipuri demonstrative și explicative pentru a stăpâni platforma Codekeeper și pentru a vă proteja activele software cu încredere.";
   }
 
 
