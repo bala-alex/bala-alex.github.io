@@ -241,6 +241,11 @@
       text-align: center;
       color: $dark-cyan;
       margin-bottom: 100px;
+
+      @include screen-sm {
+        font-size: 42px;
+        line-height: 53px;
+      }
     }
 
     &__competitor-box {
@@ -405,6 +410,16 @@
       text-align: center;
       color: $dark-cyan;
       margin-bottom: 100px;
+
+      @include screen-md {
+        font-size: 50px;
+        line-height: 53px
+      }
+
+      @include screen-sm {
+        font-size: 30px;
+        line-height: 35px
+      }
     }
 
     &__title {

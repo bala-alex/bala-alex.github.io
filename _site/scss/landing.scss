@@ -64,6 +64,11 @@
   &__logo-backups {
     width: 270px;
     height: 58px;
+
+    @include screen-xs {
+      width: 220px;
+      height: 50px;
+    }
   }
 
   &__logo-text {
@@ -807,6 +812,11 @@
     line-height: 53px;
     text-align: center;
     max-width: 853px;
+
+    @include screen-xs {
+      font-size: 30px !important;
+      line-height: 35px;
+    }
   }
 
   &__text {

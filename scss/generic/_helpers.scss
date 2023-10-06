@@ -612,6 +612,12 @@ html {
 	}
 }
 
+.wrap-on-mobile {
+  @include screen-sm {
+		flex-wrap: wrap;
+	}
+}
+
 .space-no-wrap {
   white-space: nowrap;
 }
@@ -877,6 +883,12 @@ html {
   margin-left: 15px !important;
 }
 
+.ml-sm-0 {
+  @include screen-xs {
+    margin-left: 0 !important;
+  }
+}
+
 .h-35 {
   height: 35px;
 }
@@ -913,7 +925,8 @@ html {
   margin-left: auto;
 
   @include screen-md {
-    margin-left: 8px;
+    margin-left: 0px;
+    margin-bottom: 10px;
   }
 }
 

@@ -196,9 +196,14 @@
       &:hover {
         border: 1px solid $bondi-blue;
       }
-      @include screen-xs {
+      @include screen-sm {
         max-width: 260px;
         min-width: 260px;
+      }
+
+      @include screen-xs {
+        max-width: 230px;
+        min-width: 230px;
       }
     }
 
@@ -254,6 +259,10 @@
       }
       @include screen-sm {
         width: 254px;
+      }
+
+      @include screen-xs {
+        width: 210px;
       }
 
       img {

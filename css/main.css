@@ -9654,6 +9654,13 @@ html {
   }
 }
 
+@media (max-width: 767px) {
+  .wrap-on-mobile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .space-no-wrap {
   white-space: nowrap;
 }
@@ -9930,6 +9937,12 @@ html {
   margin-left: 15px !important;
 }
 
+@media (max-width: 480px) {
+  .ml-sm-0 {
+    margin-left: 0 !important;
+  }
+}
+
 .h-35 {
   height: 35px;
 }
@@ -9969,7 +9982,8 @@ html {
 }
 @media (max-width: 992px) {
   .backups-nav-margin {
-    margin-left: 8px;
+    margin-left: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -10458,6 +10472,12 @@ input[name=consent] {
 .header__logo-backups {
   width: 270px;
   height: 58px;
+}
+@media (max-width: 480px) {
+  .header__logo-backups {
+    width: 220px;
+    height: 50px;
+  }
 }
 .header__logo-text {
   margin: 10px;
@@ -11274,6 +11294,12 @@ input[name=consent] {
   line-height: 53px;
   text-align: center;
   max-width: 853px;
+}
+@media (max-width: 480px) {
+  .how-works__main-title {
+    font-size: 30px !important;
+    line-height: 35px;
+  }
 }
 .how-works__text {
   font-size: 30px !important;
@@ -13610,10 +13636,16 @@ input[name=consent] {
 .integrations .service__box:hover {
   border: 1px solid #009CB7;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .integrations .service__box {
     max-width: 260px;
     min-width: 260px;
+  }
+}
+@media (max-width: 480px) {
+  .integrations .service__box {
+    max-width: 230px;
+    min-width: 230px;
   }
 }
 .integrations .service__box2 {
@@ -13684,6 +13716,11 @@ input[name=consent] {
 @media (max-width: 767px) {
   .integrations .service__image-box {
     width: 254px;
+  }
+}
+@media (max-width: 480px) {
+  .integrations .service__image-box {
+    width: 210px;
   }
 }
 .integrations .service__image-box img {
@@ -16421,6 +16458,12 @@ input[name=consent] {
   color: #1A5261;
   max-width: 485px;
 }
+@media (max-width: 480px) {
+  .contact .switch__main-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 .contact .switch__main-subtitle {
   font-family: "Mulish";
   font-style: normal;
@@ -18409,6 +18452,9 @@ input[name=consent] {
 .contact .section__assessment textarea:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-bottom: 2px solid #009CB7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .contact .section__assessment .hs-form-radio-display {
   display: -webkit-box;
@@ -18557,6 +18603,371 @@ input[name=consent] {
   font-family: "Mulish", sans-serif;
   color: #B7B7B7 !important;
   font-weight: 400;
+}
+.contact .section__assessment2 {
+  background-color: transparent;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px !important;
+}
+.contact .section__assessment2 .hs-form-booleancheckbox-display {
+  margin-top: 10px;
+  padding-bottom: 40px;
+  color: #1A5261;
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 400;
+}
+.contact .section__assessment2 .hs-form-booleancheckbox-display span {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.contact .section__assessment2 .hs-button.primary.large {
+  color: #ffffff;
+  background-color: #009CB7;
+  border-color: #009CB7;
+  color: #ffffff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #009CB7;
+  border-radius: 5px;
+  height: 50px;
+  width: 100% !important;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.contact .section__assessment2 .hs-button.primary.large:hover {
+  color: #ffffff;
+  background-color: #007b91;
+  border-color: #007184;
+}
+.contact .section__assessment2 .hs-button.primary.large:focus, .contact .section__assessment2 .hs-button.primary.large.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 156, 183, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 156, 183, 0.5);
+}
+.contact .section__assessment2 .hs-button.primary.large.disabled, .contact .section__assessment2 .hs-button.primary.large:disabled {
+  color: #ffffff;
+  background-color: #009CB7;
+  border-color: #009CB7;
+}
+.contact .section__assessment2 .hs-button.primary.large:not(:disabled):not(.disabled):active, .contact .section__assessment2 .hs-button.primary.large:not(:disabled):not(.disabled).active, .show > .contact .section__assessment2 .hs-button.primary.large.dropdown-toggle {
+  color: #212529;
+  background-color: #e7e7e7;
+  border-color: #e1e1e1;
+}
+.contact .section__assessment2 .hs-button.primary.large:not(:disabled):not(.disabled):active:focus, .contact .section__assessment2 .hs-button.primary.large:not(:disabled):not(.disabled).active:focus, .show > .contact .section__assessment2 .hs-button.primary.large.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 156, 183, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 156, 183, 0.5);
+}
+.contact .section__assessment2 .hs-button.primary.large:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contact .section__assessment2 label.hs-error-msg {
+  color: #3377c6 !important;
+  margin-top: 5px !important;
+  font-size: 14px !important;
+}
+.contact .section__assessment2 label {
+  font-size: 20px !important;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 400;
+  margin-top: 60px;
+}
+.contact .section__assessment2 label.hs-form-radio-display {
+  margin-top: 0px !important;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 8px;
+  border: 8px solid rgba(106, 132, 147, 0.1);
+  height: 53px;
+  padding-left: 8px;
+}
+.contact .section__assessment2 label#label-other-c3525191-4529-4f75-833b-16e7a91f2a56 {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_primary_function-c3525191-4529-4f75-833b-16e7a91f2a56 {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_continued_access-c3525191-4529-4f75-833b-16e7a91f2a56 {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_context-3cd31c45-046a-404c-ae1a-86db705b9c3c {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_frequently-3cd31c45-046a-404c-ae1a-86db705b9c3c {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_currently_ensure-3cd31c45-046a-404c-ae1a-86db705b9c3c {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-other_primary_function_of-3cd31c45-046a-404c-ae1a-86db705b9c3c {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-not_listed_-1b2c7f80-84a3-4c81-986e-260919243efb {
+  margin-top: 0px !important;
+  color: #009CB7;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-how_many_different_hosting_environments_are_you_using_for_your_applications__e_g___aws__google_clou-1b2c7f80-84a3-4c81-986e-260919243efb p:last-child {
+  margin-top: 0px !important;
+  color: #6A8493;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-how_many_third_party_services_does_your_software_depend_on__e_g___databases__apis__libraries____-1b2c7f80-84a3-4c81-986e-260919243efb p:last-child {
+  margin-top: 0px !important;
+  color: #6A8493;
+  font-size: 16px !important;
+}
+.contact .section__assessment2 label#label-how_many_different_hosting_environments_are_you_using_for_your_applications__e_g___aws__google_clou-1b2c7f80-84a3-4c81-986e-260919243efb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .section__assessment2 label#label-how_many_third_party_services_does_your_software_depend_on__e_g___databases__apis__libraries____-1b2c7f80-84a3-4c81-986e-260919243efb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .section__assessment2 label.hs-error-msg.hs-main-font-element:last-child {
+  margin-top: 40px;
+}
+.contact .section__assessment2 textarea {
+  width: 100% !important;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  height: 110px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1A5261;
+  font-weight: 400;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 2px solid #8FD3DF;
+  border-radius: 0px;
+  outline: none;
+}
+.contact .section__assessment2 textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #009CB7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact .section__assessment2 .hs-form-radio-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+.contact .section__assessment2 .hs-form-radio-display span {
+  margin-left: 10px !important;
+  margin-top: 7px;
+  color: #1A5261;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-family: "Mulish", sans-serif;
+}
+.contact .section__assessment2 .hs-form-radio-display span a {
+  color: #009CB7;
+}
+.contact .section__assessment2 .hs-form-radio-display input {
+  width: 18px !important;
+}
+.contact .section__assessment2 .hs-richtext {
+  font-size: 14px;
+  color: #6A8493;
+  font-weight: 300;
+}
+.contact .section__assessment2 input {
+  width: 100% !important;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1A5261;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 2px solid #8FD3DF;
+  border-radius: 0px;
+  outline: none;
+}
+.contact .section__assessment2 input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #009CB7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact .section__assessment2 select {
+  width: 100% !important;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1A5261 !important;
+  border: none;
+  border-bottom: 2px solid #8FD3DF;
+  border-radius: 0px;
+  outline: none;
+}
+.contact .section__assessment2 select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.contact .section__assessment2 label.hs-error-msg {
+  color: red;
+  margin-top: 5px !important;
+}
+.contact .section__assessment2 .inputs-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.contact .section__assessment2 input::-webkit-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 input::-moz-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 input:-ms-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 input::-ms-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 input::placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 input[type=file]:last-child {
+  background-color: transparent;
+  color: #1A5261;
+  min-height: 45px;
+}
+.contact .section__assessment2 input[type=checkbox] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 12px;
+}
+.contact .section__assessment2 select::-webkit-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 select::-moz-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 select:-ms-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 select::-ms-input-placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 select::placeholder {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #B7B7B7 !important;
+  font-weight: 400;
+}
+.contact .section__assessment2 label.hs-form-checkbox-display {
+  margin-top: 20px !important;
+}
+.contact .section__assessment2 label.hs-form-checkbox-display span {
+  font-size: 16px !important;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.contact .section__assessment2 input#consent-a98c66fd-c762-449d-8f19-14ab6c14a53d.hs-input {
+  width: 30px !important;
+  height: 20px !important;
+  margin-bottom: 40px !important;
+}
+.contact .section__assessment2 .hs-form-booleancheckbox input#consent-a98c66fd-c762-449d-8f19-14ab6c14a53d.hs-input {
+  margin-top: 0px;
 }
 .contact .section__modal-form5 {
   background-color: transparent;
@@ -18875,6 +19286,11 @@ input[name=consent] {
   width: 182px;
   height: 95px;
 }
+.contact li label.hs-error-msg.hs-main-font-element {
+  color: red;
+  font-size: 16px !important;
+  margin-top: 5px;
+}
 
 .contact-custom input[name=consent] {
   width: 20px !important;
@@ -18894,6 +19310,12 @@ input[name=consent] {
   letter-spacing: -1px;
   text-align: center;
   max-width: 100%;
+}
+@media (max-width: 480px) {
+  .resources .header__title {
+    font-size: 42px !important;
+    line-height: 53px;
+  }
 }
 .resources .header__subtitle {
   color: #6782A3;
@@ -18915,6 +19337,12 @@ input[name=consent] {
   max-width: 700px;
   color: #003543;
   position: relative;
+}
+@media (max-width: 480px) {
+  .resources .header__title2 {
+    font-size: 42px;
+    line-height: 53px;
+  }
 }
 .resources .header__subtitle2 {
   font-family: "Mulish";
@@ -19385,6 +19813,12 @@ input[name=consent] {
   line-height: 54px;
   color: #ffffff;
 }
+@media (max-width: 480px) {
+  .resources .best-price__title2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 .resources .best-price__text {
   font-family: "Mulish";
   font-style: normal;
@@ -19436,6 +19870,11 @@ input[name=consent] {
   position: relative;
   padding: 60px;
   z-index: 9;
+}
+@media (max-width: 767px) {
+  .resources .intro-guide__bg {
+    padding: 20px;
+  }
 }
 .resources .intro-guide__shape-left {
   position: absolute;
@@ -19507,6 +19946,12 @@ input[name=consent] {
   font-size: 50px;
   line-height: 53px;
   color: #1A5261;
+}
+@media (max-width: 767px) {
+  .resources .intro-guide__main-title {
+    font-size: 30px !important;
+    line-height: 35px;
+  }
 }
 .resources .intro-guide__main-subtitle {
   font-family: "Mulish";
@@ -19741,6 +20186,12 @@ input[name=consent] {
   padding-top: 130px;
   color: #1A5261;
 }
+@media (max-width: 767px) {
+  .resources .software-escrow__main-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 .resources .software-escrow__main-subtitle {
   font-family: "Mulish";
   font-style: normal;
@@ -19834,6 +20285,11 @@ input[name=consent] {
   max-width: 320px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 480px) {
+  .resources .guide__box-image {
+    max-width: 260px;
+  }
 }
 .resources .guide__box-image2 {
   max-width: 100%;
@@ -19942,6 +20398,11 @@ input[name=consent] {
   border: 1px solid #CDE2EE;
   border-radius: 20px;
   padding: 60px;
+}
+@media (max-width: 480px) {
+  .resources .applications__box {
+    padding: 20px;
+  }
 }
 .resources .applications__header-title {
   font-weight: 200;
@@ -20845,6 +21306,7 @@ input[name=consent] {
 }
 .resources .section__modal-form label.hs-error-msg {
   color: red;
+  font-size: 16px;
 }
 .resources .section__modal-form .inputs-list {
   list-style-type: none;
@@ -21537,6 +21999,12 @@ input[name=consent] {
     max-width: 80%;
   }
 }
+@media (max-width: 480px) {
+  .resources .escrow__customised-image {
+    margin: 10px;
+    max-width: 200px !important;
+  }
+}
 .resources .escrow__customised-title {
   color: #ffffff;
   font-family: "Mulish";
@@ -21823,6 +22291,12 @@ input[name=consent] {
   line-height: 70px;
   letter-spacing: -1px;
   max-width: 550px;
+}
+@media (max-width: 767px) {
+  .resources .pricing-plan__complete-title {
+    font-size: 42px;
+    line-height: 53px;
+  }
 }
 .resources .pricing-plan__complete-subtitle {
   color: #6A8493;
@@ -22651,6 +23125,12 @@ input[name=consent] {
   color: #1A5261;
   margin-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .software-escrow .difference__main-title {
+    font-size: 42px;
+    line-height: 53px;
+  }
+}
 .software-escrow .difference__competitor-box {
   background: #ffffff;
   border: 0.5px solid #DCE5F2;
@@ -22800,6 +23280,18 @@ input[name=consent] {
   text-align: center;
   color: #1A5261;
   margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .software-escrow .information__main-title {
+    font-size: 50px;
+    line-height: 53px;
+  }
+}
+@media (max-width: 767px) {
+  .software-escrow .information__main-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 .software-escrow .information__title {
   font-family: "Mulish";
@@ -23581,6 +24073,8 @@ input[name=consent] {
 @media (max-width: 767px) {
   .start-guide .conduct__header-title {
     padding-top: 20px;
+    font-size: 50px !important;
+    line-height: 53px;
   }
 }
 .start-guide .conduct__header-small-shape {

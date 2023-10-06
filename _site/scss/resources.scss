@@ -10,6 +10,11 @@
       letter-spacing: -1px;
       text-align: center;
       max-width: 100%;
+
+      @include screen-xs {
+        font-size: 42px !important;
+        line-height: 53px;
+      }
     }
   
     &__subtitle {
@@ -33,6 +38,11 @@
       max-width: 700px;
       color: $complementary-dark;
       position: relative;
+
+      @include screen-xs {
+        font-size: 42px;
+        line-height: 53px;
+      }
     }
   
     &__subtitle2 {
@@ -503,6 +513,10 @@
       font-size: 50px;
       line-height: 54px;
       color: $white;
+      @include screen-xs {
+        font-size: 35px;
+        line-height: 40px;
+      }
     }
 
     &__text {
@@ -562,6 +576,10 @@
       position: relative;
       padding: 60px;
       z-index: 9;
+
+      @include screen-sm {
+        padding: 20px;
+      }
     }
 
     &__shape-left {
@@ -636,6 +654,11 @@
       font-size: 50px;
       line-height: 53px;
       color: $dark-cyan;
+
+      @include screen-sm {
+        font-size: 30px !important;
+        line-height: 35px;
+      }
     }
 
     &__main-subtitle {
@@ -866,6 +889,11 @@
       letter-spacing: -1px;
       padding-top: 130px;
       color: $dark-cyan;
+
+      @include screen-sm {
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
 
     &__main-subtitle {
@@ -956,6 +984,10 @@
       &-image {
         max-width: 320px;
         object-fit: contain;
+
+        @include screen-xs {
+          max-width: 260px;
+        }
       }
 
       &-image2 {
@@ -1066,6 +1098,10 @@
       border: 1px solid #CDE2EE;
       border-radius: 20px;
       padding: 60px;
+
+      @include screen-xs {
+        padding: 20px;
+      }
     }
 
     &__header-title {
@@ -1989,6 +2025,7 @@
 
       label.hs-error-msg {
         color: red;
+        font-size: 16px;
       }
 
       .inputs-list {
@@ -2648,6 +2685,11 @@
           margin: 30px 15px 50px;
           max-width: 80%;
         }
+
+        @include screen-xs {
+          margin: 10px;
+          max-width: 200px !important;
+        }
       }
 
       &-title {
@@ -2936,6 +2978,11 @@
         line-height: 70px;
         letter-spacing: -1px;
         max-width: 550px;
+
+        @include screen-sm {
+          font-size: 42px;
+          line-height: 53px;
+        }
       }
 
       &-subtitle {
