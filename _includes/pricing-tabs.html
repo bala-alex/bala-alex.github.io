@@ -22,7 +22,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="developer-monthly"><span>$</span>99</p>
+                  <p class="plan__amount mt-0" id="developer-monthly">{{ site.data.pricing.prices.developer_monthly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span>99</p>
+                  <p class="plan__amount mt-0 developer-monthly-saas">{{ site.data.pricing.prices.developer_monthly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -91,7 +91,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount developer-monthly mb-0 fw-400">$99</p>&nbsp;
+                    <p class="plan__fee-amount developer-monthly mb-0 fw-400">{{ site.data.pricing.prices.developer_monthly.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -104,14 +104,14 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 developer-plan-saas">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount developer-monthly-saas2 mb-0 fw-400">$198</p>&nbsp;
+                    <p class="plan__fee-amount developer-monthly-saas2 mb-0 fw-400">{{ site.data.pricing.prices.developer_monthly_saas2.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="developer-plan-software d-none btn-disabled">
@@ -216,7 +216,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="team-monthly"><span>$</span>249</p>
+                  <p class="plan__amount mt-0" id="team-monthly">{{ site.data.pricing.prices.team_monthly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -253,7 +253,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 team-monthly-saas"><span>$</span>149</p>
+                  <p class="plan__amount mt-0 team-monthly-saas">{{ site.data.pricing.prices.team_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -285,7 +285,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount team-monthly mb-0 fw-400">$249</p>&nbsp;
+                    <p class="plan__fee-amount team-monthly mb-0 fw-400">{{ site.data.pricing.prices.team_monthly.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -298,14 +298,14 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 team-plan-saas btn-disabled">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount team-monthly-saas2 mb-0 fw-400">$398</p>&nbsp;
+                    <p class="plan__fee-amount team-monthly-saas2 mb-0 fw-400">{{ site.data.pricing.prices.team_monthly_saas2.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -318,7 +318,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               
@@ -414,7 +414,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="business-monthly"><span>$</span>449</p>
+                  <p class="plan__amount mt-0" id="business-monthly">{{ site.data.pricing.prices.business_monthly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -451,7 +451,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 business-monthly-saas"><span>$</span>249</p>
+                  <p class="plan__amount mt-0 business-monthly-saas">{{ site.data.pricing.prices.business_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -483,7 +483,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount business-monthly mb-0 fw-400">$499</p>&nbsp;
+                    <p class="plan__fee-amount business-monthly mb-0 fw-400">{{ site.data.pricing.prices.business_monthly.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -496,14 +496,14 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 business-plan-saas btn-disabled">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount business-monthly-saas2 mb-0 fw-400">$698</p>&nbsp;
+                    <p class="plan__fee-amount business-monthly-saas2 mb-0 fw-400">{{ site.data.pricing.prices.business_monthly_saas2.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -516,7 +516,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="business-plan-software btn-disabled d-none">
@@ -608,7 +608,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="enterprise-monthly"><span>$</span>1,499</p>
+                  <p class="plan__amount mt-0" id="enterprise-monthly">{{ site.data.pricing.prices.enterprise_monthly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -645,7 +645,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span>499</p>
+                  <p class="plan__amount mt-0 enterprise-monthly-saas">{{ site.data.pricing.prices.enterprise_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -677,7 +677,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount enterprise-monthly mb-0 fw-400">$1,499</p>&nbsp;
+                    <p class="plan__fee-amount enterprise-monthly mb-0 fw-400">{{ site.data.pricing.prices.enterprise_monthly.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -690,14 +690,14 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 enterprise-plan-saas btn-disabled">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_monthly'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 fw-400">$1,998</p>&nbsp;
+                    <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 fw-400">{{ site.data.pricing.prices.enterprise_monthly_saas2.USD }}</p>&nbsp;
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -710,7 +710,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="enterprise-plan-software btn-disabled d-none">
@@ -806,7 +806,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="developer-yearly"><span>$</span>89</p>
+                  <p class="plan__amount mt-0" id="developer-yearly">{{ site.data.pricing.prices.developer_yearly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -843,7 +843,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 developer-monthly-saas"><span>$</span>99</p>
+                  <p class="plan__amount mt-0 developer-monthly-saas">{{ site.data.pricing.prices.developer_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -875,8 +875,8 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount developer-monthly mb-0 text-line-through fw-400">$99</p>&nbsp;
-                      <p class="plan__fee-amount developer-yearly mb-0">$89</p>
+                    <p class="plan__fee-amount developer-monthly mb-0 text-line-through fw-400">{{ site.data.pricing.prices.developer_monthly.USD }}</p>&nbsp;
+                      <p class="plan__fee-amount developer-yearly mb-0">{{ site.data.pricing.prices.developer_yearly.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -889,15 +889,15 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 developer-plan-saas2">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount developer-monthly-saas2 mb-0 text-line-through fw-400">$198</p>&nbsp;
-                    <p class="plan__fee-amount developer-yearly-saas2 mb-0">$188</p>
+                    <p class="plan__fee-amount developer-monthly-saas2 mb-0 text-line-through fw-400">{{ site.data.pricing.prices.developer_monthly_saas.USD }}</p>&nbsp;
+                    <p class="plan__fee-amount developer-yearly-saas2 mb-0">{{ site.data.pricing.prices.developer_yearly_saas2.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -910,7 +910,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="developer-plan-software2 btn-disabled d-none">
@@ -1002,7 +1002,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="team-yearly"><span>$</span>225</p>
+                  <p class="plan__amount mt-0" id="team-yearly">{{ site.data.pricing.prices.team_yearly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1039,7 +1039,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 team-monthly-saas"><span>$</span>149</p>
+                  <p class="plan__amount mt-0 team-monthly-saas">{{ site.data.pricing.prices.team_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1071,8 +1071,8 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount team-monthly mb-0 text-line-through fw-400">$249</p>&nbsp;
-                      <p class="plan__fee-amount team-yearly mb-0">$225</p>
+                    <p class="plan__fee-amount team-monthly mb-0 text-line-through fw-400">{{ site.data.pricing.prices.team_monthly.USD }}</p>&nbsp;
+                      <p class="plan__fee-amount team-yearly mb-0">{{ site.data.pricing.prices.team_yearly.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1085,15 +1085,15 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 team-plan-saas2">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount team-monthly-saas2 mb-0 text-line-through fw-400">$398</p>&nbsp;
-                    <p class="plan__fee-amount team-yearly-saas2 mb-0">$374</p>
+                    <p class="plan__fee-amount team-monthly-saas2 mb-0 text-line-through fw-400">{{ site.data.pricing.prices.team_monthly_saas2.USD }}</p>&nbsp;
+                    <p class="plan__fee-amount team-yearly-saas2 mb-0">{{ site.data.pricing.prices.team_yearly_saas2.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1106,7 +1106,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               
@@ -1184,7 +1184,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="business-yearly"><span>$</span>399</p>
+                  <p class="plan__amount mt-0" id="business-yearly">{{ site.data.pricing.prices.business_yearly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1221,7 +1221,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 business-monthly-saas"><span>$</span>249</p>
+                  <p class="plan__amount mt-0 business-monthly-saas">{{ site.data.pricing.prices.business_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1253,8 +1253,8 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount business-monthly mb-0 text-line-through fw-400">$449</p>&nbsp;
-                      <p class="plan__fee-amount business-yearly mb-0">$399</p>
+                    <p class="plan__fee-amount business-monthly mb-0 text-line-through fw-400">{{ site.data.pricing.prices.business_monthly.USD }}</p>&nbsp;
+                      <p class="plan__fee-amount business-yearly mb-0">{{ site.data.pricing.prices.business_yearly.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1267,15 +1267,15 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 business-plan-saas2">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount business-monthly-saas2 mb-0 text-line-through fw-400">$698</p>&nbsp;
-                    <p class="plan__fee-amount business-yearly-saas2 mb-0">$648</p>
+                    <p class="plan__fee-amount business-monthly-saas2 mb-0 text-line-through fw-400">{{ site.data.pricing.prices.business_monthly_saas2.USD }}</p>&nbsp;
+                    <p class="plan__fee-amount business-yearly-saas2 mb-0">{{ site.data.pricing.prices.business_yearly_saas2.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1288,7 +1288,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="business-plan-software2 btn-disabled d-none">
@@ -1362,7 +1362,7 @@
                 </div>
                 <div class="plan__badge">{{ site.data[page.lang]['saas_escrow']['ready_for_recovery'] }}</div>
                 <div class="d-flex align-items-center">
-                  <p class="plan__amount mt-0" id="enterprise-yearly"><span>$</span>1,349</p>
+                  <p class="plan__amount mt-0" id="enterprise-yearly">{{ site.data.pricing.prices.enterprise_yearly.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1399,7 +1399,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa fa-plus fa-sm"></i>&nbsp
-                  <p class="plan__amount mt-0 enterprise-monthly-saas"><span>$</span>499</p>
+                  <p class="plan__amount mt-0 enterprise-monthly-saas">{{ site.data.pricing.prices.enterprise_monthly_saas.USD }}</p>
                   <span class="plan__period">/{{ site.data[page.lang]['pricing']['month'] }}</span>
                 </div>
                 <div class="plan__content-tooltip">
@@ -1431,8 +1431,8 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount enterprise-monthly mb-0 text-line-through fw-400">$1,499</p>&nbsp;
-                      <p class="plan__fee-amount enterprise-yearly mb-0">$1,349</p>
+                    <p class="plan__fee-amount enterprise-monthly mb-0 text-line-through fw-400">{{ site.data.pricing.prices.enterprise_monthly.USD }}</p>&nbsp;
+                      <p class="plan__fee-amount enterprise-yearly mb-0">{{ site.data.pricing.prices.enterprise_yearly.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1445,15 +1445,15 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="w-100 my-3 enterprise-plan-saas2">
                 <div class="d-flex align-items-center justify-content-between">
                   <p class="plan__period2 text-capitalize">{{ site.data[page.lang]['pricing']['per_month_billed_annually'] }}</p>
                   <div class="d-flex align-items-center">
-                    <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 text-line-through fw-400">$1,998</p>&nbsp;
-                    <p class="plan__fee-amount enterprise-yearly-saas2 mb-0">$1,848</p>
+                    <p class="plan__fee-amount enterprise-monthly-saas2 mb-0 text-line-through fw-400">{{ site.data.pricing.prices.enterprise_monthly_saas2.USD }}</p>&nbsp;
+                    <p class="plan__fee-amount enterprise-yearly-saas2 mb-0">{{ site.data.pricing.prices.enterprise_yearly_saas2.USD }}</p>
                     <p class="plan__fee-amount mb-0 mr-3"> /{{ site.data[page.lang]['pricing']['month'] }}</p>
                   </div>
                 </div>
@@ -1466,7 +1466,7 @@
                       <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
                     </div>
                   </div>
-                  <p class="plan__fee-amount setup-fee mb-0 mr-3">$249</p>
+                  <p class="plan__fee-amount setup-fee mb-0 mr-3">{{ site.data.pricing.prices.setup_fee.USD }}</p>
                 </div>
               </div>
               <div class="enterprise-plan-software2 btn-disabled d-none">

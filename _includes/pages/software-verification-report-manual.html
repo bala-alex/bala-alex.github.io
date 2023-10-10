@@ -93,7 +93,7 @@
             <div class="verify__section-box min-h-320">
               <p class="verify__section-title pb-3 text-dark-cyan">{{ site.data[page.lang]['verification']['verification_advanced2'] }}</p>
               <p class="verify__col-subtitle text-slate-gray fw-400 mw-100 min-h-auto mb-0">{{ site.data[page.lang]['manual_verification']['includes_source'] }}</p>
-              <p class="verify__col-text"><span class="verify__col-text verification-advanced text-secondary"><sup>$</sup>2,495</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
+              <p class="verify__col-text"><span class="verify__col-text verification-advanced text-secondary">{{ site.data.pricing.prices.verification_advanced.USD }}</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
             </div>
           </div>
           <div class="col-lg-6 col-md-12 mt-4">
@@ -102,7 +102,7 @@
               <p class="verify__col-subtitle text-slate-gray fw-400 mw-100 min-h-auto mb-0">{{ site.data[page.lang]['manual_verification']['everything_in'] }}</p>
               <img class="my-2" src="/images/verification-page/icons/plus-icon.svg" alt="Plus Icon"/>
               <p class="verify__col-subtitle text-slate-gray fw-400 mw-100 min-h-auto pb-1">{{ site.data[page.lang]['manual_verification']['testing_of'] }}</p>
-              <p class="verify__col-text"><span class="verify__col-text verification-complete text-secondary"><sup>$</sup>3,995</span><span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
+              <p class="verify__col-text"><span class="verify__col-text verification-complete text-secondary">{{ site.data.pricing.prices.verification_complete.USD }}<span>/ {{ site.data[page.lang]['verification']['report'] }}</span></p>
             </div>
           </div>
         </div>
@@ -285,106 +285,50 @@
 
 <script>
   var pathname = location.pathname;
+  var pricesData = localStorage.getItem('prices');
+  var prices = JSON.parse(pricesData);
   
   $( document ).ready(function() {
     $.ajax('https://ipapi.co/json')
     .then(
       function success(response) {
         if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-          $('.saas-continuity').text('€299');
-          $('.saas-recovery').text('€599');
-          $('.saas-replication').text('€899');
-          $('.setup-fee').text('€249');
-          $('#developer-monthly').text('€79');
-          $('.saas-verification').text('€29');
-          $('.activity-verification').text('€19');
-          $('.verification-advanced').text('€2,495');
-          $('.verification-complete').text('€3,995');
             if (pathname.includes('/fr/')) {
-              $('.verification-advanced').text('€2495');
-              $('.verification-complete').text('€3995');
+              $('.verification-advanced').text(prices.verification_advanced.EUR-FR);
+              $('.verification-complete').text(prices.verification_complete.EUR-FR);
             }
             else {
-              $('.verification-advanced').text('€2,495');
-              $('.verification-complete').text('€3,995');
+              $('.verification-advanced').text(prices.verification_advanced.EUR);
+              $('.verification-complete').text(prices.verification_complete.EUR);
             }
         }
         else if (response.currency === 'GBP') {
-          $('.saas-continuity').text('£225');
-          $('.saas-recovery').text('£449');
-          $('.saas-replication').text('£699');
-          $('.setup-fee').text('£199');
-          $('#developer-monthly').text('£59');
-          $('.saas-verification').text('£29');
-          $('.activity-verification').text('£19');
-          $('.verification-advanced').text('£1,799');
-          $('.verification-complete').text('£2,995');
+          $('.verification-advanced').text(prices.verification_advanced.GBP);
+          $('.verification-complete').text(prices.verification_complete.GBP);
         }
         else if (response.currency === 'INR') {
-          $('.saas-continuity').text('₹19,995');
-          $('.saas-recovery').text('₹39,995');
-          $('.saas-replication').text('₹59,995');
-          $('.setup-fee').text('₹15,000');
-          $('#developer-monthly').text('₹5,000');
-          $('.saas-verification').text('₹1,995');
-          $('.activity-verification').text('₹1,995');
-          $('.verification-advanced').text('₹179,995');
-          $('.verification-complete').text('₹249,995');
+          $('.verification-advanced').text(prices.verification_advanced.INR);
+          $('.verification-complete').text(prices.verification_complete.INR);
         }
         else if (response.currency === 'AUD') {
-          $('.saas-continuity').text('A$349');
-          $('.saas-recovery').text('A$699');
-          $('.saas-replication').text('A$995');
-          $('.setup-fee').text('A$299');
-          $('#developer-monthly').text('A$99');
-          $('.saas-verification').text('A$29');
-          $('.activity-verification').text('A$29');
-          $('.verification-advanced').text('A$2,995');
-          $('.verification-complete').text('A$4,995');
+          $('.verification-advanced').text(prices.verification_advanced.AUD);
+          $('.verification-complete').text(prices.verification_complete.AUD);
         }
         else if (response.currency === 'SGD') {
-          $('.saas-continuity').text('$399');
-          $('.saas-recovery').text('$799');
-          $('.saas-replication').text('$999');
-          $('.setup-fee').text('$299');
-          $('#developer-monthly').text('$99');
-          $('.saas-verification').text('$39');
-          $('.activity-verification').text('$39');
-          $('.verification-advanced').text('$3,199');
-          $('.verification-complete').text('$4,999');
+          $('.verification-advanced').text(prices.verification_advanced.SGD);
+          $('.verification-complete').text(prices.verification_complete.SGD);
         }
         else if (response.currency === 'ZAR') {
-          $('.saas-continuity').text('R3,999');
-          $('.saas-recovery').text('R7,999');
-          $('.saas-replication').text('R12,999');
-          $('.setup-fee').text('R3,499');
-          $('#developer-monthly').text('R1,099');
-          $('.saas-verification').text('R399');
-          $('.activity-verification').text('R399');
-          $('.verification-advanced').text('R34,999');
-          $('.verification-complete').text('R54,999');
+          $('.verification-advanced').text(prices.verification_advanced.ZAR);
+          $('.verification-complete').text(prices.verification_complete.ZAR);
         }
         else if (response.currency === 'CHF') {
-          $('.saas-continuity').text('CHF329');
-          $('.saas-recovery').text('CHF659');
-          $('.saas-replication').text('CHF999');
-          $('.setup-fee').text('CHF275');
-          $('#developer-monthly').text('CHF89');
-          $('.saas-verification').text('CHF29');
-          $('.activity-verification').text('CHF29');
-          $('.verification-advanced').text('CHF2,749');
-          $('.verification-complete').text('CHF4,399');
+          $('.verification-advanced').text(prices.verification_advanced.CHF);
+          $('.verification-complete').text(prices.verification_complete.CHF);
         }
         else if (response.currency === 'CAD') {
-          $('.saas-continuity').text('CAD349');
-          $('.saas-recovery').text('CAD749');
-          $('.saas-replication').text('CAD1,099');
-          $('.setup-fee').text('CAD299');
-          $('#developer-monthly').text('CAD119');
-          $('.saas-verification').text('CAD39');
-          $('.activity-verification').text('CAD39');
-          $('.verification-advanced').text('CAD2,995');
-          $('.verification-complete').text('CAD4,995');
+          $('.verification-advanced').text(prices.verification_advanced.CAD);
+          $('.verification-complete').text(prices.verification_complete.CAD);
         }
       },
       function fail(data, status) {
@@ -394,6 +338,11 @@
     )
     .catch((e) => console.log(e))
   });
+</script>
+<script>
+  var yamlData = {{site.data.pricing.prices | jsonify }};
+
+  localStorage.setItem('prices', JSON.stringify(yamlData));
 </script>
 
 </body>

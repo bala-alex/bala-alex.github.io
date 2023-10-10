@@ -93,21 +93,21 @@
             <div class="verify__col-box">
               <p class="verify__col-title text-dark-cyan">{{ site.data[page.lang]['verification']['content_verification'] }}</p>
               <p class="verify__col-subtitle text-slate-gray fw-400">{{ site.data[page.lang]['automated_verification']['provides_a_profile'] }}</p>
-              <p class="verify__col-text fw-400"><span class="verify__col-text activity-verification text-secondary"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+              <p class="verify__col-text fw-400"><span class="verify__col-text activity-verification text-secondary">{{ site.data.pricing.prices.activity_verification.USD }}</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-12 content-center mt-4">
             <div class="verify__col-box">
               <p class="verify__col-title text-dark-cyan">{{ site.data[page.lang]['verification']['activity_verification'] }}</p>
               <p class="verify__col-subtitle text-slate-gray fw-400">{{ site.data[page.lang]['automated_verification']['offers_a_profile'] }}</p>
-              <p class="verify__col-text fw-400"><span class="verify__col-text activity-verification text-secondary"><sup>$</sup>19</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+              <p class="verify__col-text fw-400"><span class="verify__col-text activity-verification text-secondary">{{ site.data.pricing.prices.activity_verification.USD }}</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-12 content-center mt-4">
             <div class="verify__col-box">
               <p class="verify__col-title text-dark-cyan">{{ site.data[page.lang]['verification']['saas_verification'] }}</p>
               <p class="verify__col-subtitle text-slate-gray fw-400">{{ site.data[page.lang]['automated_verification']['checks_the'] }}</p>
-              <p class="verify__col-text fw-400"><span class="verify__col-text saas-verification text-secondary"><sup>$</sup>29</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
+              <p class="verify__col-text fw-400"><span class="verify__col-text saas-verification text-secondary">{{ site.data.pricing.prices.saas_verification.USD }}</span><span>/ {{ site.data[page.lang]['verification']['repository_month'] }}</span></p>
             </div>
           </div>
         </div>
@@ -218,106 +218,44 @@
 
 <script>
   var pathname = location.pathname;
+  var pricesData = localStorage.getItem('prices');
+  var prices = JSON.parse(pricesData);
   
   $( document ).ready(function() {
     $.ajax('https://ipapi.co/json')
     .then(
       function success(response) {
         if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-          $('.saas-continuity').text('€299');
-          $('.saas-recovery').text('€599');
-          $('.saas-replication').text('€899');
-          $('.setup-fee').text('€249');
-          $('#developer-monthly').text('€79');
-          $('.saas-verification').text('€29');
-          $('.activity-verification').text('€19');
-          $('.verification-advanced').text('€2,495');
-          $('.verification-complete').text('€3,995');
-            if (pathname.includes('/fr/')) {
-              $('.verification-advanced').text('€2495');
-              $('.verification-complete').text('€3995');
-            }
-            else {
-              $('.verification-advanced').text('€2,495');
-              $('.verification-complete').text('€3,995');
-            }
+          $('.saas-verification').text(prices.saas_verification.EUR);
+          $('.activity-verification').text(prices.activity_verification.EUR);
         }
         else if (response.currency === 'GBP') {
-          $('.saas-continuity').text('£225');
-          $('.saas-recovery').text('£449');
-          $('.saas-replication').text('£699');
-          $('.setup-fee').text('£199');
-          $('#developer-monthly').text('£59');
-          $('.saas-verification').text('£29');
-          $('.activity-verification').text('£19');
-          $('.verification-advanced').text('£1,799');
-          $('.verification-complete').text('£2,995');
+          $('.saas-verification').text(prices.saas_verification.GBP);
+          $('.activity-verification').text(prices.activity_verification.GBP);
         }
         else if (response.currency === 'INR') {
-          $('.saas-continuity').text('₹19,995');
-          $('.saas-recovery').text('₹39,995');
-          $('.saas-replication').text('₹59,995');
-          $('.setup-fee').text('₹15,000');
-          $('#developer-monthly').text('₹5,000');
-          $('.saas-verification').text('₹1,995');
-          $('.activity-verification').text('₹1,995');
-          $('.verification-advanced').text('₹179,995');
-          $('.verification-complete').text('₹249,995');
+          $('.saas-verification').text(prices.saas_verification.INR);
+          $('.activity-verification').text(prices.activity_verification.INR);
         }
         else if (response.currency === 'AUD') {
-          $('.saas-continuity').text('A$349');
-          $('.saas-recovery').text('A$699');
-          $('.saas-replication').text('A$995');
-          $('.setup-fee').text('A$299');
-          $('#developer-monthly').text('A$99');
-          $('.saas-verification').text('A$29');
-          $('.activity-verification').text('A$29');
-          $('.verification-advanced').text('A$2,995');
-          $('.verification-complete').text('A$4,995');
+          $('.saas-verification').text(prices.saas_verification.AUD);
+          $('.activity-verification').text(prices.activity_verification.AUD);
         }
         else if (response.currency === 'SGD') {
-          $('.saas-continuity').text('$399');
-          $('.saas-recovery').text('$799');
-          $('.saas-replication').text('$999');
-          $('.setup-fee').text('$299');
-          $('#developer-monthly').text('$99');
-          $('.saas-verification').text('$39');
-          $('.activity-verification').text('$39');
-          $('.verification-advanced').text('$3,199');
-          $('.verification-complete').text('$4,999');
+          $('.saas-verification').text(prices.saas_verification.SGD);
+          $('.activity-verification').text(prices.activity_verification.SGD);
         }
         else if (response.currency === 'ZAR') {
-          $('.saas-continuity').text('R3,999');
-          $('.saas-recovery').text('R7,999');
-          $('.saas-replication').text('R12,999');
-          $('.setup-fee').text('R3,499');
-          $('#developer-monthly').text('R1,099');
-          $('.saas-verification').text('R399');
-          $('.activity-verification').text('R399');
-          $('.verification-advanced').text('R34,999');
-          $('.verification-complete').text('R54,999');
+          $('.saas-verification').text(prices.saas_verification.ZAR);
+          $('.activity-verification').text(prices.activity_verification.ZAR);
         }
         else if (response.currency === 'CHF') {
-          $('.saas-continuity').text('CHF329');
-          $('.saas-recovery').text('CHF659');
-          $('.saas-replication').text('CHF999');
-          $('.setup-fee').text('CHF275');
-          $('#developer-monthly').text('CHF89');
-          $('.saas-verification').text('CHF29');
-          $('.activity-verification').text('CHF29');
-          $('.verification-advanced').text('CHF2,749');
-          $('.verification-complete').text('CHF4,399');
+          $('.saas-verification').text(prices.saas_verification.CHF);
+          $('.activity-verification').text(prices.activity_verification.CHF);
         }
         else if (response.currency === 'CAD') {
-          $('.saas-continuity').text('CAD349');
-          $('.saas-recovery').text('CAD749');
-          $('.saas-replication').text('CAD1,099');
-          $('.setup-fee').text('CAD299');
-          $('#developer-monthly').text('CAD119');
-          $('.saas-verification').text('CAD39');
-          $('.activity-verification').text('CAD39');
-          $('.verification-advanced').text('CAD2,995');
-          $('.verification-complete').text('CAD4,995');
+          $('.saas-verification').text(prices.saas_verification.CAD);
+          $('.activity-verification').text(prices.activity_verification.CAD);
         }
       },
       function fail(data, status) {
@@ -327,6 +265,12 @@
     )
     .catch((e) => console.log(e))
   });
+</script>
+
+<script>
+  var yamlData = {{site.data.pricing.prices | jsonify }};
+
+  localStorage.setItem('prices', JSON.stringify(yamlData));
 </script>
 
 </body>

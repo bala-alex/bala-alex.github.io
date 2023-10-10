@@ -31,8 +31,8 @@
           <div class="col-md-7 col-sm-12">
             <div class="applications__box">
               <p class="applications__header-title">{{ site.data[page.lang]['saas_escrow_product']['saas_applications'] }}</p>
-              <p class="applications__header-text"><span class="applications__header-text saas-continuity"><sup>$</sup>299</span><span>/ {{ site.data[page.lang]['saas_escrow_product']['environment'] }}</span></p>
-              <p class="applications__header-subtext">+ <span class="applications__header-subtext deposit-connections">$99</span><span>/ {{ site.data[page.lang]['saas_escrow_product']['application'] }}</span></p>
+              <p class="applications__header-text"><span class="applications__header-text saas-continuity">{{ site.data.pricing.prices.saas_continuity.USD }}</span><span>/ {{ site.data[page.lang]['saas_escrow_product']['environment'] }}</span></p>
+              <p class="applications__header-subtext">+ <span class="applications__header-subtext deposit-connections">{{ site.data.pricing.prices.deposit_connections.USD }}</span><span>/ {{ site.data[page.lang]['saas_escrow_product']['application'] }}</span></p>
               <p class="applications__header-subtitle">{{ site.data[page.lang]['saas_escrow_product']['hosting_costs'] }} </p>
               <div class="applications__border"></div>
               <p class="applications__content-title">{{ site.data[page.lang]['saas_escrow_product']['saas_cloud'] }}</p>
@@ -342,72 +342,60 @@
   {% include title-tags.html %}
 
   <script>
+    var pathname = location.pathname;
+    var pricesData = localStorage.getItem('prices');
+    var prices = JSON.parse(pricesData);
     $( document ).ready(function() {
       $.ajax('https://ipapi.co/json')
       .then(
         function success(response) {
           if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
-            $('.saas-continuity').text('€299');
-            $('.saas-recovery').text('€599');
-            $('.saas-replication').text('€899');
-            $('.setup-fee').text('€249');
-            $('#developer-monthly').text('€79');
-            $('.deposit-connections').text('€99');
+            $('.saas-continuity').text(prices.saas_continuity.EUR);
+            $('.setup-fee').text(prices.setup_fee.EUR);
+            $('#developer-monthly').text(prices.developer_monthly.EUR);
+            $('.deposit-connections').text(prices.deposit_connections.EUR);
           }
           else if (response.currency === 'GBP') {
-            $('.saas-continuity').text('£225');
-            $('.saas-recovery').text('£449');
-            $('.saas-replication').text('£699');
-            $('.setup-fee').text('£199');
-            $('#developer-monthly').text('£59');
-            $('.deposit-connections').text('£70');
+            $('.saas-continuity').text(prices.saas_continuity.GBP);
+            $('.setup-fee').text(prices.setup_fee.GBP);
+            $('#developer-monthly').text(prices.developer_monthly.GBP);
+            $('.deposit-connections').text(prices.deposit_connections.GBP);
           }
           else if (response.currency === 'INR') {
-            $('.saas-continuity').text('₹19,995');
-            $('.saas-recovery').text('₹39,995');
-            $('.saas-replication').text('₹59,995');
-            $('.setup-fee').text('₹15,000');
-            $('#developer-monthly').text('₹5,000');
-            $('.deposit-connections').text('₹7,380');
+            $('.saas-continuity').text(prices.saas_continuity.INR);
+            $('.setup-fee').text(prices.setup_fee.INR);
+            $('#developer-monthly').text(prices.developer_monthly.INR);
+            $('.deposit-connections').text(prices.deposit_connections.INR);
           }
           else if (response.currency === 'AUD') {
-            $('.saas-continuity').text('A$349');
-            $('.saas-recovery').text('A$699');
-            $('.saas-replication').text('A$995');
-            $('.setup-fee').text('A$299');
-            $('#developer-monthly').text('A$99');
-            $('.deposit-connections').text('A$130');
+            $('.saas-continuity').text(prices.saas_continuity.AUD);
+            $('.setup-fee').text(prices.setup_fee.AUD);
+            $('#developer-monthly').text(prices.developer_monthly.AUD);
+            $('.deposit-connections').text(prices.deposit_connections.AUD);
           }
           else if (response.currency === 'SGD') {
-            $('.saas-continuity').text('$399');
-            $('.saas-recovery').text('$799');
-            $('.saas-replication').text('$999');
-            $('.setup-fee').text('$299');
-            $('#developer-monthly').text('$99');
-            $('.deposit-connections').text('$130');
+            $('.saas-continuity').text(prices.saas_continuity.SGD);
+            $('.setup-fee').text(prices.setup_fee.SGD);
+            $('#developer-monthly').text(prices.developer_monthly.SGD);
+            $('.deposit-connections').text(prices.deposit_connections.SGD);
           }
           else if (response.currency === 'ZAR') {
-            $('.saas-continuity').text('R3,999');
-            $('.saas-recovery').text('R7,999');
-            $('.saas-replication').text('R12,999');
-            $('.setup-fee').text('R3,499');
-            $('#developer-monthly').text('R1,099');
-            $('.deposit-connections').text('R1,410');
+            $('.saas-continuity').text(prices.saas_continuity.ZAR);
+            $('.setup-fee').text(prices.setup_fee.ZAR);
+            $('#developer-monthly').text(prices.developer_monthly.ZAR);
+            $('.deposit-connections').text(prices.deposit_connections.ZAR);
           }
           else if (response.currency === 'CHF') {
-            $('.saas-continuity').text('CHF329');
-            $('.saas-recovery').text('CHF659');
-            $('.saas-replication').text('CHF999');
-            $('.setup-fee').text('CHF275');
-            $('#developer-monthly').text('CHF89');
+            $('.saas-continuity').text(prices.saas_continuity.CHF);
+            $('.setup-fee').text(prices.setup_fee.CHF);
+            $('#developer-monthly').text(prices.developer_monthly.CHF);
+            $('.deposit-connections').text(prices.deposit_connections.CHF);
           }
           else if (response.currency === 'CAD') {
-            $('.saas-continuity').text('CAD349');
-            $('.saas-recovery').text('CAD749');
-            $('.saas-replication').text('CAD1099');
-            $('.setup-fee').text('CAD299');
-            $('#developer-monthly').text('CAD119');
-            $('.deposit-connections').text('CAD130');
+            $('.saas-continuity').text(prices.saas_continuity.CAD);
+            $('.setup-fee').text(prices.setup_fee.CAD);
+            $('#developer-monthly').text(prices.developer_monthly.CAD);
+            $('.deposit-connections').text(prices.deposit_connections.CAD);
           }
         },
         function fail(data, status) {
@@ -417,6 +405,11 @@
       )
       .catch((e) => console.log(e))
     });
+  </script>
+  <script>
+    var yamlData = {{site.data.pricing.prices | jsonify }};
+
+    localStorage.setItem('prices', JSON.stringify(yamlData));
   </script>
 
   <script src="/js/offerRequest.js"></script>
