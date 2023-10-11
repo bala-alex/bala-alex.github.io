@@ -77,7 +77,7 @@
                   </div>
                   <div class="select-level__devider"></div>
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="software-escrow-monthly">$89</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
+                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="software-escrow-monthly">{{ site.data.pricing.prices.software_escrow_monthly.USD }}</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
                     <a class="button btn-cerulean3 software-escrow-href" href="software-escrow.html">
                       {{ site.data[page.lang]['solutions']['more_about_software'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
@@ -112,7 +112,7 @@
                   </div>
                   <div class="select-level__devider"></div>
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="saas-escrow-monthly">$199</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
+                    <p class="select-level__price">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span class="saas-escrow-monthly">{{ site.data.pricing.prices.saas_escrow_monthly.USD }}</span>/{{ site.data[page.lang]['solutions']['month'] }}</p>
                     <a class="button btn-cerulean3 saas-escrow-href" href="saas-escrow.html">
                       {{ site.data[page.lang]['solutions']['more_about_saas'] }} <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
@@ -278,4 +278,10 @@
     <script src="/js/monthlyEscrowPricing.js"></script>
   
     <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+
+    <script>
+      var yamlData = {{site.data.pricing.prices | jsonify }};
+  
+      localStorage.setItem('prices', JSON.stringify(yamlData));
+    </script>
   </body>

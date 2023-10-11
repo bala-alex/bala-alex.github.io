@@ -114,35 +114,35 @@
         function success(response) {
           if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
             $('.setup-fee').text(prices.setup_fee.EUR);
-            $('#developer-monthly').text(prices.developer_monthly.EUR);
+            $('#developer-monthly').text(prices.developer_yearly.EUR);
           }
           else if (response.currency === 'GBP') {
             $('.setup-fee').text(prices.setup_fee.GBP);
-            $('#developer-monthly').text(prices.developer_monthly.GBP);
+            $('#developer-monthly').text(prices.developer_yearly.GBP);
           }
           else if (response.currency === 'INR') {
             $('.setup-fee').text(prices.setup_fee.INR);
-            $('#developer-monthly').text(prices.developer_monthly.INR);
+            $('#developer-monthly').text(prices.developer_yearly.INR);
           }
           else if (response.currency === 'AUD') {
             $('.setup-fee').text(prices.setup_fee.AUD);
-            $('#developer-monthly').text(prices.developer_monthly.AUD);
+            $('#developer-monthly').text(prices.developer_yearly.AUD);
           }
           else if (response.currency === 'SGD') {
             $('.setup-fee').text(prices.setup_fee.SGD);
-            $('#developer-monthly').text(prices.developer_monthly.SGD);
+            $('#developer-monthly').text(prices.developer_yearly.SGD);
           }
           else if (response.currency === 'ZAR') {
             $('.setup-fee').text(prices.setup_fee.ZAR);
-            $('#developer-monthly').text(prices.developer_monthly.ZAR);
+            $('#developer-monthly').text(prices.developer_yearly.ZAR);
           }
           else if (response.currency === 'CHF') {
             $('.setup-fee').text(prices.setup_fee.CHF);
-            $('#developer-monthly').text(prices.developer_monthly.CHF);
+            $('#developer-monthly').text(prices.developer_yearly.CHF);
           }
           else if (response.currency === 'CAD') {
             $('.setup-fee').text(prices.setup_fee.CAD);
-            $('#developer-monthly').text(prices.developer_monthly.CAD);
+            $('#developer-monthly').text(prices.developer_yearly.CAD);
           }
         },
         function fail(data, status) {
