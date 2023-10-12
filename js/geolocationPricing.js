@@ -25,14 +25,14 @@ $(document).ready(function () {
           $('.business-yearly-saas2').text(prices.business_yearly_saas2.EUR);
 
           if (pathname.includes('/fr/')) {
-            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR-FR);
-            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR-FR);
-            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR-FR);
-            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR-FR);
-            $('.verification-advanced').text(prices.verification_advanced.EUR-FR);
-            $('.verification-complete').text(prices.verification_complete.EUR-FR);
-            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR-FR);
-            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR-FR);
+            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR_FR);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR_FR);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR_FR);
+            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR_FR);
+            $('.verification-advanced').text(prices.verification_advanced.EUR_FR);
+            $('.verification-complete').text(prices.verification_complete.EUR_FR);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR_FR);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR_FR);
           }
           else {
             $('#enterprise-monthly').text(prices.enterprise_monthly.EUR);
@@ -418,8 +418,8 @@ $(document).ready(function () {
           $('.business-yearly-saas2').text(prices.business_yearly_saas2.CAD);
 
           if (pathname.includes('/fr/')) {
-            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD-FR);
-            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.CAD-FR);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD_FR);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.CAD_FR);
           }
           else {
             $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD);
@@ -440,9 +440,9 @@ $(document).ready(function () {
 
         else {
           if (pathname.includes('/fr/')) {
-            $('#enterprise-monthly').text(prices.enterprise_monthly.USD-FR);
-            $('.enterprise-monthly').text(prices.enterprise_monthly.USD-FR);
-            $('#enterprise-yearly').text(prices.enterprise_yearly.USD-FR);
+            $('#enterprise-monthly').text(prices.enterprise_monthly.USD_FR);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.USD_FR);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.USD_FR);
           }
           else {
             $('#enterprise-monthly').text(prices.enterprise_monthly.USD);

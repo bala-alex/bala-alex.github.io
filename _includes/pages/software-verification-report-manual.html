@@ -294,8 +294,8 @@
       function success(response) {
         if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
             if (pathname.includes('/fr/')) {
-              $('.verification-advanced').text(prices.verification_advanced.EUR-FR);
-              $('.verification-complete').text(prices.verification_complete.EUR-FR);
+              $('.verification-advanced').text(prices.verification_advanced.EUR_FR);
+              $('.verification-complete').text(prices.verification_complete.EUR_FR);
             }
             else {
               $('.verification-advanced').text(prices.verification_advanced.EUR);
