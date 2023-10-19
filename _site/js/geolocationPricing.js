@@ -3,11 +3,11 @@ var pricesData = localStorage.getItem('prices');
 var prices = JSON.parse(pricesData);
 
 $(document).ready(function () {
-  console.log('prices', prices);
+  // console.log('prices', prices);
   $.ajax('https://ipapi.co/json')
     .then(
       function success(response) {
-        if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
+        if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF') && (response.country !== 'FR')) {
           $('.setup-fee').text(prices.setup_fee.EUR);
           $('.amazon-deposit').text(prices.amazon_deposit.EUR);
           $('#developer-monthly').text(prices.developer_monthly.EUR);
@@ -25,14 +25,14 @@ $(document).ready(function () {
           $('.business-yearly-saas2').text(prices.business_yearly_saas2.EUR);
 
           if (pathname.includes('/fr/')) {
-            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR_FR);
-            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR_FR);
-            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR_FR);
-            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR_FR);
-            $('.verification-advanced').text(prices.verification_advanced.EUR_FR);
-            $('.verification-complete').text(prices.verification_complete.EUR_FR);
-            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR_FR);
-            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR_FR);
+            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR_FRENCH);
+            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR_FRENCH);
+            $('.verification-advanced').text(prices.verification_advanced.EUR_FRENCH);
+            $('.verification-complete').text(prices.verification_complete.EUR_FRENCH);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR_FRENCH);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR_FRENCH);
           }
           else {
             $('#enterprise-monthly').text(prices.enterprise_monthly.EUR);
@@ -74,6 +74,76 @@ $(document).ready(function () {
           $('.plan-ch').remove();
           $('.plan-ca').remove();
         }
+
+        else if (response.timezone && (response.timezone).includes('Europe') && (response.country === 'FR')) {
+          $('.setup-fee').text(prices.setup_fee.EUR);
+          $('.amazon-deposit').text(prices.amazon_deposit.EUR);
+          $('#developer-monthly').text(prices.developer_monthly.EUR);
+          $('#team-monthly').text(prices.team_monthly.EUR);
+          $('#business-monthly').text(prices.business_monthly.EUR);
+          $('.developer-monthly-saas').text(prices.developer_monthly_saas.EUR);
+          $('.team-monthly-saas').text(prices.team_monthly_saas.EUR);
+          $('.business-monthly-saas').text(prices.business_monthly_saas.EUR);
+          $('.enterprise-monthly-saas').text(prices.enterprise_monthly_saas.EUR);
+          $('.developer-monthly-saas2').text(prices.developer_monthly_saas2.EUR);
+          $('.team-monthly-saas2').text(prices.team_monthly_saas2.EUR);
+          $('.business-monthly-saas2').text(prices.business_monthly_saas2.EUR);
+          $('.developer-yearly-saas2').text(prices.developer_yearly_saas2.EUR);
+          $('.team-yearly-saas2').text(prices.team_yearly_saas2.EUR);
+          $('.business-yearly-saas2').text(prices.business_yearly_saas2.EUR);
+
+          if (pathname.includes('/fr/')) {
+            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR_FRENCH);
+            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR_FRENCH);
+            $('.verification-advanced').text(prices.verification_advanced.EUR_FRENCH);
+            $('.verification-complete').text(prices.verification_complete.EUR_FRENCH);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR_FRENCH);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR_FRENCH);
+          }
+          else {
+            $('#enterprise-monthly').text(prices.enterprise_monthly.EUR);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.EUR);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.EUR);
+            $('.enterprise-yearly').text(prices.enterprise_yearly.EUR);
+            $('.verification-advanced').text(prices.verification_advanced.EUR);
+            $('.verification-complete').text(prices.verification_complete.EUR);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.EUR);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.EUR);
+          }
+
+          $('.developer-monthly').text(prices.developer_monthly.EUR);
+          $('.team-monthly').text(prices.team_monthly.EUR);
+          $('.business-monthly').text(prices.business_monthly.EUR);
+
+          $('#developer-yearly').text(prices.developer_yearly.EUR);
+          $('#team-yearly').text(prices.team_yearly.EUR);
+          $('#business-yearly').text(prices.business_yearly.EUR);
+
+          $('.developer-yearly').text(prices.developer_yearly.EUR);
+          $('.team-yearly').text(prices.team_yearly.EUR);
+          $('.business-yearly').text(prices.business_yearly.EUR);
+
+          $('.increased-repository').text(prices.increased_repository.EUR);
+          $('.increased-storage').text(prices.increased_storage.EUR);
+          $('.storage-selection').text(prices.storage_selection.EUR);
+          $('.deposit-connections').text(prices.deposit_connections.EUR);
+          $('.release-processing').text(prices.release_processing.EUR);
+          $('.saas-continuity').text(prices.saas_continuity.EUR);
+
+          $('.plan-eu').removeClass('d-none');
+          $('.plan-us').remove();
+          $('.plan-uk').remove();
+          $('.plan-in').remove();
+          $('.plan-au').remove();
+          $('.plan-sg').remove();
+          $('.plan-rsa').remove();
+          $('.plan-ch').remove();
+          $('.plan-ca').remove();
+        }
+
+
         else if (response.currency === 'GBP') {
           $('.setup-fee').text(prices.setup_fee.GBP);
           $('.amazon-deposit').text(prices.amazon_deposit.GBP);
@@ -418,8 +488,8 @@ $(document).ready(function () {
           $('.business-yearly-saas2').text(prices.business_yearly_saas2.CAD);
 
           if (pathname.includes('/fr/')) {
-            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD_FR);
-            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.CAD_FR);
+            $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD_FRENCH);
+            $('.enterprise-yearly-saas2').text(prices.enterprise_yearly_saas2.CAD_FRENCH);
           }
           else {
             $('.enterprise-monthly-saas2').text(prices.enterprise_monthly_saas2.CAD);
@@ -440,9 +510,9 @@ $(document).ready(function () {
 
         else {
           if (pathname.includes('/fr/')) {
-            $('#enterprise-monthly').text(prices.enterprise_monthly.USD_FR);
-            $('.enterprise-monthly').text(prices.enterprise_monthly.USD_FR);
-            $('#enterprise-yearly').text(prices.enterprise_yearly.USD_FR);
+            $('#enterprise-monthly').text(prices.enterprise_monthly.USD_FRENCH);
+            $('.enterprise-monthly').text(prices.enterprise_monthly.USD_FRENCH);
+            $('#enterprise-yearly').text(prices.enterprise_yearly.USD_FRENCH);
           }
           else {
             $('#enterprise-monthly').text(prices.enterprise_monthly.USD);

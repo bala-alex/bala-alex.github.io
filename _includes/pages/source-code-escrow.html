@@ -486,8 +486,16 @@
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 
   <script>
-    var yamlData = {{site.data.pricing.prices | jsonify }};
+    // Check if the page has not been reloaded
+    if (!localStorage.getItem('pageReloaded')) {
+        var yamlData = {{site.data.pricing.prices | jsonify }};
+        localStorage.setItem('prices', JSON.stringify(yamlData));
+        
+        // Set a flag in localStorage to indicate that the page has been reloaded
+        localStorage.setItem('pageReloaded', 'true');
 
-    localStorage.setItem('prices', JSON.stringify(yamlData));
+        // Reload the page
+        window.location.reload();
+    } 
   </script>
 </body>

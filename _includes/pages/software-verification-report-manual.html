@@ -294,8 +294,8 @@
       function success(response) {
         if (response.timezone && (response.timezone).includes('Europe') && (response.currency !== 'GBP') && (response.currency !== 'CHF')) {
             if (pathname.includes('/fr/')) {
-              $('.verification-advanced').text(prices.verification_advanced.EUR_FR);
-              $('.verification-complete').text(prices.verification_complete.EUR_FR);
+              $('.verification-advanced').text(prices.verification_advanced.EUR_FRENCH);
+              $('.verification-complete').text(prices.verification_complete.EUR_FRENCH);
             }
             else {
               $('.verification-advanced').text(prices.verification_advanced.EUR);
@@ -340,9 +340,17 @@
   });
 </script>
 <script>
-  var yamlData = {{site.data.pricing.prices | jsonify }};
+  // Check if the page has not been reloaded
+  if (!localStorage.getItem('pageReloaded')) {
+      var yamlData = {{site.data.pricing.prices | jsonify }};
+      localStorage.setItem('prices', JSON.stringify(yamlData));
+      
+      // Set a flag in localStorage to indicate that the page has been reloaded
+      localStorage.setItem('pageReloaded', 'true');
 
-  localStorage.setItem('prices', JSON.stringify(yamlData));
+      // Reload the page
+      window.location.reload();
+  } 
 </script>
 
 </body>

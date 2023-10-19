@@ -19,6 +19,12 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+
+  {% if page.canonical %}
+      <link rel="canonical" href="{{ site.baseurl }}{{ page.canonical }}" />
+  {% else %}
+      <link rel="canonical" href="{{ site.baseurl }}{{ page.url | absolute_url }}" />
+  {% endif %}
 </head>
   {{ content }}
 </html>

@@ -27,31 +27,9 @@
   
   <div class="bg-white">
     <div class="container-fluid px-0">
-      <!-- Navigation -->
-      <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-        <div class="container-fluid p-3 nav-box-shadow">
-          <a class="navbar-brand d-flex align-items-center backups-logo-margin" href="backups.html"><img class="header__logo-backups" src="/images/backup/ck-backups-logo.svg" alt="Codekeeper Backups Logo"/></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav align-items-center w-100">
-              <li class="nav-item">
-                <a class="nav-link nav-margin text-transform-none" href="backups-how-it-works.html">How it Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-margin space-no-wrap" href="backups-pricing.html">Pricing</a>
-              </li>
-
-              <a class="button btn-cerulean2 nav-margin font-16 backups-nav-margin " href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="backups">
-                Get Started
-              </a>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <!-- Backups Navigation -->
+      {% include backups-navigation.html %}
       <!-- Header -->
-
       <div class="book-demo">
         <!-- Header -->
         <div class="header__content overflow-hidden">
@@ -59,7 +37,6 @@
             <h1 class="header__title">Book a Demo</h1>
             <p class="header__subtitle mt-4">Schedule a session with one of our advisors to get a personalized demo and discuss your situation. Bring all your legal, technical and other questions!</p>
             <div class="header__devider"></div>
-
             <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/connor-jackson/book-a-demo-backups?embed=true"></div>
           </div>
         </div>
@@ -158,53 +135,11 @@
           </div>
         </div>
       </div>
-
-      <div class="resources">
-        <div class="container">
-          <p class="people-choose__main-subtitle2 mx-auto my-4 pb-5 mt-5">Trusted partner of these great brands from around the world!</p>
-          <img class="image-style" src="/images/landing/companies.webp" alt="Companies Image"/>
-        </div>
-      
-        <div class="container">
-          <p class="people-choose__main-title text-bondi-blue text-center mt-5">Elevate Your Compliance Strategy!</p>
-          <p class="best-price__text2 mt-4 text-bondi-blue text-center font-22">Try Codekeeper Backups today</p>
-        </div>
-        <div class="people-choose__bg min-h-300"></div>
-        <div class="content-center mt-negative-250">
-          <img class="mw-530 mx-auto image-style m-3" src="/images/backup/start-protecting.webp" alt="Start Protecting Image"/>
-        </div>
-        <div class="container mb-200">
-          <p class="software-escrow__title mb-1 fw-light text-center mt-5">Unlimited Repository Backup</p>
-          <p class="best-price__text2 mt-4 text-dark-cyan text-center font-18"><span>$59</span><br>/ month / user</p>
-          <a class="button btn-cerulean3 mx-auto px-5 mt-4" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="backups">
-            Get Started
-          </a>
-          <p class="software-escrow__text mt-4 text-center font-14"><i class="fa fa-check-circle text-light-green mr-2"></i>Best price guaranteed</p>
-          <p class="software-escrow__text text-center font-14"><i class="fa fa-check-circle text-light-green mr-2"></i>No hidden costs</p>
-        </div>
-      </div>
+      <!-- Backups Brands -->
+      {% include backups-brands.html %}
     </div>
     <!-- Footer -->
-    <div class="backups">
-      <div class="backups__footer-bg">
-        <div class="container">
-          <div class="backups__footer-content">
-            
-            <div class="d-flex align-items-center mobile-centered">
-              <a href="backups.html"><img class="backups__footer-logo" alt="Codekeeper backups logo" src="/images/backup/ck-backups-logo.svg"/></a>
-              <a class="backups__footer-link mx-2" href="backups-how-it-works.html">How it Works</a>
-              <a class="backups__footer-link mx-2" href="backups-pricing.html">Pricing</a>
-            </div>
-            <div class="d-flex align-items-center mobile-centered">
-              <a class="backups__footer-link" href="https://legal.codekeeper.co/page?page=TermsConditions">Terms of Service</a>
-              <span class="backups__footer-bullet">&#8226;</span>
-              <a class="backups__footer-link" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Privacy Policy.</a>
-            </div>
-          </div>
-          <p class="backups__footer-text mt-3">Codekeeper, Inc. - All rights reserved <script>document.write( new Date().getFullYear() );</script>.</p>
-        </div>
-      </div>
-    </div>
+    {% include backups-footer.html %}
   </div>
   <!-- Snippets -->
   {% include snippets.html %}

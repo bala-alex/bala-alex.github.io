@@ -24,32 +24,8 @@
 <body>
   <div class="bg-white">
     <div class="container-fluid resources px-0">
-      <!-- Navigation -->
-      <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-        <div class="container-fluid p-3 nav-box-shadow">
-          <a class="navbar-brand d-flex align-items-center backups-logo-margin" href="backups.html"><img class="header__logo-backups" src="/images/backup/ck-backups-logo.svg" alt="Codekeeper Backups Logo"/></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav align-items-center w-100">
-              <li class="nav-item">
-                <a class="nav-link nav-margin text-transform-none" href="backups-how-it-works.html">How it Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-margin space-no-wrap" href="backups-pricing.html">Pricing</a>
-              </li>
-              
-              <a class="button btn-secondary-large nav-margin font-16 backups-nav-margin" href="book-a-codekeeper-backups-demo.html">
-                Book a Demo
-              </a>
-              <a class="button btn-cerulean2 nav-margin font-16 min-width-170 mx-2" href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="backups">
-                Get Started
-              </a>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <!-- Backups Navigation -->
+      {% include backups-navigation.html %}
       <!-- Header -->
       <div class="header__bg-backups3 position-relative">
         <img class="backups__unlimited-left" src="/images/backup/shape-left.webp" alt="Left Background Image"/>
@@ -199,90 +175,13 @@
           </div>
         </div>
       </div>
-
-      <div class="section-medium">      
-        <div class="container content-center flex-column align-items-center">
-          <p class="people-choose__main-title mw-800 text-bondi-blue mt-5 font-35 line-height-40 pt-0">Join thousands of developers who trust Codekeeper Backups to protect their valuable codebases.</p>
-        </div>
-        <div class="container my-5">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="people-choose__box"> 
-                <div class="d-flex align-items-center flex-column">
-                  <img class="mw-110" src="/images/backup/sarah.webp" alt="Sarah Image"/>
-                  <p class="people-choose__text text-center mt-4">Codekeeper Backups has been a game-changer for our team. It's incredibly easy to use and provides us peace of mind knowing our code is secure.</p>
-                  <p class="people-choose__name">Sarah M.</p>
-                  <p class="people-choose__subtext">Lead Developer at Adherent Tech</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people-choose__box">
-                <div class="d-flex align-items-center flex-column">
-                  <img class="mw-110" src="/images/backup/james.webp" alt="James Image"/>
-                  <p class="people-choose__text text-center mt-4">With Codekeeper Backups, I never have to worry about losing my code again. 
-                    The integration with all major platforms makes it a no-brainer for any developer.</p>
-                  <p class="people-choose__name">James K.</p>
-                  <p class="people-choose__subtext">Freelance Software Engineer</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="people-choose__box">
-                <div class="d-flex align-items-center flex-column">
-                  <img class="mw-110" src="/images/backup/manoj.webp" alt="Manoj Image"/>
-                  <p class="people-choose__text text-center mt-4">Codekeeper Backups has been a game-changer for our team. It's incredibly easy to use and provides us peace of mind knowing our code is secure.</p>
-                  <p class="people-choose__name">Manoj P.</p>
-                  <p class="people-choose__subtext">CTO at Code Central</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="intro-guide__container mt-0 pt-150 min-h-600">
-        <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Small Background Image"/>
-        <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Large Background Image"/>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5 col-sm-12">
-              <img class="image-style" src="/images/landing/our-experts.webp" alt="Our Expert Image"/>
-            </div>
-            <div class="col-md-7 col-sm-12">
-              <p class="intro-guide__main-title mt-4">Book a 1-on-1 Demo</p>
-              <p class="intro-guide__main-subtitle text-slate-gray">Book a demo with one of our experts who will be more than happy to show you around our platform and answer any questions you might have.</p>
-              <a class="button btn-cerulean3 my-4" href="book-a-codekeeper-backups-demo.html">
-                Book a Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Backups Testimonials -->
+      {% include backups-testimonials.html %}
+      <!-- Backups Demo -->
+      {% include backups-demo.html %}
     </div>
-    
-    
     <!-- Footer -->
-    <div class="backups">
-      <div class="backups__footer-bg">
-        <div class="container">
-          <div class="backups__footer-content">
-            
-            <div class="d-flex align-items-center mobile-centered">
-              <a href="backups.html"><img class="backups__footer-logo" alt="Codekeeper backups logo" src="/images/backup/ck-backups-logo.svg"/></a>
-              <a class="backups__footer-link mx-2" href="backups-how-it-works.html">How it Works</a>
-              <a class="backups__footer-link mx-2" href="backups-pricing.html">Pricing</a>
-            </div>
-            <div class="d-flex align-items-center mobile-centered">
-              <a class="backups__footer-link" href="https://legal.codekeeper.co/page?page=TermsConditions">Terms of Service</a>
-              <span class="backups__footer-bullet">&#8226;</span>
-              <a class="backups__footer-link" href="https://legal.codekeeper.co/page?page=PrivacyPolicy">Privacy Policy.</a>
-            </div>
-          </div>
-          <p class="backups__footer-text mt-3">Codekeeper, Inc. - All rights reserved <script>document.write( new Date().getFullYear() );</script>.</p>
-        </div>
-      </div>
-    </div>
+    {% include backups-footer.html %}
   </div>
 
   <!-- Snippets -->
