@@ -16,8 +16,8 @@
     <!-- Header -->
     <div class="header__content solutions">
       <div class="header__bg-integrations">
-        <img class="header__bg-top-left" src="/images/solutions/top-left.webp" alt="Top Background Image"/>
-        <img class="header__bg-bottom-right" src="/images/solutions/bottom-right.webp" alt="Bottom Background Image"/>
+        <img class="header__bg-top-left" src="/images/solutions/top-left.webp" alt="Top Background Shape"/>
+        <img class="header__bg-bottom-right" src="/images/solutions/bottom-right.webp" alt="Bottom Background Shape"/>
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-sm-12">
@@ -25,7 +25,7 @@
               <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['integrations']['codekeeper_works_with'] }} </p>
             </div>
             <div class="col-md-5 col-sm-12 content-center">
-              <img class="image-style mw-350 mt-4" src="/images/integration-page/integrations-header-image.webp" alt="Integrations Header Image"/>
+              <img class="image-style mw-350 mt-4" src="/images/integration-page/integrations-header-image.webp" alt="Illustration: Codekeeper Integrations"/>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
                         <input type="text" class="form-control service__input-form search p-4 shadow-none" placeholder="{{ site.data[page.lang]['integrations']['search_integrations'] }}" aria-label="Type to search" aria-describedby="basic-addon2" />
                         <div class="input-group-append bg-light-gray">
                           <button class="service__search btn px-5 shadow-none" type="button">
-                            <img class="service__input-icon" src="/images/integration-page/search-icon.svg" alt="Search Icon"/>
+                            <img class="service__input-icon" src="/images/integration-page/search-icon.svg" alt="Search Icon" loading="lazy"/>
                           </button>
                         </div>
                       </div>
@@ -70,7 +70,7 @@
                     <li><a data-name="{{ integration.integration_name }}" class="service__box page-link mt-3 mx-auto" href="">
                       <span class="type d-none">{{ integration.integration_type }}</span>
                       <span class="service__image-box">
-                        <img src="{{ integration.integration_logo_url }}" alt="Integration Logo"/>
+                        <img src="{{ integration.integration_logo_url }}" alt="Integration Logo" loading="lazy"/>
                       </span>
                       <span class="service__title name">{{ integration.integration_name }}</span>
                       <p class="service__subtitle">{{ integration.integration_description }}</p>
@@ -89,7 +89,7 @@
           <div class="how-bg-gradient mt-4 mb-100 p-5">
             <div class="row pt-5">
               <div class="col-md-5 col-sm-12 content-center">
-                <img class="best-price__image mw-260" src="../images/integration-page/preferred-platform.webp" alt="Best Price Image"/>
+                <img class="best-price__image mw-260" src="../images/integration-page/preferred-platform.webp" alt="Prederred Platform Illustration" loading="lazy"/>
               </div>
               <div class="col-md-7 col-sm-12"> 
                 <p class="best-price__title text-air-force-blue">{{ site.data[page.lang]['integrations']['your_preferred'] }}</p>
@@ -106,9 +106,9 @@
     <div class="resources">
       <div class="best-price__bg mt-4 mb-100 border-radius-0">
         <div class="container resources section-medium">
-          <img class="best-price__small-shape" src="../images/landing/small-shape.webp" alt="Small Shape Image"/>
-          <img class="best-price__medium-shape" src="../images/landing/medium-shape.webp" alt="Medium Shape Image"/>
-          <img class="best-price__large-shape" src="../images/landing/large-shape.webp" alt="Large Shape Image"/>
+          <img class="best-price__small-shape" src="../images/landing/small-shape.webp" alt="Small Background Shape" loading="lazy"/>
+          <img class="best-price__medium-shape" src="../images/landing/medium-shape.webp" alt="Medium Background Shape" loading="lazy"/>
+          <img class="best-price__large-shape" src="../images/landing/large-shape.webp" alt="Large Background Shape" loading="lazy"/>
           <div class="row">
             <div class="col-md-7 col-sm-12"> 
               <p class="best-price__title2">{{ site.data[page.lang]['information_escrow']['industry_leading'] }}</p>
@@ -118,7 +118,7 @@
               </a>
             </div>
             <div class="col-md-5 col-sm-12 content-center">
-              <img class="best-price__image mw-420" src="../images/integration-page/leading-features.webp" alt="Best Price Image"/>
+              <img class="best-price__image mw-420" src="../images/integration-page/leading-features.webp" alt="Leading Features Imag Illustration" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -130,39 +130,39 @@
         <div class="container d-flex flex-column align-items-center">
           <p class="scenario__title mx-auto mw-100 pb-3">{{ site.data[page.lang]['source_code_escrow']['securely_stored'] }}</p>
           <p class="protect__subtext text-dark-cyan">{{ site.data[page.lang]['features']['we_operate_within'] }}:</p>
-          <img class="datacenter-image pb-5" src="/images/logos/datacenter-certifications.webp" alt="Datacenter Certifications Image"/>
+          <img class="datacenter-image pb-5" src="/images/logos/datacenter-certifications.webp" alt="Datacenter Certifications Illustrations" loading="lazy"/>
         </div>
         <div class="container">
           <div class="row mt-3">
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/data-security.svg" alt="Data Security Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/data-security.svg" alt="Data Security Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['data_security'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['our_data'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/encryption.svg" alt="Encryption Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/encryption.svg" alt="Encryption Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['end_to_end'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['data_is_secured'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/audit.svg" alt="Audit Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/audit.svg" alt="Audit Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['deposit_audit'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['review_the'] }}</p>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/upload-folder.svg" alt="Upload Folder Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/upload-folder.svg" alt="Upload Folder Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['secure_upload'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_you_prefer'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/gdpr.svg" alt="GDPR Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/gdpr.svg" alt="GDPR Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['gdpr_compliance'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your_deposits'] }}</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img class="mt-5" src="/images/source-code-escrow/icons/hipaa.svg" alt="HIPAA Icon"/>
+              <img class="mt-5" src="/images/source-code-escrow/icons/hipaa.svg" alt="HIPAA Icon" loading="lazy"/>
               <p class="datacenters__title mt-4">{{ site.data[page.lang]['source_code_escrow']['hipaa_compliance'] }}</p>
               <p class="datacenters__subtitle">{{ site.data[page.lang]['source_code_escrow']['if_your'] }}</p>
             </div>
@@ -176,44 +176,44 @@
       <ul class="faq mt-5 pb-5 pl-0">
         <li class="q d-flex align-items-center justify-content-between">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['which_platform'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['we_offer'] }}</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['are_your'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['yes_they'] }}</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['is_there'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['our_integration'] }}</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['my_preferred'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['not_a_problem2'] }}</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['are_new'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['we_continuously'] }}</li>
         <li class="q d-flex align-items-center justify-content-between q-border">
           <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['will_integrating'] }}</p>
-          <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+          <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
         </li>
         <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['we_prioritize'] }}</li>
 
         <div class="" id="questions">
           <li class="q d-flex align-items-center justify-content-between q-border">
             <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['how_do_i'] }}</p>
-            <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
           </li>
           <li class="a section__text">{{ site.data[page.lang]['faq_integrations']['once_you_have'] }}</li>
           <li class="q d-flex align-items-center justify-content-between q-border">
             <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_integrations']['i_cant'] }}</p>
-            <img src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
           </li>
           <li class="a section__text">{{ site.data[page.lang]['faq_resources']['our_experts'] }}</li>
         </div>

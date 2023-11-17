@@ -32,11 +32,11 @@
       font-family: 'Mulish';
       font-style: normal;
       font-weight: 300;
-      font-size: 55px;
-      line-height: 62px;
+      font-size: 60px;
+      line-height: 70px;
       letter-spacing: -1px;
       max-width: 700px;
-      color: $complementary-dark;
+      color: $dark-cyan;
       position: relative;
 
       @include screen-xs {
@@ -191,6 +191,7 @@
       top: 95px;
       left: 0;
       width: 170px;
+      max-height: 59px;
 
       @include screen-sm {
         max-width: 35%;
@@ -201,7 +202,8 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      max-width: 370px;
+      max-width: 303px;
+      max-height: 111px;
 
       @include screen-md {
         max-width: 35%;
@@ -485,9 +487,14 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100px;
-      height: 264px;
+      width: 339px;
+      height: 403px;
       object-fit: contain;
+
+      @include screen-xs {
+        max-width: 200px;
+        height: fit-content;
+      }
     }
 
     &__image {

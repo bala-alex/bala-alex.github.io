@@ -2063,8 +2063,8 @@
   }
 
   &__text {
-    color: $sherpa-blue;
-    font-size: 16px;
+    color: $dark-cyan;
+    font-size: 18px;
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 28px;
@@ -2090,6 +2090,44 @@
     right: 0;
     max-width: 170px;
     object-fit: contain;
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
+  &__bottom-left-corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 170px;
+    object-fit: contain;
+    transform: rotateY(180deg);
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
+  &__top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 170px;
+    object-fit: contain;
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
+  &__top-left-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 170px;
+    object-fit: contain;
+    transform: rotateY(180deg);
 
     @include screen-sm {
       max-width: 30%;

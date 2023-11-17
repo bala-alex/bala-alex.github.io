@@ -12531,8 +12531,8 @@ input[name=consent] {
   max-width: 280px;
 }
 .mentions__text {
-  color: #00384B;
-  font-size: 16px;
+  color: #1A5261;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 0px;
   line-height: 28px;
@@ -12562,6 +12562,49 @@ input[name=consent] {
 }
 @media (max-width: 767px) {
   .mentions__bottom-right {
+    max-width: 30%;
+  }
+}
+.mentions__bottom-left-corner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+@media (max-width: 767px) {
+  .mentions__bottom-left-corner {
+    max-width: 30%;
+  }
+}
+.mentions__top-right-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .mentions__top-right-corner {
+    max-width: 30%;
+  }
+}
+.mentions__top-left-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+@media (max-width: 767px) {
+  .mentions__top-left-corner {
     max-width: 30%;
   }
 }
@@ -19338,11 +19381,11 @@ input[name=consent] {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 300;
-  font-size: 55px;
-  line-height: 62px;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -1px;
   max-width: 700px;
-  color: #003543;
+  color: #1A5261;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -19488,6 +19531,7 @@ input[name=consent] {
   top: 95px;
   left: 0;
   width: 170px;
+  max-height: 59px;
 }
 @media (max-width: 767px) {
   .resources .header__bg-left {
@@ -19498,7 +19542,8 @@ input[name=consent] {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 370px;
+  max-width: 303px;
+  max-height: 111px;
 }
 @media (max-width: 992px) {
   .resources .header__bg-right {
@@ -19792,10 +19837,18 @@ input[name=consent] {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100px;
-  height: 264px;
+  width: 339px;
+  height: 403px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 480px) {
+  .resources .best-price__shape-bottom-left {
+    max-width: 200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 .resources .best-price__image {
   width: 100%;
