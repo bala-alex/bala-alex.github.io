@@ -350,6 +350,12 @@ html {
   overflow-wrap: break-word;
 }
 
+.overflow-wrap-break-mobile {
+  @include screen-sm {
+    overflow-wrap: break-word;
+  }
+}
+
 .pb-300 {
   padding-bottom: 300px !important;
 }
