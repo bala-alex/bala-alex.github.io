@@ -73,6 +73,12 @@
       </div>
     </div>
 
+    <!-- Pricing Tabs -->
+    <div class="pricing container">
+      {% include pricing-tabs-assets.html %}
+    </div>
+    
+
     <div class="container-fluid section-medium pricing">
       <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
       <!-- Slideshow Brands -->
@@ -417,6 +423,8 @@
   {% include title-tags.html %}
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
+  <script src="/js/geolocationPricing.js"></script>
+  <script src="/js/pricingCheckout.js"></script>
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
@@ -431,5 +439,85 @@
         // Reload the page
         window.location.reload();
     } 
+  </script>
+
+  <script>
+    document.getElementById('toggleSwitch').addEventListener('change', function() {
+      var div1 = document.getElementById('div1');
+      var div2 = document.getElementById('div2');
+
+      if (this.checked) {
+        div1.classList.add('d-none');
+        div2.classList.remove('d-none');
+      } else {
+        div1.classList.remove('d-none');
+        div2.classList.add('d-none');
+      }
+    });
+
+    document.getElementById('toggleSwitch2').addEventListener('change', function() {
+      var div3 = document.getElementById('div3');
+      var div4 = document.getElementById('div4');
+
+      if (this.checked) {
+        div3.classList.add('d-none');
+        div4.classList.remove('d-none');
+      } else {
+        div3.classList.remove('d-none');
+        div4.classList.add('d-none');
+      }
+    });
+
+    document.getElementById('toggleSwitch3').addEventListener('change', function() {
+      var div5 = document.getElementById('div5');
+      var div6 = document.getElementById('div6');
+
+      if (this.checked) {
+        div5.classList.add('d-none');
+        div6.classList.remove('d-none');
+      } else {
+        div5.classList.remove('d-none');
+        div6.classList.add('d-none');
+      }
+    });
+
+    document.getElementById('toggleSwitch4').addEventListener('change', function() {
+      var div7 = document.getElementById('div7');
+      var div8 = document.getElementById('div8');
+
+      if (this.checked) {
+        div7.classList.add('d-none');
+        div8.classList.remove('d-none');
+      } else {
+        div7.classList.remove('d-none');
+        div8.classList.add('d-none');
+      }
+    });
+
+    document.getElementById('toggleSwitch5').addEventListener('change', function() {
+      var div9 = document.getElementById('div9');
+      var div10 = document.getElementById('div10');
+
+      if (this.checked) {
+        div9.classList.add('d-none');
+        div10.classList.remove('d-none');
+      } else {
+        div9.classList.remove('d-none');
+        div10.classList.add('d-none');
+      }
+    });
+
+    document.getElementById('toggleSwitch6').addEventListener('change', function() {
+      var div11 = document.getElementById('div11');
+      var div12 = document.getElementById('div12');
+
+      if (this.checked) {
+        div11.classList.add('d-none');
+        div12.classList.remove('d-none');
+      } else {
+        div11.classList.remove('d-none');
+        div12.classList.add('d-none');
+      }
+    });
   </script>
 </body>
