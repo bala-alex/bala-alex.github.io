@@ -364,6 +364,10 @@ html {
   padding-bottom: 300px !important;
 }
 
+.pb-400 {
+  padding-bottom: 400px !important;
+}
+
 .pb-200 {
   padding-bottom: 200px !important;
 }
@@ -466,6 +470,26 @@ html {
   background: linear-gradient(240deg, #F5FDFF 0%, #E6FAFF 100%);
 }
 
+.bg-gradient-blue4 {
+  background: linear-gradient(1deg, #FFFFFF 0%, #F7FEFF 100%);
+}
+
+.bg-gradient-cool-white {
+  background: linear-gradient(90deg, #FFFFFF 100%, #F1FDFF 100%);
+}
+
+.bg-gradient-cool-mint {
+  background: linear-gradient(90deg, #ECFDFF 0%, #BDEEF4 100%);
+}
+
+.bg-gradient-cool-gray {
+  background: linear-gradient(90deg, #E0F0FF 0%, #EFF8FF 100%);
+}
+
+.bg-gradient-cool-blue {
+  background: linear-gradient(90deg, #DEF0FF 0%, #B6D9FA 100%);
+}
+
 .bg-azure-blue {
   background-color: $azure-blue;
 }
@@ -522,6 +546,14 @@ html {
 
 .text-secondary-light {
   color: $secondary-light !important;
+}
+
+.text-secondary-default {
+  color: $secondary-default !important;
+}
+
+.text-secondary-link {
+  color: $secondary-link !important;
 }
 
 .text-complementary-dark {
@@ -793,6 +825,10 @@ html {
   max-width: 530px !important;
 }
 
+.mw-520 {
+  max-width: 520px !important;
+}
+
 .mw-570 {
   max-width: 570px !important;
 }
@@ -908,6 +944,12 @@ html {
 .ml-sm-0 {
   @include screen-xs {
     margin-left: 0 !important;
+  }
+}
+
+.mb-sm-50 {
+  @include screen-sm {
+    margin-bottom: 50px !important;
   }
 }
 
@@ -1049,6 +1091,10 @@ html {
   font-size: 22px !important;
 }
 
+.font-28 {
+  font-size: 28px !important;
+}
+
 .font-20 {
   font-size: 20px !important;
 }
@@ -1124,6 +1170,14 @@ html {
 
 .mt-negative-80 {
   margin-top: -80px;
+}
+
+.mt-negative-20 {
+  margin-top: -20px;
+}
+
+.mt-negative-250 {
+  margin-top: -250px;
 }
 
 .mt-negative-150 {
@@ -1230,12 +1284,20 @@ html {
   line-height: 40px !important;
 }
 
+.line-height-38 {
+  line-height: 38px !important;
+}
+
 .line-height-20 {
   line-height: 20px !important;
 }
 
 .line-height-24 {
   line-height: 24px !important;
+}
+
+.line-height-14 {
+  line-height: 14px !important;
 }
 
 .bottom-radius-0 {
