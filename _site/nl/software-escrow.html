@@ -49,8 +49,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item hide-solutions">
+        <!-- <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Oplossingen</a>
+        </li> -->
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
         </li>
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software escrow</a>
@@ -67,7 +70,8 @@
             Oplossingen <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Oplossingen</a>
+            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Oplossingen</a> -->
+            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
             <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software escrow</a>
             <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
             <!-- <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">Data Custodian</a> -->
@@ -145,11 +149,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-sm-12">
-              <p class="header__info"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-recovery.svg"
-                  alt="Ready for Recovery Icon" />Klaar voor herstel
-              </p>
-              <h1 class="header__title text-align-start mt-4"><strong>Software escrow</strong><br> sla uw softwaremiddelen veilig op, klaar voor snel herstel</h1>
-              <p class="header__subtitle text-align-start mt-4">We bieden geavanceerde <strong>automatische integraties</strong> met alle ontwikkelaarstools. Gemakkelijk voor ontwikkelaars, zorgeloos voor softwareklanten.</p>
+              <div class="d-flex align-items-center">
+                <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon" />
+                <p class="header__info text-dark-cyan font-35 mb-2">Software-escrow</p>
+              </div>
+              <h1 class="header__title text-align-start mt-4"></h1>
+              <p class="header__subtitle text-align-start mt-4"></p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Vanaf<br><span
+                  class="software-escrow-monthly">$89</span>/maand</p>
+              </div>
+              
               <div class="d-flex flex-wrap resources mt-4">
                 <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
                   Boek een Demo
@@ -182,11 +192,6 @@
                     <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
                       alt="Gitlab Logo" />
                     <p class="applications__logo-text">GitLab</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg"
-                      alt="Git Logo" />
-                    <p class="applications__logo-text">Git</p>
                   </div>
                   <div class="applications__logo mx-0">
                     <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
@@ -264,71 +269,196 @@
 </div>
     </div>
 
-    <div class="container section-large">
-      <p class="scenario__title mx-auto pb-5">Hoe goed bent u voorbereid op de slechtst denkbare scenario’s?</p>
-      <div class="row mt-5">
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-1.svg"
-            alt="Supplier Bankruptcy Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 1</p>
-          <p class="scenario__text mx-auto">Uw leverancier is aangeklaagd en onmiddellijk failliet verklaard. U bent duizenden regels code verloren!</p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-2.svg"
-            alt="Ransomware Attack Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 2</p>
-          <p class="scenario__text mx-auto">Op een dag gaat u zoals gebruikelijk naar kantoor en ontdekt dat alle systemen zijn geblokkeerd door een ransomware-aanval.</p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-3.svg"
-            alt="Developer Hostage Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 3</p>
-          <p class="scenario__text mx-auto">Uw ontwikkelaar wil meer geld dan was afgesproken en geeft uw software niet vrij.</p>
+    <div class="resources">
+      <div class="software-escrow__bg-gray min-h-600 pb-100">
+        <div class="container d-flex align-items-center flex-column">
+          <p class="software-escrow__main-title pt-5"> </p>
+          <img class="image-style mw-110 mx-auto my-4" src="/images/software-escrow/quick-recovery.webp" alt="Quick Recovery Illustration"/>
+          <p class="software-escrow__main-subtitle text-center mt-3 mb-2 font-24 line-height-34 mw-800"></p>
+          <p class="software-escrow__main-subtitle text-center mt-4 font-24 line-height-34 pb-5 mw-770"></p>
         </div>
       </div>
-      <p class="scenario__subtext mx-auto">Dit zijn slechts enkele van de scenario’s die dagelijks plaatsvinden en waardoor volledige bedrijven stil komen te liggen, omdat ze de controle verliezen over de broncodes en data waar het bedrijf op draait.</p>
     </div>
+    
 
-    <div class="section-large risks__bg">
+    <div class="section-large">
       <div class="container">
-        <p class="risks__title">Risico’s die u vandaag nog kunt voorkomen!</p>
-        <p class="risks__subtitle">Het moderne bedrijfsleven heeft een hoog tempo en uw softwaresystemen zijn van cruciaal belang. Zorg dat u niet wordt getroffen door een catastrofe, terwijl u deze risico’s eenvoudig kunt vermijden.</p>
+        <p class="scenario__subtext mx-auto mt-2 font-24 fw-light text-dark-cyan"> </p>
         <div class="row mt-5">
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/counter-party.svg"
-                alt="Counter Party Icon" loading="lazy" />Risico Tegenpartij
-            </p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/bankruptcy.svg"
-                alt="Bankruptcy Icon" loading="lazy" />Faillissement</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/stolen-data.svg"
-                alt="Stolen Data Icon" loading="lazy" />Gestolen data</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/lawsuits.svg"
-                alt="Lawsuits Icon" loading="lazy" />Rechtszaken</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/manual-hassles.svg"
+              alt="Manual Hassles Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">:</p>
+            <p class="scenario__text2 mx-auto"></p>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/unplanned-downtime.svg"
-                alt="Uplanned Downtime Icon" loading="lazy" />Niet-geplande uitvaltijd</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/catastrophic-events.svg"
-                alt="Catastrophic Events Icon" loading="lazy" />Catastrofale gebeurtenissen</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/backup-recovery.svg"
-                alt="Backup Recovery Icon" loading="lazy" />Problemen met back-upherstel</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/misrepresentation.svg"
-                alt="Misrepresentation Icon" loading="lazy" />Onjuiste gegevens</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/complex-provedures.svg"
+              alt="Complex Procedures Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">:</p>
+            <p class="scenario__text2 mx-auto"></p>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/hacking.svg" alt="Hacking Icon"
-                loading="lazy" />Hacken</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/ransomware.svg"
-                alt="Ransomware Icon" loading="lazy" />Ransomware</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/sabotage.svg"
-                alt="Sabotage Icon" loading="lazy" />Sabotage</p>
-            <p class="risks__text">En nog veel meer</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/legal-labyrinths.svg"
+              alt="Legal Labyrinths Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">:</p>
+            <p class="scenario__text2 mx-auto"></p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-2 col-sm-12"></div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/recovery-delays.svg"
+              alt="Recovery Delays Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">:</p>
+            <p class="scenario__text2 mx-auto"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/team-strain.svg"
+              alt="Team Strain Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">: </p>
+            <p class="scenario__text2 mx-auto"></p>
+          </div>
+          <div class="col-md-2 col-sm-12"></div>
+        </div>
+        <p class="scenario__subtext mx-auto mt-5 pt-4 font-24 fw-600 text-bondi-blue text-italic mw-800"> </p>
+      </div>
+    </div>
+
+    <div class="bg-white section-large pt-2 resources">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <p class="software-escrow__title mt-4"></p>
+            <p class="software-escrow__subtitle"></p>
+            <div class="software-escrow__devider"></div>
+            <div class="d-flex mt-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
+            <div class="d-flex mt-3 mb-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/software-escrow/still-manual.webp" alt="Manual deposits in traditional escrow" loading="lazy"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile mt-5">
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/software-escrow/uncertainty-about.webp" alt="Illustration: Old school escrow solutions" loading="lazy"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="software-escrow__title mt-4"></p>
+            <p class="software-escrow__subtitle"></p>
+            <div class="software-escrow__devider"></div>
+            <div class="d-flex mt-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text"></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="bg-gradient-blue4 min-h-700 section-large">
+      <div class="container resources">
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38"></p>
+            <p class="best-price__text mw-520 text-dark-cyan fw-light mt-4 font-28 line-height-38"></p>
+            <p class="best-price__text mw-520 text-bondi-blue font-28 line-height-38 mt-4 fw-600 text-italic"> </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/landing/our-team.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
+          </div>
+        </div>
+
+        <div class="content-center flex-column py-5">
+          <p class="best-price__title text-bondi-blue fw-light overflow-wrap-break-mobile mw-700 text-center mx-auto my-5 pt-5"></p>
+          <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="resources bg-primary-default position-relative">
+      <img class="header__bg-bottom-left-small" src="/images/landing/roadmap-shape-small.webp" alt="Background Illustration of the bottom left section"/>
+      <img class="header__bg-bottom-right-large" src="/images/landing/roadmap-shape-large.webp" alt="Background Illustration of the bottom right section"/>
+      <div class="container section-large">
+        <p class="deposit-assets__subtitle text-white font-24"></p>
+        <p class="deposit-assets__title text-white mw-570">:</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="d-flex align-items-start mt-3 position-relative">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Stap 1: </p>
+                <p class="deposit-assets__text mw-520 font-24 fw-light text-white"></p>
+              </div>
+              <div class="deposit-assets__dotted-line3"></div>
+            </div>
+            <div class="d-flex align-items-start mt-3 position-relative">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Stap 2: </p>
+                <p class="deposit-assets__text mw-520 font-24 fw-light text-white"></p>
+              </div>
+              <div class="deposit-assets__dotted-line3"></div>
+            </div>
+            <div class="d-flex align-items-start mt-3">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Stap 3: </p>
+                <p class="deposit-assets__text mb-5 mw-520 font-24 fw-light text-white"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 software-escrow">
+            <img class="w-100 mw-520 mt-4" src="/images/software-escrow/your-roadmap-to.webp" alt="Your Roadmap to Ready for Recovery With Codekeeper Illustration" loading="lazy"/>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
+          <a class="button btn-yellow mr-4 my-4 text-center z-index-1 pricing-href" href="pricing.html">
+            
+          </a>
+          <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resources">
+      <div class="container pt-100">
+        <p class="people-choose__main-title pt-5 overflow-wrap-break-mobile">Software-escrow</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2"> </p>
+      </div>
+      <div class="people-choose__bg">
+        <div class="container">
+          <div class="content-center mt-5">
+            <img class="people-choose__image mx-auto" src="/images/software-escrow/software-escrow-dashboard.webp" alt="Illustration: Dashboard to secure your software assets" loading="lazy"/>
+          </div>
+          <p class="people-choose__info mx-auto my-4"></p>
+          <a class="button btn-cerulean2 pricing-href mx-auto" href="pricing.html">
+            Bekijk onze prijzen
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="container">
       <div class="risks__box">
         <img class="risks__box-shape" src="/images/software-escrow/protect-shape.webp"
           alt="Abstract protective shape in the background" loading="lazy" />
@@ -352,101 +482,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="section-large container">
-      <p class="header__info text-center"><img class="mr-2 mb-1"
-          src="/images/software-escrow/icons/ready-for-recovery.svg" alt="Ready for Recovery Icon" loading="lazy" />Klaar voor herstel</p>
-      <p class="information__main-title">Software-escrow</p>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img class="information__image content-center" src="/images/software-escrow/manage-escrows.webp"
-            alt="Dashboard interface for managing escrows" loading="lazy" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title">Beheer escrows moeiteloos</p>
-          <p class="information__subtitle">Via het centrale dashboard kunt u alle escrows voor uw organisatie snel instellen en beheren. Zowel ontwikkelaar als begunstigde op hetzelfde platform.</p>
-        </div>
-      </div>
-      <div class="row mt-5 column-reverse-mobile">
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title text-align-end">Ontworpen voor herstel</p>
-          <p class="information__subtitle text-align-end ml-auto">De hersteloplossing betekent dat u alle vereiste middelen opslaat voor snel herstel in geval van een vrijgavegebeurtenis.</p>
-        </div>
-        <div class="col-md-6 col-sm-12 content-center">
-          <img class="information__image" src="/images/software-escrow/designed-for-recovery.webp"
-            alt="Recovery Solution Illustration" loading="lazy" />
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6 col-sm-12">
-          <img class="information__image content-center" src="/images/software-escrow/integrated-with.webp"
-            alt="Integration with developer workflows illustration" loading="lazy" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title">Geïntegreerd met workflows van ontwikkelaars</p>
-          <p class="information__subtitle">Recente versie altijd binnen 24 uur gedeponeerd, met AES256-versleuteling en volledig geautomatiseerd. We bieden ondersteuning voor meer dan 50 integraties! </p>
-        </div>
-      </div>
-      <div class="row mt-5 column-reverse-mobile">
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title text-align-end mt-5">Meest betaalbare escrow-optie</p>
-          <p class="information__subtitle text-align-end ml-auto">De hersteloplossing betekent dat u alle vereiste middelen opslaat voor snel herstel in geval van een vrijgavegebeurtenis.</p>
-          <div class="d-flex justify-content-end align-items-center solutions">
-            <p class="select-level__price mr-4">Vanaf<br><span
-                class="software-escrow-monthly">$89</span>/maand</p>
-            <a class="button btn-cerulean3 pricing-href" href="pricing.html">Bekijk onze prijzen</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 content-center">
-          <img class="information__image" src="/images/software-escrow/most-affordable.webp"
-            alt="Affordable Pricing Illustration" loading="lazy" />
-        </div>
-      </div>
-    </div>
-
-    <div class="we-support__bg">
-      <p class="we-support__title mx-auto">We ondersteunen de meest gebruikte omgevingen. 50+ integraties beschikbaar</p>
-      <p class="we-support__subtitle mx-auto mt-4">Uw ontwikkelaars kunnen de gedeponeerde broncode en data op eenvoudige wijze up-to-date houden met gebruik van onze bibliotheek met integratieopties.</p>
-      <div class="resources">
-        <div class="applications__logos mt-5">
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/bitbucket.svg" alt="Bitbucket Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">Bitbucket</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/github.svg" alt="Github Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">GitHub</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">GitLab</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/git.svg" alt="Git Logo" loading="lazy" />
-            <p class="applications__logo-text">Git</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/google-cloud-large.svg"
-              alt="Google Cloud Logo" loading="lazy" />
-            <p class="applications__logo-text">Google Cloud</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/azure-large.svg"
-              alt="Microsoft Azure Logo" loading="lazy" />
-            <p class="applications__logo-text">Microsoft Azure</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/amazon2.svg"
-              alt="Amazon Web Services Logo" loading="lazy" />
-            <p class="applications__logo-text">Amazon Web Services</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> -->
 
     <div class="container section-large">
       <p class="header__info">Eenvoudig en geautomatiseerd</p>
@@ -456,99 +492,124 @@
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/data-source.svg" alt="Data Source Icon"
               loading="lazy" />
-            <p class="easy__title">Broncode</p>
+            <p class="easy__title"></p>
             <p class="easy__subtitle">Deponeer de broncode als onderdeel van uw escrow, zodat u kunt herimplementeren wanneer dit nodig is.</p>
-            <a class="easy__link source-code-escrow-href" href="source-code-escrow.html">Meer informatie <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/data.svg" alt="Data Icon" loading="lazy" />
-            <p class="easy__title">Data</p>
+            <p class="easy__title"></p>
             <p class="easy__subtitle">Voor de meeste toepassingen moet uw data goed werken. Deponeer databases of back-ups om er zeker van te zijn dat u geen data verliest.</p>
-            <a class="easy__link data-escrow-href" href="data-escrow.html">Meer informatie <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
-            <img class="easy__icon" src="/images/software-escrow/icons/documents.svg" alt="Documents Icon"
+            <img class="easy__icon" src="/images/software-escrow/icons/deployment-assets.svg" alt="Deployment Assets Icon"
               loading="lazy" />
-            <p class="easy__title">Documenten</p>
-            <p class="easy__subtitle">Deponeer allerlei soorten intellectueel eigendom, gevoelige informatie en andere cruciale documenten.</p>
-            <a class="easy__link document-escrow-href" href="document-escrow.html">Meer informatie <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+            <p class="easy__title"></p>
+            <p class="easy__subtitle"></p>
+
           </div>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
+            <img class="easy__icon" src="/images/software-escrow/icons/documents.svg" alt="Documents Icon"
+              loading="lazy" />
+            <p class="easy__title"></p>
+            <p class="easy__subtitle"> </p>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/technology.svg" alt="Technology Icon"
               loading="lazy" />
             <p class="easy__title">Technologie en ontwerpen</p>
-            <p class="easy__subtitle">Gebruik de escrow voor het deponeren van intellectueel eigendom dat is ontwikkeld.</p>
-            <a class="easy__link technology-designs-escrow-href" href="technology-designs-escrow.html">Meer informatie <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+            <p class="easy__subtitle"></p>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/credentials.svg" alt="Credentials Icon"
               loading="lazy" />
-            <p class="easy__title">Toegangsgegevens</p>
+            <p class="easy__title"></p>
             <p class="easy__subtitle">Een van de belangrijkste aspecten om alles weer te kunnen opstarten. Deponeer de toegangsgegevens op eenvoudige wijze.</p>
-            <a class="easy__link credentials-escrow-href" href="credentials-escrow.html">Meer informatie <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-white section-large">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">Wij werken binnen het ISO27001 beveiligingskader. De certificeringen van ons datacentrum:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.webp"
-          alt="Datacenter Certifications Logos" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="your-protection__bg">
-      <img class="your-protection__shape-left" src="/images/software-escrow/protection-left.webp"
-        alt="Left Background Shape" loading="lazy" />
-      <img class="your-protection__shape-right" src="/images/software-escrow/protection-right.webp"
-        alt="Right Background Shape" loading="lazy" />
+    <div class="section-large bg-alice-blue resources">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="header__info text-secondary-light"><img class="mr-2 mb-1"
-                src="/images/software-escrow/icons/ready-for-continuity.svg" alt="Ready for Continuity Icon"
-                loading="lazy" />Klaar voor continuïteit</p>
-            <p class="your-protection__title my-4">Verhoog uw beschermingsniveau met <strong>SaaS-escrow</strong>
-            </p>
-            <p class="your-protection__subtitle">Omvat alle <strong>software-escrow</strong>-functies met als aanvulling:</p>
-            <div class="d-flex flex-wrap">
-              <p class="your-protection__subtitle fw-bold mr-3"><img class="mr-2 mb-1"
-                  src="/images/software-escrow/icons/protect-hosting.svg" alt="Protect Hosting Icon" loading="lazy" />Beschermde hostomgeving</p>
-              <p class="your-protection__subtitle fw-bold"><img class="mr-2 mb-1"
-                  src="/images/software-escrow/icons/immediate.svg" alt="Immediate Icon" loading="lazy" />Onmiddellijk herstel</p>
-            </div>
-            <div class="d-flex justify-content-start align-items-center solutions flex-wrap">
-              <p class="select-level__price mr-4">Vanaf<br><span
-                  class="saas-escrow-monthly">$199</span>/maand</p>
-              <a class="button btn-cerulean3 saas-escrow-href" href="saas-escrow.html">Meer over SaaS-escrow <i class="fa fa-xs fa-arrow-right ml-2"
-                  aria-hidden="true"></i></a>
-            </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/designed-for-software.webp"
+              alt="Dashboard interface for software recovery" loading="lazy" />
           </div>
-          <div class="col-md-5 col-sm-12 content-center">
-            <img class="your-protection__image mt-5" src="/images/software-escrow/protection-image.webp"
-              alt="Ready for Continuity - Next Level Protection" loading="lazy" />
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title"></p>
+            <p class="information__subtitle text-slate-gray fw-400"></p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i> </p>
           </div>
         </div>
+        <div class="row mt-5 column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title"> </p>
+            <p class="information__subtitle text-slate-gray fw-400"> </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i> </p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i> </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/automated-deposits.webp"
+              alt="Dashboard interface for automated deposits" loading="lazy" />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/a-solid-legal.webp"
+              alt="Dashboard interface for a solid leagal framework" loading="lazy" />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title"> </p>
+            <p class="information__subtitle text-slate-gray fw-400"> </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i> </p>
+          </div>
+        </div>
+        <div class="row mt-5 column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title"></p>
+            <p class="information__subtitle text-slate-gray fw-400"> </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i></p>
+            <p class="software-escrow__text font-18 text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i> </p>
 
+            <a class="header__link automated-verification-href" href="software-verification-report-automated.html"> <i class="fa fa-angle-right pt-1" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/assured-recovery.webp"
+              alt="Dashboard interface for assured recovery" loading="lazy" />
+          </div>
+        </div>
       </div>
     </div>
+
 
     <div class="container section-large pricing">
       <h4 class="section__title text-align-start">Veelgestelde Vragen</h4>
@@ -646,76 +707,139 @@
       </ul>
       <p class="section__text mt-5 mb-5">Als u nog andere vragen heeft of op zoek bent naar een aangepaste oplossing, kunt u gerust contact opnemen met ons serviceteam door een e-mail te sturen naar <a href="mailto:/ contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a>. </p>
     </div>
-    <!-- Section -->
-    <!DOCTYPE html>
-<div class="resources">
-  <div class="container">
-    <img class="image-style" src="/images/landing/companies.webp" alt="Illustration: Trusted Partner Companies" loading="lazy"/>
-  </div>
 
-  <div class="container content-center">
-    <p class="people-choose__main-title mw-800 text-bondi-blue">Deze bedrijven hebben hun softwarecontinuïteit al veiliggesteld. <br>Begint u vandaag?</p>
-  </div>
-  <div class="people-choose__bg">
-    <div class="container">
-      <p class="people-choose__main-subtitle2 mx-auto mt-4">Software-escrow beveiligt de broncode die hersteld moet worden als een leverancier niet langer in staat is toegang of ondersteuning te verlenen voor de software die u nodig heeft voor uw bedrijfsactiviteiten met een onafhankelijke derde partij.</p>
-      <a class="button btn-cerulean3 pricing-href mx-auto px-5 mt-5" href="pricing.html">
-        Beginnen
-      </a>
-      <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Gegarandeerd de beste prijs</p>
-      <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Geen verborgen kosten</p>
-    </div>
-  </div>
+    <div class="section-large bg-gradient-blue3 resources">
+      <div class="container">
+        <div class="content-center">
+          <img class="pt-2" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Shield Icon" loading="lazy"/>
+        </div>
+        <p class="people-choose__main-title overflow-wrap-break-mobile pt-2"></p>
+        <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan"></p>
+        <a class="button btn-cerulean2 pricing-href mx-auto mt-4" href="pricing.html">
+          
+        </a>
+        <div class="row mb-negative-300">
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow py-5 px-3">
+              <p class="we-support__title mx-auto mw-420"></p>
+              <p class="we-support__subtitle mx-auto fw-700 mt-4"> </p>
+              <p class="we-support__subtitle mx-auto mt-2 mw-490">Uw ontwikkelaars kunnen de gedeponeerde broncode en data op eenvoudige wijze up-to-date houden met gebruik van onze bibliotheek met integratieopties.</p>
+              <div class="resources">
+                <div class="applications__logos mt-5">
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/bitbucket.svg" alt="Bitbucket Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">Bitbucket</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/github.svg" alt="Github Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">GitHub</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">GitLab</p>
+                  </div>
+                  
+                </div>
+                <div class="applications__logos mt-negative-80 mb-1">
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/google-cloud-large.svg"
+                      alt="Google Cloud Logo" loading="lazy" />
+                    <p class="applications__logo-text">Google Cloud</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/azure-large.svg"
+                      alt="Microsoft Azure Logo" loading="lazy" />
+                    <p class="applications__logo-text">Microsoft Azure</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/amazon2.svg"
+                      alt="Amazon Web Services Logo" loading="lazy" />
+                    <p class="applications__logo-text">Amazon Web Services</p>
+                  </div>
+                </div>
 
-
-  <div class="mt-150 position-relative">
-    <div class="container">
-      <div class="intro-guide__bg">
-        <img class="intro-guide__image" src="/images/landing/shape-intro.webp" alt="Illustration: Shape Intro" loading="lazy"/>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="intro-guide__title">Software Escrow Introductie: Een gids</p>
-            <div class="d-flex align-items-center">
-              <p class="intro-guide__badge">e-book</p>
-              <p class="intro-guide__text">12 pagina's</p>
+                <a class="button btn-secondary-large book-a-demo-href mx-auto" href="book-a-demo.html">
+                  
+                </a>
+              </div>
             </div>
-            <p class="intro-guide__subtitle">Leer hoe u risico's kunt beperken met Software Escrow en zorg ervoor dat uw bedrijfskritische systemen onder alle omstandigheden veilig blijven.</p>
-            <a class="button btn-secondary-large mt-4" data-toggle="modal" data-target="#exampleModal33">
-              Download Gids
-            </a>
           </div>
-          <div class="col-md-5 col-sm-12">
-            <img class="intro-guide__illustration mt-4" src="/images/landing/intro-guide-image.webp" alt="Illustration: Introduction to Software Escrow Guide" loading="lazy"/>
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow py-5 px-3">
+              <div class="content-center">
+                <img class="my-1 mx-auto" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" loading="lazy"/>
+              </div>
+              <p class="we-support__title mx-auto">  </p>
+              <p class="we-support__subtitle mx-auto mt-4 font-16 line-height-24 pb-2"></p>
+              <div class="content-center">
+                <img class="software-escrow__image mx-auto mw-420" src="/images/software-custodian/software-backup-included.webp" alt="Illustration: Secure Storage of Source Code - Heart of Your Organization" loading="lazy"/>
+              </div>
+              <a class="button btn-secondary-large book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
+                Meer informatie
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-large software-escrow bg-paper-white">
+      <div class="container pt-100">
+        <p class="scenario__subtext mx-auto pt-4 font-24 fw-400 text-light-red"> </p>
+        <p class="scenario__title mx-auto py-3 mw-1000 font-35 line-height-38"></p>
+        <p class="scenario__subtext mx-auto mt-2 font-24 fw-light mw-800"> </p>
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/loss-of-revenue.svg"
+              alt="Loss of revenue Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600"></p>
+            <p class="scenario__text2 mx-auto"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/legal-repercussions.svg"
+              alt="Legal Repercussions Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600"></p>
+            <p class="scenario__text2 mx-auto"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/compromised-data.svg"
+              alt="Compromised Data Integrity Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600"></p>
+            <p class="scenario__text2 mx-auto"></p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-form p-0 ">
-                <p class="section__modal-title mt-3">U kunt dit e-book gratis downloaden!</p>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp" alt="Illustration: Introduction to Software Escrow Guide" loading="lazy"/>
-                    <p class="section__modal-subtext mt-0">*E-book alleen beschikbaar in het Engels</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 pt-3">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
-                    });
-                    </script>
-                  </div>
+    <div class="resources section-large">
+      <div class="position-relative">
+        <div class="container resources ">
+          <p class="people-choose__main-title text-dark-cyan fw-light pt-2 overflow-wrap-break-mobile mw-100"> </p>
+          <p class="people-choose__main-subtitle2 mx-auto mt-4"> </p>
+        </div>
+        <div class="container pt-50">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mb-5" src="/images/software-escrow/software-escrow-dashboard.webp" alt="Illustration: Software Escrow Dashboard" loading="lazy"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">Software-escrow</p>
+              <p class="software-escrow__subtitle"> </p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i> </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i> </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i> </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i> </p>
+              <div class="d-flex flex-wrap mt-4 mb-sm-50">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-3" href="book-a-demo.html">
+                  
+                </a>
+                <div>
+                  <p class="header__text">Of bekijk onze</p>
+                  <a class="header__link pricing-href" href="pricing.html">Prijsopties <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -723,13 +847,53 @@
         </div>
       </div>
     </div>
-  </div>
-    
-  <div class="intro-guide__container">
+
+    <div class="resources">
+      <div class="container-fluid px-0">
+        <div class="intro__bg">
+          <div class="intro__col-green bg-gradient-blue2">
+            <div class="intro__col-green-spacing">
+              <img class="my-1" src="/images/landing/icons/software-backup-shield.svg" alt="Software Backup Shield Icon" loading="lazy"/>
+              <h2 class="intro__title2 mt-2"></h2>
+              <p class="intro__subtitle2 mt-3 pr-4 mw-420"></p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Vanaf<br><span
+                    class="software-escrow-monthly">$89</span>/maand</p>
+                <a class="button btn-cerulean software-backup-href px-5" href="software-backup.html">
+                  Meer informatie <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="intro__col bg-gradient-blue5">
+            <div class="intro__col-spacing">
+              <img class="my-1" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" loading="lazy"/>
+              <h2 class="intro__title2 mt-2"></h2>
+              <p class="intro__subtitle2 mt-3"></p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Vanaf<br><span
+                    class="enterprise-yearly">$1,349</span>/maand</p>
+                <a class="button btn-cerulean saas-escrow-href px-5" href="saas-escrow.html">
+                  Meer informatie <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Section -->
+    <!DOCTYPE html>
+<div class="resources">  
+  <div class="intro-guide__container2">
     <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Decorative Small Shape" loading="lazy"/>
     <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Decorative Large Shape" loading="lazy"/>
     <div class="container">
-      <div class="row">
+      <div class="section-medium">
+        <img class="image-style" src="/images/landing/companies.webp" alt="Illustration: Trusted Partner Companies" loading="lazy"/>
+      </div>
+      
+      <div class="row pt-50">
         <div class="col-md-5 col-sm-12">
           <img class="image-style" src="/images/landing/our-experts.webp" alt="Illustration: Our Expert" loading="lazy"/>
         </div>
@@ -781,9 +945,11 @@
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold text-transform-none">Onze oplossingen</p>
+            <a class="footer__subtext mt-2 disaster-recovery-planner-href" href="disaster-recovery-planner.html">Disaster Recovery</a>
+            <a class="footer__subtext mt-2 software-backup-href" href="software-backup.html">Software Backup</a>
             <a class="footer__subtext mt-2 software-escrow-href" href="software-escrow.html">Software escrow</a>
             <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">SaaS Escrow</a>
-            <!-- <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">Data Custodian</a> -->
+            <a class="footer__subtext mt-2 software-custodian-href" href="software-custodian.html"></a>
 
             <p class="footer__text mt-4 mb-0 fw-bold">INFORMATIE</p>
             <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">Escrow-overeenkomsten</a>

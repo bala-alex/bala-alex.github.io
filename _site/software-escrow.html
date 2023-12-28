@@ -54,8 +54,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item hide-solutions">
+        <!-- <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Solutions</a>
+        </li> -->
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
         </li>
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
@@ -72,7 +75,8 @@
             Solutions <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a>
+            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a> -->
+            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
             <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
             <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
             <!-- <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">Data Custodian</a> -->
@@ -150,11 +154,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-7 col-sm-12">
-              <p class="header__info"><img class="mr-2 mb-1" src="/images/software-escrow/icons/ready-for-recovery.svg"
-                  alt="Ready for Recovery Icon" />Ready for Recovery
-              </p>
-              <h1 class="header__title text-align-start mt-4"><strong>Software Escrow</strong><br> securely store your software assets, ready for quick recovery</h1>
-              <p class="header__subtitle text-align-start mt-4">We provide state-of-the-art <strong>automated integrations</strong> with all developer tools. Easy for developers, peace of mind for software clients.</p>
+              <div class="d-flex align-items-center">
+                <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon" />
+                <p class="header__info text-dark-cyan font-35 mb-2">Software Escrow</p>
+              </div>
+              <h1 class="header__title text-align-start mt-4">Securely store your software assets, ready for quick recovery</h1>
+              <p class="header__subtitle text-align-start mt-4">State-of-the-art <span class="fw-700">automated software escrow</span> integrated with all developer tools. Easy to use for software developers and peace of mind for software clients.</p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Start from<br><span
+                  class="software-escrow-monthly">$89</span>/month</p>
+              </div>
+              
               <div class="d-flex flex-wrap resources mt-4">
                 <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
                   Book a Demo
@@ -187,11 +197,6 @@
                     <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
                       alt="Gitlab Logo" />
                     <p class="applications__logo-text">GitLab</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg"
-                      alt="Git Logo" />
-                    <p class="applications__logo-text">Git</p>
                   </div>
                   <div class="applications__logo mx-0">
                     <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
@@ -269,71 +274,196 @@
 </div>
     </div>
 
-    <div class="container section-large">
-      <p class="scenario__title mx-auto pb-5">How prepared are you for the worst possible scenarios?</p>
-      <div class="row mt-5">
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-1.svg"
-            alt="Supplier Bankruptcy Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 1</p>
-          <p class="scenario__text mx-auto">Your supplier got sued and instantly went bankrupt. You lost thousands of lines of code!</p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-2.svg"
-            alt="Ransomware Attack Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 2</p>
-          <p class="scenario__text mx-auto">You go into the office as usual, to find all your systems are locked by a ransomware attack.</p>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/scenario-3.svg"
-            alt="Developer Hostage Scenario Icon" loading="lazy" />
-          <p class="scenario__subtitle mx-auto">Scenario 3</p>
-          <p class="scenario__text mx-auto">Your developer decides he wants more money than agreed and holds your software hostage.</p>
+    <div class="resources">
+      <div class="software-escrow__bg-gray min-h-600 pb-100">
+        <div class="container d-flex align-items-center flex-column">
+          <p class="software-escrow__main-title pt-5">Is your software ready for quick recovery? </p>
+          <img class="image-style mw-110 mx-auto my-4" src="/images/software-escrow/quick-recovery.webp" alt="Quick Recovery Illustration"/>
+          <p class="software-escrow__main-subtitle text-center mt-3 mb-2 font-24 line-height-34 mw-800">Software escrow should secure your assets, not complicate them. Traditional methods are fraught with issues that can hinder your progress.</p>
+          <p class="software-escrow__main-subtitle text-center mt-4 font-24 line-height-34 pb-5 mw-770">Software escrow can be hard to implement, especially when dealing with many vendors.</p>
         </div>
       </div>
-      <p class="scenario__subtext mx-auto">These are just some of the scenarios that happen on a daily basis that wipe out entire companies because they lose control over the source codes and the data that powers their business.</p>
     </div>
+    
 
-    <div class="section-large risks__bg">
+    <div class="section-large">
       <div class="container">
-        <p class="risks__title">Risks you can avoid today!</p>
-        <p class="risks__subtitle">Modern business moves at a high pace and your software systems are of critical importance. Don’t get caught by a catastrophe when it’s easy to avoid these risks.</p>
+        <p class="scenario__subtext mx-auto mt-2 font-24 fw-light text-dark-cyan">Do these hurdles sound familiar? </p>
         <div class="row mt-5">
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/counter-party.svg"
-                alt="Counter Party Icon" loading="lazy" />Counter Party Risk
-            </p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/bankruptcy.svg"
-                alt="Bankruptcy Icon" loading="lazy" />Bankruptcy</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/stolen-data.svg"
-                alt="Stolen Data Icon" loading="lazy" />Stolen Data</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/lawsuits.svg"
-                alt="Lawsuits Icon" loading="lazy" />Lawsuits</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/manual-hassles.svg"
+              alt="Manual Hassles Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Manual Hassles:</p>
+            <p class="scenario__text2 mx-auto">Time-consuming manual deposits and protracted processing times slow down your development cycle.</p>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/unplanned-downtime.svg"
-                alt="Uplanned Downtime Icon" loading="lazy" />Unplanned Downtime</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/catastrophic-events.svg"
-                alt="Catastrophic Events Icon" loading="lazy" />Catastrophic events</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/backup-recovery.svg"
-                alt="Backup Recovery Icon" loading="lazy" />Backup recovery problems</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/misrepresentation.svg"
-                alt="Misrepresentation Icon" loading="lazy" />Misrepresentation</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/complex-provedures.svg"
+              alt="Complex Procedures Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Complex Procedures:</p>
+            <p class="scenario__text2 mx-auto">Navigating the maze of traditional escrow deposit procedures can leave developers frustrated.</p>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/hacking.svg" alt="Hacking Icon"
-                loading="lazy" />Hacking</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/ransomware.svg"
-                alt="Ransomware Icon" loading="lazy" />Ransomware</p>
-            <p class="risks__text"><img class="mr-3" src="/images/software-escrow/icons/sabotage.svg"
-                alt="Sabotage Icon" loading="lazy" />Sabotage</p>
-            <p class="risks__text">And many more</p>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/legal-labyrinths.svg"
+              alt="Legal Labyrinths Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Legal Labyrinths:</p>
+            <p class="scenario__text2 mx-auto">The intricate legalities of conventional escrow services often inflate costs with lawyer-driven red tape.</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-2 col-sm-12"></div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/recovery-delays.svg"
+              alt="Recovery Delays Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Recovery Delays:</p>
+            <p class="scenario__text2 mx-auto">In the fast-paced digital era, old-school escrow services falter, leaving you with outdated backups and missing critical deployment data.</p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/software-escrow/icons/team-strain.svg"
+              alt="Team Strain Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Team Strain: </p>
+            <p class="scenario__text2 mx-auto">Without specialized support, efficiently redeploying your software becomes a stressful and uncertain process.</p>
+          </div>
+          <div class="col-md-2 col-sm-12"></div>
+        </div>
+        <p class="scenario__subtext mx-auto mt-5 pt-4 font-24 fw-600 text-bondi-blue text-italic mw-800">Move beyond these outdated practices with a modern escrow solution designed for today's agile businesses. </p>
+      </div>
+    </div>
+
+    <div class="bg-white section-large pt-2 resources">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <p class="software-escrow__title mt-4">Everything is still manual?</p>
+            <p class="software-escrow__subtitle">Traditional escrows require expensive manual deposits at extra costs, and they take long to process.</p>
+            <div class="software-escrow__devider"></div>
+            <div class="d-flex mt-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">Manual deposits in traditional escrow can be unnecessarily time-consuming for developers.</p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">Developers often face complex and confusing deposit procedures.</p>
+            </div>
+            <div class="d-flex mt-3 mb-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">The legal complexities of traditional escrow can lead to expensive lawyer-driven processes.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/software-escrow/still-manual.webp" alt="Manual deposits in traditional escrow" loading="lazy"/>
+          </div>
+        </div>
+        <div class="row column-reverse-mobile mt-5">
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/software-escrow/uncertainty-about.webp" alt="Illustration: Old school escrow solutions" loading="lazy"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="software-escrow__title mt-4">Uncertainty about reliable and fast recovery?</p>
+            <p class="software-escrow__subtitle">Old school escrow solutions aren’t prepared for the requirements of the real-time digital cloud era.</p>
+            <div class="software-escrow__devider"></div>
+            <div class="d-flex mt-4">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">With traditional escrow, developers can end up with outdated and incomplete deposit versions</p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">Traditional escrow often lacks crucial deployment configuration information.</p>
+            </div>
+            <div class="d-flex mt-3">
+              <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+              <p class="software-escrow__text">Without a dedicated team, quick redeployment can be a challenge in traditional escrow scenarios.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="bg-gradient-blue4 min-h-700 section-large">
+      <div class="container resources">
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38">Our state-of-the-art software escrow service integrates effortlessly with your development tools, ensuring your assets are always up-to-date, secure, and ready for recovery when you need them most</p>
+            <p class="best-price__text mw-520 text-dark-cyan fw-light mt-4 font-28 line-height-38">With a dedicated team focussed on software escrow, we provide a seamless and automated safety net, allowing you to focus on what you do best.</p>
+            <p class="best-price__text mw-520 text-bondi-blue font-28 line-height-38 mt-4 fw-600 text-italic">Your mission critical software assets should never have to be at risk. </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image" src="/images/landing/our-team.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
+          </div>
+        </div>
+
+        <div class="content-center flex-column py-5">
+          <p class="best-price__title text-bondi-blue fw-light overflow-wrap-break-mobile mw-700 text-center mx-auto my-5 pt-5">These companies already secured their software continuity. Will you start today?</p>
+          <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="resources bg-primary-default position-relative">
+      <img class="header__bg-bottom-left-small" src="/images/landing/roadmap-shape-small.webp" alt="Background Illustration of the bottom left section"/>
+      <img class="header__bg-bottom-right-large" src="/images/landing/roadmap-shape-large.webp" alt="Background Illustration of the bottom right section"/>
+      <div class="container section-large">
+        <p class="deposit-assets__subtitle text-white font-24">Your Software Escrow Action Plan</p>
+        <p class="deposit-assets__title text-white mw-570">Your Roadmap to Ready for Recovery for your Software with Codekeeper:</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="d-flex align-items-start mt-3 position-relative">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Step 1: Demo & Discovery Call</p>
+                <p class="deposit-assets__text mw-520 font-24 fw-light text-white">Explore the features and benefits of Codekeeper's Software Escrow in a personalized demo.</p>
+              </div>
+              <div class="deposit-assets__dotted-line3"></div>
+            </div>
+            <div class="d-flex align-items-start mt-3 position-relative">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Step 2: Plan Selection & Registration</p>
+                <p class="deposit-assets__text mw-520 font-24 fw-light text-white">Choose the plan that fits your needs and register to start safeguarding your software assets.</p>
+              </div>
+              <div class="deposit-assets__dotted-line3"></div>
+            </div>
+            <div class="d-flex align-items-start mt-3">
+              <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+              <div>
+                <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">Step 3: Onboard & Deposit</p>
+                <p class="deposit-assets__text mb-5 mw-520 font-24 fw-light text-white">Invite your team and vendors to deposit their source code and data effortlessly with our user-friendly platform.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 software-escrow">
+            <img class="w-100 mw-520 mt-4" src="/images/software-escrow/your-roadmap-to.webp" alt="Your Roadmap to Ready for Recovery With Codekeeper Illustration" loading="lazy"/>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
+          <a class="button btn-yellow mr-4 my-4 text-center z-index-1 pricing-href" href="pricing.html">
+            See Pricing
+          </a>
+          <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1">We are around to help. <a class="text-white fw-bold text-underline book-a-demo-href" href="book-a-demo.html">Book a call</a> with an advisor to discuss your specific situation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resources">
+      <div class="container pt-100">
+        <p class="people-choose__main-title pt-5 overflow-wrap-break-mobile">Software Escrow</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2"> Invite your clients and vendors and collaborate on your escrows to secure your software assets.</p>
+      </div>
+      <div class="people-choose__bg">
+        <div class="container">
+          <div class="content-center mt-5">
+            <img class="people-choose__image mx-auto" src="/images/software-escrow/software-escrow-dashboard.webp" alt="Illustration: Dashboard to secure your software assets" loading="lazy"/>
+          </div>
+          <p class="people-choose__info mx-auto my-4">The central dashboard allows you to quickly set up and manage all escrows for your organization.</p>
+          <a class="button btn-cerulean2 pricing-href mx-auto" href="pricing.html">
+            Explore Our Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="container">
       <div class="risks__box">
         <img class="risks__box-shape" src="/images/software-escrow/protect-shape.webp"
           alt="Abstract protective shape in the background" loading="lazy" />
@@ -357,101 +487,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="section-large container">
-      <p class="header__info text-center"><img class="mr-2 mb-1"
-          src="/images/software-escrow/icons/ready-for-recovery.svg" alt="Ready for Recovery Icon" loading="lazy" />Ready for Recovery</p>
-      <p class="information__main-title">Software Escrow</p>
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <img class="information__image content-center" src="/images/software-escrow/manage-escrows.webp"
-            alt="Dashboard interface for managing escrows" loading="lazy" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title">Manage Escrows with Ease</p>
-          <p class="information__subtitle">The central dashboard allows you to quickly setup and manage all escrows for your organization. Both depositor and beneficiary on the same platform.</p>
-        </div>
-      </div>
-      <div class="row mt-5 column-reverse-mobile">
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title text-align-end">Designed for Recovery</p>
-          <p class="information__subtitle text-align-end ml-auto">The recovery solution means that you store all required assets that are required to quickly recover in case of a release event.</p>
-        </div>
-        <div class="col-md-6 col-sm-12 content-center">
-          <img class="information__image" src="/images/software-escrow/designed-for-recovery.webp"
-            alt="Recovery Solution Illustration" loading="lazy" />
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6 col-sm-12">
-          <img class="information__image content-center" src="/images/software-escrow/integrated-with.webp"
-            alt="Integration with developer workflows illustration" loading="lazy" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title">Integrated with Developer Workflows</p>
-          <p class="information__subtitle">Recent versions are always deposited within 24 hours, AES256 encrypted and fully automated. We support more than 50 integrations! </p>
-        </div>
-      </div>
-      <div class="row mt-5 column-reverse-mobile">
-        <div class="col-md-6 col-sm-12">
-          <p class="information__title text-align-end mt-5">Most affordable Escrow option</p>
-          <p class="information__subtitle text-align-end ml-auto">The recovery solution means that you store all required assets that are required to quickly recover in case of a release event.</p>
-          <div class="d-flex justify-content-end align-items-center solutions">
-            <p class="select-level__price mr-4">Start from<br><span
-                class="software-escrow-monthly">$89</span>/month</p>
-            <a class="button btn-cerulean3 pricing-href" href="pricing.html">View Our Pricing</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12 content-center">
-          <img class="information__image" src="/images/software-escrow/most-affordable.webp"
-            alt="Affordable Pricing Illustration" loading="lazy" />
-        </div>
-      </div>
-    </div>
-
-    <div class="we-support__bg">
-      <p class="we-support__title mx-auto">We support most commercially available environments.<br> 50+ Integrations available.</p>
-      <p class="we-support__subtitle mx-auto mt-4">Make it easy for your developers to keep the deposited source code and data up-to-date using our library of integration options.</p>
-      <div class="resources">
-        <div class="applications__logos mt-5">
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/bitbucket.svg" alt="Bitbucket Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">Bitbucket</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/github.svg" alt="Github Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">GitHub</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo"
-              loading="lazy" />
-            <p class="applications__logo-text">GitLab</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/git.svg" alt="Git Logo" loading="lazy" />
-            <p class="applications__logo-text">Git</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/google-cloud-large.svg"
-              alt="Google Cloud Logo" loading="lazy" />
-            <p class="applications__logo-text">Google Cloud</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/azure-large.svg"
-              alt="Microsoft Azure Logo" loading="lazy" />
-            <p class="applications__logo-text">Microsoft Azure</p>
-          </div>
-          <div class="applications__logo">
-            <img class="applications__logo-image" src="/images/homepage/logos/amazon2.svg"
-              alt="Amazon Web Services Logo" loading="lazy" />
-            <p class="applications__logo-text">Amazon Web Services</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> -->
 
     <div class="container section-large">
       <p class="header__info">Easy & Automated</p>
@@ -461,99 +497,124 @@
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/data-source.svg" alt="Data Source Icon"
               loading="lazy" />
-            <p class="easy__title">Source code</p>
+            <p class="easy__title">Software Source Code</p>
             <p class="easy__subtitle">Make sure source code is deposited as part of your escrow so you can redeploy when needed.</p>
-            <a class="easy__link source-code-escrow-href" href="source-code-escrow.html">Learn more <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/data.svg" alt="Data Icon" loading="lazy" />
-            <p class="easy__title">Data</p>
+            <p class="easy__title">Application Data</p>
             <p class="easy__subtitle">Most applications require your data to work well. Deposit databases or backups to make sure you don’t lose track of data.</p>
-            <a class="easy__link data-escrow-href" href="data-escrow.html">Learn more <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
-            <img class="easy__icon" src="/images/software-escrow/icons/documents.svg" alt="Documents Icon"
+            <img class="easy__icon" src="/images/software-escrow/icons/deployment-assets.svg" alt="Deployment Assets Icon"
               loading="lazy" />
-            <p class="easy__title">Documents</p>
-            <p class="easy__subtitle">Deposit all kinds of intellectual property, sensitive information, and other critical documents.</p>
-            <a class="easy__link document-escrow-href" href="document-escrow.html">Learn more <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+            <p class="easy__title"></p>
+            <p class="easy__subtitle">Build and deployment configuration scripts, and entire virtual machine images ready to deploy can be deposited.</p>
+
           </div>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
+            <img class="easy__icon" src="/images/software-escrow/icons/documents.svg" alt="Documents Icon"
+              loading="lazy" />
+            <p class="easy__title">Digital Documents</p>
+            <p class="easy__subtitle">Deposit all kinds of intellectual property and other critical digital material. Automatically time-stamped to prove ownership. </p>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/technology.svg" alt="Technology Icon"
               loading="lazy" />
             <p class="easy__title">Technology & Designs</p>
-            <p class="easy__subtitle">Use the escrow to deposit intellectual property that has been developed.</p>
-            <a class="easy__link technology-designs-escrow-href" href="technology-designs-escrow.html">Learn more <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+            <p class="easy__subtitle">Use escrow to protect your unique intellectual property.</p>
+
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="easy__box">
             <img class="easy__icon" src="/images/software-escrow/icons/credentials.svg" alt="Credentials Icon"
               loading="lazy" />
-            <p class="easy__title">Credentials</p>
+            <p class="easy__title">Access Credentials</p>
             <p class="easy__subtitle">One of the most important aspects in getting back up and running. Deposit credentials with ease.</p>
-            <a class="easy__link credentials-escrow-href" href="credentials-escrow.html">Learn more <i class="fa fa-xs fa-arrow-right"
-                aria-hidden="true"></i></a>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-white section-large">
-      <div class="container d-flex flex-column align-items-center">
-        <p class="protect__subtext">We operate within the ISO27001 security framework. Our datacenter certifications:</p>
-        <img class="datacenter-image" src="/images/logos/datacenter-certifications.webp"
-          alt="Datacenter Certifications Logos" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="your-protection__bg">
-      <img class="your-protection__shape-left" src="/images/software-escrow/protection-left.webp"
-        alt="Left Background Shape" loading="lazy" />
-      <img class="your-protection__shape-right" src="/images/software-escrow/protection-right.webp"
-        alt="Right Background Shape" loading="lazy" />
+    <div class="section-large bg-alice-blue resources">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="header__info text-secondary-light"><img class="mr-2 mb-1"
-                src="/images/software-escrow/icons/ready-for-continuity.svg" alt="Ready for Continuity Icon"
-                loading="lazy" />Ready for Continuity</p>
-            <p class="your-protection__title my-4">Take your protection to the next level with <strong>SaaS Escrow</strong>
-            </p>
-            <p class="your-protection__subtitle">Includes all <strong>Software Escrow</strong> features, with additionally:</p>
-            <div class="d-flex flex-wrap">
-              <p class="your-protection__subtitle fw-bold mr-3"><img class="mr-2 mb-1"
-                  src="/images/software-escrow/icons/protect-hosting.svg" alt="Protect Hosting Icon" loading="lazy" />Protected Hosting Environment</p>
-              <p class="your-protection__subtitle fw-bold"><img class="mr-2 mb-1"
-                  src="/images/software-escrow/icons/immediate.svg" alt="Immediate Icon" loading="lazy" />Immediate Recovery</p>
-            </div>
-            <div class="d-flex justify-content-start align-items-center solutions flex-wrap">
-              <p class="select-level__price mr-4">Start from<br><span
-                  class="saas-escrow-monthly">$199</span>/month</p>
-              <a class="button btn-cerulean3 saas-escrow-href" href="saas-escrow.html">More about SaaS Escrow <i class="fa fa-xs fa-arrow-right ml-2"
-                  aria-hidden="true"></i></a>
-            </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/designed-for-software.webp"
+              alt="Dashboard interface for software recovery" loading="lazy" />
           </div>
-          <div class="col-md-5 col-sm-12 content-center">
-            <img class="your-protection__image mt-5" src="/images/software-escrow/protection-image.webp"
-              alt="Ready for Continuity - Next Level Protection" loading="lazy" />
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title">Designed for Software Recovery</p>
+            <p class="information__subtitle text-slate-gray fw-400">The recovery solution means that you store all assets that are required to quickly recover in case of a release event.</p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Protected against vendor failure</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Protected against ransomware</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Protected against many more digital risks </p>
           </div>
         </div>
+        <div class="row mt-5 column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title">Automated Deposits </p>
+            <p class="information__subtitle text-slate-gray fw-400">Integrates directly with developer workflows. Deposits are encrypted and fully automated. </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Most recent version always deposited within 24 hours</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>50+ Integrations available</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>AES-256 Encryption Security </p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Time-stamped deposit trail </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/automated-deposits.webp"
+              alt="Dashboard interface for automated deposits" loading="lazy" />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/a-solid-legal.webp"
+              alt="Dashboard interface for a solid leagal framework" loading="lazy" />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title">A solid legal framework included </p>
+            <p class="information__subtitle text-slate-gray fw-400">A legally sound escrow agreement comes with each Codekeeper account, and we customize it together to fit your situation. No lawyer required. </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Legal work included</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Quick turn-around</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Ready for all kinds of scenarios </p>
+          </div>
+        </div>
+        <div class="row mt-5 column-reverse-mobile">
+          <div class="col-md-6 col-sm-12">
+            <p class="information__title">Assured Recovery</p>
+            <p class="information__subtitle text-slate-gray fw-400">Quick recovery in case of a release event. Release procedures are processed 24/7/365, and you get expert redeployment support if you need it. </p>
+            <div class="software-escrow__devider"></div>
+            <p class="software-escrow__text mt-4 font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Full recovery support</p>
+            <p class="software-escrow__text font-18 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Payment guarantees</p>
+            <p class="software-escrow__text font-18 text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>Many verification options available </p>
 
+            <a class="header__link automated-verification-href" href="software-verification-report-automated.html">More About Verification Solutions <i class="fa fa-angle-right pt-1" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img class="software-escrow__image content-center" src="/images/software-escrow/assured-recovery.webp"
+              alt="Dashboard interface for assured recovery" loading="lazy" />
+          </div>
+        </div>
       </div>
     </div>
+
 
     <div class="container section-large pricing">
       <h4 class="section__title text-align-start">Frequently Asked Questions</h4>
@@ -651,76 +712,139 @@
       </ul>
       <p class="section__text mt-5 mb-5">If you have any other questions or need a custom solution, please feel free to contact our Customer Service team for assistance by sending an email to <a href="mailto:/ contact@codekeeper.co" class="text-underline">contact@codekeeper.co</a>. </p>
     </div>
-    <!-- Section -->
-    <!DOCTYPE html>
-<div class="resources">
-  <div class="container">
-    <img class="image-style" src="/images/landing/companies.webp" alt="Illustration: Trusted Partner Companies" loading="lazy"/>
-  </div>
 
-  <div class="container content-center">
-    <p class="people-choose__main-title mw-800 text-bondi-blue">These companies already secured their software continuity. <br>Will you start today?</p>
-  </div>
-  <div class="people-choose__bg">
-    <div class="container">
-      <p class="people-choose__main-subtitle2 mx-auto mt-4">Software escrow secures the source code needed to recover if a supplier is no longer able to provide access or support the software you need for your business operations with an independent 3rd party.</p>
-      <a class="button btn-cerulean3 pricing-href mx-auto px-5 mt-5" href="pricing.html">
-        Get Started
-      </a>
-      <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Best price guaranteed</p>
-      <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>No hidden costs</p>
-    </div>
-  </div>
+    <div class="section-large bg-gradient-blue3 resources">
+      <div class="container">
+        <div class="content-center">
+          <img class="pt-2" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Shield Icon" loading="lazy"/>
+        </div>
+        <p class="people-choose__main-title overflow-wrap-break-mobile pt-2">Affordable Software Escrow</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">The recovery solution means that you store all required assets that are required to qucikly recover in case of a release event.</p>
+        <a class="button btn-cerulean2 pricing-href mx-auto mt-4" href="pricing.html">
+          View Pricing
+        </a>
+        <div class="row mb-negative-300">
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow py-5 px-3">
+              <p class="we-support__title mx-auto mw-420">We support most commercially available environments.</p>
+              <p class="we-support__subtitle mx-auto fw-700 mt-4">50+ Integrations available </p>
+              <p class="we-support__subtitle mx-auto mt-2 mw-490">Make it easy for your developers to keep the deposited source code and data up-to-date using our library of integration options.</p>
+              <div class="resources">
+                <div class="applications__logos mt-5">
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/bitbucket.svg" alt="Bitbucket Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">Bitbucket</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/github.svg" alt="Github Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">GitHub</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo"
+                      loading="lazy" />
+                    <p class="applications__logo-text">GitLab</p>
+                  </div>
+                  
+                </div>
+                <div class="applications__logos mt-negative-80 mb-1">
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/google-cloud-large.svg"
+                      alt="Google Cloud Logo" loading="lazy" />
+                    <p class="applications__logo-text">Google Cloud</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/azure-large.svg"
+                      alt="Microsoft Azure Logo" loading="lazy" />
+                    <p class="applications__logo-text">Microsoft Azure</p>
+                  </div>
+                  <div class="applications__logo">
+                    <img class="applications__logo-image" src="/images/homepage/logos/amazon2.svg"
+                      alt="Amazon Web Services Logo" loading="lazy" />
+                    <p class="applications__logo-text">Amazon Web Services</p>
+                  </div>
+                </div>
 
-
-  <div class="mt-150 position-relative">
-    <div class="container">
-      <div class="intro-guide__bg">
-        <img class="intro-guide__image" src="/images/landing/shape-intro.webp" alt="Illustration: Shape Intro" loading="lazy"/>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <p class="intro-guide__title">Introduction to Software Escrow: A Guide</p>
-            <div class="d-flex align-items-center">
-              <p class="intro-guide__badge">e-book</p>
-              <p class="intro-guide__text">12 pages</p>
+                <a class="button btn-secondary-large book-a-demo-href mx-auto" href="book-a-demo.html">
+                  Explore Features
+                </a>
+              </div>
             </div>
-            <p class="intro-guide__subtitle">Learn how software escrow helps you mitigate risks and ensure your mission-critical systems remain unaffected through any circumstance.</p>
-            <a class="button btn-secondary-large mt-4" data-toggle="modal" data-target="#exampleModal33">
-              Download Guide
-            </a>
           </div>
-          <div class="col-md-5 col-sm-12">
-            <img class="intro-guide__illustration mt-4" src="/images/landing/intro-guide-image.webp" alt="Illustration: Introduction to Software Escrow Guide" loading="lazy"/>
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow py-5 px-3">
+              <div class="content-center">
+                <img class="my-1 mx-auto" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" loading="lazy"/>
+              </div>
+              <p class="we-support__title mx-auto"><span class="fw-600">Software Backup</span><br>included  </p>
+              <p class="we-support__subtitle mx-auto mt-4 font-16 line-height-24 pb-2">Source code and application data backup made easy</p>
+              <div class="content-center">
+                <img class="software-escrow__image mx-auto mw-420" src="/images/software-custodian/software-backup-included.webp" alt="Illustration: Secure Storage of Source Code - Heart of Your Organization" loading="lazy"/>
+              </div>
+              <a class="button btn-secondary-large book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-large software-escrow bg-paper-white">
+      <div class="container pt-100">
+        <p class="scenario__subtext mx-auto pt-4 font-24 fw-400 text-light-red">Don’t let your reliance on software turn into a risk </p>
+        <p class="scenario__title mx-auto py-3 mw-1000 font-35 line-height-38">Software escrow shouldn’t have to be difficult to implement</p>
+        <p class="scenario__subtext mx-auto mt-2 font-24 fw-light mw-800">When your clients depend on you for their business operations you can’t afford not being able to recover quickly. </p>
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/loss-of-revenue.svg"
+              alt="Loss of revenue Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Loss of revenue</p>
+            <p class="scenario__text2 mx-auto">Every minute of downtime drains an average of $5,600 from your financial reserves.</p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/legal-repercussions.svg"
+              alt="Legal Repercussions Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Legal Repercussions</p>
+            <p class="scenario__text2 mx-auto">Face legal and regulatory challenges without proper solutions in place.</p>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-sm-50">
+            <img class="mx-auto d-block my-2" src="/images/landing/icons/compromised-data.svg"
+              alt="Compromised Data Integrity Icon" loading="lazy" />
+            <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Compromised Data Integrity</p>
+            <p class="scenario__text2 mx-auto">A breach can irreparably tarnish the trust you've built with your clients.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content section__modal mx-auto">
-          <div class="modal-body p-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="m-0">
-              <div class="section__modal-form p-0 ">
-                <p class="section__modal-title mt-3">Download this ebook for free!</p>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <img class="section__modal-image" src="/images/resources-page/guide-introduction.webp" alt="Illustration: Introduction to Software Escrow Guide" loading="lazy"/>
-                    <p class="section__modal-subtext mt-0">*E-book available only in English</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12 pt-3">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                      portalId: "5365877",
-                      formId: "31e6f358-0537-4c45-aa72-b9cc697f4a71"
-                    });
-                    </script>
-                  </div>
+    <div class="resources section-large">
+      <div class="position-relative">
+        <div class="container resources ">
+          <p class="people-choose__main-title text-dark-cyan fw-light pt-2 overflow-wrap-break-mobile mw-100">Ready for Recovery using Software Escrow </p>
+          <p class="people-choose__main-subtitle2 mx-auto mt-4">Use our source code escrow solutions, to monitor your clients and/or vendors, make sure your critical software assets are securely stored and available. </p>
+        </div>
+        <div class="container pt-50">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mb-5" src="/images/software-escrow/software-escrow-dashboard.webp" alt="Illustration: Software Escrow Dashboard" loading="lazy"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">Software Escrow</p>
+              <p class="software-escrow__subtitle">Register and start your implementation today. </p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>Your Software Assets are Secure </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Your Operations are Uninterrupted </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>You have a solid legal framework in place </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Fully automated process </p>
+              <div class="d-flex flex-wrap mt-4 mb-sm-50">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-3" href="book-a-demo.html">
+                  Review Features
+                </a>
+                <div>
+                  <p class="header__text">Or explore our</p>
+                  <a class="header__link pricing-href" href="pricing.html">Pricing Options <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -728,13 +852,53 @@
         </div>
       </div>
     </div>
-  </div>
-    
-  <div class="intro-guide__container">
+
+    <div class="resources">
+      <div class="container-fluid px-0">
+        <div class="intro__bg">
+          <div class="intro__col-green bg-gradient-blue2">
+            <div class="intro__col-green-spacing">
+              <img class="my-1" src="/images/landing/icons/software-backup-shield.svg" alt="Software Backup Shield Icon" loading="lazy"/>
+              <h2 class="intro__title2 mt-2">Looking to lower costs? Scale down to <strong class="fw-700">Software Backup</strong></h2>
+              <p class="intro__subtitle2 mt-3 pr-4 mw-420">Securely store the source code of the applications that are the heart of your organization.</p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Start from<br><span
+                    class="software-escrow-monthly">$89</span>/month</p>
+                <a class="button btn-cerulean software-backup-href px-5" href="software-backup.html">
+                  Learn more <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="intro__col bg-gradient-blue5">
+            <div class="intro__col-spacing">
+              <img class="my-1" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" loading="lazy"/>
+              <h2 class="intro__title2 mt-2">Take your protection to the next level with<br>  <strong class="fw-700">SaaS Escrow</strong></h2>
+              <p class="intro__subtitle2 mt-3">Next level protection for cloud-native applications. Make sure your systems remain online when disaster strikes.</p>
+              <div class="solutions">
+                <p class="select-level__price mr-4">Start from<br><span
+                    class="enterprise-yearly">$1,349</span>/month</p>
+                <a class="button btn-cerulean saas-escrow-href px-5" href="saas-escrow.html">
+                  Learn more <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Section -->
+    <!DOCTYPE html>
+<div class="resources">  
+  <div class="intro-guide__container2">
     <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Decorative Small Shape" loading="lazy"/>
     <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Decorative Large Shape" loading="lazy"/>
     <div class="container">
-      <div class="row">
+      <div class="section-medium">
+        <img class="image-style" src="/images/landing/companies.webp" alt="Illustration: Trusted Partner Companies" loading="lazy"/>
+      </div>
+      
+      <div class="row pt-50">
         <div class="col-md-5 col-sm-12">
           <img class="image-style" src="/images/landing/our-experts.webp" alt="Illustration: Our Expert" loading="lazy"/>
         </div>
@@ -786,9 +950,11 @@
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold text-transform-none">Our Solutions</p>
+            <a class="footer__subtext mt-2 disaster-recovery-planner-href" href="disaster-recovery-planner.html">Disaster Recovery</a>
+            <a class="footer__subtext mt-2 software-backup-href" href="software-backup.html">Software Backup</a>
             <a class="footer__subtext mt-2 software-escrow-href" href="software-escrow.html">Software Escrow</a>
             <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">SaaS Escrow</a>
-            <!-- <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">Data Custodian</a> -->
+            <a class="footer__subtext mt-2 software-custodian-href" href="software-custodian.html">Software Custodian</a>
 
             <p class="footer__text mt-4 mb-0 fw-bold">RESOURCES</p>
             <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">Escrow Agreements</a>
