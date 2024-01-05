@@ -919,6 +919,14 @@
     top: 30px;
   }
 
+  &__dotted-line3 {
+    border-left: 1px dashed $white;
+    height: 87%;
+    position: absolute;
+    left: 14px;
+    top: 30px;
+  }
+
 }
 
 .escrow {
@@ -2063,8 +2071,8 @@
   }
 
   &__text {
-    color: $sherpa-blue;
-    font-size: 16px;
+    color: $dark-cyan;
+    font-size: 18px;
     font-weight: normal;
     letter-spacing: 0px;
     line-height: 28px;
@@ -2096,6 +2104,44 @@
     }
   }
 
+  &__bottom-left-corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 170px;
+    object-fit: contain;
+    transform: rotateY(180deg);
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
+  &__top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 170px;
+    object-fit: contain;
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
+  &__top-left-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 170px;
+    object-fit: contain;
+    transform: rotateY(180deg);
+
+    @include screen-sm {
+      max-width: 30%;
+    }
+  }
+
   &__box {
     background: $white;
     border-radius: 20px;
@@ -2107,7 +2153,93 @@
     @include screen-md {
       margin-top: 50px;
     }
+  }
 
+  &__box2 {
+    background: $white;
+    border: 0.5px solid #DCE5F2;
+    box-shadow: 0px 7px 20px 0px #0036860D;
+    border-radius: 20px;
+    min-height: 650px;
+    max-width: 600px;
+    margin-top: 60px;
+    @include screen-md {
+      margin-top: 50px;
+    }
+  }
+
+  &__box-bg-green {
+    background: linear-gradient(180deg, rgba(246, 253, 254, 0) 0%, #ECFDFF 123.86%);
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    @include screen-sm {
+      padding: 0 20px;
+    }
+  }
+
+  &__box-bg-blue {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #EAF4FF 123.86%);
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    @include screen-sm {
+      padding: 0 20px;
+    }
+  }
+
+  &__box-title {
+    color: $dark-cyan;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 40px;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  &__box-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  &__box-subtext {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  &__box-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 5px;
+  }
+
+  &__box-image {
+    max-width: 160px;
+    object-fit: contain;
+    margin-bottom: -45px;
+
+    @include screen-sm {
+      max-width: 100px;
+      margin-bottom: -100px;
+    }
+  }
+
+  &__box-content {
+    padding: 40px;
+
+    @include screen-sm {
+      padding: 40px 15px;
+    }
   }
 
   &__box-second {

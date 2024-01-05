@@ -7,8 +7,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item hide-solutions">
+        <!-- <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a>
+        </li> -->
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">{{ site.data[page.lang]['index']['software_backup'] }}</a>
         </li>
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">{{ site.data[page.lang]['footer']['software_escrow'] }}</a>
@@ -16,21 +19,26 @@
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
         </li>
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-custodian-href text-transform-capitalize" href="software-custodian.html">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</a>
+        </li>
 
         <div class="dropdown show-solutions">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ site.data[page.lang]['navigation']['solutions'] }} <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a>
+            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a> -->
+            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">{{ site.data[page.lang]['index']['software_backup'] }}</a>
             <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">{{ site.data[page.lang]['footer']['software_escrow'] }}</a>
             <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
+            <a class="dropdown-item py-2 software-custodian-href text-transform-capitalize" href="software-custodian.html">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</a>
           </div>
         </div> 
 
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-capitalize">{{ site.data[page.lang]['footer']['add_ons'] }}</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+            <span class="text-wrap text-transform-none">{{ site.data[page.lang]['footer']['add_ons'] }}</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
             <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">{{ site.data[page.lang]['navigation']['automated_verification'] }}</a>
