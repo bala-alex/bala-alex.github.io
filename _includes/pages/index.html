@@ -18,415 +18,137 @@
       <div class="header__bg-landing">
         <img class="header__bg-left" src="/images/landing/illustration-top.webp" alt="Illustration of the top section of the websit header"/>
         <img class="header__bg-right" src="/images/landing/illustration-bottom.webp" alt="Illustration of the bottom section of the website header"/>
-        <div class="container section-small d-flex align-items-center flex-column">
-          <h1 class="header__title mt-5 overflow-wrap-break text-center mw-100 font-50">{{ site.data[page.lang]['index']['disaster_proof_your'] }}</h1>
-          <img class="image-style mw-420 mx-auto my-4" src="/images/landing/homepage-dashboard.webp" alt="Dashboard showcasing software features for popular developer platforms"/>
-          <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">Enterprise-ready <a class="fw-700 text-underline text-dark-cyan" href="software-backup.html">Software Backup</a>, <a class="fw-700 text-underline text-dark-cyan" href="software-escrow.html">Software Escrow</a>, <a class="fw-700 text-underline text-dark-cyan" href="saas-escrow.html">SaaS Escrow</a> and <a class="fw-700 text-underline text-dark-cyan" href="data-custodian.html">Software Custodian</a> solutions for software companies and their clients.</p>
-          <p class="header__subtext mt-2 text-center">{{ site.data[page.lang]['index']['we_support_all'] }} </p>
-          <!-- Developer Platforms -->
-          <div class="mt-negative-20">
-            {% include developer-platforms.html %}
-          </div>
-          
-          <div class="mt-negative-80">
-            <a class="button btn-cerulean3 book-a-demo-href my-3" href="book-a-demo.html">
-              {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-            </a>
-            <div class="d-flex align-items-center flex-column">
-              <p class="header__text text-center mb-1">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-              <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right pt-1" aria-hidden="true"></i></a>
+        <div class="container section-medium">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h1 class="header__title2 mt-5">{{ site.data[page.lang]['footer']['state_of_the_art'] }}</h1>
+              <p class="header__subtitle2 my-4 font-18 text-dark-cyan">{{ site.data[page.lang]['index']['become_enterprise'] }}</p>
+              <div class="d-flex flex-wrap">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                </a>
+                <div>
+                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                  <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="image-style mh-400" src="/images/landing/home-screen-image.webp" alt="Dashboard showcasing software features for popular developer platforms"/>
+              <p class="header__subtext mt-2 text-center">{{ site.data[page.lang]['index']['we_support_all'] }} </p>
+              <!-- Developer Platforms -->
+              {% include developer-platforms.html %}
             </div>
           </div>
-        
         </div>
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
-        <p class="protect__subtext text-slate-gray fw-light font-20">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+        <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
         <!-- Slideshow Brands -->
         {% include slideshow-brands.html %}
       </div>
-      <div class="software-escrow__bg-gray min-h-600 pb-100">
-        <div class="container d-flex align-items-center flex-column">
-          <p class="software-escrow__main-title pt-5">{{ site.data[page.lang]['index']['are_your_software_operations'] }}</p>
-          <img class="image-style mw-420 mx-auto my-4" src="/images/landing/software-operations.webp" alt="Software Operations Illustration"/>
-          <p class="software-escrow__main-subtitle text-center mt-3 mb-2 font-30 line-height-38 mw-100">{{ site.data[page.lang]['index']['each_year'] }}</p>
-          <p class="software-escrow__main-subtitle text-center mt-1 text-italic font-30 line-height-38 pb-5">{{ site.data[page.lang]['index']['they_thought'] }}</p>
+      <div class="software-escrow__bg-gray min-h-300">
+        <div class="container">
+          <p class="software-escrow__main-title pt-5">{{ site.data[page.lang]['index']['simplifying_software'] }}</p>
+          <p class="software-escrow__main-subtitle mx-auto mw-100 mt-4">{{ site.data[page.lang]['index']['traditional_software'] }}</p>
         </div>
       </div>
-      <div class="bg-white section-medium pb-400">
+      <div class="bg-white section-small">
         <div class="container">
           <div class="row mt-5">
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['data_at_risk'] }}</p>
-              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['dont_let_downtime'] }}</p>
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['everything_is'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['traditional_escrows'] }}</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['unanticipated_system'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['manual_deposits_in'] }}</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['recovering_from'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['developers_often_face'] }}</p>
               </div>
-              <div class="d-flex mt-3 mb-4">
+              <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['delayed_recovery'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['the_legal_complexities'] }}</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/data-at-risk.webp" alt="Illustration: Data At Risk - Ensure Business Continuity" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/still-manual.webp" alt="Illustration depicting challenges faced in the manual software escrow process" loading="lazy"/>
             </div>
           </div>
           <div class="row column-reverse-mobile mt-5">
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/cyber-attacks.webp" alt="Illustration: Cyberattacks - Defend Your Business in the Digital Battleground" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/certain-path.webp" alt="Illustration representing a certain path in the reliable and fast software recovery process" loading="lazy"/>
             </div>
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['cyberattacks'] }}</p>
-              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['with_43'] }}</p>
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['uncertinty_about'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['old_school'] }}</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['ransomware_can'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['with_traditional_escrow'] }}</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['hacking_incidents'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['traditional_escrow_often'] }}</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['even_a_single'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['without_a_dedicated'] }}</p>
               </div>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['compliance_and_legal'] }}</p>
-              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['safeguarding_your'] }}</p>
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['unnecessary_risks'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['not_taking_steps'] }}</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['failing_to_meet'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['lost_opportunities'] }}</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['compliance_issues_can'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['legal_pitfalls'] }}</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">{{ site.data[page.lang]['index']['your_clients_count'] }}</p>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['client_dissatisfaction'] }}</p>
+              </div>
+              <div class="d-flex mt-3">
+                <i class="fa fa-times text-light-red mr-3 mt-2"></i>
+                <p class="software-escrow__text">{{ site.data[page.lang]['index']['value_erosion'] }}</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/compliance-and-legal.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/risks.webp" alt="Illustration depicting risks associated with not having a software escrow protection" loading="lazy"/>
             </div>
           </div>
         </div>
       </div>
 
-      
-
-      <div class="bg-gradient-blue4 min-h-700">
-        <div class="container py-5">
-          <div class="best-price__bg3 mt-negative-250">
-            <img class="best-price__shape-top-right" src="/images/landing/right-shape-gray.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy"/>
-            <img class="best-price__shape-bottom-left" src="/images/landing/shape-large-bottom-left.webp" alt="Gray decorative shape positioned at the bottom left corner" loading="lazy"/>
-            <div class="row mt-5">
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="image-style mw-420 mb-4" src="/images/landing/disaster-risk-profile.webp" alt="Illustration: Free Risk Assessment Report - Understand Your Digital Disaster Risk Profile" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <p class="best-price__title text-dark-cyan fw-light overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['wondering_about'] }}</p>
-                <p class="best-price__text mw-420 text-dark-cyan fw-light">{{ site.data[page.lang]['index']['use_our_free_risk'] }}</p>
-                
-                <div class="d-flex flex-wrap flex-column mt-4">
-                  <a class="button btn-cerulean3 mr-4 mb-3" href="risk-assessment.html">
-                    {{ site.data[page.lang]['index']['download_risk_assessment'] }}
-                  </a>
-                  <div>
-                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container section-medium">
+      <div class="container py-5">
+        <div class="best-price__bg3 my-5">
+          <img class="best-price__shape-top-right" src="/images/landing/right-shape-gray.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy"/>
+          <img class="best-price__shape-bottom-left" src="/images/landing/left-shape-gray.webp" alt="Gray decorative shape positioned at the bottom left corner" loading="lazy"/>
           <div class="row mt-5">
-            <div class="col-md-6 col-sm-12">
-              <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38">{{ site.data[page.lang]['index']['at_codekeeper_we_know'] }}</p>
-              <p class="best-price__text mw-520 text-dark-cyan fw-light mt-4 font-28 line-height-38">{{ site.data[page.lang]['index']['we_understand_the'] }}</p>
-              <p class="best-price__text mw-520 text-bondi-blue font-20 mt-4 fw-400">{{ site.data[page.lang]['index']['our_team_of'] }} </p>
+            <div class="col-md-6 col-sm-12 content-center">
+              <img class="image-style mw-420 mb-4" src="/images/landing/experience.webp" alt="Illustration showcasing the CodeKeeper experience - reliable, efficient, and secure software protection solution" loading="lazy"/>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/our-team.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile mt-5 pt-5">
-            <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/our-location.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38 mt-5">{{ site.data[page.lang]['index']['with_over_a_decade'] }}</p>
-              <p class="best-price__text mw-520 text-bondi-blue fw-400 text-italic font-28 line-height-38 mt-4">{{ site.data[page.lang]['index']['your_mission_critical'] }} </p>
-            </div>
-          </div>
-          <div class="content-center flex-column pb-100">
-            <p class="best-price__title text-bondi-blue fw-light overflow-wrap-break-mobile mw-700 text-center mx-auto my-5 pt-5">{{ site.data[page.lang]['index']['these_companies_already'] }}</p>
-            <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="resources bg-primary-default position-relative">
-        <img class="header__bg-bottom-left-small" src="/images/landing/roadmap-shape-small.webp" alt="Background Illustration of the bottom left section"/>
-        <img class="header__bg-bottom-right-large" src="/images/landing/roadmap-shape-large.webp" alt="Background Illustration of the bottom right section"/>
-        <div class="container section-large">
-          <p class="deposit-assets__subtitle text-white font-24">{{ site.data[page.lang]['index']['your_action_plan'] }}</p>
-          <p class="deposit-assets__title text-white mw-570">{{ site.data[page.lang]['index']['your_roadmap_to'] }}:</p>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="d-flex align-items-start mt-3 position-relative">
-                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
-                <div>
-                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">{{ site.data[page.lang]['index']['step_1'] }}</p>
-                  <p class="deposit-assets__text mw-520 font-24 fw-light text-white">{{ site.data[page.lang]['index']['instantly_assess'] }}</p>
-                </div>
-                <div class="deposit-assets__dotted-line3"></div>
-              </div>
-              <div class="d-flex align-items-start mt-3 position-relative">
-                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
-                <div>
-                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">{{ site.data[page.lang]['index']['step_2'] }}</p>
-                  <p class="deposit-assets__text mw-520 font-24 fw-light text-white">{{ site.data[page.lang]['index']['get_a_custom_fit'] }}</p>
-                </div>
-                <div class="deposit-assets__dotted-line3"></div>
-              </div>
-              <div class="d-flex align-items-start mt-3">
-                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
-                <div>
-                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2">{{ site.data[page.lang]['index']['step_3'] }}</p>
-                  <p class="deposit-assets__text mb-5 mw-520 font-24 fw-light text-white">{{ site.data[page.lang]['index']['invite_your_team'] }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 software-escrow">
-              <img class="w-100 mw-520 mt-4" src="/images/landing/your-roadmap.webp" alt="Your Roadmap to Complete Code Safety With Codekeeper Illustration" loading="lazy"/>
-            </div>
-          </div>
-          <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
-            <a class="button btn-yellow mr-4 my-4 text-center z-index-1" href="risk-assessment.html">
-              {{ site.data[page.lang]['index']['download_risk_assessment'] }}
-            </a>
-            <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1">{{ site.data[page.lang]['index']['we_are_around'] }}</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container pt-100">
-        <p class="people-choose__main-title pt-5 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['simplifying_disaster'] }}</p>
-        <p class="people-choose__main-subtitle mx-auto pt-2">{{ site.data[page.lang]['index']['one_centralized_platform'] }}</p>
-      </div>
-      <div class="people-choose__bg">
-        <div class="container">
-          <div class="content-center mt-5">
-            <img class="people-choose__image mx-auto" src="/images/landing/choose-ck.webp" alt="Illustration: Centralized Platform for Handling Disaster Recovery - Software Companies and Clients" loading="lazy"/>
-          </div>
-          <p class="people-choose__info mx-auto my-4">{{ site.data[page.lang]['index']['learn_more_about_solutions'] }}</p>
-          <a class="button btn-cerulean2 solutions-href mx-auto" href="solutions.html">
-            {{ site.data[page.lang]['index']['explore_our'] }}
-          </a>
-        </div>
-      </div>
-
-      <div class="pt-50">
-        <div class="bg-gradient-cool-white position-relative">
-          <img class="header__bg-bottom-left-large" src="/images/landing/software-backup-shape-large.webp" alt="Background Illustration of the bottom left section"/>
-          <img class="header__bg-bottom-right-small" src="/images/landing/software-backup-shape-small.webp" alt="Background Illustration of the bottom right section"/>
-          <div class="container section-medium">
-            <div class="row column-reverse-mobile mt-5">
-              <div class="col-md-6 col-sm-12">
-                <img class="software-escrow__image" src="/images/landing/software-backup-illustration.webp" alt="Illustration: Secure Storage of Source Code - Heart of Your Organization" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12 pb-3">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/software-backup-shield.svg" alt="Software Backup Shield Icon" />
-                  <p class="software-escrow__title mb-2">{{ site.data[page.lang]['index']['software_backup'] }}</p>
-                </div>
-                <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['securely_store_the_source'] }}</p>
-                <div class="software-escrow__devider"></div>
-                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['fully_automated_source'] }}</p>
-                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['integrations_with_all'] }}</p>
-                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['unlimited_repositories'] }}</p>
-                <div class="solutions mt-4">
-                  <p class="select-level__price mr-4">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span
-                      class="developer-yearly">{{ site.data.pricing.prices.developer_yearly.USD }}</span>/{{
-                    site.data[page.lang]['solutions']['month'] }}</p>
-                </div>
-                <a class="header__link text-bondi-blue software-backup-href" href="software-backup.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-gradient-cool-mint position-relative">
-          <img class="header__bg-bottom-left-small" src="/images/landing/software-escrow-shape-small.webp" alt="Background Illustration of the bottom left section"/>
-          <img class="header__bg-bottom-right-large" src="/images/landing/software-escrow-shape-large.webp" alt="Background Illustration of the bottom right section"/>
-          <div class="container section-medium">
-            <div class="row mt-5">
-              <div class="col-md-6 col-sm-12 pb-3">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon" />
-                  <p class="software-escrow__title mb-2">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
-                </div>
-                <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['securely_store_your_software'] }}</p>
-                <div class="software-escrow__devider"></div>
-                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['most_recent_version'] }}</p>
-                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['software_escrow_agreement'] }}</p>
-                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['50_plus'] }}</p>
-                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['encryption_security'] }}</p>
-
-                <div class="solutions mt-4">
-                  <p class="select-level__price mr-4">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span
-                      class="developer-monthly">{{ site.data.pricing.prices.developer_monthly.USD }}</span>/{{
-                    site.data[page.lang]['solutions']['month'] }}</p>
-                </div>
-                <a class="header__link text-bondi-blue software-escrow-href" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <img class="software-escrow__image" src="/images/landing/software-escrow-illustration.webp" alt="Illustration: Secure Storage of Software Assets for Quick Recovery" loading="lazy"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-gradient-cool-gray position-relative">
-          <img class="header__bg-bottom-left-large" src="/images/landing/saas-escrow-shape-large.webp" alt="Background Illustration of the bottom left section"/>
-          <img class="header__bg-bottom-right-small" src="/images/landing/saas-escrow-shape-small.webp" alt="Background Illustration of the bottom right section"/>
-          <div class="container section-medium">
-            <div class="row column-reverse-mobile mt-5">
-              <div class="col-md-6 col-sm-12">
-                <img class="software-escrow__image" src="/images/landing/saas-escrow-illustration.webp" alt="Illustration: Next Level Protection for Cloud-Native Applications" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12 pb-3">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" />
-                  <p class="software-escrow__title mb-2">{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
-                </div>
-                <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['next_level_protection'] }}</p>
-                <div class="software-escrow__devider"></div>
-                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['we_keep_your_applications'] }}</p>
-                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['support_any_hosting'] }}</p>
-                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['support_for_3rd_party'] }}</p>
-                <div class="solutions mt-4">
-                  <p class="select-level__price mr-4">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span
-                      class="team-yearly">{{ site.data.pricing.prices.team_yearly.USD }}</span>/{{
-                    site.data[page.lang]['solutions']['month'] }}</p>
-                </div>
-                <a class="header__link text-bondi-blue saas-escrow-href" href="saas-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bg-gradient-cool-blue position-relative">
-          <img class="header__bg-bottom-left-small" src="/images/landing/data-custodian-shape-small.webp" alt="Background Illustration of the bottom left section"/>
-          <img class="header__bg-bottom-right-large" src="/images/landing/data-custodian-shape-large.webp" alt="Background Illustration of the bottom right section"/>
-          <div class="container section-medium">
-            <div class="row mt-5">
-              <div class="col-md-6 col-sm-12 pb-3">
-                <div class="d-flex align-items-center">
-                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/data-custodian-shield.svg" alt="Data Custodian Shield Icon" />
-                  <p class="software-escrow__title mb-2">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</p>
-                </div>
-                <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['your_responsibilities_for'] }}</p>
-                <div class="software-escrow__devider"></div>
-                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['we_manage_your'] }}</p>
-                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['support_for_all_major'] }}</p>
-                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['guaranteed_compliance'] }}</p>
-
-                <a class="button btn-cerulean2 solutions-href mb-4" href="solutions.html">
-                  {{ site.data[page.lang]['index']['get_a_quote'] }}
+              <p class="best-price__title text-dark-cyan fw-light">{{ site.data[page.lang]['index']['experience_the'] }}</p>
+              <p class="best-price__text mw-420 text-dark-cyan fw-light">{{ site.data[page.lang]['index']['you_are_losing'] }}</p>
+              
+              <div class="d-flex flex-wrap mt-4">
+                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
                 </a>
-                <a class="header__link text-bondi-blue data-custodian-href" href="data-custodian.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <img class="software-escrow__image" src="/images/landing/data-custodian-illustration.webp" alt="Illustration: Data Custodian for Full Compliance and Control" loading="lazy"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-large software-escrow bg-paper-white pb-400">
-        <div class="container">
-          <p class="scenario__subtext mx-auto mt-2 font-24 fw-400 text-light-red">{{ site.data[page.lang]['index']['the_risk'] }} </p>
-          <p class="scenario__title mx-auto py-3 mw-1000">{{ site.data[page.lang]['index']['in_todays_world'] }}</p>
-          <p class="scenario__subtext mx-auto mt-2 font-24 fw-light">{{ site.data[page.lang]['index']['you_cant_afford'] }} </p>
-          <div class="row mt-5">
-            <div class="col-md-4 col-sm-12 mb-sm-50">
-              <img class="mx-auto d-block my-2" src="/images/landing/icons/loss-of-revenue.svg"
-                alt="Loss of revenue Icon" loading="lazy" />
-              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">{{ site.data[page.lang]['index']['loss_of_revenue'] }}</p>
-              <p class="scenario__text2 mx-auto">{{ site.data[page.lang]['index']['every_minute_of'] }}</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mb-sm-50">
-              <img class="mx-auto d-block my-2" src="/images/landing/icons/legal-repercussions.svg"
-                alt="Legal Repercussions Icon" loading="lazy" />
-              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">{{ site.data[page.lang]['index']['legal_repercussions'] }}</p>
-              <p class="scenario__text2 mx-auto">{{ site.data[page.lang]['index']['face_legal_and'] }}</p>
-            </div>
-            <div class="col-md-4 col-sm-12 mb-sm-50">
-              <img class="mx-auto d-block my-2" src="/images/landing/icons/compromised-data.svg"
-                alt="Compromised Data Integrity Icon" loading="lazy" />
-              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">{{ site.data[page.lang]['index']['compromised_data'] }}</p>
-              <p class="scenario__text2 mx-auto">{{ site.data[page.lang]['index']['a_breach_can'] }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="resources">
-        <div class="container mt-negative-250">
-          <div class="best-price__bg3 section-medium software-escrow mb-100">
-            <img class="best-price__shape-top-right2" src="/images/disaster-recovery/top-right-shape.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy">
-            <p class="risks__title font-35">{{ site.data[page.lang]['software_escrow']['risks_you_can'] }}</p>
-            <p class="risks__subtitle">{{ site.data[page.lang]['software_escrow']['modern_business'] }}</p>
-            <div class="row mt-5">
-              <div class="col-md-4 col-sm-12">
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/counter-party.svg"
-                    alt="Counter Party Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['counter_party'] }}
-                </p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/bankruptcy.svg"
-                    alt="Bankruptcy Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['bankruptcy'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/stolen-data.svg"
-                    alt="Stolen Data Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['stolen_data'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/law-suits.svg"
-                    alt="Lawsuits Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['lawsuits'] }}</p>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/unplanned-downtime.svg"
-                    alt="Uplanned Downtime Icon" loading="lazy" />{{
-                  site.data[page.lang]['software_escrow']['unplanned_downtime'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/catastrophic-events.svg"
-                    alt="Catastrophic Events Icon" loading="lazy" />{{
-                  site.data[page.lang]['software_escrow']['catastrophic_events'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/backup-recovery.svg"
-                    alt="Backup Recovery Icon" loading="lazy" />{{
-                  site.data[page.lang]['software_escrow']['backup_recovery'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/misrepresentation.svg"
-                    alt="Misrepresentation Icon" loading="lazy" />{{
-                  site.data[page.lang]['software_escrow']['misrepresentation'] }}</p>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/hacking.svg" alt="Hacking Icon"
-                    loading="lazy" />{{ site.data[page.lang]['software_escrow']['hacking'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/ransomware.svg"
-                    alt="Ransomware Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['ransomware'] }}</p>
-                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/sabotage.svg"
-                    alt="Sabotage Icon" loading="lazy" />{{ site.data[page.lang]['software_escrow']['sabotage'] }}</p>
-                <p class="risks__text">{{ site.data[page.lang]['software_escrow']['and_many'] }}</p>
+                <div>
+                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                  <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -434,97 +156,90 @@
       </div>
 
       <div class="container">
-        <div class="content-center">
-          <img class="pt-100" src="/images/landing/icons/ck-logo.svg" alt="Codekeeper Logo Icon" />
-        </div>
-        <p class="people-choose__main-title overflow-wrap-break-mobile text-bondi-blue pt-2">{{ site.data[page.lang]['index']['disaster_proof_software'] }}</p>
-        <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">{{ site.data[page.lang]['index']['envision_a_business'] }}</p>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="mentions__box2 light-box-shadow">
-              <div class="mentions__box-bg-green">
-                <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_companies'] }}:</p>
-                <img class="mentions__box-image" src="/images/landing/companies-building.webp"
-                alt="Company Building Illustration" loading="lazy" />
-              </div>
-              <div class="mentions__box-content">
-                <div class="d-flex">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['enterprise_ready_assurance'] }}: </p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['elevate_your_infrastructure'] }}</p>
-                  </div>
-                </div>
-                <div class="d-flex mt-3">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['client_first'] }}:  </p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['offer_impenetrable'] }}</p>
-                  </div>
-                </div>
-                <div class="d-flex mt-3">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['regulatory_alignment'] }}:</p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['meet_industry'] }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="mentions__box2 light-box-shadow">
-              <div class="mentions__box-bg-blue">
-                <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_clients'] }}:</p>
-                <img class="mentions__box-image" src="/images/landing/clients-building.webp"
-                alt="Clients Building Illustration" loading="lazy" />
-              </div>
-              <div class="mentions__box-content">
-                <div class="d-flex">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['operational_excellence'] }}:</p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['achieve_and'] }}</p>
-                  </div>
-                </div>
-                <div class="d-flex mt-3">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['business_continuity'] }}:  </p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['shield_your'] }}</p>
-                  </div>
-                </div>
-                <div class="d-flex mt-3">
-                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                  <div>
-                    <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['regulatory_ready'] }}: </p>
-                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['navigate_the_compliance'] }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="people-choose__main-title pt-5">{{ site.data[page.lang]['index']['why_people_choose'] }}</p>
+        <p class="people-choose__main-subtitle mx-auto">{{ site.data[page.lang]['index']['one_centralized'] }}</p>
       </div>
-      <div class="people-choose__bg pb-5 min-h-300">
+      <div class="people-choose__bg">
         <div class="container">
-          <p class="people-choose__info mx-auto mt-5 mw-770 text-bondi-blue text-italic font-28 pt-50 line-height-38">{{ site.data[page.lang]['index']['together_we_redefine'] }}</p>
+          <div class="content-center mt-5">
+            <img class="people-choose__image mx-auto" src="/images/landing/choose-ck.webp" alt="Illustration representing people choosing CodeKeeper for their escrow management solutions" loading="lazy"/>
+          </div>
+          <p class="people-choose__info mx-auto my-4">{{ site.data[page.lang]['index']['learn_more_about'] }}</p>
+          <a class="button btn-cerulean2 solutions-href mx-auto" href="solutions.html">
+            {{ site.data[page.lang]['index']['explore_our'] }}
+          </a>
         </div>
       </div>
 
-      <div class="content-center flex-column section-large container">
-        <p class="people-choose__main-title overflow-wrap-break-mobile text-dark-cyan mw-800 mx-auto text-center pb-4 pt-0">{{ site.data[page.lang]['index']['join_these_companies'] }}</p>
-        <img class="image-style mt-4" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
-        <a class="button btn-cerulean pricing-href mx-auto px-5 mt-5" href="pricing.html">
-          {{ site.data[page.lang]['includes']['intro']['get_started'] }}
-        </a>
-        <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['best_price'] }}</p>
-        <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['no_hidden_costs'] }}</p>
-      </div>
+      <div class="pt-50 bg-light-gray">
+        
+        <div class="container section-small">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/designed-for.webp" alt="Illustration depicting multi-layer protection for successful software recovery and continuity provided by CodeKeeper" loading="lazy"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['design_for_software'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['multi_later_protection'] }}</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['software_escrow'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['custom_escrow'] }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="container section-small pt-50">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['automated_deposits'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['integrates_directly'] }}</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['recent_version'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['50_plus'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['encryption_security'] }}</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/automated-deposits.webp" alt="Illustration representing automated deposits in software escrow process, integrating directly with developer workflows" loading="lazy"/>
+            </div>
+          </div>
+        </div>
 
+        <div class="container section-small pt-50">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/legal-framework.webp" alt="Illustration depicting the legal framework included in CodeKeeper's software escrow agreement" loading="lazy"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['a_solid_legal'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['a_legally_sound'] }}</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['legal_work'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['quick_turn'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['ready_for'] }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="container section-small pt-50">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__title mt-4">{{ site.data[page.lang]['index']['assured_recovery'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['quick_recovery'] }}</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['full_recovery'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['payment_guarantees'] }}</p>
+              <p class="software-escrow__text mb-4"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['many_verification'] }}</p>
+              <a class="header__link automated-verification-href" href="software-verification-report-automated.html">{{ site.data[page.lang]['index']['more_about'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/assured-recovery.webp" alt="Illustration representing assured recovery procedures in CodeKeeper's software escrow process, including 24/7/365 release event processing and expert redeployment support" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+        <div class="software-escrow__bg-gray3 mb-0"></div>
+      </div>
 
       <div class="bg-primary-default section-medium position-relative pt-5">
-        <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom left corner shapee" loading="lazy"/>
+        <img class="mentions__top-left" src="/images/landing/logo-top-left.webp" alt="CodeKeeper logo in top left corner shapee" loading="lazy"/>
         <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom right corner shape" loading="lazy"/>
         <div class="container">
           <h2 class="mentions__title mt-5 text-white">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
@@ -555,46 +270,164 @@
         </div>
       </div>
 
+      <div class="how__bg-light position-relative">
+        <img class="how__top-left" src="/images/landing/illustration-top.webp" alt="Illustration of the top section of the webpage" loading="lazy"/>
+        <img class="how__top-right" src="/images/landing/logo-top-right.webp" alt="Illustration in the top right corner of the webpage" loading="lazy"/>
+        <img class="how__bottom-left" src="/images/landing/logo-bottom-left.webp" alt="Illustration in the bottom left corner of the webpage" loading="lazy"/>
+        <img class="how__bottom-right" src="/images/landing/logo-bottom-right.webp" alt="Illustration in the bottom right corner of the webpage" loading="lazy"/>
 
-      <div class="position-relative">
-        <img class="mentions__top-right-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top right corner" loading="lazy"/>
-        <img class="mentions__top-left-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top left corner" loading="lazy"/>
-        <div class="container resources ">
-          <p class="people-choose__main-title text-dark-cyan fw-light pt-100 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['disaster_recovery_planning'] }}</p>
-          <p class="people-choose__main-subtitle2 mx-auto mt-4">{{ site.data[page.lang]['index']['use_our_free'] }}</p>
-          <div class="content-center mt-4">
-            <img class="software-escrow__image mw-530" src="/images/landing/disaster-recovery-planning.webp" alt="Illustration: Disaster Recovery Planning for Guaranteed Continuity" loading="lazy"/>
-          </div>
-        </div>
-        
-        <div class="container pt-50">
-          <div class="row column-reverse-mobile mt-5">
-            <div class="col-md-5 col-sm-12">
-              <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
-            </div>
-            <div class="col-md-7 col-sm-12">
-              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['disaster_recovery_planning_toolkit'] }}</p>
-              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['register_for_free'] }}</p>
-              <div class="software-escrow__devider"></div>
-              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['information_assets_list'] }}</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['internal_and_external'] }}</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_register'] }}</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_mitigation'] }}</p>
-              <div class="d-flex flex-wrap mt-4">
-                <a class="button btn-cerulean3 mr-4 mb-3" href="disaster-recovery-planner.html">
-                  {{ site.data[page.lang]['index']['start_planning'] }}
-                </a>
+        <div class="container">
+          <p class="people-choose__main-title pt-50">{{ site.data[page.lang]['footer']['how_it_works'] }}</p>
+          <p class="people-choose__main-subtitle mx-auto">{{ site.data[page.lang]['index']['your_comprehensive'] }}</p>
+          <p class="header__subtext mt-2 text-center">{{ site.data[page.lang]['index']['we_support_all'] }} </p>
+          <!-- Developer Platforms -->
+          {% include developer-platforms.html %}
+          <div class="how__field-devider"></div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config mobile-centered">
+                <div class="works__number-bg-step">
+                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
                 <div>
-                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['index']['select_your_level'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['choose_from_our'] }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 pr-5">
+              <img class="works__image2 mt-5 ml-negative-80" src="/images/landing/select-your-level.webp" alt="Illustration guiding users to select their level" loading="lazy"/>
+            </div>
+          </div>
+          <div class="row column-reverse-mobile">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config2">
+                <img class="works__image2 ml-negative-80" src="/images/landing/solid-legal.webp" alt="Illustration representing solid legal framework" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config3 mobile-centered">
+                <div class="works__number-bg-step2">
+                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
+                <div>
+                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['index']['solid_legal_framework'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['benefit_from_our'] }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config4 mobile-centered">
+                <div class="works__number-bg-step">
+                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
+                <div>
+                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['index']['automated_deposit_and'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['integrate_directly_with'] }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="works__image2 ml-negative-80 mt-80" src="/images/landing/automated-deposits-easy.webp" alt="Illustration representing easy automated deposits" loading="lazy"/>
+            </div>
+          </div>
+          <div class="row column-reverse-mobile">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config7">
+                <img class="works__image2 ml-negative-80" src="/images/landing/verification-service.webp" alt="Illustration representing verification services" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config3 mobile-centered">
+                <div class="works__number-bg-step2">
+                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
+                <div>
+                  <p class="how-works__text mt-1">{{ site.data[page.lang]['index']['verification_service'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['opt_for_our_verification'] }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config6 mobile-centered">
+                <div class="works__number-bg-step">
+                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
+                <div>
+                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['index']['quick_recovery_and'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['in_the_event_of'] }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="works__image2 mt-80" src="/images/landing/quick-recovery.webp" alt="Illustration representing quick recovery process" loading="lazy"/>
+            </div>
+          </div>
+          <div class="row column-reverse-mobile">
+            <div class="col-md-6 col-sm-12">
+              <div class="works__config8 border-right-none">
+                <img class="works__image2 ml-negative-80" src="/images/landing/ready-for-growth.webp" alt="Illustration indicating readiness for business growth" loading="lazy"/>
+                <div class="works__border-small"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="works__content mobile-centered border-none">
+                <div class="works__number-bg-step3">
+                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
+                </div>
+                <div>
+                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['index']['ready_for_growth'] }}</p>
+                  <p class="how-works__subtext2 font-18">{{ site.data[page.lang]['index']['as_your_needs_change'] }}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="people-choose__bg border-radius-0 min-h-300">
-          <div class="container section-medium mt-5">
-            <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+      </div>
+
+      <div class="container mb-100">
+        <div class="best-price__bg py-2">
+          <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small decorative shape" loading="lazy"/>
+          <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium decorative shape" loading="lazy"/>
+          <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large decorative shape" loading="lazy"/>
+          <div class="row mt-5">
+            <div class="col-md-5 col-sm-12 content-center">
+              <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Affordable, transparent pricing with guaranteed savings" loading="lazy"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="best-price__title fw-light mt-4">{{ site.data[page.lang]['index']['best_value_on'] }}</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['clear_and_simple'] }}</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['no_costs'] }}</p>
+              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['save_up_to'] }}</p>
+              <a class="button btn-yellow pricing-href my-4" href="pricing.html">
+                {{ site.data[page.lang]['index']['explore_our_pricing'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resources">
+        <div class="container my-4 pt-4">
+          <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+        </div>
+      
+        <div class="container content-center">
+          <p class="people-choose__main-title mw-850 text-bondi-blue fw-light pt-100">{{ site.data[page.lang]['index']['ready_for_enterprise'] }}</p>
+        </div>
+        <div class="people-choose__bg border-radius-0">
+          <div class="container">
+            <p class="people-choose__main-subtitle2 mx-auto mt-4">{{ site.data[page.lang]['index']['ensure_your_place'] }}</p>
+            <a class="button btn-cerulean2 book-a-demo-href mx-auto px-5 mt-5" href="book-a-demo.html">
+              {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+            </a>
+            <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['best_price'] }}</p>
+            <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['no_hidden_costs'] }}</p>
           </div>
         </div>
       </div>
@@ -605,22 +438,5 @@
   <!-- Snippets -->
   {% include snippets.html %}
   {% include title-tags.html %}
-
-  <script src="/js/geolocationPricing.js"></script>
-
-  <script>
-    // Check if the page has not been reloaded
-    if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {{ site.data.pricing.prices | jsonify
-    }};
-    localStorage.setItem('prices', JSON.stringify(yamlData));
-
-    // Set a flag in localStorage to indicate that the page has been reloaded
-    localStorage.setItem('pageReloaded', 'true');
-
-    // Reload the page
-    window.location.reload();
-    } 
-  </script>
 
 </body>

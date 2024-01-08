@@ -32,11 +32,11 @@
       font-family: 'Mulish';
       font-style: normal;
       font-weight: 300;
-      font-size: 60px;
-      line-height: 70px;
+      font-size: 55px;
+      line-height: 62px;
       letter-spacing: -1px;
       max-width: 700px;
-      color: $dark-cyan;
+      color: $complementary-dark;
       position: relative;
 
       @include screen-xs {
@@ -186,53 +186,11 @@
       right: 0;
     }
 
-    &__bg-bottom-left-large {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 140px !important;
-      @include screen-md {
-        max-width: 90px;
-      }
-    }
-
-    &__bg-bottom-right-small {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 244px !important;
-      @include screen-md {
-        max-width: 20%;
-      }
-    }
-
-    &__bg-bottom-left-small {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 244px !important;
-      @include screen-md {
-        max-width: 20%;
-      }
-    }
-
-    &__bg-bottom-right-large {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 140px !important;
-      @include screen-md {
-        max-width: 90px;
-      }
-    }
-
-
     &__bg-left {
       position: absolute;
       top: 95px;
       left: 0;
       width: 170px;
-      max-height: 59px;
 
       @include screen-sm {
         max-width: 35%;
@@ -243,8 +201,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      max-width: 303px;
-      max-height: 111px;
+      max-width: 370px;
 
       @include screen-md {
         max-width: 35%;
@@ -528,42 +485,9 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 339px;
-      height: 403px;
+      width: 100px;
+      height: 264px;
       object-fit: contain;
-
-      @include screen-xs {
-        max-width: 200px;
-        height: fit-content;
-      }
-    }
-
-    &__shape-top-right2 {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 84px;
-      height: 202px;
-      object-fit: contain;
-
-      @include screen-sm {
-        max-width: 50px;
-        height: fit-content;
-      }
-    }
-
-    &__shape-bottom-left2 {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 382px;
-      height: 65px;
-      object-fit: contain;
-
-      @include screen-sm {
-        max-width: 50%;
-        height: fit-content;
-      }
     }
 
     &__image {
@@ -639,14 +563,6 @@
       background: linear-gradient(180deg, #F3F6FC -27.3%, #F9FCFF 132.02%);
       margin-top: -210px;
       padding-top: 300px;
-      padding-bottom: 200px;
-      position: relative;
-    }
-
-    &__container2 {
-      min-height: 800px;
-      background: linear-gradient(0deg, #F3F6FC 0%, #FFFFFF 100%);
-      padding-top: 100px;
       padding-bottom: 200px;
       position: relative;
     }
