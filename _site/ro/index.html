@@ -54,8 +54,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item hide-solutions">
+        <!-- <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Soluții</a>
+        </li> -->
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">Backup software</a>
         </li>
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software escrow</a>
@@ -63,21 +66,26 @@
         <li class="nav-item hide-solutions">
           <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
         </li>
+        <li class="nav-item hide-solutions">
+          <a class="nav-link nav-margin software-custodian-href text-transform-capitalize" href="software-custodian.html">Software Custodian</a>
+        </li>
 
         <div class="dropdown show-solutions">
           <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Soluții <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Soluții</a>
+            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Soluții</a> -->
+            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">Backup software</a>
             <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software escrow</a>
             <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="dropdown-item py-2 software-custodian-href text-transform-capitalize" href="software-custodian.html">Software Custodian</a>
           </div>
         </div> 
 
         <div class="dropdown show-desktop">
           <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-capitalize">Extensii</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+            <span class="text-wrap text-transform-none">Extensii</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
             <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">Verificare automată</a>
@@ -144,26 +152,14 @@
       <div class="header__bg-landing">
         <img class="header__bg-left" src="/images/landing/illustration-top.webp" alt="Illustration of the top section of the websit header"/>
         <img class="header__bg-right" src="/images/landing/illustration-bottom.webp" alt="Illustration of the bottom section of the website header"/>
-        <div class="container section-medium">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <h1 class="header__title2 mt-5">Soluții software de ultimă generație</h1>
-              <p class="header__subtitle2 my-4 font-18 text-dark-cyan">Deveniți <strong class="fw-700">pregătit pentru întreprindere</strong> făcând clienții să fie <strong class="fw-700">rezistenți la dezastre</strong> folosind soluțiile noastre de <a class="software-escrow-href text-dark-cyan text-underline" href="software-escrow.html">Recuperare</a> și <a class="saas-escrow-href text-dark-cyan text-underline" href="saas-escrow.html">Continuitate</a> pentru companiile de software (SaaS).</p>
-              <div class="d-flex flex-wrap">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                  Rezervați o demonstrație
-                </a>
-                <div>
-                  <p class="header__text">Sau explorați</p>
-                  <a class="header__link pricing-href" href="pricing.html">Opțiuni de preț <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="image-style mh-400" src="/images/landing/home-screen-image.webp" alt="Dashboard showcasing software features for popular developer platforms"/>
-              <p class="header__subtext mt-2 text-center">Acceptăm toate platformele populare pentru dezvoltatori. Peste 50 de integrări disponibile. </p>
-              <!-- Developer Platforms -->
-              <!DOCTYPE html>
+        <div class="container section-small d-flex align-items-center flex-column">
+          <h1 class="header__title mt-5 overflow-wrap-break text-center mw-100 font-50">Verificați software-ul dvs</h1>
+          <img class="image-style mw-420 mx-auto my-4" src="/images/landing/homepage-dashboard.webp" alt="Dashboard showcasing software features for popular developer platforms"/>
+          <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">Enterprise-ready <a class="fw-700 text-underline text-dark-cyan" href="software-backup.html">Software Backup</a>, <a class="fw-700 text-underline text-dark-cyan" href="software-escrow.html">Software Escrow</a>, <a class="fw-700 text-underline text-dark-cyan" href="saas-escrow.html">SaaS Escrow</a> and <a class="fw-700 text-underline text-dark-cyan" href="data-custodian.html">Software Custodian</a> solutions for software companies and their clients.</p>
+          <p class="header__subtext mt-2 text-center">Acceptăm toate platformele populare pentru dezvoltatori. Peste 50 de integrări disponibile. </p>
+          <!-- Developer Platforms -->
+          <div class="mt-negative-20">
+            <!DOCTYPE html>
 <div class="resources">
   <div class="applications__logos mt-4 justify-content-center">
     
@@ -197,13 +193,23 @@
     </div>
   </div>
 </div>
+          </div>
+          
+          <div class="mt-negative-80">
+            <a class="button btn-cerulean3 book-a-demo-href my-3" href="book-a-demo.html">
+              Rezervați o demonstrație
+            </a>
+            <div class="d-flex align-items-center flex-column">
+              <p class="header__text text-center mb-1">Sau explorați</p>
+              <a class="header__link pricing-href" href="pricing.html">Opțiuni de preț <i class="fa fa-angle-right pt-1" aria-hidden="true"></i></a>
             </div>
           </div>
+        
         </div>
       </div>
       <!-- First Section -->
       <div class="container-fluid section-medium pricing">
-        <p class="protect__subtext text-slate-gray fw-light">Partener de încredere al acestor mărci grozave din întreaga lume!</p>
+        <p class="protect__subtext text-slate-gray fw-light font-20">Partener de încredere al acestor mărci grozave din întreaga lume!</p>
         <!-- Slideshow Brands -->
         <!DOCTYPE html>
 <div class="tech-slideshow">
@@ -254,121 +260,194 @@
   </div>
 </div>
       </div>
-      <div class="software-escrow__bg-gray min-h-300">
-        <div class="container">
-          <p class="software-escrow__main-title pt-5">Simplificarea escrow software</p>
-          <p class="software-escrow__main-subtitle mx-auto mw-100 mt-4">Software-ul tradițional escrow poate fi prea complex, consumator de timp și costisitor.<br> Sună familiar?</p>
+      <div class="software-escrow__bg-gray min-h-600 pb-100">
+        <div class="container d-flex align-items-center flex-column">
+          <p class="software-escrow__main-title pt-5">Operațiunile dvs. de software sunt în pericol?</p>
+          <img class="image-style mw-420 mx-auto my-4" src="/images/landing/software-operations.webp" alt="Software Operations Illustration"/>
+          <p class="software-escrow__main-subtitle text-center mt-3 mb-2 font-30 line-height-38 mw-100">În fiecare an, <span class="fw-700">42% din toate companiile</span> suferă pierderi din cauza <span class="fw-700">amenințări digitale.</span></p>
+          <p class="software-escrow__main-subtitle text-center mt-1 text-italic font-30 line-height-38 pb-5">Au crezut și ei <span class="fw-700">că sunt în siguranță</span>.</p>
         </div>
       </div>
-      <div class="bg-white section-small">
+      <div class="bg-white section-medium pb-400">
         <div class="container">
           <div class="row mt-5">
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Totul este încă manual?</p>
-              <p class="software-escrow__subtitle"></p>
+              <p class="software-escrow__title mt-4">Date în pericol<span>:</span> Sunteți pregătit?</p>
+              <p class="software-escrow__subtitle">Nu lăsați timpul de nefuncționare să vă perturbe afacerea. Pierderile din cauza defecțiunilor sistemului costă companiile în medie de 5.600 USD pe minut. Acesta nu este doar un risc, este o realitate zilnică costisitoare.</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Depunerile manuale în escrow tradiționale pot consuma inutil timp pentru dezvoltatori.</p>
+                <p class="software-escrow__text">Perioada neanticipată a sistemului poate șterge datele critice în câteva secunde.</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Dezvoltatorii se confruntă adesea cu proceduri de depunere complexe și confuze.</p>
+                <p class="software-escrow__text">Recuperarea după pierderea datelor implică adesea procese complexe, consumatoare de timp.</p>
               </div>
-              <div class="d-flex mt-3">
+              <div class="d-flex mt-3 mb-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Complexitățile juridice de escrow tradițional pot duce la procese costisitoare conduse de avocați.</p>
+                <p class="software-escrow__text">recuperarea întârziată duce la nemulțumirea clienților, pierderi de venituri și datorii pentru compania dvs.</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/still-manual.webp" alt="Illustration depicting challenges faced in the manual software escrow process" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/data-at-risk.webp" alt="Illustration: Data At Risk - Ensure Business Continuity" loading="lazy"/>
             </div>
           </div>
           <div class="row column-reverse-mobile mt-5">
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/certain-path.webp" alt="Illustration representing a certain path in the reliable and fast software recovery process" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/cyber-attacks.webp" alt="Illustration: Cyberattacks - Defend Your Business in the Digital Battleground" loading="lazy"/>
             </div>
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Incertitudine cu privire la recuperarea fiabilă și rapidă?</p>
-              <p class="software-escrow__subtitle">Soluțiile vechi de escrow nu sunt pregătite pentru cerințele erei cloud SaaS în timp real.</p>
+              <p class="software-escrow__title mt-4">Atacuri cibernetice<span>:</span> Un câmp de luptă digital</p>
+              <p class="software-escrow__subtitle">Cu 43% din atacurile cibernetice care vizează afaceri ca a ta, amenințarea nu este doar probabilă; este iminentă.</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Cu escrow tradițional, dezvoltatorii pot ajunge cu versiuni de depozit învechite și incomplete</p>
+                <p class="software-escrow__text">Ransomware-ul vă poate bloca din propriile sisteme, oprindu-vă utilizatorii și riscând datele clienților.</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Escrow-ului tradițional îi lipsesc adesea informații cruciale de configurare a implementării.</p>
+                <p class="software-escrow__text">Incidentele de hacking pot duce la furtul codului proprietar și al informațiilor sensibile ale clienților.</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Fără o echipă dedicată, redistribuirea rapidă poate fi o provocare în scenariile tradiționale de escrow.</p>
+                <p class="software-escrow__text">Chiar și o singură încălcare poate compromite datele sensibile ale clientului și codul proprietar.</p>
               </div>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Riscuri inutile</p>
-              <p class="software-escrow__subtitle">A nu lua măsuri pentru a proteja continuitatea software-ului dvs. vine cu riscuri uriașe și oportunități pierdute.</p>
+              <p class="software-escrow__title mt-4">Conformitate și legal<span>:</span> Câmpuri minate de reglementare</p>
+              <p class="software-escrow__subtitle">Protejarea afacerii dvs. și a încrederii clienților. Cu costurile de neconformitate în medie de 14,8 milioane USD, mizele în acest peisaj de reglementare sunt incredibil de mari.</p>
               <div class="software-escrow__devider"></div>
               <div class="d-flex mt-4">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Oportunități pierdute<span>:</span> Companiile de întreprindere solicită escrow. Nu-ți limita potențialul.</p>
+                <p class="software-escrow__text">Nerespectarea reglementărilor privind protecția datelor poate duce la sancțiuni financiare severe și complicații legale.</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Capcane legale<span>:</span> Nerespectarea riscurilor de dispute legale. Protejează-ți afacerea cu escrow.</p>
+                <p class="software-escrow__text">Problemele de conformitate pot perturba relațiile cu clienții și termenele proiectului.</p>
               </div>
               <div class="d-flex mt-3">
                 <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Nemulțumirea clientului<span>:</span> Lipsa planului de recuperare crește rata de pierdere. Asigurați încrederea clienților cu escrow.</p>
-              </div>
-              <div class="d-flex mt-3">
-                <i class="fa fa-times text-light-red mr-3 mt-2"></i>
-                <p class="software-escrow__text">Erodarea valorii<span>:</span> Recuperarea lentă poate eroda valoarea. Protejați-vă bunurile cu escrow.</p>
+                <p class="software-escrow__text">Clienții tăi se bazează pe respectarea standardelor din industrie pentru a se asigura că proiectele lor sunt sigure și conforme din punct de vedere legal.</p>
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/risks.webp" alt="Illustration depicting risks associated with not having a software escrow protection" loading="lazy"/>
+              <img class="software-escrow__image" src="/images/landing/compliance-and-legal.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container py-5">
-        <div class="best-price__bg3 my-5">
-          <img class="best-price__shape-top-right" src="/images/landing/right-shape-gray.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy"/>
-          <img class="best-price__shape-bottom-left" src="/images/landing/left-shape-gray.webp" alt="Gray decorative shape positioned at the bottom left corner" loading="lazy"/>
-          <div class="row mt-5">
-            <div class="col-md-6 col-sm-12 content-center">
-              <img class="image-style mw-420 mb-4" src="/images/landing/experience.webp" alt="Illustration showcasing the CodeKeeper experience - reliable, efficient, and secure software protection solution" loading="lazy"/>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p class="best-price__title text-dark-cyan fw-light">Experimentează astăzi diferența Codekeeper.</p>
-              <p class="best-price__text mw-420 text-dark-cyan fw-light">Pierdeți dacă cheltuiți mult timp și bani pentru o soluție care dezamăgește echipa atunci când are cea mai mare nevoie.</p>
-              
-              <div class="d-flex flex-wrap mt-4">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                  Rezervați o demonstrație
-                </a>
-                <div>
-                  <p class="header__text">Sau explorați</p>
-                  <a class="header__link pricing-href" href="pricing.html">Opțiuni de preț <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      
+
+      <div class="bg-gradient-blue4 min-h-700">
+        <div class="container py-5">
+          <div class="best-price__bg3 mt-negative-250">
+            <img class="best-price__shape-top-right" src="/images/landing/right-shape-gray.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy"/>
+            <img class="best-price__shape-bottom-left" src="/images/landing/shape-large-bottom-left.webp" alt="Gray decorative shape positioned at the bottom left corner" loading="lazy"/>
+            <div class="row mt-5">
+              <div class="col-md-6 col-sm-12 content-center">
+                <img class="image-style mw-420 mb-4" src="/images/landing/disaster-risk-profile.webp" alt="Illustration: Free Risk Assessment Report - Understand Your Digital Disaster Risk Profile" loading="lazy"/>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <p class="best-price__title text-dark-cyan fw-light overflow-wrap-break-mobile">Vă întrebați despre profilul dvs. de risc de dezastru?</p>
+                <p class="best-price__text mw-420 text-dark-cyan fw-light">Utilizați raportul nostru gratuit de evaluare a riscurilor pentru a înțelege situația dvs. de risc digital.</p>
+                
+                <div class="d-flex flex-wrap flex-column mt-4">
+                  <a class="button btn-cerulean3 mr-4 mb-3" href="risk-assessment.html">
+                    Descărcați Raportul de evaluare a riscurilor
+                  </a>
+                  <div>
+                    <p class="header__text">Sau explorați</p>
+                    <a class="header__link pricing-href" href="pricing.html">Opțiuni de preț <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="container section-medium">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12">
+              <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38">La Codekeeper știm cât de critice sunt datele și sistemele software pentru afacerea dvs.</p>
+              <p class="best-price__text mw-520 text-dark-cyan fw-light mt-4 font-28 line-height-38">Înțelegem anxietatea și potențiala pierdere cu care vă confruntați atunci când vă gândiți la posibile dezastre.</p>
+              <p class="best-price__text mw-520 text-bondi-blue font-20 mt-4 fw-400">Echipa noastră de experți folosește tehnologie de ultimă oră pentru a se asigura că afacerea dvs. se va recupera sau nici măcar nu va observa când a avut loc o catastrofă digitală. </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/our-team.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
+            </div>
+          </div>
+          <div class="row column-reverse-mobile mt-5 pt-5">
+            <div class="col-md-6 col-sm-12">
+              <img class="software-escrow__image" src="/images/landing/our-location.webp" alt="Illustration: Navigating Compliance and Legal - Safeguarding Business in Regulatory Minefields" loading="lazy"/>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p class="best-price__text mw-520 text-dark-cyan fw-light font-28 line-height-38 mt-5">Cu peste un deceniu de experiență în recuperarea în caz de dezastru, Codekeeper a ajutat nenumărate companii să își protejeze cele mai valoroase active și operațiuni digitale.</p>
+              <p class="best-price__text mw-520 text-bondi-blue fw-400 text-italic font-28 line-height-38 mt-4">Activele tale de software esențiale pentru misiune nu ar trebui să fie niciodată în pericol. </p>
+            </div>
+          </div>
+          <div class="content-center flex-column pb-100">
+            <p class="best-price__title text-bondi-blue fw-light overflow-wrap-break-mobile mw-700 text-center mx-auto my-5 pt-5">Aceste companii și-au asigurat deja continuitatea software-ului. Vei începe azi?</p>
+            <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+          </div>
+          
+        </div>
       </div>
 
-      <div class="container">
-        <p class="people-choose__main-title pt-5">De ce lumea alege Codekeeper</p>
-        <p class="people-choose__main-subtitle mx-auto">O singură platformă centralizată pentru gestionarea întregului tău escrow atât pentru dezvoltatorii de software, cât și pentru clienți.</p>
+      <div class="resources bg-primary-default position-relative">
+        <img class="header__bg-bottom-left-small" src="/images/landing/roadmap-shape-small.webp" alt="Background Illustration of the bottom left section"/>
+        <img class="header__bg-bottom-right-large" src="/images/landing/roadmap-shape-large.webp" alt="Background Illustration of the bottom right section"/>
+        <div class="container section-large">
+          <p class="deposit-assets__subtitle text-white font-24">Planul dvs. de acțiune</p>
+          <p class="deposit-assets__title text-white mw-570">Foaia ta de parcurs pentru software-ul rezistent la dezastre cu Codekeeper:</p>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="d-flex align-items-start mt-3 position-relative">
+                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+                <div>
+                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2"></p>
+                  <p class="deposit-assets__text mw-520 font-24 fw-light text-white">Evaluați instantaneu peisajul dvs. de risc software cu instrumentul nostru gratuit și ușor de utilizat.</p>
+                </div>
+                <div class="deposit-assets__dotted-line3"></div>
+              </div>
+              <div class="d-flex align-items-start mt-3 position-relative">
+                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+                <div>
+                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2"></p>
+                  <p class="deposit-assets__text mw-520 font-24 fw-light text-white">Obțineți un plan de recuperare personalizat într-un apel rapid cu experții noștri.</p>
+                </div>
+                <div class="deposit-assets__dotted-line3"></div>
+              </div>
+              <div class="d-flex align-items-start mt-3">
+                <img class="mr-3" src="/images/landing/icons/step-circle-icon.svg" alt="Circle Icon" loading="lazy"/>
+                <div>
+                  <p class="deposit-assets__subtitle text-white font-24 fw-bold mb-2"></p>
+                  <p class="deposit-assets__text mb-5 mw-520 font-24 fw-light text-white">Invitați-vă echipa și furnizorii să profite de platforma noastră, activând protecția dvs. prin integrările noastre automate.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 software-escrow">
+              <img class="w-100 mw-520 mt-4" src="/images/landing/your-roadmap.webp" alt="Your Roadmap to Complete Code Safety With Codekeeper Illustration" loading="lazy"/>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
+            <a class="button btn-yellow mr-4 my-4 text-center z-index-1" href="risk-assessment.html">
+              Descărcați Raportul de evaluare a riscurilor
+            </a>
+            <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1">Suntem prin preajmă pentru a ajuta. <a class="text-white fw-bold text-underline book-a-demo-href" href="book-a-demo.html">Rezervați un apel</a> cu un consilier pentru a discuta situația dvs. specifică.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-100">
+        <p class="people-choose__main-title pt-5 overflow-wrap-break-mobile">Simplificarea recuperării în caz de dezastru</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2">O platformă centralizată pentru a gestiona toate cerințele dvs. de recuperare în caz de dezastru atât pentru companiile de software, cât și pentru clienții acestora.</p>
       </div>
       <div class="people-choose__bg">
         <div class="container">
           <div class="content-center mt-5">
-            <img class="people-choose__image mx-auto" src="/images/landing/choose-ck.webp" alt="Illustration representing people choosing CodeKeeper for their escrow management solutions" loading="lazy"/>
+            <img class="people-choose__image mx-auto" src="/images/landing/choose-ck.webp" alt="Illustration: Centralized Platform for Handling Disaster Recovery - Software Companies and Clients" loading="lazy"/>
           </div>
           <p class="people-choose__info mx-auto my-4">Aflați mai multe despre soluțiile pentru recuperare rapidă și continuitate deplină care se potrivesc cu ușurință fluxurilor și procedurilor existente.</p>
           <a class="button btn-cerulean2 solutions-href mx-auto" href="solutions.html">
@@ -377,75 +456,282 @@
         </div>
       </div>
 
-      <div class="pt-50 bg-light-gray">
-        
-        <div class="container section-small">
-          <div class="row column-reverse-mobile mt-5">
-            <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/designed-for.webp" alt="Illustration depicting multi-layer protection for successful software recovery and continuity provided by CodeKeeper" loading="lazy"/>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Proiectat pentru continuitatea software-ului</p>
-              <p class="software-escrow__subtitle">Protecție pe mai multe straturi, asigurându-vă că aveți tot ce aveți nevoie pentru o recuperare de succes și continuitate.</p>
-              <div class="software-escrow__devider"></div>
-              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Software escrow</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Escrow SaaS</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Escrow personalizat</p>
+      <div class="pt-50">
+        <div class="bg-gradient-cool-white position-relative">
+          <img class="header__bg-bottom-left-large" src="/images/landing/software-backup-shape-large.webp" alt="Background Illustration of the bottom left section"/>
+          <img class="header__bg-bottom-right-small" src="/images/landing/software-backup-shape-small.webp" alt="Background Illustration of the bottom right section"/>
+          <div class="container section-medium">
+            <div class="row column-reverse-mobile mt-5">
+              <div class="col-md-6 col-sm-12">
+                <img class="software-escrow__image" src="/images/landing/software-backup-illustration.webp" alt="Illustration: Secure Storage of Source Code - Heart of Your Organization" loading="lazy"/>
+              </div>
+              <div class="col-md-6 col-sm-12 pb-3">
+                <div class="d-flex align-items-center">
+                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/software-backup-shield.svg" alt="Software Backup Shield Icon" />
+                  <p class="software-escrow__title mb-2">Backup software</p>
+                </div>
+                <p class="software-escrow__subtitle">Stocați în siguranță codul sursă al aplicațiilor care sunt inima organizației dvs.</p>
+                <div class="software-escrow__devider"></div>
+                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Backup-uri complet automatizate ale codului sursă</p>
+                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Integrări cu toate platformele principale de dezvoltare software</p>
+                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>Arhive nelimitate</p>
+                <div class="solutions mt-4">
+                  <p class="select-level__price mr-4">din<br><span
+                      class="developer-yearly">$99</span>/luna</p>
+                </div>
+                <a class="header__link text-bondi-blue software-backup-href" href="software-backup.html">Aflați mai multe <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container section-small pt-50">
-          <div class="row mt-5">
-            <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Depozite automate</p>
-              <p class="software-escrow__subtitle">Se integrează direct cu fluxurile de lucru pentru dezvoltatori. Depozitele sunt criptate și complet automatizate.</p>
-              <div class="software-escrow__devider"></div>
-              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Versiunea recentă este întotdeauna depusă în 24 de ore</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Peste 50 de integrări disponibile</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Securitate de criptare AES256</p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/automated-deposits.webp" alt="Illustration representing automated deposits in software escrow process, integrating directly with developer workflows" loading="lazy"/>
+        <div class="bg-gradient-cool-mint position-relative">
+          <img class="header__bg-bottom-left-small" src="/images/landing/software-escrow-shape-small.webp" alt="Background Illustration of the bottom left section"/>
+          <img class="header__bg-bottom-right-large" src="/images/landing/software-escrow-shape-large.webp" alt="Background Illustration of the bottom right section"/>
+          <div class="container section-medium">
+            <div class="row mt-5">
+              <div class="col-md-6 col-sm-12 pb-3">
+                <div class="d-flex align-items-center">
+                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon" />
+                  <p class="software-escrow__title mb-2">Software escrow</p>
+                </div>
+                <p class="software-escrow__subtitle">Stocați în siguranță activele software, gata pentru recuperare rapidă atunci când lucrurile merg prost.</p>
+                <div class="software-escrow__devider"></div>
+                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Cea mai recentă versiune este întotdeauna depusă în 24 de ore</p>
+                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Acord de escrow software inclus, inclusiv revizuiri legale</p>
+                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Peste 50 de integrări disponibile</p>
+                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>Securitate de criptare AES256</p>
+
+                <div class="solutions mt-4">
+                  <p class="select-level__price mr-4">din<br><span
+                      class="developer-monthly">$109</span>/luna</p>
+                </div>
+                <a class="header__link text-bondi-blue software-escrow-href" href="software-escrow.html">Aflați mai multe <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img class="software-escrow__image" src="/images/landing/software-escrow-illustration.webp" alt="Illustration: Secure Storage of Software Assets for Quick Recovery" loading="lazy"/>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="container section-small pt-50">
-          <div class="row column-reverse-mobile mt-5">
-            <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/legal-framework.webp" alt="Illustration depicting the legal framework included in CodeKeeper's software escrow agreement" loading="lazy"/>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Un cadru legal solid inclus</p>
-              <p class="software-escrow__subtitle">Un acord de escrow solid din punct de vedere legal vine cu fiecare cont Codekeeper și îl personalizăm împreună pentru a se potrivi situației dvs. Nu este nevoie de avocat.</p>
-              <div class="software-escrow__devider"></div>
-              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Lucrări legale incluse</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Întoarcere rapidă</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Gata pentru tot felul de scenarii</p>
-            </div>
-          </div>
-        </div>
-        <div class="container section-small pt-50">
-          <div class="row mt-5">
-            <div class="col-md-6 col-sm-12">
-              <p class="software-escrow__title mt-4">Recuperare asigurată</p>
-              <p class="software-escrow__subtitle">Recuperare rapidă în cazul unui eveniment de lansare. Procedurile de lansare sunt procesate 24/7/365, iar dacă aveți nevoie de asistență expertă pentru redistribuire.</p>
-              <div class="software-escrow__devider"></div>
-              <p class="software-escrow__text mt-4"><i class="fa fa-check text-light-green mr-2"></i>Suport complet pentru recuperare</p>
-              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Garanții de plată</p>
-              <p class="software-escrow__text mb-4"><i class="fa fa-check text-light-green mr-2"></i>multe opțiuni de verificare disponibile</p>
-              <a class="header__link automated-verification-href" href="software-verification-report-automated.html">Mai multe despre soluțiile de verificare <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="software-escrow__image" src="/images/landing/assured-recovery.webp" alt="Illustration representing assured recovery procedures in CodeKeeper's software escrow process, including 24/7/365 release event processing and expert redeployment support" loading="lazy"/>
+        <div class="bg-gradient-cool-gray position-relative">
+          <img class="header__bg-bottom-left-large" src="/images/landing/saas-escrow-shape-large.webp" alt="Background Illustration of the bottom left section"/>
+          <img class="header__bg-bottom-right-small" src="/images/landing/saas-escrow-shape-small.webp" alt="Background Illustration of the bottom right section"/>
+          <div class="container section-medium">
+            <div class="row column-reverse-mobile mt-5">
+              <div class="col-md-6 col-sm-12">
+                <img class="software-escrow__image" src="/images/landing/saas-escrow-illustration.webp" alt="Illustration: Next Level Protection for Cloud-Native Applications" loading="lazy"/>
+              </div>
+              <div class="col-md-6 col-sm-12 pb-3">
+                <div class="d-flex align-items-center">
+                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" />
+                  <p class="software-escrow__title mb-2">Escrow SaaS</p>
+                </div>
+                <p class="software-escrow__subtitle">Nivelul următor de protecție pentru aplicațiile native din cloud. Asigurați-vă că sistemele dvs. rămân online atunci când se produce un dezastru.</p>
+                <div class="software-escrow__devider"></div>
+                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Menținem aplicațiile dvs. să ruleze pentru utilizatorii dvs</p>
+                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Acceptă orice mediu de găzduire</p>
+                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>Suport pentru servicii și dependențe terță parte</p>
+                <div class="solutions mt-4">
+                  <p class="select-level__price mr-4">din<br><span
+                      class="team-yearly">$249</span>/luna</p>
+                </div>
+                <a class="header__link text-bondi-blue saas-escrow-href" href="saas-escrow.html">Aflați mai multe <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="software-escrow__bg-gray3 mb-0"></div>
+        <div class="bg-gradient-cool-blue position-relative">
+          <img class="header__bg-bottom-left-small" src="/images/landing/data-custodian-shape-small.webp" alt="Background Illustration of the bottom left section"/>
+          <img class="header__bg-bottom-right-large" src="/images/landing/data-custodian-shape-large.webp" alt="Background Illustration of the bottom right section"/>
+          <div class="container section-medium">
+            <div class="row mt-5">
+              <div class="col-md-6 col-sm-12 pb-3">
+                <div class="d-flex align-items-center">
+                  <img class="mr-2 mb-1 mw-55" src="/images/landing/icons/data-custodian-shield.svg" alt="Data Custodian Shield Icon" />
+                  <p class="software-escrow__title mb-2">Software Custodian</p>
+                </div>
+                <p class="software-escrow__subtitle">Responsabilitățile tale pentru datele tale nu se încheie, chiar dacă compania ta dă faliment. Serviciul nostru acoperă întregul ciclu de viață al gestionării datelor dumneavoastră pentru conformitate și control complet.</p>
+                <div class="software-escrow__devider"></div>
+                <p class="software-escrow__text mt-3 text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Vă gestionăm datele atunci când nu puteți</p>
+                <p class="software-escrow__text text-dark-cyan"><i class="fa fa-check text-light-green mr-2"></i>Suport pentru toate platformele și serviciile primare</p>
+                <p class="software-escrow__text text-dark-cyan mb-4"><i class="fa fa-check text-light-green mr-2"></i>Conformitatea garantată și protecția activelor</p>
+
+                <a class="button btn-cerulean2 solutions-href mb-4" href="solutions.html">
+                  Obțineți o cotație
+                </a>
+                <a class="header__link text-bondi-blue data-custodian-href" href="data-custodian.html">Aflați mai multe <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img class="software-escrow__image" src="/images/landing/data-custodian-illustration.webp" alt="Illustration: Data Custodian for Full Compliance and Control" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="section-large software-escrow bg-paper-white pb-400">
+        <div class="container">
+          <p class="scenario__subtext mx-auto mt-2 font-24 fw-400 text-light-red">Riscul<span>:<span> Un dezastru digital ar putea însemna sfârșitul </p>
+          <p class="scenario__title mx-auto py-3 mw-1000">În lumea de astăzi, chiar și un singur dezastru digital poate duce la faliment</p>
+          <p class="scenario__subtext mx-auto mt-2 font-24 fw-light">Nu vă puteți permite să așteptați mai mult pentru a vă asigura că nu se întâmplă. </p>
+          <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 mb-sm-50">
+              <img class="mx-auto d-block my-2" src="/images/landing/icons/loss-of-revenue.svg"
+                alt="Loss of revenue Icon" loading="lazy" />
+              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Pierdere de venit</p>
+              <p class="scenario__text2 mx-auto">Fiecare minut de nefuncţionare consumă în medie 5.600 USD din rezervele dumneavoastră financiare.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-50">
+              <img class="mx-auto d-block my-2" src="/images/landing/icons/legal-repercussions.svg"
+                alt="Legal Repercussions Icon" loading="lazy" />
+              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Repercusiuni legale</p>
+              <p class="scenario__text2 mx-auto">Faceți față provocărilor legale și de reglementare fără soluții adecvate.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-50">
+              <img class="mx-auto d-block my-2" src="/images/landing/icons/compromised-data.svg"
+                alt="Compromised Data Integrity Icon" loading="lazy" />
+              <p class="scenario__subtitle mx-auto font-22 text-dark-cyan fw-600">Integritatea datelor compromisă</p>
+              <p class="scenario__text2 mx-auto">O încălcare poate păta iremediabil încrederea pe care ați creat-o cu clienții dvs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resources">
+        <div class="container mt-negative-250">
+          <div class="best-price__bg3 section-medium software-escrow mb-100">
+            <img class="best-price__shape-top-right2" src="/images/disaster-recovery/top-right-shape.webp" alt="Gray decorative shape positioned at the top right corner" loading="lazy">
+            <p class="risks__title font-35">Riscuri pe care le poți evita astăzi!</p>
+            <p class="risks__subtitle">Afacerile moderne se mișcă într-un ritm ridicat, iar sistemele dvs. software sunt de o importanță critică. Nu vă lăsați prinși de o catastrofă când este ușor să evitați aceste riscuri.</p>
+            <div class="row mt-5">
+              <div class="col-md-4 col-sm-12">
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/counter-party.svg"
+                    alt="Counter Party Icon" loading="lazy" />Risc de contrapartidă
+                </p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/bankruptcy.svg"
+                    alt="Bankruptcy Icon" loading="lazy" />Faliment</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/stolen-data.svg"
+                    alt="Stolen Data Icon" loading="lazy" />Date furate</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/law-suits.svg"
+                    alt="Lawsuits Icon" loading="lazy" />Procese</p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/unplanned-downtime.svg"
+                    alt="Uplanned Downtime Icon" loading="lazy" />Timp de întrerupere neplanificat</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/catastrophic-events.svg"
+                    alt="Catastrophic Events Icon" loading="lazy" />Evenimente catastrofale</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/backup-recovery.svg"
+                    alt="Backup Recovery Icon" loading="lazy" />Probleme de recuperare de rezervă</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/misrepresentation.svg"
+                    alt="Misrepresentation Icon" loading="lazy" />Denaturare</p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/hacking.svg" alt="Hacking Icon"
+                    loading="lazy" />Hacking</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/ransomware.svg"
+                    alt="Ransomware Icon" loading="lazy" />Ransomware</p>
+                <p class="risks__text"><img class="mr-3" src="/images/landing/icons/sabotage.svg"
+                    alt="Sabotage Icon" loading="lazy" />Sabotaj</p>
+                <p class="risks__text">Și multe altele</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="content-center">
+          <img class="pt-100" src="/images/landing/icons/ck-logo.svg" alt="Codekeeper Logo Icon" />
+        </div>
+        <p class="people-choose__main-title overflow-wrap-break-mobile text-bondi-blue pt-2">Software rezistent la dezastre</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">„Vizualizați un peisaj de afaceri fără amenințarea dezastrelor de date, întărit de soluțiile de reziliență Codekeeper.”</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow">
+              <div class="mentions__box-bg-green">
+                <p class="mentions__box-title mb-0">Pentru Companiile<br> de Software:</p>
+                <img class="mentions__box-image" src="/images/landing/companies-building.webp"
+                alt="Company Building Illustration" loading="lazy" />
+              </div>
+              <div class="mentions__box-content">
+                <div class="d-flex">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-bondi-blue mb-1">Asigurare Enterprise-Ready: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">Ridicați-vă infrastructura până la o rezistență la nivel de întreprindere.</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-bondi-blue mb-1">Client-First Security:  </p>
+                    <p class="mentions__box-subtext text-dark-cyan">Oferiți o securitate impenetrabilă, asigurându-vă că datele clientului rămân inviolabile.</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-bondi-blue mb-1">Alinierea reglementărilor:</p>
+                    <p class="mentions__box-subtext text-dark-cyan">Îndepliniți standardele din industrie cu încredere, evitând preocupările legate de conformitate.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow">
+              <div class="mentions__box-bg-blue">
+                <p class="mentions__box-title mb-0">Pentru Clienții<br> Software:</p>
+                <img class="mentions__box-image" src="/images/landing/clients-building.webp"
+                alt="Clients Building Illustration" loading="lazy" />
+              </div>
+              <div class="mentions__box-content">
+                <div class="d-flex">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">Excelență operațională garantată:</p>
+                    <p class="mentions__box-subtext text-dark-cyan">Atingeți și mențineți performanța operațională de vârf, indiferent de provocare.</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">Continuitatea afacerii:  </p>
+                    <p class="mentions__box-subtext text-dark-cyan">Protejați-vă operațiunile de afaceri, asigurând o experiență perfectă pentru clienți.</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">Postura pregătită pentru reglementare: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">Navigați în peisajul conformității cu ușurință și precizie.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="people-choose__bg pb-5 min-h-300">
+        <div class="container">
+          <p class="people-choose__info mx-auto mt-5 mw-770 text-bondi-blue text-italic font-28 pt-50 line-height-38">Împreună, redefinim siguranța digitală, dând putere afacerii dvs. să prospere într-un ecosistem digital imprevizibil.</p>
+        </div>
+      </div>
+
+      <div class="content-center flex-column section-large container">
+        <p class="people-choose__main-title overflow-wrap-break-mobile text-dark-cyan mw-800 mx-auto text-center pb-4 pt-0">Alăturați-vă acestor companii și protejați-vă compania astăzi</p>
+        <img class="image-style mt-4" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+        <a class="button btn-cerulean pricing-href mx-auto px-5 mt-5" href="pricing.html">
+          Începeți
+        </a>
+        <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Cel mai bun preț garantat</p>
+        <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Fără costuri ascunse</p>
+      </div>
+
+
       <div class="bg-primary-default section-medium position-relative pt-5">
-        <img class="mentions__top-left" src="/images/landing/logo-top-left.webp" alt="CodeKeeper logo in top left corner shapee" loading="lazy"/>
+        <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom left corner shapee" loading="lazy"/>
         <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom right corner shape" loading="lazy"/>
         <div class="container">
           <h2 class="mentions__title mt-5 text-white">Așa cum s-a văzut pe...</h2>
@@ -476,197 +762,46 @@
         </div>
       </div>
 
-      <div class="how__bg-light position-relative">
-        <img class="how__top-left" src="/images/landing/illustration-top.webp" alt="Illustration of the top section of the webpage" loading="lazy"/>
-        <img class="how__top-right" src="/images/landing/logo-top-right.webp" alt="Illustration in the top right corner of the webpage" loading="lazy"/>
-        <img class="how__bottom-left" src="/images/landing/logo-bottom-left.webp" alt="Illustration in the bottom left corner of the webpage" loading="lazy"/>
-        <img class="how__bottom-right" src="/images/landing/logo-bottom-right.webp" alt="Illustration in the bottom right corner of the webpage" loading="lazy"/>
 
-        <div class="container">
-          <p class="people-choose__main-title pt-50">Cum funcționează</p>
-          <p class="people-choose__main-subtitle mx-auto">Ghidul dvs. cuprinzător pas cu pas pentru a naviga și a utiliza serviciile de escrow cu încredere, securitate și ușurință.</p>
-          <p class="header__subtext mt-2 text-center">Acceptăm toate platformele populare pentru dezvoltatori. Peste 50 de integrări disponibile. </p>
-          <!-- Developer Platforms -->
-          <!DOCTYPE html>
-<div class="resources">
-  <div class="applications__logos mt-4 justify-content-center">
-    
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg" alt="Github Logo"/>
-      <p class="applications__logo-text">GitHub</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo"/>
-      <p class="applications__logo-text">Bitbucket</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo"/>
-      <p class="applications__logo-text">GitLab</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-2" src="/images/homepage/logos/git-large.svg" alt="Git Logo"/>
-      <p class="applications__logo-text">Git</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg" alt="Google Cloud Logo"/>
-      <p class="applications__logo-text">Google<br> Cloud</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg" alt="Microsoft Azure Logo"/>
-      <p class="applications__logo-text">Microsoft Azure</p>
-    </div>
-    <div class="applications__logo mx-0">
-      <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg" alt="Amazon Web Services Logo"/>
-      <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
-    </div>
-  </div>
-</div>
-          <div class="how__field-devider"></div>
-
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">Selectați nivelul dvs. de protecție</p>
-                  <p class="how-works__subtext2 font-18">Alegeți din gama noastră de soluții software de ultimă oră și SaaS Escrow, adaptate pentru a se potrivi nevoilor dumneavoastră și nivelului de reducere a riscurilor.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 pr-5">
-              <img class="works__image2 mt-5 ml-negative-80" src="/images/landing/select-your-level.webp" alt="Illustration guiding users to select their level" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config2">
-                <img class="works__image2 ml-negative-80" src="/images/landing/solid-legal.webp" alt="Illustration representing solid legal framework" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config3 mobile-centered">
-                <div class="works__number-bg-step2">
-                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">Cadru legal solid</p>
-                  <p class="how-works__subtext2 font-18">Beneficiați de cadrul nostru legal solid, adaptat nevoilor dumneavoastră specifice. Evitați taxele legale inutile cu acordurile noastre de escrow personalizabile pe care le vom pregăti pentru dvs.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config4 mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">Depozite automate și Gestionare ușoară</p>
-                  <p class="how-works__subtext2 font-18">Integrați direct fluxurile de lucru pentru dezvoltatori pentru depuneri automate. Gestionați toate nevoile dvs. de escrow din tabloul de bord centralizat, asigurându-vă că activele dvs. sunt întotdeauna actualizate și securizate.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="works__image2 ml-negative-80 mt-80" src="/images/landing/automated-deposits-easy.webp" alt="Illustration representing easy automated deposits" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config7">
-                <img class="works__image2 ml-negative-80" src="/images/landing/verification-service.webp" alt="Illustration representing verification services" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config3 mobile-centered">
-                <div class="works__number-bg-step2">
-                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">Serviciu de verificare</p>
-                  <p class="how-works__subtext2 font-18">Optați pentru serviciile noastre de verificare pentru a vă asigura că aveți tot ce aveți nevoie pentru a redistribui aplicațiile dvs. de afaceri și alte active esențiale.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config6 mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step-white min-width-100"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">Recuperare rapidă și continuitate</p>
-                  <p class="how-works__subtext2 font-18">În cazul unei lansări, profitați de serviciile noastre de recuperare rapidă 24/7/365 și de asistența expertă pentru redistribuire. Pentru escrow SaaS, bucurați-vă de timp de nefuncționare zero, deoarece aplicațiile care rulează sunt securizate în escrow.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="works__image2 mt-80" src="/images/landing/quick-recovery.webp" alt="Illustration representing quick recovery process" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config8 border-right-none">
-                <img class="works__image2 ml-negative-80" src="/images/landing/ready-for-growth.webp" alt="Illustration indicating readiness for business growth" loading="lazy"/>
-                <div class="works__border-small"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__content mobile-centered border-none">
-                <div class="works__number-bg-step3">
-                  <div class="works__step-white"><img class="" src="/images/landing/check-icon.webp" alt="Checkmark icon representing success or completion" loading="lazy"/></div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">Gata de creștere</p>
-                  <p class="how-works__subtext2 font-18">Pe măsură ce nevoile dvs. se schimbă, planurile noastre flexibile vă permit să creșteți sau să reduceți cu ușurință. De la dezvoltatori la întreprinderi, vă oferim peste 50 de integrări disponibile pentru a susține majoritatea mediilor disponibile comercial.</p>
-                </div>
-              </div>
-            </div>
+      <div class="position-relative">
+        <img class="mentions__top-right-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top right corner" loading="lazy"/>
+        <img class="mentions__top-left-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top left corner" loading="lazy"/>
+        <div class="container resources ">
+          <p class="people-choose__main-title text-dark-cyan fw-light pt-100 overflow-wrap-break-mobile">Planificarea recuperării în caz de dezastru</p>
+          <p class="people-choose__main-subtitle2 mx-auto mt-4">Utilizați instrumentul nostru gratuit de planificare a recuperării în caz de dezastru pentru a vă monitoriza activele, pentru a identifica riscurile și pentru a structura măsurile de atenuare. Toate dintr-un singur tablou de bord.</p>
+          <div class="content-center mt-4">
+            <img class="software-escrow__image mw-530" src="/images/landing/disaster-recovery-planning.webp" alt="Illustration: Disaster Recovery Planning for Guaranteed Continuity" loading="lazy"/>
           </div>
         </div>
-      </div>
-
-      <div class="container mb-100">
-        <div class="best-price__bg py-2">
-          <img class="best-price__small-shape" src="/images/landing/small-shape.webp" alt="Small decorative shape" loading="lazy"/>
-          <img class="best-price__medium-shape" src="/images/landing/medium-shape.webp" alt="Medium decorative shape" loading="lazy"/>
-          <img class="best-price__large-shape" src="/images/landing/large-shape.webp" alt="Large decorative shape" loading="lazy"/>
-          <div class="row mt-5">
-            <div class="col-md-5 col-sm-12 content-center">
-              <img class="best-price__image mb-3" src="/images/landing/best-price.webp" alt="Affordable, transparent pricing with guaranteed savings" loading="lazy"/>
+        
+        <div class="container pt-50">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
             </div>
             <div class="col-md-7 col-sm-12">
-              <p class="best-price__title fw-light mt-4">Cea mai bună valoare de pe piață<span>:</span><br> Cu o garanție de preț!</p>
-              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Prețuri clare și simple</p>
-              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Fără costuri pe depozit</p>
-              <p class="best-price__subtext"><i class="fa fa-check text-light-green mr-2"></i>Economisiți până la 80% per escrow!</p>
-              <a class="button btn-yellow pricing-href my-4" href="pricing.html">
-                Explorați prețurile noastre
-              </a>
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">Setul de instrumente pentru planificarea recuperării în caz de dezastru</p>
+              <p class="software-escrow__subtitle">Înregistrați-vă gratuit și începeți să vă planificați abordarea astăzi.</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>Lista cu active de informații</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Sisteme de management al datelor interne și externe</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Registrul de risc (utilizați pentru ISO27001/SOC2)</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Metode de atenuare a riscurilor</p>
+              <div class="d-flex flex-wrap mt-4">
+                <a class="button btn-cerulean3 mr-4 mb-3" href="disaster-recovery-planner.html">
+                  Începeți planificarea recuperării în caz de dezastru
+                </a>
+                <div>
+                  <p class="header__text">Sau explorați</p>
+                  <a class="header__link pricing-href" href="pricing.html">Opțiuni de preț <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="resources">
-        <div class="container my-4 pt-4">
-          <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
-        </div>
-      
-        <div class="container content-center">
-          <p class="people-choose__main-title mw-850 text-bondi-blue fw-light pt-100">Gata pentru clienții companiei? <br>Oferiți continuitate software garantată clienților dvs. astăzi</p>
-        </div>
-        <div class="people-choose__bg border-radius-0">
-          <div class="container">
-            <p class="people-choose__main-subtitle2 mx-auto mt-4"></p>
-            <a class="button btn-cerulean2 book-a-demo-href mx-auto px-5 mt-5" href="book-a-demo.html">
-              Rezervați o demonstrație
-            </a>
-            <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Cel mai bun preț garantat</p>
-            <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>Fără costuri ascunse</p>
+        <div class="people-choose__bg border-radius-0 min-h-300">
+          <div class="container section-medium mt-5">
+            <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
           </div>
         </div>
       </div>
@@ -708,8 +843,11 @@
           </div>
           <div class="col-md-3 col-sm-12 d-flex flex-column">
             <p class="footer__text mt-2 mb-0 fw-bold text-transform-none">Soluțiile noastre</p>
+            <a class="footer__subtext mt-2 disaster-recovery-planner-href" href="disaster-recovery-planner.html">Planificator de recuperare în caz de dezastru</a>
+            <a class="footer__subtext mt-2 software-backup-href" href="software-backup.html">Backup software</a>
             <a class="footer__subtext mt-2 software-escrow-href" href="software-escrow.html">Software escrow</a>
             <a class="footer__subtext mt-2 saas-escrow-href" href="saas-escrow.html">SaaS Escrow</a>
+            <a class="footer__subtext mt-2 software-custodian-href" href="software-custodian.html">Software Custodian</a>
 
             <p class="footer__text mt-4 mb-0 fw-bold">RESURSE</p>
             <a class="footer__subtext mt-2 escrow-agreement-href" href="escrow-agreement.html">Acorduri de escrow</a>
@@ -733,7 +871,7 @@
             <a class="footer__subtext mt-2 book-a-demo-href" href="book-a-demo.html">Rezervați o demonstrație</a>
             <a class="footer__subtext mt-2 how-it-works-href" href="how-it-works.html">Cum funcționează</a>
             <a class="footer__subtext mt-2 security-href" href="security.html">Securitate</a>
-            <p class="footer__text mt-4 mb-0 fw-bold">Extensii</p>
+            <p class="footer__text mt-4 mb-0 fw-bold text-transform-none">Extensii</p>
             <a class="footer__subtext mt-2 automated-verification-href" href="software-verification-report-automated.html">Verificare automată</a>
             <a class="footer__subtext mt-2 manual-verification-href" href="software-verification-report-manual.html">Verificare manuală</a>
           </div>
@@ -992,6 +1130,9 @@ document.addEventListener("click", closeAllSelect);
       $('.code-of-conduct-href').attr('href', 'código-de-conducta.html')
       $('.verification-href').attr('href', 'verificación.html')
       $('.video-guides-href').attr('href', 'guías-en-vídeo.html')
+      $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+      $('.software-backup-href').attr('href', 'software-backup.html')
+      $('.software-custodian-href').attr('href', 'software-custodian.html')
     }
 
     if (window.location.pathname.includes('/de/')) {
@@ -1053,6 +1194,9 @@ document.addEventListener("click", closeAllSelect);
       $('.code-of-conduct-href').attr('href', 'verhaltenskodex.html')
       $('.verification-href').attr('href', 'verifizierung.html')
       $('.video-guides-href').attr('href', 'video-leitfäden.html')
+      $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+      $('.software-backup-href').attr('href', 'software-backup.html')
+      $('.software-custodian-href').attr('href', 'software-custodian.html')
     }
 
     if (window.location.pathname.includes('/nl/')) {
@@ -1114,6 +1258,9 @@ document.addEventListener("click", closeAllSelect);
       $('.code-of-conduct-href').attr('href', 'gedragscode.html')
       $('.verification-href').attr('href', 'verificatie.html')
       $('.video-guides-href').attr('href', 'video-guides.html')
+      $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+      $('.software-backup-href').attr('href', 'software-backup.html')
+      $('.software-custodian-href').attr('href', 'software-custodian.html')
     }
 
     if (window.location.pathname.includes('/ro/')) {
@@ -1174,6 +1321,9 @@ document.addEventListener("click", closeAllSelect);
       $('.code-of-conduct-href').attr('href', 'codul-de-conduită.html')
       $('.verification-href').attr('href', 'verificare.html')
       $('.video-guides-href').attr('href', 'ghiduri-video.html')
+      $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+      $('.software-backup-href').attr('href', 'software-backup.html')
+      $('.software-custodian-href').attr('href', 'software-custodian.html')
       }
 
       if (window.location.pathname.includes('/fr/')) {
@@ -1234,6 +1384,9 @@ document.addEventListener("click", closeAllSelect);
         $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
         $('.verification-href').attr('href', 'verification.html')
         $('.video-guides-href').attr('href', 'guides-vidéo.html')
+        $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+        $('.software-backup-href').attr('href', 'software-backup.html')
+        $('.software-custodian-href').attr('href', 'software-custodian.html')
         }
   })
 </script>
@@ -1942,6 +2095,22 @@ document.addEventListener("click", closeAllSelect);
     document.getElementsByTagName('meta')["description"].content = "Codekeeper provides state-of-the-art software escrow solutions, to eliminate third-party risk from your business operations.";
   }
 </script>
+
+  <script src="/js/geolocationPricing.js"></script>
+
+  <script>
+    // Check if the page has not been reloaded
+    if (!localStorage.getItem('pageReloaded')) {
+      var yamlData = {"setup_fee":{"USD":"$249","EUR":"€199","GBP":"£199","INR":"₹16,000","AUD":"A$299","SGD":"$299","ZAR":"R3,499","CHF":"CHF249","CAD":"CAD299"},"amazon_deposit":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"saas_verification":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"developer_monthly":{"USD":"$109","EUR":"€109","GBP":"£89","INR":"₹7,695","AUD":"A$129","SGD":"$129","ZAR":"R1,395","CHF":"CHF99","CAD":"CAD129"},"team_monthly":{"USD":"$275","EUR":"€275","GBP":"£219","INR":"₹19,795","AUD":"A$329","SGD":"$329","ZAR":"R3,495","CHF":"CHF249","CAD":"CAD329"},"business_monthly":{"USD":"$499","EUR":"€499","GBP":"£385","INR":"₹36,295","AUD":"A$659","SGD":"$659","ZAR":"R5,995","CHF":"CHF439","CAD":"CAD549"},"enterprise_monthly":{"USD":"$1,649","USD_FRENCH":"$1649","EUR":"€1,649","EUR_FRENCH":"€1649","GBP":"£1,209","INR":"₹120,995","AUD":"A$2,089","SGD":"$2,089","ZAR":"R21,995","CHF":"CHF1,485","CAD":"CAD2,029"},"developer_yearly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"team_yearly":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹17,995","AUD":"A$299","SGD":"$299","ZAR":"R3,145","CHF":"CHF225","CAD":"CAD299"},"business_yearly":{"USD":"$449","EUR":"€449","GBP":"£349","INR":"₹32,995","AUD":"A$599","SGD":"$599","ZAR":"R5,490","CHF":"CHF399","CAD":"CAD499"},"enterprise_yearly":{"USD":"$1,499","USD_FRENCH":"$1499","EUR":"€1,499","EUR_FRENCH":"€1499","GBP":"£1,099","INR":"₹109,995","AUD":"A$1,899","SGD":"$1,899","ZAR":"R19,995","CHF":"CHF1,349","CAD":"CAD1,849"},"increased_repository":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"activity_verification":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"increased_storage":{"USD":"$5","EUR":"€5","GBP":"£4","INR":"₹375","AUD":"A$7","SGD":"$7","ZAR":"R70","CHF":"CHF5","CAD":"CAD7"},"storage_selection":{"USD":"$9","EUR":"€9","GBP":"£7","INR":"₹670","AUD":"A$12","SGD":"$12","ZAR":"R130","CHF":"CHF8","CAD":"CAD12"},"deposit_connections":{"USD":"$99","EUR":"€99","GBP":"£70","INR":"₹7,380","AUD":"A$130","SGD":"$130","ZAR":"R1,410","CHF":"CHF99","CAD":"CAD130"},"release_processing":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD249"},"saas_continuity":{"USD":"$299","EUR":"€299","GBP":"£225","INR":"₹19,995","AUD":"A$349","SGD":"$399","ZAR":"R3,999","CHF":"CHF329","CAD":"CAD349"},"verification_advanced":{"USD":"$2,495","EUR":"€2,495","EUR_FRENCH":"€2495","GBP":"£1,799","INR":"₹179,995","AUD":"A$2,995","SGD":"$3,199","ZAR":"R34,999","CHF":"CHF2,749","CAD":"CAD2,995"},"verification_complete":{"USD":"$3,995","EUR":"€3,995","EUR_FRENCH":"€3995","GBP":"£2,995","INR":"₹249,995","AUD":"A$4,995","SGD":"$4,999","ZAR":"R54,999","CHF":"CHF4,399","CAD":"CAD4,995"},"developer_monthly_saas":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹7,999","AUD":"A$139","SGD":"$129","ZAR":"R1,699","CHF":"CHF89","CAD":"CAD139"},"team_monthly_saas":{"USD":"$149","EUR":"€149","GBP":"£119","INR":"₹11,999","AUD":"A$209","SGD":"$199","ZAR":"R2,499","CHF":"CHF139","CAD":"CAD199"},"business_monthly_saas":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹19,999","AUD":"A$359","SGD":"$329","ZAR":"R4,299","CHF":"CHF229","CAD":"CAD329"},"enterprise_monthly_saas":{"USD":"$499","EUR":"€499","GBP":"£399","INR":"₹39,999","AUD":"A$719","SGD":"$529","ZAR":"R8,499","CHF":"CHF459","CAD":"CAD669"},"developer_monthly_saas2":{"USD":"$208","EUR":"€208","GBP":"£168","INR":"₹15,694","AUD":"A$268","SGD":"$258","ZAR":"R3,094","CHF":"CHF188","CAD":"CAD278"},"team_monthly_saas2":{"USD":"$424","EUR":"€424","GBP":"£338","INR":"₹31,794","AUD":"A$538","SGD":"$528","ZAR":"R5,994","CHF":"CHF388","CAD":"CAD548"},"business_monthly_saas2":{"USD":"$748","EUR":"€748","GBP":"£584","INR":"₹56,294","AUD":"A$1,018","SGD":"$988","ZAR":"R10,294","CHF":"CHF668","CAD":"CAD878"},"enterprise_monthly_saas2":{"USD":"$2,148","EUR":"€2,148","EUR_FRENCH":"€2148","GBP":"£1,608","INR":"₹160,994","AUD":"A$2,808","SGD":"$2,618","ZAR":"R30,494","CHF":"CHF1,944","CAD":"CAD2,698","CAD_FRENCH":"CAD2698"},"developer_yearly_saas2":{"USD":"$198","EUR":"€198","GBP":"£158","INR":"₹14,994","AUD":"A$258","SGD":"$248","ZAR":"R2,949","CHF":"CHF178","CAD":"CAD258"},"team_yearly_saas2":{"USD":"$398","EUR":"€398","GBP":"£318","INR":"₹29,994","AUD":"A$508","SGD":"$498","ZAR":"R5,644","CHF":"CHF364","CAD":"CAD498"},"business_yearly_saas2":{"USD":"$698","EUR":"€698","GBP":"£548","INR":"₹52,994","AUD":"A$958","SGD":"$928","ZAR":"R9,789","CHF":"CHF628","CAD":"CAD828"},"enterprise_yearly_saas2":{"USD":"$1,998","EUR":"€1,998","EUR_FRENCH":"€1998","GBP":"£1,498","INR":"₹149,994","AUD":"A$2,618","SGD":"$2,428","ZAR":"R28,494","CHF":"CHF1,808","CAD":"CAD2,518","CAD_FRENCH":"CAD2518"},"software_escrow_monthly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"saas_escrow_monthly":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD299"}};
+    localStorage.setItem('prices', JSON.stringify(yamlData));
+
+    // Set a flag in localStorage to indicate that the page has been reloaded
+    localStorage.setItem('pageReloaded', 'true');
+
+    // Reload the page
+    window.location.reload();
+    } 
+  </script>
 
 </body>
 </html>
