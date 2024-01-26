@@ -9176,6 +9176,15 @@ html {
   }
 }
 
+.plan-box-padding {
+  padding: 35px;
+}
+@media (max-width: 767px) {
+  .plan-box-padding {
+    padding: 25px;
+  }
+}
+
 .text-white {
   color: #ffffff;
 }
@@ -9493,6 +9502,11 @@ html {
   background: linear-gradient(180deg, #FFFFFF 25.99%, #F9FCFF 100%);
 }
 
+.bg-gradient-gray4 {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-12.63%, #FFF), color-stop(124.57%, #F6FDFE));
+  background: linear-gradient(0deg, #FFF -12.63%, #F6FDFE 124.57%);
+}
+
 .bg-gradient-cerulean {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(37.58%, #009CB7), color-stop(113.43%, #0288A2));
   background: linear-gradient(180deg, #009CB7 37.58%, #0288A2 113.43%);
@@ -9560,6 +9574,16 @@ html {
 .bg-gradient-cool-blue {
   background: -webkit-gradient(linear, left top, right top, from(#DEF0FF), to(#B6D9FA));
   background: linear-gradient(90deg, #DEF0FF 0%, #B6D9FA 100%);
+}
+
+.bg-gradient-faded-blue {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7EC9D6), to(#44B1C4));
+  background: linear-gradient(180deg, #7EC9D6 0%, #44B1C4 100%);
+}
+
+.bg-gradient-faded-blue2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2CB3CA), to(#0B95AD));
+  background: linear-gradient(180deg, #2CB3CA 0%, #0B95AD 100%);
 }
 
 .bg-azure-blue {
@@ -9686,6 +9710,25 @@ html {
 
 .bg-continuity {
   background-color: #F3FAFF;
+}
+
+.solutions-shadow-top {
+  -webkit-box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
+          box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.solutions-shadow-bottom {
+  -webkit-box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
+          box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.solutions-shadow-side {
+  -webkit-box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
+          box-shadow: 1px 2px 9.7px 0px rgba(0, 90, 109, 0.25);
 }
 
 .questions-text {
@@ -9890,6 +9933,24 @@ html {
   text-decoration: underline !important;
 }
 
+.border-top-right {
+  border-top: 0.5px solid #6A8493;
+  border-right: 0.5px solid #6A8493;
+}
+@media (max-width: 767px) {
+  .border-top-right {
+    border-right: none;
+  }
+}
+
+.border-top-gray {
+  border-top: 0.5px solid #6A8493;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .btn-disabled {
   pointer-events: none;
   opacity: 0.3;
@@ -10035,6 +10096,10 @@ html {
   min-width: 100px !important;
 }
 
+.min-width-70 {
+  min-width: 70px !important;
+}
+
 .min-h-300 {
   min-height: 300px !important;
 }
@@ -10130,6 +10195,14 @@ html {
   border-radius: 0px;
   margin-top: 20px;
   overflow-x: scroll;
+}
+
+.backup-box-shadow {
+  border-radius: 10px;
+  border: 1px solid #C0CFE9;
+  -webkit-box-shadow: 0px 7px 20px 0px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px 0px rgba(0, 54, 134, 0.05);
+  overflow: hidden;
 }
 
 .container-box-shadow {
@@ -10243,6 +10316,10 @@ html {
   font-size: 35px !important;
 }
 
+.font-12 {
+  font-size: 12px !important;
+}
+
 .font-14 {
   font-size: 14px !important;
 }
@@ -10276,6 +10353,11 @@ html {
   width: 53px;
   height: 1px;
   background: #6782A3;
+}
+
+.backup-devider {
+  border: 1px dashed #6A8493;
+  width: 100%;
 }
 
 .mt-negative-50 {
@@ -10440,6 +10522,10 @@ html {
 
 .line-height-24 {
   line-height: 24px !important;
+}
+
+.line-height-28 {
+  line-height: 28px !important;
 }
 
 .line-height-14 {
@@ -23734,6 +23820,22 @@ input[name=consent] {
   font-size: 24px;
   line-height: 32px;
   color: #1A5261;
+}
+.software-escrow .datacenters__title-add {
+  background: #DDEAFC;
+  -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  width: 81px;
+  padding: 8px 14px;
+  color: #245CB0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 20px;
+  font-family: "Mulish", sans-serif;
+  white-space: nowrap;
+  height: 32px;
 }
 .software-escrow .datacenters__subtitle {
   font-family: "Mulish";
