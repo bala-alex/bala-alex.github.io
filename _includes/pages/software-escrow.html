@@ -106,9 +106,9 @@
           <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
             <a class="nav-link" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
               aria-controls="pills-intro" aria-selected="false">Introduction</a>
-            <a class="nav-link active space-no-wrap" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+            <a class="nav-link" id="pills-features-tab" data-toggle="pill" href="#pills-features"
               role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
-            <a class="nav-link" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+            <a class="nav-link active space-no-wrap" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
               aria-controls="pills-pricing" aria-selected="true">Pricing</a>
 
           </div>
@@ -883,7 +883,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show active" id="pills-features" role="tabpanel"
+            <div class="tab-pane fade" id="pills-features" role="tabpanel"
               aria-labelledby="pills-features-tab">
               <!-- <div class="container contact pb-100">
                 <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -1367,7 +1367,7 @@
               {% include demo-recovery.html %}
 
             </div>
-            <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
+            <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-350">
                 {% include pricing-tabs-assets.html %}
@@ -1626,7 +1626,7 @@
     window.location.reload();
     } 
   </script>
-  <script>
+  <!-- <script>
     document.getElementById('toggleSwitch').addEventListener('change', function () {
       var div1 = document.getElementById('div1');
       var div2 = document.getElementById('div2');
@@ -1704,7 +1704,7 @@
         div12.classList.add('d-none');
       }
     });
-  </script>
+  </script> -->
   <script>
     var totalSum = 0;
     var checkoutText = [];
@@ -1804,10 +1804,21 @@
       }
 
 
-      
+
     }
 
 
 
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let cbInstance = Chargebee.getInstance();
+      let cart = cbInstance.getCart();
+      let product = cbInstance.initializeProduct("Software-Escrow-Single-USD-Monthly", 1);
+      cart.replaceProduct(product);
+      document.getElementById("checkout-snippet").addEventListener("click", function () {
+        cart.proceedToCheckout();
+      });
+    });
   </script>
 </body>

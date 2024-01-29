@@ -1176,10 +1176,16 @@
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             <div class="row my-4">
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">Single Beneficiary</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (Single)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan for a single client or vendor. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1188,12 +1194,12 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
-                  <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
+                  <!-- <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
                       loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-                      loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+                      loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p> -->
 
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
@@ -1204,70 +1210,45 @@
                       <span class="slider round"></span>
                     </label>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports.</p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div1">
-                      <p class="plan__fee-amount mb-0 developer-yearly fw-bold font-24">$99</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <button class="button btn-bondi-blue4"
-                          onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Monthly')"
-                          data-price="$99">Select Plan</button>
-                      </div>
-                    </div>
-                    <div id="div2" class="d-none">
-                      <p class="plan__fee-amount mb-0 developer-monthly fw-bold font-24">$109</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
 
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Monthly')"
+                        data-price="$89">Select Plan</button>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">Multi Beneficiary</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (Multi)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan for up to 5 clients or vendors. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1276,79 +1257,56 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
                     <img class="mr-0" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
                     <p class="plan__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2 ml-1">Get certified</p>
                     <label class="switch mt-2 ml-auto mr-2">
-                      <input type="checkbox" id="toggleSwitch2">
+                      <input type="checkbox" id="toggleSwitch">
                       <span class="slider round"></span>
                     </label>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports.</p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div3">
-                      <p class="plan__fee-amount mb-0 business-yearly fw-bold font-24">$449</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <button class="button btn-bondi-blue4"
-                          onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'))"
-                          data-price="$449">Select Plan</button>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
-                    <div id="div4" class="d-none">
-                      <p class="plan__fee-amount mb-0 business-monthly fw-bold font-24">$499</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                      </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Monthly')"
+                        data-price="$89">Select Plan</button>
                     </div>
+                    
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">All Risks</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (All)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to securely store the software assets for all your clients or vendors. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1357,82 +1315,61 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
                     <img class="mr-0" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
                     <p class="plan__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2 ml-1">Get certified</p>
                     <label class="switch mt-2 ml-auto mr-2">
-                      <input type="checkbox" id="toggleSwitch3">
+                      <input type="checkbox" id="toggleSwitch">
                       <span class="slider round"></span>
                     </label>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports. </p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div5">
-                      <p class="plan__fee-amount mb-0 enterprise-yearly fw-bold font-24">$1,499</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <button class="button btn-bondi-blue4"
-                          onclick="selectPlan(this, 'all', this.getAttribute('data-price'))"
-                          data-price="$1,499">Select Plan</button>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
-                    <div id="div6" class="d-none">
-                      <p class="plan__fee-amount mb-0 enterprise-monthly fw-bold font-24">$1,649</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                      </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Monthly')"
+                        data-price="$89">Select Plan</button>
                     </div>
+                    
                   </div>
                 </div>
+
+
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="row my-4">
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">Single Beneficiary</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (Single)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan for a single client or vendor. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1441,122 +1378,61 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+                  <!-- <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
+                      src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+                  <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
+                      src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                      loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p> -->
+
                   <div class="plan__devider mx-auto my-3"></div>
-                  <div class="d-flex plan__switch">
-                    <label class="switch mt-1">
-                      <input type="checkbox" id="toggleSwitch4">
+                  <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
+                    <img class="mr-0" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
+                    <p class="plan__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2 ml-1">Get certified</p>
+                    <label class="switch mt-2 ml-auto mr-2">
+                      <input type="checkbox" id="toggleSwitch">
                       <span class="slider round"></span>
                     </label>
-                    <p class="plan__subtitle text-dark-cyan font-18 fw-400">Get certified</p>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports. </p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div7">
-                      <p class="plan__fee-amount mb-0 developer-yearly fw-bold font-24">$99</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" data-cb-addons_id_0="saas-escrow-developer-plan"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-item-0="SaaS-Escrow-Multi-EUR-Yearly" data-cb-item-1="Certified-Add-On-EUR-Monthly"
-                          data-cb-item-2="Advanced-SaaS-Integrations-Add-On-EUR-Monthly"
-                          data-cb-item-3="Advanced-Deposits-Add-On-EUR-Monthly"
-                          data-cb-item-4="Coverage-Length-SLA-Add-On-EUR-Monthly"
-                          data-cb-item-5="Compliance-Support-SLA-Add-On-EUR-Monthly" href="javascript:void(0)">
-                          Check me out
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
-                    <div id="div8" class="d-none">
-                      <p class="plan__fee-amount mb-0 developer-monthly fw-bold font-24">$109</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                      </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Yearly')"
+                        data-price="$89">Select Plan</button>
                     </div>
+                    
                   </div>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">Multi Beneficiary</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (Multi)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan for up to 5 clients or vendors. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1565,120 +1441,56 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+
                   <div class="plan__devider mx-auto my-3"></div>
-                  <div class="d-flex plan__switch">
-                    <label class="switch mt-1">
-                      <input type="checkbox" id="toggleSwitch5">
+                  <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
+                    <img class="mr-0" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
+                    <p class="plan__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2 ml-1">Get certified</p>
+                    <label class="switch mt-2 ml-auto mr-2">
+                      <input type="checkbox" id="toggleSwitch">
                       <span class="slider round"></span>
                     </label>
-                    <p class="plan__subtitle text-dark-cyan font-18 fw-400">Get certified</p>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports.</p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div9">
-                      <p class="plan__fee-amount mb-0 business-yearly fw-bold font-24">$449</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" data-cb-addons_id_0="saas-escrow-developer-plan"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" data-cb-addons_id_0="saas-escrow-developer-plan-(eur)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
-                    <div id="div10" class="d-none">
-                      <p class="plan__fee-amount mb-0 business-monthly fw-bold font-24">$499</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                      </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Yearly')"
+                        data-price="$89">Select Plan</button>
                     </div>
+                    
                   </div>
                 </div>
               </div>
 
               <div class="col-md-4 col-sm-12 px-2 mt-4">
-                <div class="plan__box overflow-hidden px-3 py-4 align-items-start flex-column">
-                  <p class="plan__subtitle text-dark-cyan ml-0">All Risks</p>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor. </p>
+                <div class="plan__box px-3 py-4 align-items-start flex-column">
+                  <div>
+                    <img class="mr-2"
+                      src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Icon"
+                      loading="lazy" />
+                      <p class="plan__subtitle text-dark-cyan ml-0 mt-3">Software Escrow (All)</p>
+                  </div>
+                  
+                  <p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to securely store the software assets for all your clients or vendors. </p>
+                  <div class="plan__devider mx-auto my-3"></div>
                   <p class="plan__text-tooltip text-slate-gray mt-3">Included features: </p>
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
@@ -1687,113 +1499,45 @@
                   <p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
                       src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
                       loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+
                   <div class="plan__devider mx-auto my-3"></div>
-                  <div class="d-flex plan__switch">
-                    <label class="switch mt-1">
-                      <input type="checkbox" id="toggleSwitch6">
+                  <div class="d-flex plan__switch align-items-center w-100 flex-wrap">
+                    <img class="mr-0" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
+                    <p class="plan__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2 ml-1">Get certified</p>
+                    <label class="switch mt-2 ml-auto mr-2">
+                      <input type="checkbox" id="toggleSwitch">
                       <span class="slider round"></span>
                     </label>
-                    <p class="plan__subtitle text-dark-cyan font-18 fw-400">Get certified</p>
                   </div>
-                  <p class="plan__text-tooltip text-slate-gray mt-3">Automated content and activity verification
-                    reports. </p>
+                  <p class="plan__text-tooltip text-slate-gray mt-3">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                  <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Mehr Infos <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <div id="div11">
-                      <p class="plan__fee-amount mb-0 enterprise-yearly fw-bold font-24">$1,499</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" data-cb-addons_id_0="saas-escrow-developer-plan"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" data-cb-addons_id_0="saas-escrow-developer-plan-(eur)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" data-cb-addons_id_0="saas-escrow-developer-plan-(gbp)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" data-cb-addons_id_0="saas-escrow-developer-plan-(inr)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" data-cb-addons_id_0="saas-escrow-developer-plan-(aud)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" data-cb-addons_id_0="saas-escrow-developer-plan-(sgd)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" data-cb-addons_id_0="saas-escrow-developer-plan-(zar)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" data-cb-addons_id_0="saas-escrow-developer-plan-(chf)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" data-cb-addons_id_0="saas-escrow-developer-plan-(cad)"
-                          href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
+                    <div class="plan__devider mx-auto my-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="d-flex align-items-center">
+                        <p class="plan__fee-text mb-0 ml-0">Einrichtungsgebühr</p>
+                        <div class="d-flex" data-html="true"
+                          data-tooltip="Dazu gehört auch die komplette Einrichtung der Escrow-Vereinbarung, inklusive der gesamten rechtlichen Arbeit."
+                          data-tooltip-position="top">
+                          <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                        </div>
                       </div>
+                      <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">$249</p>
                     </div>
-                    <div id="div12" class="d-none">
-                      <p class="plan__fee-amount mb-0 enterprise-monthly fw-bold font-24">$1,649</p>
-                      <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
-                      <div class="mt-4">
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-us" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-eu" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-eu" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-uk" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-uk" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-in" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-in" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-au" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-au" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-sg" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-sg" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-rsa" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-rsa" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ch" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ch" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                        <a class="button btn-bondi-blue4 mx-auto d-none plan-ca" data-cb-type="checkout"
-                          data-cb-plan-id="developer-plan-ca" href="javascript:void(0)">
-                          Erste Schritte
-                        </a>
-                      </div>
+                    <div class="mt-4">
+                      <button class="button btn-bondi-blue4"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Yearly')"
+                        data-price="$89">Select Plan</button>
                     </div>
+                    
                   </div>
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -1862,14 +1606,14 @@
         </p>
         <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset sync</p>
 
-        <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
+        <!-- <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
             src="/images/compare-page/icons/saas-features.svg" alt="SaaS features Icon" />SaaS features</p>
         <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Hosting
           environments</p>
         <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Third-party
           services</p>
         <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Service
-          Continuity Coverage</p>
+          Continuity Coverage</p> -->
       </div>
     </div>
 
@@ -1945,20 +1689,17 @@
             <img class="mt-4" src="/images/compare-page/icons/storage-region.svg" alt="Storage Region Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Storage Region Selection
             </p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Need your data locally? Select your preferred location from more than 60+ regions across the world. </p>
           </div>
           <div class="col-md-4 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/ip-whitelisting.svg" alt="IP Whitelisting Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">IP Whitelisting</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Connect to IP protected servers to allow taking automated deposits. </p>
           </div>
           <div class="col-md-4 col-sm-12 border-top-gray pb-3">
             <img class="mt-4" src="/images/compare-page/icons/deposit-history.svg" alt="Deposit History Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Deposit History</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Store the entire history of deposits made into the escrow, storing each version. </p>
           </div>
         </div>
       </div>
@@ -2064,7 +1805,7 @@
 
     </div>
 
-    <div class="plan__add-ons-bg mt-2 mx-1">
+    <!-- <div class="plan__add-ons-bg mt-2 mx-1">
       <div class="row">
         <div class="col-md-3 col-sm-12 py-4">
           <div class="d-flex">
@@ -2145,7 +1886,7 @@
           <p class="header__subtext mt-4 mb-3">Und viele weitere </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="plan__add-ons-bg mx-1 mt-2">
       <div class="row">
@@ -2165,29 +1906,31 @@
         <div class="col-md-3 col-sm-12 single py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$49</p>
+              <p class="plan__add-ons-text">+$89</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 49)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 89, 'Compliance-Support-SLA-Add-On', 'single', 'usd')">Add</button>
           </div>
-
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$99</p>
+              <p class="plan__add-ons-text">+$179</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 99)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 179, 'Compliance-Support-SLA-Add-On', 'multi', 'usd')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$149</p>
+              <p class="plan__add-ons-text">+$269</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2 mr-3" onclick="add(this, 149)">Add</button>
+            <button class="button btn-primary-small2 mr-3"
+              onclick="add(this, 269, 'Compliance-Support-SLA-Add-On', 'all', 'usd')">Add</button>
           </div>
         </div>
       </div>
@@ -2197,34 +1940,29 @@
           <div class="col-md-2 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/diligence-support.svg" alt="Due Diligence Support Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Due Diligence Support</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to fill out your (recurring) security documentation and questionnaires.  </p>
           </div>
           <div class="col-md-2 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/search-icon.svg" alt="Security Audit Support Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Security Audit Support</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to assist with audits for your certifications and/or regulatory requirements. </p>
           </div>
           <div class="col-md-2 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/vendor-screening.svg"
               alt="Vendor Screening Support Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Vendor Screening Support
             </p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to assist you with your recurring vendor screening procedures. </p>
           </div>
           <div class="col-md-2 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/gdpr-data.svg" alt="GDPR Data Processing Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">GDPR Data Processing</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Apply GDPR regulations and data processing rules to your deposited information. </p>
           </div>
           <div class="col-md-2 col-sm-12 border-top-gray pb-3">
             <img class="mt-4" src="/images/compare-page/icons/hipaa-data.svg" alt="HIPAA Data Processing Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">HIPAA Data Processing</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Apply HIPAA requirements to the storage of your data. </p>
           </div>
           <div class="col-md-2 col-sm-12 border-top-gray pb-3"></div>
         </div>
@@ -2249,29 +1987,31 @@
         <div class="col-md-3 col-sm-12 single py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$49</p>
+              <p class="plan__add-ons-text">+$89</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 49)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 89, 'Assured-Recovery-Add-On', 'single', 'usd')">Add</button>
           </div>
-
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$99</p>
+              <p class="plan__add-ons-text">+$179</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 99)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 179, 'Assured-Recovery-Add-On', 'multi', 'usd')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$149</p>
+              <p class="plan__add-ons-text">+$269</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2 mr-3" onclick="add(this, 149)">Add</button>
+            <button class="button btn-primary-small2 mr-3"
+              onclick="add(this, 269, 'Assured-Recovery-Add-On', 'all', 'usd')">Add</button>
           </div>
         </div>
       </div>
@@ -2282,34 +2022,30 @@
             <img class="mt-4" src="/images/compare-page/icons/technical-team.svg" alt="Technical Team Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Technical Team on Standby
             </p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Use our technical standby team to assist you with recovery when disaster strikes. </p>
           </div>
           <div class="col-md-4 col-sm-12 border-top-right pb-3">
             <img class="mt-4" src="/images/compare-page/icons/Timer.svg" alt="Response time Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Response time under 4 Hour
             </p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">A guaranteed reduced response time in order to meet your recovery . SLA guidelines.  </p>
           </div>
           <div class="col-md-4 col-sm-12 border-top-gray pb-3">
             <img class="mt-4" src="/images/compare-page/icons/Window_Check.svg" alt="Prepared Recovery Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Prepared Recovery Profile
             </p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">A prepared recovery process, ready to go when your situation requires this. A detailed step by step disaster recovery process tailored to your situation. </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="plan__add-ons-bg mx-1 mt-2">
+    <!-- <div class="plan__add-ons-bg mx-1 mt-2">
       <div class="row">
         <div class="col-md-3 col-sm-12 py-4">
           <p class="plan__add-ons-text ml-3"><img class="mr-2" src="/images/compare-page/icons/coverage-length.svg"
               alt="Coverage Length SLA Icon" />Coverage Length SLA</p>
-          <p class="plan__add-ons-subtext ml-3 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.</p>
+          <p class="plan__add-ons-subtext ml-3 mb-2">Increase the length of your continuity period for your environment from 3 to 6 months.</p>
           <span class="offer-btns7">
             <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton7">Show Features <i
                 class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
@@ -2321,29 +2057,31 @@
         <div class="col-md-3 col-sm-12 single py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$49</p>
+              <p class="plan__add-ons-text">+$89</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 49)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 89, 'Coverage-Length-SLA-Add-On', 'single', 'usd')">Add</button>
           </div>
-
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$99</p>
+              <p class="plan__add-ons-text">+$179</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 99)">Add</button>
+            <button class="button btn-primary-small2"
+              onclick="add(this, 179, 'Coverage-Length-SLA-Add-On', 'multi', 'usd')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
           <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
             <div>
-              <p class="plan__add-ons-text">+$149</p>
+              <p class="plan__add-ons-text">+$269</p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2 mr-3" onclick="add(this, 149)">Add</button>
+            <button class="button btn-primary-small2 mr-3"
+              onclick="add(this, 269, 'Coverage-Length-SLA-Add-On', 'all', 'usd')">Add</button>
           </div>
         </div>
       </div>
@@ -2354,12 +2092,11 @@
             <img class="mt-4" src="/images/compare-page/icons/Calendar_Check.svg" alt="Extend your protection Icon" />
             <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Extend your protection
               coverage up to 6 months</p>
-            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">In case may need more time to migrate or recover after a disaster recovery process you can extend our service period. </p>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="plan__checkout-container">
