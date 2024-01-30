@@ -675,6 +675,17 @@
       max-width: 395px;
     }
 
+    &__milestones-subtitle2 {
+      font-family: 'Mulish';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $white;
+      width: 170px;
+      margin-left: 70px;
+    }
+
     &__milestones-text {
       font-family: 'Mulish';
       font-style: normal;
@@ -706,6 +717,15 @@
       border: 4px solid #FFF8D0;
     }
 
+    &__milestones-circle2 {
+      width: 30px;
+      height: 30px;
+      background: #FFFFFF;
+      border-radius: 30px;
+      border: 5px solid #30DFB5;
+      margin-top: -5px;
+    }
+
     &__milestones-line {
       width: 100%;
       border: 1px dashed $white;
@@ -717,6 +737,7 @@
       width: 2000px;
       z-index: 0;
       left: 20px;
+      margin-bottom: 5px;
     }
 
     &__milestones-screen {

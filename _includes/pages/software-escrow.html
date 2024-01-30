@@ -1810,7 +1810,67 @@
 
 
   </script>
-  <script>
+
+<script>
+  var cbInstance, cart;
+
+  window.addEventListener('DOMContentLoaded', function() {
+  cbInstance = Chargebee.init({
+      site: "codekeeperbilling",
+      isItemsModel: true,
+  })
+
+  cbInstance.setCheckoutCallbacks(function(cart) {
+      return {
+          success: function(hpid) {
+              console.log('success', hpid)
+          }
+      }
+  })
+
+  cart = cbInstance.getCart()
+  })
+  function openCheckout() {
+      const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+      const planPriceQuantity = 1
+      const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+      cart.replaceProduct(product);
+
+      // Opening the checkout
+      cart.proceedToCheckout();
+  }
+</script>
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+        
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+</script> -->
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
       let cbInstance = Chargebee.getInstance();
       let cart = cbInstance.getCart();
@@ -1820,5 +1880,35 @@
         cart.proceedToCheckout();
       });
     });
-  </script>
+  </script> -->
+
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+  </script> -->
 </body>
