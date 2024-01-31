@@ -9802,6 +9802,22 @@ html {
   white-space: nowrap;
 }
 
+.milestones-width {
+  width: 90% !important;
+}
+@media (max-width: 767px) {
+  .milestones-width {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .milestones-padding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
 .footer-dropdown {
   /*style the arrow inside the select element:*/
   /*point the arrow upwards when the select box is open (active):*/
