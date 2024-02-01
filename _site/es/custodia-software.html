@@ -40,7 +40,8 @@
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
-    <!DOCTYPE html>
+    <div class="navigation pb-4">
+      <!DOCTYPE html>
 <nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
   <div class="container-fluid p-3 nav-box-shadow">
     <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg" alt="Codekeeper Logo"/></a>
@@ -143,29 +144,33 @@
   </div>
 </nav>
 
+    </div>
     
 
     <div class="pricing section-medium pb-0">
       <div class="pricing-tabs container-fluid mt-2 px-0">
-        <div class="pricing-container mx-auto">
-          <div class="d-flex align-items-center justify-content-between pt-5 navigation-border">
-            <div class="d-flex align-items-center">
-              <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
-                alt="Software Escrow Shield Icon" />
-              <p class="header__info text-dark-cyan font-35 mb-2">Custodia de software</p>
+        <div class="navigation-sticky">
+          <div class="pricing-container mx-auto">
+            <div class="d-flex align-items-center justify-content-between py-1 navigation-border">
+              <div class="d-flex align-items-center">
+                <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
+                  alt="Software Escrow Shield Icon" />
+                <p class="header__info text-dark-cyan font-35 mb-2">Custodia de software</p>
+              </div>
+              <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
+                  aria-controls="pills-intro" aria-selected="false">Introduction</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+                  role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
+                <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+                  aria-controls="pills-pricing" aria-selected="true">Pricing</a>
+    
+              </div>
             </div>
-            <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
-              <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
-                aria-controls="pills-intro" aria-selected="false">Introduction</a>
-              <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
-                role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
-              <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
-                aria-controls="pills-pricing" aria-selected="true">Pricing</a>
-  
-            </div>
+            
           </div>
-          
         </div>
+        
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
             <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
@@ -4349,5 +4354,19 @@ document.addEventListener("click", closeAllSelect);
         cart.proceedToCheckout();
     }
   </script> -->
+
+  <script>
+    $(function(){
+      var navigation = $('.navigation');
+      
+      $(window).scroll(function(){
+        if($(window).scrollTop() <= 90){
+          navigation.removeClass('d-none');
+        } else {
+          navigation.addClass('d-none');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
