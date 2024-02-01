@@ -9037,7 +9037,7 @@ html {
 .navigation-sticky {
   position: sticky;
   top: 0;
-  z-index: 999999;
+  z-index: 999 !important;
   background-color: white;
 }
 
@@ -9795,6 +9795,15 @@ html {
   .mobile-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -14680,7 +14689,7 @@ input[name=consent] {
   height: 54px;
   width: 300px;
   text-align: center;
-  z-index: 999 !important;
+  z-index: 99 !important;
   color: #009CB7;
   font-size: 20px;
   font-weight: bold;

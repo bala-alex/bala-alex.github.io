@@ -39,7 +39,7 @@ html {
 .navigation-sticky {
   position: sticky;
   top: 0;
-  z-index: 999999;
+  z-index: 999 !important;
   background-color: white;
 }
 
@@ -736,6 +736,12 @@ html {
 
   @include screen-md {
 		flex-wrap: wrap;
+	}
+}
+
+.mobile-column {
+  @include screen-sm {
+		flex-direction: column;
 	}
 }
 
