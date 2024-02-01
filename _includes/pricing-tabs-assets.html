@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <div class="pricing-tabs container-fluid px-0">
-  <div class="row pricing-container mx-auto mt-negative-280">
+  <div class="row pricing-container mx-auto mt-2">
     <div class="col-md-3 col-sm-12">
-      <p class="plan__add-ons-title mt-5">Select your main plan</p>
+      <p class="plan__add-ons-title mt-4 font-50 fw-light line-height-53">Select your<br> plan</p>
       <p class="plan__subtitle text-slate-gray mt-3 font-18">Software escrow plans are per application. Add more when needed in your account. </p>
     </div>
     <div class="col-md-9 col-sm-12">
       <div class="pricing-container mx-auto">
         <div class="nav nav-pills mb-3 d-flex justify-content-center mt-3" id="pills-tab" role="tablist">
-          <a class="nav-link space-no-wrap" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile" aria-selected="false">{{ site.data[page.lang]['pricing_plan']['annually_save']
-            }}</a>
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-            aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}</a>
+          <a class="nav-link space-no-wrap" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" onclick="selectDuration('Yearly')"
+            aria-controls="pills-profile" aria-selected="false">
+            {{ site.data[page.lang]['pricing_plan']['annually_save'] }}
+          </a>
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" onclick="selectDuration('Monthly')"
+            aria-controls="pills-home" aria-selected="true">{{ site.data[page.lang]['pricing']['monthly'] }}
+          </a>
 
         </div>
         <div class="tab-content mt-5" id="pills-tabContent">
@@ -75,7 +77,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Monthly')"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -115,8 +117,8 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">{{
-                      site.data.pricing.prices.software_escrow_single_monthly.USD }}</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-multi-monthly fw-bold font-24">{{
+                      site.data.pricing.prices.software_escrow_multi_monthly.USD }}</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -133,7 +135,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Monthly')"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -174,8 +176,8 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">{{
-                      site.data.pricing.prices.software_escrow_single_monthly.USD }}</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-all-monthly fw-bold font-24">{{
+                      site.data.pricing.prices.software_escrow_all_monthly.USD }}</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -192,7 +194,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Monthly')"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -244,8 +246,8 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">{{
-                      site.data.pricing.prices.software_escrow_single_monthly.USD }}</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-yearly fw-bold font-24">{{
+                      site.data.pricing.prices.software_escrow_single_yearly.USD }}</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -262,7 +264,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Yearly')"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -302,8 +304,8 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">{{
-                      site.data.pricing.prices.software_escrow_single_monthly.USD }}</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-multi-yearly fw-bold font-24">{{
+                      site.data.pricing.prices.software_escrow_multi_yearly.USD }}</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -320,7 +322,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Yearly')"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -361,8 +363,8 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">{{
-                      site.data.pricing.prices.software_escrow_single_monthly.USD }}</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-all-yearly fw-bold font-24">{{
+                      site.data.pricing.prices.software_escrow_all_yearly.USD }}</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -379,7 +381,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Yearly')"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All')"
                         data-price="{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}">Select Plan</button>
                     </div>
                     
@@ -395,94 +397,14 @@
     </div>
   </div>
 
-  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
-    <div class="plan__devider mx-auto my-5 w-100"></div>
-    <p class="plan__add-ons-title mb-3">All plans include</p>
-    <div class="row plan__add-ons-bg mx-1 pt-2 mb-5 mt-4">
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/platform-features.svg" alt="Platform features Icon" />Platform features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Multi-factor
-          authentication at login</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Depositor
-          dashboard access</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Beneficiary
-          dashboard access</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
-          notifications</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Concierge
-          onboarding</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Email support</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Chat support</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Monthly payment
-          option</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual payment
-          option (10% discount)</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual pay by
-          invoice</p>
-      </div>
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/legal-features.svg" alt="Legal features Icon" />Legal features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Escrow
-          arrangements</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
-          templates</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
-          release terms</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
-          notifications</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Jurisdiction
-          choices</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>24/7/365 Release
-          Processing</p>
-
-        <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
-            src="/images/compare-page/icons/compliance-features.svg" alt="Compliance features Icon" />Compliance
-          features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001
-          information management security</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001 data
-          center security</p>
-      </div>
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/depositing-features.svg" alt="Depositing features Icon" />Depositing
-          features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Product
-          deposits</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset deposits
-        </p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset sync</p>
-
-        <!-- <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
-            src="/images/compare-page/icons/saas-features.svg" alt="SaaS features Icon" />SaaS features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Hosting
-          environments</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Third-party
-          services</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Service
-          Continuity Coverage</p> -->
-      </div>
-    </div>
-
-    <div class="plan__devider mx-auto my-4 w-100"></div>
-  </div>
-
-  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
+  <div class="pricing-container mx-auto plan__add-ons mt-0 px-3">
     <div class="row">
       <div class="col-md-3 col-sm-12 py-3">
         <p class="plan__add-ons-title mb-3">Add-ons</p>
       </div>
-      <div class="col-md-3 col-sm-12 single pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">Single Beneficiary</p>
-      </div>
-      <div class="col-md-3 col-sm-12 multiple pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">Multi Beneficiary</p>
-      </div>
-      <div class="col-md-3 col-sm-12 all pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">All Risks</p>
-      </div>
+      <!-- <div class="col-md-3 col-sm-12 single pb-3 pt-4"></div>
+      <div class="col-md-3 col-sm-12 multiple pb-3 pt-4"></div>
+      <div class="col-md-3 col-sm-12 all pb-3 pt-4"></div> -->
     </div>
     <div class="plan__add-ons-bg mx-1">
       <div class="row">
@@ -506,7 +428,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 48, 'Advanced-Deposits-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 48, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
 
         </div>
@@ -517,7 +439,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 99, 'Advanced-Deposits-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 99, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -527,7 +449,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 149, 'Advanced-Deposits-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 149, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -576,7 +498,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Advanced-Integrations-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -586,7 +508,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Advanced-Integrations-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -596,7 +518,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Advanced-Integrations-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -759,7 +681,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Compliance-Support-SLA-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -769,7 +691,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Compliance-Support-SLA-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -779,7 +701,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Compliance-Support-SLA-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -840,7 +762,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Assured-Recovery-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -850,7 +772,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Assured-Recovery-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -860,7 +782,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Assured-Recovery-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -948,35 +870,98 @@
     </div> -->
   </div>
 
-  <div class="plan__checkout-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <p class="plan__checkout-text mt-3 pt-2 text-dark-cyan mb-2" id="planType">Please select your plan</p>
-          <p id="adds" class="d-none text-dark-cyan">Add ons: <span id="addOns"></span></p>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="d-flex mt-4">
-            <p class="plan__checkout-amount mt-1 mr-2">Total:</p>
-            <div class="plan__checkout-total" id="totalSum">$0</div>
-            <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
-          </div>
-
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <a class="button btn-bondi-blue3 text-uppercase my-4" id="checkout-snippet" data-cb-type="checkout">
-            Checkout
-          </a>
-
-
-
-          <button href="javascript:void(0)" onclick="openCheckout()">
-            Testing
-          </button>
-
-          <a data-cb-type="checkout" data-cb-item-0="Software-Escrow-Single-USD-Monthly">Fixed Checkout</a>
-        </div>
+  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
+    <div class="plan__devider mx-auto my-5 w-100"></div>
+    <p class="plan__add-ons-title mb-3">All plans include</p>
+    <div class="row plan__add-ons-bg mx-1 pt-2 mb-5 mt-4">
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/platform-features.svg" alt="Platform features Icon" />Platform features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Multi-factor
+          authentication at login</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Depositor
+          dashboard access</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Beneficiary
+          dashboard access</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
+          notifications</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Concierge
+          onboarding</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Email support</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Chat support</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Monthly payment
+          option</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual payment
+          option (10% discount)</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual pay by
+          invoice</p>
       </div>
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/legal-features.svg" alt="Legal features Icon" />Legal features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Escrow
+          arrangements</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
+          templates</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
+          release terms</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
+          notifications</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Jurisdiction
+          choices</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>24/7/365 Release
+          Processing</p>
+
+        <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
+            src="/images/compare-page/icons/compliance-features.svg" alt="Compliance features Icon" />Compliance
+          features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001
+          information management security</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001 data
+          center security</p>
+      </div>
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/depositing-features.svg" alt="Depositing features Icon" />Depositing
+          features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Product
+          deposits</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset deposits
+        </p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset sync</p>
+
+        <!-- <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
+            src="/images/compare-page/icons/saas-features.svg" alt="SaaS features Icon" />SaaS features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Hosting
+          environments</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Third-party
+          services</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Service
+          Continuity Coverage</p> -->
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="plan__checkout-container">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="my-2">
+        <p class="plan__checkout-text text-dark-cyan my-2" id="planType">Please select your plan</p>
+        <p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
+      </div>
+      <div class="d-flex my-2 mt-3">
+        <p class="plan__checkout-amount my-2 mr-2">Total:</p>
+        <div class="plan__checkout-total"><span class="pricing-currency">{{ site.data.pricing.prices.pricing_currency.USD }}</span><span id="totalSum">0</span></div>
+        <!-- <p class="plan__checkout-amount mt-2"><sup>per month</sup></p> -->
+      </div>
+      <div class="d-flex align-items-center my-2 flex-wrap">
+        <a class="header__link text-underline font-20 my-2 mr-4 space-no-wrap" href="pay-by-invoice.html">Pay by Invoice</a>
+        <a class="button btn-bondi-blue3 text-uppercase my-4" href="javascript:void(0)" onclick="openCheckout()">
+          Checkout
+        </a>
+      </div>
+      
     </div>
   </div>
 </div>

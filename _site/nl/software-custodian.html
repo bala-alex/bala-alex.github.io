@@ -1157,18 +1157,21 @@
               <div class="pricing mt-350">
                 <!DOCTYPE html>
 <div class="pricing-tabs container-fluid px-0">
-  <div class="row pricing-container mx-auto mt-negative-280">
+  <div class="row pricing-container mx-auto mt-2">
     <div class="col-md-3 col-sm-12">
-      <p class="plan__add-ons-title mt-5">Select your main plan</p>
+      <p class="plan__add-ons-title mt-4 font-50 fw-light line-height-53">Select your<br> plan</p>
       <p class="plan__subtitle text-slate-gray mt-3 font-18">Software escrow plans are per application. Add more when needed in your account. </p>
     </div>
     <div class="col-md-9 col-sm-12">
       <div class="pricing-container mx-auto">
         <div class="nav nav-pills mb-3 d-flex justify-content-center mt-3" id="pills-tab" role="tablist">
-          <a class="nav-link space-no-wrap" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile" aria-selected="false">Jaarlijks (Bespaar 10%)</a>
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-            aria-controls="pills-home" aria-selected="true">Maandelijks</a>
+          <a class="nav-link space-no-wrap" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" onclick="selectDuration('Yearly')"
+            aria-controls="pills-profile" aria-selected="false">
+            Jaarlijks (Bespaar 10%)
+          </a>
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" onclick="selectDuration('Monthly')"
+            aria-controls="pills-home" aria-selected="true">Maandelijks
+          </a>
 
         </div>
         <div class="tab-content mt-5" id="pills-tabContent">
@@ -1230,7 +1233,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Monthly')"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1270,7 +1273,7 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Meer informatie <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-multi-monthly fw-bold font-24">$189</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -1287,7 +1290,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Monthly')"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1328,7 +1331,7 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Meer informatie <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-all-monthly fw-bold font-24">$689</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -1345,7 +1348,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Monthly')"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1397,7 +1400,7 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Meer informatie <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-single-yearly fw-bold font-24">$990</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -1414,7 +1417,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single-USD-Yearly')"
+                        onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Escrow-Single')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1454,7 +1457,7 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Meer informatie <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-multi-yearly fw-bold font-24">$1,990</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -1471,7 +1474,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi-USD-Yearly')"
+                        onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Escrow-Multi')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1512,7 +1515,7 @@
                   <a class="header__link text-bondi-blue software-escrow-href font-16 mt-1" href="software-escrow.html">Meer informatie <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
                   <div class="plan__devider mx-auto my-3"></div>
                   <div class="mt-1">
-                    <p class="plan__fee-amount mb-0 software-escrow-single-monthly fw-bold font-24">$89</p>
+                    <p class="plan__fee-amount mb-0 software-escrow-all-yearly fw-bold font-24">$7,490</p>
                     <p class="plan__text-tooltip text-slate-gray mt-2 text-italic">Per application per month </p>
                     <div class="plan__devider mx-auto my-3"></div>
 
@@ -1529,7 +1532,7 @@
                     </div>
                     <div class="mt-4">
                       <button class="button btn-bondi-blue4"
-                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All-USD-Yearly')"
+                        onclick="selectPlan(this, 'all', this.getAttribute('data-price'), 'Software-Escrow-All')"
                         data-price="$89">Select Plan</button>
                     </div>
                     
@@ -1545,94 +1548,14 @@
     </div>
   </div>
 
-  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
-    <div class="plan__devider mx-auto my-5 w-100"></div>
-    <p class="plan__add-ons-title mb-3">All plans include</p>
-    <div class="row plan__add-ons-bg mx-1 pt-2 mb-5 mt-4">
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/platform-features.svg" alt="Platform features Icon" />Platform features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Multi-factor
-          authentication at login</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Depositor
-          dashboard access</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Beneficiary
-          dashboard access</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
-          notifications</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Concierge
-          onboarding</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Email support</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Chat support</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Monthly payment
-          option</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual payment
-          option (10% discount)</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual pay by
-          invoice</p>
-      </div>
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/legal-features.svg" alt="Legal features Icon" />Legal features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Escrow
-          arrangements</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
-          templates</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
-          release terms</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
-          notifications</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Jurisdiction
-          choices</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>24/7/365 Release
-          Processing</p>
-
-        <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
-            src="/images/compare-page/icons/compliance-features.svg" alt="Compliance features Icon" />Compliance
-          features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001
-          information management security</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001 data
-          center security</p>
-      </div>
-      <div class="col-md-4 col-sm-12 py-4">
-        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
-            src="/images/compare-page/icons/depositing-features.svg" alt="Depositing features Icon" />Depositing
-          features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Product
-          deposits</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset deposits
-        </p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset sync</p>
-
-        <!-- <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
-            src="/images/compare-page/icons/saas-features.svg" alt="SaaS features Icon" />SaaS features</p>
-        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Hosting
-          environments</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Third-party
-          services</p>
-        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Service
-          Continuity Coverage</p> -->
-      </div>
-    </div>
-
-    <div class="plan__devider mx-auto my-4 w-100"></div>
-  </div>
-
-  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
+  <div class="pricing-container mx-auto plan__add-ons mt-0 px-3">
     <div class="row">
       <div class="col-md-3 col-sm-12 py-3">
         <p class="plan__add-ons-title mb-3">Add-ons</p>
       </div>
-      <div class="col-md-3 col-sm-12 single pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">Single Beneficiary</p>
-      </div>
-      <div class="col-md-3 col-sm-12 multiple pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">Multi Beneficiary</p>
-      </div>
-      <div class="col-md-3 col-sm-12 all pb-3 pt-4">
-        <p class="plan__add-ons-subtitle">All Risks</p>
-      </div>
+      <!-- <div class="col-md-3 col-sm-12 single pb-3 pt-4"></div>
+      <div class="col-md-3 col-sm-12 multiple pb-3 pt-4"></div>
+      <div class="col-md-3 col-sm-12 all pb-3 pt-4"></div> -->
     </div>
     <div class="plan__add-ons-bg mx-1">
       <div class="row">
@@ -1656,7 +1579,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 48, 'Advanced-Deposits-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 48, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
 
         </div>
@@ -1667,7 +1590,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 99, 'Advanced-Deposits-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 99, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -1677,7 +1600,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 149, 'Advanced-Deposits-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 149, 'Advanced-Deposits-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -1726,7 +1649,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Advanced-Integrations-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -1736,7 +1659,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Advanced-Integrations-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -1746,7 +1669,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Advanced-Integrations-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -1909,7 +1832,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Compliance-Support-SLA-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -1919,7 +1842,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Compliance-Support-SLA-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -1929,7 +1852,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Compliance-Support-SLA-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -1990,7 +1913,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 89, 'Assured-Recovery-Add-On', 'single', 'usd')">Add</button>
+              onclick="add(this, 89, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -2000,7 +1923,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 179, 'Assured-Recovery-Add-On', 'multi', 'usd')">Add</button>
+              onclick="add(this, 179, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 all py-4">
@@ -2010,7 +1933,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2 mr-3"
-              onclick="add(this, 269, 'Assured-Recovery-Add-On', 'all', 'usd')">Add</button>
+              onclick="add(this, 269, 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
       </div>
@@ -2098,35 +2021,98 @@
     </div> -->
   </div>
 
-  <div class="plan__checkout-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <p class="plan__checkout-text mt-3 pt-2 text-dark-cyan mb-2" id="planType">Please select your plan</p>
-          <p id="adds" class="d-none text-dark-cyan">Add ons: <span id="addOns"></span></p>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="d-flex mt-4">
-            <p class="plan__checkout-amount mt-1 mr-2">Total:</p>
-            <div class="plan__checkout-total" id="totalSum">$0</div>
-            <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
-          </div>
-
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <a class="button btn-bondi-blue3 text-uppercase my-4" id="checkout-snippet" data-cb-type="checkout">
-            Checkout
-          </a>
-
-
-
-          <button href="javascript:void(0)" onclick="openCheckout()">
-            Testing
-          </button>
-
-          <a data-cb-type="checkout" data-cb-item-0="Software-Escrow-Single-USD-Monthly">Fixed Checkout</a>
-        </div>
+  <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
+    <div class="plan__devider mx-auto my-5 w-100"></div>
+    <p class="plan__add-ons-title mb-3">All plans include</p>
+    <div class="row plan__add-ons-bg mx-1 pt-2 mb-5 mt-4">
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/platform-features.svg" alt="Platform features Icon" />Platform features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Multi-factor
+          authentication at login</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Depositor
+          dashboard access</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Beneficiary
+          dashboard access</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
+          notifications</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Concierge
+          onboarding</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Email support</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Chat support</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Monthly payment
+          option</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual payment
+          option (10% discount)</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Annual pay by
+          invoice</p>
       </div>
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/legal-features.svg" alt="Legal features Icon" />Legal features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Escrow
+          arrangements</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
+          templates</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Customizable
+          release terms</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Automated
+          notifications</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Jurisdiction
+          choices</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>24/7/365 Release
+          Processing</p>
+
+        <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
+            src="/images/compare-page/icons/compliance-features.svg" alt="Compliance features Icon" />Compliance
+          features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001
+          information management security</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>ISO 27001 data
+          center security</p>
+      </div>
+      <div class="col-md-4 col-sm-12 py-4">
+        <p class="plan__add-ons-text ml-3 fw-light"><img class="mr-3"
+            src="/images/compare-page/icons/depositing-features.svg" alt="Depositing features Icon" />Depositing
+          features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Product
+          deposits</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset deposits
+        </p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Asset sync</p>
+
+        <!-- <p class="plan__add-ons-text ml-3 fw-light pt-4"><img class="mr-3"
+            src="/images/compare-page/icons/saas-features.svg" alt="SaaS features Icon" />SaaS features</p>
+        <p class="plan__add-ons-subtext font-16 ml-3 mt-3"><i class="fa fa-check text-light-green mr-2"></i>Hosting
+          environments</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Third-party
+          services</p>
+        <p class="plan__add-ons-subtext font-16 ml-3"><i class="fa fa-check text-light-green mr-2"></i>Service
+          Continuity Coverage</p> -->
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="plan__checkout-container">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="my-2">
+        <p class="plan__checkout-text text-dark-cyan my-2" id="planType">Please select your plan</p>
+        <p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
+      </div>
+      <div class="d-flex my-2 mt-3">
+        <p class="plan__checkout-amount my-2 mr-2">Total:</p>
+        <div class="plan__checkout-total"><span class="pricing-currency">$</span><span id="totalSum">0</span></div>
+        <!-- <p class="plan__checkout-amount mt-2"><sup>per month</sup></p> -->
+      </div>
+      <div class="d-flex align-items-center my-2 flex-wrap">
+        <a class="header__link text-underline font-20 my-2 mr-4 space-no-wrap" href="pay-by-invoice.html">Pay by Invoice</a>
+        <a class="button btn-bondi-blue3 text-uppercase my-4" href="javascript:void(0)" onclick="openCheckout()">
+          Checkout
+        </a>
+      </div>
+      
     </div>
   </div>
 </div>
@@ -3716,7 +3702,7 @@ document.addEventListener("click", closeAllSelect);
   <script>
     // Check if the page has not been reloaded
     if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {"setup_fee":{"USD":"$249","EUR":"€199","GBP":"£199","INR":"₹16,000","AUD":"A$299","SGD":"$299","ZAR":"R3,499","CHF":"CHF249","CAD":"CAD299"},"amazon_deposit":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"saas_verification":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"developer_monthly":{"USD":"$109","EUR":"€109","GBP":"£89","INR":"₹7,695","AUD":"A$129","SGD":"$129","ZAR":"R1,395","CHF":"CHF99","CAD":"CAD129"},"team_monthly":{"USD":"$275","EUR":"€275","GBP":"£219","INR":"₹19,795","AUD":"A$329","SGD":"$329","ZAR":"R3,495","CHF":"CHF249","CAD":"CAD329"},"business_monthly":{"USD":"$499","EUR":"€499","GBP":"£385","INR":"₹36,295","AUD":"A$659","SGD":"$659","ZAR":"R5,995","CHF":"CHF439","CAD":"CAD549"},"enterprise_monthly":{"USD":"$1,649","USD_FRENCH":"$1649","EUR":"€1,649","EUR_FRENCH":"€1649","GBP":"£1,209","INR":"₹120,995","AUD":"A$2,089","SGD":"$2,089","ZAR":"R21,995","CHF":"CHF1,485","CAD":"CAD2,029"},"developer_yearly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"team_yearly":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹17,995","AUD":"A$299","SGD":"$299","ZAR":"R3,145","CHF":"CHF225","CAD":"CAD299"},"business_yearly":{"USD":"$449","EUR":"€449","GBP":"£349","INR":"₹32,995","AUD":"A$599","SGD":"$599","ZAR":"R5,490","CHF":"CHF399","CAD":"CAD499"},"enterprise_yearly":{"USD":"$1,499","USD_FRENCH":"$1499","EUR":"€1,499","EUR_FRENCH":"€1499","GBP":"£1,099","INR":"₹109,995","AUD":"A$1,899","SGD":"$1,899","ZAR":"R19,995","CHF":"CHF1,349","CAD":"CAD1,849"},"increased_repository":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"activity_verification":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"increased_storage":{"USD":"$5","EUR":"€5","GBP":"£4","INR":"₹375","AUD":"A$7","SGD":"$7","ZAR":"R70","CHF":"CHF5","CAD":"CAD7"},"storage_selection":{"USD":"$9","EUR":"€9","GBP":"£7","INR":"₹670","AUD":"A$12","SGD":"$12","ZAR":"R130","CHF":"CHF8","CAD":"CAD12"},"deposit_connections":{"USD":"$99","EUR":"€99","GBP":"£70","INR":"₹7,380","AUD":"A$130","SGD":"$130","ZAR":"R1,410","CHF":"CHF99","CAD":"CAD130"},"release_processing":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD249"},"saas_continuity":{"USD":"$299","EUR":"€299","GBP":"£225","INR":"₹19,995","AUD":"A$349","SGD":"$399","ZAR":"R3,999","CHF":"CHF329","CAD":"CAD349"},"verification_advanced":{"USD":"$2,495","EUR":"€2,495","EUR_FRENCH":"€2495","GBP":"£1,799","INR":"₹179,995","AUD":"A$2,995","SGD":"$3,199","ZAR":"R34,999","CHF":"CHF2,749","CAD":"CAD2,995"},"verification_complete":{"USD":"$3,995","EUR":"€3,995","EUR_FRENCH":"€3995","GBP":"£2,995","INR":"₹249,995","AUD":"A$4,995","SGD":"$4,999","ZAR":"R54,999","CHF":"CHF4,399","CAD":"CAD4,995"},"developer_monthly_saas":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹7,999","AUD":"A$139","SGD":"$129","ZAR":"R1,699","CHF":"CHF89","CAD":"CAD139"},"team_monthly_saas":{"USD":"$149","EUR":"€149","GBP":"£119","INR":"₹11,999","AUD":"A$209","SGD":"$199","ZAR":"R2,499","CHF":"CHF139","CAD":"CAD199"},"business_monthly_saas":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹19,999","AUD":"A$359","SGD":"$329","ZAR":"R4,299","CHF":"CHF229","CAD":"CAD329"},"enterprise_monthly_saas":{"USD":"$499","EUR":"€499","GBP":"£399","INR":"₹39,999","AUD":"A$719","SGD":"$529","ZAR":"R8,499","CHF":"CHF459","CAD":"CAD669"},"developer_monthly_saas2":{"USD":"$208","EUR":"€208","GBP":"£168","INR":"₹15,694","AUD":"A$268","SGD":"$258","ZAR":"R3,094","CHF":"CHF188","CAD":"CAD278"},"team_monthly_saas2":{"USD":"$424","EUR":"€424","GBP":"£338","INR":"₹31,794","AUD":"A$538","SGD":"$528","ZAR":"R5,994","CHF":"CHF388","CAD":"CAD548"},"business_monthly_saas2":{"USD":"$748","EUR":"€748","GBP":"£584","INR":"₹56,294","AUD":"A$1,018","SGD":"$988","ZAR":"R10,294","CHF":"CHF668","CAD":"CAD878"},"enterprise_monthly_saas2":{"USD":"$2,148","EUR":"€2,148","EUR_FRENCH":"€2148","GBP":"£1,608","INR":"₹160,994","AUD":"A$2,808","SGD":"$2,618","ZAR":"R30,494","CHF":"CHF1,944","CAD":"CAD2,698","CAD_FRENCH":"CAD2698"},"developer_yearly_saas2":{"USD":"$198","EUR":"€198","GBP":"£158","INR":"₹14,994","AUD":"A$258","SGD":"$248","ZAR":"R2,949","CHF":"CHF178","CAD":"CAD258"},"team_yearly_saas2":{"USD":"$398","EUR":"€398","GBP":"£318","INR":"₹29,994","AUD":"A$508","SGD":"$498","ZAR":"R5,644","CHF":"CHF364","CAD":"CAD498"},"business_yearly_saas2":{"USD":"$698","EUR":"€698","GBP":"£548","INR":"₹52,994","AUD":"A$958","SGD":"$928","ZAR":"R9,789","CHF":"CHF628","CAD":"CAD828"},"enterprise_yearly_saas2":{"USD":"$1,998","EUR":"€1,998","EUR_FRENCH":"€1998","GBP":"£1,498","INR":"₹149,994","AUD":"A$2,618","SGD":"$2,428","ZAR":"R28,494","CHF":"CHF1,808","CAD":"CAD2,518","CAD_FRENCH":"CAD2518"},"software_escrow_monthly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"saas_escrow_monthly":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD299"},"software_backup_monthly":{"USD":"$59","EUR":"€59","GBP":"£49","AUD":"A$89","SGD":"$79","CAD":"CAD79","CHF":"CHF49","ZAR":"R999","INR":"₹3,999"},"software_backup_yearly":{"USD":"$639","EUR":"€639","GBP":"£529","AUD":"A$969","SGD":"$859","CAD":"CAD859","CHF":"CHF539","ZAR":"R10,899","INR":"₹42,999"},"software_backup_certified":{"USD":"$10","EUR":"€10","GBP":"£10","AUD":"A$20","SGD":"$20","CAD":"CAD20","CHF":"CHF10","ZAR":"R200","INR":"₹899"},"software_backup_advanced_deposits":{"USD":"$49","EUR":"€49","GBP":"£39","AUD":"A$79","SGD":"$69","CAD":"CAD69","CHF":"CHF39","ZAR":"R849","INR":"₹3,499"},"software_backup_advanced_integrations":{"USD":"$49","EUR":"€49","GBP":"£39","AUD":"A$79","SGD":"$69","CAD":"CAD69","CHF":"CHF39","ZAR":"R849","INR":"₹3,499"},"software_escrow_single_monthly":{"USD":"$89","EUR":"€89","GBP":"£69","AUD":"A$139","SGD":"$119","CAD":"CAD119","CHF":"CHF79","ZAR":"R1,499","INR":"₹6,499"},"software_escrow_single_yearly":{"USD":"$990","EUR":"€990","GBP":"£759","AUD":"A$1,499","SGD":"$1,299","CAD":"CAD1,299","CHF":"CHF859","ZAR":"R15,999","INR":"₹69,999"},"software_escrow_multi_monthly":{"USD":"$189","EUR":"€189","GBP":"£149","AUD":"A$289","SGD":"$249","CAD":"CAD249","CHF":"CHF159","ZAR":"R2,999","INR":"₹13,999"},"software_escrow_multi_yearly":{"USD":"$1,990","EUR":"€1,990","GBP":"£1,629","AUD":"A$3,099","SGD":"$2,699","CAD":"CAD2,699","CHF":"CHF1,739","ZAR":"R32,999","INR":"₹149,999"},"software_escrow_all_monthly":{"USD":"$689","EUR":"€689","GBP":"£549","AUD":"A$1,049","SGD":"$899","CAD":"CAD899","CHF":"CHF599","ZAR":"R11,999","INR":"₹51,999"},"software_escrow_all_yearly":{"USD":"$7,490","EUR":"€7,490","GBP":"£5,989","AUD":"A$11,499","SGD":"$9,799","CAD":"CAD9,799","CHF":"CHF6,529","ZAR":"R129,999","INR":"₹566,999"},"saas_escrow_single_monthly":{"USD":"$189","EUR":"€189","GBP":"£149","AUD":"A$289","SGD":"$249","CAD":"CAD249","CHF":"CHF159","ZAR":"R2,999","INR":"₹13,999"},"saas_escrow_single_yearly":{"USD":"$1,990","EUR":"€1,990","GBP":"£1,599","AUD":"A$3,149","SGD":"$2,699","CAD":"CAD2,699","CHF":"CHF1,739","ZAR":"R32,999","INR":"₹149,999"},"saas_escrow_multi_monthly":{"USD":"$369","EUR":"€369","GBP":"£289","AUD":"A$559","SGD":"$499","CAD":"CAD499","CHF":"CHF319","ZAR":"R5,999","INR":"₹27,999"},"saas_escrow_multi_yearly":{"USD":"$3,990","EUR":"€3,990","GBP":"£3,149","AUD":"A$5,999","SGD":"$5,449","CAD":"CAD5,449","CHF":"CHF3,479","ZAR":"R64,999","INR":"₹299,999"},"saas_escrow_all_monthly":{"USD":"$1,149","EUR":"€1,149","GBP":"£899","AUD":"A$1,749","SGD":"$1,549","CAD":"CAD1,549","CHF":"CHF999","ZAR":"R19,999","INR":"₹86,999"},"saas_escrow_all_yearly":{"USD":"$12,490","EUR":"€12,490","GBP":"£9,799","AUD":"A$18,999","SGD":"$16,899","CAD":"CAD16,899","CHF":"CHF10,899","ZAR":"R217,999","INR":"₹948,999"},"software_custodian_single_monthly":{"USD":"$269","EUR":"€269","GBP":"£219","AUD":"A$399","SGD":"$359","CAD":"CAD359","CHF":"CHF229","ZAR":"R4,499","INR":"₹19,999"},"software_custodian_single_yearly":{"USD":"$2,990","EUR":"€2,990","GBP":"£2,389","AUD":"A$4,349","SGD":"$3,899","CAD":"CAD3,899","CHF":"CHF2,499","ZAR":"R48,999","INR":"₹217,999"},"software_custodian_multi_monthly":{"USD":"$639","EUR":"€639","GBP":"£499","AUD":"A$969","SGD":"$859","CAD":"CAD859","CHF":"CHF549","ZAR":"R10,999","INR":"₹47,999"},"software_custodian_multi_yearly":{"USD":"$6,990","EUR":"€6,990","GBP":"£5,449","AUD":"A$10,559","SGD":"$9,369","CAD":"CAD9,369","CHF":"CHF5,989","ZAR":"R119,999","INR":"₹522,999"},"software_custodian_all_monthly":{"USD":"$2,239","EUR":"€2,239","GBP":"£1,759","AUD":"A$3,399","SGD":"$2,999","CAD":"CAD2,999","CHF":"CHF1,949","ZAR":"R38,999","INR":"₹168,999"},"software_custodian_all_yearly":{"USD":"$24,490","EUR":"€24,490","GBP":"£19,189","AUD":"A$36,999","SGD":"$32,699","CAD":"CAD32,699","CHF":"CHF21,259","ZAR":"R424,999","INR":"₹1,839,999"},"pricing_currency":{"USD":"$","EUR":"€","GBP":"£","AUD":"A$","SGD":"$","CAD":"CAD","CHF":"CHF","ZAR":"R","INR":"₹"}};
+      var yamlData = {"setup_fee":{"USD":"$249","EUR":"€199","GBP":"£199","INR":"₹16,000","AUD":"A$299","SGD":"$299","ZAR":"R3,499","CHF":"CHF249","CAD":"CAD299"},"amazon_deposit":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"saas_verification":{"USD":"$29","EUR":"€29","GBP":"£29","INR":"₹1,995","AUD":"A$29","SGD":"$39","ZAR":"R399","CHF":"CHF29","CAD":"CAD39"},"developer_monthly":{"USD":"$109","EUR":"€109","GBP":"£89","INR":"₹7,695","AUD":"A$129","SGD":"$129","ZAR":"R1,395","CHF":"CHF99","CAD":"CAD129"},"team_monthly":{"USD":"$275","EUR":"€275","GBP":"£219","INR":"₹19,795","AUD":"A$329","SGD":"$329","ZAR":"R3,495","CHF":"CHF249","CAD":"CAD329"},"business_monthly":{"USD":"$499","EUR":"€499","GBP":"£385","INR":"₹36,295","AUD":"A$659","SGD":"$659","ZAR":"R5,995","CHF":"CHF439","CAD":"CAD549"},"enterprise_monthly":{"USD":"$1,649","USD_FRENCH":"$1649","EUR":"€1,649","EUR_FRENCH":"€1649","GBP":"£1,209","INR":"₹120,995","AUD":"A$2,089","SGD":"$2,089","ZAR":"R21,995","CHF":"CHF1,485","CAD":"CAD2,029"},"developer_yearly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"team_yearly":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹17,995","AUD":"A$299","SGD":"$299","ZAR":"R3,145","CHF":"CHF225","CAD":"CAD299"},"business_yearly":{"USD":"$449","EUR":"€449","GBP":"£349","INR":"₹32,995","AUD":"A$599","SGD":"$599","ZAR":"R5,490","CHF":"CHF399","CAD":"CAD499"},"enterprise_yearly":{"USD":"$1,499","USD_FRENCH":"$1499","EUR":"€1,499","EUR_FRENCH":"€1499","GBP":"£1,099","INR":"₹109,995","AUD":"A$1,899","SGD":"$1,899","ZAR":"R19,995","CHF":"CHF1,349","CAD":"CAD1,849"},"increased_repository":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"activity_verification":{"USD":"$19","EUR":"€19","GBP":"£14","INR":"₹1,415","AUD":"A$25","SGD":"$25","ZAR":"R270","CHF":"CHF18","CAD":"CAD25"},"increased_storage":{"USD":"$5","EUR":"€5","GBP":"£4","INR":"₹375","AUD":"A$7","SGD":"$7","ZAR":"R70","CHF":"CHF5","CAD":"CAD7"},"storage_selection":{"USD":"$9","EUR":"€9","GBP":"£7","INR":"₹670","AUD":"A$12","SGD":"$12","ZAR":"R130","CHF":"CHF8","CAD":"CAD12"},"deposit_connections":{"USD":"$99","EUR":"€99","GBP":"£70","INR":"₹7,380","AUD":"A$130","SGD":"$130","ZAR":"R1,410","CHF":"CHF99","CAD":"CAD130"},"release_processing":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD249"},"saas_continuity":{"USD":"$299","EUR":"€299","GBP":"£225","INR":"₹19,995","AUD":"A$349","SGD":"$399","ZAR":"R3,999","CHF":"CHF329","CAD":"CAD349"},"verification_advanced":{"USD":"$2,495","EUR":"€2,495","EUR_FRENCH":"€2495","GBP":"£1,799","INR":"₹179,995","AUD":"A$2,995","SGD":"$3,199","ZAR":"R34,999","CHF":"CHF2,749","CAD":"CAD2,995"},"verification_complete":{"USD":"$3,995","EUR":"€3,995","EUR_FRENCH":"€3995","GBP":"£2,995","INR":"₹249,995","AUD":"A$4,995","SGD":"$4,999","ZAR":"R54,999","CHF":"CHF4,399","CAD":"CAD4,995"},"developer_monthly_saas":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹7,999","AUD":"A$139","SGD":"$129","ZAR":"R1,699","CHF":"CHF89","CAD":"CAD139"},"team_monthly_saas":{"USD":"$149","EUR":"€149","GBP":"£119","INR":"₹11,999","AUD":"A$209","SGD":"$199","ZAR":"R2,499","CHF":"CHF139","CAD":"CAD199"},"business_monthly_saas":{"USD":"$249","EUR":"€249","GBP":"£199","INR":"₹19,999","AUD":"A$359","SGD":"$329","ZAR":"R4,299","CHF":"CHF229","CAD":"CAD329"},"enterprise_monthly_saas":{"USD":"$499","EUR":"€499","GBP":"£399","INR":"₹39,999","AUD":"A$719","SGD":"$529","ZAR":"R8,499","CHF":"CHF459","CAD":"CAD669"},"developer_monthly_saas2":{"USD":"$208","EUR":"€208","GBP":"£168","INR":"₹15,694","AUD":"A$268","SGD":"$258","ZAR":"R3,094","CHF":"CHF188","CAD":"CAD278"},"team_monthly_saas2":{"USD":"$424","EUR":"€424","GBP":"£338","INR":"₹31,794","AUD":"A$538","SGD":"$528","ZAR":"R5,994","CHF":"CHF388","CAD":"CAD548"},"business_monthly_saas2":{"USD":"$748","EUR":"€748","GBP":"£584","INR":"₹56,294","AUD":"A$1,018","SGD":"$988","ZAR":"R10,294","CHF":"CHF668","CAD":"CAD878"},"enterprise_monthly_saas2":{"USD":"$2,148","EUR":"€2,148","EUR_FRENCH":"€2148","GBP":"£1,608","INR":"₹160,994","AUD":"A$2,808","SGD":"$2,618","ZAR":"R30,494","CHF":"CHF1,944","CAD":"CAD2,698","CAD_FRENCH":"CAD2698"},"developer_yearly_saas2":{"USD":"$198","EUR":"€198","GBP":"£158","INR":"₹14,994","AUD":"A$258","SGD":"$248","ZAR":"R2,949","CHF":"CHF178","CAD":"CAD258"},"team_yearly_saas2":{"USD":"$398","EUR":"€398","GBP":"£318","INR":"₹29,994","AUD":"A$508","SGD":"$498","ZAR":"R5,644","CHF":"CHF364","CAD":"CAD498"},"business_yearly_saas2":{"USD":"$698","EUR":"€698","GBP":"£548","INR":"₹52,994","AUD":"A$958","SGD":"$928","ZAR":"R9,789","CHF":"CHF628","CAD":"CAD828"},"enterprise_yearly_saas2":{"USD":"$1,998","EUR":"€1,998","EUR_FRENCH":"€1998","GBP":"£1,498","INR":"₹149,994","AUD":"A$2,618","SGD":"$2,428","ZAR":"R28,494","CHF":"CHF1,808","CAD":"CAD2,518","CAD_FRENCH":"CAD2518"},"software_escrow_monthly":{"USD":"$99","EUR":"€99","GBP":"£79","INR":"₹6,995","AUD":"A$119","SGD":"$119","ZAR":"R1,250","CHF":"CHF89","CAD":"CAD119"},"saas_escrow_monthly":{"USD":"$199","EUR":"€199","GBP":"£149","INR":"₹12,500","AUD":"A$250","SGD":"$249","ZAR":"R2,799","CHF":"CHF219","CAD":"CAD299"},"software_backup_monthly":{"USD":"$59","EUR":"€59","GBP":"£49","AUD":"A$89","SGD":"$79","CAD":"CAD79","CHF":"CHF49","ZAR":"R999","INR":"₹3,999"},"software_backup_yearly":{"USD":"$639","EUR":"€639","GBP":"£529","AUD":"A$969","SGD":"$859","CAD":"CAD859","CHF":"CHF539","ZAR":"R10,899","INR":"₹42,999"},"software_backup_certified":{"USD":"$10","EUR":"€10","GBP":"£10","AUD":"A$20","SGD":"$20","CAD":"CAD20","CHF":"CHF10","ZAR":"R200","INR":"₹899"},"software_backup_advanced_deposits":{"USD":"$49","EUR":"€49","GBP":"£39","AUD":"A$79","SGD":"$69","CAD":"CAD69","CHF":"CHF39","ZAR":"R849","INR":"₹3,499"},"software_backup_advanced_integrations":{"USD":"$49","EUR":"€49","GBP":"£39","AUD":"A$79","SGD":"$69","CAD":"CAD69","CHF":"CHF39","ZAR":"R849","INR":"₹3,499"},"software_escrow_single_monthly":{"USD":"$89","EUR":"€89","GBP":"£69","AUD":"A$139","SGD":"$119","CAD":"CAD119","CHF":"CHF79","ZAR":"R1,499","INR":"₹6,499"},"software_escrow_single_yearly":{"USD":"$990","EUR":"€990","GBP":"£759","AUD":"A$1,499","SGD":"$1,299","CAD":"CAD1,299","CHF":"CHF859","ZAR":"R15,999","INR":"₹69,999"},"software_escrow_multi_monthly":{"USD":"$189","EUR":"€189","GBP":"£149","AUD":"A$289","SGD":"$249","CAD":"CAD249","CHF":"CHF159","ZAR":"R2,999","INR":"₹13,999"},"software_escrow_multi_yearly":{"USD":"$1,990","EUR":"€1,990","GBP":"£1,629","AUD":"A$3,099","SGD":"$2,699","CAD":"CAD2,699","CHF":"CHF1,739","ZAR":"R32,999","INR":"₹149,999"},"software_escrow_all_monthly":{"USD":"$689","EUR":"€689","GBP":"£549","AUD":"A$1,049","SGD":"$899","CAD":"CAD899","CHF":"CHF599","ZAR":"R11,999","INR":"₹51,999"},"software_escrow_all_yearly":{"USD":"$7,490","EUR":"€7,490","GBP":"£5,989","AUD":"A$11,499","SGD":"$9,799","CAD":"CAD9,799","CHF":"CHF6,529","ZAR":"R129,999","INR":"₹566,999"},"saas_escrow_single_monthly":{"USD":"$189","EUR":"€189","GBP":"£149","AUD":"A$289","SGD":"$249","CAD":"CAD249","CHF":"CHF159","ZAR":"R2,999","INR":"₹13,999"},"saas_escrow_single_yearly":{"USD":"$1,990","EUR":"€1,990","GBP":"£1,599","AUD":"A$3,149","SGD":"$2,699","CAD":"CAD2,699","CHF":"CHF1,739","ZAR":"R32,999","INR":"₹149,999"},"saas_escrow_multi_monthly":{"USD":"$369","EUR":"€369","GBP":"£289","AUD":"A$559","SGD":"$499","CAD":"CAD499","CHF":"CHF319","ZAR":"R5,999","INR":"₹27,999"},"saas_escrow_multi_yearly":{"USD":"$3,990","EUR":"€3,990","GBP":"£3,149","AUD":"A$5,999","SGD":"$5,449","CAD":"CAD5,449","CHF":"CHF3,479","ZAR":"R64,999","INR":"₹299,999"},"saas_escrow_all_monthly":{"USD":"$1,149","EUR":"€1,149","GBP":"£899","AUD":"A$1,749","SGD":"$1,549","CAD":"CAD1,549","CHF":"CHF999","ZAR":"R19,999","INR":"₹86,999"},"saas_escrow_all_yearly":{"USD":"$12,490","EUR":"€12,490","GBP":"£9,799","AUD":"A$18,999","SGD":"$16,899","CAD":"CAD16,899","CHF":"CHF10,899","ZAR":"R217,999","INR":"₹948,999"},"software_custodian_single_monthly":{"USD":"$269","EUR":"€269","GBP":"£219","AUD":"A$399","SGD":"$359","CAD":"CAD359","CHF":"CHF229","ZAR":"R4,499","INR":"₹19,999"},"software_custodian_single_yearly":{"USD":"$2,990","EUR":"€2,990","GBP":"£2,389","AUD":"A$4,349","SGD":"$3,899","CAD":"CAD3,899","CHF":"CHF2,499","ZAR":"R48,999","INR":"₹217,999"},"software_custodian_multi_monthly":{"USD":"$639","EUR":"€639","GBP":"£499","AUD":"A$969","SGD":"$859","CAD":"CAD859","CHF":"CHF549","ZAR":"R10,999","INR":"₹47,999"},"software_custodian_multi_yearly":{"USD":"$6,990","EUR":"€6,990","GBP":"£5,449","AUD":"A$10,559","SGD":"$9,369","CAD":"CAD9,369","CHF":"CHF5,989","ZAR":"R119,999","INR":"₹522,999"},"software_custodian_all_monthly":{"USD":"$2,239","EUR":"€2,239","GBP":"£1,759","AUD":"A$3,399","SGD":"$2,999","CAD":"CAD2,999","CHF":"CHF1,949","ZAR":"R38,999","INR":"₹168,999"},"software_custodian_all_yearly":{"USD":"$24,490","EUR":"€24,490","GBP":"£19,189","AUD":"A$36,999","SGD":"$32,699","CAD":"CAD32,699","CHF":"CHF21,259","ZAR":"R424,999","INR":"₹1,839,999"},"pricing_currency":{"USD":"$","EUR":"€","GBP":"£","AUD":"A$","SGD":"$","CAD":"CAD","CHF":"CHF","ZAR":"R","INR":"₹"},"software_escrow_single_certified":{"USD":"20","EUR":"20","GBP":"10","AUD":"30","SGD":"20","CAD":"20","CHF":"20","ZAR":"300","INR":"1,300"},"software_escrow_multi_certified":{"USD":"40","EUR":"40","GBP":"30","AUD":"60","SGD":"50","CAD":"50","CHF":"30","ZAR":"600","INR":"2800"},"software_escrow_all_certified":{"USD":"140","EUR":"140","GBP":"110","AUD":"210","SGD":"180","CAD":"180","CHF":"120","ZAR":"2,400","INR":"10,400"},"software_escrow_single_advanced_deposits":{"USD":"49","EUR":"49","GBP":"39","AUD":"79","SGD":"69","CAD":"69","CHF":"39","ZAR":"849","INR":"3,499"},"software_escrow_multi_advanced_deposits":{"USD":"99","EUR":"99","GBP":"79","AUD":"149","SGD":"129","CAD":"129","CHF":"89","ZAR":"1,699","INR":"7,499"},"software_escrow_all_advanced_deposits":{"USD":"149","EUR":"149","GBP":"119","AUD":"229","SGD":"199","CAD":"199","CHF":"129","ZAR":"2,599","INR":"10,999"},"software_escrow_single_advanced_integrations":{"USD":"49","EUR":"49","GBP":"39","AUD":"79","SGD":"69","CAD":"69","CHF":"39","ZAR":"849","INR":"3,499"},"software_escrow_multi_advanced_integrations":{"USD":"99","EUR":"99","GBP":"79","AUD":"149","SGD":"129","CAD":"129","CHF":"89","ZAR":"1,699","INR":"7,499"},"software_escrow_all_advanced_integrations":{"USD":"149","EUR":"149","GBP":"119","AUD":"229","SGD":"199","CAD":"199","CHF":"129","ZAR":"2,599","INR":"10,999"},"software_escrow_single_compliance_support":{"USD":"99","EUR":"99","GBP":"79","AUD":"149","SGD":"129","CAD":"129","CHF":"89","ZAR":"1,699","INR":"7,499"},"software_escrow_multi_compliance_support":{"USD":"199","EUR":"199","GBP":"159","AUD":"299","SGD":"269","CAD":"269","CHF":"169","ZAR":"3,449","INR":"14,999"},"software_escrow_all_compliance_support":{"USD":"299","EUR":"299","GBP":"239","AUD":"449","SGD":"399","CAD":"399","CHF":"259","ZAR":"4,999","INR":"21,999"},"software_escrow_single_assured_recovery":{"USD":"199","EUR":"199","GBP":"159","AUD":"299","SGD":"269","CAD":"269","CHF":"169","ZAR":"3,449","INR":"14,999"},"software_escrow_multi_assured_recovery":{"USD":"399","EUR":"399","GBP":"309","AUD":"599","SGD":"539","CAD":"539","CHF":"349","ZAR":"6,999","INR":"29,999"},"software_escrow_all_assured_recovery":{"USD":"599","EUR":"599","GBP":"469","AUD":"899","SGD":"799","CAD":"799","CHF":"519","ZAR":"9,999","INR":"44,999"}};
     localStorage.setItem('prices', JSON.stringify(yamlData));
 
     // Set a flag in localStorage to indicate that the page has been reloaded

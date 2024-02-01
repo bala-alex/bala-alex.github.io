@@ -24,6 +24,8 @@ $(document).ready(function () {
           $('.team-yearly-saas2').text(prices.team_yearly_saas2.EUR);
           $('.business-yearly-saas2').text(prices.business_yearly_saas2.EUR);
 
+          localStorage.setItem('currency', 'EUR');
+
           if (pathname.includes('/fr/')) {
             $('#enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
             $('.enterprise-monthly').text(prices.enterprise_monthly.EUR_FRENCH);
@@ -193,6 +195,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-ch').remove();
           $('.plan-ca').remove();
+
+          localStorage.setItem('currency', 'GBP');
+
         }
         else if (response.currency === 'INR') {
           $('.setup-fee').text(prices.setup_fee.INR);
@@ -243,6 +248,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-ch').remove();
           $('.plan-ca').remove();
+
+
+          localStorage.setItem('currency', 'INR');
         }
         else if (response.currency === 'AUD') {
           $('.setup-fee').text(prices.setup_fee.AUD);
@@ -293,6 +301,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-ch').remove();
           $('.plan-ca').remove();
+
+
+          localStorage.setItem('currency', 'AUD');
         }
 
         else if (response.currency === 'SGD') {
@@ -344,6 +355,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-ch').remove();
           $('.plan-ca').remove();
+
+
+          localStorage.setItem('currency', 'SGD');
         }
 
         else if (response.currency === 'ZAR') {
@@ -395,6 +409,9 @@ $(document).ready(function () {
           $('.plan-au').remove();
           $('.plan-ch').remove();
           $('.plan-ca').remove();
+
+
+          localStorage.setItem('currency', 'ZAR');
         }
 
         else if (response.currency === 'CHF') {
@@ -446,6 +463,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-sg').remove();
           $('.plan-ca').remove();
+
+
+          localStorage.setItem('currency', 'CHF');
         }
 
         else if (response.currency === 'CAD') {
@@ -506,6 +526,9 @@ $(document).ready(function () {
           $('.plan-rsa').remove();
           $('.plan-ch').remove();
           $('.plan-au').remove();
+
+
+          localStorage.setItem('currency', 'CAD');
         }
 
         else {

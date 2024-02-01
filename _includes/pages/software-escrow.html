@@ -14,108 +14,119 @@
   <div class="bg-white software-escrow">
     <!-- Navigation -->
     {% include navigation.html %}
-    <!-- Header -->
-    <div class="header__content">
-      <div class="header__bg-software-escrow">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-12">
-              <div class="d-flex align-items-center">
-                <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
-                  alt="Software Escrow Shield Icon" />
-                <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_escrow']
-                  }}</p>
-              </div>
-              <h1 class="header__title text-align-start mt-4">{{
-                site.data[page.lang]['software_escrow2']['securely_store_your'] }}</h1>
-              <p class="header__subtitle text-align-start mt-4">{{
-                site.data[page.lang]['software_escrow2']['state_of_the_art'] }}</p>
-              <div class="solutions">
-                <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
-                    class="software-escrow-single-monthly">{{
-                    site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/{{
-                  site.data[page.lang]['software_backup']['per_application'] }}</p>
-              </div>
-
-              <div class="d-flex flex-wrap resources mt-4">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-                </a>
-                <div>
-                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href" href="pricing.html">{{
-                    site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
-                      aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5 col-sm-12 content-center flex-column">
-              <img class="image-style mw-530 mt-4" src="/images/software-escrow/hero-software-escrow.webp"
-                alt="Software Escrow Storage and Recovery Illustration" />
-              <p class="header__subtext mx-auto mt-2">{{ site.data[page.lang]['software_escrow']['we_support_all'] }}
-              </p>
-              <div class="resources">
-                <div class="applications__logos mt-4">
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"
-                      alt="Bitbucket Logo" />
-                    <p class="applications__logo-text">Bitbucket</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"
-                      alt="Github Logo" />
-                    <p class="applications__logo-text">GitHub</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
-                      alt="Gitlab Logo" />
-                    <p class="applications__logo-text">GitLab</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
-                      alt="Google Cloud Logo" />
-                    <p class="applications__logo-text">Google<br> Cloud</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg"
-                      alt="Microsoft Azure Logo" />
-                    <p class="applications__logo-text">Microsoft Azure</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"
-                      alt="Amazon Web Services Logo" />
-                    <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid section-medium pricing">
-      <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
-      <!-- Slideshow Brands -->
-      {% include slideshow-brands.html %}
-    </div>
+    
 
     <div class="pricing section-medium pb-0">
-      <div class="pricing-tabs container-fluid mt-200 px-0">
+      <div class="pricing-tabs container-fluid mt-2 px-0">
         <div class="pricing-container mx-auto">
-          <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-            <a class="nav-link" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
-              aria-controls="pills-intro" aria-selected="false">Introduction</a>
-            <a class="nav-link" id="pills-features-tab" data-toggle="pill" href="#pills-features"
-              role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
-            <a class="nav-link active space-no-wrap" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
-              aria-controls="pills-pricing" aria-selected="true">Pricing</a>
-
+          <div class="d-flex align-items-center justify-content-between pt-5 navigation-border">
+            <div class="d-flex align-items-center">
+              <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
+                alt="Software Escrow Shield Icon" />
+              <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_escrow']
+                }}</p>
+            </div>
+            <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
+                aria-controls="pills-intro" aria-selected="false">Introduction</a>
+              <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+                role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
+              <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+                aria-controls="pills-pricing" aria-selected="true">Pricing</a>
+  
+            </div>
           </div>
+          
         </div>
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
             <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
+              <!-- Header -->
+              <div class="header__content">
+                <div class="header__bg-software-escrow-tabs">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7 col-sm-12">
+                        <!-- <div class="d-flex align-items-center">
+                          <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
+                            alt="Software Escrow Shield Icon" />
+                          <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_escrow']
+                            }}</p>
+                        </div> -->
+                        <h1 class="header__title text-align-start mt-4">{{
+                          site.data[page.lang]['software_escrow2']['securely_store_your'] }}</h1>
+                        <p class="header__subtitle text-align-start mt-4">{{
+                          site.data[page.lang]['software_escrow2']['state_of_the_art'] }}</p>
+                        <div class="solutions">
+                          <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
+                              class="software-escrow-single-monthly">{{
+                              site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/{{
+                            site.data[page.lang]['software_backup']['per_application'] }}</p>
+                        </div>
+
+                        <div class="d-flex flex-wrap resources mt-4">
+                          <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                            {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                          </a>
+                          <div>
+                            <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                            <a class="header__link pricing-href" href="pricing.html">{{
+                              site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
+                                aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12 content-center flex-column">
+                        <img class="image-style mw-530 mt-4" src="/images/software-escrow/hero-software-escrow.webp"
+                          alt="Software Escrow Storage and Recovery Illustration" />
+                        <p class="header__subtext mx-auto mt-2">{{ site.data[page.lang]['software_escrow']['we_support_all'] }}
+                        </p>
+                        <div class="resources">
+                          <div class="applications__logos mt-4">
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"
+                                alt="Bitbucket Logo" />
+                              <p class="applications__logo-text">Bitbucket</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"
+                                alt="Github Logo" />
+                              <p class="applications__logo-text">GitHub</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
+                                alt="Gitlab Logo" />
+                              <p class="applications__logo-text">GitLab</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
+                                alt="Google Cloud Logo" />
+                              <p class="applications__logo-text">Google<br> Cloud</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg"
+                                alt="Microsoft Azure Logo" />
+                              <p class="applications__logo-text">Microsoft Azure</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"
+                                alt="Amazon Web Services Logo" />
+                              <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-fluid section-medium pricing">
+                <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+                <!-- Slideshow Brands -->
+                {% include slideshow-brands.html %}
+              </div>
+
               <div class="resources">
                 <div class="software-escrow__bg-gray min-h-600 pb-100">
                   <div class="container d-flex align-items-center flex-column">
@@ -1369,7 +1380,7 @@
             </div>
             <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
-              <div class="pricing mt-350">
+              <div class="pricing mt-5">
                 {% include pricing-tabs-assets.html %}
               </div>
 
@@ -1709,11 +1720,11 @@
     var totalSum = 0;
     var checkoutText = [];
     var checkoutAdOns = [];
+    var duration = 'Monthly';
 
-    function selectPlan(button, planType, priceString, snippet) {
-
-
-      checkoutText = [].concat(snippet);
+    function selectPlan(button, planType, priceString, planID) {
+      const currency = localStorage.getItem('currency');
+      checkoutText = planID + '-' + currency + '-' + duration;
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
@@ -1742,7 +1753,7 @@
       // }
       // $(button).siblings().removeClass('-is-selected').text('Selected');
 
-      $('#planType').text(planType === 'single' ? 'Single Beneficiary' : planType === 'multiple' ? 'Multi Beneficiary' : planType === 'all' ? 'All Risk' : planType)
+      $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
 
       if (planType === 'single') {
         $('.single').addClass('-is-selected');
@@ -1757,21 +1768,26 @@
         $('.single').removeClass('-is-selected');
         $('.multiple').removeClass('-is-selected');
       }
-      console.log('checkoutText', checkoutText)
+      console.log('checkoutText: ', checkoutText)
       $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
     }
 
-    function add(button, price, snippetName, snippetType, whatever) {
+    function selectDuration(value) {
+      duration = value;
+    }
+
+    function add(button, price, addonID) {
+      const currency = localStorage.getItem('currency');
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = 'Add';
         button.classList.remove('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${snippetName}-${snippetType}`);
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
       } else {
         totalSum += price;
         button.textContent = 'Added';
         button.classList.add('-is-selected');
-        checkoutAdOns.push(`${snippetName}-${snippetType}`);
+        checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
 
       const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected").length;
@@ -1786,7 +1802,6 @@
 
       document.getElementById('totalSum').textContent = totalSum;
 
-      console.log('checkoutText', checkoutText);
       console.log('checkoutAdOns', checkoutAdOns);
 
       // Set data-cb-item-0 attribute
@@ -1802,40 +1817,44 @@
       for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
         checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
       }
-
-
-
     }
-
-
-
   </script>
 
 <script>
-  var cbInstance, cart;
+    var cbInstance, cart;
 
-  window.addEventListener('DOMContentLoaded', function() {
-  cbInstance = Chargebee.init({
-      site: "codekeeperbilling",
-      isItemsModel: true,
-  })
+    window.addEventListener('DOMContentLoaded', function () {
+      cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+      });
 
-  cbInstance.setCheckoutCallbacks(function(cart) {
-      return {
-          success: function(hpid) {
-              console.log('success', hpid)
+      cbInstance.setCheckoutCallbacks(function (cart) {
+        return {
+          success: function (hpid) {
+            console.log('success', hpid)
           }
-      }
-  })
+        }
+      });
 
-  cart = cbInstance.getCart()
-  })
+      cart = cbInstance.getCart();
+    })
+
+
   function openCheckout() {
-      const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
-      const planPriceQuantity = 1
-      const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+      const selectedPlan = checkoutText;
+      console.log('selectedPlan: ', selectedPlan);
+      if (!selectedPlan) return;
+
+      const product = cbInstance.initializeProduct(selectedPlan, 1)
       cart.replaceProduct(product);
 
+      if (checkoutAdOns) {
+        checkoutAdOns.map((addon) => {
+          console.log('addon: ', addon);
+          product.addAddon({ id: addon, quantity: 1 });
+        })
+      }
       // Opening the checkout
       cart.proceedToCheckout();
   }
