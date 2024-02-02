@@ -12,98 +12,112 @@
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
-    {% include navigation.html %}
-    <!-- Header -->
-    <div class="header__content">
-      <div class="header__bg-saas-escrow">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-12">
+    <div class="navigation pb-4">
+      {% include navigation.html %}
+    </div>
+
+    <div class="pricing section-medium pb-0">
+      <div class="pricing-tabs container-fluid mt-2 px-0">
+        <div class="navigation-sticky">
+          <div class="pricing-container mx-auto">
+            <div class="d-flex align-items-center justify-content-between py-1 navigation-border mobile-column">
               <div class="d-flex align-items-center">
                 <img class="mr-2 mb-1" src="/images/landing/icons/data-custodian-shield.svg" alt="Software Custodian Shield Icon" />
                 <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</p>
               </div>
-              <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['software_custodian']['end_to_end'] }}</h1>
-              <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['software_custodian']['software_custodian_allows'] }}</p>
-              
-              <div class="d-flex flex-wrap resources mt-5">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-                </a>
-                <div>
-                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href" href="pricing.html">{{
-                    site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
-                      aria-hidden="true"></i></a>
-                </div>
+              <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
+                  aria-controls="pills-intro" aria-selected="false">Introduction</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+                  role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
+                <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+                  aria-controls="pills-pricing" aria-selected="true">Pricing</a>
+    
               </div>
             </div>
-            <div class="col-md-5 col-sm-12 content-center flex-column">
-              <img class="image-style mw-530 mt-4" src="/images/software-custodian/software-custodian-header.webp" alt="Illustration Depicting the Software Lifecycle Dashboard"/>
-              <p class="header__subtext mx-auto mt-2">{{ site.data[page.lang]['software_escrow']['we_support_all'] }}
-              </p>
-              <div class="resources">
-                <div class="applications__logos mt-4">
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"
-                      alt="Bitbucket Logo" />
-                    <p class="applications__logo-text">Bitbucket</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"
-                      alt="Github Logo" />
-                    <p class="applications__logo-text">GitHub</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
-                      alt="Gitlab Logo" />
-                    <p class="applications__logo-text">GitLab</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
-                      alt="Google Cloud Logo" />
-                    <p class="applications__logo-text">Google<br> Cloud</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg"
-                      alt="Microsoft Azure Logo" />
-                    <p class="applications__logo-text">Microsoft Azure</p>
-                  </div>
-                  <div class="applications__logo mx-0">
-                    <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"
-                      alt="Amazon Web Services Logo" />
-                    <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid section-medium pricing">
-      <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
-      <!-- Slideshow Brands -->
-      {% include slideshow-brands.html %}
-    </div>
-
-    <div class="pricing section-medium pb-0">
-      <div class="pricing-tabs container-fluid mt-200 px-0">
-        <div class="pricing-container mx-auto">
-          <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-            <a class="nav-link" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
-              aria-controls="pills-intro" aria-selected="false">Introduction</a>
-            <a class="nav-link active space-no-wrap" id="pills-features-tab" data-toggle="pill" href="#pills-features" role="tab"
-              aria-controls="pills-features" aria-selected="true">Features</a>
-            <a class="nav-link" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing"
-              role="tab" aria-controls="pills-pricing" aria-selected="true">Pricing</a>
-
-          </div>
-        </div>
+        
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
             <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
+              <!-- Header -->
+              <div class="header__content">
+                <div class="header__bg-software-escrow-tabs">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7 col-sm-12">
+                        <!-- <div class="d-flex align-items-center">
+                          <img class="mr-2 mb-1" src="/images/landing/icons/software-escrow-shield.svg"
+                            alt="Software Escrow Shield Icon" />
+                          <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_escrow']
+                            }}</p>
+                        </div> -->
+                        <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['software_custodian']['end_to_end'] }}</h1>
+                        <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['software_custodian']['software_custodian_allows'] }}</p>
+                        <div class="d-flex flex-wrap resources mt-5">
+                          <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                            {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                          </a>
+                          <div>
+                            <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                            <a class="header__link pricing-href" href="pricing.html">{{
+                              site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
+                                aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12 content-center flex-column">
+                        <img class="image-style mw-530 mt-4" src="/images/software-custodian/software-custodian-header.webp" alt="Illustration Depicting the Software Lifecycle Dashboard"/>
+                        <p class="header__subtext mx-auto mt-2">{{ site.data[page.lang]['software_escrow']['we_support_all'] }}
+                        </p>
+                        <div class="resources">
+                          <div class="applications__logos mt-4">
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"
+                                alt="Bitbucket Logo" />
+                              <p class="applications__logo-text">Bitbucket</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg"
+                                alt="Github Logo" />
+                              <p class="applications__logo-text">GitHub</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg"
+                                alt="Gitlab Logo" />
+                              <p class="applications__logo-text">GitLab</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
+                                alt="Google Cloud Logo" />
+                              <p class="applications__logo-text">Google<br> Cloud</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg"
+                                alt="Microsoft Azure Logo" />
+                              <p class="applications__logo-text">Microsoft Azure</p>
+                            </div>
+                            <div class="applications__logo mx-0">
+                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg"
+                                alt="Amazon Web Services Logo" />
+                              <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-fluid section-medium pricing">
+                <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+                <!-- Slideshow Brands -->
+                {% include slideshow-brands.html %}
+              </div>
+
               <div class="resources">
                 <div class="software-escrow__bg-gray min-h-600 pb-100">
                   <div class="container d-flex align-items-center flex-column">
@@ -548,7 +562,8 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show active" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab">
+            <div class="tab-pane fade" id="pills-features" role="tabpanel"
+              aria-labelledby="pills-features-tab">
               <!-- <div class="container contact pb-100">
                 <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
@@ -913,12 +928,11 @@
               </div>
               <!-- Section -->
               {% include demo-recovery.html %}
-              
+
             </div>
-            <div class="tab-pane fade" id="pills-pricing" role="tabpanel"
-              aria-labelledby="pills-pricing-tab">
+            <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
-              <div class="pricing mt-350">
+              <div class="pricing mt-5">
                 {% include pricing-tabs-assets.html %}
               </div>
 
@@ -1149,6 +1163,7 @@
       </div>
     </div>
 
+
     <!-- Footer -->
     {% include footer.html %}
   </div>
@@ -1161,6 +1176,7 @@
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
   <script src="/js/offerRequest.js"></script>
+  <script src="/js/guideTranslation.js"></script>
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
@@ -1177,93 +1193,16 @@
     window.location.reload();
     } 
   </script>
-  <script>
-    document.getElementById('toggleSwitch').addEventListener('change', function () {
-      var div1 = document.getElementById('div1');
-      var div2 = document.getElementById('div2');
 
-      if (this.checked) {
-        div1.classList.add('d-none');
-        div2.classList.remove('d-none');
-      } else {
-        div1.classList.remove('d-none');
-        div2.classList.add('d-none');
-      }
-    });
-
-    document.getElementById('toggleSwitch2').addEventListener('change', function () {
-      var div3 = document.getElementById('div3');
-      var div4 = document.getElementById('div4');
-
-      if (this.checked) {
-        div3.classList.add('d-none');
-        div4.classList.remove('d-none');
-      } else {
-        div3.classList.remove('d-none');
-        div4.classList.add('d-none');
-      }
-    });
-
-    document.getElementById('toggleSwitch3').addEventListener('change', function () {
-      var div5 = document.getElementById('div5');
-      var div6 = document.getElementById('div6');
-
-      if (this.checked) {
-        div5.classList.add('d-none');
-        div6.classList.remove('d-none');
-      } else {
-        div5.classList.remove('d-none');
-        div6.classList.add('d-none');
-      }
-    });
-
-    document.getElementById('toggleSwitch4').addEventListener('change', function () {
-      var div7 = document.getElementById('div7');
-      var div8 = document.getElementById('div8');
-
-      if (this.checked) {
-        div7.classList.add('d-none');
-        div8.classList.remove('d-none');
-      } else {
-        div7.classList.remove('d-none');
-        div8.classList.add('d-none');
-      }
-    });
-
-    document.getElementById('toggleSwitch5').addEventListener('change', function () {
-      var div9 = document.getElementById('div9');
-      var div10 = document.getElementById('div10');
-
-      if (this.checked) {
-        div9.classList.add('d-none');
-        div10.classList.remove('d-none');
-      } else {
-        div9.classList.remove('d-none');
-        div10.classList.add('d-none');
-      }
-    });
-
-    document.getElementById('toggleSwitch6').addEventListener('change', function () {
-      var div11 = document.getElementById('div11');
-      var div12 = document.getElementById('div12');
-
-      if (this.checked) {
-        div11.classList.add('d-none');
-        div12.classList.remove('d-none');
-      } else {
-        div11.classList.remove('d-none');
-        div12.classList.add('d-none');
-      }
-    });
-  </script>
   <script>
     var totalSum = 0;
     var checkoutText = [];
     var checkoutAdOns = [];
+    var duration = 'Monthly';
 
-    function selectPlan(button, planType, priceString, snippet) {
-
-      checkoutText = [].concat(snippet);
+    function selectPlan(button, planType, priceString, planID) {
+      const currency = localStorage.getItem('currency');
+      checkoutText = planID + '-' + currency + '-' + duration;
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
@@ -1292,7 +1231,7 @@
       // }
       // $(button).siblings().removeClass('-is-selected').text('Selected');
 
-      $('#planType').text(planType === 'single' ? 'Single Beneficiary' : planType === 'multiple' ? 'Multi Beneficiary' : planType === 'all' ? 'All Risk' : planType)
+      $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
 
       if (planType === 'single') {
         $('.single').addClass('-is-selected');
@@ -1307,58 +1246,180 @@
         $('.single').removeClass('-is-selected');
         $('.multiple').removeClass('-is-selected');
       }
-      console.log('checkoutText', checkoutText)
+      console.log('checkoutText: ', checkoutText)
+      $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
     }
 
-    function add(button, price, snippetName, snippetType, whatever) {
+    function selectDuration(value) {
+      duration = value;
+    }
 
-      // checkoutText = checkoutText + ;
-      // 'Advanced-SaaS-Integrations-Add-On', 'single', 'usd'
-
-      console.log('snippetName', snippetName)
-      console.log('snippetType', snippetType)
-      console.log('sssss', `${snippetName}-${snippetType}`)
-
-
-      if ($(button).hasClass('-is-selected')) {
+    function add(button, price, addonID) {
+      const currency = localStorage.getItem('currency');
+      if (button.classList.contains('-is-selected')) {
         totalSum -= price;
-        $(button).text('Add').removeClass('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${snippetName}-${snippetType}`);
+        button.textContent = 'Add';
+        button.classList.remove('-is-selected');
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
       } else {
         totalSum += price;
-        $(button).text('Added').addClass('-is-selected');
-
-        checkoutAdOns = checkoutAdOns.concat(`${snippetName}-${snippetType}`);
+        button.textContent = 'Added';
+        button.classList.add('-is-selected');
+        checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
 
-
-      const addOns = $(".btn-primary-small2.-is-selected").length
+      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected").length;
 
       if (!addOns) {
-        $('#adds').addClass('d-none')
+        document.getElementById('adds').classList.add('d-none');
+      } else {
+        const addsElement = document.getElementById('adds');
+        addsElement.classList.remove('d-none');
+        addsElement.textContent = `Addons: ${addOns}`;
       }
-      else {
-        $('#adds').removeClass('d-none').text(`Addons: ${addOns}`)
+
+      document.getElementById('totalSum').textContent = totalSum;
+
+      console.log('checkoutAdOns', checkoutAdOns);
+
+      // Set data-cb-item-0 attribute
+      const checkoutSnippet = document.getElementById('checkout-snippet');
+      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
+
+      // Clear other existing data-cb-item attributes
+      for (let i = 1; i <= checkoutAdOns.length; i++) {
+        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
       }
 
-      $('#totalSum').text(totalSum);
-
-      // $('#checkout-snippet').text(checkoutText)
-      console.log('checkoutText', checkoutText)
-      console.log('checkoutAdOns', checkoutAdOns)
-
-      var finalScript = `data-cb-item-0 =`
-
-      
-
-      if (checkoutAdOns.length) {
-        checkoutAdOns.map((item, i) => $('#checkout-snippet').attr('data-cb-item-0', checkoutText).attr(`data-cb-item-${i + 1}`, item))
-      }
-      else {
-        $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
+      // Remove remaining data-cb-item attributes
+      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
+        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
       }
     }
+  </script>
+
+<script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function () {
+      cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+      });
+
+      cbInstance.setCheckoutCallbacks(function (cart) {
+        return {
+          success: function (hpid) {
+            console.log('success', hpid)
+          }
+        }
+      });
+
+      cart = cbInstance.getCart();
+    })
 
 
+  function openCheckout() {
+      const selectedPlan = checkoutText;
+      console.log('selectedPlan: ', selectedPlan);
+      if (!selectedPlan) return;
+
+      const product = cbInstance.initializeProduct(selectedPlan, 1)
+      cart.replaceProduct(product);
+
+      if (checkoutAdOns) {
+        checkoutAdOns.map((addon) => {
+          console.log('addon: ', addon);
+          product.addAddon({ id: addon, quantity: 1 });
+        })
+      }
+      // Opening the checkout
+      cart.proceedToCheckout();
+  }
+</script>
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+        
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+</script> -->
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let cbInstance = Chargebee.getInstance();
+      let cart = cbInstance.getCart();
+      let product = cbInstance.initializeProduct("Software-Escrow-Single-USD-Monthly", 1);
+      cart.replaceProduct(product);
+      document.getElementById("checkout-snippet").addEventListener("click", function () {
+        cart.proceedToCheckout();
+      });
+    });
+  </script> -->
+
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+  </script> -->
+
+  <script>
+    $(function(){
+      var navigation = $('.navigation');
+      
+      $(window).scroll(function(){
+        if($(window).scrollTop() <= 90){
+          navigation.removeClass('d-none');
+        } else {
+          navigation.addClass('d-none');
+        }
+      });
+    });
   </script>
 </body>

@@ -13,81 +13,97 @@
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
-    {% include navigation.html %}
-    <!-- Header -->
-    <div class="header__content">
-      <div class="header__bg-software-escrow">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-sm-12">
+    <div class="navigation pb-4">
+      {% include navigation.html %}
+    </div>
+
+    <div class="pricing section-medium pb-0">
+      <div class="pricing-tabs container-fluid mt-2 px-0">
+        <div class="navigation-sticky">
+          <div class="pricing-container mx-auto">
+            <div class="d-flex align-items-center justify-content-between py-1 navigation-border mobile-column">
               <div class="d-flex align-items-center">
                 <img class="mr-2 mb-1" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" />
                 <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_backup'] }}</p>
               </div>
-              
-              <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['software_backup']['source_code_and_application'] }}</h1>
-              <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['software_backup']['effortless_automated_backups'] }}</p>
-              <div class="d-flex flex-wrap resources mt-4">
-                <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                  {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-                </a>
-                <div>
-                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                  <a class="header__link pricing-href" href="pricing.html">{{
-                    site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
-                      aria-hidden="true"></i></a>
-                </div>
+              <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
+                  aria-controls="pills-intro" aria-selected="false">Introduction</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+                  role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
+                <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+                  aria-controls="pills-pricing" aria-selected="true">Pricing</a>
+    
               </div>
             </div>
-            <div class="col-md-5 col-sm-12 content-center flex-column">
-              <img class="image-style mw-530 mt-4" src="/images/disaster-recovery/software-backups-header.webp" alt="Software Backup Header Illustration" />
-              <div class="d-flex flex-wrap">
-                <div class="d-flex align-items-center flex-column m-2 mr-3">
-                  <img class="mb-1" src="/images/disaster-recovery/icons/unlimited-repo.svg" alt="Unlimited Repositories Icon" />
-                  <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['unlimited_repositories'] }}</p>
-                </div>
-                <div class="d-flex align-items-center flex-column m-2">
-                  <img class="mb-1" src="/images/disaster-recovery/icons/unlimited-data.svg" alt="Unlimited Data Storage Icon" />
-                  <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['unlimited_data_storage'] }}</p>
-                </div>
-                <div class="d-flex align-items-center flex-column m-2">
-                  <img class="mb-1" src="/images/disaster-recovery/icons/automated-backup.svg" alt="Automated Backup Process Icon" />
-                  <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['automated_backup'] }}</p>
-                </div>
-                <div class="d-flex align-items-center flex-column m-2">
-                  <img class="mb-1" src="/images/disaster-recovery/icons/customizable-backup.svg" alt="Customizable Backup Schedules Icon" />
-                  <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['customizable_backup'] }}</p>
-                </div>
-
-              </div>              
-            </div>
+            
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid section-medium pricing">
-      <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['software_backup']['trusted_partner_of'] }}</p>
-      <!-- Slideshow Brands -->
-      {% include slideshow-brands.html %}
-    </div>
-
-    <div class="pricing section-medium pb-0">
-      <div class="pricing-tabs container-fluid mt-200 px-0">
-        <div class="pricing-container mx-auto">
-          <div class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
-            <a class="nav-link" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
-              aria-controls="pills-intro" aria-selected="false">Introduction</a>
-            <a class="nav-link active space-no-wrap" id="pills-features-tab" data-toggle="pill" href="#pills-features" role="tab"
-              aria-controls="pills-features" aria-selected="true">Features</a>
-            <a class="nav-link" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
-              aria-controls="pills-pricing" aria-selected="true">Pricing</a>
-      
-          </div>
-        </div>
+        
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
             <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
+              <!-- Header -->
+              <div class="header__content">
+                <div class="header__bg-software-escrow-tabs">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7 col-sm-12">
+
+                        <h1 class="header__title text-align-start mt-4">{{ site.data[page.lang]['software_backup']['source_code_and_application'] }}</h1>
+                        <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['software_backup']['effortless_automated_backups'] }}</p>
+                        <div class="solutions">
+                          <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
+                              class="software-escrow-single-monthly">{{
+                              site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/{{
+                            site.data[page.lang]['software_backup']['per_application'] }}</p>
+                        </div>
+
+                        <div class="d-flex flex-wrap resources mt-4">
+                          <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                            {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                          </a>
+                          <div>
+                            <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                            <a class="header__link pricing-href" href="pricing.html">{{
+                              site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
+                                aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-12 content-center flex-column">
+                        <img class="image-style mw-530 mt-4" src="/images/disaster-recovery/software-backups-header.webp" alt="Software Backup Header Illustration" />
+                        <div class="d-flex flex-wrap">
+                          <div class="d-flex align-items-center flex-column m-2 mr-3">
+                            <img class="mb-1" src="/images/disaster-recovery/icons/unlimited-repo.svg" alt="Unlimited Repositories Icon" />
+                            <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['unlimited_repositories'] }}</p>
+                          </div>
+                          <div class="d-flex align-items-center flex-column m-2">
+                            <img class="mb-1" src="/images/disaster-recovery/icons/unlimited-data.svg" alt="Unlimited Data Storage Icon" />
+                            <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['unlimited_data_storage'] }}</p>
+                          </div>
+                          <div class="d-flex align-items-center flex-column m-2">
+                            <img class="mb-1" src="/images/disaster-recovery/icons/automated-backup.svg" alt="Automated Backup Process Icon" />
+                            <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['automated_backup'] }}</p>
+                          </div>
+                          <div class="d-flex align-items-center flex-column m-2">
+                            <img class="mb-1" src="/images/disaster-recovery/icons/customizable-backup.svg" alt="Customizable Backup Schedules Icon" />
+                            <p class="header__text text-center line-height-14">{{ site.data[page.lang]['software_backup']['customizable_backup'] }}</p>
+                          </div>
+          
+                        </div>              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-fluid section-medium pricing">
+                <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+                <!-- Slideshow Brands -->
+                {% include slideshow-brands.html %}
+              </div>
+
               <div class="container section-large pt-5">
                 <p class="scenario__title mx-auto pb-5 mw-900">{{ site.data[page.lang]['software_backup']['are_your_source_code'] }}</p>
                 <p class="scenario__subtext mx-auto mt-2 font-18 fw-400 mb-sm-50">{{ site.data[page.lang]['software_backup']['in_the_realm_of'] }}</p>
@@ -372,7 +388,8 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show active" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab">
+            <div class="tab-pane fade" id="pills-features" role="tabpanel"
+              aria-labelledby="pills-features-tab">
               <!-- <div class="container contact pb-100">
                 <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
@@ -758,327 +775,351 @@
               </div>
               <!-- Section -->
               {% include demo-recovery.html %}
-              
+
             </div>
-            <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
-              <div class="pricing-container mx-auto">
-                <div class="backup-box-shadow">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-12 bg-alice-blue content-center py-5">
-                      <div class="px-2">
-                        <p class="risks__subtitle mt-2 font-24 fw-400 text-dark-cyan">Main Features</p>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/unlimited-users.svg" alt="Unlimited users icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited users</p>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/unlimited-repositories.svg" alt="Unlimited repositories icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited repositories</p>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/unlimited-data.svg" alt="Unlimited data storage icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited data storage</p>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/automated-backup.svg" alt="Automated backup process icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Automated backup process</p>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/enterprise-grade.svg" alt="Enterprise-grade security icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Enterprise-grade security</p>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                          <img class="mr-2" src="/images/compare-page/icons/customer-support.svg" alt="24/7 customer support icon" loading="lazy" />
-                          <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">24/7 customer support</p>
-                        </div>
-                        <img class="software-escrow__image mw-420 mt-5" src="/images/software-backup/software-backups-illustration.webp" alt="Illustration of Software Backups" loading="lazy"/>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 pricing-tabs plan-box-padding">
-                      <div class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
-                        <a class="nav-link" data-toggle="pill" href="#pills-month" role="tab"
-                          aria-controls="pills-month" aria-selected="true">Monthly</a>
-                        <a class="nav-link active space-no-wrap" data-toggle="pill" href="#pills-year" role="tab"
-                          aria-controls="pills-year" aria-selected="false">Annually (Save 10%)</a>
-                      </div>
-                      <div class="tab-content mt-5" id="pills-tabContent">
-                        <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
-                          <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited Software Backup</p>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of your software assets for your organization.  </p>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
-                          <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
-                            src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-                            alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
-                          <div class="backup-devider my-4"></div>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms: </p>
-                          <div class="resources pb-3">
-                            <div class="d-flex align-items-start">
-                              <div class="d-flex align-items-center flex-column mr-4">
-                                <img class="min-h-50 mw-40" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Bitbucket </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-3">
-                                <img class="min-h-50 mw-40" src="/images/homepage/logos/github-large.svg" alt="GitHub Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitHub </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-2">
-                                <img class="min-h-50" src="/images/homepage/logos/gitlab-large.svg" alt="GitLab Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitLab </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-3">
-                                <img class="min-h-50" src="/images/homepage/logos/azure-large.svg" alt="Azure DevOps Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
-                              </div>
-                              <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
-                            </div>
-                          </div>
-                          <div class="backup-devider mt-4"></div>
-                          <div class="d-flex plan__switch align-items-center mt-3">
-                            <img class="mr-2" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
-                            <p class="risks__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2">Get certified</p>
-                            <label class="switch mt-2">
-                              <input type="checkbox" id="toggleSwitch">
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Get automated monthly content and activity verification reports (supported platforms only)</p>
-                          <a class="header__link text-bondi-blue software-backup-href font-16" href="software-backup.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-                          <div class="backup-devider my-3"></div>
-                          <div id="div1">
-                            <div class="d-flex pt-3">
-                              <p class="risks__subtitle mb-0 software-backup-monthly fw-bold font-35 text-dark-cyan">{{
-                                site.data.pricing.prices.software_backup_monthly.USD }}</p>
-                              <p class="plan__text-tooltip text-slate-gray mt-2 ml-2 text-italic">/{{
-                                site.data[page.lang]['software_backup']['per_application'] }} </p>
-                            </div>
-                            <div class="d-flex align-items-center mt-3">
-                              <div class="d-flex align-items-center">
-                                <p class="plan__fee-text mb-0 ml-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                                <div class="d-flex" data-html="true"
-                                  data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                                  data-tooltip-position="top">
-                                  <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
-                                </div>
-                              </div>
-                              <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">{{ site.data.pricing.prices.setup_fee.USD }}</p>
-                            </div>
-                            
-                            <div class="mt-4">
-                              <button class="button btn-bondi-blue4"
-                                onclick="selectPlan(this, 'monthly', this.getAttribute('data-price'))"
-                                data-price="{{ site.data.pricing.prices.software_backup_monthly.USD }}">Select Plan</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-pane fade show active mw-520" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">
-                          <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited Software Backup</p>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of your software assets for your organization. </p>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
-                          <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
-                            src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-                            alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
-                          <div class="backup-devider my-4"></div>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms: </p>
-                          <div class="resources pb-3">
-                            <div class="d-flex align-items-start">
-                              <div class="d-flex align-items-center flex-column mr-4">
-                                <img class="min-h-50 mw-40" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Bitbucket </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-3">
-                                <img class="min-h-50 mw-40" src="/images/homepage/logos/github-large.svg" alt="GitHub Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitHub </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-2">
-                                <img class="min-h-50" src="/images/homepage/logos/gitlab-large.svg" alt="GitLab Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitLab </p>
-                              </div>
-                              <div class="d-flex align-items-center flex-column mr-3">
-                                <img class="min-h-50" src="/images/homepage/logos/azure-large.svg" alt="Azure DevOps Logo" />
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
-                              </div>
-                              <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
-                            </div>
-                          </div>
-                          <div class="backup-devider mt-4"></div>
-                          <div class="d-flex plan__switch align-items-center mt-3">
-                            <img class="mr-2" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
-                            <p class="risks__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2">Get certified</p>
-                            <label class="switch mt-2">
-                              <input type="checkbox" id="toggleSwitch">
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Get automated monthly content and activity verification reports (supported platforms only)</p>
-                          <a class="header__link text-bondi-blue software-backup-href font-16" href="software-backup.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
-                          <div class="backup-devider my-3"></div>
-                          <div id="div1">
-                            <div class="d-flex pt-3">
-                              <p class="risks__subtitle mb-0 software-backup-yearly fw-bold font-35 text-dark-cyan">{{
-                                site.data.pricing.prices.software_backup_yearly.USD }}</p>
-                              <p class="plan__text-tooltip text-slate-gray mt-2 ml-2 text-italic">/{{
-                                site.data[page.lang]['software_backup']['per_application'] }} </p>
-                            </div>
-
-                            <div class="d-flex align-items-center mt-3">
-                              <div class="d-flex align-items-center">
-                                <p class="plan__fee-text mb-0 ml-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
-                                <div class="d-flex" data-html="true"
-                                  data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
-                                  data-tooltip-position="top">
-                                  <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
-                                </div>
-                              </div>
-                              <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">{{ site.data.pricing.prices.setup_fee.USD }}</p>
-                            </div>
-                            
-                            <div class="mt-4">
-                              <button class="button btn-bondi-blue4"
-                                onclick="selectPlan(this, 'yearly', this.getAttribute('data-price'))"
-                                data-price="{{ site.data.pricing.prices.software_backup_yearly.USD }}">Select Plan</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="risks__subtitle mt-5 font-28 fw-400 text-dark-cyan line-height-40">Add-ons</p>
-                <div class="backup-box-shadow p-4 mt-2">
-                  <div class="row">
-                    <div class="col-md-9 col-sm-12">
-                      <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1"><img class="mr-2" src="/images/compare-page/icons/deposit-packages.svg" alt="Advanced Deposits Icon" />Advanced Deposits</p>
-                      <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2">Upgrade your depositing configuration options to make sure your escrow is easy to maintain. </p>
-                      <span class="offer-btns2">
-                        <p class="open text-bondi-blue cursor-pointer mb-0" id="openButton2">Show Features <i class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-                        <p class="open text-bondi-blue cursor-pointer mb-0" id="closeButton2">Hide Features <i class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
-                      </span>
-                      
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <div class="mt-3">
-                          <p class="plan__add-ons-text">+ <span class="software-backup-advanced-deposits">{{ site.data.pricing.prices.software_backup_advanced_deposits.USD }}</span></p>
-                          <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
-                        </div>
-                        <button class="button btn-primary-small2 px-4" onclick="add(this, 49)">Add</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pt-3" id="offer2">
+            <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
+              <!-- Pricing Tabs -->
+              <div class="pricing mt-5">
+                <div class="pricing-container mx-auto">
+                  <div class="backup-box-shadow">
                     <div class="row">
-                      <div class="col-md-4 col-sm-12 border-top-right">
-                        <img class="mt-4" src="/images/compare-page/icons/storage-region.svg" alt="Storage Region Icon" />
-                        <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Storage Region Selection</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Need your data locally? Select your preferred location from more than 60+ regions across the world. </p>
-                      </div>
-                      <div class="col-md-4 col-sm-12 border-top-right">
-                        <img class="mt-4" src="/images/compare-page/icons/ip-whitelisting.svg" alt="IP Whitelisting Icon" />
-                        <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">IP Whitelisting</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Connect to IP protected servers to allow taking automated deposits. </p>
-                      </div>
-                      <div class="col-md-4 col-sm-12 border-top-gray">
-                        <img class="mt-4" src="/images/compare-page/icons/deposit-history.svg" alt="Deposit History Icon" />
-                        <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Deposit History</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Store the entire history of deposits made into the escrow, storing each version.  </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="backup-box-shadow p-4 mt-2">
-                  <div class="row">
-                    <div class="col-md-9 col-sm-12">
-                      <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1"><img class="mr-2" src="/images/compare-page/icons/advanced-integrations.svg" alt="Advanced Integrations Icon" />Advanced Integrations</p>
-                      <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2">Set up the integration you need to make sure your assets are automatically secured. </p>
-                      <span class="offer-btns3">
-                        <p class="open text-bondi-blue cursor-pointer mb-0" id="openButton3">Show Features <i class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-                        <p class="open text-bondi-blue cursor-pointer mb-0" id="closeButton3">Hide Features <i class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
-                      </span>
-                      
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <div class="mt-3">
-                          <p class="plan__add-ons-text">+ <span class="software-backup-advanced-integrations">{{ site.data.pricing.prices.software_backup_advanced_integrations.USD }}</span></p>
-                          <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
+                      <div class="col-md-6 col-sm-12 bg-alice-blue content-center py-5">
+                        <div class="px-2">
+                          <p class="risks__subtitle mt-2 font-24 fw-400 text-dark-cyan">Main Features</p>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/unlimited-users.svg" alt="Unlimited users icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited users</p>
+                          </div>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/unlimited-repositories.svg" alt="Unlimited repositories icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited repositories</p>
+                          </div>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/unlimited-data.svg" alt="Unlimited data storage icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited data storage</p>
+                          </div>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/automated-backup.svg" alt="Automated backup process icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Automated backup process</p>
+                          </div>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/enterprise-grade.svg" alt="Enterprise-grade security icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Enterprise-grade security</p>
+                          </div>
+                          <div class="d-flex align-items-center mt-4">
+                            <img class="mr-2" src="/images/compare-page/icons/customer-support.svg" alt="24/7 customer support icon" loading="lazy" />
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">24/7 customer support</p>
+                          </div>
+                          <img class="software-escrow__image mw-420 mt-5" src="/images/software-backup/software-backups-illustration.webp" alt="Illustration of Software Backups" loading="lazy"/>
                         </div>
-                        <button class="button btn-primary-small2 px-4" onclick="add(this, 49)">Add</button>
+                      </div>
+                      <div class="col-md-6 col-sm-12 pricing-tabs plan-box-padding">
+                        <div class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
+                          <a class="nav-link" data-toggle="pill" href="#pills-month" role="tab"
+                            aria-controls="pills-month" aria-selected="true">Monthly</a>
+                          <a class="nav-link active space-no-wrap" data-toggle="pill" href="#pills-year" role="tab"
+                            aria-controls="pills-year" aria-selected="false">Annually (Save 10%)</a>
+                        </div>
+                        <div class="tab-content mt-5" id="pills-tabContent">
+                          <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited Software Backup</p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of your software assets for your organization.  </p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
+                              src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
+                              alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
+                            <div class="backup-devider my-4"></div>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms: </p>
+                            <div class="resources pb-3">
+                              <div class="d-flex align-items-start">
+                                <div class="d-flex align-items-center flex-column mr-4">
+                                  <img class="min-h-50 mw-40" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Bitbucket </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-3">
+                                  <img class="min-h-50 mw-40" src="/images/homepage/logos/github-large.svg" alt="GitHub Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitHub </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-2">
+                                  <img class="min-h-50" src="/images/homepage/logos/gitlab-large.svg" alt="GitLab Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitLab </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-3">
+                                  <img class="min-h-50" src="/images/homepage/logos/azure-large.svg" alt="Azure DevOps Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
+                                </div>
+                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
+                              </div>
+                            </div>
+                            <div class="backup-devider mt-4"></div>
+                            <div class="d-flex plan__switch align-items-center mt-3">
+                              <img class="mr-2" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
+                              <p class="risks__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2">Get certified</p>
+                              <label class="switch mt-2">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                            <a class="header__link text-bondi-blue software-backup-href font-16" href="software-backup.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+                            <div class="backup-devider my-3"></div>
+                            <div id="div1">
+                              <div class="d-flex pt-3">
+                                <p class="risks__subtitle mb-0 software-backup-monthly fw-bold font-35 text-dark-cyan">{{
+                                  site.data.pricing.prices.software_backup_monthly.USD }}</p>
+                                <p class="plan__text-tooltip text-slate-gray mt-2 ml-2 text-italic">/{{
+                                  site.data[page.lang]['software_backup']['per_application'] }} </p>
+                              </div>
+                              <div class="d-flex align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                  <p class="plan__fee-text mb-0 ml-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                                  <div class="d-flex" data-html="true"
+                                    data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                                    data-tooltip-position="top">
+                                    <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                                  </div>
+                                </div>
+                                <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">{{ site.data.pricing.prices.setup_fee.USD }}</p>
+                              </div>
+                              
+                              <div class="mt-4">
+                                <button class="button btn-bondi-blue4"
+                                  onclick="selectPlan(this, 'monthly', this.getAttribute('data-price'))"
+                                  data-price="{{ site.data.pricing.prices.software_backup_monthly.USD }}">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade show active mw-520" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">
+                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited Software Backup</p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of your software assets for your organization. </p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
+                              src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
+                              alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
+                            <div class="backup-devider my-4"></div>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms: </p>
+                            <div class="resources pb-3">
+                              <div class="d-flex align-items-start">
+                                <div class="d-flex align-items-center flex-column mr-4">
+                                  <img class="min-h-50 mw-40" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Bitbucket </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-3">
+                                  <img class="min-h-50 mw-40" src="/images/homepage/logos/github-large.svg" alt="GitHub Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitHub </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-2">
+                                  <img class="min-h-50" src="/images/homepage/logos/gitlab-large.svg" alt="GitLab Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">GitLab </p>
+                                </div>
+                                <div class="d-flex align-items-center flex-column mr-3">
+                                  <img class="min-h-50" src="/images/homepage/logos/azure-large.svg" alt="Azure DevOps Logo" />
+                                  <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
+                                </div>
+                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
+                              </div>
+                            </div>
+                            <div class="backup-devider mt-4"></div>
+                            <div class="d-flex plan__switch align-items-center mt-3">
+                              <img class="mr-2" src="/images/compare-page/icons/get-certified.svg" alt="Get Certified Icon" />
+                              <p class="risks__subtitle text-dark-cyan font-18 fw-600 mb-0 mr-2">Get certified</p>
+                              <label class="switch mt-2">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Get automated monthly content and activity verification reports (supported platforms only)</p>
+                            <a class="header__link text-bondi-blue software-backup-href font-16" href="software-backup.html">{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-arrow-right" aria-hidden="true"></i></a>
+                            <div class="backup-devider my-3"></div>
+                            <div id="div1">
+                              <div class="d-flex pt-3">
+                                <p class="risks__subtitle mb-0 software-backup-yearly fw-bold font-35 text-dark-cyan">{{
+                                  site.data.pricing.prices.software_backup_yearly.USD }}</p>
+                                <p class="plan__text-tooltip text-slate-gray mt-2 ml-2 text-italic">/{{
+                                  site.data[page.lang]['software_backup']['per_application'] }} </p>
+                              </div>
+  
+                              <div class="d-flex align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                  <p class="plan__fee-text mb-0 ml-0">{{ site.data[page.lang]['pricing']['setup_fee'] }}</p>
+                                  <div class="d-flex" data-html="true"
+                                    data-tooltip="{{ site.data[page.lang]['pricing_plan']['this_includes_the'] }}"
+                                    data-tooltip-position="top">
+                                    <i class="fa fa-info-circle fa-sm mt-1 ml-1 pricing-info-icon"></i>
+                                  </div>
+                                </div>
+                                <p class="plan__fee-amount setup-fee mb-0 ml-4 font-18">{{ site.data.pricing.prices.setup_fee.USD }}</p>
+                              </div>
+                              
+                              <div class="mt-4">
+                                <button class="button btn-bondi-blue4"
+                                  onclick="selectPlan(this, 'yearly', this.getAttribute('data-price'))"
+                                  data-price="{{ site.data.pricing.prices.software_backup_yearly.USD }}">Select Plan</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="pt-3" id="offer3">
-                    <div class="d-flex border-top-gray flex-wrap pt-4">
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/MySQL.svg" alt="MySQL Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">MySQL</p>
+                  <p class="risks__subtitle mt-5 font-28 fw-400 text-dark-cyan line-height-40">Add-ons</p>
+                  <div class="backup-box-shadow p-4 mt-2">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-12">
+                        <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1"><img class="mr-2" src="/images/compare-page/icons/deposit-packages.svg" alt="Advanced Deposits Icon" />Advanced Deposits</p>
+                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2">Upgrade your depositing configuration options to make sure your escrow is easy to maintain. </p>
+                        <span class="offer-btns2">
+                          <p class="open text-bondi-blue cursor-pointer mb-0" id="openButton2">Show Features <i class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
+                          <p class="open text-bondi-blue cursor-pointer mb-0" id="closeButton2">Hide Features <i class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
+                        </span>
+                        
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Azure-DB.svg" alt="Azure DB Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Azure DB</p>
+                      <div class="col-md-3 col-sm-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="mt-3">
+                            <p class="plan__add-ons-text">+ <span class="software-backup-advanced-deposits">{{ site.data.pricing.prices.software_backup_advanced_deposits.USD }}</span></p>
+                            <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
+                          </div>
+                          <button class="button btn-primary-small2 px-4" onclick="add(this, 49)">Add</button>
+                        </div>
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Microsoft Office.svg" alt="Microsoft Office Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Microsoft Office</p>
+                    </div>
+                    <div class="pt-3" id="offer2">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-12 border-top-right">
+                          <img class="mt-4" src="/images/compare-page/icons/storage-region.svg" alt="Storage Region Icon" />
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Storage Region Selection</p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Need your data locally? Select your preferred location from more than 60+ regions across the world. </p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 border-top-right">
+                          <img class="mt-4" src="/images/compare-page/icons/ip-whitelisting.svg" alt="IP Whitelisting Icon" />
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">IP Whitelisting</p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Connect to IP protected servers to allow taking automated deposits. </p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 border-top-gray">
+                          <img class="mt-4" src="/images/compare-page/icons/deposit-history.svg" alt="Deposit History Icon" />
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Deposit History</p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Store the entire history of deposits made into the escrow, storing each version.  </p>
+                        </div>
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Dropbox-Paper.svg" alt="Dropbox Paper Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Dropbox</p>
+                    </div>
+                  </div>
+  
+                  <div class="backup-box-shadow p-4 mt-2">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-12">
+                        <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1"><img class="mr-2" src="/images/compare-page/icons/advanced-integrations.svg" alt="Advanced Integrations Icon" />Advanced Integrations</p>
+                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2">Set up the integration you need to make sure your assets are automatically secured. </p>
+                        <span class="offer-btns3">
+                          <p class="open text-bondi-blue cursor-pointer mb-0" id="openButton3">Show Features <i class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
+                          <p class="open text-bondi-blue cursor-pointer mb-0" id="closeButton3">Hide Features <i class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
+                        </span>
+                        
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Google-Docs.svg" alt="Google Docs Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Google Docs</p>
+                      <div class="col-md-3 col-sm-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="mt-3">
+                            <p class="plan__add-ons-text">+ <span class="software-backup-advanced-integrations">{{ site.data.pricing.prices.software_backup_advanced_integrations.USD }}</span></p>
+                            <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
+                          </div>
+                          <button class="button btn-primary-small2 px-4" onclick="add(this, 49)">Add</button>
+                        </div>
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Google-Cloud.svg" alt="Google Cloud Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Google Cloud</p>
+                    </div>
+                    <div class="pt-3" id="offer3">
+                      <div class="d-flex border-top-gray flex-wrap pt-4">
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/MySQL.svg" alt="MySQL Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">MySQL</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Azure-DB.svg" alt="Azure DB Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Azure DB</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Microsoft Office.svg" alt="Microsoft Office Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Microsoft Office</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Dropbox-Paper.svg" alt="Dropbox Paper Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Dropbox</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Google-Docs.svg" alt="Google Docs Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Google Docs</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Google-Cloud.svg" alt="Google Cloud Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Google Cloud</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/1Password.svg" alt="1Password Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">1Password</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Nord Pass.svg" alt="Nord Pass Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Nord VPN</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Cinema-4D.svg" alt="Cinema 4D Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Cinema 4D</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Adobe-Creative-Cloud.svg" alt="Adobe Creative Cloud Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Adobe CC</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
+                          <img class="mh-50 p-1" src="/images/escrow-assets/icons/Figma.svg" alt="Figma Icon"/>
+                          <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Figma</p>
+                        </div>
+                        
+                        <p class="header__subtext mt-4 mb-3">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} </p>
                       </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/1Password.svg" alt="1Password Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">1Password</p>
-                      </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Nord Pass.svg" alt="Nord Pass Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Nord VPN</p>
-                      </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Cinema-4D.svg" alt="Cinema 4D Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Cinema 4D</p>
-                      </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Adobe-Creative-Cloud.svg" alt="Adobe Creative Cloud Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Adobe CC</p>
-                      </div>
-                      <div class="d-flex align-items-center flex-column min-width-70 content-center mr-2">
-                        <img class="mh-50 p-1" src="/images/escrow-assets/icons/Figma.svg" alt="Figma Icon"/>
-                        <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-12">Figma</p>
-                      </div>
-                      
-                      <p class="header__subtext mt-4 mb-3">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} </p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="plan__checkout-container mb-5">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5 col-sm-12">
-                      <p class="plan__checkout-text mt-3 pt-2 text-dark-cyan mb-2" id="planType">Please select your plan</p>
-                      <p id="adds" class="d-none text-dark-cyan">Add ons: <span id="addOns"></span></p>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                      <div class="d-flex mt-4">
-                        <p class="plan__checkout-amount mt-1 mr-2">Total:</p>
-                        <div class="plan__checkout-total"><span class="pricing-currency">{{ site.data.pricing.prices.pricing_currency.USD }}</span><span id="totalSum">0</span></div>
-                        <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
+                <!-- <div class="plan__checkout-container mb-5">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p class="plan__checkout-text mt-3 pt-2 text-dark-cyan mb-2" id="planType">Please select your plan</p>
+                        <p id="adds" class="d-none text-dark-cyan">Add ons: <span id="addOns"></span></p>
                       </div>
-            
+                      <div class="col-md-4 col-sm-12">
+                        <div class="d-flex mt-4">
+                          <p class="plan__checkout-amount mt-1 mr-2">Total:</p>
+                          <div class="plan__checkout-total"><span class="pricing-currency">{{ site.data.pricing.prices.pricing_currency.USD }}</span><span id="totalSum">0</span></div>
+                          <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
+                        </div>
+              
+                      </div>
+                      <div class="d-flex align-items-center my-2 flex-wrap">
+                        <a class="header__link text-underline font-20 my-2 mr-4 space-no-wrap" href="pay-by-invoice.html">Pay by Invoice</a>
+                        <a class="button btn-bondi-blue3 text-uppercase my-4" href="javascript:void(0)" onclick="openCheckout()">
+                          Checkout
+                        </a>
+                      </div>
                     </div>
-                    <div class="col-md-3 col-sm-12">
-                      <a class="button btn-bondi-blue3 text-uppercase my-4" href="">
+                  </div>
+                </div> -->
+                <div class="plan__checkout-container">
+                  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="my-2">
+                      <p class="plan__checkout-text text-dark-cyan my-2" id="planType">Please select your plan</p>
+                      <p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
+                    </div>
+                    <div class="d-flex my-2 mt-3">
+                      <p class="plan__checkout-amount my-2 mr-2">Total:</p>
+                      <div class="plan__checkout-total"><span class="pricing-currency">{{ site.data.pricing.prices.pricing_currency.USD }}</span><span id="totalSum">0</span></div>
+                      <!-- <p class="plan__checkout-amount mt-2"><sup>per month</sup></p> -->
+                    </div>
+                    <div class="d-flex align-items-center my-2 flex-wrap">
+                      <a class="header__link text-underline font-20 my-2 mr-4 space-no-wrap" href="pay-by-invoice.html">Pay by Invoice</a>
+                      <a class="button btn-bondi-blue3 text-uppercase my-4" href="javascript:void(0)" onclick="openCheckout()">
                         Checkout
                       </a>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1092,12 +1133,13 @@
                         loading="lazy" />
                       <div class="row">
                         <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-                          <img class="image-style mw-300 mt-4" src="/images/pricing-page/offer-made.webp" alt="Offer Made Image"
-                            loading="lazy" />
+                          <img class="image-style mw-300 mt-4" src="/images/pricing-page/offer-made.webp"
+                            alt="Offer Made Image" loading="lazy" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                           <h2 class="offer__main-title2 mt-5">{{ site.data[page.lang]['pricing']['get_an_offer'] }}</h2>
-                          <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}</p>
+                          <p class="offer__main-subtitle2 mt-3">{{ site.data[page.lang]['pricing']['dont_see_a_plan'] }}
+                          </p>
                           <span class="offer-btns">
                             <button class="button btn-cerulean mt-4 btn-offer-style open" id="openButton">
                               {{ site.data[page.lang]['pricing']['get_offer'] }}
@@ -1180,11 +1222,13 @@
                     <!-- <img class="escrow__customised-left-shape" src="/images/pricing-page/philosophy-left.webp" alt="Image Background"/> -->
                     <div class="row">
                       <div class="col-md-8 col-sm-12">
-                        <h1 class="pricing-plan__philosophy-title mt-4">{{ site.data[page.lang]['pricing_plan']['ck_pricing'] }}
+                        <h1 class="pricing-plan__philosophy-title mt-4">{{
+                          site.data[page.lang]['pricing_plan']['ck_pricing'] }}
                         </h1>
                         <p class="pricing-plan__philosophy-subtitle mt-4">{{
                           site.data[page.lang]['pricing_plan']['software_escrow_is'] }} </p>
-                        <p class="pricing-plan__philosophy-text mt-4">{{ site.data[page.lang]['pricing_plan']['we_use'] }} </p>
+                        <p class="pricing-plan__philosophy-text mt-4">{{ site.data[page.lang]['pricing_plan']['we_use']
+                          }} </p>
                         <!-- <a class="button btn-yellow create-custom-software-escrow-agreement-href" href="create-custom-software-escrow-agreement.html">
                           {{ site.data[page.lang]['escrow_agreements']['request_custom'] }}
                         </a> -->
@@ -1200,7 +1244,8 @@
 
               <!-- Section -->
               <div class="container section-large pricing pt-5">
-                <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
+                <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}
+                </h4>
                 <ul class="faq mt-5 pb-5 pl-0">
                   <li class="q d-flex align-items-center justify-content-between">
                     <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing']['what_payment_methods'] }}</p>
@@ -1218,7 +1263,8 @@
                   </li>
                   <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['yes_we_do2'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['what_pricing_plans'] }}</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['what_pricing_plans'] }}
+                    </p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
                   <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['you_can_find2'] }}</li>
@@ -1241,18 +1287,21 @@
 
                   <div class="" id="questions">
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['is_there_a_discount'] }}</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['is_there_a_discount'] }}
+                      </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['yes_we_offer2'] }}. {{
                       site.data[page.lang]['faq_pricing']['by_selecting_annual'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['can_i_get_a_custom'] }}</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['can_i_get_a_custom'] }}
+                      </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['we_understand_that2'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['are_there_any_fees'] }}</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['are_there_any_fees'] }}
+                      </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['no_there_are'] }}</li>
@@ -1272,12 +1321,14 @@
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['you_can_make'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['can_i_get_a_refund'] }}</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['can_i_get_a_refund'] }}
+                      </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['no_we_do_not_offer'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['how_do_i_contact'] }}</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq_pricing']['how_do_i_contact'] }}
+                      </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
                     <li class="a section__text">{{ site.data[page.lang]['faq_pricing']['we_would_love_to'] }} <a
@@ -1300,6 +1351,7 @@
       </div>
     </div>
 
+
     <!-- Footer -->
     {% include footer.html %}
   </div>
@@ -1311,6 +1363,7 @@
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
   <script src="/js/offerRequest.js"></script>
+  <script src="/js/guideTranslation.js"></script>
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
@@ -1332,10 +1385,11 @@
     var totalSum = 0;
     var checkoutText = [];
     var checkoutAdOns = [];
+    var duration = 'Monthly';
 
-    function selectPlan(button, planType, priceString, snippet) {
-
-      checkoutText = [].concat(snippet);
+    function selectPlan(button, planType, priceString, planID) {
+      const currency = localStorage.getItem('currency');
+      checkoutText = planID + '-' + currency + '-' + duration;
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
@@ -1364,7 +1418,7 @@
       // }
       // $(button).siblings().removeClass('-is-selected').text('Selected');
 
-      $('#planType').text(planType === 'monthly' ? 'Software Backup Monthly Plan' : planType === 'yearly' ? 'Software Backup Anual Plan' : planType)
+      $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
 
       if (planType === 'single') {
         $('.single').addClass('-is-selected');
@@ -1379,58 +1433,180 @@
         $('.single').removeClass('-is-selected');
         $('.multiple').removeClass('-is-selected');
       }
-      console.log('checkoutText', checkoutText)
+      console.log('checkoutText: ', checkoutText)
+      $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
     }
 
-    function add(button, price, snippetName, snippetType, whatever) {
+    function selectDuration(value) {
+      duration = value;
+    }
 
-      // checkoutText = checkoutText + ;
-      // 'Advanced-SaaS-Integrations-Add-On', 'single', 'usd'
-
-      console.log('snippetName', snippetName)
-      console.log('snippetType', snippetType)
-      console.log('sssss', `${snippetName}-${snippetType}`)
-
-
-      if ($(button).hasClass('-is-selected')) {
+    function add(button, price, addonID) {
+      const currency = localStorage.getItem('currency');
+      if (button.classList.contains('-is-selected')) {
         totalSum -= price;
-        $(button).text('Add').removeClass('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${snippetName}-${snippetType}`);
+        button.textContent = 'Add';
+        button.classList.remove('-is-selected');
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
       } else {
         totalSum += price;
-        $(button).text('Added').addClass('-is-selected');
-
-        checkoutAdOns = checkoutAdOns.concat(`${snippetName}-${snippetType}`);
+        button.textContent = 'Added';
+        button.classList.add('-is-selected');
+        checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
 
-
-      const addOns = $(".btn-primary-small2.-is-selected").length
+      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected").length;
 
       if (!addOns) {
-        $('#adds').addClass('d-none')
+        document.getElementById('adds').classList.add('d-none');
+      } else {
+        const addsElement = document.getElementById('adds');
+        addsElement.classList.remove('d-none');
+        addsElement.textContent = `Addons: ${addOns}`;
       }
-      else {
-        $('#adds').removeClass('d-none').text(`Addons: ${addOns}`)
+
+      document.getElementById('totalSum').textContent = totalSum;
+
+      console.log('checkoutAdOns', checkoutAdOns);
+
+      // Set data-cb-item-0 attribute
+      const checkoutSnippet = document.getElementById('checkout-snippet');
+      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
+
+      // Clear other existing data-cb-item attributes
+      for (let i = 1; i <= checkoutAdOns.length; i++) {
+        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
       }
 
-      $('#totalSum').text(totalSum);
-
-      // $('#checkout-snippet').text(checkoutText)
-      console.log('checkoutText', checkoutText)
-      console.log('checkoutAdOns', checkoutAdOns)
-
-      var finalScript = `data-cb-item-0 =`
-
-      
-
-      if (checkoutAdOns.length) {
-        checkoutAdOns.map((item, i) => $('#checkout-snippet').attr('data-cb-item-0', checkoutText).attr(`data-cb-item-${i + 1}`, item))
-      }
-      else {
-        $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
+      // Remove remaining data-cb-item attributes
+      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
+        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
       }
     }
+  </script>
+
+<script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function () {
+      cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+      });
+
+      cbInstance.setCheckoutCallbacks(function (cart) {
+        return {
+          success: function (hpid) {
+            console.log('success', hpid)
+          }
+        }
+      });
+
+      cart = cbInstance.getCart();
+    })
 
 
+  function openCheckout() {
+      const selectedPlan = checkoutText;
+      console.log('selectedPlan: ', selectedPlan);
+      if (!selectedPlan) return;
+
+      const product = cbInstance.initializeProduct(selectedPlan, 1)
+      cart.replaceProduct(product);
+
+      if (checkoutAdOns) {
+        checkoutAdOns.map((addon) => {
+          console.log('addon: ', addon);
+          product.addAddon({ id: addon, quantity: 1 });
+        })
+      }
+      // Opening the checkout
+      cart.proceedToCheckout();
+  }
+</script>
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+        
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+</script> -->
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let cbInstance = Chargebee.getInstance();
+      let cart = cbInstance.getCart();
+      let product = cbInstance.initializeProduct("Software-Escrow-Single-USD-Monthly", 1);
+      cart.replaceProduct(product);
+      document.getElementById("checkout-snippet").addEventListener("click", function () {
+        cart.proceedToCheckout();
+      });
+    });
+  </script> -->
+
+  <!-- <script>
+    var cbInstance, cart;
+
+    window.addEventListener('DOMContentLoaded', function() {
+    cbInstance = Chargebee.init({
+        site: "codekeeperbilling",
+        isItemsModel: true,
+    })
+
+    cbInstance.setCheckoutCallbacks(function(cart) {
+        return {
+            success: function(hpid) {
+                console.log('success', hpid)
+            }
+        }
+    })
+
+    cart = cbInstance.getCart()
+    })
+    function openCheckout() {
+        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
+        const planPriceQuantity = 1
+        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
+        cart.replaceProduct(product);
+
+        // Opening the checkout
+        cart.proceedToCheckout();
+    }
+  </script> -->
+
+  <script>
+    $(function(){
+      var navigation = $('.navigation');
+      
+      $(window).scroll(function(){
+        if($(window).scrollTop() <= 90){
+          navigation.removeClass('d-none');
+        } else {
+          navigation.addClass('d-none');
+        }
+      });
+    });
   </script>
 </body>
