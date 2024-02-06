@@ -1625,6 +1625,7 @@
   <script src="/js/monthlyEscrowPricing.js"></script>
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
+  <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
 
@@ -1651,6 +1652,8 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+      $('#checkout-cart').attr("style", "display: flex");
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
@@ -1705,6 +1708,7 @@
     }
 
     function add(button, price, addonID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       const currency = localStorage.getItem('currency');
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
@@ -1732,19 +1736,21 @@
 
       console.log('checkoutAdOns', checkoutAdOns);
 
+      // Doesnt seem to do anything
+      // Uncomment if needed
       // Set data-cb-item-0 attribute
-      const checkoutSnippet = document.getElementById('checkout-snippet');
-      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
+      // const checkoutSnippet = document.getElementById('checkout-snippet');
+      // checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
 
       // Clear other existing data-cb-item attributes
-      for (let i = 1; i <= checkoutAdOns.length; i++) {
-        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
-      }
+      // for (let i = 1; i <= checkoutAdOns.length; i++) {
+      //   checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
+      // }
 
       // Remove remaining data-cb-item attributes
-      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
-        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
-      }
+      // for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
+      //   checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
+      // }
     }
   </script>
 

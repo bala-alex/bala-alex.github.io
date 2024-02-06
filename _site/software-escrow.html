@@ -2373,21 +2373,21 @@
     </div> -->
   </div>
 
-  <div class="plan__checkout-container mt-5">
+  <div class="plan__checkout-container mt-5" id="checkout-cart">
     <div class="container d-flex align-items-center justify-content-between flex-wrap">
       <div class="my-2">
-        <p class="plan__checkout-text text-dark-cyan my-2" id="planType">Please select your plan</p>
+        <p class="plan__checkout-text text-dark-cyan my-2 fw-bold" id="planType">Please select your plan</p>
         <p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
       </div>
-      <!-- <div class="d-flex my-2 mt-3">
+      <div class="d-flex my-2 mt-3">
         <p class="plan__checkout-amount my-2 mr-2">Total:</p>
-        <div class="plan__checkout-total"><span class="pricing-currency">$</span><span id="totalSum">0</span></div>
+        <div class="plan__checkout-total"><span class="pricing-currency"></span><span id="totalSum">0</span></div>
         <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
-      </div> -->
+      </div>
       <div class="d-flex align-items-center my-2 flex-wrap">
-        <a class="header__link text-underline font-20 my-2 mr-4 space-no-wrap" href="pay-by-invoice.html">Pay by Invoice</a>
-        <a class="button btn-bondi-blue3 my-4" href="javascript:void(0)" onclick="openCheckout()">
-          View Checkout
+        <a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">Pay by Invoice</a>
+        <a style="width: 230px;" class="text-uppercase button btn-bondi-blue3 my-4" href="javascript:void(0)" onclick="openCheckout()">
+          Checkout
         </a>
       </div>
       
@@ -2468,6 +2468,13 @@
   </div>
 
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log('ready');
+    const currency = localStorage.getItem('currency');
+    $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
+  });
+</script>
               </div>
 
               <!-- Section -->
@@ -4046,6 +4053,7 @@ document.addEventListener("click", closeAllSelect);
   <script src="/js/monthlyEscrowPricing.js"></script>
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
+  <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
 
@@ -4071,6 +4079,8 @@ document.addEventListener("click", closeAllSelect);
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+      $('#checkout-cart').attr("style", "display: flex");
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
@@ -4125,6 +4135,7 @@ document.addEventListener("click", closeAllSelect);
     }
 
     function add(button, price, addonID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       const currency = localStorage.getItem('currency');
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
@@ -4152,19 +4163,21 @@ document.addEventListener("click", closeAllSelect);
 
       console.log('checkoutAdOns', checkoutAdOns);
 
+      // Doesnt seem to do anything
+      // Uncomment if needed
       // Set data-cb-item-0 attribute
-      const checkoutSnippet = document.getElementById('checkout-snippet');
-      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
+      // const checkoutSnippet = document.getElementById('checkout-snippet');
+      // checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
 
       // Clear other existing data-cb-item attributes
-      for (let i = 1; i <= checkoutAdOns.length; i++) {
-        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
-      }
+      // for (let i = 1; i <= checkoutAdOns.length; i++) {
+      //   checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
+      // }
 
       // Remove remaining data-cb-item attributes
-      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
-        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
-      }
+      // for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
+      //   checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
+      // }
     }
   </script>
 
