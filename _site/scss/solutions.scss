@@ -396,6 +396,33 @@
       color: $dark-cyan;
     }
 
+    &__background {
+      background: linear-gradient(180deg, #46BFD4 0%, #009CB7 100%);
+      min-height: 550px;
+      border-radius: 0 0 90% 90%;
+      padding: 60px 0;
+      position: relative;
+      overflow: hidden;
+
+      @include screen-sm {
+        border-radius: 0 0 10% 10%;
+      }
+    }
+
+    &__bottom-shape {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 600px;
+      height: auto;
+      max-width: 40%;
+      object-fit: contain;
+
+      @include screen-md {
+        display: none;
+      }
+    }
+
     &__shape {
       position: absolute;
       right: 0px;

@@ -74,11 +74,8 @@
           <p class="people-choose__main-title overflow-wrap-break-mobile text-align-start pt-0">{{ site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</p>
           <p class="software-escrow__subtitle">{{ site.data[page.lang]['compare_solutions']['select_from'] }}</p>
           <div class="row mt-5">
-            <div class="col-md-3 col-sm-12">
-              <p class="software-escrow__subtitle">{{ site.data[page.lang]['compare_solutions']['coverage'] }}:</p>
-            </div>
-            <div class="col-md-3 col-sm-12">
-              <p class="software-escrow__subtitle fw-600 text-bondi-blue text-center">{{ site.data[page.lang]['compare_solutions']['recovery'] }}</p>
+            <div class="col-md-6 col-sm-12">
+              <p class="software-escrow__subtitle fw-600 text-bondi-blue text-center mw-100">{{ site.data[page.lang]['compare_solutions']['recovery'] }}</p>
             </div>
             <div class="col-md-3 col-sm-12">
               <p class="software-escrow__subtitle fw-600 text-secondary-light text-center">{{ site.data[page.lang]['compare_solutions']['continuity'] }}</p>
@@ -98,7 +95,7 @@
                 <img class="easy__icon" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" loading="lazy" />
                 <p class="easy__title">{{ site.data[page.lang]['index']['software_backup'] }}</p>
                 <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_the_source'] }}</p>
-                <img class="image-style mw-200" src="/images/compare-solutions/software-backup-screen.webp" alt="Software Backup Screen Illustration" loading="lazy" />
+                <img class="image-style mw-200 min-h-140" src="/images/compare-solutions/software-backup-screen.webp" alt="Software Backup Screen Illustration" loading="lazy" />
                 <a class="button btn-secondary-large disaster-recovery-planner-href px-5 mt-4 w-100" href="disaster-recovery-planner.html">
                   {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
                 <div class="d-flex mt-4">
@@ -125,7 +122,7 @@
                 <div class="setting-up__devider-line my-4"></div>
                 <div class="solutions">
                   <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
-                      class="software-escrow-monthly font-35 fw-700">{{ site.data.pricing.prices.software_escrow_monthly.USD }}</span>/{{
+                      class="software-backup-monthly font-35 fw-700">{{ site.data.pricing.prices.software_backup_monthly.USD }}</span>/{{
                     site.data[page.lang]['solutions']['month'] }}</p>
                   <a class="button btn-cerulean3 software-backup-href height-fit-content text-center min-h-50 w-100" href="software-backup.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                 </div>
@@ -136,7 +133,7 @@
                 <img class="easy__icon" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Shield Icon" loading="lazy" />
                 <p class="easy__title">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
                 <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_your_software'] }}</p>
-                <img class="image-style mw-200" src="/images/compare-solutions/software-escrow-screen.webp" alt="Software Escrow Screen Illustration" loading="lazy" />
+                <img class="image-style mw-200 min-h-140" src="/images/compare-solutions/software-escrow-screen.webp" alt="Software Escrow Screen Illustration" loading="lazy" />
                 <a class="button btn-secondary-large software-escrow-href px-5 mt-4 w-100" href="software-escrow.html">
                   {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
                 <div class="d-flex mt-4">
@@ -172,7 +169,7 @@
                 <div class="setting-up__devider-line my-4"></div>
                 <div class="solutions">
                   <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
-                      class="software-escrow-monthly font-35 fw-700">{{ site.data.pricing.prices.software_escrow_monthly.USD }}</span>/{{
+                      class="software-escrow-single-monthly font-35 fw-700">{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/{{
                     site.data[page.lang]['solutions']['month'] }}</p>
                   <a class="button btn-cerulean3 software-escrow-href height-fit-content text-center min-h-50 w-100" href="software-escrow.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                 </div>
@@ -183,7 +180,7 @@
                 <img class="easy__icon" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" loading="lazy" />
                 <p class="easy__title">{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
                 <p class="easy__subtitle">{{ site.data[page.lang]['compare_solutions']['next_level_protection'] }}</p>
-                <img class="image-style mw-200" src="/images/compare-solutions/saas-escrow-screen.webp" alt="SaaS Escrow Screen Illustration" loading="lazy" />
+                <img class="image-style mw-200 min-h-140" src="/images/compare-solutions/saas-escrow-screen.webp" alt="SaaS Escrow Screen Illustration" loading="lazy" />
                 <a class="button btn-secondary-large saas-escrow-href px-5 mt-4 w-100" href="saas-escrow.html">
                   {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
                 <div class="d-flex mt-4">
@@ -220,9 +217,9 @@
                 <div class="setting-up__devider-line my-4"></div>
                 <div class="solutions">
                   <p class="select-level__price mr-4">{{ site.data[page.lang]['solutions']['start_from'] }}<br><span
-                      class="software-escrow-monthly font-35 fw-700">{{ site.data.pricing.prices.software_escrow_monthly.USD }}</span>/{{
+                      class="saas-escrow-single-monthly font-35 fw-700">{{ site.data.pricing.prices.saas_escrow_single_monthly.USD }}</span>/{{
                     site.data[page.lang]['solutions']['month'] }}</p>
-                  <a class="button btn-cerulean3 software-escrow-href height-fit-content text-center min-h-50 w-100" href="software-escrow.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
+                  <a class="button btn-cerulean3 saas-escrow-href height-fit-content text-center min-h-50 w-100" href="saas-escrow.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                 </div>
               </div>
             </div>
@@ -231,7 +228,7 @@
                 <img class="easy__icon" src="/images/landing/icons/data-custodian-shield.svg" alt="Software Custodian Shield Icon" loading="lazy" />
                 <p class="easy__title">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</p>
                 <p class="easy__subtitle">{{ site.data[page.lang]['compare_solutions']['full_life_cycle_of'] }}</p>
-                <img class="image-style mw-200" src="/images/compare-solutions/software-custodian-screen.webp" alt="Software Custodian Screen Illustration" loading="lazy" />
+                <img class="image-style mw-200 min-h-140" src="/images/compare-solutions/software-custodian-screen.webp" alt="Software Custodian Screen Illustration" loading="lazy" />
                 <a class="button btn-secondary-large software-custodian-href px-5 mt-4 w-100" href="software-custodian.html">
                   {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
                 <div class="d-flex mt-4">
@@ -273,87 +270,532 @@
                 <div class="setting-up__devider-line my-4"></div>
                 <div class="solutions">
                   <a class="button btn-secondary-large software-custodian-href mt-4 height-fit-content text-center min-h-50 w-100" href="software-custodian.html">{{ site.data[page.lang]['index']['get_a_quote'] }}</a>
-                  <a class="button btn-cerulean3 software-escrow-href mt-3 height-fit-content text-center min-h-50 w-100" href="software-escrow.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
+                  <a class="button btn-cerulean3 software-custodian-href mt-3 height-fit-content text-center min-h-50 w-100" href="software-custodian.html">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Section -->
-        <div class="bg-pale-cyan">
-          <div class="container section-large">
-            <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">{{ site.data[page.lang]['compare_solutions']['our_included'] }}</p>
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="software-escrow__image mt-4" src="/images/compare-solutions/platform-features.webp" alt="Illustration: Platform Features" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['platform_features'] }}</p>
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['multi_factor'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['depositor_dashboard'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['beneficiary_dashboard'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['automated_notifications'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['concierge_onboarding'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['email_support'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['chat_support'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['monthly_payment'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['annual_payment'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['annual_pay'] }}</p>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4">
-              <div class="col-md-6 col-sm-12">
-                <div class="ml-desktop-features">
-                  <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['legal_features'] }}</p>
-                  <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['escrow_arrangements'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['customizable_templates'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['customizable_release'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['automated_notifications'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['jurisdiction_choices'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['release_processing'] }}</p>
+        <div class="section-medium p-3 pricing">
+          <p class="people-choose__main-title pt-0">{{ site.data[page.lang]['compare_solutions']['available_features'] }}</p>
+          <div class="mt-2">
+            <div class="container-fluid overflow-x-hidden mt-5">
+              <div class="plan__table-container mx-auto">
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                  <div>
+                    <p class="plan__table-title break-spaces mb-2 mt-4">{{ site.data[page.lang]['compare_solutions']['platform'] }}</p>
+                    <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['compare_solutions']['tools_and_features'] }}</p>
+                  </div>
+                  <img class="image-style mw-300" src="/images/compare-solutions/platform-image.webp" alt="Platform Image" loading="lazy"/>
+                </div>
+                <div class="pricing-box-shadow">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white vertical-align-middle table-border-right">{{ site.data[page.lang]['navigation']['solutions'] }}</th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Backup
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">SaaS<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Custodian
+                            </p>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['multi_factor'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['depositor_dashboard'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['beneficiary_dashboard'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"></td>
+                        <td class="text-center"></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['automated_notifications'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['concierge_onboarding'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['email_support'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['chat_support'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['monthly_payment'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['annual_payment'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['annual_pay'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="software-escrow__image mt-4" src="/images/compare-solutions/legal-features.webp" alt="Illustration: Legal Features" loading="lazy"/>
-              </div>
             </div>
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="software-escrow__image mt-4" src="/images/compare-solutions/depositing-features.webp" alt="Illustration: Deposit Features" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['depositing_features'] }}</p>
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['product_deposits'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['asset_deposits'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['asset_sync'] }}</p>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4">
-              <div class="col-md-6 col-sm-12">
-                <div class="ml-desktop-features">
-                  <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['compliance_features'] }}</p>
-                  <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['iso_information'] }}</p>
-                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['iso_data'] }}</p>
+
+            <div class="container-fluid overflow-x-hidden mt-5">
+              <div class="plan__table-container mx-auto">
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                  <div>
+                    <p class="plan__table-title break-spaces mb-2 mt-4">{{ site.data[page.lang]['compare_solutions']['legal'] }}</p>
+                    <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['compare_solutions']['key_to_a'] }} </p>
+                  </div>
+                  <img class="image-style mw-300" src="/images/compare-solutions/legal-image.webp" alt="Legal Image" loading="lazy"/>
+                </div>
+                <div class="pricing-box-shadow">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white vertical-align-middle table-border-right">{{ site.data[page.lang]['navigation']['solutions'] }}</th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Backup
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">SaaS<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Custodian
+                            </p>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['escrow_arrangements'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['customizable_templates'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['customizable_release'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['automated_notifications'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['jurisdiction_choices'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['release_processing'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="software-escrow__image mt-4" src="/images/compare-solutions/compliance-features.webp" alt="Illustration: Compliance Features" loading="lazy"/>
+            </div>
+
+            <div class="container-fluid overflow-x-hidden mt-5">
+              <div class="plan__table-container mx-auto">
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                  <div>
+                    <p class="plan__table-title break-spaces mb-2 mt-4">{{ site.data[page.lang]['compare_solutions']['depositing'] }}</p>
+                    <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['compare_solutions']['industry_leading'] }} </p>
+                  </div>
+                  <img class="image-style mw-300" src="/images/compare-solutions/depositing-image.webp" alt="Depositing Image" loading="lazy"/>
+                </div>
+                <div class="pricing-box-shadow">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white vertical-align-middle table-border-right">{{ site.data[page.lang]['navigation']['solutions'] }}</th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Backup
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">SaaS<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Custodian
+                            </p>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['product_deposits'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['asset_deposits'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['asset_sync'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-6 col-sm-12 content-center">
-                <img class="software-escrow__image mt-4" src="/images/compare-solutions/depositing-features.webp" alt="Illustration: Deposit Features" loading="lazy"/>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['saas_features'] }}</p>
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['hosting_environments'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['third_party'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['service_continuity'] }}</p>
+
+            <div class="container-fluid overflow-x-hidden mt-5">
+              <div class="plan__table-container mx-auto">
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                  <div>
+                    <p class="plan__table-title break-spaces mb-2 mt-4">{{ site.data[page.lang]['compare_solutions']['compliance'] }}</p>
+                    <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['compare_solutions']['maximize_security'] }} </p>
+                  </div>
+                  <img class="image-style mw-300" src="/images/compare-solutions/compliance-image.webp" alt="Compliance Image" loading="lazy"/>
+                </div>
+                <div class="pricing-box-shadow">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white vertical-align-middle table-border-right">{{ site.data[page.lang]['navigation']['solutions'] }}</th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Backup
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">SaaS<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Custodian
+                            </p>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['iso_information'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['iso_data'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
+
+            <div class="container-fluid overflow-x-hidden mt-5">
+              <div class="plan__table-container mx-auto">
+                <div class="d-flex justify-content-between mt-5 flex-wrap">
+                  <div>
+                    <p class="plan__table-title break-spaces mb-2 mt-4">SaaS </p>
+                    <p class="plan__table-title-down break-spaces">{{ site.data[page.lang]['compare_solutions']['eliminate_third'] }}</p>
+                  </div>
+                  <img class="image-style mw-300" src="/images/compare-solutions/saas-image.webp" alt="SaaS Image" loading="lazy"/>
+                </div>
+                <div class="pricing-box-shadow">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-cool-white vertical-align-middle table-border-right">{{ site.data[page.lang]['navigation']['solutions'] }}</th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Backup
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">SaaS<br> Escrow
+                            </p>
+                          </div>
+                        </th>
+                        <th class="border-none table-border-right bg-cool-white" scope="row">
+                          <div class="d-flex align-items-center">
+                            <img class="my-1"
+                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
+                              loading="lazy" />
+                            <p class="plan__table-subtitle my-1 ml-3">Software<br> Custodian
+                            </p>
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['hosting_environments'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['third_party'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      <tr>
+                        <th class="table-border-right" scope="row">
+                          <p class="plan__table-text my-1">{{ site.data[page.lang]['compare_solutions']['service_continuity'] }}</p>
+                        </th>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
+        <div class="pricing-table-devider"></div>
 
         <!-- Section -->
         <div class="bg-white">
@@ -658,6 +1100,7 @@
     {% include title-tags.html %}
   
     <script src="/js/geolocationPricing.js"></script>
+    <script src="/js/monthlyEscrowPricing.js"></script>
   
     <script>
       // Check if the page has not been reloaded
