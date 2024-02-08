@@ -27257,6 +27257,66 @@ input[name=consent] {
   transition: 0.3s;
 }
 
+.btn-secondary-large2 {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+  color: #009CB7 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #009CB7;
+  height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: fit;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+}
+.btn-secondary-large2:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-secondary-large2:focus, .btn-secondary-large2.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+.btn-secondary-large2.disabled, .btn-secondary-large2:disabled {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-secondary-large2:not(:disabled):not(.disabled):active, .btn-secondary-large2:not(:disabled):not(.disabled).active, .show > .btn-secondary-large2.dropdown-toggle {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-secondary-large2:not(:disabled):not(.disabled):active:focus, .btn-secondary-large2:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary-large2.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+.btn-secondary-large2:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+  background-color: #009CB7 !important;
+  border: 1px solid #009CB7;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .btn-secondary-small {
   color: #ffffff;
   background-color: transparent;
