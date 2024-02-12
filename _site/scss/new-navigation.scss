@@ -1,0 +1,221 @@
+.new-navigation {
+  $card-gap: 6px;
+  $card-width: 377px;
+  $hover-bg: #f1f1f1;
+
+  .w-90 {
+    width: 85%;
+  }
+  .w-10 {
+    width: 15%;
+  }
+
+  .custom-dropdown-btn {
+    color: #1a5261;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .line {
+    display: none;
+  }
+
+  .show {
+    .line {
+      display: inline-block;
+      height: 4px;
+      width: 100%;
+      background-color: #009cb7;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+    }
+    .custom-dropdown-btn {
+      color: #009cb7;
+      text-align: right;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Mulish;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+
+  .recovery-menu {
+    border-radius: 0px 0px 10px 10px;
+    border: 0.5px solid #dce5f2;
+    background: #f9fbff;
+    box-shadow: 0px 7px 20px 0px rgba(1, 37, 90, 0.14);
+    width: 826px; // todo make dynamic
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-paragraph {
+    margin: 0;
+    color: #1a5261;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .header-wrapper {
+    padding: 20px 25px;
+
+    .header-card {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      border: 0.5px solid #dce5f2;
+      background: #fff;
+      box-shadow: 0px 7px 20px 0px rgba(0, 54, 134, 0.05);
+      width: $card-width;
+      height: 100%;
+      padding: 20px 25px;
+    }
+  }
+  .content-wrapper {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .card-title {
+    height: 10%;
+    margin: 0;
+    color: #6a8493;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .card-wrapper {
+    margin-top: 25px;
+    height: 90%;
+    display: flex;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .buttons-wrapper {
+    border-radius: 0px 0px 10px 10px;
+    background: #eaeff9;
+    margin-top: 20px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn-new-nav {
+      display: flex;
+      align-items: center;
+      height: 68px;
+      flex-shrink: 0;
+      width: calc(50% - $card-gap);
+      border-radius: 10px;
+      border: 0.5px solid #dce5f2;
+      background: #fff;
+
+      color: #009cb7;
+      font-family: Mulish;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 112.5% */
+    }
+  }
+  .card-item {
+    padding: 20px 25px;
+    height: 126px;
+    // width: calc(50% - $card-gap);
+    width: $card-width;
+    border-radius: 10px;
+    border: 0.5px solid #dce5f2;
+    background: #fff;
+    box-shadow: 0px 7px 20px 0px rgba(0, 54, 134, 0.05);
+    &:hover {
+      text-decoration: none;
+      background: $hover-bg;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .dropdown-item {
+    padding: 20px 25px;
+  }
+  .card-info {
+    color: #1a5261;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    white-space: normal;
+  }
+
+  .icon-nav {
+    height: 34px;
+    width: 30px;
+  }
+
+  .resources {
+    .dropdown-menu {
+      @media screen and (max-width: 1450px) {
+        left: -18rem !important;
+      }
+    }
+  }
+
+  .resources-menu {
+    width: 732px;
+    height: 387px;
+    border-radius: 0px 0px 10px 10px;
+    border: 0.5px solid #dce5f2;
+    background: #f9fbff;
+    box-shadow: 0px 7px 20px 0px rgba(1, 37, 90, 0.14);
+    row-gap: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .resource-card {
+      border-radius: 10px;
+      width: 330px;
+      height: 74px;
+      border: 0.5px solid #dce5f2;
+      background: #fff;
+      box-shadow: 0px 7px 20px 0px rgba(0, 54, 134, 0.05);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background: $hover-bg;
+      }
+      .resources-text {
+        color: #1a5261;
+        font-family: Mulish;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+  }
+}
