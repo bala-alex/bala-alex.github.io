@@ -3,11 +3,130 @@
   $card-width: 377px;
   $hover-bg: #f1f1f1;
 
+  .top-bar {
+    padding: 0 30px;
+    padding-left: 40px;
+    padding-right: 12px;
+    padding-bottom: 0;
+    .nav-link {
+      color: #1a5261 !important;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__left {
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    &__right {
+      @media screen and (max-width: 992px) {
+        display: none !important;
+      }
+    }
+  }
+  /* The container must be positioned relative: */
+  .custom-select {
+    position: relative;
+    padding-right: 2rem;
+    padding-left: 0;
+    min-width: 120px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row-reverse;
+    text-transform: capitalize;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+  /* style the items (options), including the selected item: */
+  .select-items div,
+  .select-selected {
+    color: #00384b;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  .select-items div {
+    padding: 10px 0;
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 24px;
+  }
+
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    color: #00384b;
+    background-color: white;
+    top: 100%;
+    right: 0;
+    z-index: 99;
+    margin-top: 10px;
+    min-width: 120px;
+  }
+
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgb(231, 231, 231);
+  }
+
   .w-90 {
     width: 85%;
   }
   .w-10 {
     width: 15%;
+  }
+
+  .container-fluid {
+    padding: 0 30px;
+    padding-bottom: 6px;
+    position: relative;
+    flex-direction: row;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-btn {
+      position: absolute;
+      bottom: 16px;
+      right: 25px;
+
+      display: flex;
+      width: 120px;
+      height: 40px;
+      padding: 11px 4px 11px 5px;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: #009cb7;
+      border-radius: 5px;
+      color: #fff;
+      text-align: center;
+      font-family: Mulish;
+      font-size: 14px;
+      font-weight: 700;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding-bottom: 0;
   }
 
   .custom-dropdown-btn {
@@ -30,13 +149,12 @@
       width: 100%;
       background-color: #009cb7;
       position: absolute;
-      bottom: -30px;
+      bottom: -21px;
       left: 0;
     }
     .custom-dropdown-btn {
       color: #009cb7;
       text-align: right;
-      font-feature-settings: "clig" off, "liga" off;
       font-family: Mulish;
       font-size: 18px;
       font-style: normal;
@@ -147,8 +265,15 @@
 
   .dropdown-menu {
     padding: 0;
-    margin-top: 30px;
+    margin-top: 21px;
   }
+
+  #recoveryMenuBtn:focus,
+  #resourcesMenuBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
   .dropdown-item {
     padding: 20px 25px;
   }

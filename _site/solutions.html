@@ -41,49 +41,111 @@
       <!-- Navigation -->
       <!DOCTYPE html>
 <nav
-  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column"
+  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white"
 >
-  <div class="container-fluid p-3 nav-box-shadow">
-    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html">
-      <img
-        class="header__logo"
-        src="/images/logos/Logo-codekeeper.svg"
-        alt="Codekeeper Logo"
-      />
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+  <div class="column-wrapper d-flex w-100 flex-column">
+    <div
+      class="top-bar flex-row d-flex align-items-center justify-content-between w-100"
     >
-      <span class="navbar-toggler-icon" />
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-50 align-items-center">
-        <div class="dropdown show-desktop">
-          <button
-            class="btn bg-white dropdown-toggle custom-dropdown-btn"
-            type="button"
-            id="dropdownMenuButton5"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <!-- Solutions -->
-            Disaster Recovery Solutions
-            <img
-              class="ml-1"
-              src="/images/integrations/icon-down.svg"
-              alt="Down Icon"
-            />
-          </button>
-          <span class="line"></span>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <div class="recovery-menu">
+      <div class="top-bar__left d-flex flex-row">
+        <img
+          src="/images/navigation/lang-icon.svg"
+          class="mr-2"
+          alt="language icon"
+        />
+        <div class="custom-select nav-link manual-verification-href">
+          <select>
+            <option value="1" id="english" selected>
+              English
+            </option>
+            <option value="2" id="dutch">
+              Dutch
+            </option>
+            <option value="3" id="german">
+              German
+            </option>
+            <option value="4" id="spanish">
+              Spanish
+            </option>
+            <option value="5" id="romanian">
+              Romanian
+            </option>
+            <option value="6" id="french">
+              French
+            </option>
+          </select>
+          <i class="fa fa-chevron-down text-white ml-2 text-bondi-blue"></i>
+        </div>
+
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="software-verification-report-manual.html"
+        >
+          Contact Sales
+        </a>
+      </div>
+      <div class="top-bar__right d-flex flex-row">
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="software-verification-report-manual.html"
+        >
+          Customer Support
+        </a>
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="software-verification-report-manual.html"
+        >
+          Login
+        </a>
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="software-verification-report-manual.html"
+        >
+          About
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid nav-box-shadow d-flex">
+      <a class="navbar-brand d-flex align-items-center mr-0" href="index.html">
+        <img
+          class="header__logo"
+          src="/images/logos/Logo-codekeeper.svg"
+          alt="Codekeeper Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-50 align-items-center">
+          <div class="dropdown show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="recoveryMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- Solutions -->
+              Disaster Recovery Solutions
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="recovery-menu">
   <div class="header-wrapper">
     <a class="card-item header-card disaster-recovery-planner-href" href="disaster-recovery-planner.html">
       <img
@@ -197,34 +259,34 @@
   </div>
 </div>
 
+            </div>
           </div>
-        </div>
-        <li class="nav-item ml-50 show-desktop">
-          <a class="custom-dropdown-btn pricing-href" href="pricing.html">
-            Pricing
-          </a>
-        </li>
-        <div class="dropdown ml-50 show-desktop">
-          <button
-            class="btn bg-white dropdown-toggle custom-dropdown-btn"
-            type="button"
-            id="dropdownMenuButton5"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <!-- Solutions -->
-            Resources
-            <img
-              class="ml-1"
-              src="/images/integrations/icon-down.svg"
-              alt="Down Icon"
-            />
-          </button>
-          <span class="line"></span>
-          <div class="resources">
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-              <div class="resources-menu">
+          <li class="nav-item ml-50 show-desktop">
+            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+              Pricing
+            </a>
+          </li>
+          <div class="dropdown ml-50 show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="resourcesMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- Solutions -->
+              Resources
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="resources">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                <div class="resources-menu">
   <a class="resource-card integrations-href" href="integrations.html">
     <div class="text-and-icon d-flex align-items-center">
       <img
@@ -315,68 +377,92 @@
   </a>
 </div>
 
+              </div>
             </div>
           </div>
-        </div>
-        <li class="nav-item show-mobile">
-          <a
-            class="nav-link nav-margin automated-verification-href"
-            href="software-verification-report-automated.html"
-          >
-            Automated Verification
-          </a>
-          <a
-            class="nav-link nav-margin manual-verification-href"
-            href="software-verification-report-manual.html"
-          >
-            Manual Verification
-          </a>
-          <a
-            class="nav-link nav-margin integrations-href"
-            href="integrations.html"
-          >
-            Integrations
-          </a>
-          <a
-            class="nav-link nav-margin escrow-agreement-href"
-            href="escrow-agreement.html"
-          >
-            Escrow Agreements
-          </a>
-          <a
-            class="nav-link nav-margin video-guides-href"
-            href="video-guides.html"
-            >Video Guides
-          </a>
-          <a class="nav-link nav-margin resources-href" href="resources.html">
-            Guides & Case Studies
-          </a>
-          <a
-            class="nav-link nav-margin how-it-works-href"
-            href="how-it-works.html"
-          >
-            How it Works
-          </a>
-          <a class="nav-link nav-margin" href="technical-assessment.html">
-            Technical Assessment
-          </a>
-          <a class="nav-link nav-margin" href="risk-assessment.html">
-            Risk Assessment
-          </a>
-          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">
-            Blog
-          </a>
-          <a class="nav-link nav-margin about-us-href" href="about-us.html">
-            Our Story
-          </a>
-          <a class="nav-link nav-margin contact-href" href="contact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
+          <li class="nav-item show-mobile">
+            <a
+              class="nav-link nav-margin automated-verification-href"
+              href="software-verification-report-automated.html"
+            >
+              Automated Verification
+            </a>
+            <a
+              class="nav-link nav-margin manual-verification-href"
+              href="software-verification-report-manual.html"
+            >
+              Manual Verification
+            </a>
+            <a
+              class="nav-link nav-margin integrations-href"
+              href="integrations.html"
+            >
+              Integrations
+            </a>
+            <a
+              class="nav-link nav-margin escrow-agreement-href"
+              href="escrow-agreement.html"
+            >
+              Escrow Agreements
+            </a>
+            <a
+              class="nav-link nav-margin video-guides-href"
+              href="video-guides.html"
+              >Video Guides
+            </a>
+            <a class="nav-link nav-margin resources-href" href="resources.html">
+              Guides & Case Studies
+            </a>
+            <a
+              class="nav-link nav-margin how-it-works-href"
+              href="how-it-works.html"
+            >
+              How it Works
+            </a>
+            <a class="nav-link nav-margin" href="technical-assessment.html">
+              Technical Assessment
+            </a>
+            <a class="nav-link nav-margin" href="risk-assessment.html">
+              Risk Assessment
+            </a>
+            <a class="nav-link nav-margin" href="https://blog.codekeeper.co">
+              Blog
+            </a>
+            <a class="nav-link nav-margin about-us-href" href="about-us.html">
+              Our Story
+            </a>
+            <a class="nav-link nav-margin contact-href" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="book-btn">Book a Demo</div>
     </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    $("#recoveryMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $("#resourcesMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $(".dropdown-menu").mouseleave(function () {
+      setTimeout(() => {
+        $(".container-fluid").click();
+      }, 500);
+    });
+  });
+</script>
 
       <!-- Header -->
       <div class="header__content">
