@@ -40,103 +40,339 @@
     <div class="bg-white solutions">
       <!-- Navigation -->
       <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
+<nav
+  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column"
+>
   <div class="container-fluid p-3 nav-box-shadow">
-    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg" alt="Codekeeper Logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html">
+      <img
+        class="header__logo"
+        src="/images/logos/Logo-codekeeper.svg"
+        alt="Codekeeper Logo"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto align-items-center">
-        <!-- <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Solutions</a>
-        </li> -->
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">Sauvegarde de logiciel</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Entiercement de logiciel</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">Entiercement de SaaS</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-custodian-href text-transform-capitalize" href="software-custodian.html"></a>
-        </li>
-
-        <div class="dropdown show-solutions">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Solutions <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+      <ul class="navbar-nav ml-50 align-items-center">
+        <div class="dropdown show-desktop">
+          <button
+            class="btn bg-white dropdown-toggle custom-dropdown-btn"
+            type="button"
+            id="dropdownMenuButton5"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <!-- Solutions -->
+            Disaster Recovery Solutions
+            <img
+              class="ml-1"
+              src="/images/integrations/icon-down.svg"
+              alt="Down Icon"
+            />
           </button>
+          <span class="line"></span>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a> -->
-            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">Sauvegarde de logiciel</a>
-            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Entiercement de logiciel</a>
-            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">Entiercement de SaaS</a>
-            <a class="dropdown-item py-2 software-custodian-href text-transform-capitalize" href="software-custodian.html"></a>
+            <div class="recovery-menu">
+  <div class="header-wrapper">
+    <a class="card-item header-card disaster-recovery-planner-href" href="disaster-recovery-planner.html">
+      <img
+        class="mr-3"
+        src="/images/navigation/disaster-planner-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <p class="card-paragraph">Disaster Recovery Planner</p>
+      <span class="text-bondi-blue d-flex align-items-center ml-3">
+        Free
+        <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+      </span>
+    </a>
+  </div>
+  <div class="content-wrapper">
+    <p class="card-title">Disaster Recovery Solutions</p>
+    <div class="card-wrapper">
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-backup-href" href="software-backup.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/software-backup-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Backup</p>
           </div>
-        </div> 
+          <div class="card-info">
+            Securely store the source code of the applications that are the
+            heart of your organization.
+          </div>
+        </div>
 
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-transform-none">Modules complémentaires</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-escrow-href" href="software-escrow.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/software-escrow/icons/software-escrow-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Escrow</p>
+          </div>
+          <div class="card-info">
+            Securely store your software assets, ready for quick recovery when
+            things go wrong.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex saas-escrow-href" href="saas-escrow.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/saas-escrow-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">SaaS Escrow</p>
+          </div>
+          <div class="card-info">
+            Next level protection for cloud-native applications.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-custodian-hred" href="software-custodian.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/software-custodian-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Custodian</p>
+          </div>
+          <div class="card-info">
+            Full life cycle accountability for full compliance and control.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="buttons-wrapper">
+    <a class="btn btn-white btn-new-nav compare-solutions-href" href="compare-solutions.html">
+      Compare all solutions
+      <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+    </a>
+    <a class="btn btn-white btn-new-nav solutions-href" href="solutions.html">
+      Find the right solution for you
+      <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+    </a>
+  </div>
+</div>
+
+          </div>
+        </div>
+        <li class="nav-item ml-50 show-desktop">
+          <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+            Pricing
+          </a>
+        </li>
+        <div class="dropdown ml-50 show-desktop">
+          <button
+            class="btn bg-white dropdown-toggle custom-dropdown-btn"
+            type="button"
+            id="dropdownMenuButton5"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <!-- Solutions -->
+            Resources
+            <img
+              class="ml-1"
+              src="/images/integrations/icon-down.svg"
+              alt="Down Icon"
+            />
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-            <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">Vérification automatisée</a>
-            <a class="dropdown-item py-2 manual-verification-href" href="software-verification-report-manual.html">Vérification manuelle</a>
-          </div>
-        </div> 
+          <span class="line"></span>
+          <div class="resources">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="resources-menu">
+  <a class="resource-card integrations-href" href="integrations.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/integrations-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Intégrations</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card video-guides-href" href="video-guides.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/video-guide-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Guides vidéo</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card how-it-works-href" href="how-it-works.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/how-it-works-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Fonctionnement</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="risk-assessment.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/risk-assess-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Évaluation des Risques</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card escrow-agreement-href" href="escrow-agreement.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/escrow-agreements-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Contrats d’entiercement</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card resources-href" href="resources.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/guides-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Guides et études de cas</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="technical-assessment.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/tech-assess-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Évaluation Technique</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="https://blog.codekeeper.co">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/blog-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Blog</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+</div>
 
+            </div>
+          </div>
+        </div>
         <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">Vérification automatisée</a>
-          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">Vérification manuelle</a>
-          <a class="nav-link nav-margin integrations-href" href="integrations.html">Intégrations</a>
-          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Contrats d’entiercement</a>
-          <a class="nav-link nav-margin video-guides-href" href="video-guides.html">Guides vidéo</a>
-          <a class="nav-link nav-margin resources-href" href="resources.html">Guides et études de cas</a>
-          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">Fonctionnement</a>
-          <a class="nav-link nav-margin" href="technical-assessment.html">Évaluation Technique</a>
-          <a class="nav-link nav-margin" href="risk-assessment.html">Évaluation des Risques</a>
-          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
-          <a class="nav-link nav-margin about-us-href" href="about-us.html">Notre histoire</a>
-          <a class="nav-link nav-margin contact-href" href="contact.html">Contact</a>
+          <a
+            class="nav-link nav-margin automated-verification-href"
+            href="software-verification-report-automated.html"
+          >
+            Vérification automatisée
+          </a>
+          <a
+            class="nav-link nav-margin manual-verification-href"
+            href="software-verification-report-manual.html"
+          >
+            Vérification manuelle
+          </a>
+          <a
+            class="nav-link nav-margin integrations-href"
+            href="integrations.html"
+          >
+            Intégrations
+          </a>
+          <a
+            class="nav-link nav-margin escrow-agreement-href"
+            href="escrow-agreement.html"
+          >
+            Contrats d’entiercement
+          </a>
+          <a
+            class="nav-link nav-margin video-guides-href"
+            href="video-guides.html"
+            >Guides vidéo
+          </a>
+          <a class="nav-link nav-margin resources-href" href="resources.html">
+            Guides et études de cas
+          </a>
+          <a
+            class="nav-link nav-margin how-it-works-href"
+            href="how-it-works.html"
+          >
+            Fonctionnement
+          </a>
+          <a class="nav-link nav-margin" href="technical-assessment.html">
+            Évaluation Technique
+          </a>
+          <a class="nav-link nav-margin" href="risk-assessment.html">
+            Évaluation des Risques
+          </a>
+          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">
+            Blog
+          </a>
+          <a class="nav-link nav-margin about-us-href" href="about-us.html">
+            Notre histoire
+          </a>
+          <a class="nav-link nav-margin contact-href" href="contact.html">
+            Contact
+          </a>
         </li>
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Ressources <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item py-2 integrations-href" href="integrations.html">Intégrations</a>
-            <a class="dropdown-item py-2 escrow-agreement-href" href="escrow-agreement.html">Contrats d’entiercement</a>
-            <a class="dropdown-item py-2 video-guides-href" href="video-guides.html">Guides vidéo</a>
-            <a class="dropdown-item py-2 resources-href" href="resources.html">Guides et études de cas</a>
-            <a class="dropdown-item py-2 how-it-works-href" href="how-it-works.html">Fonctionnement</a>
-            <a class="dropdown-item py-2" href="technical-assessment.html">Évaluation Technique</a>
-            <a class="dropdown-item py-2" href="risk-assessment.html">Évaluation des Risques</a>
-            <a class="dropdown-item py-2" href="https://blog.codekeeper.co">Blog</a>
-          </div>
-        </div> 
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-capitalize">À propos de nous</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-            <a class="dropdown-item py-2 about-us-href" href="about-us.html">Notre histoire</a>
-            <a class="dropdown-item py-2 contact-href" href="contact.html">Contact</a>
-          </div>
-        </div> 
-
-        <li class="nav-item">
-          <a class="nav-link pricing-href" href="pricing.html">TARIFS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link space-no-wrap text-wrap" href="https://app.codekeeper.co/">SE CONNECTER</a>
-        </li>
-        <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
-          Réserver une démo
-        </a>
       </ul>
     </div>
   </div>
