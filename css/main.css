@@ -9580,6 +9580,11 @@ html {
   background: linear-gradient(240deg, #F0F9FF 0%, #E1F1FF 100%);
 }
 
+.bg-gradient-blue8 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5B90E1), to(#336ABE));
+  background: linear-gradient(180deg, #5B90E1 0%, #336ABE 100%);
+}
+
 .bg-gradient-cool-white {
   background: -webkit-gradient(linear, left top, right top, color-stop(100%, #FFFFFF), to(#F1FDFF));
   background: linear-gradient(90deg, #FFFFFF 100%, #F1FDFF 100%);
@@ -10073,8 +10078,16 @@ html {
   max-width: 350px !important;
 }
 
+.mw-390 {
+  max-width: 390px !important;
+}
+
 .mw-340 {
   max-width: 340px !important;
+}
+
+.mw-320 {
+  max-width: 320px !important;
 }
 
 .mw-300 {
