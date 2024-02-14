@@ -1,102 +1,316 @@
 <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container-fluid p-3 nav-box-shadow">
-    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg" alt="Codekeeper Logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto align-items-center">
-        <!-- <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a>
-        </li> -->
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">{{ site.data[page.lang]['index']['software_backup'] }}</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">{{ site.data[page.lang]['footer']['software_escrow'] }}</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-custodian-href text-transform-capitalize" href="software-custodian.html">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</a>
-        </li>
+<nav
+  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white"
+>
+  <div class="column-wrapper d-flex w-100 flex-column">
+    <div
+      class="top-bar flex-row d-flex align-items-center justify-content-between w-100"
+    >
+      <div class="top-bar__left d-flex flex-row">
+        <img
+          src="/images/navigation/lang-icon.svg"
+          class="mr-2"
+          alt="language icon"
+        />
+        <div class="custom-select custom-select-width nav-link">
+          <select>
+            <option value="0">{{ site.data[page.lang]['footer']['select_language'] }}</option>
+            <option value="1" id="english">{{ site.data[page.lang]['footer']['english'] }}</option>
+            <option value="2" id="dutch">{{ site.data[page.lang]['footer']['dutch'] }}</option>
+            <option value="3" id="german">{{ site.data[page.lang]['footer']['german'] }}</option>
+            <option value="4" id="spanish">{{ site.data[page.lang]['footer']['spanish'] }}</option>
+            <option value="5" id="romanian">{{ site.data[page.lang]['footer']['romanian'] }}</option>
+            <option value="6" id="french">{{ site.data[page.lang]['footer']['french'] }}</option>
+          </select>
+        </div>
+        <!-- <div class="custom-select nav-link manual-verification-href">
+          <select>
+            <option value="1" id="english" selected>
+              {{ site.data[page.lang]['footer']['english'] }}
+            </option>
+            <option value="2" id="dutch">
+              {{ site.data[page.lang]['footer']['dutch'] }}
+            </option>
+            <option value="3" id="german">
+              {{ site.data[page.lang]['footer']['german'] }}
+            </option>
+            <option value="4" id="spanish">
+              {{ site.data[page.lang]['footer']['spanish'] }}
+            </option>
+            <option value="5" id="romanian">
+              {{ site.data[page.lang]['footer']['romanian'] }}
+            </option>
+            <option value="6" id="french">
+              {{ site.data[page.lang]['footer']['french'] }}
+            </option>
+          </select>
+          <i class="fa fa-chevron-down text-white ml-2 text-bondi-blue"></i>
+        </div> -->
 
-        <div class="dropdown show-solutions">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ site.data[page.lang]['navigation']['solutions'] }} <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">{{ site.data[page.lang]['navigation']['solutions'] }}</a> -->
-            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">{{ site.data[page.lang]['index']['software_backup'] }}</a>
-            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">{{ site.data[page.lang]['footer']['software_escrow'] }}</a>
-            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">{{ site.data[page.lang]['footer']['saas_escrow'] }}</a>
-            <a class="dropdown-item py-2 software-custodian-href text-transform-capitalize" href="software-custodian.html">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</a>
+        <a
+          class="nav-link nav-margin contact-href show-desktop"
+          href="contact.html"
+        >
+          Contact Sales
+        </a>
+      </div>
+      <div class="top-bar__right d-flex flex-row">
+        <a
+          class="nav-link nav-margin contact-href"
+          href="contact.html"
+        >
+          Customer Support
+        </a>
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="https://app.codekeeper.co/"
+        >
+        {{ site.data[page.lang]['navigation']['login'] }}
+        </a>
+        <a
+          class="nav-link nav-margin about-us-href"
+          href="about-us.html"
+        >
+        {{ site.data[page.lang]['navigation']['about_us'] }}
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid nav-box-shadow d-flex">
+      <a class="navbar-brand d-flex align-items-center mr-0" href="index.html">
+        <img
+          class="header__logo"
+          src="/images/logos/Logo-codekeeper.svg"
+          alt="Codekeeper Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-50 align-items-center">
+          <div class="dropdown show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="recoveryMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- {{ site.data[page.lang]['navigation']['solutions'] }} -->
+              Disaster Recovery Solutions
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              {% include recovery-menu.html %}
+            </div>
           </div>
-        </div> 
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-transform-none">{{ site.data[page.lang]['footer']['add_ons'] }}</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-            <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">{{ site.data[page.lang]['navigation']['automated_verification'] }}</a>
-            <a class="dropdown-item py-2 manual-verification-href" href="software-verification-report-manual.html">{{ site.data[page.lang]['navigation']['manual_verification'] }}</a>
+          <li class="nav-item ml-50 show-desktop">
+            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+              Pricing
+            </a>
+          </li>
+          <div class="dropdown ml-50 show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="resourcesMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- {{ site.data[page.lang]['navigation']['solutions'] }} -->
+              Resources
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="resources">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                {% include resources-menu.html %}
+              </div>
+            </div>
           </div>
-        </div> 
+          <div class="nav-item show-mobile">
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-backup-href text-transform-none"
+                href="software-backup.html"
+                >{{ site.data[page.lang]['index']['software_backup'] }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-escrow-href text-transform-capitalize"
+                href="software-escrow.html"
+                >{{ site.data[page.lang]['footer']['software_escrow'] }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin saas-escrow-href text-transform-capitalize"
+                href="saas-escrow.html"
+                >{{ site.data[page.lang]['footer']['saas_escrow'] }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-custodian-href text-transform-capitalize"
+                href="software-custodian.html"
+                >{{
+                site.data[page.lang]['software_custodian']['software_custodian']
+                }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin automated-verification-href"
+                href="software-verification-report-automated.html"
+              >
+                {{ site.data[page.lang]['navigation']['automated_verification']
+                }}
+              </a>
+            </li>
 
-        <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">{{ site.data[page.lang]['navigation']['automated_verification'] }}</a>
-          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">{{ site.data[page.lang]['navigation']['manual_verification'] }}</a>
-          <a class="nav-link nav-margin integrations-href" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
-          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">{{ site.data[page.lang]['navigation']['escrow_agreements'] }}</a>
-          <a class="nav-link nav-margin video-guides-href" href="video-guides.html">{{ site.data[page.lang]['video_guides']['video_guides'] }}</a>
-          <a class="nav-link nav-margin resources-href" href="resources.html">{{ site.data[page.lang]['navigation']['guides_case'] }}</a>
-          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
-          <a class="nav-link nav-margin" href="technical-assessment.html">{{ site.data[page.lang]['navigation']['technical_assessment'] }}</a>
-          <a class="nav-link nav-margin" href="risk-assessment.html">{{ site.data[page.lang]['navigation']['risk_assessment'] }}</a>
-          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
-          <a class="nav-link nav-margin about-us-href" href="about-us.html">{{ site.data[page.lang]['navigation']['our_story'] }}</a>
-          <a class="nav-link nav-margin contact-href" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
-        </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin manual-verification-href"
+                href="software-verification-report-manual.html"
+              >
+                {{ site.data[page.lang]['navigation']['manual_verification'] }}
+              </a>
+            </li>
 
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ site.data[page.lang]['navigation']['resources'] }} <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item py-2 integrations-href" href="integrations.html">{{ site.data[page.lang]['footer']['integrations'] }}</a>
-            <a class="dropdown-item py-2 escrow-agreement-href" href="escrow-agreement.html">{{ site.data[page.lang]['navigation']['escrow_agreements'] }}</a>
-            <a class="dropdown-item py-2 video-guides-href" href="video-guides.html">{{ site.data[page.lang]['video_guides']['video_guides'] }}</a>
-            <a class="dropdown-item py-2 resources-href" href="resources.html">{{ site.data[page.lang]['navigation']['guides_case'] }}</a>
-            <a class="dropdown-item py-2 how-it-works-href" href="how-it-works.html">{{ site.data[page.lang]['footer']['how_it_works'] }}</a>
-            <a class="dropdown-item py-2" href="technical-assessment.html">{{ site.data[page.lang]['navigation']['technical_assessment'] }}</a>
-            <a class="dropdown-item py-2" href="risk-assessment.html">{{ site.data[page.lang]['navigation']['risk_assessment'] }}</a>
-            <a class="dropdown-item py-2" href="https://blog.codekeeper.co">{{ site.data[page.lang]['navigation']['blog'] }}</a>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin integrations-href"
+                href="integrations.html"
+              >
+                {{ site.data[page.lang]['footer']['integrations'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin escrow-agreement-href"
+                href="escrow-agreement.html"
+              >
+                {{ site.data[page.lang]['navigation']['escrow_agreements'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin video-guides-href"
+                href="video-guides.html"
+                >{{ site.data[page.lang]['video_guides']['video_guides'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin resources-href"
+                href="resources.html"
+              >
+                {{ site.data[page.lang]['navigation']['guides_case'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin how-it-works-href"
+                href="how-it-works.html"
+              >
+                {{ site.data[page.lang]['footer']['how_it_works'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="technical-assessment.html">
+                {{ site.data[page.lang]['navigation']['technical_assessment'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="risk-assessment.html">
+                {{ site.data[page.lang]['navigation']['risk_assessment'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="https://blog.codekeeper.co">
+                {{ site.data[page.lang]['navigation']['blog'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="about-us.html">
+                {{ site.data[page.lang]['navigation']['our_story'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="contact.html">
+                {{ site.data[page.lang]['footer']['contact'] }}
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link pricing-href" href="pricing.html"
+                >{{ site.data[page.lang]['navigation']['pricing'] }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link" href="https://app.codekeeper.co/"
+                >{{ site.data[page.lang]['navigation']['login'] }}</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="button btn-secondary-large nav-margin book-a-demo-href"
+                href="book-a-demo.html"
+              >
+                {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+              </a>
+            </li>
           </div>
-        </div> 
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-capitalize">{{ site.data[page.lang]['navigation']['about_us'] }}</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-            <a class="dropdown-item py-2 about-us-href" href="about-us.html">{{ site.data[page.lang]['navigation']['our_story'] }}</a>
-            <a class="dropdown-item py-2 contact-href" href="contact.html">{{ site.data[page.lang]['footer']['contact'] }}</a>
-          </div>
-        </div> 
-
-        <li class="nav-item">
-          <a class="nav-link pricing-href" href="pricing.html">{{ site.data[page.lang]['navigation']['pricing'] }}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link space-no-wrap text-wrap" href="https://app.codekeeper.co/">{{ site.data[page.lang]['navigation']['login'] }}</a>
-        </li>
-        <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
+        </ul>
+      </div>
+      <a
+          class="button btn-secondary book-btn nav-margin book-a-demo-href underline-none"
+          href="book-a-demo.html"
+        >
           {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
         </a>
-      </ul>
     </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    $("#recoveryMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $("#resourcesMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $(".dropdown-menu").mouseleave(function () {
+      setTimeout(() => {
+        $(".container-fluid").click();
+      }, 500);
+    });
+  });
+</script>
+

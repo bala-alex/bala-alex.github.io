@@ -8,10 +8,17 @@
     padding-left: 40px;
     padding-right: 12px;
     padding-bottom: 0;
+
+    @media screen and (max-width: 992px) {
+      display: none !important;
+    }
+
     .nav-link {
       color: #1a5261 !important;
+      font-weight: 400;
       &:hover {
         opacity: 1;
+        text-decoration: underline;
       }
     }
     &__left {
@@ -38,6 +45,9 @@
     justify-content: left;
     flex-direction: row-reverse;
     text-transform: capitalize;
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 
   .custom-select select {
@@ -94,8 +104,18 @@
     flex-direction: row;
 
     @media screen and (max-width: 992px) {
-      flex-direction: column;
+      padding: 0;
+      padding: 1rem;
+      justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .navbar-nav {
+      @media screen and (max-width: 992px) {
+        margin-left: 0 !important;
+      }
     }
 
     .book-btn {
@@ -296,8 +316,18 @@
   .resources {
     .dropdown-menu {
       @media screen and (max-width: 1450px) {
-        left: -18rem !important;
+        left: -18rem;
       }
+
+      @media screen and (max-width: 1150px) {
+        left: -28rem;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    @media screen and (max-width: 1150px) {
+      left: -8rem;
     }
   }
 

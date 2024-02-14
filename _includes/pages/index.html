@@ -14,7 +14,7 @@
   <div class="bg-white">
     <div class="container-fluid resources px-0">
       <!-- Navigation -->
-      {% include navigation-new.html %}
+      {% include navigation.html %}
       <!-- Header -->
       <div class="header__bg-landing">
         <img class="header__bg-left" src="/images/landing/illustration-top.webp" alt="Illustration of the top section of the websit header"/>
@@ -22,7 +22,7 @@
         <div class="container section-small d-flex align-items-center flex-column">
           <h1 class="header__title mt-5 overflow-wrap-break text-center mw-100 font-50">{{ site.data[page.lang]['index']['disaster_proof_your'] }}</h1>
           <img class="image-style mw-420 mx-auto my-4" src="/images/landing/homepage-dashboard.webp" alt="Dashboard showcasing software features for popular developer platforms"/>
-          <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">Enterprise-ready <a class="fw-700 text-underline text-dark-cyan software-backup-href" href="software-backup.html">Software Backup</a>, <a class="fw-700 text-underline text-dark-cyan software-escrow-href" href="software-escrow.html">Software Escrow</a>, <a class="fw-700 text-underline text-dark-cyan saas-escrow-href" href="saas-escrow.html">SaaS Escrow</a> and <a class="fw-700 text-underline text-dark-cyan software-custodian-href" href="software-custodian.html">Software Custodian</a> solutions for software companies and their clients.</p>
+          <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">{{ site.data[page.lang]['index']['enterprise_ready_software_backup'] }}</p>
           <p class="header__subtext mt-2 text-center">{{ site.data[page.lang]['index']['we_support_all'] }} </p>
           <!-- Developer Platforms -->
           <div class="mt-negative-20">
@@ -529,9 +529,7 @@
       </div>
 
 
-      <div class="bg-primary-default section-medium position-relative pt-5">
-        <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom left corner shapee" loading="lazy"/>
-        <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom right corner shape" loading="lazy"/>
+      <div class="bg-primary-default section-medium pt-5">
         <div class="container">
           <h2 class="mentions__title mt-5 text-white">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
           <p class="software-escrow__subtitle text-white">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
@@ -560,8 +558,83 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- Section -->
+    <div class="section-large pb-5">
+      <div class="container pricing">
+        
+        <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
+        <ul class="faq mt-5 pb-5 pl-0">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3 text-dark-cyan">What is Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">Codekeeper provides enterprise-ready software backup, software escrow, SaaS escrow, and data custodian solutions. We specialize in disaster-proofing software operations for companies and their clients, ensuring business continuity and compliance with cutting-edge technology.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">How does Codekeeper protect businesses from digital threats?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">With over a decade of experience in disaster recovery, Codekeeper uses state-of-the-art technology to safeguard your most valuable digital assets against 42% of all businesses' common losses due to digital threats, ensuring your operations can recover or remain unaffected by digital disasters.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">What solutions does Codekeeper offer?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">Codekeeper offers a comprehensive suite of solutions including Software Backup, Software Escrow, SaaS Escrow, and Data Custodian services, tailored to ensure your software assets are disaster-proof and your operations are secure and compliant.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">How can I assess my software risk with Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">You can instantly assess your software risk landscape using our free and user-friendly tool. It's the first step in our roadmap to achieving disaster-proof software, providing you with a quick risk check of your current situation.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">What is the process to get started with Codekeeper?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">Our process is simple and tailored to your needs: (1) Instantly assess your risk with our tool, (2) Get a custom-fit recovery plan in a quick call with our experts, and (3) Implement your plan easily with the support of our automated integrations inviting your team and vendors.</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">How does Codekeeper ensure compliance and security for its clients?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">Codekeeper ensures compliance and security by offering solutions that are aligned with industry standards, providing enterprise-grade resilience, impenetrable security for client data, and a regulatory-ready posture to navigate compliance landscapes with ease.</li>
 
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3 text-dark-cyan">What industries benefit most from Codekeeper’s solutions?</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+          </li>
+          <li class="a section__text">Our solutions are designed for any business reliant on digital assets, including those in finance, healthcare, government, defense, and more. We provide specialized attention to data handling and compliance requirements that remain critical even in disaster scenarios.</li>
+
+          <div class="" id="questions">
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3 text-dark-cyan">Can Codekeeper help if my vendor goes down?</p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+            </li>
+            <li class="a section__text">Yes, Codekeeper's solutions are designed to maintain operational continuity and compliance, even if a vendor goes down, by ensuring that your software and data management requirements are fully covered, without interruption.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3 text-dark-cyan">Why is it important to have a disaster recovery plan?</p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+            </li>
+            <li class="a section__text">A disaster recovery plan is crucial to prevent loss of revenue, which can average $5,600 for every minute of downtime, mitigate legal and regulatory repercussions, and protect the integrity of client data, thus maintaining the trust and operational excellence of your business.</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3 text-dark-cyan">How can I join the companies already protected by Codekeeper?</p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy"/>
+            </li>
+            <li class="a section__text">To join the growing number of companies secured by Codekeeper, start by using our free Disaster Recovery Planning tool to monitor your assets, identify risks, and structure mitigating measures. <a class="text-bondi-blue contact-href fw-bold text-underline" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> to further discuss how our solutions can be tailored to your specific needs.</li>
+            
+          </div>
+          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+            <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+            <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+          </p>
+        </ul>
+        <p class="section__text mt-5 mb-5 text-center">{{ site.data[page.lang]['pricing']['have_not_found'] }} <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> </p>
+      </div>
+    </div>
+    <div class="position-relative">
+      <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom left corner shapee" loading="lazy"/>
+      <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom right corner shape" loading="lazy"/>
+    </div>
+
+    <div class="container-fluid resources px-0">
       <div class="position-relative">
         <img class="mentions__top-right-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top right corner" loading="lazy"/>
         <img class="mentions__top-left-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top left corner" loading="lazy"/>
@@ -614,6 +687,7 @@
 
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
+  <script src="/js/faqDropdown.js"></script>
 
   <script>
     // Check if the page has not been reloaded

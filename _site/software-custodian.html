@@ -42,107 +42,521 @@
     <!-- Navigation -->
     <div class="navigation pb-4">
       <!DOCTYPE html>
-<nav class="navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white d-flex flex-column">
-  <div class="container-fluid p-3 nav-box-shadow">
-    <a class="navbar-brand d-flex align-items-center mr-0" href="index.html"><img class="header__logo" src="/images/logos/Logo-codekeeper.svg" alt="Codekeeper Logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto align-items-center">
-        <!-- <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin solutions-href text-transform-none" href="solutions.html">Solutions</a>
-        </li> -->
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
-        </li>
-        <li class="nav-item hide-solutions">
-          <a class="nav-link nav-margin software-custodian-href text-transform-capitalize" href="software-custodian.html">Software Custodian</a>
-        </li>
+<nav
+  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white"
+>
+  <div class="column-wrapper d-flex w-100 flex-column">
+    <div
+      class="top-bar flex-row d-flex align-items-center justify-content-between w-100"
+    >
+      <div class="top-bar__left d-flex flex-row">
+        <img
+          src="/images/navigation/lang-icon.svg"
+          class="mr-2"
+          alt="language icon"
+        />
+        <div class="custom-select custom-select-width nav-link">
+          <select>
+            <option value="0">Select language</option>
+            <option value="1" id="english">English</option>
+            <option value="2" id="dutch">Dutch</option>
+            <option value="3" id="german">German</option>
+            <option value="4" id="spanish">Spanish</option>
+            <option value="5" id="romanian">Romanian</option>
+            <option value="6" id="french">French</option>
+          </select>
+        </div>
+        <!-- <div class="custom-select nav-link manual-verification-href">
+          <select>
+            <option value="1" id="english" selected>
+              English
+            </option>
+            <option value="2" id="dutch">
+              Dutch
+            </option>
+            <option value="3" id="german">
+              German
+            </option>
+            <option value="4" id="spanish">
+              Spanish
+            </option>
+            <option value="5" id="romanian">
+              Romanian
+            </option>
+            <option value="6" id="french">
+              French
+            </option>
+          </select>
+          <i class="fa fa-chevron-down text-white ml-2 text-bondi-blue"></i>
+        </div> -->
 
-        <div class="dropdown show-solutions">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Solutions <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-            <!-- <a class="dropdown-item py-2 solutions-href text-transform-none" href="solutions.html">Solutions</a> -->
-            <a class="dropdown-item py-2 software-backup-href text-transform-none" href="software-backup.html">Software Backup</a>
-            <a class="dropdown-item py-2 software-escrow-href text-transform-capitalize" href="software-escrow.html">Software Escrow</a>
-            <a class="dropdown-item py-2 saas-escrow-href text-transform-capitalize" href="saas-escrow.html">SaaS Escrow</a>
-            <a class="dropdown-item py-2 software-custodian-href text-transform-capitalize" href="software-custodian.html">Software Custodian</a>
+        <a
+          class="nav-link nav-margin contact-href show-desktop"
+          href="contact.html"
+        >
+          Contact Sales
+        </a>
+      </div>
+      <div class="top-bar__right d-flex flex-row">
+        <a
+          class="nav-link nav-margin contact-href"
+          href="contact.html"
+        >
+          Customer Support
+        </a>
+        <a
+          class="nav-link nav-margin manual-verification-href"
+          href="https://app.codekeeper.co/"
+        >
+        LOGIN
+        </a>
+        <a
+          class="nav-link nav-margin about-us-href"
+          href="about-us.html"
+        >
+        About us
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid nav-box-shadow d-flex">
+      <a class="navbar-brand d-flex align-items-center mr-0" href="index.html">
+        <img
+          class="header__logo"
+          src="/images/logos/Logo-codekeeper.svg"
+          alt="Codekeeper Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-50 align-items-center">
+          <div class="dropdown show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="recoveryMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- Solutions -->
+              Disaster Recovery Solutions
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="recovery-menu">
+  <div class="header-wrapper">
+    <a class="card-item header-card disaster-recovery-planner-href" href="disaster-recovery-planner.html">
+      <img
+        class="mr-3"
+        src="/images/navigation/disaster-planner-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <p class="card-paragraph">Disaster Recovery Planner</p>
+      <span class="text-bondi-blue d-flex align-items-center ml-3">
+        Free
+        <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+      </span>
+    </a>
+  </div>
+  <div class="content-wrapper">
+    <p class="card-title">Disaster Recovery Solutions</p>
+    <div class="card-wrapper">
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-backup-href" href="software-backup.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/software-backup-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Backup</p>
           </div>
-        </div> 
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-transform-none">Add-ons</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-            <a class="dropdown-item py-2 automated-verification-href" href="software-verification-report-automated.html">Automated Verification</a>
-            <a class="dropdown-item py-2 manual-verification-href" href="software-verification-report-manual.html">Manual Verification</a>
+          <div class="card-info">
+            Securely store the source code of the applications that are the
+            heart of your organization.
           </div>
-        </div> 
+        </div>
 
-        <li class="nav-item show-mobile">
-          <a class="nav-link nav-margin automated-verification-href" href="software-verification-report-automated.html">Automated Verification</a>
-          <a class="nav-link nav-margin manual-verification-href" href="software-verification-report-manual.html">Manual Verification</a>
-          <a class="nav-link nav-margin integrations-href" href="integrations.html">Integrations</a>
-          <a class="nav-link nav-margin escrow-agreement-href" href="escrow-agreement.html">Escrow Agreements</a>
-          <a class="nav-link nav-margin video-guides-href" href="video-guides.html">Video Guides</a>
-          <a class="nav-link nav-margin resources-href" href="resources.html">Guides & Case Studies</a>
-          <a class="nav-link nav-margin how-it-works-href" href="how-it-works.html">How it Works</a>
-          <a class="nav-link nav-margin" href="technical-assessment.html">Technical Assessment</a>
-          <a class="nav-link nav-margin" href="risk-assessment.html">Risk Assessment</a>
-          <a class="nav-link nav-margin" href="https://blog.codekeeper.co">Blog</a>
-          <a class="nav-link nav-margin about-us-href" href="about-us.html">Our Story</a>
-          <a class="nav-link nav-margin contact-href" href="contact.html">Contact</a>
-        </li>
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item py-2 integrations-href" href="integrations.html">Integrations</a>
-            <a class="dropdown-item py-2 escrow-agreement-href" href="escrow-agreement.html">Escrow Agreements</a>
-            <a class="dropdown-item py-2 video-guides-href" href="video-guides.html">Video Guides</a>
-            <a class="dropdown-item py-2 resources-href" href="resources.html">Guides & Case Studies</a>
-            <a class="dropdown-item py-2 how-it-works-href" href="how-it-works.html">How it Works</a>
-            <a class="dropdown-item py-2" href="technical-assessment.html">Technical Assessment</a>
-            <a class="dropdown-item py-2" href="risk-assessment.html">Risk Assessment</a>
-            <a class="dropdown-item py-2" href="https://blog.codekeeper.co">Blog</a>
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-escrow-href" href="software-escrow.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/software-escrow/icons/software-escrow-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Escrow</p>
           </div>
-        </div> 
-
-        <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link d-flex align-items-center" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="text-wrap text-capitalize">About us</span> <img class="ml-1" src="/images/integrations/icon-down.svg" alt="Down Icon"/>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-            <a class="dropdown-item py-2 about-us-href" href="about-us.html">Our Story</a>
-            <a class="dropdown-item py-2 contact-href" href="contact.html">Contact</a>
+          <div class="card-info">
+            Securely store your software assets, ready for quick recovery when
+            things go wrong.
           </div>
-        </div> 
+        </div>
 
-        <li class="nav-item">
-          <a class="nav-link pricing-href" href="pricing.html">PRICING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link space-no-wrap text-wrap" href="https://app.codekeeper.co/">LOGIN</a>
-        </li>
-        <a class="button btn-secondary-large nav-margin book-a-demo-href" href="book-a-demo.html">
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex saas-escrow-href" href="saas-escrow.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/saas-escrow-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">SaaS Escrow</p>
+          </div>
+          <div class="card-info">
+            Next level protection for cloud-native applications.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+      <!--  TODO Update hrefs and translations-->
+      <a class="card-item d-flex software-custodian-hred" href="software-custodian.html">
+        <div class="d-flex flex-column w-90">
+          <div class="d-flex flex-row align-items-center">
+            <img
+              class="mr-3 icon-nav"
+              src="/images/navigation/software-custodian-icon.svg"
+              alt="Disaster Planner Icon"
+            />
+            <p class="card-paragraph">Software Custodian</p>
+          </div>
+          <div class="card-info">
+            Full life cycle accountability for full compliance and control.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-end w-10">
+          <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="buttons-wrapper">
+    <a class="btn btn-white btn-new-nav compare-solutions-href" href="compare-solutions.html">
+      Compare all solutions
+      <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+    </a>
+    <a class="btn btn-white btn-new-nav solutions-href" href="solutions.html">
+      Find the right solution for you
+      <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+    </a>
+  </div>
+</div>
+
+            </div>
+          </div>
+          <li class="nav-item ml-50 show-desktop">
+            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+              Pricing
+            </a>
+          </li>
+          <div class="dropdown ml-50 show-desktop">
+            <button
+              class="btn bg-white dropdown-toggle custom-dropdown-btn"
+              type="button"
+              id="resourcesMenuBtn"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <!-- Solutions -->
+              Resources
+              <img
+                class="ml-1"
+                src="/images/integrations/icon-down.svg"
+                alt="Down Icon"
+              />
+            </button>
+            <span class="line"></span>
+            <div class="resources">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                <div class="resources-menu">
+  <a class="resource-card integrations-href" href="integrations.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/integrations-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Integrations</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card video-guides-href" href="video-guides.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/video-guide-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Video Guides</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card how-it-works-href" href="how-it-works.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/how-it-works-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">How it Works</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="risk-assessment.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/risk-assess-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Risk Assessment</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card escrow-agreement-href" href="escrow-agreement.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/escrow-agreements-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Escrow Agreements</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card resources-href" href="resources.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/guides-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Guides & Case Studies</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="technical-assessment.html">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/tech-assess-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Technical Assessment</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+  <a class="resource-card" href="https://blog.codekeeper.co">
+    <div class="text-and-icon d-flex align-items-center">
+      <img
+        class="mr-3"
+        src="/images/navigation/blog-icon.svg"
+        alt="Disaster Planner Icon"
+      />
+      <div class="resources-text">Blog</div>
+    </div>
+    <i class="fa fa-chevron-right text-white ml-2 text-bondi-blue"></i>
+  </a>
+</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="nav-item show-mobile">
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-backup-href text-transform-none"
+                href="software-backup.html"
+                >Software Backup</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-escrow-href text-transform-capitalize"
+                href="software-escrow.html"
+                >Software Escrow</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin saas-escrow-href text-transform-capitalize"
+                href="saas-escrow.html"
+                >SaaS Escrow</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin software-custodian-href text-transform-capitalize"
+                href="software-custodian.html"
+                >Software Custodian</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin automated-verification-href"
+                href="software-verification-report-automated.html"
+              >
+                Automated Verification
+              </a>
+            </li>
+
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin manual-verification-href"
+                href="software-verification-report-manual.html"
+              >
+                Manual Verification
+              </a>
+            </li>
+
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin integrations-href"
+                href="integrations.html"
+              >
+                Integrations
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin escrow-agreement-href"
+                href="escrow-agreement.html"
+              >
+                Escrow Agreements
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin video-guides-href"
+                href="video-guides.html"
+                >Video Guides
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin resources-href"
+                href="resources.html"
+              >
+                Guides & Case Studies
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="nav-link nav-margin how-it-works-href"
+                href="how-it-works.html"
+              >
+                How it Works
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="technical-assessment.html">
+                Technical Assessment
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="risk-assessment.html">
+                Risk Assessment
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="https://blog.codekeeper.co">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="about-us.html">
+                Our Story
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link nav-margin" href="contact.html">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link pricing-href" href="pricing.html"
+                >PRICING</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a class="nav-link" href="https://app.codekeeper.co/"
+                >LOGIN</a
+              >
+            </li>
+            <li class="nav-item hide-solutions">
+              <a
+                class="button btn-secondary-large nav-margin book-a-demo-href"
+                href="book-a-demo.html"
+              >
+                Book a Demo
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <a
+          class="button btn-secondary book-btn nav-margin book-a-demo-href underline-none"
+          href="book-a-demo.html"
+        >
           Book a Demo
         </a>
-      </ul>
     </div>
   </div>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    $("#recoveryMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $("#resourcesMenuBtn").mouseenter(function () {
+      setTimeout(() => {
+        $(this).click();
+      }, 500);
+    });
+
+    $(".dropdown-menu").mouseleave(function () {
+      setTimeout(() => {
+        $(".container-fluid").click();
+      }, 500);
+    });
+  });
+</script>
+
 
     </div>
 
@@ -1114,7 +1528,7 @@
     <div class="container pt-50">
       <div class="row column-reverse-mobile mt-5">
         <div class="col-md-5 col-sm-12">
-          <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
+          <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-free-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
         </div>
         <div class="col-md-7 col-sm-12">
           <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mw-530 font-40 line-height-45">Disaster Recovery Planning Free Toolkit</p>
@@ -1140,7 +1554,8 @@
 
   <div class="people-choose__bg">
     <div class="container section-medium mt-5">
-      <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+      <p class="people-choose__main-subtitle2 mx-auto mt-4">Trusted partner of these great brands from around the world!</p>
+      <img class="image-style mt-4" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
     </div>
   </div>
     
@@ -2394,7 +2809,8 @@
 
   <div class="people-choose__bg">
     <div class="container section-medium mt-5">
-      <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+      <p class="people-choose__main-subtitle2 mx-auto mt-4">Trusted partner of these great brands from around the world!</p>
+      <img class="image-style mt-4" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
     </div>
   </div>
     
@@ -2511,22 +2927,25 @@
   </div>
   <!-- Snippets -->
   <!DOCTYPE html>
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://d16ahjtmf9d1au.cloudfront.net/inject.bundle.js" async data-id="ToyboxSnippet" data-token="ullmwqAjDj17" ></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://d16ahjtmf9d1au.cloudfront.net/inject.bundle.js" async data-id="ToyboxSnippet"
+  data-token="ullmwqAjDj17"></script>
 <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/5365877.js"></script>
 <!-- End of HubSpot Embed Code -->
 
 <!-- Segment -->
 <script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-  analytics.load("kS7MfzQKC6q4Z256S4COmij9oHjObrrL");
-  analytics.page();
-  }}();
+  !function () {
+    var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+      analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
+      analytics.load("kS7MfzQKC6q4Z256S4COmij9oHjObrrL");
+      analytics.page();
+    }
+  }();
 </script>
 <!-- End Segment -->
 
@@ -2534,151 +2953,163 @@ crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100639203-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'UA-100639203-1');
   gtag('config', 'G-308ZCMY73H');
   gtag('config', 'AW-865197017');
 </script>
 <!-- End of Google Analytics -->
-
 <script>
-var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
+  function initializeCustomSelects() {
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+        create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+          and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
             }
-            this.setAttribute("class", "same-as-selected");
-            break;
           }
-        }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-}
-function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
     }
   }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
+  function closeAllSelect(elmnt) {
+    /*a function that will close all select boxes in the document,
+    except the current select box:*/
+    if (!elmnt) return; // Added null check
+
+    var x, y, i, xl, yl, arrNo = [];
+    x = document.getElementsByClassName("select-items");
+    y = document.getElementsByClassName("select-selected");
+    xl = x.length;
+    yl = y.length;
+    for (i = 0; i < yl; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i)
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (i = 0; i < xl; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+      }
+    }
+
+    const langElmnt = elmnt.querySelector('.select-selected');
+    if (!langElmnt) return; // Added null check
+
+    const lang = langElmnt.textContent;
+
+    if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză') || (lang === 'Anglais')) {
+      window.location = '/index.html';
+    }
+    else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză') || (lang === 'Néerlandais')) {
+      window.location = '/nl/index.html';
+    }
+    else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană') || (lang === 'Allemand')) {
+      window.location = '/de/index.html';
+    }
+    else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă') || (lang === 'Espanol')) {
+      window.location = '/es/index.html';
+    }
+    else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') || (lang === 'Romană') || (lang === 'Roumain')) {
+      window.location = '/ro/index.html';
+    }
+    else if ((lang === 'French') || (lang === 'Frans') || (lang === 'Französisch') || (lang === 'Francés') || (lang === 'Franceză') || (lang === 'Français')) {
+      window.location = '/fr/index.html';
     }
   }
 
-  const lang = $('.select-selected').text();
+  /*if the user clicks anywhere outside the select box,
+  then close all select boxes:*/
+  document.addEventListener("click", function (event) {
+    closeAllSelect(event.target.closest('.custom-select'));
+  });
 
-  if ((lang === 'English') || (lang === 'Engels') || (lang === 'Englisch') || (lang === 'Inglés') || (lang === 'Engleză') || (lang === 'Anglais')) {
-    window.location = '/index.html';
-  }
-  else if ((lang === 'Dutch') || (lang === 'Nederlands') || (lang === 'Niederländisch') || (lang === 'Neerlandés') || (lang === 'Olandeză') || (lang === 'Néerlandais')) {
-    window.location = '/nl/index.html';
-  }
-  else if ((lang === 'German') || (lang === 'Duits') || (lang === 'Deutsch') || (lang === 'Alemán') || (lang === 'Germană') || (lang === 'Allemand')) {
-    window.location = '/de/index.html';
-  }
-  else if ((lang === 'Spanish') || (lang === 'Spaans') || (lang === 'Spanisch') || (lang === 'Española') || (lang === 'Spaniolă') || (lang === 'Espanol')) {
-    window.location = '/es/index.html';
-  }
-  else if ((lang === 'Romanian') || (lang === 'Roemeens') || (lang === 'Rumänisch') || (lang === 'Rumano') || (lang === 'Romană') || (lang === 'Roumain')) {
-    window.location = '/ro/index.html';
-  }
-  else if ((lang === 'French') || (lang === 'Frans') || (lang === 'Französisch') || (lang === 'Francés') || (lang === 'Franceză') || (lang === 'Français')) {
-    window.location = '/fr/index.html';
-  }
-
-}
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);
-
+  // Call the function to initialize custom selects
+  initializeCustomSelects();
 </script>
+
+
 <script>
-  $( document ).ready(function() {
+  $(document).ready(function () {
     var lang = location.pathname.substring(0, 3);
 
-    $( ".select-items" ).find( "*" ).each( function(){
+    $(".select-items").find("*").each(function () {
       var $element = $(this);
 
       if (lang === '/nl') {
-        if ( ($.trim( $element.html() ) === 'Dutch') || ($.trim( $element.html() ) === 'Nederlands') || ($.trim( $element.html() ) === 'Niederländisch') || ($.trim( $element.html() ) === 'Neerlandés') || ($.trim( $element.html() ) === 'Olandeză') || ($.trim( $element.html() ) === 'Néerlandais') ) {
+        if (($.trim($element.html()) === 'Dutch') || ($.trim($element.html()) === 'Nederlands') || ($.trim($element.html()) === 'Niederländisch') || ($.trim($element.html()) === 'Neerlandés') || ($.trim($element.html()) === 'Olandeză') || ($.trim($element.html()) === 'Néerlandais')) {
           $element.remove();
         }
       }
       else if (lang === '/de') {
-        if ( ($.trim( $element.html() ) === 'German') || ($.trim( $element.html() ) === 'Duits') || ($.trim( $element.html() ) === 'Deutsch') || ($.trim( $element.html() ) === 'Alemán') || ($.trim( $element.html() ) === 'Germană') || ($.trim( $element.html() ) === 'Allemand')) {
+        if (($.trim($element.html()) === 'German') || ($.trim($element.html()) === 'Duits') || ($.trim($element.html()) === 'Deutsch') || ($.trim($element.html()) === 'Alemán') || ($.trim($element.html()) === 'Germană') || ($.trim($element.html()) === 'Allemand')) {
           $element.remove();
         }
       }
       else if (lang === '/es') {
-        if ( ($.trim( $element.html() ) === 'Spanish') || ($.trim( $element.html() ) === 'Spaans') || ($.trim( $element.html() ) === 'Spanisch') || ($.trim( $element.html() ) === 'Española') || ($.trim( $element.html() ) === 'Spaniolă') || ($.trim( $element.html() ) === 'Espanol')) {
+        if (($.trim($element.html()) === 'Spanish') || ($.trim($element.html()) === 'Spaans') || ($.trim($element.html()) === 'Spanisch') || ($.trim($element.html()) === 'Española') || ($.trim($element.html()) === 'Spaniolă') || ($.trim($element.html()) === 'Espanol')) {
           $element.remove();
         }
       }
       else if (lang === '/ro') {
-        if ( ($.trim( $element.html() ) === 'Romanian') || ($.trim( $element.html() ) === 'Roemeens') || ($.trim( $element.html() ) === 'Rumänisch') || ($.trim( $element.html() ) === 'Rumano') || ($.trim( $element.html() ) === 'Romană') || ($.trim( $element.html() ) === 'Roumain')) {
+        if (($.trim($element.html()) === 'Romanian') || ($.trim($element.html()) === 'Roemeens') || ($.trim($element.html()) === 'Rumänisch') || ($.trim($element.html()) === 'Rumano') || ($.trim($element.html()) === 'Romană') || ($.trim($element.html()) === 'Roumain')) {
           $element.remove();
         }
       }
       else if (lang === '/fr') {
-        if ( ($.trim( $element.html() ) === 'French') || ($.trim( $element.html() ) === 'Frans') || ($.trim( $element.html() ) === 'Französisch') || ($.trim( $element.html() ) === 'Francés') || ($.trim( $element.html() ) === 'Franceză') || ($.trim( $element.html() ) === 'Français')) {
+        if (($.trim($element.html()) === 'French') || ($.trim($element.html()) === 'Frans') || ($.trim($element.html()) === 'Französisch') || ($.trim($element.html()) === 'Francés') || ($.trim($element.html()) === 'Franceză') || ($.trim($element.html()) === 'Français')) {
           $element.remove();
         }
       }
       else {
-        if ( ($.trim( $element.html() ) === 'English') || ($.trim( $element.html() ) === 'Engels') || ($.trim( $element.html() ) === 'Englisch') || ($.trim( $element.html() ) === 'Inglés') || ($.trim( $element.html() ) === 'Engleză') || ($.trim( $element.html() ) === 'Anglais')) {
+        if (($.trim($element.html()) === 'English') || ($.trim($element.html()) === 'Engels') || ($.trim($element.html()) === 'Englisch') || ($.trim($element.html()) === 'Inglés') || ($.trim($element.html()) === 'Engleză') || ($.trim($element.html()) === 'Anglais')) {
           $element.remove();
         }
       }
@@ -2687,7 +3118,7 @@ document.addEventListener("click", closeAllSelect);
 </script>
 
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     const isClient = window?.location?.search;
     if (window.location.pathname.includes('/es/')) {
 
@@ -2942,74 +3373,72 @@ document.addEventListener("click", closeAllSelect);
       $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
       $('.software-backup-href').attr('href', 'software-backup.html')
       $('.software-custodian-href').attr('href', 'software-custodian.html')
-      }
+    }
 
-      if (window.location.pathname.includes('/fr/')) {
+    if (window.location.pathname.includes('/fr/')) {
 
-        $('.about-us-href').attr('href', 'à-propos-de-nous.html')
-        $('.check-email-href').attr('href', 'verifier-email.html')
-        $('.confirm-message-href').attr('href', 'confirmer-message.html')
-        $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')
-        $('.confirmation-anatomy-href').attr('href', 'confirmation-anatomy.html')
-        $('.confirmation-expert-insights-href').attr('href', 'confirmation-expert-insights.html')
-        $('.confirmation-guide-href').attr('href', 'confirmation-guide.html')
-        $('.confirmation-introduction-href').attr('href', 'confirmation-introduction.html')
-        $('.confirmation-offer-href').attr('href', 'confirmation-offre.html')
-        $('.confirmation-pricelist-href').attr('href', 'confirmation-grille-tarifaire.html')
-        $('.confirmation-sample-href').attr('href', 'confirmation-modele.html')
-        $('.confirmation-security-href').attr('href', 'confirmation-securite.html')
-        $('.confirmation-href').attr('href', 'confirmation.html')
-        $('.contact-href').attr('href', 'contact.html')
-        $('.contact-support-href').attr('href', 'contact.html?support#hs-chat-open')
-        $('.contact-sales-href').attr('href', 'contact.html#hs-chat-open')
-        $('.create-custom-software-escrow-agreement-href').attr('href', 'creer-contrat-d-entiercement-de-logiciel-personnalise.html')
-        $('.data-escrow-href').attr('href', 'entiercement-de-donnees.html')
-        $('.depositing-features-href').attr('href', 'fonctionnalites-de-depot.html')
-        $('.discount-form-href').attr('href', 'formulaire-de-reduction.html')
-        $('.escrow-agreement-href').attr('href', 'contrat-d-entiercement.html')
-        $('.features-href').attr('href', 'fonctionnalites.html')
-        $('.how-it-works-href').attr('href', 'fonctionnement.html')
-        $('.integrations-href').attr('href', 'integrations.html')
-        $('.plan-comparison-href').attr('href', 'comparaison-des-forfaits.html')
-        $('.pricing-features-href').attr('href', 'fonctionnalites-des-tarifs.html')
-        $('.pricing-href').attr('href', 'tarifs.html')
-        $('.resources-href').attr('href', 'ressources.html')
-        $('.saas-escrow-href').attr('href', 'entiercement-de-saas.html')
-        $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
-        $('.secure-guide-href').attr('href', 'guide-de-securite.html')
-        $('.security-href').attr('href', 'securite.html')
-        $('.sign-up-href').attr('href', 'inscription.html')
-        $('.source-code-escrow-href').attr('href', 'entiercement-de-code-source.html')
-        $('.start-guide-href').attr('href', 'guide-de-demarrage.html')
-        $('.what-is-data-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-donnees.html')
-        $('.what-is-information-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-informations.html')
-        $('.what-is-saas-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-saas.html')
-        $('.what-is-source-code-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-code-source.html')
-        $('.book-a-demo-href').attr('href', 'reserver-une-demo.html')
-        $('.solutions-href').attr('href', 'solutions.html')
-        $('.situations-href').attr('href', 'situations.html')
-        $('.software-escrow-href').attr('href', 'entiercement-de-logiciel.html')
-        $('.recovery-href').attr('href', 'reprise-après-sinistre.html')
-        $('.continuity-href').attr('href', 'continuité.html')
-        $('.document-escrow-href').attr('href', 'document-entiercement.html')
-        $('.technology-designs-escrow-href').attr('href', 'technologie-conception-entiercement.html')
-        $('.credentials-escrow-href').attr('href', 'identifiants-entiercement.html')
-        $('.hosting-environment-escrow-href').attr('href', 'entiercement-environnement-d-herbergement.html')
-        $('.3rd-party-dependencies-href').attr('href', 'dependences-de-tiers.html')
-        $('.competitors-href').attr('href', 'concurrents.html')
-        $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
-        $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
-        $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
-        $('.verification-href').attr('href', 'verification.html')
-        $('.video-guides-href').attr('href', 'guides-vidéo.html')
-        $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
-        $('.software-backup-href').attr('href', 'software-backup.html')
-        $('.software-custodian-href').attr('href', 'software-custodian.html')
-        }
+      $('.about-us-href').attr('href', 'à-propos-de-nous.html')
+      $('.check-email-href').attr('href', 'verifier-email.html')
+      $('.confirm-message-href').attr('href', 'confirmer-message.html')
+      $('.confirm-plan-href').attr('href', 'confirmer-forfain.html')
+      $('.confirmation-anatomy-href').attr('href', 'confirmation-anatomy.html')
+      $('.confirmation-expert-insights-href').attr('href', 'confirmation-expert-insights.html')
+      $('.confirmation-guide-href').attr('href', 'confirmation-guide.html')
+      $('.confirmation-introduction-href').attr('href', 'confirmation-introduction.html')
+      $('.confirmation-offer-href').attr('href', 'confirmation-offre.html')
+      $('.confirmation-pricelist-href').attr('href', 'confirmation-grille-tarifaire.html')
+      $('.confirmation-sample-href').attr('href', 'confirmation-modele.html')
+      $('.confirmation-security-href').attr('href', 'confirmation-securite.html')
+      $('.confirmation-href').attr('href', 'confirmation.html')
+      $('.contact-href').attr('href', 'contact.html')
+      $('.contact-support-href').attr('href', 'contact.html?support#hs-chat-open')
+      $('.contact-sales-href').attr('href', 'contact.html#hs-chat-open')
+      $('.create-custom-software-escrow-agreement-href').attr('href', 'creer-contrat-d-entiercement-de-logiciel-personnalise.html')
+      $('.data-escrow-href').attr('href', 'entiercement-de-donnees.html')
+      $('.depositing-features-href').attr('href', 'fonctionnalites-de-depot.html')
+      $('.discount-form-href').attr('href', 'formulaire-de-reduction.html')
+      $('.escrow-agreement-href').attr('href', 'contrat-d-entiercement.html')
+      $('.features-href').attr('href', 'fonctionnalites.html')
+      $('.how-it-works-href').attr('href', 'fonctionnement.html')
+      $('.integrations-href').attr('href', 'integrations.html')
+      $('.plan-comparison-href').attr('href', 'comparaison-des-forfaits.html')
+      $('.pricing-features-href').attr('href', 'fonctionnalites-des-tarifs.html')
+      $('.pricing-href').attr('href', 'tarifs.html')
+      $('.resources-href').attr('href', 'ressources.html')
+      $('.saas-escrow-href').attr('href', 'entiercement-de-saas.html')
+      $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
+      $('.secure-guide-href').attr('href', 'guide-de-securite.html')
+      $('.security-href').attr('href', 'securite.html')
+      $('.sign-up-href').attr('href', 'inscription.html')
+      $('.source-code-escrow-href').attr('href', 'entiercement-de-code-source.html')
+      $('.start-guide-href').attr('href', 'guide-de-demarrage.html')
+      $('.what-is-data-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-donnees.html')
+      $('.what-is-information-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-informations.html')
+      $('.what-is-saas-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-saas.html')
+      $('.what-is-source-code-escrow-href').attr('href', 'qu-est-ce-que-l-entiercement-de-code-source.html')
+      $('.book-a-demo-href').attr('href', 'reserver-une-demo.html')
+      $('.solutions-href').attr('href', 'solutions.html')
+      $('.situations-href').attr('href', 'situations.html')
+      $('.software-escrow-href').attr('href', 'entiercement-de-logiciel.html')
+      $('.recovery-href').attr('href', 'reprise-après-sinistre.html')
+      $('.continuity-href').attr('href', 'continuité.html')
+      $('.document-escrow-href').attr('href', 'document-entiercement.html')
+      $('.technology-designs-escrow-href').attr('href', 'technologie-conception-entiercement.html')
+      $('.credentials-escrow-href').attr('href', 'identifiants-entiercement.html')
+      $('.hosting-environment-escrow-href').attr('href', 'entiercement-environnement-d-herbergement.html')
+      $('.3rd-party-dependencies-href').attr('href', 'dependences-de-tiers.html')
+      $('.competitors-href').attr('href', 'concurrents.html')
+      $('.automated-verification-href').attr('href', 'rapport-de-verification-automatisee-logiciel.html')
+      $('.manual-verification-href').attr('href', 'rapport-de-verification-manuelle-logiciel.html')
+      $('.code-of-conduct-href').attr('href', 'code-de-conduite.html')
+      $('.verification-href').attr('href', 'verification.html')
+      $('.video-guides-href').attr('href', 'guides-vidéo.html')
+      $('.disaster-recovery-planner-href').attr('href', 'disaster-recovery-planner.html')
+      $('.software-backup-href').attr('href', 'software-backup.html')
+      $('.software-custodian-href').attr('href', 'software-custodian.html')
+    }
   })
 </script>
-
-
   <!DOCTYPE html>
 <script>
   var pathname = location.pathname;

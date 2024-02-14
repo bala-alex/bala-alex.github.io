@@ -16,7 +16,7 @@
     <div class="navigation pb-4">
       {% include navigation.html %}
     </div>
-    
+
 
     <div class="pricing section-medium pb-0">
       <div class="pricing-tabs container-fluid mt-2 px-0">
@@ -29,20 +29,23 @@
                 <p class="header__info text-dark-cyan font-35 mb-2">{{ site.data[page.lang]['index']['software_escrow']
                   }}</p>
               </div>
+
               <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
-                  aria-controls="pills-intro" aria-selected="false">Introduction</a>
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
-                  role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
-                <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
-                  aria-controls="pills-pricing" aria-selected="true">Pricing</a>
-    
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab"
+                  data-toggle="pill" href="#pills-intro" role="tab" aria-controls="pills-intro"
+                  aria-selected="false">Introduction</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab"
+                  data-toggle="pill" href="#pills-features" role="tab" aria-controls="pills-features"
+                  aria-selected="false">Features</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-pricing-tab"
+                  data-toggle="pill" href="#pills-pricing" role="tab" aria-controls="pills-pricing"
+                  aria-selected="false">Pricing</a>
               </div>
             </div>
-            
+
           </div>
         </div>
-        
+
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
             <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
@@ -63,7 +66,8 @@
                         <p class="header__subtitle text-align-start mt-4">{{
                           site.data[page.lang]['software_escrow2']['state_of_the_art'] }}</p>
                         <div class="solutions">
-                          <p class="select-level__price mr-4 text-capitalize">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span
+                          <p class="select-level__price mr-4 text-capitalize">{{
+                            site.data[page.lang]['saas_escrow']['from'] }}<br><span
                               class="software-escrow-single-monthly fw-700">{{
                               site.data.pricing.prices.software_escrow_single_monthly.USD }}</span> {{
                             site.data[page.lang]['software_backup']['per_application'] }}</p>
@@ -84,13 +88,14 @@
                       <div class="col-md-5 col-sm-12 content-center flex-column">
                         <img class="image-style mw-530 mt-4" src="/images/software-escrow/hero-software-escrow.webp"
                           alt="Software Escrow Storage and Recovery Illustration" />
-                        <p class="header__subtext mx-auto mt-2">{{ site.data[page.lang]['software_escrow']['we_support_all'] }}
+                        <p class="header__subtext mx-auto mt-2">{{
+                          site.data[page.lang]['software_escrow']['we_support_all'] }}
                         </p>
                         <div class="resources">
                           <div class="applications__logos mt-4">
                             <div class="applications__logo mx-0">
-                              <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg"
-                                alt="Bitbucket Logo" />
+                              <img class="applications__logo-image3 p-2"
+                                src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" />
                               <p class="applications__logo-text">Bitbucket</p>
                             </div>
                             <div class="applications__logo mx-0">
@@ -104,8 +109,8 @@
                               <p class="applications__logo-text">GitLab</p>
                             </div>
                             <div class="applications__logo mx-0">
-                              <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg"
-                                alt="Google Cloud Logo" />
+                              <img class="applications__logo-image3 p-1"
+                                src="/images/homepage/logos/google-cloud-large.svg" alt="Google Cloud Logo" />
                               <p class="applications__logo-text">Google<br> Cloud</p>
                             </div>
                             <div class="applications__logo mx-0">
@@ -127,7 +132,8 @@
               </div>
 
               <div class="container-fluid section-medium pricing">
-                <p class="protect__subtext text-slate-gray fw-light">{{ site.data[page.lang]['index']['trusted_partner_of'] }}</p>
+                <p class="protect__subtext text-slate-gray fw-light">{{
+                  site.data[page.lang]['index']['trusted_partner_of'] }}</p>
                 <!-- Slideshow Brands -->
                 {% include slideshow-brands.html %}
               </div>
@@ -552,11 +558,11 @@
                         site.data[page.lang]['software_escrow2']['quick_recovery_in_case'] }} </p>
                       <div class="software-escrow__devider"></div>
                       <p class="software-escrow__text font-18 text-dark-cyan mt-4"><i
-                        class="fa fa-check text-light-green mr-2"></i>{{
-                      site.data[page.lang]['saas_escrow2']['many_verification'] }} </p>
+                          class="fa fa-check text-light-green mr-2"></i>{{
+                        site.data[page.lang]['saas_escrow2']['many_verification'] }} </p>
                       <p class="software-escrow__text font-18 text-dark-cyan"><i
-                        class="fa fa-check text-light-green mr-2"></i>{{
-                      site.data[page.lang]['software_escrow2']['payment_guarantees'] }}</p>
+                          class="fa fa-check text-light-green mr-2"></i>{{
+                        site.data[page.lang]['software_escrow2']['payment_guarantees'] }}</p>
                       <p class="software-escrow__text font-18 text-dark-cyan mb-4"><i
                           class="fa fa-check text-light-green mr-2"></i>{{
                         site.data[page.lang]['software_escrow2']['full_recovery'] }}</p>
@@ -848,7 +854,8 @@
                 </div>
                 <div class="people-choose__bg border-radius-0 min-h-300">
                   <div class="container section-medium mt-5">
-                    <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+                    <img class="image-style" src="/images/landing/companies.webp"
+                      alt="Illustration representing companies that benefit from the service" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -865,7 +872,9 @@
                         <p class="intro__subtitle2 mt-3 pr-4 mw-420">{{
                           site.data[page.lang]['software_escrow2']['securely_store_the'] }}</p>
                         <div class="solutions">
-                          <p class="select-level__price mr-4 text-capitalize">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span class="software-backup-monthly fw-700 font-40">{{
+                          <p class="select-level__price mr-4 text-capitalize">{{
+                            site.data[page.lang]['saas_escrow']['from'] }}<br><span
+                              class="software-backup-monthly fw-700 font-40">{{
                               site.data.pricing.prices.software_backup_monthly.USD }}</span> {{
                             site.data[page.lang]['index']['per_month'] }}</p>
                           <a class="button btn-cerulean software-backup-href px-5" href="software-backup.html">
@@ -883,7 +892,9 @@
                         <p class="intro__subtitle2 mt-3">{{
                           site.data[page.lang]['software_escrow2']['next_level_protection'] }}</p>
                         <div class="solutions">
-                          <p class="select-level__price mr-4 text-capitalize">{{ site.data[page.lang]['saas_escrow']['from'] }}<br><span class="saas-escrow-single-monthly fw-700 font-40">{{
+                          <p class="select-level__price mr-4 text-capitalize">{{
+                            site.data[page.lang]['saas_escrow']['from'] }}<br><span
+                              class="saas-escrow-single-monthly fw-700 font-40">{{
                               site.data.pricing.prices.saas_escrow_single_monthly.USD
                               }}</span> {{
                             site.data[page.lang]['software_backup']['per_application'] }}</p>
@@ -897,8 +908,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-features" role="tabpanel"
-              aria-labelledby="pills-features-tab">
+            <div class="tab-pane fade" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab">
               <!-- <div class="container contact pb-100">
                 <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
@@ -923,7 +933,8 @@
                       <p class="information__title mt-1">Legal Framework</p>
                       <p class="information__subtitle">Key to a successful software escrow is a solid customizable legal
                         framework. We’ve got you covered.</p>
-                      <p class="information__subtitle fw-600 mw-570"><i class="fa fa-check text-light-green mr-2"></i>Templates
+                      <p class="information__subtitle fw-600 mw-570"><i
+                          class="fa fa-check text-light-green mr-2"></i>Templates
                         for Licensing, M&A, Development and many more</p>
                       <p class="information__subtitle fw-600"><i class="fa fa-check text-light-green mr-2"></i>Bipartite
                         and tripartite agreements</p>
@@ -1000,19 +1011,22 @@
                       <p class="datacenters__title">Storage Region Selection</p>
                       <p class="datacenters__title-add">Add-on</p>
                     </div>
-                    <p class="datacenters__subtitle">Keep your escrow deposits close to home and under trusted jurisdiction.</p>
+                    <p class="datacenters__subtitle">Keep your escrow deposits close to home and under trusted
+                      jurisdiction.</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/iso.svg" alt="Information security Icon"
                       loading="lazy" />
                     <p class="datacenters__title mt-2">ISO 27001 information security</p>
-                    <p class="datacenters__subtitle">Codekeeper's commitment to information security ensures the highest level of protection for your backups.</p>
+                    <p class="datacenters__subtitle">Codekeeper's commitment to information security ensures the highest
+                      level of protection for your backups.</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/storage.svg" alt="Storage Icon"
                       loading="lazy" />
                     <p class="datacenters__title mt-2">1TB storage available</p>
-                    <p class="datacenters__subtitle">Every Codekeeper Software Escrow account comes with 1TB of storage space, providing ample room for your data needs right from the start.</p>
+                    <p class="datacenters__subtitle">Every Codekeeper Software Escrow account comes with 1TB of storage
+                      space, providing ample room for your data needs right from the start.</p>
                   </div>
                 </div>
                 <div class="row">
@@ -1020,13 +1034,15 @@
                     <img class="mt-4" src="/images/software-backup/icons/platform.svg" alt="Platform Icon"
                       loading="lazy" />
                     <p class="datacenters__title mt-2">One-stop asset management platform</p>
-                    <p class="datacenters__subtitle">Experience the future of digital asset management with Codekeeper's all-in-one platform.</p>
+                    <p class="datacenters__subtitle">Experience the future of digital asset management with Codekeeper's
+                      all-in-one platform.</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/concierge.svg" alt="Concierge onboarding Icon"
                       loading="lazy" />
                     <p class="datacenters__title mt-2">Concierge onboarding</p>
-                    <p class="datacenters__subtitle">Our complete, expert support will help you seamlessly integrate our solutions into your workflow.</p>
+                    <p class="datacenters__subtitle">Our complete, expert support will help you seamlessly integrate our
+                      solutions into your workflow.</p>
                   </div>
 
                 </div>
@@ -1045,7 +1061,8 @@
                     <div class="col-md-6 col-sm-12">
                       <p class="information__title">{{ site.data[page.lang]['source_code_escrow']['developers_love'] }}
                       </p>
-                      <p class="information__subtitle">{{ site.data[page.lang]['source_code_escrow']['directly_integrated']
+                      <p class="information__subtitle">{{
+                        site.data[page.lang]['source_code_escrow']['directly_integrated']
                         }}</p>
                     </div>
                   </div>
@@ -1377,7 +1394,7 @@
               {% include demo-recovery2.html %}
 
             </div>
-            <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
+            <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
                 {% include pricing-tabs-assets.html %}
@@ -1748,7 +1765,7 @@
     }
   </script>
 
-<script>
+  <script>
     var cbInstance, cart;
 
     window.addEventListener('DOMContentLoaded', function () {
@@ -1769,7 +1786,7 @@
     })
 
 
-  function openCheckout() {
+    function openCheckout() {
       const selectedPlan = checkoutText;
       console.log('selectedPlan: ', selectedPlan);
       if (!selectedPlan) return;
@@ -1785,86 +1802,15 @@
       }
       // Opening the checkout
       cart.proceedToCheckout();
-  }
-</script>
-  <!-- <script>
-    var cbInstance, cart;
-
-    window.addEventListener('DOMContentLoaded', function() {
-    cbInstance = Chargebee.init({
-        site: "codekeeperbilling",
-        isItemsModel: true,
-    })
-
-    cbInstance.setCheckoutCallbacks(function(cart) {
-        return {
-            success: function(hpid) {
-                console.log('success', hpid)
-            }
-        }
-    })
-
-    cart = cbInstance.getCart()
-    })
-    function openCheckout() {
-        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
-        const planPriceQuantity = 1
-        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
-        cart.replaceProduct(product);
-        
-
-        // Opening the checkout
-        cart.proceedToCheckout();
     }
-</script> -->
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let cbInstance = Chargebee.getInstance();
-      let cart = cbInstance.getCart();
-      let product = cbInstance.initializeProduct("Software-Escrow-Single-USD-Monthly", 1);
-      cart.replaceProduct(product);
-      document.getElementById("checkout-snippet").addEventListener("click", function () {
-        cart.proceedToCheckout();
-      });
-    });
-  </script> -->
-
-  <!-- <script>
-    var cbInstance, cart;
-
-    window.addEventListener('DOMContentLoaded', function() {
-    cbInstance = Chargebee.init({
-        site: "codekeeperbilling",
-        isItemsModel: true,
-    })
-
-    cbInstance.setCheckoutCallbacks(function(cart) {
-        return {
-            success: function(hpid) {
-                console.log('success', hpid)
-            }
-        }
-    })
-
-    cart = cbInstance.getCart()
-    })
-    function openCheckout() {
-        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
-        const planPriceQuantity = 1
-        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
-        cart.replaceProduct(product);
-
-        // Opening the checkout
-        cart.proceedToCheckout();
-    }
-  </script> -->
+  </script>
 
   <script>
-    $(function(){
+    $(function () {
       var navigation = $('.navigation');
-      
-      $(window).scroll(function(){
-        if($(window).scrollTop() <= 90){
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 90) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -1872,4 +1818,99 @@
       });
     });
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+
+      const hash = window.location.hash;
+
+      // Check if hash contains any of the tab identifiers
+      if (hash.includes('pills-intro') || !hash) {
+        // Add active class to the intro tab
+        const introTab = document.querySelector('#pills-intro-tab');
+        const introContent = document.querySelector('#pills-intro');
+        if (introTab && introContent) {
+          introTab.classList.add('active');
+          introContent.classList.add('show', 'active');
+        }
+      } else if (hash.includes('pills-features')) {
+        // Add active class to the features tab
+        const featuresTab = document.querySelector('#pills-features-tab');
+        const featuresContent = document.querySelector('#pills-features');
+        if (featuresTab && featuresContent) {
+          featuresTab.classList.add('active');
+          featuresContent.classList.add('show', 'active');
+        }
+      } else if (hash.includes('pills-pricing')) {
+        // Add active class to the pricing tab
+        const pricingTab = document.querySelector('#pills-pricing-tab');
+        const pricingContent = document.querySelector('#pills-pricing');
+        if (pricingTab && pricingContent) {
+          pricingTab.classList.add('active');
+          pricingContent.classList.add('show', 'active');
+          event.preventDefault();
+
+          // Prevent scrolling
+          window.scrollTo(0, 0);
+        }
+      }
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the path from the URL
+      const path = window.location.pathname;
+
+      // If path is not empty
+      if (path !== '/') {
+        // Activate the corresponding tab
+        const tabLink = document.querySelector(`.nav-link[href="${path}"]`);
+        if (tabLink) {
+          tabLink.classList.add('active');
+          // Show the corresponding tab content
+          const tabContent = document.querySelector(path);
+          if (tabContent) {
+            tabContent.classList.add('show', 'active');
+          }
+        }
+      } else {
+        // If no specific tab is in the URL, trigger click on the intro tab
+        const introTab = document.querySelector('.nav-link[href="#pills-intro"]');
+        if (introTab) {
+          introTab.classList.add('active');
+          const introContent = document.querySelector('#pills-intro');
+          if (introContent) {
+            introContent.classList.add('show', 'active');
+          }
+        }
+      }
+    });
+
+    // Get all the tab links
+    const tabLinks = document.querySelectorAll('.nav-link');
+
+    // Add click event listener to each tab link
+    tabLinks.forEach(tab => {
+      tab.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Get the href attribute of the clicked tab
+        const tabHref = tab.getAttribute('href');
+
+        // Construct the new URL
+        const baseUrl = window.location.href.split('#')[0]; // Get the base URL without hash
+        const newPath = baseUrl + tabHref;
+
+        // Update the URL with the active tab
+        window.history.pushState(null, null, newPath);
+      });
+    });
+  </script>
+
+
+
+
+
 </body>

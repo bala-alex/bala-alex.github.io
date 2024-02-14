@@ -9064,6 +9064,11 @@ html {
           box-shadow: none;
 }
 
+.text-decoration-red {
+  text-decoration: underline;
+  text-decoration-color: #EE5E5E;
+}
+
 .vertical-align-middle {
   vertical-align: middle !important;
 }
@@ -29030,11 +29035,18 @@ input[name=consent] {
   padding-right: 12px;
   padding-bottom: 0;
 }
+@media screen and (max-width: 992px) {
+  .new-navigation .top-bar {
+    display: none !important;
+  }
+}
 .new-navigation .top-bar .nav-link {
   color: #1a5261 !important;
+  font-weight: 400;
 }
 .new-navigation .top-bar .nav-link:hover {
   opacity: 1;
+  text-decoration: underline;
 }
 .new-navigation .top-bar__left {
   -webkit-box-align: center;
@@ -29068,6 +29080,9 @@ input[name=consent] {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   text-transform: capitalize;
+}
+.new-navigation .custom-select:hover {
+  text-decoration: none !important;
 }
 .new-navigation .custom-select select {
   display: none; /*hide original SELECT element: */
@@ -29118,13 +29133,22 @@ input[name=consent] {
 }
 @media screen and (max-width: 992px) {
   .new-navigation .container-fluid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    padding: 0;
+    padding: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .new-navigation .container-fluid .navbar-nav {
+    margin-left: 0 !important;
   }
 }
 .new-navigation .container-fluid .book-btn {
@@ -29349,7 +29373,17 @@ input[name=consent] {
 }
 @media screen and (max-width: 1450px) {
   .new-navigation .resources .dropdown-menu {
-    left: -18rem !important;
+    left: -18rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .new-navigation .resources .dropdown-menu {
+    left: -28rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .new-navigation .dropdown-menu {
+    left: -8rem;
   }
 }
 .new-navigation .resources-menu {
