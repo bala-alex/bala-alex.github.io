@@ -1663,56 +1663,57 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
-      $('#checkout-cart').attr("style", "display: flex");
-      const currency = localStorage.getItem('currency');
-      checkoutText = planID + '-' + currency + '-' + duration;
+    $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
-      // Extract the numeric part from the string
-      $('#adds').addClass('d-none')
-      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
-      var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
+    const currency = localStorage.getItem('currency');
+    checkoutText = planID + '-' + currency + '-' + duration;
 
-      totalSum = price;
-      $('#totalSum').text(totalSum);
+    // Extract the numeric part from the string
+    $('#adds').addClass('d-none')
+    $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+    var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      // if ($(button).hasClass('-is-selected')) {
-      //   $(button).removeClass('-is-selected').text('Check');
-      // } else {
-      //   // If it doesn't have the class, add it and set the text to 'Uncheck'
-      //   $(button).addClass('-is-selected').text('Uncheck');
-      // }
+    totalSum = price + 199;
+    $('#totalSum').text(totalSum);
 
-      // // Remove -is-selected class from siblings
-      // $(button).siblings().removeClass('-is-selected').text('Check');
-      $('.btn-bondi-blue4').removeClass('-is-selected').text('Select Plan');
-      $(button).addClass('-is-selected').text('Selected');
+    var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
-      // if ($(button).hasClass('-is-selected')) {
-      //   $(button).removeClass('-is-selected').text('Select Plan');
-      // } else {
-      //   $(button).addClass('-is-selected').text('Selected');
-      // }
-      // $(button).siblings().removeClass('-is-selected').text('Selected');
+    // Remove 'is-plan-active' class from all other divs
+    $('.plan__box').not(parentDiv).removeClass('is-plan-active');
 
-      $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
+    if ($(button).hasClass('-is-selected')) { // Check if button is already selected
+        $(button).removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+        $('#planType').text('');
+        $('.single, .multiple').removeClass('-is-selected');
+        $('.single-extra, .multiple-extra').addClass('d-none');
+        $('#checkout-cart').attr("style", "display: none");
+        parentDiv.removeClass('is-plan-active'); // Remove the class from the parent div
+    } else {
+        // Apply selected classes and logic
+        $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text('Select Plan');
+        $(button).addClass('-is-selected').html('<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>Selected</span>');
+        $('#checkout-cart').attr("style", "display: flex");
 
-      if (planType === 'single') {
-        $('.single').addClass('-is-selected');
-        $('.multiple').removeClass('-is-selected');
-        $('.all').removeClass('-is-selected');
-      } else if (planType === 'multiple') {
-        $('.multiple').addClass('-is-selected');
-        $('.single').removeClass('-is-selected');
-        $('.all').removeClass('-is-selected');
-      } else if (planType === 'all') {
-        $('.all').addClass('-is-selected');
-        $('.single').removeClass('-is-selected');
-        $('.multiple').removeClass('-is-selected');
-      }
-      console.log('checkoutText: ', checkoutText)
-      $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
+        $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
+
+        if (planType === 'single') {
+            $('.single').addClass('-is-selected');
+            $('.multiple').removeClass('-is-selected');
+            $('.single-extra').removeClass('d-none');
+            $('.multiple-extra').addClass('d-none');
+        } else if (planType === 'multiple') {
+            $('.multiple').addClass('-is-selected');
+            $('.single').removeClass('-is-selected');
+            $('.single-extra').addClass('d-none');
+            $('.multiple-extra').removeClass('d-none');
+        }
+        console.log('checkoutText: ', checkoutText)
+        $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
+        parentDiv.addClass('is-plan-active'); // Add the class to the parent div
     }
+}
+
+
 
     function selectDuration(value) {
       duration = value;
@@ -1746,22 +1747,6 @@
       document.getElementById('totalSum').textContent = totalSum;
 
       console.log('checkoutAdOns', checkoutAdOns);
-
-      // Doesnt seem to do anything
-      // Uncomment if needed
-      // Set data-cb-item-0 attribute
-      // const checkoutSnippet = document.getElementById('checkout-snippet');
-      // checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
-
-      // Clear other existing data-cb-item attributes
-      // for (let i = 1; i <= checkoutAdOns.length; i++) {
-      //   checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
-      // }
-
-      // Remove remaining data-cb-item attributes
-      // for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
-      //   checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
-      // }
     }
   </script>
 

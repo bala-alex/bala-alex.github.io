@@ -712,6 +712,35 @@
   }
 }
 
+.btn-yellow-small2 {
+  @include button-variant($sun-yellow, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
+  color: $dark-cyan !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $sun-yellow;
+  border-radius: 5px;
+  min-height: 35px;
+  width: fit-content;
+  font-weight: normal;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  padding: 5px 15px;
+  text-align: center;
+  border: none;
+  &:hover {
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+  }
+}
+
 .btn-primary-medium {
   @include button-variant($bondi-blue, $bondi-blue, $active-background: darken($light-gray, 7.5%), $active-border: darken($light-gray, 10%));
   color: $white !important;

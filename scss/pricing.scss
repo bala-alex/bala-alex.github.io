@@ -1,13 +1,30 @@
 .pricing {
 
+  button.btn-bondi-blue4.valid-plan.-is-selected {
+    background-color: $white !important;
+    color: $bondi-blue !important;
+    border: 1px solid $bondi-blue
+  }
+
+  .is-plan-active {
+    border: 3px solid $bondi-blue !important;
+  }
+
   .single,
-  .multiple,
-  .all {
+  .multiple {
     &.-is-selected {
       background-color: #EBFCFF;
 
       button {
         display: block
+      }
+
+      &.-has-extra {
+        background-color: #008199 !important;
+
+        .btn-yellow-small2.-is-selected {
+          background-color: $white !important;
+        }
       }
     }
 
@@ -724,6 +741,11 @@
       width: 90%;
     }
 
+    &__devider2 {
+      border: 1px dashed $slate-gray;
+      width: 95%;
+    }
+
     &__fee-text {
       color: $dark-cyan !important;
       font-size: 12px;
@@ -767,7 +789,7 @@
 
     &__text-tooltip {
       color: $cerulean;
-      font-size: 14px !important;
+      font-size: 14px;
       font-weight: normal !important;
       font-family: 'Mulish', sans-serif;
       letter-spacing: 0.3px;
