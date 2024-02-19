@@ -13,12 +13,12 @@
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
-    <div class="navigation pb-4">
+    <div class="navigation">
       {% include navigation.html %}
     </div>
 
 
-    <div class="pricing section-medium pb-0">
+    <div class="pricing section-medium pb-0 mt-80">
       <div class="pricing-tabs container-fluid mt-2 px-0">
         <div class="navigation-sticky">
           <div class="pricing-container mx-auto">
@@ -79,7 +79,7 @@
                           </a>
                           <div>
                             <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                            <a class="header__link pricing-href" href="pricing.html">{{
+                            <a class="header__link software-escrow-href" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">{{
                               site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
                                 aria-hidden="true"></i></a>
                           </div>
@@ -352,7 +352,7 @@
                     </div>
                   </div>
                   <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
-                    <a class="button btn-yellow mr-4 my-4 text-center z-index-1 pricing-href" href="pricing.html">
+                    <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-escrow-href" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
                       {{ site.data[page.lang]['software_escrow2']['see_pricing'] }}
                     </a>
                     <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1 link-yellow">{{
@@ -377,7 +377,7 @@
                     </div>
                     <p class="people-choose__info mx-auto my-4">{{
                       site.data[page.lang]['software_escrow2']['the_cental_dashboard'] }}</p>
-                    <a class="button btn-cerulean2 pricing-href mx-auto" href="pricing.html">
+                    <a class="button btn-cerulean2 software-escrow-href mx-auto" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
                       {{ site.data[page.lang]['index']['explore_our_pricing'] }}
                     </a>
                   </div>
@@ -577,113 +577,6 @@
                 </div>
               </div>
 
-
-              <div class="container section-large pricing">
-                <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}
-                </h4>
-                <ul class="faq mt-5 pb-5 pl-0">
-                  <li class="q d-flex align-items-center justify-content-between">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_is_software'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['software_escrow_is'] }}</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_does_software'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['software_escrow_works'] }}</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_are_the_benefits'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['software_escrow_offers'] }}</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_much_does'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['software_escrow_pricing'] }} <a
-                      href="pricing.html" class="text-underline pricing-href ">{{
-                      site.data[page.lang]['faq_pricing']['here'] }}</a>.</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_are_the_supported'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['we_support_over'] }} <a
-                      href="integrations.html" class="text-underline integrations-href ">{{
-                      site.data[page.lang]['faq_contact']['here'] }}</a>.</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_do_i_get'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['to_get_started_with'] }} <a
-                      href="book-a-demo.html" class="text-underline book-a-demo-href ">{{
-                      site.data[page.lang]['faq']['book_a_demo'] }}</a> {{
-                    site.data[page.lang]['faq']['with_one_of'] }} <a href="pricing.html"
-                      class="text-underline pricing-href ">{{
-                      site.data[page.lang]['faq_pricing']['here'] }}</a>.</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_can_i_be_sure'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['your_escrow_agreement_includes'] }}</li>
-                  <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_happens_to_my'] }}</p>
-                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                  </li>
-                  <li class="a section__text">{{ site.data[page.lang]['faq']['codekeeper_has'] }}</li>
-                  <div class="" id="questions">
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_secure_are_the'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['we_operate_within'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['do_you_offer'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['absolutely_we_offer'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_if_i_need'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['no_problem_we_offer'] }} <a
-                        href="software-verification-report-automated.html"
-                        class="text-underline automated-verification-href ">{{
-                        site.data[page.lang]['faq']['verification_page'] }}</a>.</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['can_i_transfer'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['absolutely_we_are_here'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['does_codekeeper_have'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['no_to_ensure_complete'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['does_the_beneficiary'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['no_the_beneficiary_will'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['how_are_release_events'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['criteria_that'] }}</li>
-                    <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['faq']['what_happens_in_the'] }}</p>
-                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-                    </li>
-                    <li class="a section__text">{{ site.data[page.lang]['faq']['in_the_event_of'] }}</li>
-                  </div>
-                  <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
-                    <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
-                    <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
-                  </p>
-                </ul>
-                <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any2'] }} </p>
-              </div>
-
               <div class="section-large bg-gradient-blue3 resources">
                 <div class="container">
                   <div class="content-center">
@@ -694,7 +587,7 @@
                     site.data[page.lang]['software_escrow2']['affordable_software'] }}</p>
                   <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">{{
                     site.data[page.lang]['software_escrow2']['the_recovery_solution_means'] }}</p>
-                  <a class="button btn-cerulean2 pricing-href mx-auto mt-4" href="pricing.html">
+                  <a class="button btn-cerulean2 software-escrow-href mx-auto mt-4" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
                     {{ site.data[page.lang]['software_escrow2']['view_pricing'] }}
                   </a>
                   <div class="row mb-negative-300">
@@ -742,7 +635,7 @@
                             </div>
                           </div>
 
-                          <a class="button btn-secondary-large integrations-href mx-auto" href="integrations.html">
+                          <a class="button btn-secondary-large software-escrow-href mx-auto" href="software-escrow.html#pills-features" onclick="refreshPage(this)">
                             {{ site.data[page.lang]['software_backup']['explore_features'] }}
                           </a>
                         </div>
@@ -838,12 +731,12 @@
                         <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
                           site.data[page.lang]['software_escrow2']['fully_automated'] }} </p>
                         <div class="d-flex flex-wrap mt-4 mb-sm-50">
-                          <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-3" href="book-a-demo.html">
+                          <a class="button btn-cerulean3 software-escrow-href mr-4 mb-3" href="software-escrow.html#pills-features" onclick="refreshPage(this)">
                             {{ site.data[page.lang]['saas_escrow2']['review_features'] }}
                           </a>
                           <div>
                             <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                            <a class="header__link pricing-href" href="pricing.html">{{
+                            <a class="header__link software-escrow-href" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">{{
                               site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
                                 aria-hidden="true"></i></a>
                           </div>
@@ -1385,10 +1278,111 @@
                         alt="Software Escrow Illustration" loading="lazy" />
                     </div>
                   </div>
-                  <a class="button btn-yellow mr-4 my-4 text-center z-index-1" href="pricing.html">
+                  <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-escrow-href" href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
                     Explore Pricing
                   </a>
                 </div>
+              </div>
+
+              <div class="container section-large pricing pt-5">
+                <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}
+                </h4>
+                <ul class="faq mt-5 pb-5 pl-0">
+                  <li class="q d-flex align-items-center justify-content-between">
+                    <p class="section__subtitle mt-3">What is automated software escrow, and how does it benefit me?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Automated software escrow is a state-of-the-art solution that securely
+                    stores your software assets, ensuring they are ready for quick recovery. Integrated with all
+                    developer tools, it simplifies the escrow process for developers while providing peace of mind for
+                    clients, eliminating manual hassles and complex procedures.</li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">How does Codekeeper's software escrow differ from traditional
+                      escrow services?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Unlike traditional escrow services fraught with manual deposits, complex
+                    procedures, and legal red tape, Codekeeper's automated software escrow is designed for today's agile
+                    businesses. It offers a streamlined, fully automated process that integrates seamlessly with
+                    developer tools, ensuring quick, easy, and secure asset storage and recovery.</li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">Can Codekeeper's software escrow handle multiple vendors?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Yes, Codekeeper's software escrow solution is built to efficiently manage
+                    assets across multiple vendors, simplifying the escrow process even in complex multi-vendor
+                    environments and ensuring all your critical software assets are securely stored and easily
+                    recoverable.</li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">What kind of support does Codekeeper offer for software recovery?
+                    </p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Codekeeper offers comprehensive support for software recovery, including
+                    full recovery support, payment guarantees, and a variety of verification options to ensure that your
+                    software can be quickly and efficiently redeployed whenever necessary.</li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">Is Codekeeper's software escrow solution easy to implement?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Absolutely. Our software escrow solution is designed to be user-friendly
+                    and easy to implement, with a fully automated process that reduces the time and effort typically
+                    required for escrowmanagement. Developers and software clients can easily register and start the
+                    implementation process, ensuring their assets are protected without delay. </li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">How does software escrow protect my business operations?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">Software escrow safeguards your business operations by ensuring that your
+                    critical software assets, including source code and application data, are securely stored and
+                    readily available for recovery. This uninterrupted access to essential software assets means your
+                    operations can continue smoothly, even in unforeseen circumstances.</li>
+                  <li class="q d-flex align-items-center justify-content-between q-border">
+                    <p class="section__subtitle mt-3">What assets can I protect with Codekeeper's software escrow?</p>
+                    <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                  </li>
+                  <li class="a section__text">With Codekeeper's software escrow, you can protect a wide range of
+                    software assets, including source code, application data, and any other critical software components
+                    necessary for the operation of your business, ensuring they're ready for quick recovery when needed.
+                  </li>
+
+                  <div class="" id="questions2">
+
+                    <li class="q d-flex align-items-center justify-content-between q-border">
+                      <p class="section__subtitle mt-3">Who should consider using software escrow?</p>
+                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                    </li>
+                    <li class="a section__text">Software escrow is essential for any business that relies on software
+                      for its operations, especially those that use custom or critical software applications. It's
+                      particularly crucial for businesses seeking to mitigate risks associated with software vendor
+                      failures or disputes.</li>
+                    <li class="q d-flex align-items-center justify-content-between q-border">
+                      <p class="section__subtitle mt-3">How does software escrow contribute to legal compliance and
+                        security?</p>
+                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                    </li>
+                    <li class="a section__text">Software escrow contributes to legal compliance and security by
+                      providing a solid legal framework that safeguards intellectual property rights and ensures access
+                      to critical software assets under agreed-upon conditions. This legal assurance protects both
+                      software developers and clients, aligning with regulatory requirements and security best
+                      practices.</li>
+                    <li class="q d-flex align-items-center justify-content-between q-border">
+                      <p class="section__subtitle mt-3">How can I get started with Codekeeper's software escrow service?
+                      </p>
+                      <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+                    </li>
+                    <li class="a section__text">Getting started with Codekeeper's software escrow service is
+                      straightforward. Simply register on our platform and start your implementation process today. Our
+                      team is ready to assist you with any queries or support you may need to ensure a smooth and
+                      efficient setup.</li>
+
+                  </div>
+                  <p class="questions-text mt-1 pt-4 btn-offer-style openLines2 q-border" id="openQuestions">
+                    <span id='show2'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+                    <span id='hide2'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+                  </p>
+                </ul>
+                <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any2'] }} </p>
               </div>
               <!-- Section -->
               {% include demo-recovery2.html %}
@@ -1663,32 +1657,32 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
-    $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
-    const currency = localStorage.getItem('currency');
-    checkoutText = planID + '-' + currency + '-' + duration;
+      const currency = localStorage.getItem('currency');
+      checkoutText = planID + '-' + currency + '-' + duration;
 
-    // Extract the numeric part from the string
-    $('#adds').addClass('d-none')
-    $('.btn-primary-small2').removeClass('-is-selected').text('Add')
-    var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
+      // Extract the numeric part from the string
+      $('#adds').addClass('d-none')
+      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+      var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-    totalSum = price + 199;
-    $('#totalSum').text(totalSum);
+      totalSum = price + 199;
+      $('#totalSum').text(totalSum);
 
-    var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
+      var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
-    // Remove 'is-plan-active' class from all other divs
-    $('.plan__box').not(parentDiv).removeClass('is-plan-active');
+      // Remove 'is-plan-active' class from all other divs
+      $('.plan__box').not(parentDiv).removeClass('is-plan-active');
 
-    if ($(button).hasClass('-is-selected')) { // Check if button is already selected
+      if ($(button).hasClass('-is-selected')) { // Check if button is already selected
         $(button).removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
         $('#planType').text('');
         $('.single, .multiple').removeClass('-is-selected');
         $('.single-extra, .multiple-extra').addClass('d-none');
         $('#checkout-cart').attr("style", "display: none");
         parentDiv.removeClass('is-plan-active'); // Remove the class from the parent div
-    } else {
+      } else {
         // Apply selected classes and logic
         $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text('Select Plan');
         $(button).addClass('-is-selected').html('<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>Selected</span>');
@@ -1697,25 +1691,36 @@
         $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
 
         if (planType === 'single') {
-            $('.single').addClass('-is-selected');
-            $('.multiple').removeClass('-is-selected');
-            $('.single-extra').removeClass('d-none');
-            $('.multiple-extra').addClass('d-none');
+          $('.single').addClass('-is-selected');
+          $('.multiple').removeClass('-is-selected');
+          $('.single-extra').removeClass('d-none');
+          $('.multiple-extra').addClass('d-none');
         } else if (planType === 'multiple') {
-            $('.multiple').addClass('-is-selected');
-            $('.single').removeClass('-is-selected');
-            $('.single-extra').addClass('d-none');
-            $('.multiple-extra').removeClass('d-none');
+          $('.multiple').addClass('-is-selected');
+          $('.single').removeClass('-is-selected');
+          $('.single-extra').addClass('d-none');
+          $('.multiple-extra').removeClass('d-none');
         }
         console.log('checkoutText: ', checkoutText)
         $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
         parentDiv.addClass('is-plan-active'); // Add the class to the parent div
+      }
     }
-}
 
 
 
     function selectDuration(value) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+
+      $('#adds').addClass('d-none')
+      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+
+      $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+      $('#planType').text('');
+      $('.single, .multiple').removeClass('-is-selected');
+      $('.single-extra, .multiple-extra').addClass('d-none');
+      $('#checkout-cart').attr("style", "display: none");
+
       duration = value;
     }
 
@@ -1795,7 +1800,7 @@
       var navigation = $('.navigation');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 90) {
+        if ($(window).scrollTop() <= 80) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -1894,8 +1899,21 @@
     });
   </script>
 
+<script>
+  function refreshPage(link) {
+    var href = link.getAttribute('href'); // Get the href attribute value
+    window.location.href = href; // Set the window location to the href value
+    setTimeout(function() {
+      window.location.reload(); // Reload the page after a slight delay
+    }, 1);
+  }
 
-
-
+  window.onload = function() {
+    // Scroll to the top of the page after a slight delay
+    setTimeout(function() {
+      window.scrollTo(0, 0); // Scroll to the top of the page after page is fully loaded
+    }, 1);
+  };
+</script>
 
 </body>

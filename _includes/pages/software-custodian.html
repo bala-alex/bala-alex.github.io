@@ -30,7 +30,7 @@
                   aria-controls="pills-intro" aria-selected="false">Introduction</a>
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab" data-toggle="pill" href="#pills-features"
                   role="tab" aria-controls="pills-features" aria-selected="true">Features</a>
-                <a class="nav-link active space-no-wrap width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-pricing-tab" data-toggle="pill" href="#pills-pricing" role="tab"
                   aria-controls="pills-pricing" aria-selected="true">Pricing</a>
     
               </div>
@@ -929,7 +929,7 @@
               {% include demo-recovery2.html %}
 
             </div>
-            <div class="tab-pane fade show active" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
+            <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
                 {% include pricing-tabs-assets.html %}
@@ -1174,6 +1174,7 @@
   <script src="/js/monthlyEscrowPricing.js"></script>
   <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
+  <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
 
@@ -1200,6 +1201,8 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
@@ -1208,52 +1211,65 @@
       $('.btn-primary-small2').removeClass('-is-selected').text('Add')
       var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price;
+      totalSum = price + 199;
       $('#totalSum').text(totalSum);
 
-      // if ($(button).hasClass('-is-selected')) {
-      //   $(button).removeClass('-is-selected').text('Check');
-      // } else {
-      //   // If it doesn't have the class, add it and set the text to 'Uncheck'
-      //   $(button).addClass('-is-selected').text('Uncheck');
-      // }
+      var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
-      // // Remove -is-selected class from siblings
-      // $(button).siblings().removeClass('-is-selected').text('Check');
-      $('.btn-bondi-blue4').removeClass('-is-selected').text('Select Plan');
-      $(button).addClass('-is-selected').text('Selected');
+      // Remove 'is-plan-active' class from all other divs
+      $('.plan__box').not(parentDiv).removeClass('is-plan-active');
 
-      // if ($(button).hasClass('-is-selected')) {
-      //   $(button).removeClass('-is-selected').text('Select Plan');
-      // } else {
-      //   $(button).addClass('-is-selected').text('Selected');
-      // }
-      // $(button).siblings().removeClass('-is-selected').text('Selected');
+      if ($(button).hasClass('-is-selected')) { // Check if button is already selected
+        $(button).removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+        $('#planType').text('');
+        $('.single, .multiple').removeClass('-is-selected');
+        $('.single-extra, .multiple-extra').addClass('d-none');
+        $('#checkout-cart').attr("style", "display: none");
+        parentDiv.removeClass('is-plan-active'); // Remove the class from the parent div
+      } else {
+        // Apply selected classes and logic
+        $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text('Select Plan');
+        $(button).addClass('-is-selected').html('<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>Selected</span>');
+        $('#checkout-cart').attr("style", "display: flex");
 
-      $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
+        $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
 
-      if (planType === 'single') {
-        $('.single').addClass('-is-selected');
-        $('.multiple').removeClass('-is-selected');
-        $('.all').removeClass('-is-selected');
-      } else if (planType === 'multiple') {
-        $('.multiple').addClass('-is-selected');
-        $('.single').removeClass('-is-selected');
-        $('.all').removeClass('-is-selected');
-      } else if (planType === 'all') {
-        $('.all').addClass('-is-selected');
-        $('.single').removeClass('-is-selected');
-        $('.multiple').removeClass('-is-selected');
+        if (planType === 'single') {
+          $('.single').addClass('-is-selected');
+          $('.multiple').removeClass('-is-selected');
+          $('.single-extra').removeClass('d-none');
+          $('.multiple-extra').addClass('d-none');
+        } else if (planType === 'multiple') {
+          $('.multiple').addClass('-is-selected');
+          $('.single').removeClass('-is-selected');
+          $('.single-extra').addClass('d-none');
+          $('.multiple-extra').removeClass('d-none');
+        }
+        console.log('checkoutText: ', checkoutText)
+        $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
+        parentDiv.addClass('is-plan-active'); // Add the class to the parent div
       }
-      console.log('checkoutText: ', checkoutText)
-      $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
     }
 
+
+
     function selectDuration(value) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+
+      $('#adds').addClass('d-none')
+      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+
+      $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+      $('#planType').text('');
+      $('.single, .multiple').removeClass('-is-selected');
+      $('.single-extra, .multiple-extra').addClass('d-none');
+      $('#checkout-cart').attr("style", "display: none");
+
       duration = value;
     }
 
     function add(button, price, addonID) {
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       const currency = localStorage.getItem('currency');
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
@@ -1280,24 +1296,10 @@
       document.getElementById('totalSum').textContent = totalSum;
 
       console.log('checkoutAdOns', checkoutAdOns);
-
-      // Set data-cb-item-0 attribute
-      const checkoutSnippet = document.getElementById('checkout-snippet');
-      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
-
-      // Clear other existing data-cb-item attributes
-      for (let i = 1; i <= checkoutAdOns.length; i++) {
-        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
-      }
-
-      // Remove remaining data-cb-item attributes
-      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
-        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
-      }
     }
   </script>
 
-<script>
+  <script>
     var cbInstance, cart;
 
     window.addEventListener('DOMContentLoaded', function () {
@@ -1318,7 +1320,7 @@
     })
 
 
-  function openCheckout() {
+    function openCheckout() {
       const selectedPlan = checkoutText;
       console.log('selectedPlan: ', selectedPlan);
       if (!selectedPlan) return;
@@ -1334,86 +1336,15 @@
       }
       // Opening the checkout
       cart.proceedToCheckout();
-  }
-</script>
-  <!-- <script>
-    var cbInstance, cart;
-
-    window.addEventListener('DOMContentLoaded', function() {
-    cbInstance = Chargebee.init({
-        site: "codekeeperbilling",
-        isItemsModel: true,
-    })
-
-    cbInstance.setCheckoutCallbacks(function(cart) {
-        return {
-            success: function(hpid) {
-                console.log('success', hpid)
-            }
-        }
-    })
-
-    cart = cbInstance.getCart()
-    })
-    function openCheckout() {
-        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
-        const planPriceQuantity = 1
-        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
-        cart.replaceProduct(product);
-        
-
-        // Opening the checkout
-        cart.proceedToCheckout();
     }
-</script> -->
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let cbInstance = Chargebee.getInstance();
-      let cart = cbInstance.getCart();
-      let product = cbInstance.initializeProduct("Software-Escrow-Single-USD-Monthly", 1);
-      cart.replaceProduct(product);
-      document.getElementById("checkout-snippet").addEventListener("click", function () {
-        cart.proceedToCheckout();
-      });
-    });
-  </script> -->
-
-  <!-- <script>
-    var cbInstance, cart;
-
-    window.addEventListener('DOMContentLoaded', function() {
-    cbInstance = Chargebee.init({
-        site: "codekeeperbilling",
-        isItemsModel: true,
-    })
-
-    cbInstance.setCheckoutCallbacks(function(cart) {
-        return {
-            success: function(hpid) {
-                console.log('success', hpid)
-            }
-        }
-    })
-
-    cart = cbInstance.getCart()
-    })
-    function openCheckout() {
-        const planPriceId = 'Software-Escrow-Single-USD-Monthly' // Plan price point ID is used to identify the product 
-        const planPriceQuantity = 1
-        const product = cbInstance.initializeProduct(planPriceId, planPriceQuantity)
-        cart.replaceProduct(product);
-
-        // Opening the checkout
-        cart.proceedToCheckout();
-    }
-  </script> -->
+  </script>
 
   <script>
-    $(function(){
+    $(function () {
       var navigation = $('.navigation');
-      
-      $(window).scroll(function(){
-        if($(window).scrollTop() <= 90){
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 80) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -1421,4 +1352,111 @@
       });
     });
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+
+      const hash = window.location.hash;
+
+      // Check if hash contains any of the tab identifiers
+      if (hash.includes('pills-intro') || !hash) {
+        // Add active class to the intro tab
+        const introTab = document.querySelector('#pills-intro-tab');
+        const introContent = document.querySelector('#pills-intro');
+        if (introTab && introContent) {
+          introTab.classList.add('active');
+          introContent.classList.add('show', 'active');
+        }
+      } else if (hash.includes('pills-features')) {
+        // Add active class to the features tab
+        const featuresTab = document.querySelector('#pills-features-tab');
+        const featuresContent = document.querySelector('#pills-features');
+        if (featuresTab && featuresContent) {
+          featuresTab.classList.add('active');
+          featuresContent.classList.add('show', 'active');
+        }
+      } else if (hash.includes('pills-pricing')) {
+        // Add active class to the pricing tab
+        const pricingTab = document.querySelector('#pills-pricing-tab');
+        const pricingContent = document.querySelector('#pills-pricing');
+        if (pricingTab && pricingContent) {
+          pricingTab.classList.add('active');
+          pricingContent.classList.add('show', 'active');
+          event.preventDefault();
+
+          // Prevent scrolling
+          window.scrollTo(0, 0);
+        }
+      }
+    });
+  </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the path from the URL
+      const path = window.location.pathname;
+
+      // If path is not empty
+      if (path !== '/') {
+        // Activate the corresponding tab
+        const tabLink = document.querySelector(`.nav-link[href="${path}"]`);
+        if (tabLink) {
+          tabLink.classList.add('active');
+          // Show the corresponding tab content
+          const tabContent = document.querySelector(path);
+          if (tabContent) {
+            tabContent.classList.add('show', 'active');
+          }
+        }
+      } else {
+        // If no specific tab is in the URL, trigger click on the intro tab
+        const introTab = document.querySelector('.nav-link[href="#pills-intro"]');
+        if (introTab) {
+          introTab.classList.add('active');
+          const introContent = document.querySelector('#pills-intro');
+          if (introContent) {
+            introContent.classList.add('show', 'active');
+          }
+        }
+      }
+    });
+
+    // Get all the tab links
+    const tabLinks = document.querySelectorAll('.nav-link');
+
+    // Add click event listener to each tab link
+    tabLinks.forEach(tab => {
+      tab.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Get the href attribute of the clicked tab
+        const tabHref = tab.getAttribute('href');
+
+        // Construct the new URL
+        const baseUrl = window.location.href.split('#')[0]; // Get the base URL without hash
+        const newPath = baseUrl + tabHref;
+
+        // Update the URL with the active tab
+        window.history.pushState(null, null, newPath);
+      });
+    });
+  </script>
+
+<script>
+  function refreshPage(link) {
+    var href = link.getAttribute('href'); // Get the href attribute value
+    window.location.href = href; // Set the window location to the href value
+    setTimeout(function() {
+      window.location.reload(); // Reload the page after a slight delay
+    }, 1);
+  }
+
+  window.onload = function() {
+    // Scroll to the top of the page after a slight delay
+    setTimeout(function() {
+      window.scrollTo(0, 0); // Scroll to the top of the page after page is fully loaded
+    }, 1);
+  };
+</script>
 </body>

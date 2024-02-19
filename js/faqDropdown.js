@@ -1,5 +1,7 @@
 $('#questions').hide();
 $('#hide').hide();
+$('#questions2').hide();
+$('#hide2').hide();
 
 $(".openLines").click(function(){      
     if ($('#hide').is(":visible")) {
@@ -12,6 +14,19 @@ $(".openLines").click(function(){
     }
     $('#questions').toggle(300);
     //  $("div").toggle(300);
+});
+
+$(".openLines2").click(function(){      
+  if ($('#hide2').is(":visible")) {
+    $('#hide2').hide();
+    $('#show2').show();
+  }
+  else {
+    $('#show2').hide();
+    $('#hide2').show();
+  }
+  $('#questions2').toggle(300);
+  //  $("div").toggle(300);
 });
 
 // Accordian Action
