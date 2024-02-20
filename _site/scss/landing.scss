@@ -2228,6 +2228,11 @@
     object-fit: contain;
     margin-bottom: -45px;
 
+    @include screen-md {
+      max-width: 100px;
+      margin-bottom: -100px;
+    }
+
     @include screen-sm {
       max-width: 100px;
       margin-bottom: -100px;

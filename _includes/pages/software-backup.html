@@ -72,7 +72,7 @@
                           </a>
                           <div>
                             <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                            <a class="header__link software-backup-href" href="software-backup.html#pills-pricing" onclick="refreshPage(this)">{{
+                            <a class="header__link compare-solutions-href" href="compare-solutions.html">{{
                               site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
                                 aria-hidden="true"></i></a>
                           </div>
@@ -412,7 +412,7 @@
                       site.data[page.lang]['software_backup']['secure_your_source'] }}</p>
 
                     <div class="d-flex flex-column align-items-center mt-4">
-                      <a class="button btn-cerulean software-backup-href mb-4" href="software-backup.html#pills-pricing" onclick="refreshPage(this)">
+                      <a class="button btn-cerulean compare-solutions-href mb-4" href="compare-solutions.html">
                         {{ site.data[page.lang]['software_backup']['see_pricing_details'] }}
                       </a>
                       <div class="d-flex flex-column align-items-center">
@@ -1075,7 +1075,7 @@
                     <span id='hide2'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
                   </p>
                 </ul>
-                <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any2'] }} </p>
+                <p class="section__text mt-5 mb-5 text-center">{{ site.data[page.lang]['pricing']['have_not_found'] }} <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> </p>
               </div>
 
               
@@ -1087,12 +1087,12 @@
               aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
-                <div class="pricing-container mx-auto">
+                <div class="pricing-container mx-auto px-3">
                   <div class="backup-box-shadow">
                     <div class="row">
-                      <div class="col-md-6 col-sm-12 bg-alice-blue content-center py-5">
-                        <div class="px-2">
-                          <p class="risks__subtitle mt-2 font-24 fw-400 text-dark-cyan">Main Features</p>
+                      <div class="col-md-6 col-sm-12 bg-alice-blue content-center">
+                        <div class="px-3">
+                          <p class="risks__subtitle mt-5 font-24 fw-400 text-dark-cyan">Main Features</p>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/unlimited-users.svg"
                               alt="Unlimited users icon" loading="lazy" />
@@ -1123,7 +1123,7 @@
                               alt="24/7 customer support icon" loading="lazy" />
                             <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">24/7 customer support</p>
                           </div>
-                          <img class="software-escrow__image mw-420 mt-5"
+                          <img class="image-backup-features my-5"
                             src="/images/software-backup/software-backups-illustration.webp"
                             alt="Illustration of Software Backups" loading="lazy" />
                         </div>
@@ -1154,7 +1154,7 @@
                             <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms:
                             </p>
                             <div class="resources pb-3">
-                              <div class="d-flex align-items-start">
+                              <div class="d-flex align-items-start flex-wrap">
                                 <div class="d-flex align-items-center flex-column mr-4">
                                   <img class="min-h-50 mw-40" src="/images/homepage/logos/github-large.svg"
                                     alt="GitHub Logo" />
@@ -1299,7 +1299,7 @@
                       </div>
 
                       <div class="col-md-3 col-sm-12 single-backup single -has-extra py-4">
-                        <div class="d-flex align-items-center justify-content-between mt-4 mr-4">
+                        <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
                           <div>
                             <p class="plan__add-ons-text text-white font-30">+<span
                                 class="software-backup-certified text-white">{{
@@ -1334,7 +1334,7 @@
 
                       </div>
                       <div class="col-md-3 col-sm-12 single py-4">
-                        <div class="d-flex align-items-center justify-content-between mt-4 mr-4">
+                        <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
                           <div class="mt-1">
                             <p class="plan__add-ons-text">+ <span class="software-backup-advanced-deposits">{{
                                 site.data.pricing.prices.software_backup_advanced_deposits.USD }}</span></p>
@@ -1390,7 +1390,7 @@
 
                       </div>
                       <div class="col-md-3 col-sm-12 single py-4">
-                        <div class="d-flex align-items-center justify-content-between mt-4 mr-4">
+                        <div class="d-flex align-items-center justify-content-between mt-4 mx-3">
                           <div class="mt-1">
                             <p class="plan__add-ons-text">+ <span class="software-backup-advanced-integrations">{{
                                 site.data.pricing.prices.software_backup_advanced_integrations.USD }}</span></p>
@@ -1701,7 +1701,7 @@
                     <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
                   </p>
                 </ul>
-                <p class="section__text mt-5 mb-5">{{ site.data[page.lang]['faq']['if_you_have_any2'] }} </p>
+                <p class="section__text mt-5 mb-5 text-center">{{ site.data[page.lang]['pricing']['have_not_found'] }} <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> </p>
               </div>
 
               <!-- Section -->
@@ -2002,14 +2002,14 @@
     window.location.href = href; // Set the window location to the href value
     setTimeout(function() {
       window.location.reload(); // Reload the page after a slight delay
-    }, 1);
+    }, 10);
   }
 
   window.onload = function() {
     // Scroll to the top of the page after a slight delay
     setTimeout(function() {
       window.scrollTo(0, 0); // Scroll to the top of the page after page is fully loaded
-    }, 1);
+    }, 10);
   };
 </script>
 </body>

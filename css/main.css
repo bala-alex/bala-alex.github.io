@@ -10757,6 +10757,20 @@ html {
   max-height: 600px;
 }
 
+.max-h-300 {
+  max-height: 300px;
+}
+
+.image-backup-features {
+  width: 100%;
+  max-width: 400px !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .template-image {
   width: 150px !important;
   height: 190px !important;
@@ -13150,6 +13164,12 @@ input[name=consent] {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: -45px;
+}
+@media (max-width: 992px) {
+  .mentions__box-image {
+    max-width: 100px;
+    margin-bottom: -100px;
+  }
 }
 @media (max-width: 767px) {
   .mentions__box-image {
