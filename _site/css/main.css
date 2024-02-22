@@ -9566,6 +9566,15 @@ html {
   background: linear-gradient(151.45deg, #F6FEFF 20.62%, #E9F4FF 81.27%);
 }
 
+.bg-gradient-blue-bottom2 {
+  background: linear-gradient(1deg, rgba(214, 239, 243, 0.5) -4.05%, rgba(239, 249, 251, 0) 92.31%);
+}
+
+.bg-gradient-blue-bottom3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 253, 255, 0)), to(#FBFDFF));
+  background: linear-gradient(180deg, rgba(251, 253, 255, 0) 0%, #FBFDFF 100%);
+}
+
 .bg-gradient-blue3 {
   background: linear-gradient(240deg, #F5FDFF 0%, #E6FAFF 100%);
 }
@@ -9596,6 +9605,11 @@ html {
 .bg-gradient-blue8 {
   background: -webkit-gradient(linear, left top, left bottom, from(#5B90E1), to(#336ABE));
   background: linear-gradient(180deg, #5B90E1 0%, #336ABE 100%);
+}
+
+.bg-gradient-blue-sky {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37.16%, #FFFFFF), color-stop(152.41%, #E5F3FF)) !important;
+  background: linear-gradient(180deg, #FFFFFF 37.16%, #E5F3FF 152.41%) !important;
 }
 
 .bg-gradient-bondi-blue {
@@ -20775,6 +20789,178 @@ input[name=consent] {
   line-height: 32px;
   color: #ffffff;
   margin-bottom: 4px;
+}
+.resources .verify-guide__bg {
+  min-height: 440px;
+  background: #FFFFFF;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 10px;
+  position: relative;
+  padding: 100px 40px 40px 40px;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  .resources .verify-guide__bg {
+    padding: 100px 20px 20px 20px;
+  }
+}
+.resources .verify-guide__illustration {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.resources .verify-guide__main-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 53px;
+  color: #1A5261;
+}
+.resources .verify-guide__main-subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1A5261;
+  max-width: 714px;
+}
+.resources .verify-guide__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+  color: #1A5261;
+}
+.resources .verify-guide__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A8493;
+}
+.resources .verify-guide__text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1A5261;
+}
+.resources .verify-guide__badge-automated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 51px;
+  min-width: 210px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #41B3C8), color-stop(130.25%, #069FB9)), -webkit-gradient(linear, left bottom, left top, from(#56CBE1), to(#56CBE1));
+  background: linear-gradient(90deg, #41B3C8 50%, #069FB9 130.25%), linear-gradient(0deg, #56CBE1, #56CBE1);
+  position: absolute;
+  top: 25px;
+  left: 0;
+  padding-left: 40px;
+  padding-right: 15px;
+  border-radius: 0 30px 30px 0;
+  border: 1px solid #56CBE1;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+          box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+}
+@media (max-width: 767px) {
+  .resources .verify-guide__badge-automated {
+    padding-left: 20px;
+  }
+}
+.resources .verify-guide__badge-advanced {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 51px;
+  min-width: 210px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.25%, #409DD1), color-stop(130.25%, #1A7CB3)), -webkit-gradient(linear, left bottom, left top, from(#62B6E5), to(#62B6E5));
+  background: linear-gradient(90deg, #409DD1 16.25%, #1A7CB3 130.25%), linear-gradient(0deg, #62B6E5, #62B6E5);
+  position: absolute;
+  top: 25px;
+  left: 0;
+  padding-left: 40px;
+  padding-right: 15px;
+  border-radius: 0 30px 30px 0;
+  border: 1px solid #62B6E5;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+          box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+}
+@media (max-width: 767px) {
+  .resources .verify-guide__badge-advanced {
+    padding-left: 20px;
+  }
+}
+.resources .verify-guide__badge-complete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 51px;
+  min-width: 210px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.25%, #417BD2), color-stop(130.25%, #1D53A4)), -webkit-gradient(linear, left bottom, left top, from(#548ADA), to(#548ADA));
+  background: linear-gradient(90deg, #417BD2 16.25%, #1D53A4 130.25%), linear-gradient(0deg, #548ADA, #548ADA);
+  position: absolute;
+  top: 25px;
+  left: 0;
+  padding-left: 40px;
+  padding-right: 15px;
+  border-radius: 0 30px 30px 0;
+  border: 1px solid #548ADA;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+          box-shadow: 0px 3px 10px 0px rgba(0, 48, 120, 0.1019607843);
+}
+@media (max-width: 767px) {
+  .resources .verify-guide__badge-complete {
+    padding-left: 20px;
+  }
+}
+.resources .verify-guide__badge-text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.resources .verify-guide__shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .resources .verify-guide__shape {
+    max-width: 250px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .resources .verify-guide__shape {
+    max-width: 150px;
+    height: auto;
+  }
 }
 .resources .intro-guide__container {
   min-height: 800px;

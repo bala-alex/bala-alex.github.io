@@ -645,6 +645,163 @@
     }
   }
 
+  .verify-guide {
+    &__bg {
+      min-height: 440px;
+      background: #FFFFFF;
+      border: 0.5px solid #DCE5F2;
+      box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+      border-radius: 10px;
+      position: relative;
+      padding: 100px 40px 40px 40px;
+      z-index: 9;
+
+      @include screen-sm {
+        padding: 100px 20px 20px 20px;
+      }
+    }
+
+    &__illustration {
+      width: fit-content;
+      height: 160px;
+      object-fit: contain;
+    }
+
+    &__main-title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 53px;
+      color: $dark-cyan;
+    }
+
+    &__main-subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      color: $dark-cyan;
+      max-width: 714px;
+    }
+
+    &__title {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 40px;
+      color: $dark-cyan;
+    }
+
+    &__subtitle {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $slate-gray;
+    }
+
+    &__text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $dark-cyan;
+    }
+
+    &__badge-automated {
+      display: flex;
+      align-items: center;
+      height: 51px;
+      min-width: 210px;
+      background: linear-gradient(90deg, #41B3C8 50%, #069FB9 130.25%), linear-gradient(0deg, #56CBE1, #56CBE1);
+      position: absolute;
+      top: 25px;
+      left: 0;
+      padding-left: 40px;
+      padding-right: 15px;
+      border-radius: 0 30px 30px 0;
+      border: 1px solid #56CBE1;
+      box-shadow: 0px 3px 10px 0px #0030781A;
+
+      @include screen-sm {
+        padding-left: 20px;
+      }
+    }
+
+    &__badge-advanced {
+      display: flex;
+      align-items: center;
+      height: 51px;
+      min-width: 210px;
+      background: linear-gradient(90deg, #409DD1 16.25%, #1A7CB3 130.25%), linear-gradient(0deg, #62B6E5, #62B6E5);
+      position: absolute;
+      top: 25px;
+      left: 0;
+      padding-left: 40px;
+      padding-right: 15px;
+      border-radius: 0 30px 30px 0;
+      border: 1px solid #62B6E5;
+      box-shadow: 0px 3px 10px 0px #0030781A;
+
+      @include screen-sm {
+        padding-left: 20px;
+      }
+    }
+
+    &__badge-complete {
+      display: flex;
+      align-items: center;
+      height: 51px;
+      min-width: 210px;
+      background: linear-gradient(90deg, #417BD2 16.25%, #1D53A4 130.25%), linear-gradient(0deg, #548ADA, #548ADA);
+      position: absolute;
+      top: 25px;
+      left: 0;
+      padding-left: 40px;
+      padding-right: 15px;
+      border-radius: 0 30px 30px 0;
+      border: 1px solid #548ADA;
+      box-shadow: 0px 3px 10px 0px #0030781A;
+
+      @include screen-sm {
+        padding-left: 20px;
+      }
+    }
+
+    &__badge-text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 18px;
+      color: $white;
+      margin-bottom: 0;
+    }
+
+    &__shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 350px;
+      object-fit: contain;
+
+      @include screen-sm {
+        max-width: 250px;
+        height: auto;
+      }
+
+      @include screen-xs {
+        max-width: 150px;
+        height: auto;
+      }
+    }
+  }
+
   .intro-guide {
     &__container {
       min-height: 800px;
