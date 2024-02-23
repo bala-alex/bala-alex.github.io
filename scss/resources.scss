@@ -742,6 +742,10 @@
       left: 25px;
       top: 23%;
 
+      @include screen-lg {
+        left: 15px;
+      }
+
       @include screen-md {
         font-size: 20px;
         line-height: 24px;
@@ -759,6 +763,10 @@
       left: 25px;
       top: 61%;
 
+      @include screen-lg {
+        left: 15px;
+      }
+
       @include screen-md {
         font-size: 20px;
         line-height: 24px;
@@ -775,6 +783,10 @@
       position: absolute;
       left: 25px;
       top: 86%;
+
+      @include screen-lg {
+        left: 15px;
+      }
 
       @include screen-md {
         font-size: 20px;
