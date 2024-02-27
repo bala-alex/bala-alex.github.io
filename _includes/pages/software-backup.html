@@ -1732,7 +1732,6 @@
   {% include title-tags.html %}
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
-  <script src="/js/geolocationPricing.js"></script>
   <script src="/js/pricingCheckout.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
@@ -1761,6 +1760,9 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
+      checkoutAdOns = [];
+      checkoutText = [];
+      totalSum = 0;
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
       const currency = localStorage.getItem('currency');
