@@ -3698,6 +3698,7 @@
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
       $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+      $('.btn-yellow-small2').removeClass('-is-selected').text('Add')
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
       totalSum = price + setupFeeAmount;
@@ -3750,7 +3751,12 @@
 
     function add(button, priceString, addonID) {
       const currency = localStorage.getItem('currency');
-      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      let price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+
+      if (duration === 'Yearly') {
+        price *= 12;
+      }
+      
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
@@ -3764,7 +3770,7 @@
         checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
 
-      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected").length;
+      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected, .btn-yellow-small2.-is-selected").length;
 
       if (!addOns) {
         document.getElementById('adds').classList.add('d-none');
