@@ -2052,7 +2052,7 @@
                       <p class="plan__checkout-amount my-2 mr-2">Total:</p>
                       <div class="plan__checkout-total"><span class="pricing-currency">$</span><span
                           id="totalSum">0</span></div>
-                      <p class="plan__checkout-amount mt-2"><sup>per month</sup></p>
+                      <p class="plan__checkout-amount mt-2"><sup id="checkout-period">per month</sup></p>
                     </div>
                     <div class="d-flex align-items-center my-2 flex-wrap">
                       <a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">Pay
@@ -3689,6 +3689,12 @@
       totalSum = 0;
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
+      if (duration === 'Yearly') {
+        $('#checkout-period').text('per year');
+      } else {
+        $('#checkout-period').text('per month');
+      }
+
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
@@ -3756,7 +3762,7 @@
       if (duration === 'Yearly') {
         price *= 12;
       }
-      
+
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
