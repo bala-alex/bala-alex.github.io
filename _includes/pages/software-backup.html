@@ -1215,7 +1215,7 @@
 
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
-                                  onclick="selectPlan(this, 'single', this.getAttribute('data-price'), 'Software-Backup')"
+                                  onclick="selectPlan(this, 'single', 'software_backup_monthly', 'Software-Backup')"
                                   data-price="{{ site.data.pricing.prices.software_backup_monthly.USD }}">Select
                                   Plan</button>
                               </div>
@@ -1284,7 +1284,7 @@
 
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
-                                  onclick="selectPlan(this, 'multiple', this.getAttribute('data-price'), 'Software-Backup')"
+                                  onclick="selectPlan(this, 'multiple', 'software_backup_yearly', 'Software-Backup')"
                                   data-price="{{ site.data.pricing.prices.software_backup_yearly.USD }}">Select
                                   Plan</button>
                               </div>
@@ -1318,7 +1318,7 @@
                             <p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
                           </div>
                           <button class="button btn-yellow-small2 px-4"
-                            onclick="add(this, 10, 'Certified-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_certified', 'Certified-Add-On')">Add</button>
                         </div>
                         <p
                           class="plan__add-ons-subtext text-white single-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0">
@@ -1352,7 +1352,7 @@
                             <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 49, 'Advanced-Deposits-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
                         </div>
                       </div>
                     </div>
@@ -1408,7 +1408,7 @@
                             <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 49, 'Advanced-Integrations-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
                         </div>
                       </div>
                     </div>
@@ -1732,7 +1732,6 @@
   {% include title-tags.html %}
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
-  <script src="/js/pricingCheckout.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
@@ -1768,12 +1767,15 @@
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
+      const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
+      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
       $('.btn-primary-small2').removeClass('-is-selected').text('Add')
-      var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
+      // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price + 199;
+      totalSum = price + setupFeeAmount;
       $('#totalSum').text(totalSum);
 
       if ($(button).hasClass('-is-selected')) { // Check if button is already selected
@@ -1821,13 +1823,15 @@
       duration = value;
     }
 
-    function add(button, price, addonID) {
+    function add(button, priceString, addonID) {
       const currency = localStorage.getItem('currency');
+      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = 'Add';
         button.classList.remove('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
       } else {
         totalSum += price;
         button.textContent = 'Added';
@@ -1846,8 +1850,6 @@
       }
 
       document.getElementById('totalSum').textContent = totalSum;
-
-      console.log('checkoutAdOns', checkoutAdOns);
 
       // Set data-cb-item-0 attribute
       const checkoutSnippet = document.getElementById('checkout-snippet');

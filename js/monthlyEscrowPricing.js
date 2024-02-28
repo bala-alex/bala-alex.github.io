@@ -97,15 +97,15 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.GBP);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.GBP);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.GBP);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.GBP);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.GBP);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.GBP);
         $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.GBP);
         $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.GBP);
         $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.GBP);
         $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.GBP);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.GBP);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.GBP);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.GBP);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.GBP);
         $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.GBP);
         $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.GBP);
 
@@ -153,17 +153,17 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.INR);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.INR);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.INR);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.INR);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.INR);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.INR);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.INR);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.INR);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.INR);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.INR);
         $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.INR);
         $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.INR);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.INR);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.INR);
-        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_assured_recovery.INR);
-        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_assured_recovery.INR);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.INR);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.INR);
+        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.INR);
+        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.INR);
 
         $('.saas-escrow-single-coverage-length').text(prices.saas_escrow_single_coverage_length.INR);
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.INR);
@@ -209,17 +209,17 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.AUD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.AUD);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.AUD);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.AUD);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.AUD);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.AUD);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.AUD);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.AUD);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.AUD);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.AUD);
         $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.AUD);
         $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.AUD);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.AUD);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.AUD);
-        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_assured_recovery.AUD);
-        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_assured_recovery.AUD);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.AUD);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.AUD);
+        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.AUD);
+        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.AUD);
 
         $('.saas-escrow-single-coverage-length').text(prices.saas_escrow_single_coverage_length.AUD);
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.AUD);
@@ -266,17 +266,17 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.SGD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.SGD);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.SGD);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.SGD);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.SGD);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.SGD);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.SGD);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.SGD);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.SGD);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.SGD);
         $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.SGD);
         $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.SGD);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.SGD);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.SGD);
-        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_assured_recovery.SGD);
-        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_assured_recovery.SGD);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.SGD);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.SGD);
+        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.SGD);
+        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.SGD);
 
         $('.saas-escrow-single-coverage-length').text(prices.saas_escrow_single_coverage_length.SGD);
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.SGD);
@@ -323,17 +323,17 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.ZAR);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.ZAR);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.ZAR);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.ZAR);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.ZAR);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.ZAR);
-        $('.software-custodian-single-compliance-support').text(prices.software_custodian_compliance_support.ZAR);
-        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_compliance_support.ZAR);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.ZAR);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.ZAR);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.ZAR);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.ZAR);
+        $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.ZAR);
+        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.ZAR);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.ZAR);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.ZAR);
-        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_assured_recovery.ZAR);
-        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_assured_recovery.ZAR);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.ZAR);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.ZAR);
+        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.ZAR);
+        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.ZAR);
 
         $('.saas-escrow-single-coverage-length').text(prices.saas_escrow_single_coverage_length.ZAR);
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.ZAR);
@@ -380,17 +380,17 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.CHF);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.CHF);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.CHF);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.CHF);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.CHF);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.CHF);
-        $('.software-custodian-single-compliance-support').text(prices.software_custodian_compliance_support.CHF);
-        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_compliance_support.CHF);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.CHF);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.CHF);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.CHF);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.CHF);
+        $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.CHF);
+        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.CHF);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.CHF);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.CHF);
-        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_assured_recovery.CHF);
-        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_assured_recovery.CHF);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.CHF);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.CHF);
+        $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.CHF);
+        $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.CHF);
 
         $('.saas-escrow-single-coverage-length').text(prices.saas_escrow_single_coverage_length.CHF);
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.CHF);
@@ -437,15 +437,15 @@ $( document ).ready(function() {
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.CAD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.CAD);
 
-        $('.software-escrow-single-compliance-support').text(prices.software_escrow_compliance_support.CAD);
-        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_compliance_support.CAD);
-        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_compliance_support.CAD);
-        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_compliance_support.CAD);
-        $('.software-custodian-single-compliance-support').text(prices.software_custodian_compliance_support.CAD);
-        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_compliance_support.CAD);
+        $('.software-escrow-single-compliance-support').text(prices.software_escrow_single_compliance_support.CAD);
+        $('.software-escrow-multi-compliance-support').text(prices.software_escrow_multi_compliance_support.CAD);
+        $('.saas-escrow-single-compliance-support').text(prices.saas_escrow_single_compliance_support.CAD);
+        $('.saas-escrow-multi-compliance-support').text(prices.saas_escrow_multi_compliance_support.CAD);
+        $('.software-custodian-single-compliance-support').text(prices.software_custodian_single_compliance_support.CAD);
+        $('.software-custodian-multi-compliance-support').text(prices.software_custodian_multi_compliance_support.CAD);
 
-        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_assured_recovery.CAD);
-        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_assured_recovery.CAD);
+        $('.software-escrow-single-assured-recovery').text(prices.software_escrow_single_assured_recovery.CAD);
+        $('.software-escrow-multi-assured-recovery').text(prices.software_escrow_multi_assured_recovery.CAD);
         $('.saas-escrow-single-assured-recovery').text(prices.saas_escrow_single_assured_recovery.CAD);
         $('.saas-escrow-multi-assured-recovery').text(prices.saas_escrow_multi_assured_recovery.CAD);
 

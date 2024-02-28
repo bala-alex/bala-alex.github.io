@@ -1715,7 +1715,6 @@
   {% include title-tags.html %}
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
-  <script src="/js/pricingCheckout.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
@@ -1751,8 +1750,6 @@
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
-      console.log('priceString', priceString)
-
       const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
       const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
 
@@ -1762,13 +1759,8 @@
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
       
 
-      console.log('price', price)
-      console.log('setupFeeAmount', setupFeeAmount)
-
       totalSum = price + setupFeeAmount;
       $('#totalSum').text(totalSum);
-
-      console.log('totalSum', totalSum)
 
       var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
@@ -1824,14 +1816,16 @@
       duration = value;
     }
 
-    function add(button, price, addonID) {
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+    function add(button, priceString, addonID) {
       const currency = localStorage.getItem('currency');
+      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+      
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = 'Add';
         button.classList.remove('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
       } else {
         totalSum += price;
         button.textContent = 'Added';
@@ -1851,7 +1845,6 @@
 
       document.getElementById('totalSum').textContent = totalSum;
 
-      console.log('checkoutAdOns', checkoutAdOns);
     }
   </script>
 

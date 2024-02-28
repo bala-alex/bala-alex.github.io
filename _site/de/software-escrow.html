@@ -2392,7 +2392,7 @@
                   class="software-escrow-single-certified text-white">$20</span></p>
               <p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
             </div>
-            <button class="button btn-yellow-small2" onclick="add(this, 20, 'Certified-Add-On')">Add</button>
+            <button class="button btn-yellow-small2" onclick="add(this, 'software_escrow_single_certified', 'Certified-Add-On')">Add</button>
           </div>
           <p class="plan__add-ons-subtext text-white single-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0 mx-3">
             Certify your disaster preparedness for next level certainty about your recovery process
@@ -2406,7 +2406,7 @@
                   class="software-escrow-multi-certified text-white">$40</span></p>
               <p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
             </div>
-            <button class="button btn-yellow-small2" onclick="add(this, 40, 'Certified-Add-On')">Add</button>
+            <button class="button btn-yellow-small2" onclick="add(this, 'software_escrow_multi_certified', 'Certified-Add-On')">Add</button>
           </div>
           <p
             class="plan__add-ons-subtext text-white multiple-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0 mx-3">
@@ -2445,7 +2445,7 @@
               <p class="plan__add-ons-text">+<span class="software-escrow-single-advanced-deposits">$49</span></p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 49, 'Advanced-Deposits-Add-On')">Add</button>
+            <button class="button btn-primary-small2" onclick="add(this, 'software_escrow_single_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
           </div>
 
         </div>
@@ -2455,7 +2455,7 @@
               <p class="plan__add-ons-text">+<span class="software-escrow-multi-advanced-deposits">$99</span></p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 99, 'Advanced-Deposits-Add-On')">Add</button>
+            <button class="button btn-primary-small2" onclick="add(this, 'software_escrow_multi_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 py-4">
@@ -2515,7 +2515,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 49, 'Advanced-Integrations-Add-On')">Add</button>
+              onclick="add(this, 'software_escrow_single_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -2525,7 +2525,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 99, 'Advanced-Integrations-Add-On')">Add</button>
+              onclick="add(this, 'software_escrow_multi_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 py-4">
@@ -2613,7 +2613,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 99, 'Compliance-Support-SLA-Add-On')">Add</button>
+              onclick="add(this, 'software_escrow_single_compliance_support', 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -2623,7 +2623,7 @@
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
             <button class="button btn-primary-small2"
-              onclick="add(this, 199, 'Compliance-Support-SLA-Add-On')">Add</button>
+              onclick="add(this, 'software_escrow_multi_compliance_support', 'Compliance-Support-SLA-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 py-4">
@@ -2696,7 +2696,7 @@
               <p class="plan__add-ons-text">+<span class="software-escrow-single-assured-recovery">$199</span></p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 199, 'Assured-Recovery-Add-On')">Add</button>
+            <button class="button btn-primary-small2" onclick="add(this, 'software_escrow_single_assured_recovery', 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 multiple py-4">
@@ -2705,7 +2705,7 @@
               <p class="plan__add-ons-text">+<span class="software-escrow-multi-assured-recovery">$399</span></p>
               <p class="plan__add-ons-subtext text-italic">per month</p>
             </div>
-            <button class="button btn-primary-small2" onclick="add(this, 399, 'Assured-Recovery-Add-On')">Add</button>
+            <button class="button btn-primary-small2" onclick="add(this, 'software_escrow_multi_assured_recovery', 'Assured-Recovery-Add-On')">Add</button>
           </div>
         </div>
         <div class="col-md-3 col-sm-12 py-4">
@@ -4452,7 +4452,6 @@ unserem Zahlungsabwickler sicher verarbeitet.</li>
 </script>
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
-  <script src="/js/pricingCheckout.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
@@ -4487,8 +4486,6 @@ unserem Zahlungsabwickler sicher verarbeitet.</li>
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
-      console.log('priceString', priceString)
-
       const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
       const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
 
@@ -4498,13 +4495,8 @@ unserem Zahlungsabwickler sicher verarbeitet.</li>
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
       
 
-      console.log('price', price)
-      console.log('setupFeeAmount', setupFeeAmount)
-
       totalSum = price + setupFeeAmount;
       $('#totalSum').text(totalSum);
-
-      console.log('totalSum', totalSum)
 
       var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
@@ -4560,14 +4552,16 @@ unserem Zahlungsabwickler sicher verarbeitet.</li>
       duration = value;
     }
 
-    function add(button, price, addonID) {
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+    function add(button, priceString, addonID) {
       const currency = localStorage.getItem('currency');
+      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+      
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = 'Add';
         button.classList.remove('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
       } else {
         totalSum += price;
         button.textContent = 'Added';
@@ -4587,7 +4581,6 @@ unserem Zahlungsabwickler sicher verarbeitet.</li>
 
       document.getElementById('totalSum').textContent = totalSum;
 
-      console.log('checkoutAdOns', checkoutAdOns);
     }
   </script>
 
