@@ -1525,6 +1525,10 @@ html {
   margin-top: -250px;
 }
 
+.mt-negative-400 {
+  margin-top: -400px;
+}
+
 .mt-negative-150 {
   margin-top: -150px;
 
@@ -1609,6 +1613,25 @@ html {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   height: 200px;
   width: 100%;
+}
+
+.solutions-gradient-devider {
+  background: linear-gradient(180deg, #F2FAFC 2.57%, #FFFFFF 90.44%);
+  height: 200px;
+  width: 100%;
+  margin-top: 400px;
+
+  @include screen-sm {
+    margin-top: 200px;
+  }
+}
+
+.solutions-screen-spacing {
+  margin-top: -400px;
+
+  @include screen-sm {
+    margin-top: -300px;
+  }
 }
 
 .table-subtext {
