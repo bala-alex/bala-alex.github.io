@@ -1404,7 +1404,7 @@
             <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
-                {% include pricing-tabs-assets.html %}
+                {% include pricing-tabs-software-escrow.html %}
 
                 <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
                   <div class="plan__devider mx-auto my-5 w-100"></div>
@@ -1795,7 +1795,7 @@
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
-      const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
+      // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
       const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
 
       // Extract the numeric part from the string
@@ -1804,8 +1804,8 @@
       $('.btn-yellow-small2').removeClass('-is-selected').text('Add')
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price + setupFeeAmount;
-      $('#totalSum').text(totalSum);
+      totalSum = price
+      $('#totalSum').text(totalSum.toLocaleString());
 
       var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
@@ -1893,7 +1893,7 @@
         addsElement.textContent = `Addons: ${addOns}`;
       }
 
-      document.getElementById('totalSum').textContent = totalSum;
+      document.getElementById('totalSum').textContent = totalSum.toLocaleString();
 
     }
 

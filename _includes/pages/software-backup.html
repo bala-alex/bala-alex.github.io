@@ -1773,7 +1773,7 @@
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
-      const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
+      // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
       const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
 
       // Extract the numeric part from the string
@@ -1782,7 +1782,7 @@
       $('.btn-yellow-small2').removeClass('-is-selected').text('Add')
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price + setupFeeAmount;
+      totalSum = price
       $('#totalSum').text(totalSum);
 
       if ($(button).hasClass('-is-selected')) { // Check if button is already selected
