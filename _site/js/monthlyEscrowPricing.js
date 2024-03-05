@@ -38,6 +38,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.EUR);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.EUR);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.EUR);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.EUR);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.EUR);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.EUR);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.EUR);
 
@@ -57,6 +59,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.EUR);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.EUR);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.EUR);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.EUR);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.EUR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.EUR);
         $('.pricing-currency').text(prices.pricing_currency.EUR);
 
@@ -94,6 +99,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.GBP);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.GBP);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.GBP);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.GBP);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.GBP);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.GBP);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.GBP);
 
@@ -113,6 +120,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.GBP);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.GBP);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.GBP);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.GBP);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.GBP);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.GBP);
         $('.pricing-currency').text(prices.pricing_currency.GBP);
 
@@ -150,6 +160,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.INR);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.INR);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.INR);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.INR);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.INR);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.INR);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.INR);
 
@@ -169,6 +181,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.INR);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.INR);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.INR);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.INR);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.INR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.INR);
         $('.pricing-currency').text(prices.pricing_currency.INR);
 
@@ -206,6 +221,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.AUD);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.AUD);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.AUD);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.AUD);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.AUD);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.AUD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.AUD);
 
@@ -225,6 +242,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.AUD);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.AUD);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.AUD);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.AUD);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.AUD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.AUD);
         $('.pricing-currency').text(prices.pricing_currency.AUD);
 
@@ -263,6 +283,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.SGD);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.SGD);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.SGD);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.SGD);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.SGD);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.SGD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.SGD);
 
@@ -282,6 +304,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.SGD);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.SGD);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.SGD);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.SGD);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.SGD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.SGD);
         $('.pricing-currency').text(prices.pricing_currency.SGD);
 
@@ -320,6 +345,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.ZAR);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.ZAR);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.ZAR);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.ZAR);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.ZAR);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.ZAR);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.ZAR);
 
@@ -339,6 +366,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.ZAR);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.ZAR);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.ZAR);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.ZAR);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.ZAR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.ZAR);
         $('.pricing-currency').text(prices.pricing_currency.ZAR);
 
@@ -377,6 +407,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.CHF);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.CHF);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.CHF);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.CHF);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.CHF);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.CHF);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.CHF);
 
@@ -396,6 +428,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.CHF);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.CHF);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.CHF);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.CHF);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.CHF);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.CHF);
         $('.pricing-currency').text(prices.pricing_currency.CHF);
 
@@ -434,6 +469,8 @@ $( document ).ready(function() {
         $('.software-escrow-multi-advanced-integrations').text(prices.software_escrow_multi_advanced_integrations.CAD);
         $('.saas-escrow-single-advanced-integrations').text(prices.saas_escrow_single_advanced_integrations.CAD);
         $('.saas-escrow-multi-advanced-integrations').text(prices.saas_escrow_multi_advanced_integrations.CAD);
+        $('.saas-escrow-single-advanced-saas-integrations').text(prices.saas_escrow_single_advanced_saas_integrations.CAD);
+        $('.saas-escrow-multi-advanced-saas-integrations').text(prices.saas_escrow_multi_advanced_saas_integrations.CAD);
         $('.software-custodian-single-advanced-integrations').text(prices.software_custodian_single_advanced_integrations.CAD);
         $('.software-custodian-multi-advanced-integrations').text(prices.software_custodian_multi_advanced_integrations.CAD);
 
@@ -453,6 +490,9 @@ $( document ).ready(function() {
         $('.saas-escrow-multi-coverage-length').text(prices.saas_escrow_multi_coverage_length.CAD);
 
         $('.saas-escrow-single-monthly').text(prices.saas_escrow_single_monthly.CAD);
+        $('.saas-escrow-multi-monthly').text(prices.saas_escrow_multi_monthly.CAD);
+        $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.CAD);
+        $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.CAD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.CAD);
         $('.pricing-currency').text(prices.pricing_currency.CAD);
 

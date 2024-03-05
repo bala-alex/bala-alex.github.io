@@ -303,6 +303,11 @@
   font-size: 18px;
   border: none;
   outline: none;
+
+  @media (min-width: 1200px) and (max-width: 1250px) { 
+    min-width: 100%;  
+  }
+
   @include screen-lg {
     min-width: fit-content;
   }

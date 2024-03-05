@@ -32,14 +32,14 @@
               </div>
 
               <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-intro-tab"
-                  data-toggle="pill" href="#pills-intro" role="tab" aria-controls="pills-intro"
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="intro-tab"
+                  data-toggle="pill" href="#intro" role="tab" aria-controls="intro"
                   aria-selected="false">Introduction</a>
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-features-tab"
-                  data-toggle="pill" href="#pills-features" role="tab" aria-controls="pills-features"
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="features-tab"
+                  data-toggle="pill" href="#features" role="tab" aria-controls="features"
                   aria-selected="false">Features</a>
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pills-pricing-tab"
-                  data-toggle="pill" href="#pills-pricing" role="tab" aria-controls="pills-pricing"
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pricing-tab"
+                  data-toggle="pill" href="#pricing" role="tab" aria-controls="pricing"
                   aria-selected="false">Pricing</a>
               </div>
             </div>
@@ -49,7 +49,7 @@
 
         <div class="mt-2">
           <div class="tab-content mt-5" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab">
+            <div class="tab-pane fade" id="intro" role="tabpanel" aria-labelledby="intro-tab">
               <!-- Header -->
               <div class="header__content">
                 <div class="header__bg-software-escrow-new">
@@ -350,7 +350,7 @@
                   </div>
                   <div class="d-flex flex-wrap align-items-center mt-5 mb-3">
                     <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-escrow-href"
-                      href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
+                      href="software-escrow.html#pricing" onclick="refreshPage(this)">
                       {{ site.data[page.lang]['software_escrow2']['see_pricing'] }}
                     </a>
                     <p class="deposit-assets__text font-18 fw-400 mw-100 text-white mb-0 my-3 z-index-1 link-yellow">{{
@@ -586,7 +586,7 @@
                   <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">{{
                     site.data[page.lang]['software_escrow2']['the_recovery_solution_means'] }}</p>
                   <a class="button btn-cerulean2 software-escrow-href mx-auto mt-4"
-                    href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
+                    href="software-escrow.html#pricing" onclick="refreshPage(this)">
                     {{ site.data[page.lang]['software_escrow2']['view_pricing'] }}
                   </a>
                   <div class="row mb-negative-300">
@@ -731,7 +731,7 @@
                           site.data[page.lang]['software_escrow2']['fully_automated'] }} </p>
                         <div class="d-flex flex-wrap mt-4 mb-sm-50">
                           <a class="button btn-cerulean3 software-escrow-href mr-4 mb-3"
-                            href="software-escrow.html#pills-features" onclick="refreshPage(this)">
+                            href="software-escrow.html#features" onclick="refreshPage(this)">
                             {{ site.data[page.lang]['saas_escrow2']['review_features'] }}
                           </a>
                           <div>
@@ -801,7 +801,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab">
+            <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
               <!-- <div class="container contact pb-100">
                 <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
@@ -1288,7 +1288,7 @@
                     </div>
                   </div>
                   <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-escrow-href"
-                    href="software-escrow.html#pills-pricing" onclick="refreshPage(this)">
+                    href="software-escrow.html#pricing" onclick="refreshPage(this)">
                     Explore Pricing
                   </a>
                 </div>
@@ -1401,7 +1401,7 @@
               {% include demo-recovery2.html %}
 
             </div>
-            <div class="tab-pane fade" id="pills-pricing" role="tabpanel" aria-labelledby="pills-pricing-tab">
+            <div class="tab-pane fade" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
                 {% include pricing-tabs-software-escrow.html %}
@@ -1960,26 +1960,26 @@
       const hash = window.location.hash;
 
       // Check if hash contains any of the tab identifiers
-      if (hash.includes('pills-intro') || !hash) {
+      if (hash.includes('intro') || !hash) {
         // Add active class to the intro tab
-        const introTab = document.querySelector('#pills-intro-tab');
-        const introContent = document.querySelector('#pills-intro');
+        const introTab = document.querySelector('#intro-tab');
+        const introContent = document.querySelector('#intro');
         if (introTab && introContent) {
           introTab.classList.add('active');
           introContent.classList.add('show', 'active');
         }
-      } else if (hash.includes('pills-features')) {
+      } else if (hash.includes('features')) {
         // Add active class to the features tab
-        const featuresTab = document.querySelector('#pills-features-tab');
-        const featuresContent = document.querySelector('#pills-features');
+        const featuresTab = document.querySelector('#features-tab');
+        const featuresContent = document.querySelector('#features');
         if (featuresTab && featuresContent) {
           featuresTab.classList.add('active');
           featuresContent.classList.add('show', 'active');
         }
-      } else if (hash.includes('pills-pricing')) {
+      } else if (hash.includes('pricing')) {
         // Add active class to the pricing tab
-        const pricingTab = document.querySelector('#pills-pricing-tab');
-        const pricingContent = document.querySelector('#pills-pricing');
+        const pricingTab = document.querySelector('#pricing-tab');
+        const pricingContent = document.querySelector('#pricing');
         if (pricingTab && pricingContent) {
           pricingTab.classList.add('active');
           pricingContent.classList.add('show', 'active');
@@ -2012,10 +2012,10 @@
         }
       } else {
         // If no specific tab is in the URL, trigger click on the intro tab
-        const introTab = document.querySelector('.nav-link[href="#pills-intro"]');
+        const introTab = document.querySelector('.nav-link[href="#intro"]');
         if (introTab) {
           introTab.classList.add('active');
-          const introContent = document.querySelector('#pills-intro');
+          const introContent = document.querySelector('#intro');
           if (introContent) {
             introContent.classList.add('show', 'active');
           }
