@@ -63,6 +63,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.EUR);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.EUR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.EUR);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.EUR);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.EUR);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.EUR);
         $('.pricing-currency').text(prices.pricing_currency.EUR);
 
         localStorage.setItem('currency', 'EUR');
@@ -124,6 +127,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.GBP);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.GBP);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.GBP);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.GBP);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.GBP);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.GBP);
         $('.pricing-currency').text(prices.pricing_currency.GBP);
 
         localStorage.setItem('currency', 'GBP');
@@ -185,6 +191,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.INR);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.INR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.INR);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.INR);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.INR);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.INR);
         $('.pricing-currency').text(prices.pricing_currency.INR);
 
         localStorage.setItem('currency', 'INR');
@@ -246,6 +255,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.AUD);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.AUD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.AUD);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.AUD);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.AUD);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.AUD);
         $('.pricing-currency').text(prices.pricing_currency.AUD);
 
         localStorage.setItem('currency', 'AUD');
@@ -308,6 +320,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.SGD);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.SGD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.SGD);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.SGD);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.SGD);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.SGD);
         $('.pricing-currency').text(prices.pricing_currency.SGD);
 
         localStorage.setItem('currency', 'SGD');
@@ -370,6 +385,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.ZAR);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.ZAR);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.ZAR);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.ZAR);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.ZAR);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.ZAR);
         $('.pricing-currency').text(prices.pricing_currency.ZAR);
 
         localStorage.setItem('currency', 'ZAR');
@@ -432,6 +450,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.CHF);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.CHF);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.CHF);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.CHF);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.CHF);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.CHF);
         $('.pricing-currency').text(prices.pricing_currency.CHF);
 
         localStorage.setItem('currency', 'CHF');
@@ -494,6 +515,9 @@ $( document ).ready(function() {
         $('.saas-escrow-single-yearly').text(prices.saas_escrow_single_yearly.CAD);
         $('.saas-escrow-multi-yearly').text(prices.saas_escrow_multi_yearly.CAD);
         $('.software-custodian-single-monthly').text(prices.software_custodian_single_monthly.CAD);
+        $('.software-custodian-multi-monthly').text(prices.software_custodian_multi_monthly.CAD);
+        $('.software-custodian-single-yearly').text(prices.software_custodian_single_yearly.CAD);
+        $('.software-custodian-multi-yearly').text(prices.software_custodian_multi_yearly.CAD);
         $('.pricing-currency').text(prices.pricing_currency.CAD);
 
         localStorage.setItem('currency', 'CAD');

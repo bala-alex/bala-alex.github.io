@@ -12,11 +12,11 @@
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
-    <div class="navigation pb-4">
+    <div class="navigation">
       {% include navigation.html %}
     </div>
 
-    <div class="pricing section-medium pb-0">
+    <div class="pricing section-medium pb-0 mt-80">
       <div class="pricing-tabs container-fluid mt-2 px-0">
         <div class="navigation-sticky">
           <div class="pricing-container mx-auto">
@@ -1011,7 +1011,7 @@
             <div class="tab-pane fade" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
-                {% include pricing-tabs-software-escrow.html %}
+                {% include pricing-tabs-software-custodian.html %}
 
                 <div class="pricing-container mx-auto plan__add-ons mt-4 px-3">
                   <div class="plan__devider mx-auto my-5 w-100"></div>
@@ -1332,8 +1332,6 @@
   
   <script src="/js/faqDropdown.js"></script>
   <script src="/js/monthlyEscrowPricing.js"></script>
-  <script src="/js/geolocationPricing.js"></script>
-  <script src="/js/pricingCheckout.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
@@ -1361,18 +1359,31 @@
     var duration = 'Monthly';
 
     function selectPlan(button, planType, priceString, planID) {
+      checkoutAdOns = [];
+      checkoutText = [];
+      totalSum = 0;
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+
+      if (duration === 'Yearly') {
+        $('#checkout-period').text('per year');
+      } else {
+        $('#checkout-period').text('per month');
+      }
 
       const currency = localStorage.getItem('currency');
       checkoutText = planID + '-' + currency + '-' + duration;
 
+      // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
+      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
       $('.btn-primary-small2').removeClass('-is-selected').text('Add')
-      var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
+      $('.btn-yellow-small2').removeClass('-is-selected').text('Add')
+      // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price + 199;
-      $('#totalSum').text(totalSum);
+      totalSum = price
+      $('#totalSum').text(totalSum.toLocaleString());
 
       var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
@@ -1392,7 +1403,7 @@
         $(button).addClass('-is-selected').html('<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>Selected</span>');
         $('#checkout-cart').attr("style", "display: flex");
 
-        $('#planType').text(planType === 'single' ? 'Software Escrow (Single)' : planType === 'multiple' ? 'Software Escrow (Multi)' : planType === 'all' ? 'Software Escrow (All)' : planType)
+        $('#planType').text(planType === 'single' ? 'Software Custodian (Single)' : planType === 'multiple' ? 'Software Custodian (Multi)' : planType === 'all' ? 'Software Custodian (All)' : planType)
 
         if (planType === 'single') {
           $('.single').addClass('-is-selected');
@@ -1428,14 +1439,21 @@
       duration = value;
     }
 
-    function add(button, price, addonID) {
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+    function add(button, priceString, addonID) {
       const currency = localStorage.getItem('currency');
+      let price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+
+      if (duration === 'Yearly') {
+        price *= 12;
+      }
+
+      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = 'Add';
         button.classList.remove('-is-selected');
-        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID}`);
+        checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
       } else {
         totalSum += price;
         button.textContent = 'Added';
@@ -1443,7 +1461,7 @@
         checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
 
-      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected").length;
+      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected, .btn-yellow-small2.-is-selected").length;
 
       if (!addOns) {
         document.getElementById('adds').classList.add('d-none');
@@ -1453,10 +1471,12 @@
         addsElement.textContent = `Addons: ${addOns}`;
       }
 
-      document.getElementById('totalSum').textContent = totalSum;
+      document.getElementById('totalSum').textContent = totalSum.toLocaleString();
 
-      console.log('checkoutAdOns', checkoutAdOns);
     }
+
+
+
   </script>
 
   <script>
@@ -1603,20 +1623,19 @@
     });
   </script>
 
-<script>
-  function refreshPage(link) {
-    var href = link.getAttribute('href'); // Get the href attribute value
-    window.location.href = href; // Set the window location to the href value
-    setTimeout(function() {
-      window.location.reload(); // Reload the page after a slight delay
-    }, 1);
-  }
+  <script>
+    function refreshPage(link) {
+      var href = link.getAttribute('href');
+      window.location.href = href;
+      setTimeout(function () {
+        window.location.reload();
+      }, 1);
+    }
 
-  window.onload = function() {
-    // Scroll to the top of the page after a slight delay
-    setTimeout(function() {
-      window.scrollTo(0, 0); // Scroll to the top of the page after page is fully loaded
-    }, 1);
-  };
-</script>
+    window.onload = function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 1);
+    };
+  </script>
 </body>
