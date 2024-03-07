@@ -556,23 +556,23 @@
       <div class="pricing-tabs container-fluid mt-2 px-0">
         <div class="navigation-sticky">
           <div class="pricing-container mx-auto">
-            <div class="d-flex align-items-center justify-content-between py-1 navigation-border mobile-column mt-sm-30">
+            <div
+              class="d-flex align-items-center justify-content-between py-1 navigation-border mobile-column mt-sm-30">
               <div class="d-flex align-items-center">
                 <img class="mr-2 mb-1" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg"
                   alt="Software Backup Shield Icon" />
                 <p class="header__info text-dark-cyan font-35 mb-2">Sauvegarde de logiciel</p>
               </div>
               <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="intro-tab"
-                  data-toggle="pill" href="#intro" role="tab" aria-controls="intro"
-                  aria-selected="false">Introduction</a>
-                <a class="nav-link width-fit-content border-none text-bondi-blue" id="features-tab"
-                  data-toggle="pill" href="#features" role="tab" aria-controls="features"
-                  aria-selected="true">Features</a>
-                <a class="nav-link width-fit-content border-none text-bondi-blue"
-                  id="pricing-tab" data-toggle="pill" href="#pricing" role="tab"
-                  aria-controls="pricing" aria-selected="true">Pricing</a>
-
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="intro-tab" data-toggle="pill"
+                  href="#intro" role="tab" aria-controls="intro" aria-selected="false"
+                  onclick="refreshPage(this)">Introduction</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="features-tab" data-toggle="pill"
+                  href="#features" role="tab" aria-controls="features" aria-selected="true"
+                  onclick="refreshPage(this)">Features</a>
+                <a class="nav-link width-fit-content border-none text-bondi-blue" id="pricing-tab" data-toggle="pill"
+                  href="#pricing" role="tab" aria-controls="pricing" aria-selected="true"
+                  onclick="refreshPage(this)">Pricing</a>
               </div>
             </div>
 
@@ -734,8 +734,8 @@
                       <p class="information__subtitle mw-420">
                       </p>
                       <a class="easy__link text-secondary-link software-backup-href font-18"
-                      href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i
-                          class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+                        href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i class="fa fa-xs fa-angle-right"
+                          aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="row mt-80 mb-sm-50 column-reverse-mobile">
@@ -744,8 +744,8 @@
                       <p class="information__subtitle text-align-end ml-auto mw-420"></p>
                       <div class="d-flex justify-content-end">
                         <a class="easy__link text-secondary-link software-backup-href font-18"
-                        href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i
-                            class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+                          href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i class="fa fa-xs fa-angle-right"
+                            aria-hidden="true"></i></a>
                       </div>
                     </div>
                     <div class="col-md-5 col-sm-12 content-center">
@@ -763,8 +763,8 @@
                       <p class="information__title text-bondi-blue"></p>
                       <p class="information__subtitle mw-490"></p>
                       <a class="easy__link text-secondary-link software-backup-href ml-auto font-18"
-                      href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i
-                          class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+                        href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i class="fa fa-xs fa-angle-right"
+                          aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="row mt-80 mb-sm-50 column-reverse-mobile">
@@ -773,8 +773,8 @@
                       <p class="information__subtitle text-align-end ml-auto mw-450"></p>
                       <div class="d-flex justify-content-end">
                         <a class="easy__link text-secondary-link software-backup-href font-18"
-                        href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i
-                            class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+                          href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i class="fa fa-xs fa-angle-right"
+                            aria-hidden="true"></i></a>
                       </div>
                     </div>
                     <div class="col-md-5 col-sm-12 content-center">
@@ -792,8 +792,8 @@
                       <p class="information__title text-bondi-blue"></p>
                       <p class="information__subtitle mw-490"></p>
                       <a class="easy__link text-secondary-link software-backup-href font-18"
-                      href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i
-                          class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+                        href="software-backup.html#features" onclick="refreshPage(this)">En savoir plus <i class="fa fa-xs fa-angle-right"
+                          aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>
@@ -839,7 +839,8 @@
                     </div>
                   </div>
                   <div class="d-flex flex-wrap align-items-center mt-5">
-                    <a class="button btn-cerulean software-backup-href mr-4 my-4" href="software-backup.html#features" onclick="refreshPage(this)">
+                    <a class="button btn-cerulean software-backup-href mr-4 my-4" href="software-backup.html#features"
+                      onclick="refreshPage(this)">
                       
                     </a>
                     <p class="deposit-assets__text font-18 fw-400 mw-100 text-slate-gray mb-0 my-3"></p>
@@ -944,7 +945,8 @@
                       </a>
                       <div class="d-flex flex-column align-items-center">
                         <p class="header__text"></p>
-                        <a class="header__link software-backup-href" href="software-backup.html#features" onclick="refreshPage(this)"> <i class="fa fa-angle-right pt-1"
+                        <a class="header__link software-backup-href" href="software-backup.html#features"
+                          onclick="refreshPage(this)"> <i class="fa fa-angle-right pt-1"
                             aria-hidden="true"></i></a>
                       </div>
                     </div>
@@ -1226,8 +1228,7 @@
                     <div class="col-md-6 col-sm-12">
                       <p class="information__title text-align-end">Unlimited version available</p>
                       <p class="information__subtitle text-align-end ml-auto mb-0 mw-420">Vous avez besoin de stockage local ? Ou d’un accord de traitement des données pour le RGPD/l’HIPAA ? Pas de problème !</p>
-                      <p class="information__subtitle text-align-end ml-auto mw-420">Faites-nous <a
-                          href="verification.html"
+                      <p class="information__subtitle text-align-end ml-auto mw-420">Faites-nous <a href="verification.html"
                           class="text-bondi-blue text-underline verification-href fw-bold">vérifier et certifier</a> les dépôts.</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
@@ -1266,8 +1267,9 @@
                     <div class="row column-reverse-mobile">
                       <div class="col-md-6 col-sm-12">
                         <div class="works__config2">
-                          <img class="works__image2 ml-negative-80 pl-4" src="/images/software-backup/backup-settings.webp"
-                            alt="Illustration Backup Settings" loading="lazy" />
+                          <img class="works__image2 ml-negative-80 pl-4"
+                            src="/images/software-backup/backup-settings.webp" alt="Illustration Backup Settings"
+                            loading="lazy" />
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-12">
@@ -1297,8 +1299,9 @@
                         </div>
                       </div>
                       <div class="col-md-6 col-sm-12">
-                        <img class="works__image2 ml-negative-80 mt-80 pl-4" src="/images/software-backup/backup-assets.webp"
-                          alt="Illustration Backup Assets" loading="lazy" />
+                        <img class="works__image2 ml-negative-80 mt-80 pl-4"
+                          src="/images/software-backup/backup-assets.webp" alt="Illustration Backup Assets"
+                          loading="lazy" />
                       </div>
                     </div>
 
@@ -1507,7 +1510,8 @@
                         alt="Software Backups Illustration" loading="lazy" />
                     </div>
                   </div>
-                  <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-backup-href" href="software-backup.html#pricing" onclick="refreshPage(this)">
+                  <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-backup-href"
+                    href="software-backup.html#pricing" onclick="refreshPage(this)">
                     Explore Pricing
                   </a>
                 </div>
@@ -1597,10 +1601,12 @@
                     <span id='hide2'>Afficher moins de questions -</span>
                   </p>
                 </ul>
-                <p class="section__text mt-5 mb-5 text-center">Vous n’avez pas trouvé la réponse que vous cherchiez ? <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">Contactez-nous</a> </p>
+                <p class="section__text mt-5 mb-5 text-center">Vous n’avez pas trouvé la réponse que vous cherchiez ?
+                  <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline"
+                    href="contact.html">Contactez-nous</a> </p>
               </div>
 
-              
+
               <!-- Section -->
               <!DOCTYPE html>
 <div class="resources">
@@ -1668,8 +1674,7 @@
 </div>
 
             </div>
-            <div class="tab-pane fade" id="pricing" role="tabpanel"
-              aria-labelledby="pricing-tab">
+            <div class="tab-pane fade" id="pricing" role="tabpanel" aria-labelledby="pricing-tab">
               <!-- Pricing Tabs -->
               <div class="pricing mt-5">
                 <div class="pricing-container mx-auto px-3">
@@ -1720,13 +1725,11 @@
                             onclick="selectDuration('Yearly')" aria-controls="year" aria-selected="false">Annually
                             (Save 10%)</a>
                           <a class="nav-link active space-no-wrap w-270" data-toggle="pill" href="#month" role="tab"
-                            onclick="selectDuration('Monthly')" aria-controls="month"
-                            aria-selected="true">Monthly</a>
+                            onclick="selectDuration('Monthly')" aria-controls="month" aria-selected="true">Monthly</a>
 
                         </div>
                         <div class="tab-content mt-5" id="pills-tabContent">
-                          <div class="tab-pane show active fade" id="month" role="tabpanel"
-                            aria-labelledby="month-tab">
+                          <div class="tab-pane show active fade" id="month" role="tabpanel" aria-labelledby="month-tab">
                             <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited
                               Software Backup</p>
                             <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of
@@ -1793,8 +1796,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="tab-pane fade mw-520" id="year" role="tabpanel"
-                            aria-labelledby="year-tab">
+                          <div class="tab-pane fade mw-520" id="year" role="tabpanel" aria-labelledby="year-tab">
                             <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited
                               Software Backup</p>
                             <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of
@@ -1870,7 +1872,8 @@
                     <div class="row">
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="plan__add-ons-text ml-3 text-white font-28 mt-negative-25"><img class="mr-2"
-                          src="/images/software-escrow/icons/certified-badge.svg" alt="Certified Badge Icon" />Certified</p>
+                            src="/images/software-escrow/icons/certified-badge.svg"
+                            alt="Certified Badge Icon" />Certified</p>
                         <p class="plan__add-ons-subtext mb-2 text-white ml-3">Get automated monthly content and activity
                           verification reports<br> (supported platforms only)</p>
                         <a class="plan__add-ons-subtext mb-2 text-sun-yellow font-16 fw-600 verification-href ml-3"
@@ -1958,7 +1961,8 @@
                         <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1 ml-3"><img class="mr-2"
                             src="/images/compare-page/icons/advanced-integrations.svg"
                             alt="Advanced Integrations Icon ml-3" />Advanced Integrations</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">Set up the integration you need
+                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">Set up the integration you
+                          need
                           to make sure your assets are automatically secured. </p>
                         <span class="offer-btns3">
                           <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton3">Show Features <i
@@ -2273,7 +2277,9 @@
                     <span id='hide'>Afficher moins de questions -</span>
                   </p>
                 </ul>
-                <p class="section__text mt-5 mb-5 text-center">Vous n’avez pas trouvé la réponse que vous cherchiez ? <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">Contactez-nous</a> </p>
+                <p class="section__text mt-5 mb-5 text-center">Vous n’avez pas trouvé la réponse que vous cherchiez ?
+                  <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline"
+                    href="contact.html">Contactez-nous</a> </p>
               </div>
 
               <!-- Section -->
@@ -3840,125 +3846,124 @@
     }
   </script>
 
-<script>
-  $(function () {
-    var navigation = $('.navigation');
+  <script>
+    $(function () {
+      var navigation = $('.navigation');
 
-    $(window).scroll(function () {
-      if ($(window).scrollTop() <= 80) {
-        navigation.removeClass('d-none');
-      } else {
-        navigation.addClass('d-none');
-      }
-    });
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function (event) {
-
-    const hash = window.location.hash;
-
-    // Check if hash contains any of the tab identifiers
-    if (hash.includes('intro') || !hash) {
-      // Add active class to the intro tab
-      const introTab = document.querySelector('#intro-tab');
-      const introContent = document.querySelector('#intro');
-      if (introTab && introContent) {
-        introTab.classList.add('active');
-        introContent.classList.add('show', 'active');
-      }
-    } else if (hash.includes('features')) {
-      // Add active class to the features tab
-      const featuresTab = document.querySelector('#features-tab');
-      const featuresContent = document.querySelector('#features');
-      if (featuresTab && featuresContent) {
-        featuresTab.classList.add('active');
-        featuresContent.classList.add('show', 'active');
-      }
-    } else if (hash.includes('pricing')) {
-      // Add active class to the pricing tab
-      const pricingTab = document.querySelector('#pricing-tab');
-      const pricingContent = document.querySelector('#pricing');
-      if (pricingTab && pricingContent) {
-        pricingTab.classList.add('active');
-        pricingContent.classList.add('show', 'active');
-        event.preventDefault();
-
-        // Prevent scrolling
-        window.scrollTo(0, 0);
-      }
-    }
-  });
-</script>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Get the path from the URL
-    const path = window.location.pathname;
-
-    // If path is not empty
-    if (path !== '/') {
-      // Activate the corresponding tab
-      const tabLink = document.querySelector(`.nav-link[href="${path}"]`);
-      if (tabLink) {
-        tabLink.classList.add('active');
-        // Show the corresponding tab content
-        const tabContent = document.querySelector(path);
-        if (tabContent) {
-          tabContent.classList.add('show', 'active');
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 80) {
+          navigation.removeClass('d-none');
+        } else {
+          navigation.addClass('d-none');
         }
-      }
-    } else {
-      // If no specific tab is in the URL, trigger click on the intro tab
-      const introTab = document.querySelector('.nav-link[href="#intro"]');
-      if (introTab) {
-        introTab.classList.add('active');
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+
+      const hash = window.location.hash;
+
+      // Check if hash contains any of the tab identifiers
+      if (hash.includes('intro') || !hash) {
+        // Add active class to the intro tab
+        const introTab = document.querySelector('#intro-tab');
         const introContent = document.querySelector('#intro');
-        if (introContent) {
+        if (introTab && introContent) {
+          introTab.classList.add('active');
           introContent.classList.add('show', 'active');
         }
+      } else if (hash.includes('features')) {
+        // Add active class to the features tab
+        const featuresTab = document.querySelector('#features-tab');
+        const featuresContent = document.querySelector('#features');
+        if (featuresTab && featuresContent) {
+          featuresTab.classList.add('active');
+          featuresContent.classList.add('show', 'active');
+        }
+      } else if (hash.includes('pricing')) {
+        // Add active class to the pricing tab
+        const pricingTab = document.querySelector('#pricing-tab');
+        const pricingContent = document.querySelector('#pricing');
+        if (pricingTab && pricingContent) {
+          pricingTab.classList.add('active');
+          pricingContent.classList.add('show', 'active');
+          event.preventDefault();
+
+          // Prevent scrolling
+          window.scrollTo(0, 0);
+        }
       }
-    }
-  });
-
-  // Get all the tab links
-  const tabLinks = document.querySelectorAll('.nav-link');
-
-  // Add click event listener to each tab link
-  tabLinks.forEach(tab => {
-    tab.addEventListener('click', function (event) {
-      // Prevent default link behavior
-      event.preventDefault();
-
-      // Get the href attribute of the clicked tab
-      const tabHref = tab.getAttribute('href');
-
-      // Construct the new URL
-      const baseUrl = window.location.href.split('#')[0]; // Get the base URL without hash
-      const newPath = baseUrl + tabHref;
-
-      // Update the URL with the active tab
-      window.history.pushState(null, null, newPath);
     });
-  });
-</script>
+  </script>
 
-<script>
-  function refreshPage(link) {
-    var href = link.getAttribute('href'); // Get the href attribute value
-    window.location.href = href; // Set the window location to the href value
-    setTimeout(function() {
-      window.location.reload(); // Reload the page after a slight delay
-    }, 10);
-  }
 
-  window.onload = function() {
-    // Scroll to the top of the page after a slight delay
-    setTimeout(function() {
-      window.scrollTo(0, 0); // Scroll to the top of the page after page is fully loaded
-    }, 10);
-  };
-</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the path from the URL
+      const path = window.location.pathname;
+
+      // If path is not empty
+      if (path !== '/') {
+        // Activate the corresponding tab
+        const tabLink = document.querySelector(`.nav-link[href="${path}"]`);
+        if (tabLink) {
+          tabLink.classList.add('active');
+          // Show the corresponding tab content
+          const tabContent = document.querySelector(path);
+          if (tabContent) {
+            tabContent.classList.add('show', 'active');
+          }
+        }
+      } else {
+        // If no specific tab is in the URL, trigger click on the intro tab
+        const introTab = document.querySelector('.nav-link[href="#intro"]');
+        if (introTab) {
+          introTab.classList.add('active');
+          const introContent = document.querySelector('#intro');
+          if (introContent) {
+            introContent.classList.add('show', 'active');
+          }
+        }
+      }
+    });
+
+    // Get all the tab links
+    const tabLinks = document.querySelectorAll('.nav-link');
+
+    // Add click event listener to each tab link
+    tabLinks.forEach(tab => {
+      tab.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Get the href attribute of the clicked tab
+        const tabHref = tab.getAttribute('href');
+
+        // Construct the new URL
+        const baseUrl = window.location.href.split('#')[0]; // Get the base URL without hash
+        const newPath = baseUrl + tabHref;
+
+        // Update the URL with the active tab
+        window.history.pushState(null, null, newPath);
+      });
+    });
+  </script>
+
+  <script>
+    function refreshPage(link) {
+      var href = link.getAttribute('href');
+      window.location.href = href;
+      setTimeout(function () {
+        window.location.reload();
+      }, 1);
+    }
+
+    window.onload = function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0);
+      }, 1);
+    };
+  </script>
 </body>
 </html>
