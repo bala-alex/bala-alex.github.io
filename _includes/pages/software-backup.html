@@ -1793,7 +1793,7 @@
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
       totalSum = price
-      $('#totalSum').text(totalSum);
+      $('#totalSum').text(totalSum.toLocaleString());
 
       if ($(button).hasClass('-is-selected')) { // Check if button is already selected
         $(button).removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
@@ -1871,21 +1871,7 @@
         addsElement.textContent = `Addons: ${addOns}`;
       }
 
-      document.getElementById('totalSum').textContent = totalSum;
-
-      // Set data-cb-item-0 attribute
-      const checkoutSnippet = document.getElementById('checkout-snippet');
-      checkoutSnippet.setAttribute('data-cb-item-0', checkoutText);
-
-      // Clear other existing data-cb-item attributes
-      for (let i = 1; i <= checkoutAdOns.length; i++) {
-        checkoutSnippet.setAttribute(`data-cb-item-${i}`, checkoutAdOns[i - 1]);
-      }
-
-      // Remove remaining data-cb-item attributes
-      for (let i = checkoutAdOns.length + 1; checkoutSnippet.hasAttribute(`data-cb-item-${i}`); i++) {
-        checkoutSnippet.removeAttribute(`data-cb-item-${i}`);
-      }
+      document.getElementById('totalSum').textContent = totalSum.toLocaleString();
     }
   </script>
 
@@ -2047,5 +2033,12 @@
         window.scrollTo(0, 0);
       }, 1);
     };
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log('ready');
+      const currency = localStorage.getItem('currency');
+      $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
+    });
   </script>
 </body>
