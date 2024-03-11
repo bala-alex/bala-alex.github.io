@@ -32,13 +32,13 @@
               <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="intro-tab" data-toggle="pill"
                   href="#intro" role="tab" aria-controls="intro" aria-selected="false"
-                  onclick="refreshPage(this)">Introduction</a>
+                  onclick="refreshPage(this)">{{ site.data[page.lang]['software_backup_features']['introduction'] }}</a>
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="features-tab" data-toggle="pill"
                   href="#features" role="tab" aria-controls="features" aria-selected="true"
-                  onclick="refreshPage(this)">Features</a>
+                  onclick="refreshPage(this)">{{ site.data[page.lang]['software_backup_features']['features'] }}</a>
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="pricing-tab" data-toggle="pill"
                   href="#pricing" role="tab" aria-controls="pricing" aria-selected="true"
-                  onclick="refreshPage(this)">Pricing</a>
+                  onclick="refreshPage(this)">{{ site.data[page.lang]['software_backup_features']['pricing'] }}</a>
               </div>
             </div>
 
@@ -524,9 +524,8 @@
                         <img class="image-style mw-490" src="/images/disaster-recovery/begin-journey.webp"
                           alt="Illustration: Begin Your Journey to Uncompromised Security" loading="lazy" />
                       </div>
-                      <p class="information__main-title mb-2 mt-4">Our Features</p>
-                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">Discover the Codekeeper
-                        Advantage: Intuitive, reliable and comprehensive features at your fingertips.</p>
+                      <p class="information__main-title mb-2 mt-4">{{ site.data[page.lang]['software_backup_features']['our_features'] }}</p>
+                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">{{ site.data[page.lang]['software_backup_features']['discover_the_codekeeper'] }}</p>
                     </div>
                   </div>
                 </div>
@@ -538,18 +537,14 @@
                         alt="Illustration Automated Continuous Backups" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Automated Continuous Backups</p>
-                      <p class="information__subtitle">Ensure your data is always up-to-date with backups that run
-                        automatically. This feature minimizes data loss risk by continuously syncing the latest changes,
-                        offering peace of mind that your information is current and protected.</p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_backup_features']['automated_continuous_backups'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_backup_features']['ensure_your_data'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Cross-Platform Compatibility</p>
-                      <p class="information__subtitle text-align-end ml-auto">Maximize flexibility with a backup
-                        solution that is compatible across various development platforms. This feature allows seamless
-                        integration and backup processes regardless of the underlying technology stack.</p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['software_backup_features']['cross_platform'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['software_backup_features']['maximize_flexibility'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-backup/cross-platform.webp"
@@ -563,20 +558,14 @@
                         alt="Illustration Version Control Integration" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Version Control Integration</p>
-                      <p class="information__subtitle">Safeguard your code with backups that are fully integrated with
-                        version control systems. This ensures that every iteration of your software is preserved,
-                        allowing for easy restoration to any previous state if needed. </p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_backup_features']['version_control'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_backup_features']['safeguard_your_code'] }} </p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Secure Encryption</p>
-                      <p class="information__subtitle text-align-end ml-auto">Protect your assets with robust encryption
-                        protocols. All backup data is secured with industry-standard encryption, ensuring that sensitive
-                        information remains confidential and safe from unauthorized access. This feature is crucial for
-                        protecting intellectual property and client data in an age where cyber threats are increasingly
-                        sophisticated.</p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['software_backup_features']['secure_encription'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['software_backup_features']['protect_your_assets'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-backup/secure-encription.webp"
@@ -590,79 +579,70 @@
                         alt="Illustration Easy Recovery and Restoration" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Easy Recovery and Restoration</p>
-                      <p class="information__subtitle">With our intuitive restoration process, reverting to a previous
-                        version of your software or retrieving data is a hassle-free experience. This feature is vital
-                        for minimizing downtime and quickly responding to any operational issues or data loss incidents.
-                      </p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_backup_features']['easy_recovery_and'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_backup_features']['with_our_intuitive'] }}</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="container pb-100">
-                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">Other features</p>
+                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">{{ site.data[page.lang]['software_backup_features']['other_features'] }}</p>
                 <div class="row mt-3">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/history.svg" alt="History Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Full Version History</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_backup_features']['full_version_history'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">From minimal to full coverage, you can tailor your backup strategy
-                      with an unlimited backup history instead of the default three.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['from_minimal_to'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/certified.svg" alt="Certified Deposit Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Certified Deposit</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_backup_features']['certified_deposit'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Guarantee the integrity of your backups with automated content and
-                      activity verifications.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['guarantee_the_integrity'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/region.svg" alt="Storage Region Selection Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Storage Region Selection</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_backup_features']['storage_region_selection'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Keep your backups close to home and under trusted jurisdiction.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['keep_your_backups'] }}</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/iso.svg" alt="Information security Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">ISO 27001 information security</p>
-                    <p class="datacenters__subtitle">Codekeeper's commitment to information security ensures the highest
-                      level of protection for your backups.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['software_backup_features']['iso_information_security'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['codekeepers_commitment'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/storage.svg" alt="Storage Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">1TB storage available</p>
-                    <p class="datacenters__subtitle">Every Codekeeper Backup account comes with 1TB of storage space,
-                      providing ample room for your data needs right from the start.</p>
+                    <p class="datacenters__title mt-2">1TB {{ site.data[page.lang]['software_backup_features']['storage_available'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['every_codekeeper_backup'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/platform.svg" alt="Platform Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">One-stop asset management platform</p>
-                    <p class="datacenters__subtitle">Experience the future of digital asset management with Codekeeper's
-                      all-in-one platform.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['software_backup_features']['one_stop_asset'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['experience_the_future'] }}</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/concierge.svg" alt="Concierge onboarding Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">Concierge onboarding</p>
-                    <p class="datacenters__subtitle">Our complete, expert support will help you seamlessly integrate our
-                      solutions into your workflow.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['software_backup_features']['concierge_onboarding'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['our_complete'] }}</p>
                   </div>
                 </div>
               </div>
@@ -670,7 +650,7 @@
               <div class="bg-azure-blue section-large">
                 <div class="container">
                   <p class="header__info text-center">{{ site.data[page.lang]['source_code_escrow']['why_people'] }}</p>
-                  <p class="information__main-title">Software Backup</p>
+                  <p class="information__main-title">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</p>
                   <div class="row">
                     <div class="col-md-6 col-sm-12">
                       <img class="information__image content-center mt-4"
@@ -680,16 +660,13 @@
                     <div class="col-md-6 col-sm-12">
                       <p class="information__title">{{ site.data[page.lang]['source_code_escrow']['developers_love'] }}
                       </p>
-                      <p class="information__subtitle">Directly integrated with the tools developers use every day to
-                        write source code and fully automated. No need to spend time on making manual backups.</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_backup_features']['directly_integrated_with'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end">Customizable backup assets</p>
-                      <p class="information__subtitle text-align-end ml-auto">No need to manage releases, versions and
-                        which repository belongs where. In our user interface you can easily add and manage your
-                        repositories.</p>
+                      <p class="information__title text-align-end">{{ site.data[page.lang]['software_backup_features']['customizable_backup_assets'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['software_backup_features']['no_need_to_manage'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-backup/customizable-backup.webp"
@@ -711,7 +688,7 @@
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end">Unlimited version available</p>
+                      <p class="information__title text-align-end">{{ site.data[page.lang]['software_backup_features']['unlimited_version'] }}</p>
                       <p class="information__subtitle text-align-end ml-auto mb-0 mw-420">{{
                         site.data[page.lang]['source_code_escrow']['need_local'] }}</p>
                       <p class="information__subtitle text-align-end ml-auto mw-420">{{
@@ -732,8 +709,7 @@
               <div class="container-fluid resources">
                 <div class="beneficiary__container mx-auto mt-negative-50 mb-negative-50 position-relative bg-white">
                   <div class="container py-5">
-                    <p class="how-works__main-title mx-auto pb-5">How to backup your software assets in a few simple
-                      steps</p>
+                    <p class="how-works__main-title mx-auto pb-5">{{ site.data[page.lang]['software_backup_features']['how_to_backup_your'] }}</p>
                     <div class="row">
                       <div class="col-md-6 col-sm-12">
                         <div class="works__config mobile-centered">
@@ -741,7 +717,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_1'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text fw-light">Click and connect your software and data platforms</p>
+                            <p class="how-works__text fw-light">{{ site.data[page.lang]['software_backup_features']['click_and_connect_your'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-backup/click-and-connect.webp"
                               alt="Illustration Click and Connect" loading="lazy" />
                           </div>
@@ -767,7 +743,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_2'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text mt-1 fw-light mw-420">Configure your backup preferences</p>
+                            <p class="how-works__text mt-1 fw-light mw-420">{{ site.data[page.lang]['software_backup_features']['configure_your_backup'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-backup/configure-backup.webp"
                               alt="Illustration Configure Backup" loading="lazy" />
                           </div>
@@ -781,7 +757,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_3'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text mt-1 fw-light">Pick assets to add to the backup schedule</p>
+                            <p class="how-works__text mt-1 fw-light">{{ site.data[page.lang]['software_backup_features']['pick_assets_to_add'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-backup/pick-assets.webp"
                               alt="Illustration Assets to Add" loading="lazy" />
                           </div>
@@ -797,9 +773,8 @@
                     <div class="d-flex flex-column align-items-center">
                       <img class="how-works__active-icon" src="/images/how-it-works/icons/active-escrow.svg"
                         alt="Active Escrow Icon" loading="lazy" />
-                      <p class="how-works__text mt-3 mr-3 mb-2">Bullet proof backups!</p>
-                      <p class="how-works__subtext2 text-center mw-570">You have set up everything you need to make sure
-                        your organisation will never lose access to critical software infrastructure.</p>
+                      <p class="how-works__text mt-3 mr-3 mb-2">{{ site.data[page.lang]['software_backup_features']['bullet_proof_backups'] }}</p>
+                      <p class="how-works__subtext2 text-center mw-570">{{ site.data[page.lang]['software_backup_features']['you_have_set_up'] }}</p>
                       <p class="how-works__subtext2 text-center text-bondi-blue">{{
                         site.data[page.lang]['how_it_works']['for_more_details'] }}</p>
                       <a class="button btn-cerulean3 book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
@@ -817,49 +792,48 @@
                       <tr>
                         <th scope="col"
                           class="plan__table-subtitle border-none break-spaces font-35 line-height-40 fw-light">
-                          Solution<br> comparison</th>
+                          {{ site.data[page.lang]['software_backup_features']['solution_comparison'] }}</th>
                         <th scope="col"
                           class="plan__table-subtitle border-none text-center break-spaces bg-white fw-700 solutions-shadow-top pt-4">
                           <img class="mr-2" src="/images/software-escrow/icons/software-backup-icon.svg"
-                            alt="Software Backup Icon" loading="lazy" /><br>Software Backup
+                            alt="Software Backup Icon" loading="lazy" /><br>{{ site.data[page.lang]['software_backup_features']['software_backup'] }}
                         </th>
                         <th scope="col" class="plan__table-subtitle border-none text-center break-spaces font-16"><img
                             class="mr-2" src="/images/software-escrow/icons/software-escrow-icon.svg"
-                            alt="Software Escrow Icon" loading="lazy" /><br>Software Escrow</th>
+                            alt="Software Escrow Icon" loading="lazy" /><br>{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</th>
                         <th scope="col" class="plan__table-subtitle border-none text-center break-spaces font-16"><img
                             class="mr-2" src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-                            loading="lazy" /><br>SaaS Escrow</th>
+                            loading="lazy" /><br>{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</th>
                         <th scope="col" class="plan__table-subtitle border-none text-center break-spaces font-16"><img
                             class="mr-2" src="/images/software-escrow/icons/software-custodian-icon2.svg"
-                            alt="Software Custodian Icon" loading="lazy" /><br>Software Custodian</th>
+                            alt="Software Custodian Icon" loading="lazy" /><br>{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-1 fw-light">Usage Context</p>
+                          <p class="plan__table-text my-1 fw-light">{{ site.data[page.lang]['software_backup_features']['usage_context'] }}</p>
                         </th>
-                        <td class="plan__table-text text-center bg-white font-18 fw-600 solutions-shadow-side">Internal
+                        <td class="plan__table-text text-center bg-white font-18 fw-600 solutions-shadow-side">{{ site.data[page.lang]['software_backup_features']['internal'] }}
                         </td>
-                        <td class="plan__table-text text-center font-14 fw-light">Clients / Vendors</td>
-                        <td class="plan__table-text text-center font-14 fw-light">Clients / Vendors</td>
-                        <td class="plan__table-text text-center font-14 fw-light">Internal / Clients / Vendors</td>
+                        <td class="plan__table-text text-center font-14 fw-light">{{ site.data[page.lang]['software_backup_features']['client_vendors'] }}</td>
+                        <td class="plan__table-text text-center font-14 fw-light">{{ site.data[page.lang]['software_backup_features']['client_vendors'] }}</td>
+                        <td class="plan__table-text text-center font-14 fw-light">{{ site.data[page.lang]['software_backup_features']['internal_client_vendors'] }}</td>
                       </tr>
 
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Protection Level</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['protection_level'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3 solutions-shadow-side">
                           Recovery</td>
-                        <td class="plan__table-text text-center font-14 fw-light pt-3">Recovery</td>
-                        <td class="plan__table-text text-center font-14 fw-light pt-3">Recovery + Continuity</td>
-                        <td class="plan__table-text text-center font-14 fw-light">Recovery + Continuity<br>+
-                          Accountability</td>
+                        <td class="plan__table-text text-center font-14 fw-light pt-3">{{ site.data[page.lang]['software_backup_features']['recovery'] }}</td>
+                        <td class="plan__table-text text-center font-14 fw-light pt-3">{{ site.data[page.lang]['software_backup_features']['recovery_continuity'] }}</td>
+                        <td class="plan__table-text text-center font-14 fw-light">{{ site.data[page.lang]['software_backup_features']['recovery_continuity_accountability'] }}</td>
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Legal Framework</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['legal_framework'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3 solutions-shadow-side">-
                         </td>
@@ -872,7 +846,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Source Code</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['source_code'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white pt-3 solutions-shadow-side"><img class=""
                             src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
@@ -885,7 +859,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Data</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['data'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white pt-3 solutions-shadow-side"><img class=""
                             src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
@@ -898,7 +872,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Hosting Environments</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['hosting_environments'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3 solutions-shadow-side">-
                         </td>
@@ -910,7 +884,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">3rd Party Providers</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['3rd_party_providers'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3 solutions-shadow-side">-
                         </td>
@@ -922,7 +896,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">Data Operations</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['data_operations'] }}</p>
                         </th>
                         <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3 solutions-shadow-side">-
                         </td>
@@ -933,7 +907,7 @@
                       </tr>
                       <tr>
                         <th class="" scope="row">
-                          <p class="plan__table-text my-2 fw-light">SLA Performance</p>
+                          <p class="plan__table-text my-2 fw-light">{{ site.data[page.lang]['software_backup_features']['sla_performance'] }}</p>
                         </th>
                         <td
                           class="plan__table-text text-center bg-white font-18 fw-600 pt-3 pb-5 solutions-shadow-bottom">
@@ -955,42 +929,39 @@
                 <img class="header__bg-bottom-right-large" src="/images/landing/roadmap-shape-large.webp"
                   alt="Background Illustration of the bottom right section" />
                 <div class="container section-large">
-                  <p class="deposit-assets__title text-white mw-570">Software Backups</p>
+                  <p class="deposit-assets__title text-white mw-570">{{ site.data[page.lang]['software_backup_features']['software_backups'] }}</p>
                   <div class="row">
                     <div class="col-md-6 col-sm-12">
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/unlimited-users.svg"
                           alt="Unlimited Users Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Unlimited users</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['unlimited_users'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/unlimited-repositories.svg"
                           alt="Unlimited Repositories Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Unlimited repositories
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['unlimited_repositories'] }}
                         </p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/storage-included.svg"
                           alt="Storage Included Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Up to 1TB of storage
-                          included</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['up_to'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/automated.svg" alt="Automated Backup Icon"
                           loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Automated managed backup
-                          process</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['automated_managed_backup'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/security.svg" alt="Security Icon"
                           loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Enterprise-grade
-                          security</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['enterprise_grade_security'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-backup/icons/support.svg" alt="Customer Support Icon"
                           loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">24/7 customer support
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_backup_features']['customer_support'] }}
                         </p>
                       </div>
 
@@ -1002,7 +973,7 @@
                   </div>
                   <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-backup-href"
                     href="software-backup.html#pricing" onclick="refreshPage(this)">
-                    Explore Pricing
+                    {{ site.data[page.lang]['software_backup_features']['explore_pricing'] }}
                   </a>
                 </div>
               </div>
@@ -1012,77 +983,58 @@
                 </h4>
                 <ul class="faq mt-5 pb-5 pl-0">
                   <li class="q d-flex align-items-center justify-content-between">
-                    <p class="section__subtitle mt-3">What is Codekeeper Software Backup?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['what_is_codekeeper'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Codekeeper Software Backup offers effortless, automated backup solutions
-                    for all your software source code repositories and databases across major developer platforms,
-                    ensuring your data is always current, comprehensive, and securely stored.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['codekeeper_software_backup_offers'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does the automated backup process work?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['how_does_the'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Our fully automated backup system eliminates manual processes,
-                    automatically updating your backups across various platforms like GitHub, GitLab, Bitbucket, and
-                    Azure DevOps, providing a unified, streamlined backup management interface.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['our_fully_automated'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What platforms are supported by Codekeeper Software Backup?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['what_platforms'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Codekeeper Software Backup supports a wide range of developer platforms,
-                    including GitHub, GitLab, Bitbucket, and Azure DevOps, allowing you to centralize backups from these
-                    platforms in one seamless interface.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['codekeeper_software_backup_supports'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Is there a limit to the amount of data I can back up?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['is_there_a'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">No, Codekeeper Software Backup offers unlimited data storage options,
-                    ensuring you never have to worry about running out of storage space for your backups.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['no_codekeeper_software'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Can I customize my backup schedules?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['can_i_customize'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Yes, our service provides customizable backup schedules, giving you the
-                    flexibility to set up backups that fit your specific needs and workflow.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['yes_our_service'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How secure are my backups with Codekeeper?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['how_secure_are_my'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Security is a top priority for us. We employ advanced encryption and
-                    security measures to protect your backups from unauthorized access, ensuring your source code and
-                    application data are securely backed up.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['security_is_a_top'] }}</li>
 
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What is the recovery process like in case of data loss?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['what_is_the_recovery'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Codekeeper offers a simplified recovery process, enabling you to quickly
-                    and easily retrieve your data in the event of loss or damage, minimizing downtime and ensuring
-                    continuity.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['codekeeper_offers_a'] }}</li>
 
                   <div class="" id="questions2">
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How does Codekeeper Software Backup help with compliance?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['how_does_codekeeper'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Our backup solutions are designed to help you align effortlessly with
-                      industry standards and regulations such as ISO 27001, SOC 2, and GDPR, supporting your compliance
-                      needs.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['our_backup_solutions'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">What makes Codekeeper Software Backup different from other
-                        backup solutions?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['what_makes_codekeeper'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Our solution stands out by offering unlimited repositories and data
-                      storage, automated and customizable backup processes, and a unified backup management interface,
-                      all supported by a trusted partner network.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['our_solutions_stand'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How can I get started with Codekeeper Software Backup?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_backup_faq']['how_can_i_get'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Getting started is easy. Explore our features, see pricing details, and
-                      <a href="book-a-demo.html" class="text-underline book-a-demo-href ">book a call</a> with an
-                      advisor to discuss your specific backup needs and how we can tailor our solution to meet them.
+                    <li class="a section__text">{{ site.data[page.lang]['software_backup_faq']['getting_started_is'] }}
                     </li>
 
                   </div>
@@ -1109,36 +1061,36 @@
                     <div class="row">
                       <div class="col-md-6 col-sm-12 bg-alice-blue content-center">
                         <div class="px-3">
-                          <p class="risks__subtitle mt-5 font-24 fw-400 text-dark-cyan">Main Features</p>
+                          <p class="risks__subtitle mt-5 font-24 fw-400 text-dark-cyan">{{ site.data[page.lang]['software_backup_pricing']['main_features'] }}</p>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/unlimited-users.svg"
                               alt="Unlimited users icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited users</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['unlimited_users'] }}</p>
                           </div>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/unlimited-repositories.svg"
                               alt="Unlimited repositories icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited repositories</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['unlimited_repositories'] }}</p>
                           </div>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/unlimited-data.svg"
                               alt="Unlimited data storage icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Unlimited data storage</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['unlimited_data_storage'] }}</p>
                           </div>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/automated-backup.svg"
                               alt="Automated backup process icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Automated backup process</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['automated_backup'] }}</p>
                           </div>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/enterprise-grade.svg"
                               alt="Enterprise-grade security icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">Enterprise-grade security</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['enterprise_grade'] }}</p>
                           </div>
                           <div class="d-flex align-items-center mt-4">
                             <img class="mr-2" src="/images/compare-page/icons/customer-support.svg"
                               alt="24/7 customer support icon" loading="lazy" />
-                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">24/7 customer support</p>
+                            <p class="risks__subtitle mb-0 text-dark-cyan fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['customer_support'] }}</p>
                           </div>
                           <img class="image-backup-features my-5"
                             src="/images/software-backup/software-backups-illustration.webp"
@@ -1149,24 +1101,21 @@
                         <div class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab"
                           role="tablist">
                           <a class="nav-link w-270" data-toggle="pill" href="#year" role="tab"
-                            onclick="selectDuration('Yearly')" aria-controls="year" aria-selected="false">Annually
-                            (Save 10%)</a>
+                            onclick="selectDuration('Yearly')" aria-controls="year" aria-selected="false">{{ site.data[page.lang]['software_backup_pricing']['annually_save'] }}</a>
                           <a class="nav-link active space-no-wrap w-270" data-toggle="pill" href="#month" role="tab"
-                            onclick="selectDuration('Monthly')" aria-controls="month" aria-selected="true">Monthly</a>
+                            onclick="selectDuration('Monthly')" aria-controls="month" aria-selected="true">{{ site.data[page.lang]['software_backup_pricing']['monthly'] }}</a>
 
                         </div>
                         <div class="tab-content mt-5" id="pills-tabContent">
                           <div class="tab-pane show active fade" id="month" role="tabpanel" aria-labelledby="month-tab">
-                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited
-                              Software Backup</p>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of
-                              your software assets for your organization. </p>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
+                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">{{ site.data[page.lang]['software_backup_pricing']['unlimited_software_backup'] }}</p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['fully_automate_the'] }} </p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">{{ site.data[page.lang]['software_backup_pricing']['included_features'] }}: </p>
                             <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
                                 src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-                                alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
+                                alt="Disaster Recovery Planner Icon" loading="lazy" />{{ site.data[page.lang]['software_backup_pricing']['disaster_recovery_planner'] }} </p>
                             <div class="backup-devider my-4"></div>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms:
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">{{ site.data[page.lang]['software_backup_pricing']['available_platforms'] }}:
                             </p>
                             <div class="resources pb-3">
                               <div class="d-flex align-items-start flex-wrap">
@@ -1190,7 +1139,7 @@
                                     alt="Azure DevOps Logo" />
                                   <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
                                 </div>
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
+                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">{{ site.data[page.lang]['software_backup_pricing']['and_many_more'] }} </p>
                               </div>
                             </div>
                             <div class="backup-devider mt-4"></div>
@@ -1221,22 +1170,19 @@
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
                                   onclick="selectPlan(this, 'single', 'software_backup_monthly', 'Software-Backup')"
-                                  data-price="{{ site.data.pricing.prices.software_backup_monthly.USD }}">Select
-                                  Plan</button>
+                                  data-price="{{ site.data.pricing.prices.software_backup_monthly.USD }}">{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
                               </div>
                             </div>
                           </div>
                           <div class="tab-pane fade mw-520" id="year" role="tabpanel" aria-labelledby="year-tab">
-                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">Unlimited
-                              Software Backup</p>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">Fully automate the backup of
-                              your software assets for your organization. </p>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Included features: </p>
+                            <p class="risks__subtitle mt-2 font-30 fw-700 text-dark-cyan line-height-40">{{ site.data[page.lang]['software_backup_pricing']['unlimited_software_backup'] }}</p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-18">{{ site.data[page.lang]['software_backup_pricing']['fully_automate_the'] }} </p>
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">{{ site.data[page.lang]['software_backup_pricing']['included_features'] }}: </p>
                             <p class="risks__subtitle mb-0 text-dark-cyan font-18 fw-700 mt-4"><img class="mr-2"
                                 src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-                                alt="Disaster Recovery Planner Icon" loading="lazy" />Disaster Recovery Planner </p>
+                                alt="Disaster Recovery Planner Icon" loading="lazy" />{{ site.data[page.lang]['software_backup_pricing']['disaster_recovery_planner'] }} </p>
                             <div class="backup-devider my-4"></div>
-                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">Available platforms:
+                            <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-4">{{ site.data[page.lang]['software_backup_pricing']['available_platforms'] }}:
                             </p>
                             <div class="resources pb-3">
                               <div class="d-flex align-items-start">
@@ -1260,7 +1206,7 @@
                                     alt="Azure DevOps Logo" />
                                   <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 mt-1">Azure DevOps </p>
                                 </div>
-                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">And many more </p>
+                                <p class="risks__subtitle mb-0 text-slate-gray fw-400 font-14 m-2">{{ site.data[page.lang]['software_backup_pricing']['and_many_more'] }} </p>
                               </div>
                             </div>
                             <div class="backup-devider mt-4"></div>
@@ -1290,8 +1236,7 @@
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
                                   onclick="selectPlan(this, 'multiple', 'software_backup_yearly', 'Software-Backup')"
-                                  data-price="{{ site.data.pricing.prices.software_backup_yearly.USD }}">Select
-                                  Plan</button>
+                                  data-price="{{ site.data.pricing.prices.software_backup_yearly.USD }}">{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
                               </div>
                             </div>
                           </div>
@@ -1299,16 +1244,15 @@
                       </div>
                     </div>
                   </div>
-                  <p class="risks__subtitle mt-5 font-28 fw-400 text-dark-cyan line-height-40">Add-ons</p>
+                  <p class="risks__subtitle mt-5 font-28 fw-400 text-dark-cyan line-height-40">{{ site.data[page.lang]['software_backup_pricing']['add_ons'] }}</p>
 
                   <div class="plan__add-ons-bg bg-gradient-bondi-blue">
                     <div class="row">
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="plan__add-ons-text ml-3 text-white font-28 mt-negative-25"><img class="mr-2"
                             src="/images/software-escrow/icons/certified-badge.svg"
-                            alt="Certified Badge Icon" />Certified</p>
-                        <p class="plan__add-ons-subtext mb-2 text-white ml-3">Get automated monthly content and activity
-                          verification reports<br> (supported platforms only)</p>
+                            alt="Certified Badge Icon" />{{ site.data[page.lang]['software_backup_pricing']['certified'] }}</p>
+                        <p class="plan__add-ons-subtext mb-2 text-white ml-3">{{ site.data[page.lang]['software_backup_pricing']['get_automated_monthly'] }}</p>
                         <a class="plan__add-ons-subtext mb-2 text-sun-yellow font-16 fw-600 verification-href ml-3"
                           href="verification.html">
                           {{ site.data[page.lang]['software_escrow']['learn_more'] }} <i
@@ -1321,14 +1265,14 @@
                             <p class="plan__add-ons-text text-white font-30">+<span
                                 class="software-backup-certified text-white">{{
                                 site.data.pricing.prices.software_backup_certified.USD }}</span></p>
-                            <p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
+                            <p class="plan__add-ons-subtext text-italic text-white mb-0">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
                           </div>
                           <button class="button btn-yellow-small2 px-4"
-                            onclick="add(this, 'software_backup_certified', 'Certified-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_certified', 'Certified-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
                         </div>
                         <p
                           class="plan__add-ons-subtext text-white single-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0">
-                          Certify your disaster preparedness for next level certainty about your recovery process
+                          {{ site.data[page.lang]['software_backup_pricing']['certify_your_disaster'] }}
                         </p>
                       </div>
                     </div>
@@ -1339,13 +1283,12 @@
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1 ml-3"><img class="mr-2"
                             src="/images/compare-page/icons/deposit-packages.svg"
-                            alt="Advanced Deposits Icon" />Advanced Deposits</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">Upgrade your depositing
-                          configuration options to make sure your escrow is easy to maintain. </p>
+                            alt="Advanced Deposits Icon" />{{ site.data[page.lang]['software_backup_pricing']['advanced_deposits'] }}</p>
+                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">{{ site.data[page.lang]['software_backup_pricing']['update_your_deposits'] }}. </p>
                         <span class="offer-btns2">
-                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton2">Show Features <i
+                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton2">{{ site.data[page.lang]['software_backup_pricing']['show_features'] }} <i
                               class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton2">Hide Features <i
+                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton2">{{ site.data[page.lang]['software_backup_pricing']['hide_features'] }} <i
                               class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
                         </span>
 
@@ -1355,10 +1298,10 @@
                           <div class="mt-1">
                             <p class="plan__add-ons-text">+ <span class="software-backup-advanced-deposits">{{
                                 site.data.pricing.prices.software_backup_advanced_deposits.USD }}</span></p>
-                            <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
+                            <p class="plan__add-ons-subtext text-italic mb-0">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 'software_backup_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_advanced_deposits', 'Advanced-Deposits-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
                         </div>
                       </div>
                     </div>
@@ -1367,24 +1310,21 @@
                         <div class="col-md-4 col-sm-12 border-top-right">
                           <img class="mt-4" src="/images/compare-page/icons/storage-region.svg"
                             alt="Storage Region Icon" />
-                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Storage Region Selection
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">{{ site.data[page.lang]['software_backup_pricing']['storage_region'] }}
                           </p>
-                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Need your data
-                            locally? Select your preferred location from more than 60+ regions across the world. </p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_backup_pricing']['need_your_data'] }}</p>
                         </div>
                         <div class="col-md-4 col-sm-12 border-top-right">
                           <img class="mt-4" src="/images/compare-page/icons/ip-whitelisting.svg"
                             alt="IP Whitelisting Icon" />
-                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">IP Whitelisting</p>
-                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Connect to IP
-                            protected servers to allow taking automated deposits. </p>
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">{{ site.data[page.lang]['software_backup_pricing']['ip_whitelisting'] }}</p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_backup_pricing']['connect_to_ip'] }} </p>
                         </div>
                         <div class="col-md-4 col-sm-12 border-top-gray">
                           <img class="mt-4" src="/images/compare-page/icons/deposit-history.svg"
                             alt="Deposit History Icon" />
-                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">Deposit History</p>
-                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Store the
-                            entire history of deposits made into the escrow, storing each version. </p>
+                          <p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2">{{ site.data[page.lang]['software_backup_pricing']['deposit_history'] }}</p>
+                          <p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_backup_pricing']['store_the_entire_history'] }} </p>
                         </div>
                       </div>
                     </div>
@@ -1395,14 +1335,12 @@
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1 ml-3"><img class="mr-2"
                             src="/images/compare-page/icons/advanced-integrations.svg"
-                            alt="Advanced Integrations Icon ml-3" />Advanced Integrations</p>
-                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">Set up the integration you
-                          need
-                          to make sure your assets are automatically secured. </p>
+                            alt="Advanced Integrations Icon ml-3" />{{ site.data[page.lang]['software_backup_pricing']['advanced_integrations'] }}</p>
+                        <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">{{ site.data[page.lang]['software_backup_pricing']['set_up_the_integration'] }} </p>
                         <span class="offer-btns3">
-                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton3">Show Features <i
+                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton3">{{ site.data[page.lang]['software_backup_pricing']['show_features'] }} <i
                               class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton3">Hide Features <i
+                          <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton3">{{ site.data[page.lang]['software_backup_pricing']['hide_features'] }} <i
                               class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
                         </span>
 
@@ -1412,10 +1350,10 @@
                           <div class="mt-1">
                             <p class="plan__add-ons-text">+ <span class="software-backup-advanced-integrations">{{
                                 site.data.pricing.prices.software_backup_advanced_integrations.USD }}</span></p>
-                            <p class="plan__add-ons-subtext text-italic mb-0">per month</p>
+                            <p class="plan__add-ons-subtext text-italic mb-0">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 'software_backup_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
+                            onclick="add(this, 'software_backup_advanced_integrations', 'Advanced-Integrations-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
                         </div>
                       </div>
                     </div>
@@ -1481,22 +1419,21 @@
                 <div class="plan__checkout-container mt-5" id="checkout-cart">
                   <div class="container d-flex align-items-center justify-content-between flex-wrap">
                     <div class="my-2">
-                      <p class="plan__checkout-text text-dark-cyan my-2 fw-bold" id="planType">Please select your plan
+                      <p class="plan__checkout-text text-dark-cyan my-2 fw-bold" id="planType">{{ site.data[page.lang]['software_backup_pricing']['please_select_your'] }}
                       </p>
-                      <p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
+                      <p id="adds" class="d-none text-dark-cyan my-2">{{ site.data[page.lang]['software_backup_pricing']['add_ons'] }}: <span id="addOns"></span></p>
                     </div>
                     <div class="d-flex my-2 mt-3">
-                      <p class="plan__checkout-amount my-2 mr-2">Total:</p>
+                      <p class="plan__checkout-amount my-2 mr-2">{{ site.data[page.lang]['software_backup_pricing']['total'] }}:</p>
                       <div class="plan__checkout-total"><span class="pricing-currency">$</span><span
                           id="totalSum">0</span></div>
-                      <p class="plan__checkout-amount mt-2"><sup id="checkout-period">per month</sup></p>
+                      <p class="plan__checkout-amount mt-2"><sup id="checkout-period">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</sup></p>
                     </div>
                     <div class="d-flex align-items-center my-2 flex-wrap">
-                      <a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">Pay
-                        by Invoice</a>
+                      <a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">{{ site.data[page.lang]['software_backup_pricing']['pay_by_invoice'] }}</a>
                       <a style="width: 230px;" class="text-uppercase button btn-bondi-blue3 my-4"
                         href="javascript:void(0)" onclick="openCheckout()">
-                        Checkout
+                        {{ site.data[page.lang]['software_backup_pricing']['checkout'] }}
                       </a>
                     </div>
                   </div>
