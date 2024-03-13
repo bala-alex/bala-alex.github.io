@@ -2,9 +2,8 @@
 <div class="pricing-tabs container-fluid px-0">
 	<div class="row pricing-container mx-auto mt-2">
 		<div class="col-md-3 col-sm-12">
-			<p class="plan__add-ons-title mt-4 font-50 fw-light line-height-53">Select your<br> plan</p>
-			<p class="plan__subtitle text-slate-gray mt-3 font-18">Software escrow plans are per application. Add more when
-				needed in your account. </p>
+			<p class="plan__add-ons-title mt-4 font-50 fw-light line-height-53">{{ site.data[page.lang]['software_escrow_plans']['select_your_plan'] }}</p>
+			<p class="plan__subtitle text-slate-gray mt-3 font-18">{{ site.data[page.lang]['software_escrow_plans']['software_escrow_plans'] }} </p>
 		</div>
 		<div class="col-md-9 col-sm-12">
 			<div class="pricing-container mx-auto">
@@ -27,52 +26,48 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-single-icon.svg"
 											alt="Software Custodian Single Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">Single</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['single'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for a single client or vendor. </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to'] }} </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
 												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">1</span> Client/Vendor Relationship </p>
+												class="text-secondary-dark fw-700">1</span> {{ site.data[page.lang]['software_custodian_plans']['client_vendor_relationship'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
 										<p class="plan__fee-amount mb-0 software-custodian-single-monthly fw-bold font-35">{{
 											site.data.pricing.prices.software_custodian_single_monthly.USD }}</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per month,
-											paid monthly </p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_month'] }} </p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -90,8 +85,7 @@
 										<div class="mt-4">
 
 											<button class="button btn-bondi-blue4 valid-plan"
-												onclick="selectPlan(this, 'single', 'software_custodian_single_monthly', 'Software-Custodian-Single')"></i>Select
-												Plan</button>
+												onclick="selectPlan(this, 'single', 'software_custodian_single_monthly', 'Software-Custodian-Single')"></i>{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
 										</div>
 
 									</div>
@@ -102,55 +96,51 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-multi-icon.svg"
 											alt="Software Custodian Multi Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">Multi</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['multi'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for for up to 5 clients or vendors. </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to_provide'] }} </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
 												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">5</span> Client/Vendor Relationships </p>
+												class="text-secondary-dark fw-700">5</span> {{ site.data[page.lang]['software_custodian_plans']['client_vendor_relationships'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/sla-operations.svg" alt="SLA Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">SLA</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['sla_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
 										<p class="plan__fee-amount mb-0 software-custodian-multi-monthly fw-bold font-35">{{
 											site.data.pricing.prices.software_custodian_multi_monthly.USD }}</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per month,
-											paid monthly</p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_month'] }}</p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -168,8 +158,7 @@
 										<div class="mt-4">
 											<button class="button btn-bondi-blue4 valid-plan"
 												onclick="selectPlan(this, 'multiple', 'software_custodian_multi_monthly', 'Software-Custodian-Multi')"
-												data-price="{{ site.data.pricing.prices.software_custodian_multi_monthly.USD }}">Select
-												Plan</button>
+												data-price="{{ site.data.pricing.prices.software_custodian_multi_monthly.USD }}">{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
 										</div>
 
 									</div>
@@ -181,54 +170,50 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-all-icon.svg"
 											alt="Software Custodian All Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">All</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['all'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for all your clients or vendors. </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to_provide_life'] }} </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
 												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">All</span> Client/Vendor Relationships </p>
+												class="text-secondary-dark fw-700">All</span> {{ site.data[page.lang]['software_custodian_plans']['client_vendor_relationships'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }}</p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/sla-operations.svg" alt="SLA Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">SLA</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['sla_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
-										<p class="plan__fee-amount mb-0 fw-bold font-35">Custom</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per month,
-											paid monthly </p>
+										<p class="plan__fee-amount mb-0 fw-bold font-35">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_month'] }} </p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -244,8 +229,7 @@
 												}}</p>
 										</div>
 										<div class="mt-4">
-											<button class="button btn-bondi-blue4" data-toggle="modal" data-target="#exampleModal33">Build a
-												Quote</button>
+											<button class="button btn-bondi-blue4" data-toggle="modal" data-target="#exampleModal33">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</button>
 										</div>
 									</div>
 								</div>
@@ -259,52 +243,48 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-single-icon.svg"
 											alt="Software Custodian Single Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">Single</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['single'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for a single client or vendor. </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to'] }} </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
 												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">1</span> Client/Vendor Relationship </p>
+												class="text-secondary-dark fw-700">1</span> {{ site.data[page.lang]['software_custodian_plans']['client_vendor_relationship'] }}</p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
 										<p class="plan__fee-amount mb-0 software-custodian-single-yearly fw-bold font-35">{{
 											site.data.pricing.prices.software_custodian_single_yearly.USD }}</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per year,
-											paid annually </p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_year'] }} </p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -322,8 +302,7 @@
 										<div class="mt-4">
 											<button class="button btn-bondi-blue4 valid-plan"
 												onclick="selectPlan(this, 'single', 'software_custodian_single_yearly', 'Software-Custodian-Single')"
-												data-price="{{ site.data.pricing.prices.software_custodian_single_yearly.USD }}">Select
-												Plan</button>
+												data-price="{{ site.data.pricing.prices.software_custodian_single_yearly.USD }}">{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
 										</div>
 
 									</div>
@@ -334,55 +313,51 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-multi-icon.svg"
 											alt="Software Custodian Multi Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">Multi</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['multi'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for for up to 5 clients or vendors.</p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to_provide'] }}</p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
 												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">5</span> Client/Vendor Relationships </p>
+												class="text-secondary-dark fw-700">5</span> {{ site.data[page.lang]['software_custodian_plans']['client_vendor_relationships'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/sla-operations.svg" alt="SLA Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">SLA</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['sla_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
 										<p class="plan__fee-amount mb-0 software-custodian-multi-yearly fw-bold font-35">{{
 											site.data.pricing.prices.software_custodian_multi_yearly.USD }}</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per year,
-											paid annually </p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_year'] }} </p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -400,8 +375,7 @@
 										<div class="mt-4">
 											<button class="button btn-bondi-blue4 valid-plan"
 												onclick="selectPlan(this, 'multiple', 'software_custodian_multi_yearly', 'Software-Custodian-Multi')"
-												data-price="{{ site.data.pricing.prices.software_custodian_multi_yearly.USD }}">Select
-												Plan</button>
+												data-price="{{ site.data.pricing.prices.software_custodian_multi_yearly.USD }}">{{ site.data[page.lang]['software_backup_pricing']['select_plan'] }}</button>
 										</div>
 
 									</div>
@@ -413,53 +387,48 @@
 									<div class="d-flex align-items-center">
 										<img class="mr-1 mw-50" src="/images/landing/icons/data-custodian-shield.svg"
 											alt="Software Custodian Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">Software Custodian</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-20">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
 									</div>
 									<div class="d-flex align-items-center mt-2">
 										<img class="mr-2 mw-40" src="/images/software-custodian/icons/software-custodian-all-icon.svg"
 											alt="Software Custodian All Icon" loading="lazy" />
-										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">All</p>
+										<p class="plan__subtitle text-dark-cyan ml-0 my-2 font-30">{{ site.data[page.lang]['software_escrow_plans']['all'] }}</p>
 									</div>
 
-									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">Select this plan to provide life cycle
-										accountability for all your clients or vendors. </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 min-h-70">{{ site.data[page.lang]['software_custodian_plans']['select_this_plan_to_provide_life'] }} </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="my-1 min-h-100">
 										<p class="plan__text-tooltip text-slate-gray"><img class="mr-2"
 												src="/images/software-custodian/icons/client-relationship.svg"
-												alt="Client/Vendor Relationship Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">All</span> Client/Vendor Relationships </p>
+												alt="Client/Vendor Relationship Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['all_client_vendor_relationships'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/privacy-operations.svg" alt="Privacy Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">Privacy</span> Operations </p>
+												loading="lazy" /><span class="text-secondary-dark fw-700">{{ site.data[page.lang]['software_custodian_plans']['privacy_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/regulatory-operations.svg"
-												alt="Regulatory Operations Icon" loading="lazy" /><span
-												class="text-secondary-dark fw-700">Regulatory</span> Operations </p>
+												alt="Regulatory Operations Icon" loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['regulatory_operations'] }} </p>
 										<p class="plan__text-tooltip text-slate-gray mt-1"><img class="mr-2"
 												src="/images/software-custodian/icons/sla-operations.svg" alt="SLA Operations Icon"
-												loading="lazy" /><span class="text-secondary-dark fw-700">SLA</span> Operations </p>
+												loading="lazy" />{{ site.data[page.lang]['software_custodian_plans']['sla_operations'] }} </p>
 									</div>
 									<div class="plan__devider2 mx-auto my-3"></div>
-									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">Also included solutions: </p>
+									<p class="plan__text-tooltip text-slate-gray mt-1 font-12">{{ site.data[page.lang]['software_escrow_plans']['also_included_solutions'] }}: </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/disaster-recovery-planner-icon.svg"
-											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">Disaster Recovery
-											Planner</span> </p>
+											alt="Disaster Recovery Planner Icon" loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_escrow_plans']['disaster_recovery_planner'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-											loading="lazy" /><span class="fw-700">Software Backup</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_backup'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-											loading="lazy" /><span class="fw-700">Software Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['software_escrow'] }}</span> </p>
 									<p class="plan__text-tooltip text-dark-cyan mt-3"><img class="mr-2"
 											src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-											loading="lazy" /><span class="fw-700">SaaS Escrow</span> </p>
+											loading="lazy" /><span class="fw-700">{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}</span> </p>
 									<div class="plan__devider2 mx-auto my-3"></div>
 									<div class="mt-1">
-										<p class="plan__fee-amount mb-0 fw-bold font-35">Custom</p>
-										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">Per application per year,
-											paid annually </p>
+										<p class="plan__fee-amount mb-0 fw-bold font-35">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+										<p class="plan__text-tooltip text-slate-gray mt-2 text-italic font-12">{{ site.data[page.lang]['software_escrow_plans']['per_application_per_year'] }} </p>
 										<div class="plan__devider2 mx-auto my-3"></div>
 
 										<div class="d-flex align-items-center justify-content-between mt-3">
@@ -475,8 +444,7 @@
 												}}</p>
 										</div>
 										<div class="mt-4">
-											<button class="button btn-bondi-blue4" data-toggle="modal" data-target="#exampleModal34">Build a
-												Quote</button>
+											<button class="button btn-bondi-blue4" data-toggle="modal" data-target="#exampleModal34">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</button>
 										</div>
 									</div>
 								</div>
@@ -498,7 +466,7 @@
 											<div class="m-0">
 												<div class="section__modal-form p-0">
 													<div class="d-flex align-items-center justify-content-between w-100">
-														<h3 class="section__modal-title2 mt-3">Build a Quote</h3>
+														<h3 class="section__modal-title2 mt-3">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</h3>
 														<img class="mr-1 mw-50 mt-3 mr-4"
 															src="/images/landing/icons/data-custodian-shield.svg"
 															alt="Software Custodian Icon" loading="lazy">
@@ -536,7 +504,7 @@
 											<div class="m-0">
 												<div class="section__modal-form p-0">
 													<div class="d-flex align-items-center justify-content-between w-100">
-														<h3 class="section__modal-title2 mt-3">Build a Quote</h3>
+														<h3 class="section__modal-title2 mt-3">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</h3>
 														<img class="mr-1 mw-50 mt-3 mr-4"
 															src="/images/landing/icons/data-custodian-shield.svg"
 															alt="Software Custodian Icon" loading="lazy">
@@ -567,16 +535,15 @@
 	<div class="pricing-container mx-auto plan__add-ons mt-0 px-3">
 		<div class="row">
 			<div class="col-md-3 col-sm-12 py-3">
-				<p class="plan__add-ons-title mb-3">Add-ons</p>
+				<p class="plan__add-ons-title mb-3">{{ site.data[page.lang]['software_backup_pricing']['add_ons'] }}</p>
 			</div>
 		</div>
 		<div class="plan__add-ons-bg mx-1 bg-gradient-bondi-blue">
 			<div class="row">
 				<div class="col-md-3 col-sm-12 py-4">
 					<p class="plan__add-ons-text ml-3 text-white font-28 mt-negative-25"><img class="mr-2"
-							src="/images/software-escrow/icons/certified-badge.svg" alt="Certified Badge Icon" />Certified</p>
-					<p class="plan__add-ons-subtext ml-3 mb-2 text-white">Get automated monthly content and activity verification
-						reports (supported platforms only)</p>
+							src="/images/software-escrow/icons/certified-badge.svg" alt="Certified Badge Icon" />{{ site.data[page.lang]['software_escrow_plans']['certified'] }}</p>
+					<p class="plan__add-ons-subtext ml-3 mb-2 text-white">{{ site.data[page.lang]['software_escrow_plans']['get_automated_monthly'] }}</p>
 					<a class="plan__add-ons-subtext ml-3 mb-2 text-sun-yellow font-16 fw-600 verification-href"
 						href="verification.html">
 						{{ site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-chevron-right ml-2"
@@ -589,13 +556,13 @@
 							<p class="plan__add-ons-text text-white font-30">+<span
 									class="software-custodian-single-certified text-white">{{
 									site.data.pricing.prices.software_custodian_single_certified.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
+							<p class="plan__add-ons-subtext text-italic text-white mb-0">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-yellow-small2"
-							onclick="add(this, 'software_custodian_single_certified', 'Certified-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_single_certified', 'Certified-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 					<p class="plan__add-ons-subtext text-white single-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0 mx-3">
-						Certify your disaster preparedness for next level certainty about your recovery process
+						{{ site.data[page.lang]['software_escrow_plans']['certify_your_disaster'] }}
 					</p>
 
 				</div>
@@ -605,21 +572,21 @@
 							<p class="plan__add-ons-text text-white font-30">+<span
 									class="software-custodian-multi-certified text-white">{{
 									site.data.pricing.prices.software_custodian_multi_certified.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic text-white mb-0">per month</p>
+							<p class="plan__add-ons-subtext text-italic text-white mb-0">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-yellow-small2"
-							onclick="add(this, 'software_custodian_multi_certified', 'Certified-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_multi_certified', 'Certified-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 					<p
 						class="plan__add-ons-subtext text-white multiple-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0 mx-3">
-						Certify your disaster preparedness for next level certainty about your recovery process
+						{{ site.data[page.lang]['software_escrow_plans']['certify_your_disaster'] }}
 					</p>
 				</div>
 				<div class="col-md-3 col-sm-12 py-4">
 					<div class="d-flex align-items-center justify-content-between mt-3 mx-3">
 						<div>
-							<p class="plan__add-ons-text text-white font-30">Custom</p>
-							<p class="plan__add-ons-subtext text-italic text-white">per month</p>
+							<p class="plan__add-ons-text text-white font-30">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+							<p class="plan__add-ons-subtext text-italic text-white">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 					</div>
 				</div>
@@ -629,14 +596,13 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-12 py-4">
 					<p class="plan__add-ons-text ml-3"><img class="mr-2" src="/images/compare-page/icons/deposit-packages.svg"
-							alt="Advanced Deposits Icon" />Advanced Deposits</p>
-					<p class="plan__add-ons-subtext ml-3 mb-2">Upgrade your depositing configuration options to make sure your
-						escrow is easy to maintain.</p>
+							alt="Advanced Deposits Icon" />{{ site.data[page.lang]['software_escrow_plans']['advanced_deposits'] }}</p>
+					<p class="plan__add-ons-subtext ml-3 mb-2">{{ site.data[page.lang]['software_escrow_plans']['upgrade_your_depositing'] }}</p>
 					<span class="offer-btns2">
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton2">Show Features
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton2">{{ site.data[page.lang]['software_backup_pricing']['show_features'] }}
 							<i class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i>
 						</p>
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton2">Hide Features <i
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton2">{{ site.data[page.lang]['software_backup_pricing']['hide_features'] }} <i
 								class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
 					</span>
 				</div>
@@ -646,10 +612,10 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-single-advanced-deposits">{{
 									site.data.pricing.prices.software_custodian_single_advanced_deposits.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_single_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_single_advanced_deposits', 'Advanced-Deposits-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 
 				</div>
@@ -658,17 +624,17 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-multi-advanced-deposits">{{
 									site.data.pricing.prices.software_custodian_multi_advanced_deposits.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_multi_advanced_deposits', 'Advanced-Deposits-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_multi_advanced_deposits', 'Advanced-Deposits-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 py-4">
 					<div class="d-flex align-items-center justify-content-between mt-4 mx-3">
 						<div>
-							<p class="plan__add-ons-text text-dark-cyan font-20">Custom</p>
-							<p class="plan__add-ons-subtext text-italic text-slate-gray">per month</p>
+							<p class="plan__add-ons-text text-dark-cyan font-20">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+							<p class="plan__add-ons-subtext text-italic text-slate-gray">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 					</div>
 				</div>
@@ -678,22 +644,19 @@
 				<div class="row">
 					<div class="col-md-4 col-sm-12 border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/storage-region.svg" alt="Storage Region Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Storage Region Selection
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['storage_region_selection'] }}
 						</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Need your data locally?
-							Select your preferred location from more than 60+ regions across the world. </p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['need_your_data_locally'] }} </p>
 					</div>
 					<div class="col-md-4 col-sm-12 border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/ip-whitelisting.svg" alt="IP Whitelisting Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">IP Whitelisting</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Connect to IP protected
-							servers to allow taking automated deposits. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['ip_whitelisting'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['connect_to_ip'] }} </p>
 					</div>
 					<div class="col-md-4 col-sm-12 border-top-gray pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/deposit-history.svg" alt="Deposit History Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Deposit History</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Store the entire history of
-							deposits made into the escrow, storing each version. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['deposit_history'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['store_the_entire'] }} </p>
 					</div>
 				</div>
 			</div>
@@ -703,14 +666,12 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-12 py-4">
 					<p class="plan__add-ons-text ml-3"><img class="mr-2"
-							src="/images/compare-page/icons/advanced-integrations.svg" alt="Advanced Integrations Icon" />Advanced
-						Integrations</p>
-					<p class="plan__add-ons-subtext ml-3 mb-2">Set up the integration you need to make sure your assets are
-						automatically secured.</p>
+							src="/images/compare-page/icons/advanced-integrations.svg" alt="Advanced Integrations Icon" />{{ site.data[page.lang]['software_escrow_plans']['advanced_integrations'] }}</p>
+					<p class="plan__add-ons-subtext ml-3 mb-2">{{ site.data[page.lang]['software_escrow_plans']['set_up_the_integration'] }}</p>
 					<span class="offer-btns3">
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton3">Show Features <i
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton3">{{ site.data[page.lang]['software_backup_pricing']['show_features'] }} <i
 								class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton3">Hide Features <i
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton3">{{ site.data[page.lang]['software_backup_pricing']['hide_features'] }} <i
 								class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
 					</span>
 				</div>
@@ -719,10 +680,10 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-single-advanced-integrations">{{
 									site.data.pricing.prices.software_custodian_single_advanced_integrations.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_single_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_single_advanced_integrations', 'Advanced-Integrations-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 multiple py-4">
@@ -730,17 +691,17 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-multi-advanced-integrations">{{
 									site.data.pricing.prices.software_custodian_multi_advanced_integrations.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_multi_advanced_integrations', 'Advanced-Integrations-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_multi_advanced_integrations', 'Advanced-Integrations-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 py-4">
 					<div class="d-flex align-items-center justify-content-between mt-4 mx-3">
 						<div>
-							<p class="plan__add-ons-text text-dark-cyan font-20">Custom</p>
-							<p class="plan__add-ons-subtext text-italic text-slate-gray">per month</p>
+							<p class="plan__add-ons-text text-dark-cyan font-20">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+							<p class="plan__add-ons-subtext text-italic text-slate-gray">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 					</div>
 				</div>
@@ -803,13 +764,12 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-12 py-4">
 					<p class="plan__add-ons-text ml-3"><img class="mr-2" src="/images/compare-page/icons/compliance-support.svg"
-							alt="Compliance Support SLA Icon" />Compliance Support SLA</p>
-					<p class="plan__add-ons-subtext ml-3 mb-2">Maximize security and compliance features to ensure that both
-						critical and sensitive data is always kept safe and secure.</p>
+							alt="Compliance Support SLA Icon" />{{ site.data[page.lang]['software_escrow_plans']['compliance_support_sla'] }}</p>
+					<p class="plan__add-ons-subtext ml-3 mb-2">{{ site.data[page.lang]['software_escrow_plans']['maximize_security'] }}</p>
 					<span class="offer-btns5">
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton5">Show Features <i
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton5">{{ site.data[page.lang]['software_backup_pricing']['show_features'] }} <i
 								class="fa fa-sm fa-chevron-down text-bondi-blue ml-1"></i></p>
-						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton5">Hide Features <i
+						<p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="closeButton5">{{ site.data[page.lang]['software_backup_pricing']['hide_features'] }} <i
 								class="fa fa-sm fa-chevron-up text-bondi-blue ml-1"></i></p>
 					</span>
 				</div>
@@ -819,10 +779,10 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-single-compliance-support">{{
 									site.data.pricing.prices.software_custodian_single_compliance_support.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_single_compliance_support', 'Compliance-Support-SLA-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_single_compliance_support', 'Compliance-Support-SLA-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 multiple py-4">
@@ -830,17 +790,17 @@
 						<div>
 							<p class="plan__add-ons-text">+<span class="software-custodian-multi-compliance-support">{{
 									site.data.pricing.prices.software_custodian_multi_compliance_support.USD }}</span></p>
-							<p class="plan__add-ons-subtext text-italic">per month</p>
+							<p class="plan__add-ons-subtext text-italic">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 						<button class="button btn-primary-small2"
-							onclick="add(this, 'software_custodian_multi_compliance_support', 'Compliance-Support-SLA-Add-On')">Add</button>
+							onclick="add(this, 'software_custodian_multi_compliance_support', 'Compliance-Support-SLA-Add-On')">{{ site.data[page.lang]['software_backup_pricing']['add'] }}</button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12 py-4">
 					<div class="d-flex align-items-center justify-content-between mt-4 mx-3">
 						<div>
-							<p class="plan__add-ons-text text-dark-cyan font-20">Custom</p>
-							<p class="plan__add-ons-subtext text-italic text-slate-gray">per month</p>
+							<p class="plan__add-ons-text text-dark-cyan font-20">{{ site.data[page.lang]['software_escrow_plans']['custom'] }}</p>
+							<p class="plan__add-ons-subtext text-italic text-slate-gray">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</p>
 						</div>
 					</div>
 				</div>
@@ -850,35 +810,30 @@
 				<div class="row">
 					<div class="col border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/diligence-support.svg" alt="Due Diligence Support Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Due Diligence Support</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to fill out
-							your (recurring) security documentation and questionnaires. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['due_diligence_support'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['get_our_team_to'] }} </p>
 					</div>
 					<div class="col border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/search-icon.svg" alt="Security Audit Support Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Security Audit Support</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to assist with
-							audits for your certifications and/or regulatory requirements. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['security_audit_support'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['get_our_team_to_assist'] }} </p>
 					</div>
 					<div class="col border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/vendor-screening.svg"
 							alt="Vendor Screening Support Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">Vendor Screening Support
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['vendor_screening_support'] }}
 						</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Get our team to assist you
-							with your recurring vendor screening procedures. </p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['get_pur_team_to_assist_you_with'] }} </p> </p>
 					</div>
 					<div class="col border-top-right pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/gdpr-data.svg" alt="GDPR Data Processing Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">GDPR Data Processing</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Apply GDPR regulations and
-							data processing rules to your deposited information. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['gdpr_data_processing'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['apply_gdpr_regulations'] }} </p>
 					</div>
 					<div class="col border-top-gray pb-3">
 						<img class="mt-4" src="/images/compare-page/icons/hipaa-data.svg" alt="HIPAA Data Processing Icon" />
-						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">HIPAA Data Processing</p>
-						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">Apply HIPAA requirements to
-							the storage of your data. </p>
+						<p class="risks__subtitle font-16 fw-600 text-dark-cyan mb-1 mt-2 line-height-24">{{ site.data[page.lang]['software_escrow_plans']['hipaa_data_processing'] }}</p>
+						<p class="risks__subtitle text-slate-gray fw-400 font-14 line-height-18 mw-300">{{ site.data[page.lang]['software_escrow_plans']['apply_hipaa_requirements'] }} </p>
 					</div>
 				</div>
 			</div>
@@ -888,20 +843,19 @@
 	<div class="plan__checkout-container mt-5" id="checkout-cart">
 		<div class="container d-flex align-items-center justify-content-between flex-wrap">
 			<div class="my-2">
-				<p class="plan__checkout-text text-dark-cyan my-2 fw-bold" id="planType">Please select your plan</p>
-				<p id="adds" class="d-none text-dark-cyan my-2">Add ons: <span id="addOns"></span></p>
+				<p class="plan__checkout-text text-dark-cyan my-2 fw-bold" id="planType">{{ site.data[page.lang]['software_backup_pricing']['please_select_your'] }}</p>
+				<p id="adds" class="d-none text-dark-cyan my-2">{{ site.data[page.lang]['software_backup_pricing']['add_ons'] }}: <span id="addOns"></span></p>
 			</div>
 			<div class="d-flex my-2 mt-3">
-				<p class="plan__checkout-amount my-2 mr-2">Total:</p>
+				<p class="plan__checkout-amount my-2 mr-2">{{ site.data[page.lang]['software_backup_pricing']['total'] }}:</p>
 				<div class="plan__checkout-total"><span class="pricing-currency">$</span><span id="totalSum">0</span></div>
-				<p class="plan__checkout-amount mt-2"><sup id="checkout-period">per month</sup></p>
+				<p class="plan__checkout-amount mt-2"><sup id="checkout-period">{{ site.data[page.lang]['software_backup_pricing']['per_month'] }}</sup></p>
 			</div>
 			<div class="d-flex align-items-center my-2 flex-wrap">
-				<a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">Pay by
-					Invoice</a>
+				<a style="width: 230px;" class="text-uppercase button header__link" href="pay-by-invoice.html">{{ site.data[page.lang]['software_backup_pricing']['pay_by_invoice'] }}</a>
 				<a style="width: 230px;" class="text-uppercase button btn-bondi-blue3 my-4" href="javascript:void(0)"
 					onclick="openCheckout()">
-					Checkout
+					{{ site.data[page.lang]['software_backup_pricing']['checkout'] }}
 				</a>
 			</div>
 

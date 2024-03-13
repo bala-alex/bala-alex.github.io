@@ -785,7 +785,7 @@
                             {{ site.data[page.lang]['software_escrow']['learn_more'] }} <i
                               class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
                           <a class="header__link text-secondary-link mt-4 cursor-pointer" data-toggle="modal"
-                            data-target="#exampleModal35">Get a quote <i class="fa fa-angle-right"
+                            data-target="#exampleModal35">{{ site.data[page.lang]['index']['get_a_quote'] }} <i class="fa fa-angle-right"
                               aria-hidden="true"></i></a>
                         </div>
                       </div>
@@ -808,7 +808,7 @@
                           <div class="m-0">
                             <div class="section__modal-form p-0">
                               <div class="d-flex align-items-center justify-content-between w-100">
-                                <h3 class="section__modal-title2 mt-3">Build a Quote</h3>
+                                <h3 class="section__modal-title2 mt-3">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</h3>
                                 <img class="mr-1 mw-50 mt-3 mr-4" src="/images/landing/icons/saas-escrow-shield.svg"
                                   alt="SaaS Escrow Icon" loading="lazy">
                               </div>
@@ -832,15 +832,6 @@
               </div>
             </div>
             <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
-              <!-- <div class="container contact pb-100">
-                <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
-                  A closer look at Software Backups
-                </p>
-                <p class="header__description-text mt-3 pb-4 text-center fw-400 font-18 line-height-28 mw-700 mx-auto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div> -->
               <div class="bg-white">
                 <div class="header__content">
                   <div class="header__bg-saas-escrow-tabs">
@@ -849,9 +840,8 @@
                         <img class="image-style mw-490" src="/images/saas-escrow/saas-software-escrow-dashboard.webp"
                           alt="Illustration: Dashboard to secure your software operations continuity" loading="lazy" />
                       </div>
-                      <p class="information__main-title mb-2 mt-4">Our Features</p>
-                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">Discover the Codekeeper
-                        Advantage: Intuitive, reliable and comprehensive features at your fingertips.</p>
+                      <p class="information__main-title mb-2 mt-4">{{ site.data[page.lang]['saas_escrow_features']['our_features'] }}</p>
+                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">{{ site.data[page.lang]['saas_escrow_features']['discover_the_codekeeper'] }}</p>
                     </div>
                   </div>
                 </div>
@@ -863,17 +853,14 @@
                         loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Add all your hosting providers</p>
-                      <p class="information__subtitle">No matter how complex your applications are, you have granular
-                        control over your environment. Add and invite your vendors with a few clicks.</p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['saas_escrow_features']['add_all_your'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['saas_escrow_features']['no_matter_how'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Add your 3rd-party service providers</p>
-                      <p class="information__subtitle text-align-end ml-auto">Many applications have external
-                        dependencies for services that need to keep running to remain operational like email sending,
-                        payment processing etc. Add them via the interface to have the full configuration clear.</p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['saas_escrow_features']['add_your'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['saas_escrow_features']['many_applications'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/saas-escrow/service-providers.webp"
@@ -887,9 +874,8 @@
                         loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Service Continuity Coverage</p>
-                      <p class="information__subtitle">Select the appropriate period of continuity required for each of
-                        the services in your application’s environment. </p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['saas_escrow_features']['service_continuity'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['saas_escrow_features']['select_the_appropriate'] }}</p>
                     </div>
                   </div>
 
@@ -897,70 +883,63 @@
               </div>
 
               <div class="container pb-100">
-                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">Other features</p>
+                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">{{ site.data[page.lang]['saas_escrow_features']['other_features'] }}</p>
                 <div class="row mt-3">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/saas-escrow/icons/cloud-add.svg"
                       alt="Advanced SaaS Integrations Icon" loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Advanced SaaS Integrations</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['saas_escrow_features']['advanced_saas_integrations'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">We support a range of integrations by default. If your environment
-                      involves vendors for specialized industry verticals, you can add them to your environment too.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['we_support_a_range'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/certified.svg" alt="Certified Deposit Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Certified Deposit</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['saas_escrow_features']['certified_deposit'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Guarantee the integrity of your SaaS environment with automated
-                      content and activity verifications.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['guarentee_the_integrity'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/region.svg" alt="Storage Region Selection Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Storage Region Selection</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['saas_escrow_features']['storage_region'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Keep your SaaS environment close to home and under trusted
-                      jurisdiction.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['keep_your_saas'] }}</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/storage.svg" alt="Storage Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">1TB storage available</p>
-                    <p class="datacenters__subtitle">Every Codekeeper SaaS Escrow account comes with 1TB of storage
-                      space, providing ample room for your data needs right from the start.</p>
+                    <p class="datacenters__title mt-2">1TB {{ site.data[page.lang]['saas_escrow_features']['storage_available'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['every_codekeeper_saas'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/iso.svg" alt="Information security Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">ISO 27001 information security</p>
-                    <p class="datacenters__subtitle">Codekeeper's commitment to information security ensures the highest
-                      level of protection for your SaaS environment.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['saas_escrow_features']['iso_information'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['codekeepers_commitment_to'] }}</p>
                   </div>
 
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/platform.svg" alt="Platform Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">One-stop asset management platform</p>
-                    <p class="datacenters__subtitle">Experience the future of digital asset management with Codekeeper's
-                      all-in-one platform.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['saas_escrow_features']['one_stop_asset'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['experience_the_future'] }}</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/concierge.svg" alt="Concierge onboarding Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">Concierge onboarding</p>
-                    <p class="datacenters__subtitle">Our complete, expert support will help you seamlessly integrate our
-                      SaaS escrow solution into your workflow.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['saas_escrow_features']['concierge_onboarding'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['saas_escrow_features']['our_complete'] }}</p>
                   </div>
                 </div>
               </div>
@@ -976,17 +955,14 @@
                         alt="Developers using Codekeeper platform for source code management" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title">Simple no-code solution</p>
-                      <p class="information__subtitle">Directly integrated with the tools developers use every day to
-                        write source code and fully automated, but still requiring no-code to implement. We operate in
-                        the background until needed and pay your vendors to keep the environment alive.</p>
+                      <p class="information__title">{{ site.data[page.lang]['saas_escrow_features']['simple_no_code'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['saas_escrow_features']['directly_integrated'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end">Quick and easy configuration</p>
-                      <p class="information__subtitle text-align-end ml-auto">A fully modular setup where you can add
-                        all the environments and 3rd party providers that you need to run your application.</p>
+                      <p class="information__title text-align-end">{{ site.data[page.lang]['saas_escrow_features']['quick_and_easy'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['saas_escrow_features']['a_fully_modular'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/saas-escrow/easy-config.webp"
@@ -1000,14 +976,13 @@
                         alt="Diverse Integrations Library for seamless source code integration" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title">Vendor Library</p>
-                      <p class="information__subtitle">Making it even easier to establish and maintain your set up, we
-                        provide you with a library of pre-set vendors that you may use inside your stack. </p>
+                      <p class="information__title">{{ site.data[page.lang]['saas_escrow_features']['vendor_library'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['saas_escrow_features']['making_it_even'] }} </p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end">Special requirements?</p>
+                      <p class="information__title text-align-end">{{ site.data[page.lang]['saas_escrow_features']['special_requirements'] }}</p>
                       <p class="information__subtitle text-align-end ml-auto mb-0 mw-420">{{
                         site.data[page.lang]['saas_escrow2']['need_regional'] }}</p>
                       <p class="information__subtitle text-align-end ml-auto">{{
@@ -1028,8 +1003,7 @@
               <div class="container-fluid resources">
                 <div class="beneficiary__container mx-auto mt-negative-50 mb-negative-50 position-relative bg-white">
                   <div class="container py-5">
-                    <p class="how-works__main-title mx-auto pb-5">How to protect your SaaS environment in a few simple
-                      steps</p>
+                    <p class="how-works__main-title mx-auto pb-5">{{ site.data[page.lang]['saas_escrow_features']['how_to_protect_your_saas'] }}</p>
                     <div class="row">
                       <div class="col-md-6 col-sm-12">
                         <div class="works__config mobile-centered">
@@ -1037,7 +1011,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_1'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text fw-light mw-390">Invite your team and vendors to the platform</p>
+                            <p class="how-works__text fw-light mw-390">{{ site.data[page.lang]['saas_escrow_features']['invite_your_team'] }}</p>
                             <img class="mt-4 mw-260" src="/images/saas-escrow/invite-team.webp"
                               alt="Illustration Invite your team and vendors" loading="lazy" />
                           </div>
@@ -1061,8 +1035,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_2'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text mt-1 fw-light mw-320">Configure access settings and coverage
-                              periods</p>
+                            <p class="how-works__text mt-1 fw-light mw-320">{{ site.data[page.lang]['saas_escrow_features']['configure_access'] }}</p>
                             <img class="mt-4 mw-260" src="/images/saas-escrow/configure-access.webp"
                               alt="Illustration to Configure Access" loading="lazy" />
                           </div>
@@ -1076,8 +1049,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_3'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text fw-light mt-1 text-transform-none">Vendors provide access to
-                              Codekeeper</p>
+                            <p class="how-works__text fw-light mt-1 text-transform-none">{{ site.data[page.lang]['saas_escrow_features']['vendor_provide_access'] }}</p>
                             <img class="mt-4 mw-260" src="/images/saas-escrow/vendors-provide.webp"
                               alt="Illustration of Vendors providing access" loading="lazy" />
                           </div>
@@ -1092,9 +1064,8 @@
                     <div class="d-flex flex-column align-items-center">
                       <img class="how-works__active-icon" src="/images/how-it-works/icons/active-escrow.svg"
                         alt="Active Escrow Icon" loading="lazy" />
-                      <p class="how-works__text mt-3 mr-3 mb-2 text-transform-none">Ready for Continuity!</p>
-                      <p class="how-works__subtext2 text-center mw-570">You have set up all you need to make sure your
-                        organization will never lose access to critical software infrastructure.</p>
+                      <p class="how-works__text mt-3 mr-3 mb-2 text-transform-none">{{ site.data[page.lang]['saas_escrow_features']['ready_for_continuity'] }}</p>
+                      <p class="how-works__subtext2 text-center mw-570">{{ site.data[page.lang]['saas_escrow_features']['you_have_set'] }}</p>
                       <p class="how-works__subtext2 text-center text-bondi-blue">{{
                         site.data[page.lang]['how_it_works']['for_more_details'] }}</p>
                       <a class="button btn-cerulean3 book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
@@ -1252,43 +1223,39 @@
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/manage-software.svg"
                           alt="Managed Software Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Managed Software Backups
-                          included</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['manage_software_backups'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/software-escrow-included.svg"
                           alt="Software Escrow Included Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Software Escrow Included
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['software_escrow_included'] }}
                         </p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/unlimited-hosting.svg"
                           alt="Unlimited hosting Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Unlimited hosting
-                          environments & 3rd parties</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['unlimited_hosting_environments'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/automated-backup.svg"
                           alt="Automated backup Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Automated backup process
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['automated_backup_process'] }}
                         </p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/concierge-supported.svg"
                           alt="Concierge Supported Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Concierge Supported
-                          end-to-end</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['concierge_supported_end'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/grade-security.svg"
                           alt="Enterprise-grade security Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Enterprise-grade
-                          security</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['enterprise_grade_security'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/saas-escrow/icons/customer-support.svg"
                           alt="Customer Support Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">24/7 customer support
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['saas_escrow_features']['customer_support'] }}
                         </p>
                       </div>
 
@@ -1300,7 +1267,7 @@
                   </div>
                   <a class="button btn-yellow mr-4 my-4 text-center z-index-1 saas-escrow-href"
                     href="saas-escrow.html#pricing" onclick="refreshPage(this)">
-                    Explore Pricing
+                    {{ site.data[page.lang]['saas_escrow_features']['explore_pricing'] }}
                   </a>
                 </div>
               </div>
@@ -1310,87 +1277,61 @@
                 </h4>
                 <ul class="faq mt-5 pb-5 pl-0">
                   <li class="q d-flex align-items-center justify-content-between">
-                    <p class="section__subtitle mt-3">What is SaaS Escrow and why is it important?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['what_is_saas_escrow'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">SaaS Escrow provides continuity protection for cloud-native applications,
-                    ensuring that the software applications you rely on remain operational even in unforeseen
-                    circumstances. It's crucial for mitigating risks associated with vendor failures or
-                    discontinuations.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['saas_escrow_provides'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does Codekeeper's SaaS Escrow solution work?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['how_does_codekeepers_saas'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Codekeeper's SaaS Escrow solution is designed to streamline the escrow
-                    process, offering effortless management and instant continuity for cloud services. It addresses
-                    common challenges such as manual updates, update lags, and recovery uncertainties by automating and
-                    simplifying the escrow process.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['codekeepers_saas_escrow'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What makes Codekeeper's SaaS Escrow different from traditional
-                      software escrow?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['what_makes_codekeepers'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Unlike traditional escrow services, which can be complex and rigid,
-                    Codekeeper's SaaS Escrow is purpose-built for cloud services, addressing the specific challenges of
-                    SaaS applications with automated updates, integrated hosting environments, and simplified vendor
-                    management.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['unlike_traditional_escrow'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Can Codekeeper's SaaS Escrow handle multiple SaaS vendors?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['can_codekeepers_saas_escrow'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Yes, our solution is designed to manage escrow across multiple SaaS
-                    vendors, reducing the time and effort required to maintain escrow agreements and ensuring
-                    comprehensive coverage of all your SaaS components.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['yes_our_solution'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What happens if a SaaS vendor goes down?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['what_happens_if'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">In the event a vendor goes down, Codekeeper makes payments on their behalf
-                    to keep hosting and supporting services running, ensuring your operations continue uninterrupted
-                    until you or a new supplier can take over. </li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['in_the_event'] }} </li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Is Codekeeper's SaaS Escrow solution compliant with industry
-                      standards?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['is_codekeepers_saas_escrow'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Yes, our SaaS Escrow solution helps you meet compliance requirements by
-                    ensuring adequate escrow coverage of all your SaaS components, thereby minimizing compliance risks.
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['yes_our_saas_escrow'] }}
                   </li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How do I onboard my vendors to Codekeeper's SaaS Escrow service?
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['how_do_i_onboard'] }}
                     </p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Onboarding vendors to our SaaS Escrow service is streamlined and
-                    efficient, designed to minimize legal complexities and time investment. Our platform allows for easy
-                    addition of custom vendors directly from your dashboard.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['onboarding_vendors_to'] }}</li>
 
                   <div class="" id="questions2">
 
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">What coverage is included with Codekeeper's SaaS Escrow?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['what_coverage_is'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Our service includes 3 months of coverage as standard, with options to
-                      upgrade for longer coverage periods, ensuring your software remains uninterrupted and your
-                      operations are protected.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['our_service_includes'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How does Codekeeper ensure quick recovery in case of an outage?
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['how_does_codekeeper_ensure'] }}
                       </p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Codekeeper securely stores your software assets, ready for quick
-                      recovery, and is integrated with many hosting and cloud providers globally, allowing for immediate
-                      action and minimal disruption in case of an outage.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['codekeeper_securely_stores'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How can I get started with Codekeeper's SaaS Escrow service?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['saas_escrow_faq']['how_can_i_get'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Getting started is straightforward: review our features on the website,
-                      understand our affordable SaaS software escrow options, and <a
-                        class="text-bondi-blue contact-href fw-bold text-transform-none text-underline text-lowercase"
-                        href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> to discuss your
-                      specific needs. We're here to ensure your service remains uninterrupted, no matter what happens.
+                    <li class="a section__text">{{ site.data[page.lang]['saas_escrow_faq']['getting_started_is'] }}
                     </li>
 
                   </div>

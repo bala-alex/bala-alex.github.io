@@ -735,15 +735,6 @@
               </div>
             </div>
             <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
-              <!-- <div class="container contact pb-100">
-                <iframe class="video-player" src="https://www.youtube.com/embed/jf9P1GXFWdo?si=MFVktG84kH8keD_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p class="header__description-text mt-4 text-center text-bondi-blue fw-600 font-30 line-height-40">
-                  A closer look at Software Backups
-                </p>
-                <p class="header__description-text mt-3 pb-4 text-center fw-400 font-18 line-height-28 mw-700 mx-auto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div> -->
               <div class="bg-white">
                 <div class="header__content">
                   <div class="header__bg-software-custodian-tabs">
@@ -754,9 +745,8 @@
                           alt="Illustration: Dashboard to secure your Software Operations Accountability"
                           loading="lazy" />
                       </div>
-                      <p class="information__main-title mb-2 mt-4">Our Features</p>
-                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">Discover the Codekeeper
-                        Advantage: Intuitive, reliable and comprehensive features at your fingertips.</p>
+                      <p class="information__main-title mb-2 mt-4">{{ site.data[page.lang]['saas_escrow_features']['our_features'] }}</p>
+                      <p class="header__info text-center fw-light mw-660 mx-auto text-dark-cyan">{{ site.data[page.lang]['saas_escrow_features']['discover_the_codekeeper'] }}</p>
                     </div>
                   </div>
                 </div>
@@ -768,17 +758,14 @@
                         alt="Illustration of Privacy Operations" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Privacy Operations: Handled!</p>
-                      <p class="information__subtitle">Custodian allows us to perform operations on your own data, as
-                        well as vendor data. With this service, guarantee compliance to any stakeholder.</p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_custodian_features']['privacy_operations_handled'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_custodian_features']['custodian_allows_us'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Service Level Agreement Operations</p>
-                      <p class="information__subtitle text-align-end ml-auto mw-490">Just like with regulated
-                        requirements, Codekeeper handles your Service Level Agreement operations on your software or
-                        data. We ensure you are protected against any agreement breaches.</p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['software_custodian_features']['service_level_agreement'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto mw-490">{{ site.data[page.lang]['software_custodian_features']['just_like_with'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-custodian/agreement-operations.webp"
@@ -792,9 +779,8 @@
                         alt="Illustration of Regulatory Requirements" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Regulatory Requirements</p>
-                      <p class="information__subtitle">Need to guarantee compliance with data availability / storage
-                        requirement regulations when data is stored at a vendor? We do this for you. </p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_custodian_features']['regulatory_requirements'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_custodian_features']['need_to_guarantee'] }} </p>
                     </div>
                   </div>
 
@@ -802,60 +788,54 @@
               </div>
 
               <div class="container pb-100">
-                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">Other features</p>
+                <p class="datacenters__title mt-5 font-35 line-height-40 fw-light">{{ site.data[page.lang]['software_custodian_features']['our_features'] }}</p>
                 <div class="row mt-3">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-custodian/icons/judge.svg" alt="Jurisdiction Selection Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Jurisdiction Selection</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_custodian_features']['jurisdiction_selection'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Optimize compliance management, ensuring your data storage adheres
-                      to regional regulations and legal standards.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['optimize_compliance'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/certified.svg" alt="Certified Deposit Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Certified Deposit</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_custodian_features']['certified_deposit'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Guarantee the integrity of your digital assets with automated
-                      content and activity verifications.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['guarantee_the_integrity'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/region.svg" alt="Storage Region Selection Icon"
                       loading="lazy" />
                     <div class="d-flex mt-2">
-                      <p class="datacenters__title">Storage Region Selection</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title">{{ site.data[page.lang]['software_custodian_features']['storage_region_selection'] }}</p>
+                      <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
-                    <p class="datacenters__subtitle">Keep your digital assets close to home and under trusted
-                      jurisdiction.</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['keep_your_digital'] }}</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/storage.svg" alt="Storage Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">1TB storage available</p>
-                    <p class="datacenters__subtitle">Every Codekeeper Software Custodian account comes with 1TB of
-                      storage space, providing ample room for your data needs right from the start.</p>
+                    <p class="datacenters__title mt-2">1TB {{ site.data[page.lang]['software_custodian_features']['storage_available'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['every_codekeeper_software'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/platform.svg" alt="Platform Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">One-stop asset management platform</p>
-                    <p class="datacenters__subtitle">Experience the future of digital asset management with Codekeeper's
-                      all-in-one platform.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['software_custodian_features']['one_stop_asset'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['experience_the_future'] }}</p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/concierge.svg" alt="Concierge onboarding Icon"
                       loading="lazy" />
-                    <p class="datacenters__title mt-2">Concierge onboarding</p>
-                    <p class="datacenters__subtitle">Our complete, expert support will help you seamlessly integrate our
-                      solutions into your workflow.</p>
+                    <p class="datacenters__title mt-2">{{ site.data[page.lang]['software_custodian_features']['concierge_onboarding'] }}</p>
+                    <p class="datacenters__subtitle">{{ site.data[page.lang]['software_custodian_features']['our_complete_expert'] }}</p>
                   </div>
                 </div>
               </div>
@@ -863,7 +843,7 @@
               <div class="bg-azure-blue section-large">
                 <div class="container">
                   <p class="header__info text-center">{{ site.data[page.lang]['source_code_escrow']['why_people'] }}</p>
-                  <p class="information__main-title">Software Custodian</p>
+                  <p class="information__main-title">{{ site.data[page.lang]['software_backup_features']['software_custodian'] }}</p>
                   <div class="row">
                     <div class="col-md-6 col-sm-12">
                       <img class="information__image content-center mt-4"
@@ -871,18 +851,14 @@
                         alt="Illustration of Unique Lifecycle Approach" loading="lazy" />
                     </div>
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title mt-5">Unique Lifecycle Approach</p>
-                      <p class="information__subtitle">We allow you to take charge of your entire software operations
-                        life cycle without distinguishing between internal and vendor operated applications. This puts
-                        you in command and control.</p>
+                      <p class="information__title mt-5">{{ site.data[page.lang]['software_custodian_features']['unique_lifecycle'] }}</p>
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_custodian_features']['we_allow_you'] }}</p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Ease of Use, even in complex situations</p>
-                      <p class="information__subtitle text-align-end ml-auto">Enterprise software operations are large
-                        in scale. You need a solution that can handle the complexity but still deliver the control you
-                        need for your stakeholder compliance.</p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['software_custodian_features']['ease_of_use'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['software_custodian_features']['emterprise_software'] }}</p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-custodian/complex-situations.webp"
@@ -898,17 +874,14 @@
                     <div class="col-md-6 col-sm-12">
                       <p class="information__title mt-5">{{
                         site.data[page.lang]['source_code_escrow']['integrations_library'] }}</p>
-                      <p class="information__subtitle">Integrations are a key component to make your compliance strategy
-                        succeed. We offer a range of integrations and allow custom integrations for internal software.
+                      <p class="information__subtitle">{{ site.data[page.lang]['software_custodian_features']['integrations_are_a_key'] }}
                       </p>
                     </div>
                   </div>
                   <div class="row mt-5 column-reverse-mobile pt-5">
                     <div class="col-md-6 col-sm-12">
-                      <p class="information__title text-align-end mt-5">Human Touch Support</p>
-                      <p class="information__subtitle text-align-end ml-auto">We believe technology should be used to
-                        drive efficiency, except in providing your support and on boarding asisstance. We provide
-                        fanatic support. </p>
+                      <p class="information__title text-align-end mt-5">{{ site.data[page.lang]['software_custodian_features']['human_touch_support'] }}</p>
+                      <p class="information__subtitle text-align-end ml-auto">{{ site.data[page.lang]['software_custodian_features']['we_belive_technology'] }} </p>
                     </div>
                     <div class="col-md-6 col-sm-12 content-center">
                       <img class="information__image mt-4" src="/images/software-custodian/human-support.webp"
@@ -922,8 +895,7 @@
               <div class="container-fluid resources">
                 <div class="beneficiary__container mx-auto mt-negative-50 mb-negative-50 position-relative bg-white">
                   <div class="container py-5">
-                    <p class="how-works__main-title mx-auto pb-5">Guarantee full life cycle compliance in a few simple
-                      steps</p>
+                    <p class="how-works__main-title mx-auto pb-5">{{ site.data[page.lang]['software_custodian_features']['guarantee_full_life'] }}</p>
                     <div class="row">
                       <div class="col-md-6 col-sm-12">
                         <div class="works__config mobile-centered">
@@ -931,7 +903,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_1'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text fw-light mw-390">Invite your team and vendors to the platform</p>
+                            <p class="how-works__text fw-light mw-390">{{ site.data[page.lang]['software_custodian_features']['invite_your_team'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-custodian/invite-team.webp"
                               alt="Illustration Invite your team" loading="lazy" />
                           </div>
@@ -957,8 +929,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_2'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text mt-1 fw-light mw-420">Set up the custodian operations that we
-                              should handle for you</p>
+                            <p class="how-works__text mt-1 fw-light mw-420">{{ site.data[page.lang]['software_custodian_features']['set_up_the_custodian'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-custodian/custodian-operations.webp"
                               alt="Illustration of Custodian Operations" loading="lazy" />
                           </div>
@@ -972,8 +943,7 @@
                             <div class="works__step2">{{ site.data[page.lang]['how_it_works']['step_3'] }}</div>
                           </div>
                           <div>
-                            <p class="how-works__text fw-light mt-1 mw-400 text-transform-none">Guarantee handling of
-                              your regulated data and SLA’s</p>
+                            <p class="how-works__text fw-light mt-1 mw-400 text-transform-none">{{ site.data[page.lang]['software_custodian_features']['guarantee_handling_of'] }}</p>
                             <img class="mt-4 mw-260" src="/images/software-custodian/regulated-data.webp"
                               alt="Illustration of Data Being Processed" loading="lazy" />
                           </div>
@@ -989,9 +959,8 @@
                     <div class="d-flex flex-column align-items-center">
                       <img class="how-works__active-icon" src="/images/how-it-works/icons/active-escrow.svg"
                         alt="Active Escrow Icon" loading="lazy" />
-                      <p class="how-works__text mt-3 mr-3 mb-2">Ready for Accountability!</p>
-                      <p class="how-works__subtext2 text-center mw-570">You have set up all you need to make sure your
-                        organization is fully accountable for your software operations life cycle.</p>
+                      <p class="how-works__text mt-3 mr-3 mb-2">{{ site.data[page.lang]['software_custodian_features']['ready_for_accountability'] }}</p>
+                      <p class="how-works__subtext2 text-center mw-570">{{ site.data[page.lang]['software_custodian_features']['you_have_set_up'] }}</p>
                       <p class="how-works__subtext2 text-center text-bondi-blue">{{
                         site.data[page.lang]['how_it_works']['for_more_details'] }}</p>
                       <a class="button btn-cerulean3 book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
@@ -1150,42 +1119,38 @@
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/managed-software.svg"
                           alt="Managed Software Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Managed Software Backups
-                          included</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['manage_software_backups'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/software-escrow-included.svg"
                           alt="Software Escrow Included Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Software Escrow Included
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['software_escrow_included'] }}
                         </p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/cloud-icon.svg" alt="Cloud Icon"
                           loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">SaaS Escrow Included</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['saas_escrow_included'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/handling-operations.svg"
                           alt="Handling Operations Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Handling of your
-                          regulated and SLA operations</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['handling_of_your'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/concierge-supported.svg"
                           alt="Concierge Supported Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Concierge Supported
-                          end-to-end</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['concierge_supported_end'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/grade-security.svg"
                           alt="Enterprise-grade security Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">Enterprise-grade
-                          security</p>
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['enterprise_grade_security'] }}</p>
                       </div>
                       <div class="d-flex align-items-center mt-4">
                         <img class="mr-2" src="/images/software-custodian/icons/customer-support.svg"
                           alt="Customer Support Icon" loading="lazy" />
-                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">24/7 customer support
+                        <p class="deposit-assets__text mw-520 font-24 fw-light text-white mb-0">{{ site.data[page.lang]['software_custodian_features']['customer_support'] }}
                         </p>
                       </div>
 
@@ -1197,7 +1162,7 @@
                   </div>
                   <a class="button btn-yellow mr-4 my-4 text-center z-index-1 software-custodian-href"
                     href="software-custodian.html#pricing" onclick="refreshPage(this)">
-                    Explore Pricing
+                    {{ site.data[page.lang]['software_backup_features']['explore_pricing'] }}
                   </a>
                 </div>
               </div>
@@ -1207,94 +1172,59 @@
                 </h4>
                 <ul class="faq mt-5 pb-5 pl-0">
                   <li class="q d-flex align-items-center justify-content-between">
-                    <p class="section__subtitle mt-3">What is Software Custodian and its primary purpose?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['what_is_software'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Software Custodian offers end-to-end accountability for the entire
-                    software lifecycle, managing your software and data on behalf of your organization. It ensures
-                    compliance, safeguards against data loss, and maintains operational integrity without interruption.
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['software_custodian_offers'] }}
                   </li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does Software Custodian ensure compliance across all software
-                      and data stores?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['how_does_software'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">By navigating the complex landscape of software management and vendor
-                    platforms, Software Custodian ensures unwavering compliance and the capability to act on compliance
-                    matters decisively, even in disaster scenarios, through comprehensive disaster recovery suites and
-                    proactive compliance tools.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['by_navigating_the_complex'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Can Software Custodian streamline compliance with multiple
-                      vendors?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['can_software_custodian'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Yes, Software Custodian addresses the challenge of vendor complexity by
-                    providing collaborative oversight and tools that streamline compliance processes across a web of
-                    third-party services, ensuring unified compliance and operational flow.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['yes_software_custodian'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What makes Software Custodian different from traditional
-                      compliance and data management services?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['what_makes_software_custodian'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Unlike traditional services, Software Custodian empowers organizations
-                    with tools and authority to execute compliance-related actions effectively, ensuring operational
-                    readiness under any scenario, and maintaining compliance even when vendors face disruptions.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['unlike_traditional_services'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does Software Custodian handle access to software assets and
-                      data in emergencies?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['how_does_software_custodian'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Software Custodian ensures quick and reliable access to all your software
-                    assets and data in an emergency, mitigating access anxiety and ensuring that your operations can
-                    continue uninterrupted, even in the face of adversity.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['software_custodian_ensures_quick'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">What industries benefit most from Software Custodian?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['what_industries_benefit'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Software Custodian is particularly beneficial for industries with
-                    stringent compliance requirements, such as finance, healthcare, government, and defense, providing
-                    specialized attention to data handling and management requirements that persist even during
-                    disasters.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['software_custodian_is_particularly'] }}</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does Software Custodian manage the lifecycle of digital
-                      assets?</p>
+                    <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['how_does_software_custodian_manage'] }}</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">It offers full lifecycle control over your software and data, from secure
-                    storage and quick recovery of assets to ensuring enterprise-level compliance across the entire
-                    application stack, including vendors and their vendors.</li>
+                  <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['it_offers_full'] }}</li>
 
                   <div class="" id="questions2">
 
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">What happens if a vendor goes down? How does Software Custodian
-                        maintain compliance?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['what_happens_if'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">In the event a vendor goes down, Software Custodian maintains compliance
-                      by taking proactive measures, such as making necessary arrangements to keep hosting and support
-                      services running or quickly recovering data, to ensure no interruption in compliance or
-                      operations.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['in_the_event'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How does Software Custodian contribute to stakeholder trust and
-                        satisfaction?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['how_does_software_custodian_contribute'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">By ensuring no gaps in data management and maintaining rigorous
-                      compliance, Software Custodian prevents operational delays, regulatory noncompliance, and breaches
-                      in data privacy, thus upholding the trust and satisfaction of clients, investors, and regulatory
-                      bodies.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['by_ensuring_no_gaps'] }}</li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
-                      <p class="section__subtitle mt-3">How can I get started with Software Custodian for my
-                        organization?</p>
+                      <p class="section__subtitle mt-3">{{ site.data[page.lang]['software_custodian_faq']['how_can_i_get'] }}</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">To get started with Software Custodian, review our features on the
-                      website, understand the scope of services tailored to your industry requirements, and <a
-                        class="text-bondi-blue contact-href fw-bold text-transform-none text-underline text-lowercase"
-                        href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> for a detailed
-                      discussion on how we can tailor our solution to meet your specific compliance and data management
-                      needs.</li>
+                    <li class="a section__text">{{ site.data[page.lang]['software_custodian_faq']['to_get_started_with'] }}</li>
 
                   </div>
                   <p class="questions-text mt-1 pt-4 btn-offer-style openLines2 q-border" id="openQuestions">
