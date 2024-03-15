@@ -142,6 +142,10 @@
   document.addEventListener("click", function (event) {
     closeAllSelect(event.target.closest('.custom-select'));
   });
+  /*close all select boxes when clicking outside any select box, regardless of their class,:*/
+  document.addEventListener("click", function (event) {
+    closeAllSelect(event.target);
+  });
 
   // Call the function to initialize custom selects
   initializeCustomSelects();

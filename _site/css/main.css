@@ -30237,6 +30237,8 @@ input[name=consent] {
 .new-navigation .same-as-selected {
   background-color: #009CB7;
   color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .new-navigation .w-90 {
   width: 85%;
@@ -30468,7 +30470,7 @@ input[name=consent] {
 }
 .new-navigation .dropdown-menu {
   padding: 0;
-  margin-top: 1px;
+  margin-top: 20px;
 }
 .new-navigation #recoveryMenuBtn:focus,
 .new-navigation #resourcesMenuBtn:focus {
