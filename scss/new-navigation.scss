@@ -77,7 +77,10 @@
     left: 0;
     z-index: 99;
     margin-top: 10px;
-    min-width: 120px;
+    min-width: 160px;
+    border-radius: 5px !important;
+    box-shadow: 2px 2px 12px #DADFE8 !important;
+    overflow: hidden;
   }
 
   /* Hide the items when the select box is closed: */
@@ -87,7 +90,8 @@
 
   .select-items div:hover,
   .same-as-selected {
-    background-color: rgb(231, 231, 231);
+    background-color: $bondi-blue;
+    color: $white;
   }
 
   .w-90 {
@@ -285,7 +289,7 @@
 
   .dropdown-menu {
     padding: 0;
-    margin-top: 21px;
+    margin-top: 1px;
   }
 
   #recoveryMenuBtn:focus,
