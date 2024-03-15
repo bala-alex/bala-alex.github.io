@@ -3548,6 +3548,20 @@
     }
   })
 </script>
+
+<script>
+  $(function () {
+    var navigation = $('.navigation2');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <= 80) {
+        navigation.removeClass('nav-top-negative');
+      } else {
+        navigation.addClass('nav-top-negative');
+      }
+    });
+  });
+</script>
   <!DOCTYPE html>
 <script>
   var pathname = location.pathname;

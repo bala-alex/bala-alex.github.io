@@ -44,7 +44,7 @@
     <div class="navigation">
       <!DOCTYPE html>
 <nav
-  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white"
+  class="new-navigation navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light p-0 bg-white navigation2"
 >
   <div class="column-wrapper d-flex w-100 flex-column">
     <div
@@ -550,6 +550,7 @@
     });
   });
 </script>
+
 
 
     </div>
@@ -3568,6 +3569,20 @@
       $('.software-custodian-href').attr('href', 'software-custodian.html')
     }
   })
+</script>
+
+<script>
+  $(function () {
+    var navigation = $('.navigation2');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <= 80) {
+        navigation.removeClass('nav-top-negative');
+      } else {
+        navigation.addClass('nav-top-negative');
+      }
+    });
+  });
 </script>
   <!DOCTYPE html>
 <script>

@@ -9041,6 +9041,10 @@ html {
   background-color: white;
 }
 
+.display-none {
+  display: none !important;
+}
+
 .nav-link {
   color: #00384B !important;
   font-family: "Mulish", sans-serif;
@@ -10850,6 +10854,15 @@ html {
 
 .navigation-border {
   border-bottom: 1px solid #AEC6D3;
+}
+
+.nav-top-negative {
+  top: -48px !important;
+}
+@media (max-width: 992px) {
+  .nav-top-negative {
+    top: 0px !important;
+  }
 }
 
 .image-160 {
@@ -30277,7 +30290,7 @@ input[name=consent] {
 }
 .new-navigation .container-fluid .book-btn {
   position: absolute;
-  bottom: 16px;
+  bottom: 8px;
   right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;

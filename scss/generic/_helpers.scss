@@ -43,6 +43,10 @@ html {
   background-color: white;
 }
 
+.display-none {
+  display: none !important;
+}
+
 .nav-link {
   color: $sherpa-blue !important;
   font-family: 'Mulish', sans-serif;
@@ -1743,6 +1747,14 @@ html {
 
 .navigation-border {
   border-bottom: 1px solid #AEC6D3;
+}
+
+.nav-top-negative {
+  top: -48px !important;
+
+  @include screen-md {
+    top: 0px !important;
+  }
 }
 
 .image-160 {
