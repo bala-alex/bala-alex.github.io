@@ -986,6 +986,13 @@
     closeAllSelect(event.target);
   });
 
+  window.addEventListener("scroll", function (event) {
+    if ($(window).scrollTop() <= 60) {
+        // Your code to execute when window scroll position is less than or equal to 80
+        closeAllSelect(event.target);
+    }
+  });
+
   // Call the function to initialize custom selects
   initializeCustomSelects();
 </script>
