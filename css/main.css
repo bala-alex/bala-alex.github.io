@@ -10864,6 +10864,8 @@ html {
 
 .nav-top-negative {
   top: -48px !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media (max-width: 992px) {
   .nav-top-negative {
@@ -20769,12 +20771,12 @@ input[name=consent] {
 }
 .resources .header__bg-top-left {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
 }
 .resources .header__bg-top-right {
   position: absolute;
-  top: 0;
+  top: 25px;
   right: 0;
   width: 240px !important;
 }
@@ -20845,7 +20847,7 @@ input[name=consent] {
 }
 .resources .header__bg-left {
   position: absolute;
-  top: 95px;
+  top: 115px;
   left: 0;
   width: 170px;
   max-height: 59px;
@@ -24146,7 +24148,7 @@ input[name=consent] {
 }
 .solutions .header__bg-top-left2 {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
   width: 180px;
   max-width: 30%;

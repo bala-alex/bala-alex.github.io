@@ -1819,12 +1819,13 @@
       var navigation = $('.navigation');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 80) {
+        if ($(window).scrollTop() <= 190) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
         }
       });
+      navigation.css('transition', 'all 0.5s fade');
     });
   </script>
   <script>
