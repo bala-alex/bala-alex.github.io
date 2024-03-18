@@ -432,7 +432,7 @@
       clearTimeout(recoveryMenuTimer);
       recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 500);
+      }, 100);
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
     });
@@ -441,7 +441,7 @@
       clearTimeout(resourcesMenuTimer);
       resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 500);
+      }, 100);
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
     });
@@ -450,7 +450,7 @@
       clearTimeout(dropdownMenuTimer);
       dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1500);
+      }, 1000);
     }).mouseenter(function () {
       clearTimeout(dropdownMenuTimer);
     });

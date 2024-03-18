@@ -433,7 +433,7 @@
       clearTimeout(recoveryMenuTimer);
       recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 500);
+      }, 100);
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
     });
@@ -442,7 +442,7 @@
       clearTimeout(resourcesMenuTimer);
       resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 500);
+      }, 100);
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
     });
@@ -451,7 +451,7 @@
       clearTimeout(dropdownMenuTimer);
       dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1500);
+      }, 1000);
     }).mouseenter(function () {
       clearTimeout(dropdownMenuTimer);
     });
@@ -1171,7 +1171,7 @@
               <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Registrul de risc (utilizați pentru ISO27001/SOC2)</p>
               <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Metode de atenuare a riscurilor</p>
               <div class="d-flex flex-wrap mt-4">
-                <a class="button btn-cerulean3 mr-4 mb-3" href="disaster-recovery-planner.html">
+                <a class="button btn-cerulean3 mr-4 mb-3" data-toggle="modal" data-target="#exampleModal22">
                   Începeți planificarea recuperării în caz de dezastru
                 </a>
                 <div>
@@ -1188,7 +1188,40 @@
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-form p-0 ">
+                  <p class="section__modal-title mt-3">Începeți planificarea recuperării în caz de dezastru</p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                          region: "na1",
+                          portalId: "5365877",
+                          formId: "2b243a37-2e7a-40e8-a13d-1c7a27e1551b"
+                        });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- Footer -->
     <!DOCTYPE html>
 <div class="bg-alice-blue py-5">
