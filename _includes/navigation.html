@@ -183,22 +183,35 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    let recoveryMenuTimer;
+    let resourcesMenuTimer;
+    let dropdownMenuTimer;
+
     $("#recoveryMenuBtn").mouseenter(function () {
-      setTimeout(() => {
+      clearTimeout(recoveryMenuTimer);
+      recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 700);
+      }, 500);
+    }).mouseleave(function () {
+      clearTimeout(recoveryMenuTimer);
     });
 
     $("#resourcesMenuBtn").mouseenter(function () {
-      setTimeout(() => {
+      clearTimeout(resourcesMenuTimer);
+      resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 700);
+      }, 500);
+    }).mouseleave(function () {
+      clearTimeout(resourcesMenuTimer);
     });
 
     $(".dropdown-menu").mouseleave(function () {
-      setTimeout(() => {
+      clearTimeout(dropdownMenuTimer);
+      dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 700);
+      }, 1500);
+    }).mouseenter(function () {
+      clearTimeout(dropdownMenuTimer);
     });
   });
 </script>
