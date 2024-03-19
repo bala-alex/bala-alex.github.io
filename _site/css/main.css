@@ -10873,6 +10873,22 @@ html {
   }
 }
 
+.nav-top-negative2 {
+  top: -148px !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (max-width: 992px) {
+  .nav-top-negative2 {
+    top: 0px !important;
+  }
+}
+
+.box-shadow-none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .image-160 {
   width: 160px;
   height: 160px;
@@ -15188,9 +15204,18 @@ input[name=consent] {
   padding-bottom: 30px;
   font-family: "Mulish", sans-serif;
 }
+.pricing .plan__box:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 8px solid #009CB7;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 .pricing .plan__box .plan__title {
   padding-top: 20px;
-  font-family: "Muli";
+  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 32px;
@@ -15206,6 +15231,7 @@ input[name=consent] {
   line-height: 28px;
   margin-bottom: 0;
   margin-left: 8px;
+  font-family: "Mulish", sans-serif;
 }
 .pricing .plan__box .plan__add-on {
   background: #417BD2;
@@ -30319,7 +30345,7 @@ input[name=consent] {
   border-radius: 5px;
   color: #fff;
   text-align: center;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -30334,11 +30360,11 @@ input[name=consent] {
 .new-navigation .custom-dropdown-btn {
   color: #1a5261;
   text-align: right;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 46px;
 }
 .new-navigation .line {
   display: none;
@@ -30349,17 +30375,17 @@ input[name=consent] {
   width: 100%;
   background-color: #009cb7;
   position: absolute;
-  bottom: -21px;
+  bottom: -7px;
   left: 0;
 }
 .new-navigation .show .custom-dropdown-btn {
   color: #009cb7;
   text-align: right;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 46px;
 }
 .new-navigation .recovery-menu {
   border-radius: 0px 0px 10px 10px;
@@ -30382,7 +30408,7 @@ input[name=consent] {
 .new-navigation .card-paragraph {
   margin: 0;
   color: #1a5261;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -30416,7 +30442,7 @@ input[name=consent] {
   height: 10%;
   margin: 0;
   color: #6a8493;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -30469,7 +30495,7 @@ input[name=consent] {
   border: 0.5px solid #dce5f2;
   background: #fff;
   color: #009cb7;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -30491,7 +30517,7 @@ input[name=consent] {
 }
 .new-navigation .dropdown-menu {
   padding: 0;
-  margin-top: 20px;
+  margin-top: 7px;
 }
 .new-navigation #recoveryMenuBtn:focus,
 .new-navigation #resourcesMenuBtn:focus {
@@ -30504,7 +30530,7 @@ input[name=consent] {
 }
 .new-navigation .card-info {
   color: #1a5261;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 12px;
   font-style: normal;
   margin-top: 12px;
@@ -30582,7 +30608,7 @@ input[name=consent] {
 }
 .new-navigation .resources-menu .resource-card .resources-text {
   color: #1a5261;
-  font-family: Mulish;
+  font-family: "Mulish", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;

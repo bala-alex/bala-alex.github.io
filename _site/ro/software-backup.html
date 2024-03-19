@@ -69,7 +69,7 @@
         </a>
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link nav-margin fw-700 font-12 text-transform-none"
+          <button class="btn bg-white dropdown-toggle nav-margin fw-700 font-12 btn-nav text-dark-cyan box-shadow-none"
             type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Despre noi <img class="ml-1 mb-1"
               src="/images/integrations/icon-down.svg" />
@@ -98,7 +98,6 @@
           <div class="dropdown show-desktop">
             <button class="btn bg-white dropdown-toggle custom-dropdown-btn" type="button" id="recoveryMenuBtn"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <!-- Soluții -->
               
               <img class="ml-1 mb-1" src="/images/integrations/icon-down.svg" alt="Down Icon" />
             </button>
@@ -219,7 +218,7 @@
             </div>
           </div>
           <li class="nav-item ml-50 show-desktop">
-            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+            <a class="custom-dropdown-btn pricing-href py-3" href="pricing.html">
               Tarife
             </a>
           </li>
@@ -232,7 +231,7 @@
             </button>
             <span class="line"></span>
             <div class="resources">
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
                 <div class="resources-menu">
   <a class="resource-card integrations-href" href="integrations.html">
     <div class="text-and-icon d-flex align-items-center">
@@ -428,7 +427,7 @@
       clearTimeout(recoveryMenuTimer);
       recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
     });
@@ -437,7 +436,7 @@
       clearTimeout(resourcesMenuTimer);
       resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
     });
@@ -446,7 +445,7 @@
       clearTimeout(dropdownMenuTimer);
       dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1000);
+      }, 1200);
     }).mouseenter(function () {
       clearTimeout(dropdownMenuTimer);
     });
@@ -2118,7 +2117,7 @@
           <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Registrul de risc (utilizați pentru ISO27001/SOC2)</p>
           <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>Metode de atenuare a riscurilor</p>
           <div class="d-flex flex-wrap mt-4">
-            <a class="button btn-cerulean3 mr-4 mb-3" data-toggle="modal" data-target="#exampleModal22">
+            <a class="button btn-cerulean3 mr-4 mb-3" data-toggle="modal" data-target="#exampleModal20">
               Începeți planificarea recuperării în caz de dezastru
             </a>
             <div>
@@ -2157,7 +2156,7 @@
     </div>
   </div>
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content section__modal mx-auto">
         <div class="modal-body p-0">
@@ -3706,7 +3705,7 @@
       var navigation = $('.navigation');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 190) {
+        if ($(window).scrollTop() <= 260) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -3788,6 +3787,21 @@
       console.log('ready');
       const currency = localStorage.getItem('currency');
       $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
+    });
+  </script>
+
+  <script>
+    $(function () {
+      var navigation = $('.navigation2');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 160) {
+          navigation.removeClass('nav-top-negative2');
+        } else {
+          navigation.addClass('nav-top-negative2');
+        }
+      });
+      navigation.css('transition', 'all 0.5s ease-in-out');
     });
   </script>
 </body>

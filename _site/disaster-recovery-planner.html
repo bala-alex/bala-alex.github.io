@@ -73,7 +73,7 @@
         </a>
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link nav-margin fw-700 font-12 text-transform-none"
+          <button class="btn bg-white dropdown-toggle nav-margin fw-700 font-12 btn-nav text-dark-cyan box-shadow-none"
             type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About Us <img class="ml-1 mb-1"
               src="/images/integrations/icon-down.svg" />
@@ -102,7 +102,6 @@
           <div class="dropdown show-desktop">
             <button class="btn bg-white dropdown-toggle custom-dropdown-btn" type="button" id="recoveryMenuBtn"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <!-- Solutions -->
               Disaster Recovery Solutions
               <img class="ml-1 mb-1" src="/images/integrations/icon-down.svg" alt="Down Icon" />
             </button>
@@ -223,7 +222,7 @@
             </div>
           </div>
           <li class="nav-item ml-50 show-desktop">
-            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+            <a class="custom-dropdown-btn pricing-href py-3" href="pricing.html">
               Pricing
             </a>
           </li>
@@ -236,7 +235,7 @@
             </button>
             <span class="line"></span>
             <div class="resources">
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
                 <div class="resources-menu">
   <a class="resource-card integrations-href" href="integrations.html">
     <div class="text-and-icon d-flex align-items-center">
@@ -432,7 +431,7 @@
       clearTimeout(recoveryMenuTimer);
       recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
     });
@@ -441,7 +440,7 @@
       clearTimeout(resourcesMenuTimer);
       resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
     });
@@ -450,7 +449,7 @@
       clearTimeout(dropdownMenuTimer);
       dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1000);
+      }, 1200);
     }).mouseenter(function () {
       clearTimeout(dropdownMenuTimer);
     });
@@ -884,7 +883,7 @@
               <p class="intro__subtitle2 mt-3">Securely store your software assets, ready for quick recovery when things go wrong.</p>
               <div class="solutions">
                 <p class="select-level__price mr-4">From<br><span
-                    class="software-escrow-single-monthly fw-700 font-40">$89</span> Per application per month</p>
+                    class="software-escrow-single-monthly fw-700 font-40">$89</span> per application per month</p>
                 <a class="button btn-cerulean software-escrow-href px-5" href="software-escrow.html">
                   Learn more <i class="fa fa-xs fa-arrow-right ml-2" aria-hidden="true"></i></a>
               </div>

@@ -25,7 +25,7 @@
         </a>
 
         <div class="dropdown show-desktop">
-          <button class="btn bg-white dropdown-toggle nav-link nav-margin fw-700 font-12 text-transform-none"
+          <button class="btn bg-white dropdown-toggle nav-margin fw-700 font-12 btn-nav text-dark-cyan box-shadow-none"
             type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ site.data[page.lang]['navigation']['about_us'] }} <img class="ml-1 mb-1"
               src="/images/integrations/icon-down.svg" />
@@ -54,7 +54,6 @@
           <div class="dropdown show-desktop">
             <button class="btn bg-white dropdown-toggle custom-dropdown-btn" type="button" id="recoveryMenuBtn"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <!-- {{ site.data[page.lang]['navigation']['solutions'] }} -->
               {{ site.data[page.lang]['navigation_include']['disaster_recovery_solutions'] }}
               <img class="ml-1 mb-1" src="/images/integrations/icon-down.svg" alt="Down Icon" />
             </button>
@@ -64,7 +63,7 @@
             </div>
           </div>
           <li class="nav-item ml-50 show-desktop">
-            <a class="custom-dropdown-btn pricing-href" href="pricing.html">
+            <a class="custom-dropdown-btn pricing-href py-3" href="pricing.html">
               {{ site.data[page.lang]['footer']['pricing'] }}
             </a>
           </li>
@@ -77,7 +76,7 @@
             </button>
             <span class="line"></span>
             <div class="resources">
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
                 {% include resources-menu.html %}
               </div>
             </div>
@@ -191,7 +190,7 @@
       clearTimeout(recoveryMenuTimer);
       recoveryMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
     });
@@ -200,7 +199,7 @@
       clearTimeout(resourcesMenuTimer);
       resourcesMenuTimer = setTimeout(() => {
         $(this).click();
-      }, 100);
+      }, 10);
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
     });
@@ -209,7 +208,7 @@
       clearTimeout(dropdownMenuTimer);
       dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1000);
+      }, 1200);
     }).mouseenter(function () {
       clearTimeout(dropdownMenuTimer);
     });

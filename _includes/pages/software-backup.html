@@ -1602,7 +1602,7 @@
               </div>
 
               <!-- Section -->
-              {% include demo-recovery2.html %}
+              {% include demo-recovery3.html %}
             </div>
           </div>
         </div>
@@ -1797,7 +1797,7 @@
       var navigation = $('.navigation');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 190) {
+        if ($(window).scrollTop() <= 260) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -1879,6 +1879,21 @@
       console.log('ready');
       const currency = localStorage.getItem('currency');
       $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
+    });
+  </script>
+
+  <script>
+    $(function () {
+      var navigation = $('.navigation2');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 160) {
+          navigation.removeClass('nav-top-negative2');
+        } else {
+          navigation.addClass('nav-top-negative2');
+        }
+      });
+      navigation.css('transition', 'all 0.5s ease-in-out');
     });
   </script>
 </body>
