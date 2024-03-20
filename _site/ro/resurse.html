@@ -56,12 +56,14 @@
             <option value="6" id="french">Franceză</option>
           </select>
         </div>
-        <a class="text-dark-cyan nav-margin contact-sales-href show-desktop fw-700 font-12 text-transform-none btn-nav" href="contact.html#hs-chat-open">
+        <a class="text-dark-cyan nav-margin contact-sales-href show-desktop fw-700 font-12 text-transform-none btn-nav"
+          href="contact.html#hs-chat-open">
           
         </a>
       </div>
       <div class="top-bar__right d-flex flex-row align-items-center">
-        <a class="text-dark-cyan nav-margin contact-support-href fw-700 font-12 open-chat text-transform-none btn-nav" target="_blank" href="contact.html?support#hs-chat-open">
+        <a class="text-dark-cyan nav-margin contact-support-href fw-700 font-12 open-chat text-transform-none btn-nav"
+          target="_blank" href="contact.html?support#hs-chat-open">
           
         </a>
 
@@ -413,12 +415,59 @@
     </div>
   </div>
 </nav>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     let recoveryMenuTimer;
     let resourcesMenuTimer;
     let dropdownMenuTimer;
+
+    $("#recoveryMenuBtn").mouseenter(function () {
+      clearTimeout(recoveryMenuTimer);
+      recoveryMenuTimer = setTimeout(() => {
+        $(this).dropdown('toggle'); // Manually toggle the dropdown
+      }, 10);
+    }).mouseleave(function () {
+      clearTimeout(recoveryMenuTimer);
+    });
+
+    $("#resourcesMenuBtn").mouseenter(function () {
+      clearTimeout(resourcesMenuTimer);
+      resourcesMenuTimer = setTimeout(() => {
+        $(this).dropdown('toggle'); // Manually toggle the dropdown
+      }, 10);
+    }).mouseleave(function () {
+      clearTimeout(resourcesMenuTimer);
+    });
+
+    $(".dropdown-menu").mouseleave(function () {
+      clearTimeout(dropdownMenuTimer);
+      dropdownMenuTimer = setTimeout(() => {
+        $(".container-fluid").click();
+      }, 1200);
+    }).mouseenter(function () {
+      clearTimeout(dropdownMenuTimer);
+    });
+
+    // Disable click event entirely
+    $("#recoveryMenuBtn, #resourcesMenuBtn").on("click", function (e) {
+      e.stopImmediatePropagation(); // Stop all other click events
+      return false;
+    });
+  });
+</script>
+
+
+
+
+<!-- 
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let recoveryMenuTimer;
+    let resourcesMenuTimer;
+    let dropdownMenuTimer;
+
+
 
     $("#recoveryMenuBtn").mouseenter(function () {
       clearTimeout(recoveryMenuTimer);
@@ -447,7 +496,7 @@
       clearTimeout(dropdownMenuTimer);
     });
   });
-</script>
+</script> -->
     <!-- Header -->
     <div class="resources">
       <div class="header__content overflow-hidden">
