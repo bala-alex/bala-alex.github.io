@@ -1863,16 +1863,14 @@
     function refreshPage(link) {
       var href = link.getAttribute('href');
       window.location.href = href;
-      setTimeout(function () {
-        window.location.reload();
-      }, 1);
+      window.scrollTo({
+        top: 0,
+        behavior: 'auto'
+      });
+      window.onload = function() {
+        window.location.reload(true);
+      }
     }
-
-    window.onload = function () {
-      setTimeout(function () {
-        window.scrollTo(0, 0);
-      }, 1);
-    };
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
