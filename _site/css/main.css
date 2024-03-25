@@ -9074,6 +9074,23 @@ html {
           box-shadow: none;
 }
 
+.gradient-software-backup {
+  background: linear-gradient(270.76deg, #F1FDFF 57.01%, #BDEEF4 182.81%);
+}
+
+.gradient-software-escrow {
+  background: linear-gradient(270.5deg, #ECFDFF -7.01%, #BDEEF4 78.01%);
+}
+
+.gradient-saas-escrow {
+  background: linear-gradient(90.45deg, #E0F0FF 41.58%, #EFF8FF 115.95%);
+}
+
+.gradient-software-custodian {
+  background: -webkit-gradient(linear, right top, left top, color-stop(-11.39%, #DEF0FF), color-stop(84.45%, #B6D9FA));
+  background: linear-gradient(270deg, #DEF0FF -11.39%, #B6D9FA 84.45%);
+}
+
 .text-decoration-red {
   text-decoration: underline;
   text-decoration-color: #EE5E5E;
@@ -9081,6 +9098,10 @@ html {
 
 .vertical-align-middle {
   vertical-align: middle !important;
+}
+
+.header-rounded-bg {
+  border-radius: 0 0 50% 50%/0 0 30% 30% !important;
 }
 
 .darken-effect:hover div {
@@ -10726,6 +10747,14 @@ html {
 
 .table-border-right {
   border-right: 1px solid #dee2e6 !important;
+}
+
+.table-border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+.table-border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
 }
 
 .border-right-none {
@@ -21396,8 +21425,8 @@ input[name=consent] {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 28px;
   color: #009CB7;
   position: absolute;
   left: 25px;
@@ -21418,8 +21447,8 @@ input[name=consent] {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 28px;
   color: #417BD2;
   position: absolute;
   left: 25px;
@@ -21440,8 +21469,8 @@ input[name=consent] {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 28px;
   color: #164995;
   position: absolute;
   left: 25px;
@@ -24143,6 +24172,25 @@ input[name=consent] {
   margin-left: 20px;
   font-family: "Mulish", sans-serif;
 }
+.solutions .header__add-on2 {
+  background: #DDEAFC;
+  -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 16px;
+  color: #245CB0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  height: 42px;
+  width: fit-content;
+  line-height: 23px;
+  margin-top: 20px;
+}
 .solutions .header__bg-new {
   min-height: 700px !important;
   background: linear-gradient(1.58deg, #F8FBFF 1.71%, #FFFFFF 82.27%);
@@ -25156,22 +25204,33 @@ input[name=consent] {
   font-size: 24px;
   line-height: 32px;
   color: #1A5261;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .software-escrow .datacenters__title-add {
   background: #DDEAFC;
   -webkit-box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
           box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.25);
   border-radius: 100px;
-  width: 81px;
-  padding: 8px 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 91px;
+  max-width: 130px;
+  padding: 8px 8px;
   color: #245CB0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
   margin-left: 20px;
   font-family: "Mulish", sans-serif;
-  white-space: nowrap;
-  height: 32px;
+  white-space: normal;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
 }
 .software-escrow .datacenters__subtitle {
   font-family: "Mulish";
@@ -25726,6 +25785,34 @@ input[name=consent] {
           box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
   border-radius: 10px;
   padding: 20px;
+}
+.software-escrow .easy__box2 {
+  width: 100%;
+  max-width: 390px;
+  border: 0.5px solid #DCE5F2;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 54, 134, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+}
+.software-escrow .easy__box-padding {
+  padding: 30px;
+}
+@media (max-width: 992px) {
+  .software-escrow .easy__box-padding {
+    padding: 15px;
+  }
+}
+.software-escrow .easy__box-header {
+  padding: 20px 5px;
+}
+.software-escrow .easy__box-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  text-transform: uppercase;
 }
 .software-escrow .easy__title {
   font-family: "Mulish";
