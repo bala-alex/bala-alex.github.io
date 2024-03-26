@@ -1,99 +1,119 @@
 <body>
-    <!--  Clickcease.com tracking-->
-    <script type='text/javascript'>var script = document.createElement('script');
-      script.async = true; script.type = 'text/javascript';
-      var target = 'https://www.clickcease.com/monitor/stat.js';
-      script.src = target;var elem = document.head;elem.appendChild(script);
-      </script>
-      <noscript>
-      <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
-      </noscript>
-      <!--  Clickcease.com tracking-->
-  
-    <div class="bg-white">
-      <div class="container-fluid resources software-escrow px-0">
-        <!-- Navigation -->
-        {% include navigation.html %}
-        <!-- Header -->
-        <div class="header__bg-software-escrow min-h-400 header-rounded-bg">
-          <img class="header__bg-left" src="/images/compare-solutions/illustration-top-left.webp" alt="Illustration of the top left section of the websit header"/>
-          <img class="header__bg-right4" src="/images/compare-solutions/illustration-top-right.webp" alt="Illustration of the top right section of the website header"/>
-          <div class="container section-small d-flex align-items-center flex-column">
-            <h1 class="header__title mt-5 overflow-wrap-break text-center mw-100 font-50 pt-5">{{ site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</h1>
-            <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">{{ site.data[page.lang]['compare_solutions']['explore_and_compare'] }} </p>
+  <!--  Clickcease.com tracking-->
+  <script type='text/javascript'>var script = document.createElement('script');
+    script.async = true; script.type = 'text/javascript';
+    var target = 'https://www.clickcease.com/monitor/stat.js';
+    script.src = target; var elem = document.head; elem.appendChild(script);
+  </script>
+  <noscript>
+    <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx'
+        alt='ClickCease' /></a>
+  </noscript>
+  <!--  Clickcease.com tracking-->
 
-            <img class="software-escrow__image mt-4" src="/images/compare-solutions/compare-solutions-icons.webp" alt="Compare Solutions Icons"/>          
-          </div>
+  <div class="bg-white">
+    <div class="container-fluid resources software-escrow px-0">
+      <!-- Navigation -->
+      {% include navigation.html %}
+      <!-- Header -->
+      <div class="header__bg-software-escrow min-h-400 header-rounded-bg">
+        <img class="header__bg-left" src="/images/compare-solutions/illustration-top-left.webp"
+          alt="Illustration of the top left section of the websit header" />
+        <img class="header__bg-right4" src="/images/compare-solutions/illustration-top-right.webp"
+          alt="Illustration of the top right section of the website header" />
+        <div class="container section-small d-flex align-items-center flex-column">
+          <h1 class="header__title mt-5 overflow-wrap-break text-center mw-100 font-50 pt-5">{{
+            site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</h1>
+          <p class="header__subtitle2 my-3 font-18 text-dark-cyan text-center mw-800 mx-auto">{{
+            site.data[page.lang]['compare_solutions']['explore_and_compare'] }} </p>
+
+          <img class="software-escrow__image mt-4" src="/images/compare-solutions/compare-solutions-icons.webp"
+            alt="Compare Solutions Icons" />
         </div>
+      </div>
 
-        <!-- Section -->
-        <div class="pricing">
-          <div class="pricing-container mx-auto section-large pb-4 px-3">
-            <p class="people-choose__main-title overflow-wrap-break-mobile text-align-start pt-0">{{ site.data[page.lang]['compare_solutions']['disaster_recovery_management'] }}</p>
-            <p class="software-escrow__subtitle mw-570">{{ site.data[page.lang]['compare_solutions']['protect_your_software'] }}</p>
-            <div class="row mt-5 pb-5">
-              <div class="col-md-3 col-sm-12 software-escrow">
-                <div class="easy__box">
-                  <img class="easy__icon" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg" alt="Disaster Recevery Shield Icon"
-                    loading="lazy" />
-                  <p class="easy__title mt-2">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
-                  <p class="easy__subtitle">{{ site.data[page.lang]['disaster_recovery']['one_central_place'] }}</p>
-                  <img class="image-style mw-250" src="/images/compare-solutions/disaster-recovery-screen.webp" alt="Disaster Recovery Planner Dashboard Illustration" loading="lazy" />
-                  <a class="button btn-secondary-large2 disaster-recovery-planner-href px-5 mt-4 w-100" href="disaster-recovery-planner.html">
-                    {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
-                </div>
-              </div>
-              <div class="col-md-9 col-sm-12 bg-pale-cyan border-radius-10 position-relative pb-4">
-                <img class="setting-up__devider-bg" src="/images/compare-solutions/recovery-bg-shape.webp" alt="Disaster recovery Background Shape" loading="lazy" />
-                <div class="row column-reverse-mobile mt-5">
-                  <div class="col-md-5 col-sm-12">
-                    <img class="image-style mw-350 my-4" src="/images/disaster-recovery/disaster-recovery-screen.webp" alt="Disaster Recovery Planner Screen Illustration" loading="lazy" />
-                  </div>
-                  <div class="col-md-7 col-sm-12">
-                    <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['disaster_recovery_planning_toolkit'] }}</p>
-                    <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['register_for_free'] }}</p>
-                    <div class="software-escrow__devider"></div>
-                    <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['information_assets_list'] }}</p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['internal_and_external'] }}</p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_register'] }}</p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_mitigation'] }}</p>
-                    <a class="button btn-cerulean3 my-4" data-toggle="modal" data-target="#exampleModal22">
-                      {{ site.data[page.lang]['index']['start_planning'] }}
-                    </a>
-                  </div>
-                </div>
-                
+      <!-- Section -->
+      <div class="pricing">
+        <div class="pricing-container mx-auto section-large pb-4 px-3">
+          <p class="people-choose__main-title overflow-wrap-break-mobile text-align-start pt-0">{{
+            site.data[page.lang]['compare_solutions']['disaster_recovery_management'] }}</p>
+          <p class="software-escrow__subtitle mw-570">{{
+            site.data[page.lang]['compare_solutions']['protect_your_software'] }}</p>
+          <div class="row mt-5 pb-5">
+            <div class="col-md-3 col-sm-12 software-escrow">
+              <div class="easy__box">
+                <img class="easy__icon" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                  alt="Disaster Recevery Shield Icon" loading="lazy" />
+                <p class="easy__title mt-2">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}
+                </p>
+                <p class="easy__subtitle">{{ site.data[page.lang]['disaster_recovery']['one_central_place'] }}</p>
+                <img class="image-style mw-250" src="/images/compare-solutions/disaster-recovery-screen.webp"
+                  alt="Disaster Recovery Planner Dashboard Illustration" loading="lazy" />
+                <a class="button btn-secondary-large2 disaster-recovery-planner-href px-5 mt-4 w-100"
+                  href="disaster-recovery-planner.html">
+                  {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
               </div>
             </div>
-            <div class="setting-up__devider-line my-4"></div>
-          </div>
-        </div>
+            <div class="col-md-9 col-sm-12 bg-pale-cyan border-radius-10 position-relative pb-4">
+              <img class="setting-up__devider-bg" src="/images/compare-solutions/recovery-bg-shape.webp"
+                alt="Disaster recovery Background Shape" loading="lazy" />
+              <div class="row column-reverse-mobile mt-5">
+                <div class="col-md-5 col-sm-12">
+                  <img class="image-style mw-350 my-4" src="/images/disaster-recovery/disaster-recovery-screen.webp"
+                    alt="Disaster Recovery Planner Screen Illustration" loading="lazy" />
+                </div>
+                <div class="col-md-7 col-sm-12">
+                  <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">{{
+                    site.data[page.lang]['index']['disaster_recovery_planning_toolkit'] }}</p>
+                  <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['register_for_free'] }}</p>
+                  <div class="software-escrow__devider"></div>
+                  <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['index']['information_assets_list'] }}</p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['index']['internal_and_external'] }}</p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['index']['risk_register'] }}</p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['index']['risk_mitigation'] }}</p>
+                  <a class="button btn-cerulean3 my-4" data-toggle="modal" data-target="#exampleModal22">
+                    {{ site.data[page.lang]['index']['start_planning'] }}
+                  </a>
+                </div>
+              </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content section__modal mx-auto">
-              <div class="modal-body p-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="m-0">
-                  <div class="section__modal-form p-0 ">
-                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['index']['start_planning'] }}</p>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-12">
-                        <img class="section__modal-image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
-                      </div>
-                      <div class="col-md-6 col-sm-12 pt-3">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                        <script>
-                          hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5365877",
-                            formId: "2b243a37-2e7a-40e8-a13d-1c7a27e1551b"
-                          });
-                        </script>
-                      </div>
+            </div>
+          </div>
+          <div class="setting-up__devider-line my-4"></div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content section__modal mx-auto">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="m-0">
+                <div class="section__modal-form p-0 ">
+                  <p class="section__modal-title mt-3">{{ site.data[page.lang]['index']['start_planning'] }}</p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <img class="section__modal-image mb-5"
+                        src="/images/landing/disaster-recovery-dashboard-toolkit.webp"
+                        alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy" />
+                    </div>
+                    <div class="col-md-6 col-sm-12 pt-3">
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                      <script>
+                        hbspt.forms.create({
+                          region: "na1",
+                          portalId: "5365877",
+                          formId: "2b243a37-2e7a-40e8-a13d-1c7a27e1551b"
+                        });
+                      </script>
                     </div>
                   </div>
                 </div>
@@ -101,15 +121,17 @@
             </div>
           </div>
         </div>
+      </div>
 
-        
 
-        <!-- Section -->
-        <div class="pricing">
-          <div class="pricing-container mx-auto section-large pt-4 px-3">
-            <p class="people-choose__main-title overflow-wrap-break-mobile text-align-start pt-0">{{ site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</p>
-            <p class="software-escrow__subtitle mw-600">{{ site.data[page.lang]['compare_solutions']['select_from'] }}</p>
-            <!-- <div class="row mt-5">
+
+      <!-- Section -->
+      <div class="pricing">
+        <div class="pricing-container mx-auto section-large pt-4 px-3">
+          <p class="people-choose__main-title overflow-wrap-break-mobile text-align-start pt-0">{{
+            site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</p>
+          <p class="software-escrow__subtitle mw-600">{{ site.data[page.lang]['compare_solutions']['select_from'] }}</p>
+          <!-- <div class="row mt-5">
               <div class="col-md-6 col-sm-12">
                 <p class="software-escrow__subtitle fw-600 text-bondi-blue text-center mw-100">{{ site.data[page.lang]['compare_solutions']['recovery'] }}</p>
               </div>
@@ -125,582 +147,516 @@
               <div class="setting-up__devider-gradient mb-4"></div>
               <img class="setting-up__arrow-right" src="/images/compare-solutions/arrow-right.svg" alt="Arrow Right Icon" loading="lazy"/>
             </div> -->
-            <div class="row mt-5 px-3">
-              <div class="col-md-3 col-sm-12 software-escrow px-0">
-                <div class="easy__box my-3 p-0 overflow-hidden">
-                  <div class="easy__box-header gradient-software-backup">
-                    <p class="easy__box-title text-center text-bondi-blue mb-0">For Internal</p>
+          <div class="row mt-5 px-3">
+            <div class="col-md-3 col-sm-12 software-escrow px-0">
+              <div class="easy__box my-3 p-0 overflow-hidden">
+                <div class="easy__box-header gradient-software-backup">
+                  <p class="easy__box-title text-center text-bondi-blue mb-0">For Internal</p>
+                </div>
+                <div class="easy__box-padding">
+                  <img class="easy__icon" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg"
+                    alt="Software Backup Shield Icon" loading="lazy" />
+                  <p class="easy__title">{{ site.data[page.lang]['index']['software_backup'] }}</p>
+                  <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_the_source'] }}</p>
+                  <a class="button btn-secondary-large2 software-backup-href px-5 my-4 w-100"
+                    href="software-backup.html">
+                    {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
+                  <div class="setting-up__devider-line mb-4 mt-5"></div>
+                  <div class="min-h-200">
+                    <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{
+                      site.data[page.lang]['compare_solutions']['includes'] }}</p>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                        alt="Disaster Recevery Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{
+                        site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
+                    </div>
                   </div>
-                  <div class="easy__box-padding">
-                    <img class="easy__icon" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" loading="lazy" />
-                    <p class="easy__title">{{ site.data[page.lang]['index']['software_backup'] }}</p>
-                    <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_the_source'] }}</p>
-                    <a class="button btn-secondary-large2 software-backup-href px-5 my-4 w-100" href="software-backup.html">
-                      {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
-                    <div class="setting-up__devider-line mb-4 mt-5"></div>
-                    <div class="min-h-200">
-                      <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{ site.data[page.lang]['compare_solutions']['includes'] }}</p>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg" alt="Disaster Recevery Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
-                      </div>
-                    </div>
-                    <div class="setting-up__devider-line my-4"></div>
-                    <div class="solutions">
-                      <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
-                          class="software-backup-monthly font-35 fw-700">{{ site.data.pricing.prices.software_backup_monthly.USD }}</span>/ {{
-                        site.data[page.lang]['index']['per_month'] }}</p>
-                      <a class="button btn-cerulean3 software-backup-href height-fit-content text-center min-h-50 w-100" href="software-backup.html#pricing">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
-                    </div>
+                  <div class="setting-up__devider-line my-4"></div>
+                  <div class="solutions">
+                    <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
+                        class="software-backup-monthly font-35 fw-700">{{
+                        site.data.pricing.prices.software_backup_monthly.USD }}</span>/ {{
+                      site.data[page.lang]['index']['per_month'] }}</p>
+                    <a class="button btn-cerulean3 software-backup-href height-fit-content text-center min-h-50 w-100"
+                      href="software-backup.html#pricing">{{
+                      site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-12 software-escrow px-0">
-                <div class="easy__box my-3 p-0 overflow-hidden">
-                  <div class="easy__box-header gradient-software-escrow">
-                    <p class="easy__box-title text-center text-bondi-blue mb-0">For Clients & Vendors</p>
+            </div>
+            <div class="col-md-3 col-sm-12 software-escrow px-0">
+              <div class="easy__box my-3 p-0 overflow-hidden">
+                <div class="easy__box-header gradient-software-escrow">
+                  <p class="easy__box-title text-center text-bondi-blue mb-0">For Clients & Vendors</p>
+                </div>
+                <div class="easy__box-padding">
+                  <img class="easy__icon" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg"
+                    alt="Software Escrow Shield Icon" loading="lazy" />
+                  <p class="easy__title">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
+                  <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_your_software'] }}</p>
+                  <a class="button btn-secondary-large2 software-escrow-href px-5 mt-4 w-100"
+                    href="software-escrow.html">
+                    {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
+                  <div class="setting-up__devider-line mb-4 mt-5"></div>
+                  <div class="min-h-200">
+                    <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{
+                      site.data[page.lang]['compare_solutions']['includes'] }}</p>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                        alt="Disaster Recevery Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{
+                        site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/software-backups-shield-icon.svg"
+                        alt="Software Backup Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup']
+                        }}</p>
+                    </div>
                   </div>
-                  <div class="easy__box-padding">
-                    <img class="easy__icon" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Shield Icon" loading="lazy" />
-                    <p class="easy__title">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
-                    <p class="easy__subtitle">{{ site.data[page.lang]['index']['securely_store_your_software'] }}</p>
-                    <a class="button btn-secondary-large2 software-escrow-href px-5 mt-4 w-100" href="software-escrow.html">
-                      {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
-                    <div class="setting-up__devider-line mb-4 mt-5"></div>
-                    <div class="min-h-200">
-                      <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{ site.data[page.lang]['compare_solutions']['includes'] }}</p>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg" alt="Disaster Recevery Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup'] }}</p>
-                      </div>
-                    </div>
-                    <div class="setting-up__devider-line my-4"></div>
-                    <div class="solutions">
-                      <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
-                          class="software-escrow-single-monthly font-35 fw-700">{{ site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/ {{
-                        site.data[page.lang]['index']['per_month'] }}</p>
-                      <a class="button btn-cerulean3 software-escrow-href height-fit-content text-center min-h-50 w-100" href="software-escrow.html#pricing">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
-                    </div>
+                  <div class="setting-up__devider-line my-4"></div>
+                  <div class="solutions">
+                    <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
+                        class="software-escrow-single-monthly font-35 fw-700">{{
+                        site.data.pricing.prices.software_escrow_single_monthly.USD }}</span>/ {{
+                      site.data[page.lang]['index']['per_month'] }}</p>
+                    <a class="button btn-cerulean3 software-escrow-href height-fit-content text-center min-h-50 w-100"
+                      href="software-escrow.html#pricing">{{
+                      site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-12 software-escrow px-0">
-                <div class="easy__box my-3 p-0 overflow-hidden">
-                  <div class="easy__box-header gradient-saas-escrow">
-                    <p class="easy__box-title text-center text-secondary-default mb-0">For Clients & Vendors</p>
+            </div>
+            <div class="col-md-3 col-sm-12 software-escrow px-0">
+              <div class="easy__box my-3 p-0 overflow-hidden">
+                <div class="easy__box-header gradient-saas-escrow">
+                  <p class="easy__box-title text-center text-secondary-default mb-0">For Clients & Vendors</p>
+                </div>
+                <div class="easy__box-padding">
+                  <img class="easy__icon" src="/images/landing/icons/saas-escrow-shield.svg"
+                    alt="SaaS Escrow Shield Icon" loading="lazy" />
+                  <p class="easy__title">{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
+                  <p class="easy__subtitle">{{ site.data[page.lang]['compare_solutions']['next_level_protection'] }}</p>
+                  <a class="button btn-secondary-large2 saas-escrow-href px-5 mt-4 w-100" href="saas-escrow.html">
+                    {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
+                  <div class="setting-up__devider-line mb-4 mt-5"></div>
+                  <div class="min-h-200">
+                    <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{
+                      site.data[page.lang]['compare_solutions']['includes'] }}</p>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                        alt="Disaster Recevery Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{
+                        site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/software-backups-shield-icon.svg"
+                        alt="Software Backup Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup']
+                        }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon"
+                        loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_escrow']
+                        }}</p>
+                    </div>
                   </div>
-                  <div class="easy__box-padding">
-                    <img class="easy__icon" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" loading="lazy" />
-                    <p class="easy__title">{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
-                    <p class="easy__subtitle">{{ site.data[page.lang]['compare_solutions']['next_level_protection'] }}</p>
-                    <a class="button btn-secondary-large2 saas-escrow-href px-5 mt-4 w-100" href="saas-escrow.html">
-                      {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
-                    <div class="setting-up__devider-line mb-4 mt-5"></div>
-                    <div class="min-h-200">
-                      <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{ site.data[page.lang]['compare_solutions']['includes'] }}</p>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg" alt="Disaster Recevery Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
-                      </div>
-                    </div>
-                    <div class="setting-up__devider-line my-4"></div>
-                    <div class="solutions">
-                      <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
-                          class="saas-escrow-single-monthly font-35 fw-700">{{ site.data.pricing.prices.saas_escrow_single_monthly.USD }}</span>/ {{
-                        site.data[page.lang]['index']['per_month'] }}</p>
-                      <a class="button btn-cerulean3 saas-escrow-href height-fit-content text-center min-h-50 w-100" href="saas-escrow.html#pricing">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
-                    </div>
+                  <div class="setting-up__devider-line my-4"></div>
+                  <div class="solutions">
+                    <p class="select-level__price">{{ site.data[page.lang]['software_backup']['from'] }}<br><span
+                        class="saas-escrow-single-monthly font-35 fw-700">{{
+                        site.data.pricing.prices.saas_escrow_single_monthly.USD }}</span>/ {{
+                      site.data[page.lang]['index']['per_month'] }}</p>
+                    <a class="button btn-cerulean3 saas-escrow-href height-fit-content text-center min-h-50 w-100"
+                      href="saas-escrow.html#pricing">{{ site.data[page.lang]['software_backup']['see_pricing_details']
+                      }}</a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-12 software-escrow px-0">
-                <div class="easy__box my-3 p-0 overflow-hidden">
-                  <div class="easy__box-header gradient-software-custodian">
-                    <p class="easy__box-title text-center text-secondary-default mb-0">For All</p>
+            </div>
+            <div class="col-md-3 col-sm-12 software-escrow px-0">
+              <div class="easy__box my-3 p-0 overflow-hidden">
+                <div class="easy__box-header gradient-software-custodian">
+                  <p class="easy__box-title text-center text-secondary-default mb-0">For All</p>
+                </div>
+                <div class="easy__box-padding">
+                  <img class="easy__icon" src="/images/landing/icons/data-custodian-shield.svg"
+                    alt="Software Custodian Shield Icon" loading="lazy" />
+                  <p class="easy__title">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</p>
+                  <p class="easy__subtitle">{{
+                    site.data[page.lang]['compare_solutions']['full_life_cycle_accountability'] }}</p>
+                  <a class="button btn-secondary-large2 software-custodian-href px-5 mt-4 w-100"
+                    href="software-custodian.html">
+                    {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
+                  <div class="setting-up__devider-line mb-4 mt-5"></div>
+                  <div class="min-h-200">
+                    <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{
+                      site.data[page.lang]['compare_solutions']['includes'] }}</p>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                        alt="Disaster Recevery Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{
+                        site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/disaster-recovery/icons/software-backups-shield-icon.svg"
+                        alt="Software Backup Shield Icon" loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup']
+                        }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1"
+                        src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon"
+                        loading="lazy" />
+                      <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_escrow']
+                        }}</p>
+                    </div>
+                    <div class="d-flex">
+                      <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1 mb-0"
+                        src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon"
+                        loading="lazy" />
+                      <p class="easy__title font-16 line-height-18 mb-0">{{ site.data[page.lang]['index']['saas_escrow']
+                        }}</p>
+                    </div>
                   </div>
-                  <div class="easy__box-padding">
-                    <img class="easy__icon" src="/images/landing/icons/data-custodian-shield.svg" alt="Software Custodian Shield Icon" loading="lazy" />
-                    <p class="easy__title">{{ site.data[page.lang]['software_custodian']['software_custodian'] }}</p>
-                    <p class="easy__subtitle">{{ site.data[page.lang]['compare_solutions']['full_life_cycle_accountability'] }}</p>
-                    <a class="button btn-secondary-large2 software-custodian-href px-5 mt-4 w-100" href="software-custodian.html">
-                      {{ site.data[page.lang]['software_escrow']['learn_more'] }}</a>
-                    <div class="setting-up__devider-line mb-4 mt-5"></div>
-                    <div class="min-h-200">
-                      <p class="software-escrow__text font-14 text-dark-cyan line-height-24">{{ site.data[page.lang]['compare_solutions']['includes'] }}</p>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg" alt="Disaster Recevery Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['disaster_recovery']['disaster_recovery_planner'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_backup'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1" src="/images/landing/icons/software-escrow-shield.svg" alt="Software Escrow Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18">{{ site.data[page.lang]['index']['software_escrow'] }}</p>
-                      </div>
-                      <div class="d-flex">
-                        <img class="easy__icon mw-35 mh-35 object-fit-contain mr-1 mb-0" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon"
-                        loading="lazy" />
-                        <p class="easy__title font-16 line-height-18 mb-0">{{ site.data[page.lang]['index']['saas_escrow'] }}</p>
-                      </div>
-                    </div>
-                    <div class="setting-up__devider-line my-4"></div>
-                    <div class="solutions pt-2">
-                      <a class="button btn-secondary-large2 mt-3 height-fit-content text-center min-h-50 w-100" data-toggle="modal" data-target="#exampleModal34">{{ site.data[page.lang]['index']['get_a_quote'] }}</a>
-                      <a class="button btn-cerulean3 software-custodian-href mt-3 height-fit-content text-center min-h-50 w-100" href="software-custodian.html#pricing">{{ site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
-                    </div>
+                  <div class="setting-up__devider-line my-4"></div>
+                  <div class="solutions pt-2">
+                    <a class="button btn-secondary-large2 mt-3 height-fit-content text-center min-h-50 w-100"
+                      data-toggle="modal" data-target="#exampleModal34">{{ site.data[page.lang]['index']['get_a_quote']
+                      }}</a>
+                    <a class="button btn-cerulean3 software-custodian-href mt-3 height-fit-content text-center min-h-50 w-100"
+                      href="software-custodian.html#pricing">{{
+                      site.data[page.lang]['software_backup']['see_pricing_details'] }}</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="section-medium p-3 pricing">
-          <p class="people-choose__main-title pt-0">Protection Scope</p>
-          <div class="mt-2">
-
-            <div class="container-fluid overflow-x-hidden mt-5">
-              <div class="plan__table-container mx-auto">
-                <div class="overflow-x-scroll">
-                  <table class="table mb-0">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="plan__table-subtitle border-none break-spaces bg-white vertical-align-middle"></th>
-                        <th class="border-none bg-white" scope="row">
-                          <div class="d-flex align-items-center flex-column">
-                            <img class="my-1"
-                              src="/images/software-escrow/icons/software-backup-icon.svg" alt="Software Backup Icon"
-                              loading="lazy" />
-                            <p class="plan__table-subtitle my-1 text-center">Software Backup
-                            </p>
-                          </div>
-                        </th>
-                        <th class="border-none bg-white" scope="row">
-                          <div class="d-flex align-items-center flex-column">
-                            <img class="my-1"
-                              src="/images/software-escrow/icons/software-escrow-icon.svg" alt="Software Escrow Icon"
-                              loading="lazy" />
-                            <p class="plan__table-subtitle my-1 text-center">Software Escrow
-                            </p>
-                          </div>
-                        </th>
-                        <th class="border-none bg-white" scope="row">
-                          <div class="d-flex align-items-center flex-column">
-                            <img class="my-1"
-                              src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-                              loading="lazy" />
-                            <p class="plan__table-subtitle my-1 text-center">SaaS Escrow
-                            </p>
-                          </div>
-                        </th>
-                        <th class="border-none bg-white" scope="row">
-                          <div class="d-flex align-items-center flex-column">
-                            <img class="my-1"
-                              src="/images/software-escrow/icons/software-custodian-icon2.svg" alt="Software Custodian Icon"
-                              loading="lazy" />
-                            <p class="plan__table-subtitle my-1 text-center">Software Custodian
-                            </p>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                          <p class="plan__table-text my-1 font-22 fw-600">Resilience</p>
-                        </th>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white table-border-right"></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Software Source Code</p>
-                        </th>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Software Data</p>
-                        </th>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-
-                      <tr>
-                        <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                          <p class="plan__table-text my-1 font-22 fw-600">Recovery</p>
-                        </th>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white table-border-right"></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Software Source Code for Vendors/Clients</p>
-                        </th>
-                        <td class="text-center"></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Software Data for Vendors/Clients</p>
-                        </th>
-                        <td class="text-center"></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-
-                      <tr>
-                        <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                          <p class="plan__table-text my-1 font-22 fw-600">Continuity</p>
-                        </th>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white table-border-right"></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Software Hosting Environments</p>
-                        </th>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">3rd Party Dependencies</p>
-                        </th>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-
-                      <tr>
-                        <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                          <p class="plan__table-text my-1 font-22 fw-600">Accountability</p>
-                        </th>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white"></td>
-                        <td class="bg-cool-white table-border-right"></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left" scope="row">
-                          <p class="plan__table-text my-1">Regulated Data Operations</p>
-                        </th>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-                      <tr>
-                        <th class="table-border-left table-border-bottom" scope="row">
-                          <p class="plan__table-text my-1">SLA Performance</p>
-                        </th>
-                        <td class="text-center table-border-bottom"></td>
-                        <td class="text-center table-border-bottom"></td>
-                        <td class="text-center table-border-bottom"></td>
-                        <td class="text-center table-border-right table-border-bottom"><i class="fas fa-check text-bondi-blue my-1"></i></td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>            
-          </div>
-        </div>
-        <div class="pricing-table-devider"></div>
-
-        <!-- Section -->
-        <div class="bg-gradient-blue-bottom">
-          <div class="container section-large">
-            <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">{{ site.data[page.lang]['compare_solutions']['available_add_ons'] }}</p>
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/certified.webp" alt="Illustration: Certified" loading="lazy"/>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['certified'] }}</p>
-                <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['boost_confidence'] }}</p>
-                <p class="software-escrow__text mt-3 font-16"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['automated_content'] }} </p>
-                <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['automated_activity'] }} </p>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4">
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['deposit_packages'] }}</p>
-                <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['upgrade_your'] }}</p>
-                <p class="software-escrow__text mt-3 font-16"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['storage_region'] }} </p>
-                <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['ip_whitelisting'] }} </p>
-                <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['deposit_history'] }} </p>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/deposit-packages.webp" alt="Illustration: Deposit Packages" loading="lazy"/>
-              </div>
-            </div>
-
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/advanced-integrations.webp" alt="Illustration: Advanced Integrations" loading="lazy"/>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['advanced_integrations'] }}</p>
-                <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['set_up_the'] }}</p>
-                <div class="resources">
-                  <div class="d-flex flex-wrap mt-4 mw-490">
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/MySQL.svg" alt="MySQL Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Azure-DB.svg" alt="Azure DB Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Microsoft Office.svg" alt="Microsoft Office Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Dropbox-Paper.svg" alt="Microsoft Office Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Google-Docs.svg" alt="Google Docs Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Google-Cloud.svg" alt="Google Cloud Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/1Password.svg" alt="1Password Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Nord Pass.svg" alt="Nord Pass Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Cinema-4D.svg" alt="Cinema 4D Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Adobe-Creative-Cloud.svg" alt="Adobe Creative Cloud Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Figma.svg" alt="Figma Icon"/>
-                    <a class="header__subtext text-bondi-blue integrations-href mt-3 ml-2 mb-4 fw-500" href="integrations.html">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5 pt-4">
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['advanced_saas'] }}</p>
-                <p class="software-escrow__subtitle mw-530 fw-light">{{ site.data[page.lang]['compare_solutions']['set_up_the_integration'] }}</p>
-                <div class="resources">
-                  <div class="d-flex flex-wrap mt-4 mw-420">
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/sales-force.svg" alt="Sales Force Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/IBM-Cloud.svg" alt="IBM Cloud Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Alibaba-Cloud.svg" alt="Alibaba Cloud Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Heroku.svg" alt="Heroku Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Rackspace.svg" alt="Rackspace Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Digital-Ocean.svg" alt="Digital Ocean Icon"/>
-                    <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Oracle-Cloud.svg" alt="Oracle Cloud Icon"/>
-
-                    <a class="header__subtext text-bondi-blue integrations-href mt-3 ml-2 mb-4 fw-500" href="integrations.html">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} <i class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/advanced-saas.webp" alt="Illustration: Advanced SaaS Integrations" loading="lazy"/>
-              </div>
-            </div>
-
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/compliance-package.webp" alt="Illustration: Compliance Package" loading="lazy"/>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['compliance_package'] }}</p>
-                <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['maximize_security'] }}</p>
-
-                <div class="row mt-1">
-                  <div class="col-md-6 col-sm-12">
-                    <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['due_diligence'] }}</p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['security_audit'] }}</p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['vendor_screening'] }} </p>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                    <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['gdpr_data'] }} </p>
-                    <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['hipaa_data'] }} </p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <div class="row mt-5 pt-4">
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['assured_recovery'] }}</p>
-                <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['when_things_go'] }}</p>
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['technical_team'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['response_time'] }} </p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['prepare_recovery'] }} </p>
-              </div>
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/assured-recovery.webp" alt="Illustration: Assured Recovery" loading="lazy"/>
-              </div>
-            </div>
-
-            <div class="row column-reverse-mobile mt-5 pt-4">
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/coverage-duration.webp" alt="Illustration: Coverage Duration Package" loading="lazy"/>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{ site.data[page.lang]['compare_solutions']['coverage_duration'] }} </p>
-                <p class="software-escrow__subtitle mw-530">{{ site.data[page.lang]['compare_solutions']['in_case'] }}</p>
-
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['compare_solutions']['extend_your'] }} </p>
-                
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-
-        <!-- Section -->
-        <div class="container">
-          <div class="content-center">
-            <img class="pt-100" src="/images/landing/icons/ck-logo.svg" alt="Codekeeper Logo Icon" />
-          </div>
-          <p class="people-choose__main-title overflow-wrap-break-mobile text-bondi-blue pt-2">{{ site.data[page.lang]['index']['disaster_proof_software'] }}</p>
-          <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">"{{ site.data[page.lang]['index']['envision_a_business'] }}"</p>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="mentions__box2 light-box-shadow">
-                <div class="mentions__box-bg-green">
-                  <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_companies'] }}:</p>
-                  <img class="mentions__box-image" src="/images/landing/companies-building.webp"
-                  alt="Company Building Illustration" loading="lazy" />
-                </div>
-                <div class="mentions__box-content">
-                  <div class="d-flex">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['enterprise_ready_assurance'] }}: </p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['elevate_your_infrastructure'] }}</p>
-                    </div>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['client_first'] }}:  </p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['offer_impenetrable'] }}</p>
-                    </div>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['regulatory_alignment'] }}:</p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['meet_industry'] }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="mentions__box2 light-box-shadow">
-                <div class="mentions__box-bg-blue">
-                  <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_clients'] }}:</p>
-                  <img class="mentions__box-image" src="/images/landing/clients-building.webp"
-                  alt="Clients Building Illustration" loading="lazy" />
-                </div>
-                <div class="mentions__box-content">
-                  <div class="d-flex">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['operational_excellence'] }}:</p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['achieve_and'] }}</p>
-                    </div>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['business_continuity'] }}:  </p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['shield_your'] }}</p>
-                    </div>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" />
-                    <div>
-                      <p class="mentions__box-text text-secondary-default mb-1">{{ site.data[page.lang]['index']['regulatory_ready'] }}: </p>
-                      <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['navigate_the_compliance'] }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="people-choose__bg pb-5 min-h-300">
-          <div class="container">
-            <p class="people-choose__info mx-auto mt-5 mw-770 text-bondi-blue text-italic font-28 pt-50 line-height-38">{{ site.data[page.lang]['index']['together_we_redefine'] }}</p>
-          </div>
-        </div>
-  
-        <div class="content-center flex-column section-large container">
-          <p class="people-choose__main-title overflow-wrap-break-mobile text-dark-cyan mw-800 mx-auto text-center pb-4 pt-0">{{ site.data[page.lang]['index']['join_these_companies'] }}</p>
-          <img class="image-style mt-4" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
-          <a class="button btn-cerulean pricing-href mx-auto px-5 mt-5" href="pricing.html">
-            {{ site.data[page.lang]['includes']['intro']['get_started'] }}
-          </a>
-          <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['best_price'] }}</p>
-          <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['no_hidden_costs'] }}</p>
         </div>
       </div>
 
-      <div class="contact">
-        <div class="section__build-quote mx-auto mw-700">
+      <div class="section-medium p-3 pricing">
+        <p class="people-choose__main-title pt-0">Protection Scope</p>
+        <div class="mt-2">
 
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal34" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog mw-700" role="document">
-              <div class="modal-content section__modal mx-auto mw-700">
-                <div class="modal-body p-0">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <div class="m-0">
-                    <div class="section__modal-form p-0">
-                      <div class="d-flex align-items-center justify-content-between w-100">
-                        <h3 class="section__modal-title2 mt-3">{{ site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</h3>
-                        <img class="mr-1 mw-50 mt-3 mr-4"
-                          src="/images/landing/icons/data-custodian-shield.svg"
-                          alt="Software Custodian Icon" loading="lazy">
-                      </div>
+          <div class="container-fluid overflow-x-hidden mt-5">
+            <div class="plan__table-container mx-auto">
+              <div class="overflow-x-scroll">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col"
+                        class="plan__table-subtitle border-none break-spaces bg-white vertical-align-middle"></th>
+                      <th class="border-none bg-white" scope="row">
+                        <div class="d-flex align-items-center flex-column">
+                          <img class="my-1" src="/images/software-escrow/icons/software-backup-icon.svg"
+                            alt="Software Backup Icon" loading="lazy" />
+                          <p class="plan__table-subtitle my-1 text-center">Software Backup
+                          </p>
+                        </div>
+                      </th>
+                      <th class="border-none bg-white" scope="row">
+                        <div class="d-flex align-items-center flex-column">
+                          <img class="my-1" src="/images/software-escrow/icons/software-escrow-icon.svg"
+                            alt="Software Escrow Icon" loading="lazy" />
+                          <p class="plan__table-subtitle my-1 text-center">Software Escrow
+                          </p>
+                        </div>
+                      </th>
+                      <th class="border-none bg-white" scope="row">
+                        <div class="d-flex align-items-center flex-column">
+                          <img class="my-1" src="/images/software-escrow/icons/saas-escrow-icon.svg"
+                            alt="SaaS Escrow Icon" loading="lazy" />
+                          <p class="plan__table-subtitle my-1 text-center">SaaS Escrow
+                          </p>
+                        </div>
+                      </th>
+                      <th class="border-none bg-white" scope="row">
+                        <div class="d-flex align-items-center flex-column">
+                          <img class="my-1" src="/images/software-escrow/icons/software-custodian-icon2.svg"
+                            alt="Software Custodian Icon" loading="lazy" />
+                          <p class="plan__table-subtitle my-1 text-center">Software Custodian
+                          </p>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="bg-cool-white table-border-left min-width-300" scope="row">
+                        <p class="plan__table-text my-1 font-22 fw-600">Resilience</p>
+                      </th>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white table-border-right"></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Software Source Code</p>
+                      </th>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Software Data</p>
+                      </th>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
 
-                      <script charset="utf-8" type="text/javascript"
-                        src="//js.hsforms.net/forms/embed/v2.js"></script>
-                      <script>
-                        hbspt.forms.create({
-                          region: "na1",
-                          portalId: "5365877",
-                          formId: "a61eb434-a42a-4c4d-8f67-f235e60ad6c0"
-                        });
-                      </script>
-                    </div>
+                    <tr>
+                      <th class="bg-cool-white table-border-left min-width-300" scope="row">
+                        <p class="plan__table-text my-1 font-22 fw-600">Recovery</p>
+                      </th>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white table-border-right"></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Software Source Code for Vendors/Clients</p>
+                      </th>
+                      <td class="text-center"></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Software Data for Vendors/Clients</p>
+                      </th>
+                      <td class="text-center"></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+
+                    <tr>
+                      <th class="bg-cool-white table-border-left min-width-300" scope="row">
+                        <p class="plan__table-text my-1 font-22 fw-600">Continuity</p>
+                      </th>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white table-border-right"></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Software Hosting Environments</p>
+                      </th>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">3rd Party Dependencies</p>
+                      </th>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+
+                    <tr>
+                      <th class="bg-cool-white table-border-left min-width-300" scope="row">
+                        <p class="plan__table-text my-1 font-22 fw-600">Accountability</p>
+                      </th>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white"></td>
+                      <td class="bg-cool-white table-border-right"></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left" scope="row">
+                        <p class="plan__table-text my-1">Regulated Data Operations</p>
+                      </th>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center table-border-right"><i class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+                    <tr>
+                      <th class="table-border-left table-border-bottom" scope="row">
+                        <p class="plan__table-text my-1">SLA Performance</p>
+                      </th>
+                      <td class="text-center table-border-bottom"></td>
+                      <td class="text-center table-border-bottom"></td>
+                      <td class="text-center table-border-bottom"></td>
+                      <td class="text-center table-border-right table-border-bottom"><i
+                          class="fas fa-check text-bondi-blue my-1"></i></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-table-devider"></div>
+
+      <div class="pricing">
+        <div class="section-large pricing-tabs">
+          <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">Available Features</p>
+          <div class="pricing-container2 mx-auto mt-5 px-3">
+            <div class="nav nav-pills mb-3 d-flex justify-content-center mt-3" id="pills-tab" role="tablist">
+              <a class="nav-link active space-no-wrap" id="first-tab" data-toggle="pill" href="#first" role="tab"
+                aria-controls="year" aria-selected="false">
+                Legal Features
+              </a>
+              <a class="nav-link" id="second-tab" data-toggle="pill" href="#second" role="tab"
+                aria-controls="month" aria-selected="true">Depositing Features
+              </a>
+              <a class="nav-link space-no-wrap" id="thirdd-tab" data-toggle="pill" href="#third" role="tab"
+                aria-controls="year2" aria-selected="false">
+                Security & Compliance
+              </a>
+              <a class="nav-link" id="fourth-tab" data-toggle="pill" href="#fourth" role="tab"
+                aria-controls="month2" aria-selected="true">Other Features
+              </a>
+            </div>
+            <div class="tab-content mt-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                <div class="d-flex align-items-center mobile-column">
+                  <img class="image-style mw-350 mr-4" src="/images/pricing-page/legal-features-image.webp"
+                alt="Illustration Leagel Features" loading="lazy" />
+                  <div>
+                    <p class="section__title-main">Legal Features</p>
+                    <p class="section__subtitle-main mw-450">Key to a successful software escrow is a solid legal framework. We've got you covered!</p>
                   </div>
                 </div>
+                <div class="d-flex flex-wrap mt-5">
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">High-quality adjustable escrow agreement template</p>
+                      <p class="section__subtext-main">The agreement that covers the terms of your escrow. It includes the parties, the release terms and other important aspects of your escrow. </p>
+                      <!-- <div class="d-flex" data-html="true"
+                        data-tooltip="{{ site.data[page.lang]['pricing']['the_agreement_that_covers'] }} "
+                        data-tooltip-position="bottom">
+                        <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
+                      </div> -->
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">Customizable release terms</p>
+                      <p class="section__subtext-main">We support the custom terms you may need to tailor the agreement to your specific situation.  </p>
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">Escrow agreement management</p>
+                      <p class="section__subtext-main">You can manage your escrows from your central dashboard, with real time monitoring features.  </p>
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">Bi-/ Tri-/ Multi-party escrow agreement</p>
+                      <p class="section__subtext-main">You can manage the involvement of all parties in the escrow arrangement.  </p>
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">Jurisdiction selection</p>
+                      <p class="section__subtext-main">Select your preferred jurisdiction to domicile the escrow agreement.  </p>
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__box mt-3 mr-3">
+                    <div>
+                      <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
+                      <p class="section__text-main mb-2">24/7/365 release processing</p>
+                      <p class="section__subtext-main">Our round-the-clock release processing service, billed at $199/hour, ensures your assets are accessible right when needed. </p>
+                    </div>
+                    <div>
+                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <div class="d-flex">
+                        <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/saas-escrow-icon-faded.svg" alt="SaaS Escrow Faded Icon" loading="lazy" />
+                        <img class="mr-2" src="/images/pricing-page/icons/software-custodian-icon-faded.svg" alt="Software Custodian Faded Icon" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                Depositing Features
+              </div>
+              <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                Security & Compliance
+              </div>
+              <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+                Other Features
               </div>
             </div>
           </div>
@@ -708,179 +664,549 @@
       </div>
 
       <!-- Section -->
-      <div class="software-escrow">
-        <div class="container section-large pricing pt-4">
-          <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}
-          </h4>
-          <ul class="faq mt-5 pb-5 pl-0 software-escrow">
-            <li class="q d-flex align-items-center justify-content-between">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_solutions_does'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['codekeeper_offers_comprehensive'] }}</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['how_do_codekeepers_solutions'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_solutions_cover'] }}</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_platform_features'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['key_platform_features'] }}</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['can_codekeepers_solutions'] }}
-              </p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['yes_we_offer_customizable'] }}</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_depositing_features'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_depositing_features_include'] }}</li>
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['how_do_codekeepers_solutions_support'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['we_provide_fetures'] }}</li>
-
-            <li class="q d-flex align-items-center justify-content-between q-border">
-              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_saas_features'] }}</p>
-              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-            </li>
-            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['for_saas_applications'] }}</li>
-
-            <div class="" id="questions">
-              <li class="q d-flex align-items-center justify-content-between q-border">
-                <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['are_there_any'] }}
-                </p>
-                <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-              </li>
-              <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['yes_add_on_features'] }}</li>
-              <li class="q d-flex align-items-center justify-content-between q-border">
-                <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['how_does_codekeeper_support'] }}
-                </p>
-                <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-              </li>
-              <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_compliance_package'] }}</li>
-              <li class="q d-flex align-items-center justify-content-between q-border">
-                <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_happens_if'] }}
-                </p>
-                <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
-              </li>
-              <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['in_the_event_of'] }}</li>
+      <div class="bg-gradient-blue-bottom">
+        <div class="container section-large">
+          <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">{{
+            site.data[page.lang]['compare_solutions']['available_add_ons'] }}</p>
+          <div class="row column-reverse-mobile mt-5 pt-4">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/certified.webp"
+                alt="Illustration: Certified" loading="lazy" />
             </div>
-            <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
-              <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
-              <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
-            </p>
-          </ul>
-          <p class="section__text mt-5 mb-5 text-center">{{ site.data[page.lang]['pricing']['have_not_found'] }} <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">{{ site.data[page.lang]['pricing']['contact_us'] }}</a> </p>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['certified'] }}</p>
+              <p class="software-escrow__subtitle fw-light">{{
+                site.data[page.lang]['compare_solutions']['boost_confidence'] }}</p>
+              <p class="software-escrow__text mt-3 font-16"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['automated_content'] }} </p>
+              <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['automated_activity'] }} </p>
+            </div>
+          </div>
+          <div class="row mt-5 pt-4">
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['deposit_packages'] }}</p>
+              <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['upgrade_your']
+                }}</p>
+              <p class="software-escrow__text mt-3 font-16"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['storage_region'] }} </p>
+              <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['ip_whitelisting'] }} </p>
+              <p class="software-escrow__text font-16"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['deposit_history'] }} </p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/deposit-packages.webp"
+                alt="Illustration: Deposit Packages" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="row column-reverse-mobile mt-5 pt-4">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/advanced-integrations.webp"
+                alt="Illustration: Advanced Integrations" loading="lazy" />
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['advanced_integrations'] }}</p>
+              <p class="software-escrow__subtitle fw-light">{{ site.data[page.lang]['compare_solutions']['set_up_the']
+                }}</p>
+              <div class="resources">
+                <div class="d-flex flex-wrap mt-4 mw-490">
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/MySQL.svg"
+                    alt="MySQL Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Azure-DB.svg"
+                    alt="Azure DB Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50"
+                    src="/images/escrow-assets/icons/Microsoft Office.svg" alt="Microsoft Office Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Dropbox-Paper.svg"
+                    alt="Microsoft Office Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Google-Docs.svg"
+                    alt="Google Docs Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Google-Cloud.svg"
+                    alt="Google Cloud Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/1Password.svg"
+                    alt="1Password Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Nord Pass.svg"
+                    alt="Nord Pass Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Cinema-4D.svg"
+                    alt="Cinema 4D Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50"
+                    src="/images/escrow-assets/icons/Adobe-Creative-Cloud.svg" alt="Adobe Creative Cloud Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Figma.svg"
+                    alt="Figma Icon" />
+                  <a class="header__subtext text-bondi-blue integrations-href mt-3 ml-2 mb-4 fw-500"
+                    href="integrations.html">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} <i
+                      class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 pt-4">
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['advanced_saas'] }}</p>
+              <p class="software-escrow__subtitle mw-530 fw-light">{{
+                site.data[page.lang]['compare_solutions']['set_up_the_integration'] }}</p>
+              <div class="resources">
+                <div class="d-flex flex-wrap mt-4 mw-420">
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/sales-force.svg"
+                    alt="Sales Force Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/IBM-Cloud.svg"
+                    alt="IBM Cloud Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Alibaba-Cloud.svg"
+                    alt="Alibaba Cloud Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Heroku.svg"
+                    alt="Heroku Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Rackspace.svg"
+                    alt="Rackspace Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Digital-Ocean.svg"
+                    alt="Digital Ocean Icon" />
+                  <img class="applications__logo-image3 p-1 mh-50" src="/images/escrow-assets/icons/Oracle-Cloud.svg"
+                    alt="Oracle Cloud Icon" />
+
+                  <a class="header__subtext text-bondi-blue integrations-href mt-3 ml-2 mb-4 fw-500"
+                    href="integrations.html">{{ site.data[page.lang]['source_code_escrow']['and_many_more'] }} <i
+                      class="fa fa-xs fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/advanced-saas.webp"
+                alt="Illustration: Advanced SaaS Integrations" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="row column-reverse-mobile mt-5 pt-4">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/compliance-package.webp"
+                alt="Illustration: Compliance Package" loading="lazy" />
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['compliance_package'] }}</p>
+              <p class="software-escrow__subtitle fw-light">{{
+                site.data[page.lang]['compare_solutions']['maximize_security'] }}</p>
+
+              <div class="row mt-1">
+                <div class="col-md-6 col-sm-12">
+                  <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['compare_solutions']['due_diligence'] }}</p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['compare_solutions']['security_audit'] }}</p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['compare_solutions']['vendor_screening'] }} </p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['compare_solutions']['gdpr_data'] }} </p>
+                  <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                    site.data[page.lang]['compare_solutions']['hipaa_data'] }} </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row mt-5 pt-4">
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['assured_recovery'] }}</p>
+              <p class="software-escrow__subtitle fw-light">{{
+                site.data[page.lang]['compare_solutions']['when_things_go'] }}</p>
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['technical_team'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['response_time'] }} </p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['prepare_recovery'] }} </p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/assured-recovery.webp"
+                alt="Illustration: Assured Recovery" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="row column-reverse-mobile mt-5 pt-4">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mt-4 mw-350" src="/images/compare-solutions/coverage-duration.webp"
+                alt="Illustration: Coverage Duration Package" loading="lazy" />
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile mt-5">{{
+                site.data[page.lang]['compare_solutions']['coverage_duration'] }} </p>
+              <p class="software-escrow__subtitle mw-530">{{ site.data[page.lang]['compare_solutions']['in_case'] }}</p>
+
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['compare_solutions']['extend_your'] }} </p>
+
+            </div>
+          </div>
+
+
         </div>
       </div>
-  
-      <div class="container-fluid resources software-escrow px-0">
-        <div class="bg-primary-default section-medium position-relative pt-5">
-          <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom left corner shapee" loading="lazy"/>
-          <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp" alt="CodeKeeper logo in bottom right corner shape" loading="lazy"/>
-          <div class="container">
-            <h2 class="mentions__title mt-5 text-white">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
-            <p class="software-escrow__subtitle text-white">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
-            <div class="row">
-              <div class="col-md-4 col-sm-12">
-                <div class="mentions__box light-box-shadow">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg" alt="Quotation marks representing testimonials" loading="lazy"/>
-                  <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
-                  <img class="mentions__logo" src="/images/logos/product-hunt.svg" alt="Product Hunt Logo" loading="lazy"/>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="mentions__box light-box-shadow">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg" alt="Quotation marks representing testimonials" loading="lazy"/>
-                  <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
-                  <img class="mentions__logo" src="/images/logos/fast-company.svg" alt="Fast Company Image" loading="lazy"/>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="mentions__box light-box-shadow">
-                  <img class="mentions__icon" src="/images/homepage/quotes.svg" alt="Quotation marks representing testimonials" loading="lazy"/>
-                  <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
-                  <img class="mentions__logo" src="/images/logos/hacker-news.svg" alt="Hacker News Logo" loading="lazy"/>
-                </div>
-              </div>
-            </div>
-          </div>
+
+      <!-- Section -->
+      <div class="container">
+        <div class="content-center">
+          <img class="pt-100" src="/images/landing/icons/ck-logo.svg" alt="Codekeeper Logo Icon" />
         </div>
-  
-  
-        <div class="position-relative">
-          <img class="mentions__top-right-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top right corner" loading="lazy"/>
-          <img class="mentions__top-left-corner" src="/images/landing/logo-top-right.webp" alt="CodeKeeper logo shape in top left corner" loading="lazy"/>
-          <div class="container resources ">
-            <p class="people-choose__main-title text-dark-cyan fw-light pt-100 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['disaster_recovery_planning'] }}</p>
-            <p class="people-choose__main-subtitle2 mx-auto mt-4">{{ site.data[page.lang]['index']['use_our_free'] }}</p>
-            <div class="content-center mt-4">
-              <img class="software-escrow__image mw-530" src="/images/landing/disaster-recovery-planning.webp" alt="Illustration: Disaster Recovery Planning for Guaranteed Continuity" loading="lazy"/>
-            </div>
-          </div>
-          
-          <div class="container pt-50">
-            <div class="row column-reverse-mobile mt-5">
-              <div class="col-md-5 col-sm-12">
-                <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
+        <p class="people-choose__main-title overflow-wrap-break-mobile text-bondi-blue pt-2">{{
+          site.data[page.lang]['index']['disaster_proof_software'] }}</p>
+        <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">"{{
+          site.data[page.lang]['index']['envision_a_business'] }}"</p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow">
+              <div class="mentions__box-bg-green">
+                <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_companies'] }}:</p>
+                <img class="mentions__box-image" src="/images/landing/companies-building.webp"
+                  alt="Company Building Illustration" loading="lazy" />
               </div>
-              <div class="col-md-7 col-sm-12">
-                <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">{{ site.data[page.lang]['index']['disaster_recovery_planning_toolkit'] }}</p>
-                <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['register_for_free'] }}</p>
-                <div class="software-escrow__devider"></div>
-                <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['information_assets_list'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['internal_and_external'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_register'] }}</p>
-                <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{ site.data[page.lang]['index']['risk_mitigation'] }}</p>
-                <div class="d-flex flex-wrap mt-4">
-                  <a class="button btn-cerulean3 mr-4 mb-3" data-toggle="modal" data-target="#exampleModal22">
-                    {{ site.data[page.lang]['index']['start_planning'] }}
-                  </a>
+              <div class="mentions__box-content">
+                <div class="d-flex">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
                   <div>
-                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <p class="mentions__box-text text-bondi-blue mb-1">{{
+                      site.data[page.lang]['index']['enterprise_ready_assurance'] }}: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{
+                      site.data[page.lang]['index']['elevate_your_infrastructure'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-bondi-blue mb-1">{{ site.data[page.lang]['index']['client_first']
+                      }}: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{
+                      site.data[page.lang]['index']['offer_impenetrable'] }}</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-bondi-blue mb-1">{{
+                      site.data[page.lang]['index']['regulatory_alignment'] }}:</p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['meet_industry'] }}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="people-choose__bg border-radius-0 min-h-300">
-            <div class="container section-medium mt-5">
-              <img class="image-style" src="/images/landing/companies.webp" alt="Illustration representing companies that benefit from the service" loading="lazy"/>
+          <div class="col-md-6 col-sm-12">
+            <div class="mentions__box2 light-box-shadow">
+              <div class="mentions__box-bg-blue">
+                <p class="mentions__box-title mb-0">{{ site.data[page.lang]['index']['for_software_clients'] }}:</p>
+                <img class="mentions__box-image" src="/images/landing/clients-building.webp"
+                  alt="Clients Building Illustration" loading="lazy" />
+              </div>
+              <div class="mentions__box-content">
+                <div class="d-flex">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">{{
+                      site.data[page.lang]['index']['operational_excellence'] }}:</p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['achieve_and'] }}
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">{{
+                      site.data[page.lang]['index']['business_continuity'] }}: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{ site.data[page.lang]['index']['shield_your'] }}
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex mt-3">
+                  <img class="mentions__box-icon" src="/images/disaster-recovery/icons/circle-check-icon.svg"
+                    alt="Circle Check Icon" />
+                  <div>
+                    <p class="mentions__box-text text-secondary-default mb-1">{{
+                      site.data[page.lang]['index']['regulatory_ready'] }}: </p>
+                    <p class="mentions__box-subtext text-dark-cyan">{{
+                      site.data[page.lang]['index']['navigate_the_compliance'] }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      {% include footer.html %}
+      <div class="people-choose__bg pb-5 min-h-300">
+        <div class="container">
+          <p class="people-choose__info mx-auto mt-5 mw-770 text-bondi-blue text-italic font-28 pt-50 line-height-38">{{
+            site.data[page.lang]['index']['together_we_redefine'] }}</p>
+        </div>
+      </div>
+
+      <div class="content-center flex-column section-large container">
+        <p
+          class="people-choose__main-title overflow-wrap-break-mobile text-dark-cyan mw-800 mx-auto text-center pb-4 pt-0">
+          {{ site.data[page.lang]['index']['join_these_companies'] }}</p>
+        <img class="image-style mt-4" src="/images/landing/companies.webp"
+          alt="Illustration representing companies that benefit from the service" loading="lazy" />
+        <a class="button btn-cerulean pricing-href mx-auto px-5 mt-5" href="pricing.html">
+          {{ site.data[page.lang]['includes']['intro']['get_started'] }}
+        </a>
+        <p class="software-escrow__text mt-4 text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{
+          site.data[page.lang]['index']['best_price'] }}</p>
+        <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{
+          site.data[page.lang]['index']['no_hidden_costs'] }}</p>
+      </div>
     </div>
-    <!-- Snippets -->
-    {% include snippets.html %}
-    {% include title-tags.html %}
-  
-    <script src="/js/faqDropdown.js"></script>
-    <script src="/js/geolocationPricing.js"></script>
-    <script src="/js/monthlyEscrowPricing.js"></script>
-  
-    <script>
-      // Check if the page has not been reloaded
-      if (!localStorage.getItem('pageReloaded')) {
-        var yamlData = {{ site.data.pricing.prices | jsonify
-      }};
-      localStorage.setItem('prices', JSON.stringify(yamlData));
-  
-      // Set a flag in localStorage to indicate that the page has been reloaded
-      localStorage.setItem('pageReloaded', 'true');
-  
-      // Reload the page
-      window.location.reload();
+
+    <div class="contact">
+      <div class="section__build-quote mx-auto mw-700">
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal34" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog mw-700" role="document">
+            <div class="modal-content section__modal mx-auto mw-700">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="m-0">
+                  <div class="section__modal-form p-0">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                      <h3 class="section__modal-title2 mt-3">{{
+                        site.data[page.lang]['software_escrow_plans']['build_a_quote'] }}</h3>
+                      <img class="mr-1 mw-50 mt-3 mr-4" src="/images/landing/icons/data-custodian-shield.svg"
+                        alt="Software Custodian Icon" loading="lazy">
+                    </div>
+
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5365877",
+                        formId: "a61eb434-a42a-4c4d-8f67-f235e60ad6c0"
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="software-escrow">
+      <div class="container section-large pricing pt-4">
+        <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}
+        </h4>
+        <ul class="faq mt-5 pb-5 pl-0 software-escrow">
+          <li class="q d-flex align-items-center justify-content-between">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_solutions_does'] }}</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['codekeeper_offers_comprehensive'] }}
+          </li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{
+              site.data[page.lang]['pricing_page_faq']['how_do_codekeepers_solutions'] }}</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_solutions_cover'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_platform_features'] }}
+            </p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['key_platform_features'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['can_codekeepers_solutions']
+              }}
+            </p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['yes_we_offer_customizable'] }}</li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_depositing_features'] }}
+            </p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_depositing_features_include'] }}
+          </li>
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{
+              site.data[page.lang]['pricing_page_faq']['how_do_codekeepers_solutions_support'] }}</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['we_provide_fetures'] }}</li>
+
+          <li class="q d-flex align-items-center justify-content-between q-border">
+            <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_saas_features'] }}</p>
+            <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+          </li>
+          <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['for_saas_applications'] }}</li>
+
+          <div class="" id="questions">
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['are_there_any'] }}
+              </p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['yes_add_on_features'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{
+                site.data[page.lang]['pricing_page_faq']['how_does_codekeeper_support'] }}
+              </p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['our_compliance_package'] }}</li>
+            <li class="q d-flex align-items-center justify-content-between q-border">
+              <p class="section__subtitle mt-3">{{ site.data[page.lang]['pricing_page_faq']['what_happens_if'] }}
+              </p>
+              <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
+            </li>
+            <li class="a section__text">{{ site.data[page.lang]['pricing_page_faq']['in_the_event_of'] }}</li>
+          </div>
+          <p class="questions-text mt-1 pt-4 btn-offer-style openLines q-border" id="openQuestions">
+            <span id='show'>{{ site.data[page.lang]['pricing']['show_more_questions'] }}</span>
+            <span id='hide'>{{ site.data[page.lang]['pricing']['show_less_questions'] }}</span>
+          </p>
+        </ul>
+        <p class="section__text mt-5 mb-5 text-center">{{ site.data[page.lang]['pricing']['have_not_found'] }} <a
+            class="text-bondi-blue contact-href fw-bold text-transform-none text-underline" href="contact.html">{{
+            site.data[page.lang]['pricing']['contact_us'] }}</a> </p>
+      </div>
+    </div>
+
+    <div class="container-fluid resources software-escrow px-0">
+      <div class="bg-primary-default section-medium position-relative pt-5">
+        <img class="mentions__bottom-left-corner" src="/images/landing/logo-corner.webp"
+          alt="CodeKeeper logo in bottom left corner shapee" loading="lazy" />
+        <img class="mentions__bottom-right" src="/images/landing/logo-corner.webp"
+          alt="CodeKeeper logo in bottom right corner shape" loading="lazy" />
+        <div class="container">
+          <h2 class="mentions__title mt-5 text-white">{{ site.data[page.lang]['index']['as_seen_on'] }}</h2>
+          <p class="software-escrow__subtitle text-white">{{ site.data[page.lang]['index']['a_few_of_the'] }}</p>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="mentions__box light-box-shadow">
+                <img class="mentions__icon" src="/images/homepage/quotes.svg"
+                  alt="Quotation marks representing testimonials" loading="lazy" />
+                <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['excellent_service'] }}</p>
+                <img class="mentions__logo" src="/images/logos/product-hunt.svg" alt="Product Hunt Logo"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="mentions__box light-box-shadow">
+                <img class="mentions__icon" src="/images/homepage/quotes.svg"
+                  alt="Quotation marks representing testimonials" loading="lazy" />
+                <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['codekeeper_is_a_new'] }}</p>
+                <img class="mentions__logo" src="/images/logos/fast-company.svg" alt="Fast Company Image"
+                  loading="lazy" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="mentions__box light-box-shadow">
+                <img class="mentions__icon" src="/images/homepage/quotes.svg"
+                  alt="Quotation marks representing testimonials" loading="lazy" />
+                <p class="mentions__text mt-4">{{ site.data[page.lang]['index']['source_code_escrow_is'] }}</p>
+                <img class="mentions__logo" src="/images/logos/hacker-news.svg" alt="Hacker News Logo" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="position-relative">
+        <img class="mentions__top-right-corner" src="/images/landing/logo-top-right.webp"
+          alt="CodeKeeper logo shape in top right corner" loading="lazy" />
+        <img class="mentions__top-left-corner" src="/images/landing/logo-top-right.webp"
+          alt="CodeKeeper logo shape in top left corner" loading="lazy" />
+        <div class="container resources ">
+          <p class="people-choose__main-title text-dark-cyan fw-light pt-100 overflow-wrap-break-mobile">{{
+            site.data[page.lang]['index']['disaster_recovery_planning'] }}</p>
+          <p class="people-choose__main-subtitle2 mx-auto mt-4">{{ site.data[page.lang]['index']['use_our_free'] }}</p>
+          <div class="content-center mt-4">
+            <img class="software-escrow__image mw-530" src="/images/landing/disaster-recovery-planning.webp"
+              alt="Illustration: Disaster Recovery Planning for Guaranteed Continuity" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="container pt-50">
+          <div class="row column-reverse-mobile mt-5">
+            <div class="col-md-5 col-sm-12">
+              <img class="software-escrow__image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp"
+                alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy" />
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="software-escrow__title mb-1 overflow-wrap-break-mobile">{{
+                site.data[page.lang]['index']['disaster_recovery_planning_toolkit'] }}</p>
+              <p class="software-escrow__subtitle">{{ site.data[page.lang]['index']['register_for_free'] }}</p>
+              <div class="software-escrow__devider"></div>
+              <p class="software-escrow__text mt-3"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['index']['information_assets_list'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['index']['internal_and_external'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['index']['risk_register'] }}</p>
+              <p class="software-escrow__text"><i class="fa fa-check text-light-green mr-2"></i>{{
+                site.data[page.lang]['index']['risk_mitigation'] }}</p>
+              <div class="d-flex flex-wrap mt-4">
+                <a class="button btn-cerulean3 mr-4 mb-3" data-toggle="modal" data-target="#exampleModal22">
+                  {{ site.data[page.lang]['index']['start_planning'] }}
+                </a>
+                <div>
+                  <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                  <a class="header__link pricing-href" href="pricing.html">{{
+                    site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right"
+                      aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="people-choose__bg border-radius-0 min-h-300">
+          <div class="container section-medium mt-5">
+            <img class="image-style" src="/images/landing/companies.webp"
+              alt="Illustration representing companies that benefit from the service" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+  <!-- Snippets -->
+  {% include snippets.html %}
+  {% include title-tags.html %}
+
+  <script src="/js/faqDropdown.js"></script>
+  <script src="/js/geolocationPricing.js"></script>
+  <script src="/js/monthlyEscrowPricing.js"></script>
+
+  <script>
+    // Check if the page has not been reloaded
+    if (!localStorage.getItem('pageReloaded')) {
+      var yamlData = {{ site.data.pricing.prices | jsonify
+    }};
+    localStorage.setItem('prices', JSON.stringify(yamlData));
+
+    // Set a flag in localStorage to indicate that the page has been reloaded
+    localStorage.setItem('pageReloaded', 'true');
+
+    // Reload the page
+    window.location.reload();
       } 
-    </script>
-  
-  </body>
+  </script>
+
+</body>

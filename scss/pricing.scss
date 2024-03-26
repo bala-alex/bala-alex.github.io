@@ -161,6 +161,10 @@
     max-width: 1320px;
   }
 
+  .pricing-container2 {
+    max-width: 1400px;
+  }
+
   .plan {
     &__switch {
       .switch {
@@ -1698,6 +1702,49 @@
       margin-top: 25px;
       margin-bottom: 25px;
       padding-top: 20px;
+    }
+
+    &__title-main {
+      font-size: 35px !important;
+      line-height: 40px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 300;
+    }
+
+    &__subtitle-main {
+      color: $slate-gray;
+      font-family: 'Mulish', sans-serif;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+
+    &__text-main {
+      font-size: 20px !important;
+      line-height: 28px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 600;
+    }
+
+    &__subtext-main {
+      color: $slate-gray;
+      font-family: 'Mulish', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    &__box {
+      width: 317px;
+      height: 380px;
+      border: 1px solid #DCE5F2;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__text {

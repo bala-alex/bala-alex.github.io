@@ -15064,6 +15064,9 @@ input[name=consent] {
 .pricing .pricing-container {
   max-width: 1320px;
 }
+.pricing .pricing-container2 {
+  max-width: 1400px;
+}
 .pricing .plan__switch {
   /* Rounded sliders */
 }
@@ -16597,6 +16600,51 @@ input[name=consent] {
   margin-top: 25px;
   margin-bottom: 25px;
   padding-top: 20px;
+}
+.pricing .section__title-main {
+  font-size: 35px !important;
+  line-height: 40px;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 300;
+}
+.pricing .section__subtitle-main {
+  color: #6A8493;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.pricing .section__text-main {
+  font-size: 20px !important;
+  line-height: 28px;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 600;
+}
+.pricing .section__subtext-main {
+  color: #6A8493;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.pricing .section__box {
+  width: 317px;
+  height: 380px;
+  border: 1px solid #DCE5F2;
+  padding: 20px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .pricing .section__text {
   color: #6782A3;
