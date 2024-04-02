@@ -1254,6 +1254,10 @@ html {
   min-height: 100px !important;
 }
 
+.min-h-70 {
+  min-height: 70px !important;
+}
+
 .min-h-240 {
   min-height: 240px !important;
 }
@@ -1344,6 +1348,12 @@ html {
   border-radius: 0px;
   margin-top: 20px;
   overflow-x: scroll;
+}
+
+.tabs-wrap {
+  @include screen-md {
+    flex-wrap: wrap;
+  }
 }
 
 .backup-box-shadow {
