@@ -16881,6 +16881,76 @@ input[name=consent] {
   display: block;
   z-index: 50;
 }
+.pricing .tabs-tooltip2 {
+  /* Tooltip styling */
+  /* Dynamic horizontal centering */
+  /* Dynamic vertical centering */
+  /* Tooltip arrow styling/placement */
+  /* Dynamic horizontal centering for the tooltip */
+  /* Dynamic vertical centering for the tooltip */
+  /* Show the tooltip when hovering */
+}
+.pricing .tabs-tooltip2 [data-tooltip] {
+  display: inline-block;
+  position: relative;
+  cursor: help;
+  padding: 0px;
+  white-space: pre-wrap;
+}
+.pricing .tabs-tooltip2 [data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  background: #ffffff !important;
+  color: #6A8493 !important;
+  padding: 14px 16px !important;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  min-width: 255px;
+  text-align: start;
+  border-radius: 8px;
+  border: 1px solid #95B1C1;
+}
+.pricing .tabs-tooltip2 [data-tooltip-position=top]:before,
+.pricing .tabs-tooltip2 [data-tooltip-position=bottom]:before {
+  left: 35%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.pricing .tabs-tooltip2 [data-tooltip-position=right]:before,
+.pricing .tabs-tooltip2 [data-tooltip-position=left]:before {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.pricing .tabs-tooltip2 [data-tooltip]:after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.pricing .tabs-tooltip2 [data-tooltip-position=top]:after,
+.pricing .tabs-tooltip2 [data-tooltip-position=bottom]:after {
+  left: 50%;
+  margin-left: -6px;
+}
+.pricing .tabs-tooltip2 [data-tooltip-position=right]:after,
+.pricing .tabs-tooltip2 [data-tooltip-position=left]:after {
+  top: 50%;
+  margin-top: -6px;
+}
+.pricing .tabs-tooltip2 [data-tooltip]:hover:before,
+.pricing .tabs-tooltip2 [data-tooltip]:hover:after {
+  display: block;
+  z-index: 50;
+}
 .pricing .tech-slideshow {
   height: 200px;
   max-width: 100%;

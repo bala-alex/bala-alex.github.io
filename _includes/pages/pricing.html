@@ -346,7 +346,7 @@
       </div>
 
       <div class="section-medium p-3 pricing">
-        <p class="people-choose__main-title pt-0">Protection Scope</p>
+        <p class="people-choose__main-title pt-0">{{ site.data[page.lang]['pricing_table']['protection_scope'] }}</p>
         <div class="mt-2">
 
           <div class="container-fluid overflow-x-hidden mt-5">
@@ -361,7 +361,7 @@
                         <div class="d-flex align-items-center flex-column">
                           <img class="my-1" src="/images/software-escrow/icons/software-backup-icon.svg"
                             alt="Software Backup Icon" loading="lazy" />
-                          <p class="plan__table-subtitle my-1 text-center">Software Backup
+                          <p class="plan__table-subtitle my-1 text-center">{{ site.data[page.lang]['pricing_table']['software_backup'] }}
                           </p>
                         </div>
                       </th>
@@ -369,7 +369,7 @@
                         <div class="d-flex align-items-center flex-column">
                           <img class="my-1" src="/images/software-escrow/icons/software-escrow-icon.svg"
                             alt="Software Escrow Icon" loading="lazy" />
-                          <p class="plan__table-subtitle my-1 text-center">Software Escrow
+                          <p class="plan__table-subtitle my-1 text-center">{{ site.data[page.lang]['pricing_table']['software_escrow'] }}
                           </p>
                         </div>
                       </th>
@@ -377,7 +377,7 @@
                         <div class="d-flex align-items-center flex-column">
                           <img class="my-1" src="/images/software-escrow/icons/saas-escrow-icon.svg"
                             alt="SaaS Escrow Icon" loading="lazy" />
-                          <p class="plan__table-subtitle my-1 text-center">SaaS Escrow
+                          <p class="plan__table-subtitle my-1 text-center">{{ site.data[page.lang]['pricing_table']['saas_escrow'] }}
                           </p>
                         </div>
                       </th>
@@ -385,7 +385,7 @@
                         <div class="d-flex align-items-center flex-column">
                           <img class="my-1" src="/images/software-escrow/icons/software-custodian-icon2.svg"
                             alt="Software Custodian Icon" loading="lazy" />
-                          <p class="plan__table-subtitle my-1 text-center">Software Custodian
+                          <p class="plan__table-subtitle my-1 text-center">{{ site.data[page.lang]['pricing_table']['software_custodian'] }}
                           </p>
                         </div>
                       </th>
@@ -394,7 +394,7 @@
                   <tbody>
                     <tr>
                       <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                        <p class="plan__table-text my-1 font-22 fw-600">Resilience</p>
+                        <p class="plan__table-text my-1 font-22 fw-600">{{ site.data[page.lang]['pricing_table']['resiliance'] }}</p>
                       </th>
                       <td class="bg-cool-white"></td>
                       <td class="bg-cool-white"></td>
@@ -403,7 +403,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Software Source Code</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['software_source'] }}</p>
                       </th>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
@@ -412,7 +412,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Software Data</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['software_data'] }}</p>
                       </th>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
@@ -422,7 +422,7 @@
 
                     <tr>
                       <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                        <p class="plan__table-text my-1 font-22 fw-600">Recovery</p>
+                        <p class="plan__table-text my-1 font-22 fw-600">{{ site.data[page.lang]['pricing_table']['recovery'] }}</p>
                       </th>
                       <td class="bg-cool-white"></td>
                       <td class="bg-cool-white"></td>
@@ -431,7 +431,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Software Source Code for Vendors/Clients</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['software_source_code'] }}</p>
                       </th>
                       <td class="text-center"></td>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
@@ -440,7 +440,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Software Data for Vendors/Clients</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['software_data_for'] }}</p>
                       </th>
                       <td class="text-center"></td>
                       <td class="text-center"><i class="fas fa-check text-bondi-blue my-1"></i></td>
@@ -450,7 +450,7 @@
 
                     <tr>
                       <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                        <p class="plan__table-text my-1 font-22 fw-600">Continuity</p>
+                        <p class="plan__table-text my-1 font-22 fw-600">{{ site.data[page.lang]['pricing_table']['continuity'] }}</p>
                       </th>
                       <td class="bg-cool-white"></td>
                       <td class="bg-cool-white"></td>
@@ -459,7 +459,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Software Hosting Environments</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['software_hosting'] }}</p>
                       </th>
                       <td class="text-center"></td>
                       <td class="text-center"></td>
@@ -468,7 +468,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">3rd Party Dependencies</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['3rd_party'] }}</p>
                       </th>
                       <td class="text-center"></td>
                       <td class="text-center"></td>
@@ -478,7 +478,7 @@
 
                     <tr>
                       <th class="bg-cool-white table-border-left min-width-300" scope="row">
-                        <p class="plan__table-text my-1 font-22 fw-600">Accountability</p>
+                        <p class="plan__table-text my-1 font-22 fw-600">{{ site.data[page.lang]['pricing_table']['accountability'] }}</p>
                       </th>
                       <td class="bg-cool-white"></td>
                       <td class="bg-cool-white"></td>
@@ -487,7 +487,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left" scope="row">
-                        <p class="plan__table-text my-1">Regulated Data Operations</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['regulated_data'] }}</p>
                       </th>
                       <td class="text-center"></td>
                       <td class="text-center"></td>
@@ -496,7 +496,7 @@
                     </tr>
                     <tr>
                       <th class="table-border-left table-border-bottom" scope="row">
-                        <p class="plan__table-text my-1">SLA Performance</p>
+                        <p class="plan__table-text my-1">{{ site.data[page.lang]['pricing_table']['sla_performance'] }}</p>
                       </th>
                       <td class="text-center table-border-bottom"></td>
                       <td class="text-center table-border-bottom"></td>
@@ -516,22 +516,22 @@
 
       <div class="pricing">
         <div class="section-large pricing-tabs">
-          <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">Available Features</p>
+          <p class="people-choose__main-title overflow-wrap-break-mobile pt-0">{{ site.data[page.lang]['pricing_table']['available_features'] }}</p>
           <div class="pricing-container2 mx-auto mt-5 px-3">
             <div class="nav nav-pills mb-3 d-flex justify-content-center mt-3" id="pills-tab" role="tablist">
               <a class="nav-link active space-no-wrap" id="first-tab" data-toggle="pill" href="#first" role="tab"
                 aria-controls="year" aria-selected="false">
-                Legal Features
+                {{ site.data[page.lang]['pricing_table']['legal_features'] }}
               </a>
               <a class="nav-link" id="second-tab" data-toggle="pill" href="#second" role="tab"
-                aria-controls="month" aria-selected="true">Depositing Features
+                aria-controls="month" aria-selected="true">{{ site.data[page.lang]['pricing_table']['depositing_features'] }}
               </a>
               <a class="nav-link space-no-wrap" id="thirdd-tab" data-toggle="pill" href="#third" role="tab"
                 aria-controls="year2" aria-selected="false">
-                Security & Compliance
+                {{ site.data[page.lang]['pricing_table']['security_and_compliance'] }}
               </a>
               <a class="nav-link" id="fourth-tab" data-toggle="pill" href="#fourth" role="tab"
-                aria-controls="month2" aria-selected="true">Other Features
+                aria-controls="month2" aria-selected="true">{{ site.data[page.lang]['pricing_table']['other_features'] }}
               </a>
             </div>
             <div class="tab-content mt-5" id="pills-tabContent">
@@ -540,24 +540,24 @@
                   <img class="image-style mw-350 mr-4" src="/images/pricing-page/legal-features-image.webp"
                 alt="Illustration Legal Features" loading="lazy" />
                   <div>
-                    <p class="section__title-main">Legal Features</p>
-                    <p class="section__subtitle-main mw-450">Key to a successful software escrow is a solid legal framework. We've got you covered!</p>
+                    <p class="section__title-main">{{ site.data[page.lang]['pricing_table']['legal_features'] }}</p>
+                    <p class="section__subtitle-main mw-450">{{ site.data[page.lang]['pricing_table']['key_to_a'] }}</p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap mt-5">
                   <div class="section__box mt-3 mr-3 tabs-tooltip">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">High-quality adjustable escrow agreement template</p>
-                      <p class="section__subtext-main">The agreement that covers the terms of your escrow. It includes the parties, the release terms and other important aspects of your escrow. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['high_quality'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['the_agreement_that'] }} </p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip=" &#8226 Software licensing template &#010 &#8226 Software development outsourcing template &#010 &#8226 Compliance and regulations template &#010 &#8226 Security & operational resilience template &#010 &#8226 Transactions, M&A, investing & financing templates &#010 &#8226 SaaS escrow agreement template"
+                        data-tooltip="{{ site.data[page.lang]['pricing_table']['software_licensing_template'] }}"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -569,11 +569,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Customizable release terms</p>
-                      <p class="section__subtext-main">We support the custom terms you may need to tailor the agreement to your specific situation.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['customizable_release'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['we_support_the'] }}   </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -585,11 +585,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Escrow agreement management</p>
-                      <p class="section__subtext-main">You can manage your escrows from your central dashboard, with real time monitoring features.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['escrow_agreement'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['you_can_manage'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -601,11 +601,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Bi-/ Tri-/ Multi-party escrow agreement</p>
-                      <p class="section__subtext-main">You can manage the involvement of all parties in the escrow arrangement.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['bi_tri'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['you_can_manage_the'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -617,11 +617,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Jurisdiction selection</p>
-                      <p class="section__subtext-main">Select your preferred jurisdiction to domicile the escrow agreement.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['jurisdiction_selection'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['select_your_preferred'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -633,11 +633,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">24/7/365 release processing</p>
-                      <p class="section__subtext-main">Our round-the-clock release processing service, billed at <span class="setup-fee">{{ site.data.pricing.prices.setup_fee.USD}}</span>/hour, ensures your assets are accessible right when needed. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['release_processing'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['our_round'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -654,24 +654,24 @@
                   <img class="image-style mw-350 mr-4" src="/images/pricing-page/depositing-features-image.webp"
                 alt="Illustration Depositing Features" loading="lazy" />
                   <div>
-                    <p class="section__title-main">Depositing Features</p>
-                    <p class="section__subtitle-main mw-450">Industry leading depositing configurations make sure your escrow is easy to maintain.</p>
+                    <p class="section__title-main">{{ site.data[page.lang]['pricing_table']['depositing_features'] }}</p>
+                    <p class="section__subtitle-main mw-450">{{ site.data[page.lang]['pricing_table']['industry_leading'] }}</p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap mt-5">
                   <div class="section__box mt-3 mr-3 tabs-tooltip">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Unlimited assets deposited</p>
-                      <p class="section__subtext-main">We work with the tools you already use to deposit your application's source code and data into escrow. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['unlimited_assets'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['we_work_with'] }} </p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip=" &#8226 Source code &#010 &#8226 Data &#010 &#8226 Documents &#010 &#8226 Technology & designs &#010 &#8226 Credentials"
+                        data-tooltip="{{ site.data[page.lang]['pricing_table']['source_code_data_documents'] }}"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -683,11 +683,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Automated deposits</p>
-                      <p class="section__subtext-main">Set up an integration with your source code management platform to enable automated depositing of your assets.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['automated_deposits'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['set_up_an'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -699,11 +699,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Daily asset sync</p>
-                      <p class="section__subtext-main">By default, we take a deposit at least 24 hours.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['daily_asset'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['by_default'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -715,11 +715,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Manual uploads</p>
-                      <p class="section__subtext-main">Securely store files and folders by directly uploading them to our platform. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['manual_uploads'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['securely_store_files'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -731,11 +731,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Fair use storage limits</p>
-                      <p class="section__subtext-main">We apply a fair use storage limit of 1TB per account.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['fair_use'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['we_apply_a'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -747,11 +747,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Version storage</p>
-                      <p class="section__subtext-main">By default, we store the 3 latest versions of your assets.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['version_storage'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['by_default'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -764,11 +764,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Automated notifications</p>
-                      <p class="section__subtext-main">The platform will handle all communication about your assets and escrows.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['automated_notifications'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['the_platform_will'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -781,11 +781,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">SaaS application environment</p>
-                      <p class="section__subtext-main">Eliminate 3rd party risk with state of the art protection for all your cloud-native applications.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['saas_application'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['eliminate_3rd'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -798,11 +798,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Hosting environment providers</p>
-                      <p class="section__subtext-main">Deposit all your hosting providers into escrow and ensure your accounts remain in good standing.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['hosting_environment'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['deposit_all'] }}   </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -815,11 +815,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Third-party services</p>
-                      <p class="section__subtext-main">Deposit all your external dependencies into escrow and ensure your accounts remain in good standing.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['third_party'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['deposit_all_your'] }}   </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -832,11 +832,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Service continuity coverage (3 months)</p>
-                      <p class="section__subtext-main">A continuity protection period of 3 months for each service is included by default.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['service_continuity'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['a_continuity'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -853,19 +853,19 @@
                   <img class="image-style mw-350 mr-4" src="/images/pricing-page/security-compliance-image.webp"
                 alt="Illustration Security & Compliance" loading="lazy" />
                   <div>
-                    <p class="section__title-main">Security & Compliance</p>
-                    <p class="section__subtitle-main mw-450">Maximized security and compliance features to ensure that both critical and sensitive data is always kept safe and secure.</p>
+                    <p class="section__title-main">{{ site.data[page.lang]['pricing_table']['security_and_compliance'] }}</p>
+                    <p class="section__subtitle-main mw-450">{{ site.data[page.lang]['pricing_table']['maximized_security'] }}</p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap mt-5">
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Multi-factor authentication access control</p>
-                      <p class="section__subtext-main">The Codekeeper Platform offers an additional layer of access control, with the ability of having MFA enabled for each user.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['multi_factor'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['the_codekeeper_platform'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -877,11 +877,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Depositor dashboard access</p>
-                      <p class="section__subtext-main">Source code, software- and account owners can easily manage all their assets from within the Codekeeper platform.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['deposit_dashoard'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['source_code_software'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -893,11 +893,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Beneficiary dashboard access</p>
-                      <p class="section__subtext-main">Beneficiaries can be assured that their interests are protected by inviting them to be a part of the Software Escrow journey.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['beneficiary_dashboard'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['beneficiaries_can_be'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -909,11 +909,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">ISO 27001 Information security</p>
-                      <p class="section__subtext-main">Our ISO 27001 certification means that you can rest assured knowing your data is safe. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['iso_information'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['our_iso'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -925,11 +925,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">ISO 27001 Data center security</p>
-                      <p class="section__subtext-main">Our data centers comply with several information security standards, including ISO 27001. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['iso_data'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['our_data_centers'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -942,11 +942,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">End-to-end encryption</p>
-                      <p class="section__subtext-main">All data is transferred and stored in encrypted form. We use AES256/512 level encryption. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['end_to_end'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['all_data_is'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -964,19 +964,19 @@
                   <img class="image-style mw-350 mr-4" src="/images/pricing-page/other-features-image.webp"
                 alt="Illustration Other Features" loading="lazy" />
                   <div>
-                    <p class="section__title-main">Other Features</p>
-                    <p class="section__subtitle-main mw-450">Fully integrated support and administrative features to ensure your personal needs are always met.</p>
+                    <p class="section__title-main">{{ site.data[page.lang]['pricing_table']['other_features'] }} </p>
+                    <p class="section__subtitle-main mw-450">{{ site.data[page.lang]['pricing_table']['fully_integrated'] }} </p>
                   </div>
                 </div>
                 <div class="d-flex flex-wrap mt-5">
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Concierge onboarding</p>
-                      <p class="section__subtext-main">From Backups to Custodian, we're here for step by step support to guide you through the journey.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['concierge_onboarding'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['from_backups_to'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -988,11 +988,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Email support</p>
-                      <p class="section__subtext-main">Our Customer Success team will guide you through the journey via email.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['email_support'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['our_customer'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1004,11 +1004,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Chat support</p>
-                      <p class="section__subtext-main">Our Customer Success will share any information you need via our application chat service.   </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['chat_support'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['our_customer_success'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1020,11 +1020,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Payment method options</p>
-                      <p class="section__subtext-main">Pay via credit card, wire transfer, direct debit, and many more.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['payment_method'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['pay_via_credit'] }}   </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1036,11 +1036,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Monthly and annual payment options</p>
-                      <p class="section__subtext-main">Sign up to a subscription schedule that works for your needs. Receive a 10% discount on all plans when paying annually.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['monthly_and'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['sign_up_to'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1053,11 +1053,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Annual invoicing</p>
-                      <p class="section__subtext-main">Receive a 10% discount on all plans when paying annually via invoice. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['annual_invoicing'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['receive_a'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1070,11 +1070,11 @@
                   <div class="section__box mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/checked-icon.svg" alt="Checked Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Account access</p>
-                      <p class="section__subtext-main">Invite multiple team members to join your Codekeeper account. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_table']['account_access'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_table']['invite_multiple'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1095,41 +1095,41 @@
       <div class="pricing bg-azure-blue">
         <div class="section-large pricing-tabs">
           <div class="pricing-container2 mx-auto">
-            <p class="people-choose__main-title overflow-wrap-break-mobile pt-0 text-align-start">Add-On Features</p>
+            <p class="people-choose__main-title overflow-wrap-break-mobile pt-0 text-align-start">{{ site.data[page.lang]['pricing_features']['add_on_features'] }}</p>
           </div>
           <div class="pricing-container2 mx-auto mt-5 px-3 d-flex align-items-start tabs-wrap">
             <div class="nav nav-pills mb-3 d-flex justify-content-center flex-column mt-4 mr-5" id="pills-tab" role="tablist">
               <a class="nav-link active space-no-wrap min-h-70 justify-content-start" id="first-tab2" data-toggle="pill" href="#first2" role="tab"
                 aria-controls="year" aria-selected="false">
-                Depositing Features
+                {{ site.data[page.lang]['pricing_features']['depositing_features'] }}
               </a>
               <a class="nav-link min-h-70 justify-content-start" id="second-tab2" data-toggle="pill" href="#second2" role="tab"
-                aria-controls="month" aria-selected="true">Legal Features
+                aria-controls="month" aria-selected="true">{{ site.data[page.lang]['pricing_features']['legal_features'] }}
               </a>
               <a class="nav-link space-no-wrap min-h-70 justify-content-start" id="thirdd-tab2" data-toggle="pill" href="#third2" role="tab"
                 aria-controls="year2" aria-selected="false">
-                Verification Services
+                {{ site.data[page.lang]['pricing_features']['verification_services'] }}
               </a>
               <a class="nav-link min-h-70 justify-content-start" id="fourth-tab2" data-toggle="pill" href="#fourth2" role="tab"
-                aria-controls="month2" aria-selected="true">Security & Compliance
+                aria-controls="month2" aria-selected="true">{{ site.data[page.lang]['pricing_features']['security_compliance'] }}
               </a>
             </div>
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="first2" role="tabpanel" aria-labelledby="first-tab2">
                 <div class="d-flex flex-wrap">
-                  <div class="section__box2 mt-3 mr-3 tabs-tooltip">
+                  <div class="section__box2 mt-3 mr-3 tabs-tooltip2">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/advanced-deposits-icon.svg" alt="Advanced Deposits Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Advanced Deposits</p>
-                      <p class="section__subtext-main">Upgrade your depositing configuration options to make sure your escrow is easy to maintain. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['advanced_deposits'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['upgrade_your'] }} </p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip=" &#8226 Increased storage size (>1TB) &#010 &#8226 Storage region selection &#010 &#8226 Custom history storage &#010 &#8226 IP whitelisting"
+                        data-tooltip="{{ site.data[page.lang]['pricing_features']['increased_storage_size'] }}"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1141,11 +1141,11 @@
                   <div class="section__box2 mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/advanced-integrations-icon.svg" alt="Advanced Integrations Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Advanced Integrations</p>
-                      <p class="section__subtext-main">Set up the integration you need to make sure your assets are automatically secured. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['advanced_integrations'] }} </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['set_up_the'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1157,11 +1157,11 @@
                   <div class="section__box2 mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/assured-recovery-icon.svg" alt="Assured Recovery Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Assured Recovery</p>
-                      <p class="section__subtext-main">When things go wrong, your technical experts will help you get back on track.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['assured_recovery'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['when_things_go'] }}  </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1173,11 +1173,11 @@
                   <div class="section__box2 mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/advanced-saas-integrations-icon.svg" alt="Advanced SaaS Integrations Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Advanced SaaS Integrations</p>
-                      <p class="section__subtext-main">Set up the integration you need to make sure your environment (cloud & on-premise) is secured. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['advanced_saas_integrations'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['set_up_the'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -1189,11 +1189,11 @@
                   <div class="section__box2 mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/coverage-length-icon.svg" alt="Coverage Length Package Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Coverage Length Package </p>
-                      <p class="section__subtext-main">Increase the length of your continuity protection period for your environment from 3 to 6 months.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['coverage_length'] }}  </p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['increase_the_length'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon-faded.svg" alt="Software Escrow Faded Icon" loading="lazy" />
@@ -1210,11 +1210,11 @@
                   <div class="section__box2 mt-3 mr-3">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/liability-service-icon.svg" alt="Liability Service-Level Agreement Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Liability Service-Level Agreement</p>
-                      <p class="section__subtext-main">Ensure your agreement reflects your enterprise-level needs with an increased limited liability limit. </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['liability_service'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['ensure_your'] }} </p>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon-faded.svg" alt="Software Backup Faded Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1228,19 +1228,19 @@
               </div>
               <div class="tab-pane fade" id="third2" role="tabpanel" aria-labelledby="third-tab2">
                 <div class="d-flex flex-wrap">
-                  <div class="section__box2 mt-3 mr-3 tabs-tooltip">
+                  <div class="section__box2 mt-3 mr-3 tabs-tooltip2">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/certified-icon.svg" alt="Certified Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Certified</p>
-                      <p class="section__subtext-main">Boost confidence in your automated deposits with regular inspection of your assets.</p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['certified'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['boost_confidence'] }}</p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip=" &#8226 Software Backup (>1TB) &#010 &#8226 Software Escrow &#010 &#8226 SaaS Escrow &#010 &#8226 Software Custodian"
+                        data-tooltip="{{ site.data[page.lang]['pricing_features']['software_backup_over'] }}"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
@@ -1254,19 +1254,19 @@
               </div>
               <div class="tab-pane fade" id="fourth2" role="tabpanel" aria-labelledby="fourth-tab2">
                 <div class="d-flex flex-wrap">
-                  <div class="section__box2 mt-3 mr-3 tabs-tooltip">
+                  <div class="section__box2 mt-3 mr-3 tabs-tooltip2">
                     <div>
                       <img class="mb-3" src="/images/pricing-page/icons/compliance-package-icon.svg" alt="Compliance package Icon" loading="lazy" />
-                      <p class="section__text-main mb-2">Compliance package</p>
-                      <p class="section__subtext-main">Maximize security and compliance features to ensure that both critical and sensitive data is always kept safe and secure.  </p>
+                      <p class="section__text-main mb-2">{{ site.data[page.lang]['pricing_features']['compliance_package'] }}</p>
+                      <p class="section__subtext-main">{{ site.data[page.lang]['pricing_features']['maximize_security'] }}  </p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip=" &#8226 GDPR compliance (>1TB) &#010 &#8226 HIPAA compliance &#010 &#8226 ISO/SOC2 compliance"
+                        data-tooltip="{{ site.data[page.lang]['pricing_features']['gdpr_compliance_over'] }}"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
                     </div>
                     <div>
-                      <p class="section__subtext-main mb-2 font-12">Available for:</p>
+                      <p class="section__subtext-main mb-2 font-12">{{ site.data[page.lang]['pricing_table']['available_for'] }}:</p>
                       <div class="d-flex">
                         <img class="mr-2" src="/images/pricing-page/icons/software-backup-icon.svg" alt="Software Backup Icon" loading="lazy" />
                         <img class="mr-2" src="/images/pricing-page/icons/software-escrow-icon.svg" alt="Software Escrow Icon" loading="lazy" />
