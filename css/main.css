@@ -10332,12 +10332,20 @@ html {
   min-height: 200px !important;
 }
 
+.min-h-210 {
+  min-height: 210px !important;
+}
+
 .min-h-150 {
   min-height: 150px !important;
 }
 
 .min-h-100 {
   min-height: 100px !important;
+}
+
+.min-h-120 {
+  min-height: 120px !important;
 }
 
 .min-h-70 {
@@ -26028,7 +26036,17 @@ input[name=consent] {
   }
 }
 .software-escrow .easy__box-header {
-  padding: 20px 5px;
+  padding: 5px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .software-escrow .easy__box-title {
   font-family: "Mulish";

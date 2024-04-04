@@ -1115,7 +1115,11 @@
     }
 
     &__box-header {
-      padding: 20px 5px;
+      padding: 5px;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__box-title {
