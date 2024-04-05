@@ -436,12 +436,14 @@
                   <div class="intro__bg">
                     <div class="intro__col-green bg-gradient-blue2">
                       <div class="intro__col-green-spacing">
-                        <img class="my-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
-                          alt="Disaster Recovery Planner Shield Icon" loading="lazy" />
-                        <h2 class="intro__title2 mt-2">{{ site.data[page.lang]['software_backup']['looking_to_lower'] }}
-                        </h2>
-                        <p class="intro__subtitle2 mt-3 mw-350">{{
-                          site.data[page.lang]['software_backup']['take_control_of'] }} </p>
+                        <div class="min-h-350">
+                          <img class="my-1" src="/images/disaster-recovery/icons/disaster-recovery-shield-icon.svg"
+                            alt="Disaster Recovery Planner Shield Icon" loading="lazy" />
+                          <h2 class="intro__title2 mt-2">{{ site.data[page.lang]['software_backup']['looking_to_lower'] }}
+                          </h2>
+                          <p class="intro__subtitle2 mt-3 mw-350">{{
+                            site.data[page.lang]['software_backup']['take_control_of'] }} </p>
+                        </div>
                         <div class="solutions">
                           <p class="select-level__price mt-5 text-capitalize"><span class="fw-700 font-40">{{
                               site.data[page.lang]['pricing']['free'] }}</span></p>
@@ -454,12 +456,14 @@
                     </div>
                     <div class="intro__col bg-gradient-blue3">
                       <div class="intro__col-spacing">
-                        <img class="my-1" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg"
-                          alt="Software Escrow Shield Icon" loading="lazy" />
-                        <h2 class="intro__title2 mt-2">{{
-                          site.data[page.lang]['disaster_recovery']['take_your_protection'] }}</h2>
-                        <p class="intro__subtitle2 mt-3">{{
-                          site.data[page.lang]['disaster_recovery']['securely_store_your_software'] }}</p>
+                        <div class="min-h-350">
+                          <img class="my-1" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg"
+                            alt="Software Escrow Shield Icon" loading="lazy" />
+                          <h2 class="intro__title2 mt-2">{{
+                            site.data[page.lang]['disaster_recovery']['take_your_protection'] }}</h2>
+                          <p class="intro__subtitle2 mt-3">{{
+                            site.data[page.lang]['disaster_recovery']['securely_store_your_software'] }}</p>
+                        </div>
                         <div class="solutions mt-4">
                           <p class="select-level__price mr-4">{{ site.data[page.lang]['software_backup']['from']
                             }}<br><span class="software-escrow-single-monthly fw-700 font-40">{{
@@ -583,8 +587,8 @@
                   <div class="col-md-4 col-sm-12">
                     <img class="mt-4" src="/images/software-backup/icons/history.svg" alt="History Icon"
                       loading="lazy" />
-                    <div class="d-flex mt-2">
-                      <p class="datacenters__title">{{ site.data[page.lang]['software_backup_features']['full_version_history'] }}</p>
+                    <div class="d-flex mt-2 flex-wrap">
+                      <p class="datacenters__title mw-250">{{ site.data[page.lang]['software_backup_features']['full_version_history'] }}</p>
                       <p class="datacenters__title-add">{{ site.data[page.lang]['software_backup_features']['add_on'] }}</p>
                     </div>
                     <p class="datacenters__subtitle">{{ site.data[page.lang]['software_backup_features']['from_minimal_to'] }}</p>
