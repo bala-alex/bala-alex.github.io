@@ -1716,7 +1716,7 @@
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
                                   onclick="selectPlan(this, 'single', 'software_backup_monthly', 'Software-Backup')"
-                                  data-price="$59">Selectați Plan</button>
+                                  data-price="$59">Selectează Plan</button>
                               </div>
                             </div>
                           </div>
@@ -1779,7 +1779,7 @@
                               <div class="mt-4">
                                 <button class="button btn-bondi-blue4 valid-plan"
                                   onclick="selectPlan(this, 'multiple', 'software_backup_yearly', 'Software-Backup')"
-                                  data-price="$639">Selectați Plan</button>
+                                  data-price="$639">Selectează Plan</button>
                               </div>
                             </div>
                           </div>
@@ -1810,7 +1810,7 @@
                             <p class="plan__add-ons-subtext text-italic text-white mb-0">pe lună</p>
                           </div>
                           <button class="button btn-yellow-small2 px-4"
-                            onclick="add(this, 'software_backup_certified', 'Certified-Add-On')">Adauga</button>
+                            onclick="add(this, 'software_backup_certified', 'Certified-Add-On')">Adaugă</button>
                         </div>
                         <p
                           class="plan__add-ons-subtext text-white single-extra d-none font-12 line-height-18 mw-260 mt-3 mb-0">
@@ -1842,7 +1842,7 @@
                             <p class="plan__add-ons-subtext text-italic mb-0">pe lună</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 'software_backup_advanced_deposits', 'Advanced-Deposits-Add-On')">Adauga</button>
+                            onclick="add(this, 'software_backup_advanced_deposits', 'Advanced-Deposits-Add-On')">Adaugă</button>
                         </div>
                       </div>
                     </div>
@@ -1893,7 +1893,7 @@
                             <p class="plan__add-ons-subtext text-italic mb-0">pe lună</p>
                           </div>
                           <button class="button btn-primary-small2 px-4"
-                            onclick="add(this, 'software_backup_advanced_integrations', 'Advanced-Integrations-Add-On')">Adauga</button>
+                            onclick="add(this, 'software_backup_advanced_integrations', 'Advanced-Integrations-Add-On')">Adaugă</button>
                         </div>
                       </div>
                     </div>
@@ -2898,9 +2898,6 @@
 <script>
   var pathname = location.pathname;
   var hash = location.hash;
-
-  console.log('gggg', location);
-  console.log('fffffff', pathname.includes('/de/software-backup.html') && (hash.includes('#features')));
 
 
   if (pathname.includes('/about-us.html')) {
@@ -4143,6 +4140,15 @@
     var checkoutText = [];
     var checkoutAdOns = [];
     var duration = 'Monthly';
+    const selectPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectează Plan' : window.location.pathname.includes('/de/') ? 'Plan auswählen' : window.location.pathname.includes('/es/') ? 'Seleccionar plan' : window.location.pathname.includes('/fr/') ? 'Sélectionnez le forfait' : window.location.pathname.includes('/nl/') ? 'Selecteer pakket' : 'Select plan';
+    const selectedPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectat' : window.location.pathname.includes('/de/') ? 'Ausgewählt' : window.location.pathname.includes('/es/') ? 'Seleccionado' : window.location.pathname.includes('/fr/') ? 'Sélectionné' : window.location.pathname.includes('/nl/') ? 'Geselecteerd' : 'Selected';
+    const selectAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adaugă' : window.location.pathname.includes('/de/') ? 'Hinzufügen' : window.location.pathname.includes('/es/') ? 'Agregar' : window.location.pathname.includes('/fr/') ? 'Ajouter' : window.location.pathname.includes('/nl/') ? 'Toevoegen' : 'Add';
+    const selectedAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adăugat' : window.location.pathname.includes('/de/') ? 'Hinzugefügt' : window.location.pathname.includes('/es/') ? 'Agregado' : window.location.pathname.includes('/fr/') ? 'Ajouté' : window.location.pathname.includes('/nl/') ? 'Toegevoegd' : 'Added';
+    const yearlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe an' : window.location.pathname.includes('/de/') ? 'pro Jahr' : window.location.pathname.includes('/es/') ? 'por año' : window.location.pathname.includes('/fr/') ? 'par an' : window.location.pathname.includes('/nl/') ? 'per jaar' : 'per year';
+    const monthlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe lună' : window.location.pathname.includes('/de/') ? 'pro Monat' : window.location.pathname.includes('/es/') ? 'al mes' : window.location.pathname.includes('/fr/') ? 'par mois' : window.location.pathname.includes('/nl/') ? 'per maand' : 'per month';
+    const addonsTextTranslated = window.location.pathname.includes('/ro/') ? 'Add onuri' : window.location.pathname.includes('/de/') ? 'Add-ons' : window.location.pathname.includes('/es/') ? 'Complementos' : window.location.pathname.includes('/fr/') ? 'Modules complémentaires' : window.location.pathname.includes('/nl/') ? 'Add-ons' : 'Addons';
+    const monthlyPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Backup Software (Lunar)' : window.location.pathname.includes('/de/') ? 'Software-Backup (Monatlich)' : window.location.pathname.includes('/es/') ? 'Copia de seguridad de software (Mensual)' : window.location.pathname.includes('/fr/') ? 'Sauvegarde de logiciel (Mensuellement)' : window.location.pathname.includes('/nl/') ? 'Software Backup (Maandelijks)' : 'Software Backup (Monthly)';
+    const yearlyPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Backup Software (Anual)' : window.location.pathname.includes('/de/') ? 'Software-Backup (Jährlich)' : window.location.pathname.includes('/es/') ? 'Copia de seguridad de software (Anual)' : window.location.pathname.includes('/fr/') ? 'Sauvegarde de logiciel (Annuellement)' : window.location.pathname.includes('/nl/') ? 'Software Backup (Jaarlijks)' : 'Software Backup (Yearly)';
 
     function selectPlan(button, planType, priceString, planID) {
       checkoutAdOns = [];
@@ -4151,9 +4157,9 @@
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
       if (duration === 'Yearly') {
-        $('#checkout-period').text('per year');
+        $('#checkout-period').text(yearlyPeriodTextTranslated);
       } else {
-        $('#checkout-period').text('per month');
+        $('#checkout-period').text(monthlyPeriodTextTranslated);
       }
 
       const currency = localStorage.getItem('currency');
@@ -4164,26 +4170,26 @@
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
-      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
-      $('.btn-yellow-small2').removeClass('-is-selected').text('Add')
+      $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
+      $('.btn-yellow-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
       // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
       totalSum = price
       $('#totalSum').text(totalSum.toLocaleString());
 
       if ($(button).hasClass('-is-selected')) { // Check if button is already selected
-        $(button).removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+        $(button).removeClass('-is-selected').html(`<img src="" alt="" /><span>${selectPlanTextTranslated}</span>`);
         $('#planType').text('');
         $('.single, .multiple').removeClass('-is-selected');
         $('.single-extra, .multiple-extra').addClass('d-none');
         $('#checkout-cart').attr("style", "display: none");
       } else {
         // Apply selected classes and logic
-        $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text('Select Plan');
-        $(button).addClass('-is-selected').html('<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>Selected</span>');
+        $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text(selectPlanTextTranslated);
+        $(button).addClass('-is-selected').html(`<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>${selectedPlanTextTranslated}</span>`);
         $('#checkout-cart').attr("style", "display: flex");
 
-        $('#planType').text(planType === 'single' ? 'Software Backup (Monthly)' : planType === 'multiple' ? 'Software Backup (Yearly)' : planType)
+        $('#planType').text(planType === 'single' ? monthlyPlanTextTranslated : planType === 'multiple' ? yearlyPlanTextTranslated : planType)
 
         // if (planType === 'single') {
         $('.single').addClass('-is-selected');
@@ -4205,9 +4211,9 @@
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
       $('#adds').addClass('d-none')
-      $('.btn-primary-small2').removeClass('-is-selected').text('Add')
+      $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
 
-      $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html('<img src="" alt="" /><span>Select Plan</span>');
+      $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html(`<img src="" alt="" /><span>${selectPlanTextTranslated}</span>`);
       $('#planType').text('');
       $('.single, .multiple').removeClass('-is-selected');
       $('.single-extra, .multiple-extra').addClass('d-none');
@@ -4227,12 +4233,12 @@
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
       if (button.classList.contains('-is-selected')) {
         totalSum -= price;
-        button.textContent = 'Add';
+        button.textContent = selectAddOnTextTranslated;
         button.classList.remove('-is-selected');
         checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
       } else {
         totalSum += price;
-        button.textContent = 'Added';
+        button.textContent = selectedAddOnTextTranslated;
         button.classList.add('-is-selected');
         checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
       }
@@ -4244,7 +4250,7 @@
       } else {
         const addsElement = document.getElementById('adds');
         addsElement.classList.remove('d-none');
-        addsElement.textContent = `Addons: ${addOns}`;
+        addsElement.textContent = `${addonsTextTranslated}: ${addOns}`;
       }
 
       document.getElementById('totalSum').textContent = totalSum.toLocaleString();
