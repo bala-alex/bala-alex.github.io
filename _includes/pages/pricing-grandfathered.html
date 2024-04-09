@@ -1807,6 +1807,15 @@
   {% include snippets.html %}
   {% include title-tags.html %}
 
+  <script>
+    var pathname = location.pathname;
+  
+    if (pathname.includes('/pricing-grandfathered.html')) {
+    document.title = "Pricing Grandfathered";
+    document.getElementsByTagName('meta')["description"].content = "noindex";
+  }
+  </script>
+
   <script src="/js/scroolTop.js"></script>
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>

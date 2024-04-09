@@ -5251,7 +5251,7 @@
       var navigation = $('.navigation');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 260) {
+        if ($(window).scrollTop() <= 230) {
           navigation.removeClass('d-none');
         } else {
           navigation.addClass('d-none');
@@ -5317,7 +5317,7 @@
       var href = link.getAttribute('href');
       window.location.href = href;
       window.scrollTo({
-        top: 0,
+        top: 200,
         behavior: 'auto'
       });
       window.onload = function() {
@@ -5331,7 +5331,7 @@
       var navigation = $('.navigation2');
 
       $(window).scroll(function () {
-        if ($(window).scrollTop() <= 160) {
+        if ($(window).scrollTop() <= 120) {
           navigation.removeClass('nav-top-negative2');
         } else {
           navigation.addClass('nav-top-negative2');
