@@ -1425,6 +1425,10 @@ html {
   padding-top: 100px !important;
 }
 
+.pt-200 {
+  padding-top: 200px !important;
+}
+
 .pt-50 {
   padding-top: 50px !important;
 }
@@ -1845,6 +1849,20 @@ html {
 
   @include screen-md {
     top: 0px !important;
+  }
+}
+
+.mobile-link {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  color: #00384B !important;
+  font-family: "Mulish", sans-serif;
+  padding: 8px 0 !important;
+  
+  &:hover {
+    color: $bondi-blue !important;
+    text-decoration: none !important;
   }
 }
 

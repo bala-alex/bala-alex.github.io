@@ -24,7 +24,7 @@
           <div class="row">
             <div class="col-md-7 col-sm-12">
               <h1 class="header__title text-primary text-align-start mw-420 mt-4">{{ site.data[page.lang]['contact']['get_in_touch'] }}</h1>
-              <p class="header__subtitle mt-4 mw-530 text-align-start">{{ site.data[page.lang]['contact']['we_are_here'] }}</p>
+              <p class="header__subtitle mt-4 mw-530 text-align-start font-24 line-height-38 fw-light">{{ site.data[page.lang]['contact']['we_are_here'] }}</p>
             </div>
             <div class="col-md-5 col-sm-12 content-center">
               <img class="image-style mw-350" src="/images/landing/header-contact.webp" alt="Illustration Contacting Escrow Support for Assistance"/>
@@ -36,8 +36,9 @@
     <!-- First Section -->
     <div class="book-demo bg-white">
       <div class="questions__bg2">
-        <div class="container">
-          <div class="contact__info">
+        
+        <div class="contact__info">
+          <div class="container">
             <div class="contact__box mt-3">
               <p class="contact__box-title">{{ site.data[page.lang]['contact']['talk_to_sales'] }}</p>
               <p class="contact__box-subtitle">{{ site.data[page.lang]['contact']['interested_in_our'] }}</p>
@@ -60,25 +61,42 @@
                 </a>
               </div>
             </div>
-            <div class="contact__box-white mt-4">
-              <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['contact_customer'] }}</p>
-              <p class="contact__box-white-subtitle">{{ site.data[page.lang]['contact']['already_a'] }}</p>
-              <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp" alt="Customer Support Assistance and Service Illustration" loading="lazy"/>
-              <div class="contact__box-white-content">
-                <a class="contact__box-white-btn open-chat contact-support-href" target="_blank" href="?support#hs-chat-open">
-                  <img class="mt-1" src="/images/landing/icon-chat.svg" alt="Chat Icon" loading="lazy"/>
-                  <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['chat_with_us'] }}</p>
-                </a>
-                <a class="contact__box-white-btn" data-toggle="modal" data-target="#exampleModal27">
-                  <img class="mt-1" src="/images/landing/icon-message.svg" alt="Message Icon" loading="lazy"/>
-                  <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['send_us'] }}</p>
-                </a>
+
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="contact__box-white mt-4">
+                  <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['contact_customer'] }}</p>
+                  <p class="contact__box-white-subtitle text-slate-gray">{{ site.data[page.lang]['contact']['already_a'] }}</p>
+                  <div class="contact__box-white-content">
+                    <a class="contact__box-white-btn open-chat contact-support-href" target="_blank" href="?support#hs-chat-open">
+                      <img class="mt-1" src="/images/landing/icon-chat.svg" alt="Chat Icon" loading="lazy"/>
+                      <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['chat_with_us'] }}</p>
+                    </a>
+                    <a class="contact__box-white-btn" data-toggle="modal" data-target="#exampleModal27">
+                      <img class="mt-1" src="/images/landing/icon-message.svg" alt="Message Icon" loading="lazy"/>
+                      <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['send_us'] }}</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="contact__box-white mt-4">
+                  <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['contact_human'] }}</p>
+                  <p class="contact__box-white-subtitle text-slate-gray">{{ site.data[page.lang]['contact']['looking_to_join'] }}</p>
+                  <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp" alt="Customer Support Assistance and Service Illustration" loading="lazy"/>
+                  <div class="contact__box-white-content">
+                    <a class="contact__box-white-btn" href="mailto: talent@codekeeper.co">
+                      <img class="mt-1" src="/images/landing/icon-message.svg" alt="Message Icon" loading="lazy"/>
+                      <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['send_us'] }}</p>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-gradient-night section-large">
+        <div class="bg-gradient-night section-large pt-200">
           <div class="container">
             <div class="row">
               <div class="col-md-5 col-sm-12">
