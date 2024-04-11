@@ -2619,11 +2619,11 @@
       flex-direction: column;
       padding: 20px !important;
 
-      .hs-form-booleancheckbox-display {
-        margin-top: 50px;
-        padding-bottom: 40px;
+      .hs-form-booleancheckbox-display  {
+        margin-top: 20px;
+        padding-bottom: 90px;
         padding-top: 40px !important;
-        border-top: 1px dashed #6A8493;
+        border-bottom: 1px dashed #6A8493;
         color: $dark-cyan;
         font-size: 16px !important;
         font-family: 'Mulish', sans-serif;
@@ -2638,6 +2638,10 @@
           margin-top: 0px;
         }
       }
+
+      // .hs-form-booleancheckbox-display:last-child  {
+      //   border: none;
+      // }
 
 
       .hs-button.primary.large {
@@ -2880,17 +2884,17 @@
         font-weight: 400;
       }
 
-      input[type="file"]:last-child {
-        background-color: transparent;
-        color: $dark-cyan;
-        min-height: 45px;
-      }
+      // input[type="file"]:last-child {
+      //   background-color: transparent;
+      //   color: $dark-cyan;
+      //   min-height: 45px;
+      // }
 
-      input[type="checkbox"] {
-        width: 20px !important;
-        height: 20px !important;
-        margin-right: 12px;
-      }
+      // input[type="checkbox"]:first-child {
+      //   width: 30px !important;
+      //   height: 20px !important;
+      //   margin-right: 12px;
+      // }
 
       select::placeholder {
         font-size: 16px !important;
@@ -2911,11 +2915,33 @@
         }
       }
 
-      input#consent-a98c66fd-c762-449d-8f19-14ab6c14a53d.hs-input {
+      label.hs-form-booleancheckbox-display input {
+        width: 50px !important;
+        margin-left: 0px !important;
+      }
+
+      input#by_submitting_this_form_confirm_i_am_purchasing_the_selected_subscription_for_my_organisation__and_-f7c780aa-429f-44a4-916f-6878354a6a5a {
+        margin-left: 8px !important;
+      }
+
+      input[type="checkbox"] {
         width: 30px !important;
         height: 20px !important;
-        margin-bottom: 40px !important;
+        margin-right: 12px;
+        margin-left: 5px;
       }
+
+      // input#consent-a98c66fd-c762-449d-8f19-14ab6c14a53d.hs-input {
+      //   width: 30px !important;
+      //   height: 20px !important;
+      //   margin-bottom: 40px !important;
+      // }
+
+      // input#by_submitting_this_form_confirm_i_am_purchasing_the_selected_subscription_for_my_organisation__and_-f7c780aa-429f-44a4-916f-6878354a6a5a {
+      //   width: 30px !important;
+      //   height: 20px !important;
+      //   margin-right: 12px !important;
+      // }
 
       input[type=checkbox] {
         margin-top: 10px !important;
