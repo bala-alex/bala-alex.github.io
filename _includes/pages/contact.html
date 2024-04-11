@@ -81,10 +81,13 @@
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="contact__box-white mt-4">
-                  <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['contact_human'] }}</p>
-                  <p class="contact__box-white-subtitle text-slate-gray">{{ site.data[page.lang]['contact']['looking_to_join'] }}</p>
-                  <img class="contact__box-white-image" src="/images/landing/customer-support-image.webp" alt="Customer Support Assistance and Service Illustration" loading="lazy"/>
+                  <p class="contact__box-white-title text-primary">{{ site.data[page.lang]['contact']['join_our_team'] }}</p>
+                  <p class="contact__box-white-subtitle text-slate-gray">{{ site.data[page.lang]['contact']['we_are_hiring'] }}</p>
                   <div class="contact__box-white-content">
+                    <a class="contact__box-white-btn" target="_blank" href="https://careers.codekeeper.co/">
+                      <img class="mt-1" src="/images/landing/icon-desk.svg" alt="Desk Icon" loading="lazy"/>
+                      <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['view_open_positions'] }}</p>
+                    </a>
                     <a class="contact__box-white-btn" href="mailto: talent@codekeeper.co">
                       <img class="mt-1" src="/images/landing/icon-message.svg" alt="Message Icon" loading="lazy"/>
                       <p class="contact__box-white-text">{{ site.data[page.lang]['contact']['send_us'] }}</p>
