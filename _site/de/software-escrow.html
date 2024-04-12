@@ -426,31 +426,37 @@
     let dropdownMenuTimer;
 
     $("#recoveryMenuBtn").mouseenter(function () {
-      clearTimeout(recoveryMenuTimer);
-      recoveryMenuTimer = setTimeout(() => {
-        $(this).dropdown('toggle'); // Manually toggle the dropdown
-      }, 10);
-    }).mouseleave(function () {
-      clearTimeout(recoveryMenuTimer);
-    });
+    clearTimeout(recoveryMenuTimer);
+    const isExpanded = $(this).attr('aria-expanded') === 'true';
+    if (!isExpanded) {
+        recoveryMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+        }, 10);
+    }
+}).mouseleave(function () {
+    clearTimeout(recoveryMenuTimer);
+});
 
-    $("#resourcesMenuBtn").mouseenter(function () {
-      clearTimeout(resourcesMenuTimer);
-      resourcesMenuTimer = setTimeout(() => {
-        $(this).dropdown('toggle'); // Manually toggle the dropdown
-      }, 10);
-    }).mouseleave(function () {
-      clearTimeout(resourcesMenuTimer);
-    });
+$("#resourcesMenuBtn").mouseenter(function () {
+    clearTimeout(resourcesMenuTimer);
+    const isExpanded = $(this).attr('aria-expanded') === 'true';
+    if (!isExpanded) {
+        resourcesMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+        }, 10);
+    }
+}).mouseleave(function () {
+    clearTimeout(resourcesMenuTimer);
+});
 
-    $(".dropdown-menu").mouseleave(function () {
-      clearTimeout(dropdownMenuTimer);
-      dropdownMenuTimer = setTimeout(() => {
+$(".dropdown-menu").mouseleave(function () {
+    clearTimeout(dropdownMenuTimer);
+    dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-      }, 1200);
-    }).mouseenter(function () {
-      clearTimeout(dropdownMenuTimer);
-    });
+    }, 1200);
+}).mouseenter(function () {
+    clearTimeout(dropdownMenuTimer);
+});
 
     // Disable click event entirely
     $("#recoveryMenuBtn, #resourcesMenuBtn").on("click", function (e) {
