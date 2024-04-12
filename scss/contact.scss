@@ -2680,7 +2680,11 @@
         font-family: 'Mulish', sans-serif;
         color: $dark-cyan;
         font-weight: 400;
-        margin-top: 20px;
+        margin-top: 40px;
+
+        span {
+          color: $dark-cyan;
+        }
       }
 
       p {
@@ -2922,6 +2926,11 @@
 
       input#by_submitting_this_form_confirm_i_am_purchasing_the_selected_subscription_for_my_organisation__and_-f7c780aa-429f-44a4-916f-6878354a6a5a {
         margin-left: 8px !important;
+      }
+
+      .hs-dependent-field {
+        border-top: 1px dashed #6A8493;
+        margin-top: 50px;
       }
 
       input[type="checkbox"] {
