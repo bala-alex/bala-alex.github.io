@@ -1959,6 +1959,29 @@
       window.onload = function () {
         window.location.reload(true);
       }
+
+      if (window.location.hash === '#pricing') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').addClass('active');
+        $('#pricing').addClass('active').addClass('show');
+        $('#features-tab').removeClass('active');
+        $('#features').removeClass('active').removeClass('show');
+      } else if (window.location.hash === '#features') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').removeClass('active');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features-tab').addClass('active');
+        $('#features').addClass('active').addClass('show');
+      } else {
+        $('#intro-tab').addClass('active');
+        $('#pricing-tab').removeClass('active');
+        $('#features-tab').removeClass('active');
+        $('#intro').addClass('active').addClass('show');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features').removeClass('active').removeClass('show');
+      }
     }
   </script>
 

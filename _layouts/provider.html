@@ -3177,18 +3177,24 @@
 
       $("#recoveryMenuBtn").mouseenter(function () {
         clearTimeout(recoveryMenuTimer);
-        recoveryMenuTimer = setTimeout(() => {
-          $(this).dropdown('toggle'); // Manually toggle the dropdown
-        }, 10);
+        const isExpanded = $(this).attr('aria-expanded') === 'true';
+        if (!isExpanded) {
+          recoveryMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          }, 10);
+        }
       }).mouseleave(function () {
         clearTimeout(recoveryMenuTimer);
       });
 
       $("#resourcesMenuBtn").mouseenter(function () {
         clearTimeout(resourcesMenuTimer);
-        resourcesMenuTimer = setTimeout(() => {
-          $(this).dropdown('toggle'); // Manually toggle the dropdown
-        }, 10);
+        const isExpanded = $(this).attr('aria-expanded') === 'true';
+        if (!isExpanded) {
+          resourcesMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          }, 10);
+        }
       }).mouseleave(function () {
         clearTimeout(resourcesMenuTimer);
       });

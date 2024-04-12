@@ -426,37 +426,37 @@
     let dropdownMenuTimer;
 
     $("#recoveryMenuBtn").mouseenter(function () {
-    clearTimeout(recoveryMenuTimer);
-    const isExpanded = $(this).attr('aria-expanded') === 'true';
-    if (!isExpanded) {
+      clearTimeout(recoveryMenuTimer);
+      const isExpanded = $(this).attr('aria-expanded') === 'true';
+      if (!isExpanded) {
         recoveryMenuTimer = setTimeout(() => {
-            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          $(this).dropdown('toggle'); // Manually toggle the dropdown
         }, 10);
-    }
-}).mouseleave(function () {
-    clearTimeout(recoveryMenuTimer);
-});
+      }
+    }).mouseleave(function () {
+      clearTimeout(recoveryMenuTimer);
+    });
 
-$("#resourcesMenuBtn").mouseenter(function () {
-    clearTimeout(resourcesMenuTimer);
-    const isExpanded = $(this).attr('aria-expanded') === 'true';
-    if (!isExpanded) {
+    $("#resourcesMenuBtn").mouseenter(function () {
+      clearTimeout(resourcesMenuTimer);
+      const isExpanded = $(this).attr('aria-expanded') === 'true';
+      if (!isExpanded) {
         resourcesMenuTimer = setTimeout(() => {
-            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          $(this).dropdown('toggle'); // Manually toggle the dropdown
         }, 10);
-    }
-}).mouseleave(function () {
-    clearTimeout(resourcesMenuTimer);
-});
+      }
+    }).mouseleave(function () {
+      clearTimeout(resourcesMenuTimer);
+    });
 
-$(".dropdown-menu").mouseleave(function () {
-    clearTimeout(dropdownMenuTimer);
-    dropdownMenuTimer = setTimeout(() => {
+    $(".dropdown-menu").mouseleave(function () {
+      clearTimeout(dropdownMenuTimer);
+      dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-    }, 1200);
-}).mouseenter(function () {
-    clearTimeout(dropdownMenuTimer);
-});
+      }, 1200);
+    }).mouseenter(function () {
+      clearTimeout(dropdownMenuTimer);
+    });
 
     // Disable click event entirely
     $("#recoveryMenuBtn, #resourcesMenuBtn").on("click", function (e) {
@@ -522,14 +522,12 @@ $(".dropdown-menu").mouseleave(function () {
               </div>
               <div class="nav nav-pills my-2 d-flex justify-content-center" id="pills-tab" role="tablist">
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="intro-tab" data-toggle="pill"
-                  href="#intro" role="tab" aria-controls="intro" aria-selected="false"
-                  onclick="refreshPage(this)">Introduction</a>
+                  href="#intro" role="tab" aria-controls="intro" aria-selected="false" onclick="refreshPage(this)">Introduction</a>
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="features-tab" data-toggle="pill"
                   href="#features" role="tab" aria-controls="features" aria-selected="true"
                   onclick="refreshPage(this)">Features</a>
                 <a class="nav-link width-fit-content border-none text-bondi-blue" id="pricing-tab" data-toggle="pill"
-                  href="#pricing" role="tab" aria-controls="pricing" aria-selected="true"
-                  onclick="refreshPage(this)">Pricing</a>
+                  href="#pricing" role="tab" aria-controls="pricing" aria-selected="true" onclick="refreshPage(this)">Pricing</a>
               </div>
             </div>
 
@@ -796,8 +794,8 @@ $(".dropdown-menu").mouseleave(function () {
                     </div>
                   </div>
                   <div class="d-flex flex-wrap align-items-center mt-5">
-                    <a class="button btn-cerulean software-backup-features-href mr-4 my-4" href="software-backup.html#features"
-                      onclick="refreshPage(this)">
+                    <a class="button btn-cerulean software-backup-features-href mr-4 my-4"
+                      href="software-backup.html#features" onclick="refreshPage(this)">
                       Explore Features
                     </a>
                     <p class="deposit-assets__text font-18 fw-400 mw-100 text-slate-gray mb-0 my-3">We are around to help. <a class="text-bondi-blue fw-bold text-underline book-a-demo-href" href="book-a-demo.html">Book a call</a> with an advisor to discuss your specific situation.</p>
@@ -1063,7 +1061,8 @@ $(".dropdown-menu").mouseleave(function () {
                       loading="lazy" />
                     <div class="d-flex mt-2 flex-wrap">
                       <p class="datacenters__title mw-250">Full Version History</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title-add">Add-on
+                      </p>
                     </div>
                     <p class="datacenters__subtitle">From minimal to full coverage, you can tailor your backup strategy with an unlimited backup history instead of the default three.</p>
                   </div>
@@ -1072,7 +1071,8 @@ $(".dropdown-menu").mouseleave(function () {
                       loading="lazy" />
                     <div class="d-flex mt-2">
                       <p class="datacenters__title">Certified Deposit</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title-add">Add-on
+                      </p>
                     </div>
                     <p class="datacenters__subtitle">Guarantee the integrity of your backups with automated content and activity verifications.</p>
                   </div>
@@ -1081,7 +1081,8 @@ $(".dropdown-menu").mouseleave(function () {
                       loading="lazy" />
                     <div class="d-flex mt-2">
                       <p class="datacenters__title">Storage Region Selection</p>
-                      <p class="datacenters__title-add">Add-on</p>
+                      <p class="datacenters__title-add">Add-on
+                      </p>
                     </div>
                     <p class="datacenters__subtitle">Keep your backups close to home and under trusted jurisdiction.</p>
                   </div>
@@ -1265,7 +1266,8 @@ $(".dropdown-menu").mouseleave(function () {
                             alt="Software Escrow Icon" loading="lazy" /><br>Software Escrow</th>
                         <th scope="col" class="plan__table-subtitle border-none text-center break-spaces font-16"><img
                             class="mr-2" src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
-                            loading="lazy" /><br>SaaS Escrow</th>
+                            loading="lazy" /><br>SaaS Escrow
+                        </th>
                         <th scope="col" class="plan__table-subtitle border-none text-center break-spaces font-16"><img
                             class="mr-2" src="/images/software-escrow/icons/software-custodian-icon2.svg"
                             alt="Software Custodian Icon" loading="lazy" /><br>Software Custodian</th>
@@ -1449,17 +1451,20 @@ $(".dropdown-menu").mouseleave(function () {
                   </li>
                   <li class="a section__text">Codekeeper Software Backup offers effortless, automated backup solutions for all your software source code repositories and databases across major developer platforms, ensuring your data is always current, comprehensive, and securely stored.</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">How does the automated backup process work?</p>
+                    <p class="section__subtitle mt-3">How does the automated backup process work?
+                    </p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Our fully automated backup system eliminates manual processes, automatically updating your backups across various platforms like GitHub, GitLab, Bitbucket, and Azure DevOps, providing a unified, streamlined backup management interface.</li>
+                  <li class="a section__text">Our fully automated backup system eliminates manual processes, automatically updating your backups across various platforms like GitHub, GitLab, Bitbucket, and Azure DevOps, providing a unified, streamlined backup management interface.
+                  </li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
                     <p class="section__subtitle mt-3">What platforms are supported by Codekeeper Software Backup?</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
                   <li class="a section__text">Codekeeper Software Backup supports a wide range of developer platforms, including GitHub, GitLab, Bitbucket, and Azure DevOps, allowing you to centralize backups from these platforms in one seamless interface.</li>
                   <li class="q d-flex align-items-center justify-content-between q-border">
-                    <p class="section__subtitle mt-3">Is there a limit to the amount of data I can back up?</p>
+                    <p class="section__subtitle mt-3">Is there a limit to the amount of data I can back up?
+                    </p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
                   <li class="a section__text">No, Codekeeper Software Backup offers unlimited data storage options, ensuring you never have to worry about running out of storage space for your backups.</li>
@@ -1472,13 +1477,15 @@ $(".dropdown-menu").mouseleave(function () {
                     <p class="section__subtitle mt-3">How secure are my backups with Codekeeper?</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Security is a top priority for us. We employ advanced encryption and security measures to protect your backups from unauthorized access, ensuring your source code and application data are securely backed up.</li>
+                  <li class="a section__text">Security is a top priority for us. We employ advanced encryption and security measures to protect your backups from unauthorized access, ensuring your source code and application data are securely backed up.
+                  </li>
 
                   <li class="q d-flex align-items-center justify-content-between q-border">
                     <p class="section__subtitle mt-3">What is the recovery process like in case of data loss?</p>
                     <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                   </li>
-                  <li class="a section__text">Codekeeper offers a simplified recovery process, enabling you to quickly and easily retrieve your data in the event of loss or damage, minimizing downtime and ensuring continuity.</li>
+                  <li class="a section__text">Codekeeper offers a simplified recovery process, enabling you to quickly and easily retrieve your data in the event of loss or damage, minimizing downtime and ensuring continuity.
+                  </li>
 
                   <div class="" id="questions2">
                     <li class="q d-flex align-items-center justify-content-between q-border">
@@ -1490,7 +1497,8 @@ $(".dropdown-menu").mouseleave(function () {
                       <p class="section__subtitle mt-3">What makes Codekeeper Software Backup different from other backup solutions?</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
                     </li>
-                    <li class="a section__text">Our solution stands out by offering unlimited repositories and data storage, automated and customizable backup processes, and a unified backup management interface, all supported by a trusted partner network.</li>
+                    <li class="a section__text">Our solution stands out by offering unlimited repositories and data storage, automated and customizable backup processes, and a unified backup management interface, all supported by a trusted partner network.
+                    </li>
                     <li class="q d-flex align-items-center justify-content-between q-border">
                       <p class="section__subtitle mt-3">How can I get started with Codekeeper Software Backup?</p>
                       <img src="/images/integrations/icon-down.svg" alt="Down Icon" loading="lazy" />
@@ -1506,7 +1514,8 @@ $(".dropdown-menu").mouseleave(function () {
                 </ul>
                 <p class="section__text mt-5 mb-5 text-center">Haven’t found the answer you were looking for?
                   <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline"
-                    href="contact.html">Contact us</a> </p>
+                    href="contact.html">Contact us</a>
+                </p>
               </div>
 
 
@@ -1800,8 +1809,7 @@ $(".dropdown-menu").mouseleave(function () {
                     <div class="row">
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="plan__add-ons-text ml-3 text-white font-28 mt-negative-25"><img class="mr-2"
-                            src="/images/software-escrow/icons/certified-badge.svg"
-                            alt="Certified Badge Icon" />Certified</p>
+                            src="/images/software-escrow/icons/certified-badge.svg" alt="Certified Badge Icon" />Certified</p>
                         <p class="plan__add-ons-subtext mb-2 text-white ml-3">Get automated monthly content and activity verification reports<br> (supported platforms only)</p>
                         <a class="plan__add-ons-subtext mb-2 text-sun-yellow font-16 fw-600 verification-href ml-3"
                           href="verification.html">
@@ -1831,8 +1839,7 @@ $(".dropdown-menu").mouseleave(function () {
                     <div class="row">
                       <div class="col-md-9 col-sm-12 py-4">
                         <p class="risks__subtitle font-18 fw-700 text-dark-cyan mb-1 ml-3"><img class="mr-2"
-                            src="/images/compare-page/icons/deposit-packages.svg"
-                            alt="Advanced Deposits Icon" />Advanced Deposits</p>
+                            src="/images/compare-page/icons/deposit-packages.svg" alt="Advanced Deposits Icon" />Advanced Deposits</p>
                         <p class="risks__subtitle text-slate-gray fw-400 font-14 mb-2 ml-3">Upgrade your depositing configuration options to make sure your escrow is easy to maintain.. </p>
                         <span class="offer-btns2">
                           <p class="open text-bondi-blue cursor-pointer mb-0 ml-3" id="openButton2">Show Features <i
@@ -2014,7 +2021,8 @@ $(".dropdown-menu").mouseleave(function () {
                       </div>
                       <div class="bg-white py-5 contact" id="offer">
                         <div class="section__build-quote mx-auto mw-700">
-                          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                          <script charset="utf-8" type="text/javascript"
+                            src="//js.hsforms.net/forms/embed/v2.js"></script>
                           <script>
                             hbspt.forms.create({
                               region: "na1",
@@ -2147,7 +2155,8 @@ $(".dropdown-menu").mouseleave(function () {
                 </ul>
                 <p class="section__text mt-5 mb-5 text-center">Haven’t found the answer you were looking for?
                   <a class="text-bondi-blue contact-href fw-bold text-transform-none text-underline"
-                    href="contact.html">Contact us</a> </p>
+                    href="contact.html">Contact us</a>
+                </p>
               </div>
 
               <!-- Section -->
@@ -4229,7 +4238,6 @@ $(".dropdown-menu").mouseleave(function () {
         //   $('.single-extra').addClass('d-none');
         //   $('.multiple-extra').removeClass('d-none');
         // }
-        console.log('checkoutText: ', checkoutText)
         $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
       }
     }
@@ -4307,7 +4315,6 @@ $(".dropdown-menu").mouseleave(function () {
 
     function openCheckout() {
       const selectedPlan = checkoutText;
-      console.log('selectedPlan: ', selectedPlan);
       if (!selectedPlan) return;
 
       const product = cbInstance.initializeProduct(selectedPlan, 1)
@@ -4315,7 +4322,6 @@ $(".dropdown-menu").mouseleave(function () {
 
       if (checkoutAdOns) {
         checkoutAdOns.map((addon) => {
-          console.log('addon: ', addon);
           product.addAddon({ id: addon, quantity: 1 });
         })
       }
@@ -4399,14 +4405,36 @@ $(".dropdown-menu").mouseleave(function () {
         top: 200,
         behavior: 'auto'
       });
-      window.onload = function() {
+      window.onload = function () {
         window.location.reload(true);
+      }
+
+      if (window.location.hash === '#pricing') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').addClass('active');
+        $('#pricing').addClass('active').addClass('show');
+        $('#features-tab').removeClass('active');
+        $('#features').removeClass('active').removeClass('show');
+      } else if (window.location.hash === '#features') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').removeClass('active');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features-tab').addClass('active');
+        $('#features').addClass('active').addClass('show');
+      } else {
+        $('#intro-tab').addClass('active');
+        $('#pricing-tab').removeClass('active');
+        $('#features-tab').removeClass('active');
+        $('#intro').addClass('active').addClass('show');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features').removeClass('active').removeClass('show');
       }
     }
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      console.log('ready');
       const currency = localStorage.getItem('currency');
       $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
     });

@@ -425,37 +425,37 @@
     let dropdownMenuTimer;
 
     $("#recoveryMenuBtn").mouseenter(function () {
-    clearTimeout(recoveryMenuTimer);
-    const isExpanded = $(this).attr('aria-expanded') === 'true';
-    if (!isExpanded) {
+      clearTimeout(recoveryMenuTimer);
+      const isExpanded = $(this).attr('aria-expanded') === 'true';
+      if (!isExpanded) {
         recoveryMenuTimer = setTimeout(() => {
-            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          $(this).dropdown('toggle'); // Manually toggle the dropdown
         }, 10);
-    }
-}).mouseleave(function () {
-    clearTimeout(recoveryMenuTimer);
-});
+      }
+    }).mouseleave(function () {
+      clearTimeout(recoveryMenuTimer);
+    });
 
-$("#resourcesMenuBtn").mouseenter(function () {
-    clearTimeout(resourcesMenuTimer);
-    const isExpanded = $(this).attr('aria-expanded') === 'true';
-    if (!isExpanded) {
+    $("#resourcesMenuBtn").mouseenter(function () {
+      clearTimeout(resourcesMenuTimer);
+      const isExpanded = $(this).attr('aria-expanded') === 'true';
+      if (!isExpanded) {
         resourcesMenuTimer = setTimeout(() => {
-            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          $(this).dropdown('toggle'); // Manually toggle the dropdown
         }, 10);
-    }
-}).mouseleave(function () {
-    clearTimeout(resourcesMenuTimer);
-});
+      }
+    }).mouseleave(function () {
+      clearTimeout(resourcesMenuTimer);
+    });
 
-$(".dropdown-menu").mouseleave(function () {
-    clearTimeout(dropdownMenuTimer);
-    dropdownMenuTimer = setTimeout(() => {
+    $(".dropdown-menu").mouseleave(function () {
+      clearTimeout(dropdownMenuTimer);
+      dropdownMenuTimer = setTimeout(() => {
         $(".container-fluid").click();
-    }, 1200);
-}).mouseenter(function () {
-    clearTimeout(dropdownMenuTimer);
-});
+      }, 1200);
+    }).mouseenter(function () {
+      clearTimeout(dropdownMenuTimer);
+    });
 
     // Disable click event entirely
     $("#recoveryMenuBtn, #resourcesMenuBtn").on("click", function (e) {
@@ -1689,7 +1689,7 @@ $(".dropdown-menu").mouseleave(function () {
                       <p class="section__text-main mb-2">Zertifiziert</p>
                       <p class="section__subtext-main">Stärken Sie das Vertrauen in Ihre automatisierten Hinterlegungen durch eine regelmäßige Überprüfung Ihrer Vermögenswerte.</p>
                       <div class="d-flex" data-html="true"
-                        data-tooltip="• Software-Backup (&gt;1 TB) &#010• Software-Escrow &#010• SaaS-Escrow &#010• Software-Verwalter"
+                        data-tooltip="• Software-Backup &#010• Software-Escrow &#010• SaaS-Escrow &#010• Software-Verwalter"
                         data-tooltip-position="bottom">
                         <img class="mb-2" src="/images/pricing-page/icons/tooltip-icon.svg" alt="Tooltip Icon" loading="lazy" />
                       </div>
