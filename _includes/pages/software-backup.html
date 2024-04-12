@@ -2013,7 +2013,7 @@
       var href = link.getAttribute('href');
       window.location.href = href;
       window.scrollTo({
-        top: 200,
+        top: 150,
         behavior: 'auto'
       });
       window.onload = function () {
@@ -2027,6 +2027,12 @@
         $('#pricing').addClass('active').addClass('show');
         $('#features-tab').removeClass('active');
         $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+            scrollTop: 150
+        }, 'slow');
+
+        
       } else if (window.location.hash === '#features') {
         $('#intro-tab').removeClass('active');
         $('#intro').removeClass('active').removeClass('show');
@@ -2034,6 +2040,10 @@
         $('#pricing').removeClass('active').removeClass('show');
         $('#features-tab').addClass('active');
         $('#features').addClass('active').addClass('show');
+
+        $('html, body').animate({
+            scrollTop: 150
+        }, 'slow');
       } else {
         $('#intro-tab').addClass('active');
         $('#pricing-tab').removeClass('active');
@@ -2041,6 +2051,10 @@
         $('#intro').addClass('active').addClass('show');
         $('#pricing').removeClass('active').removeClass('show');
         $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+            scrollTop: 150
+        }, 'slow');
       }
     }
   </script>
