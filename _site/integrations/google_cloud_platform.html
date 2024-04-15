@@ -741,40 +741,44 @@
       let recoveryMenuTimer;
       let resourcesMenuTimer;
       let dropdownMenuTimer;
-
+  
       $("#recoveryMenuBtn").mouseenter(function () {
-      clearTimeout(recoveryMenuTimer);
-      const isExpanded = $(this).attr('aria-expanded') === 'true';
-      if (!isExpanded) {
-        recoveryMenuTimer = setTimeout(() => {
-          $(this).dropdown('toggle'); // Manually toggle the dropdown
-        }, 10);
-      }
-    }).mouseleave(function () {
-      clearTimeout(recoveryMenuTimer);
-    });
-
-    $("#resourcesMenuBtn").mouseenter(function () {
-      clearTimeout(resourcesMenuTimer);
-      const isExpanded = $(this).attr('aria-expanded') === 'true';
-      if (!isExpanded) {
-        resourcesMenuTimer = setTimeout(() => {
-          $(this).dropdown('toggle'); // Manually toggle the dropdown
-        }, 10);
-      }
-    }).mouseleave(function () {
-      clearTimeout(resourcesMenuTimer);
-    });
-
-    $(".dropdown-menu").mouseleave(function () {
-      clearTimeout(dropdownMenuTimer);
-      dropdownMenuTimer = setTimeout(() => {
-        $(".container-fluid").click();
-      }, 1200);
-    }).mouseenter(function () {
-      clearTimeout(dropdownMenuTimer);
-    });
-
+        clearTimeout(recoveryMenuTimer);
+        const isExpanded = $(this).attr('aria-expanded') === 'true';
+        if (!isExpanded) {
+          recoveryMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          }, 10);
+        }
+      }).mouseleave(function () {
+        clearTimeout(recoveryMenuTimer);
+      }).click(function () {
+        $(this).dropdown('toggle');
+      });
+  
+      $("#resourcesMenuBtn").mouseenter(function () {
+        clearTimeout(resourcesMenuTimer);
+        const isExpanded = $(this).attr('aria-expanded') === 'true';
+        if (!isExpanded) {
+          resourcesMenuTimer = setTimeout(() => {
+            $(this).dropdown('toggle'); // Manually toggle the dropdown
+          }, 10);
+        }
+      }).mouseleave(function () {
+        clearTimeout(resourcesMenuTimer);
+      }).click(function () {
+        $(this).dropdown('toggle');
+      });
+  
+      $(".dropdown-menu").mouseleave(function () {
+        clearTimeout(dropdownMenuTimer);
+        dropdownMenuTimer = setTimeout(() => {
+          $(".container-fluid").click();
+        }, 1200);
+      }).mouseenter(function () {
+        clearTimeout(dropdownMenuTimer);
+      });
+  
       // Disable click event entirely
       $("#recoveryMenuBtn, #resourcesMenuBtn").on("click", function (e) {
         e.stopImmediatePropagation(); // Stop all other click events

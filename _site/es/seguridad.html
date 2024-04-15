@@ -432,6 +432,8 @@
       }
     }).mouseleave(function () {
       clearTimeout(recoveryMenuTimer);
+    }).click(function () {
+      $(this).dropdown('toggle');
     });
 
     $("#resourcesMenuBtn").mouseenter(function () {
@@ -444,6 +446,8 @@
       }
     }).mouseleave(function () {
       clearTimeout(resourcesMenuTimer);
+    }).click(function () {
+      $(this).dropdown('toggle');
     });
 
     $(".dropdown-menu").mouseleave(function () {
