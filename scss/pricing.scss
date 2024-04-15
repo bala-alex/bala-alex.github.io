@@ -2095,7 +2095,7 @@
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    overflow: clip;
     transform: translate3d(0, 0, 0);
   }
 
@@ -2112,7 +2112,7 @@
   .slideshow-brands {
     animation: moveSlideshow 90s linear infinite;
   }
-
+  
   @keyframes moveSlideshow {
     100% {
       transform: translateX(-48.6666%);

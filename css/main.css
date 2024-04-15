@@ -17009,7 +17009,7 @@ input[name=consent] {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
@@ -21563,6 +21563,11 @@ input[name=consent] {
   width: 170px;
   max-height: 59px;
 }
+@media (max-width: 992px) {
+  .resources .header__bg-left {
+    top: 90px;
+  }
+}
 @media (max-width: 767px) {
   .resources .header__bg-left {
     max-width: 35%;
@@ -21619,6 +21624,11 @@ input[name=consent] {
   right: 0;
   width: 170px;
   max-height: 59px;
+}
+@media (max-width: 992px) {
+  .resources .header__bg-right4 {
+    top: 90px;
+  }
 }
 @media (max-width: 767px) {
   .resources .header__bg-right4 {
@@ -24884,6 +24894,11 @@ input[name=consent] {
   max-width: 30%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 992px) {
+  .solutions .header__bg-top-left2 {
+    top: 0px;
+  }
 }
 .solutions .header__bg-bottom-right {
   position: absolute;

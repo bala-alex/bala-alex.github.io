@@ -234,6 +234,10 @@
       width: 170px;
       max-height: 59px;
 
+      @include screen-md {
+        top: 90px;
+      }
+
       @include screen-sm {
         max-width: 35%;
       }
@@ -290,6 +294,10 @@
       right: 0;
       width: 170px;
       max-height: 59px;
+
+      @include screen-md {
+        top: 90px;
+      }
 
       @include screen-sm {
         max-width: 35%;

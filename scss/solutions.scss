@@ -102,6 +102,10 @@
       width: 180px;
       max-width: 30%;
       object-fit: contain;
+
+      @include screen-md {
+        top: 0px;
+      }
     }
 
     &__bg-bottom-right {
