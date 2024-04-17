@@ -1622,12 +1622,12 @@
   {% include title-tags.html %}
 
   <script src="/js/geolocationPricing.js"></script>
-  <script src="/js/pricingCheckout.js"></script>
 
   <script>
     // Check if the page has not been reloaded
     if (!localStorage.getItem('pageReloaded')) {
         var yamlData = {{site.data.pricing.prices | jsonify }};
+        localStorage.removeItem('prices');
         localStorage.setItem('prices', JSON.stringify(yamlData));
         
         // Set a flag in localStorage to indicate that the page has been reloaded

@@ -466,48 +466,6 @@
     });
   });
 </script>
-
-
-
-
-<!-- 
-<script>
-
-  document.addEventListener("DOMContentLoaded", function () {
-    let recoveryMenuTimer;
-    let resourcesMenuTimer;
-    let dropdownMenuTimer;
-
-
-
-    $("#recoveryMenuBtn").mouseenter(function () {
-      clearTimeout(recoveryMenuTimer);
-      recoveryMenuTimer = setTimeout(() => {
-        $(this).click();
-      }, 10);
-    }).mouseleave(function () {
-      clearTimeout(recoveryMenuTimer);
-    });
-
-    $("#resourcesMenuBtn").mouseenter(function () {
-      clearTimeout(resourcesMenuTimer);
-      resourcesMenuTimer = setTimeout(() => {
-        $(this).click();
-      }, 10);
-    }).mouseleave(function () {
-      clearTimeout(resourcesMenuTimer);
-    });
-
-    $(".dropdown-menu").mouseleave(function () {
-      clearTimeout(dropdownMenuTimer);
-      dropdownMenuTimer = setTimeout(() => {
-        $(".container-fluid").click();
-      }, 1200);
-    }).mouseenter(function () {
-      clearTimeout(dropdownMenuTimer);
-    });
-  });
-</script> -->
     <!-- Header -->
     <div class="container mt-150 pt-5 content-center flex-column">
       <img class="my-4 mw-160 mx-auto" src="/images/resources-page/agreement-icon.svg" alt="Shape Intro Image"/>
