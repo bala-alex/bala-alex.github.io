@@ -9,6 +9,9 @@
     <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com/stats/stats.aspx' alt='ClickCease'/></a>
     </noscript>
     <!--  Clickcease.com tracking-->
+    <script>
+      var prices = {{ site.data.pricing.prices | jsonify }};
+    </script>
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
@@ -479,17 +482,10 @@
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 
   <script>
-    // Check if the page has not been reloaded
-    if (!localStorage.getItem('pageReloaded')) {
-        var yamlData = {{site.data.pricing.prices | jsonify }};
-        localStorage.removeItem('prices');
-        localStorage.setItem('prices', JSON.stringify(yamlData));
-        
-        // Set a flag in localStorage to indicate that the page has been reloaded
-        localStorage.setItem('pageReloaded', 'true');
+    localStorage.removeItem('prices');
+  </script>
 
-        // Reload the page
-        window.location.reload();
-    } 
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
   </script>
 </body>

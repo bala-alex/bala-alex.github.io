@@ -10,6 +10,9 @@
         alt='ClickCease' /></a>
   </noscript>
   <!--  Clickcease.com tracking-->
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
+  </script>
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
@@ -406,7 +409,8 @@
                     <div class="easy__box">
                       <img class="easy__icon" src="/images/software-escrow/icons/deployment-assets.svg"
                         alt="Deployment Assets Icon" loading="lazy" />
-                      <p class="easy__title overflow-wrap-break">{{ site.data[page.lang]['software_escrow2']['deployment_assets'] }}</p>
+                      <p class="easy__title overflow-wrap-break">{{
+                        site.data[page.lang]['software_escrow2']['deployment_assets'] }}</p>
                       <p class="easy__subtitle">{{ site.data[page.lang]['software_escrow2']['build_and_deployment'] }}
                       </p>
 
@@ -555,8 +559,8 @@
                     site.data[page.lang]['software_escrow2']['affordable_software'] }}</p>
                   <p class="people-choose__main-subtitle mx-auto pt-2 mw-770 text-dark-cyan">{{
                     site.data[page.lang]['software_escrow2']['the_recovery_solution_means'] }}</p>
-                  <a class="button btn-cerulean2 software-escrow-pricing-href mx-auto mt-4" href="software-escrow.html#pricing"
-                    onclick="refreshPage(this)">
+                  <a class="button btn-cerulean2 software-escrow-pricing-href mx-auto mt-4"
+                    href="software-escrow.html#pricing" onclick="refreshPage(this)">
                     {{ site.data[page.lang]['software_escrow2']['view_pricing'] }}
                   </a>
                   <div class="row mb-negative-300">
@@ -1695,19 +1699,11 @@
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
-    // Check if the page has not been reloaded
-    if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {{ site.data.pricing.prices | jsonify
-    }};
     localStorage.removeItem('prices');
-    localStorage.setItem('prices', JSON.stringify(yamlData));
+  </script>
 
-    // Set a flag in localStorage to indicate that the page has been reloaded
-    localStorage.setItem('pageReloaded', 'true');
-
-    // Reload the page
-    window.location.reload();
-    } 
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
   </script>
 
   <script>
@@ -1731,6 +1727,11 @@
       totalSum = 0;
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
+      console.log('button: ', button)
+      console.log('planType: ', planType)
+      console.log('priceString: ', priceString)
+      console.log('planID: ', planID)
+
       if (duration === 'Yearly') {
         $('#checkout-period').text(yearlyPeriodTextTranslated);
       } else {
@@ -1738,10 +1739,13 @@
       }
 
       const currency = localStorage.getItem('currency');
+      console.log(currency);
       checkoutText = planID + '-' + currency + '-' + duration;
+      var prices = {{ site.data.pricing.prices | jsonify }};
 
       // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
-      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      const price = prices?.[`${priceString}_number`]?.[currency];
+      console.log(price)
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
@@ -1809,8 +1813,9 @@
     }
 
     function add(button, priceString, addonID) {
+      var prices = {{ site.data.pricing.prices | jsonify }};
       const currency = localStorage.getItem('currency');
-      let price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      let price = prices?.[`${priceString}_number`]?.[currency];
 
       if (duration === 'Yearly') {
         price *= 12;
@@ -1842,7 +1847,6 @@
       document.getElementById('totalSum').textContent = totalSum.toLocaleString();
     }
   </script>
-
   <script>
     var cbInstance, cart;
 
@@ -1866,7 +1870,6 @@
 
     function openCheckout() {
       const selectedPlan = checkoutText;
-      console.log('selectedPlan: ', selectedPlan);
       if (!selectedPlan) return;
 
       const product = cbInstance.initializeProduct(selectedPlan, 1)
@@ -1874,28 +1877,12 @@
 
       if (checkoutAdOns) {
         checkoutAdOns.map((addon) => {
-          console.log('addon: ', addon);
           product.addAddon({ id: addon, quantity: 1 });
         })
       }
       // Opening the checkout
       cart.proceedToCheckout();
     }
-  </script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 230) {
-          navigation.removeClass('d-none');
-        } else {
-          navigation.addClass('d-none');
-        }
-      });
-      navigation.css('transition', 'all 0.5s fade');
-    });
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1947,72 +1934,56 @@
         window.history.pushState(null, null, newPath);
       });
     });
-  </script>
 
-<script>
-  function refreshPage(link) {
-    var href = link.getAttribute('href');
-    window.location.href = href;
-    window.scrollTo({
-      top: 150,
-      behavior: 'auto'
-    });
-    window.onload = function () {
-      window.location.reload(true);
-    }
-
-    if (window.location.hash === '#pricing') {
-      $('#intro-tab').removeClass('active');
-      $('#intro').removeClass('active').removeClass('show');
-      $('#pricing-tab').addClass('active');
-      $('#pricing').addClass('active').addClass('show');
-      $('#features-tab').removeClass('active');
-      $('#features').removeClass('active').removeClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-
-      
-    } else if (window.location.hash === '#features') {
-      $('#intro-tab').removeClass('active');
-      $('#intro').removeClass('active').removeClass('show');
-      $('#pricing-tab').removeClass('active');
-      $('#pricing').removeClass('active').removeClass('show');
-      $('#features-tab').addClass('active');
-      $('#features').addClass('active').addClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-    } else {
-      $('#intro-tab').addClass('active');
-      $('#pricing-tab').removeClass('active');
-      $('#features-tab').removeClass('active');
-      $('#intro').addClass('active').addClass('show');
-      $('#pricing').removeClass('active').removeClass('show');
-      $('#features').removeClass('active').removeClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-    }
-  }
-</script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation2');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 120) {
-          navigation.removeClass('nav-top-negative2');
-        } else {
-          navigation.addClass('nav-top-negative2');
-        }
+    function refreshPage(link) {
+      var href = link.getAttribute('href');
+      window.location.href = href;
+      window.scrollTo({
+        top: 150,
+        behavior: 'auto'
       });
-      navigation.css('transition', 'all 0.5s ease-in-out');
-    });
+      window.onload = function () {
+        window.location.reload(true);
+      }
+
+      if (window.location.hash === '#pricing') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').addClass('active');
+        $('#pricing').addClass('active').addClass('show');
+        $('#features-tab').removeClass('active');
+        $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'fast');
+
+
+      } else if (window.location.hash === '#features') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').removeClass('active');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features-tab').addClass('active');
+        $('#features').addClass('active').addClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'slow');
+      } else {
+        $('#intro-tab').addClass('active');
+        $('#pricing-tab').removeClass('active');
+        $('#features-tab').removeClass('active');
+        $('#intro').addClass('active').addClass('show');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'slow');
+      }
+    }
   </script>
+  <script src="/js/navTransitionPricing.js"></script>
 
 </body>

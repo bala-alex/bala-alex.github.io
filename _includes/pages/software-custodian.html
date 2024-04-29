@@ -10,6 +10,9 @@
         alt='ClickCease' /></a>
   </noscript>
   <!--  Clickcease.com tracking-->
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
+  </script>
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
@@ -1523,81 +1526,80 @@
   <script src="/js/monthlyEscrowPricing.js"></script>
   <script src="/js/helpers.js"></script>
   <script src="/js/offerRequest.js"></script>
-  <script src="/js/guideTranslation.js"></script>
   <script src="/js/tabIdentifiers.js"></script>
 
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
-    // Check if the page has not been reloaded
-    if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {{ site.data.pricing.prices | jsonify
-    }};
     localStorage.removeItem('prices');
-    localStorage.setItem('prices', JSON.stringify(yamlData));
+  </script>
 
-    // Set a flag in localStorage to indicate that the page has been reloaded
-    localStorage.setItem('pageReloaded', 'true');
-
-    // Reload the page
-    window.location.reload();
-    } 
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
   </script>
 
   <script>
     var totalSum = 0;
-    var checkoutText = [];
-    var checkoutAdOns = [];
-    var duration = 'Monthly';
-    const selectPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectează Plan' : window.location.pathname.includes('/de/') ? 'Plan auswählen' : window.location.pathname.includes('/es/') ? 'Seleccionar plan' : window.location.pathname.includes('/fr/') ? 'Sélectionnez le forfait' : window.location.pathname.includes('/nl/') ? 'Selecteer pakket' : 'Select plan';
-    const selectedPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectat' : window.location.pathname.includes('/de/') ? 'Ausgewählt' : window.location.pathname.includes('/es/') ? 'Seleccionado' : window.location.pathname.includes('/fr/') ? 'Sélectionné' : window.location.pathname.includes('/nl/') ? 'Geselecteerd' : 'Selected';
-    const selectAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adaugă' : window.location.pathname.includes('/de/') ? 'Hinzufügen' : window.location.pathname.includes('/es/') ? 'Agregar' : window.location.pathname.includes('/fr/') ? 'Ajouter' : window.location.pathname.includes('/nl/') ? 'Toevoegen' : 'Add';
-    const selectedAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adăugat' : window.location.pathname.includes('/de/') ? 'Hinzugefügt' : window.location.pathname.includes('/es/') ? 'Agregado' : window.location.pathname.includes('/fr/') ? 'Ajouté' : window.location.pathname.includes('/nl/') ? 'Toegevoegd' : 'Added';
-    const yearlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe an' : window.location.pathname.includes('/de/') ? 'pro Jahr' : window.location.pathname.includes('/es/') ? 'por año' : window.location.pathname.includes('/fr/') ? 'par an' : window.location.pathname.includes('/nl/') ? 'per jaar' : 'per year';
-    const monthlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe lună' : window.location.pathname.includes('/de/') ? 'pro Monat' : window.location.pathname.includes('/es/') ? 'al mes' : window.location.pathname.includes('/fr/') ? 'par mois' : window.location.pathname.includes('/nl/') ? 'per maand' : 'per month';
-    const addonsTextTranslated = window.location.pathname.includes('/ro/') ? 'Add onuri' : window.location.pathname.includes('/de/') ? 'Add-ons' : window.location.pathname.includes('/es/') ? 'Complementos' : window.location.pathname.includes('/fr/') ? 'Modules complémentaires' : window.location.pathname.includes('/nl/') ? 'Add-ons' : 'Addons';
-    const singlePlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Software Custodian (Singur)' : window.location.pathname.includes('/de/') ? 'Software-Verwalter (Einzeln)' : window.location.pathname.includes('/es/') ? 'Agente de custodia de software (Single)' : window.location.pathname.includes('/fr/') ? 'Conservation de logiciel (Unique)' : window.location.pathname.includes('/nl/') ? 'Software Custodian (Enkel)' : 'Software Custodian (Single)';
-    const multiPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Software Custodian (Multi)' : window.location.pathname.includes('/de/') ? 'Software-Verwalter (Multi)' : window.location.pathname.includes('/es/') ? 'Agente de custodia de software (Multi)' : window.location.pathname.includes('/fr/') ? 'Conservation de logiciel (Multi)' : window.location.pathname.includes('/nl/') ? 'Software Custodian (Multi)' : 'Software Custodian (Multi)';
+var checkoutText = [];
+var checkoutAdOns = [];
+var duration = 'Monthly';
+const selectPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectează Plan' : window.location.pathname.includes('/de/') ? 'Plan auswählen' : window.location.pathname.includes('/es/') ? 'Seleccionar plan' : window.location.pathname.includes('/fr/') ? 'Sélectionnez le forfait' : window.location.pathname.includes('/nl/') ? 'Selecteer pakket' : 'Select plan';
+const selectedPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Selectat' : window.location.pathname.includes('/de/') ? 'Ausgewählt' : window.location.pathname.includes('/es/') ? 'Seleccionado' : window.location.pathname.includes('/fr/') ? 'Sélectionné' : window.location.pathname.includes('/nl/') ? 'Geselecteerd' : 'Selected';
+const selectAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adaugă' : window.location.pathname.includes('/de/') ? 'Hinzufügen' : window.location.pathname.includes('/es/') ? 'Agregar' : window.location.pathname.includes('/fr/') ? 'Ajouter' : window.location.pathname.includes('/nl/') ? 'Toevoegen' : 'Add';
+const selectedAddOnTextTranslated = window.location.pathname.includes('/ro/') ? 'Adăugat' : window.location.pathname.includes('/de/') ? 'Hinzugefügt' : window.location.pathname.includes('/es/') ? 'Agregado' : window.location.pathname.includes('/fr/') ? 'Ajouté' : window.location.pathname.includes('/nl/') ? 'Toegevoegd' : 'Added';
+const yearlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe an' : window.location.pathname.includes('/de/') ? 'pro Jahr' : window.location.pathname.includes('/es/') ? 'por año' : window.location.pathname.includes('/fr/') ? 'par an' : window.location.pathname.includes('/nl/') ? 'per jaar' : 'per year';
+const monthlyPeriodTextTranslated = window.location.pathname.includes('/ro/') ? 'pe lună' : window.location.pathname.includes('/de/') ? 'pro Monat' : window.location.pathname.includes('/es/') ? 'al mes' : window.location.pathname.includes('/fr/') ? 'par mois' : window.location.pathname.includes('/nl/') ? 'per maand' : 'per month';
+const addonsTextTranslated = window.location.pathname.includes('/ro/') ? 'Add onuri' : window.location.pathname.includes('/de/') ? 'Add-ons' : window.location.pathname.includes('/es/') ? 'Complementos' : window.location.pathname.includes('/fr/') ? 'Modules complémentaires' : window.location.pathname.includes('/nl/') ? 'Add-ons' : 'Addons';
+const singlePlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Software Custodian (Singur)' : window.location.pathname.includes('/de/') ? 'Software-Verwalter (Einzeln)' : window.location.pathname.includes('/es/') ? 'Agente de custodia de software (Single)' : window.location.pathname.includes('/fr/') ? 'Conservation de logiciel (Unique)' : window.location.pathname.includes('/nl/') ? 'Software Custodian (Enkel)' : 'Software Custodian (Single)';
+const multiPlanTextTranslated = window.location.pathname.includes('/ro/') ? 'Software Custodian (Multi)' : window.location.pathname.includes('/de/') ? 'Software-Verwalter (Multi)' : window.location.pathname.includes('/es/') ? 'Agente de custodia de software (Multi)' : window.location.pathname.includes('/fr/') ? 'Conservation de logiciel (Multi)' : window.location.pathname.includes('/nl/') ? 'Software Custodian (Multi)' : 'Software Custodian (Multi)';
 
-    function selectPlan(button, planType, priceString, planID) {
-      checkoutAdOns = [];
-      checkoutText = [];
-      totalSum = 0;
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+function selectPlan(button, planType, priceString, planID) {
+    checkoutAdOns = [];
+    checkoutText = [];
+    totalSum = 0;
+    $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
-      if (duration === 'Yearly') {
+    console.log('button: ', button)
+    console.log('planType: ', planType)
+    console.log('priceString: ', priceString)
+    console.log('planID: ', planID)
+
+    if (duration === 'Yearly') {
         $('#checkout-period').text(yearlyPeriodTextTranslated);
-      } else {
+    } else {
         $('#checkout-period').text(monthlyPeriodTextTranslated);
-      }
+    }
 
-      const currency = localStorage.getItem('currency');
-      checkoutText = planID + '-' + currency + '-' + duration;
+    const currency = localStorage.getItem('currency');
+    console.log(currency);
+    checkoutText = planID + '-' + currency + '-' + duration;
+    var prices = {{ site.data.pricing.prices | jsonify }};
 
-      // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
-      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+    // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
+    const price = prices?.[`${priceString}_number`]?.[currency];
+    console.log(price)
 
-      // Extract the numeric part from the string
-      $('#adds').addClass('d-none')
-      $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
-      $('.btn-yellow-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
-      // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
+    // Extract the numeric part from the string
+    $('#adds').addClass('d-none')
+    $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
+    $('.btn-yellow-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
+    // var price = parseInt(priceString.replace(/[^\d]/g, ''), 10);
 
-      totalSum = price
-      $('#totalSum').text(totalSum.toLocaleString());
+    totalSum = price
+    $('#totalSum').text(totalSum.toLocaleString());
 
-      var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
+    var parentDiv = $(button).closest('.plan__box'); // Get the parent div with class 'plan__box'
 
-      // Remove 'is-plan-active' class from all other divs
-      $('.plan__box').not(parentDiv).removeClass('is-plan-active');
+    // Remove 'is-plan-active' class from all other divs
+    $('.plan__box').not(parentDiv).removeClass('is-plan-active');
 
-      if ($(button).hasClass('-is-selected')) { // Check if button is already selected
+    if ($(button).hasClass('-is-selected')) { // Check if button is already selected
         $(button).removeClass('-is-selected').html(`<img src="" alt="" /><span>${selectPlanTextTranslated}</span>`);
         $('#planType').text('');
         $('.single, .multiple').removeClass('-is-selected');
         $('.single-extra, .multiple-extra').addClass('d-none');
         $('#checkout-cart').attr("style", "display: none");
         parentDiv.removeClass('is-plan-active'); // Remove the class from the parent div
-      } else {
+    } else {
         // Apply selected classes and logic
         $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').text(selectPlanTextTranslated);
         $(button).addClass('-is-selected').html(`<img class="mr-1" src="/images/software-escrow/icons/checked-circle.svg" alt="Checked Circle Icon" /><span>${selectedPlanTextTranslated}</span>`);
@@ -1606,79 +1608,76 @@
         $('#planType').text(planType === 'single' ? singlePlanTextTranslated : planType === 'multiple' ? multiPlanTextTranslated : planType)
 
         if (planType === 'single') {
-          $('.single').addClass('-is-selected');
-          $('.multiple').removeClass('-is-selected');
-          $('.single-extra').removeClass('d-none');
-          $('.multiple-extra').addClass('d-none');
+            $('.single').addClass('-is-selected');
+            $('.multiple').removeClass('-is-selected');
+            $('.single-extra').removeClass('d-none');
+            $('.multiple-extra').addClass('d-none');
         } else if (planType === 'multiple') {
-          $('.multiple').addClass('-is-selected');
-          $('.single').removeClass('-is-selected');
-          $('.single-extra').addClass('d-none');
-          $('.multiple-extra').removeClass('d-none');
+            $('.multiple').addClass('-is-selected');
+            $('.single').removeClass('-is-selected');
+            $('.single-extra').addClass('d-none');
+            $('.multiple-extra').removeClass('d-none');
         }
         console.log('checkoutText: ', checkoutText)
         $('#checkout-snippet').attr('data-cb-item-0', checkoutText);
         parentDiv.addClass('is-plan-active'); // Add the class to the parent div
-      }
     }
+}
 
 
 
-    function selectDuration(value) {
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+function selectDuration(value) {
+    $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
-      $('#adds').addClass('d-none')
-      $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
+    $('#adds').addClass('d-none')
+    $('.btn-primary-small2').removeClass('-is-selected').text(selectAddOnTextTranslated)
 
-      $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html(`<img src="" alt="" /><span>${selectPlanTextTranslated}</span>`);
-      $('#planType').text('');
-      $('.single, .multiple').removeClass('-is-selected');
-      $('.single-extra, .multiple-extra').addClass('d-none');
-      $('#checkout-cart').attr("style", "display: none");
+    $('.btn-bondi-blue4.valid-plan').removeClass('-is-selected').html(`<img src="" alt="" /><span>${selectPlanTextTranslated}</span>`);
+    $('#planType').text('');
+    $('.single, .multiple').removeClass('-is-selected');
+    $('.single-extra, .multiple-extra').addClass('d-none');
+    $('#checkout-cart').attr("style", "display: none");
 
-      duration = value;
-    }
+    duration = value;
+}
 
-    function add(button, priceString, addonID) {
-      const currency = localStorage.getItem('currency');
-      let price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+function add(button, priceString, addonID) {
+    var prices = {{ site.data.pricing.prices | jsonify }};
+    const currency = localStorage.getItem('currency');
+    let price = prices?.[`${priceString}_number`]?.[currency];
 
-      if (duration === 'Yearly') {
+    if (duration === 'Yearly') {
         price *= 12;
-      }
+    }
 
-      $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
+    $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
-      if (button.classList.contains('-is-selected')) {
+    if (button.classList.contains('-is-selected')) {
         totalSum -= price;
         button.textContent = selectAddOnTextTranslated;
         button.classList.remove('-is-selected');
         checkoutAdOns = checkoutAdOns.filter(item => item !== `${addonID + '-' + currency + '-' + 'Monthly'}`);
-      } else {
+    } else {
         totalSum += price;
         button.textContent = selectedAddOnTextTranslated;
         button.classList.add('-is-selected');
         checkoutAdOns.push(`${addonID + '-' + currency + '-' + 'Monthly'}`); // addons only have monthly pricing
-      }
+    }
 
-      const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected, .btn-yellow-small2.-is-selected").length;
+    const addOns = document.querySelectorAll(".btn-primary-small2.-is-selected, .btn-yellow-small2.-is-selected").length;
 
-      if (!addOns) {
+    if (!addOns) {
         document.getElementById('adds').classList.add('d-none');
-      } else {
+    } else {
         const addsElement = document.getElementById('adds');
         addsElement.classList.remove('d-none');
         addsElement.textContent = `${addonsTextTranslated}: ${addOns}`;
-      }
-
-      document.getElementById('totalSum').textContent = totalSum.toLocaleString();
-
     }
 
+    document.getElementById('totalSum').textContent = totalSum.toLocaleString();
 
-
+}
   </script>
-
   <script>
     var cbInstance, cart;
 
@@ -1702,7 +1701,6 @@
 
     function openCheckout() {
       const selectedPlan = checkoutText;
-      console.log('selectedPlan: ', selectedPlan);
       if (!selectedPlan) return;
 
       const product = cbInstance.initializeProduct(selectedPlan, 1)
@@ -1710,28 +1708,12 @@
 
       if (checkoutAdOns) {
         checkoutAdOns.map((addon) => {
-          console.log('addon: ', addon);
           product.addAddon({ id: addon, quantity: 1 });
         })
       }
       // Opening the checkout
       cart.proceedToCheckout();
     }
-  </script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 230) {
-          navigation.removeClass('d-none');
-        } else {
-          navigation.addClass('d-none');
-        }
-      });
-      navigation.css('transition', 'all 0.5s fade');
-    });
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1783,71 +1765,55 @@
         window.history.pushState(null, null, newPath);
       });
     });
-  </script>
 
-<script>
-  function refreshPage(link) {
-    var href = link.getAttribute('href');
-    window.location.href = href;
-    window.scrollTo({
-      top: 150,
-      behavior: 'auto'
-    });
-    window.onload = function () {
-      window.location.reload(true);
-    }
-
-    if (window.location.hash === '#pricing') {
-      $('#intro-tab').removeClass('active');
-      $('#intro').removeClass('active').removeClass('show');
-      $('#pricing-tab').addClass('active');
-      $('#pricing').addClass('active').addClass('show');
-      $('#features-tab').removeClass('active');
-      $('#features').removeClass('active').removeClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-
-      
-    } else if (window.location.hash === '#features') {
-      $('#intro-tab').removeClass('active');
-      $('#intro').removeClass('active').removeClass('show');
-      $('#pricing-tab').removeClass('active');
-      $('#pricing').removeClass('active').removeClass('show');
-      $('#features-tab').addClass('active');
-      $('#features').addClass('active').addClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-    } else {
-      $('#intro-tab').addClass('active');
-      $('#pricing-tab').removeClass('active');
-      $('#features-tab').removeClass('active');
-      $('#intro').addClass('active').addClass('show');
-      $('#pricing').removeClass('active').removeClass('show');
-      $('#features').removeClass('active').removeClass('show');
-
-      $('html, body').animate({
-          scrollTop: 150
-      }, 'slow');
-    }
-  }
-</script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation2');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 120) {
-          navigation.removeClass('nav-top-negative2');
-        } else {
-          navigation.addClass('nav-top-negative2');
-        }
+    function refreshPage(link) {
+      var href = link.getAttribute('href');
+      window.location.href = href;
+      window.scrollTo({
+        top: 150,
+        behavior: 'auto'
       });
-      navigation.css('transition', 'all 0.5s ease-in-out');
-    });
+      window.onload = function () {
+        window.location.reload(true);
+      }
+
+      if (window.location.hash === '#pricing') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').addClass('active');
+        $('#pricing').addClass('active').addClass('show');
+        $('#features-tab').removeClass('active');
+        $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'fast');
+
+
+      } else if (window.location.hash === '#features') {
+        $('#intro-tab').removeClass('active');
+        $('#intro').removeClass('active').removeClass('show');
+        $('#pricing-tab').removeClass('active');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features-tab').addClass('active');
+        $('#features').addClass('active').addClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'slow');
+      } else {
+        $('#intro-tab').addClass('active');
+        $('#pricing-tab').removeClass('active');
+        $('#features-tab').removeClass('active');
+        $('#intro').addClass('active').addClass('show');
+        $('#pricing').removeClass('active').removeClass('show');
+        $('#features').removeClass('active').removeClass('show');
+
+        $('html, body').animate({
+          scrollTop: 150
+        }, 'slow');
+      }
+    }
   </script>
+  <script src="/js/navTransitionPricing.js"></script>
 </body>

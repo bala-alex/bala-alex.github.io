@@ -271,18 +271,11 @@
 </script>
 
 <script>
-  // Check if the page has not been reloaded
-  if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {{site.data.pricing.prices | jsonify }};
-      localStorage.removeItem('prices');
-      localStorage.setItem('prices', JSON.stringify(yamlData));
-      
-      // Set a flag in localStorage to indicate that the page has been reloaded
-      localStorage.setItem('pageReloaded', 'true');
+  localStorage.removeItem('prices');
+</script>
 
-      // Reload the page
-      window.location.reload();
-  } 
+<script>
+  var prices = {{ site.data.pricing.prices | jsonify }};
 </script>
 
 </body>

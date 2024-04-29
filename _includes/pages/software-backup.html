@@ -10,6 +10,9 @@
         alt='ClickCease' /></a>
   </noscript>
   <!--  Clickcease.com tracking-->
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
+  </script>
 
   <div class="bg-white software-escrow">
     <!-- Navigation -->
@@ -1765,24 +1768,14 @@
   <script src="/js/offerRequest.js"></script>
   <script src="/js/guideTranslation.js"></script>
   <script src="/js/tabIdentifiers.js"></script>
-
   <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
   <script>
-    // Check if the page has not been reloaded
-    if (!localStorage.getItem('pageReloaded')) {
-      var yamlData = {{ site.data.pricing.prices | jsonify
-    }};
     localStorage.removeItem('prices');
-    localStorage.setItem('prices', JSON.stringify(yamlData));
-
-    // Set a flag in localStorage to indicate that the page has been reloaded
-    localStorage.setItem('pageReloaded', 'true');
-
-    // Reload the page
-    window.location.reload();
-    } 
   </script>
 
+  <script>
+    var prices = {{ site.data.pricing.prices | jsonify }};
+  </script>
   <script>
     var totalSum = 0;
     var checkoutText = [];
@@ -1804,6 +1797,11 @@
       totalSum = 0;
       $('#hubspot-messages-iframe-container').attr("style", "display: none !important");
 
+      console.log('button: ', button)
+      console.log('planType: ', planType)
+      console.log('priceString: ', priceString)
+      console.log('planID: ', planID)
+
       if (duration === 'Yearly') {
         $('#checkout-period').text(yearlyPeriodTextTranslated);
       } else {
@@ -1811,10 +1809,13 @@
       }
 
       const currency = localStorage.getItem('currency');
+      console.log(currency);
       checkoutText = planID + '-' + currency + '-' + duration;
+      var prices = {{ site.data.pricing.prices | jsonify }};
 
       // const setupFeeAmount = JSON.parse(localStorage.getItem(`prices`))?.setup_fee_number?.[currency];
-      const price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      const price = prices?.[`${priceString}_number`]?.[currency];
+      console.log(price)
 
       // Extract the numeric part from the string
       $('#adds').addClass('d-none')
@@ -1870,8 +1871,9 @@
     }
 
     function add(button, priceString, addonID) {
+      var prices = {{ site.data.pricing.prices | jsonify }};
       const currency = localStorage.getItem('currency');
-      let price = JSON.parse(localStorage.getItem(`prices`))?.[`${priceString}_number`]?.[currency];
+      let price = prices?.[`${priceString}_number`]?.[currency];
 
       if (duration === 'Yearly') {
         price *= 12;
@@ -1903,7 +1905,6 @@
       document.getElementById('totalSum').textContent = totalSum.toLocaleString();
     }
   </script>
-
   <script>
     var cbInstance, cart;
 
@@ -1941,22 +1942,6 @@
       cart.proceedToCheckout();
     }
   </script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 230) {
-          navigation.removeClass('d-none');
-        } else {
-          navigation.addClass('d-none');
-        }
-      });
-      navigation.css('transition', 'all 0.5s fade');
-    });
-  </script>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // Get the path from the URL
@@ -2007,9 +1992,7 @@
         window.history.pushState(null, null, newPath);
       });
     });
-  </script>
 
-  <script>
     function refreshPage(link) {
       var href = link.getAttribute('href');
       window.location.href = href;
@@ -2030,10 +2013,10 @@
         $('#features').removeClass('active').removeClass('show');
 
         $('html, body').animate({
-            scrollTop: 150
-        }, 'slow');
+          scrollTop: 150
+        }, 'fast');
 
-        
+
       } else if (window.location.hash === '#features') {
         $('#intro-tab').removeClass('active');
         $('#intro').removeClass('active').removeClass('show');
@@ -2043,7 +2026,7 @@
         $('#features').addClass('active').addClass('show');
 
         $('html, body').animate({
-            scrollTop: 150
+          scrollTop: 150
         }, 'slow');
       } else {
         $('#intro-tab').addClass('active');
@@ -2054,7 +2037,7 @@
         $('#features').removeClass('active').removeClass('show');
 
         $('html, body').animate({
-            scrollTop: 150
+          scrollTop: 150
         }, 'slow');
       }
     }
@@ -2065,19 +2048,5 @@
       $('.pricing-currency').text(Helpers.mapCurrencyWithSymbol(currency));
     });
   </script>
-
-  <script>
-    $(function () {
-      var navigation = $('.navigation2');
-
-      $(window).scroll(function () {
-        if ($(window).scrollTop() <= 120) {
-          navigation.removeClass('nav-top-negative2');
-        } else {
-          navigation.addClass('nav-top-negative2');
-        }
-      });
-      navigation.css('transition', 'all 0.5s ease-in-out');
-    });
-  </script>
+  <script src="/js/navTransitionPricing.js"></script>
 </body>
