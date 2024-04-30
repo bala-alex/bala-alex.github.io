@@ -69,7 +69,7 @@ function refreshPage(link) {
 
         $('html, body').animate({
             scrollTop: 150
-        }, 'slow');
+        }, 'fast');
 
 
     } else if (window.location.hash === '#features') {
