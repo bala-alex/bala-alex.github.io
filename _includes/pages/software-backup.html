@@ -158,9 +158,13 @@
                 <div class="section-medium container pt-5">
                   <p class="risks__title text-center">{{ site.data[page.lang]['software_backup']['software_backups'] }}
                   </p>
-                  <p class="risks__subtitle text-center mw-100 mb-100">{{
+                  <p class="risks__subtitle text-center mw-100">{{
                     site.data[page.lang]['software_backup']['effortless_automated'] }}:</p>
-                  <div class="row mt-5 mb-sm-50">
+                  <a class="button btn-cerulean software-backup-features-href mx-auto my-4"
+                  href="software-backup.html#features" onclick="refreshPage(this)">
+                  {{ site.data[page.lang]['pricing_features']['explore_all_features'] }}
+                </a>
+                  <div class="row mt-5 mb-sm-50 pt-5">
                     <div class="col-md-5 col-sm-12">
                       <img class="information__image content-center"
                         src="/images/disaster-recovery/automated-backup-solutions.webp"
@@ -299,10 +303,10 @@
                         loading="lazy" />
                     </div>
                   </div>
-                  <div class="d-flex flex-wrap align-items-center mt-5">
-                    <a class="button btn-cerulean software-backup-features-href mr-4 my-4"
-                      href="software-backup.html#features" onclick="refreshPage(this)">
-                      {{ site.data[page.lang]['software_backup']['explore_features'] }}
+                  <div class="d-flex flex-column mt-5">
+                    <a class="button btn-cerulean software-backup-pricing-href mr-4 my-2"
+                      href="software-backup.html#pricing" onclick="refreshPage(this)">
+                      {{ site.data[page.lang]['software_backup']['see_pricing_details'] }}
                     </a>
                     <p class="deposit-assets__text font-18 fw-400 mw-100 text-slate-gray mb-0 my-3">{{
                       site.data[page.lang]['software_backup']['we_are_around_to'] }}</p>
@@ -417,20 +421,20 @@
                     <p class="people-choose__main-subtitle2 mx-auto mt-4 mw-645">{{
                       site.data[page.lang]['software_backup']['secure_your_source'] }}</p>
 
-                    <div class="d-flex flex-column align-items-center mt-4">
-                      <a class="button btn-cerulean pricing-href mb-4" href="pricing.html">
-                        {{ site.data[page.lang]['software_backup']['see_pricing_details'] }}
-                      </a>
-                      <div class="d-flex flex-column align-items-center">
-                        <p class="header__text">{{ site.data[page.lang]['software_backup']['or_explore'] }}</p>
-                        <a class="header__link software-backup-features-href" href="software-backup.html#features"
-                          onclick="refreshPage(this)">{{
-                          site.data[page.lang]['software_backup']['more_features'] }} <i class="fa fa-angle-right pt-1"
-                            aria-hidden="true"></i></a>
+                    <div class="content-center">
+                      <div class="d-flex flex-wrap resources mt-4">
+                        <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
+                          {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+                        </a>
+                        <div>
+                          <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
+                          <a class="header__link software-backup-pricing-href" href="software-backup.html#pricing" onclick="refreshPage(this)">{{
+                            site.data[page.lang]['pricing_features']['pricing_details'] }} <i class="fa fa-angle-right"
+                              aria-hidden="true"></i></a>
+                        </div>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
