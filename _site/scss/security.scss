@@ -101,12 +101,11 @@
   .infrastructure {
 
     &__title {
-      font-size: 42px !important;
-      line-height: 53px;
+      font-size: 50px !important;
+      line-height: 60px;
       font-family: 'Mulish', sans-serif;
       color: $white;
-      font-weight: 200;
-      letter-spacing: -0.42px;
+      font-weight: 300;
     }
 
     &__title2 {
@@ -270,4 +269,54 @@
       text-align: end;
     }
   }
+
+  .pricing .pricing-tabs .nav-link {
+    width: 410px !important;
+    border-bottom: none;
+    font-size: 18px;
+    text-align: start;
+
+    @include screen-sm {
+      width: 300px !important;
+    }
+  }
+
+  .pricing-tabs .nav-pills {
+    padding-right: 30px;
+    border-right: 1px solid #D9E0E4;
+
+    @include screen-sm {
+      padding-right: 0px;
+      border-right: none;
+    }
+  }
+
+  .pricing-tabs .nav-link.active {
+    text-align: start;
+    border-bottom: none;
+    border-left: 5px solid $bondi-blue;
+    background-color: #EBF9FF !important;
+  }
+
+  .iso {
+    &__text {
+      font-size: 20px !important;
+      line-height: 32px;
+      font-family: 'Mulish', sans-serif;
+      color: $dark-cyan;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__subtext {
+      font-size: 16px !important;
+      line-height: 24px;
+      font-family: 'Mulish', sans-serif;
+      color: #607A8A;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+
 }

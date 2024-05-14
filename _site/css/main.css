@@ -9667,6 +9667,11 @@ html {
   background: linear-gradient(180deg, #009CB7 0%, #00859C 129.3%);
 }
 
+.bg-gradient-bondi-blue2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#029FBA), to(#0196B1));
+  background: linear-gradient(180deg, #029FBA 0%, #0196B1 100%);
+}
+
 .bg-gradient-cool-white {
   background: -webkit-gradient(linear, left top, right top, color-stop(100%, #FFFFFF), to(#F1FDFF));
   background: linear-gradient(90deg, #FFFFFF 100%, #F1FDFF 100%);
@@ -10272,6 +10277,14 @@ html {
   max-height: 70px !important;
 }
 
+.mh-100 {
+  max-height: 100px !important;
+}
+
+.mh-130 {
+  max-height: 130px !important;
+}
+
 .mh-35 {
   max-height: 35px !important;
 }
@@ -10326,6 +10339,10 @@ html {
 
 .min-width-230 {
   min-width: 230px !important;
+}
+
+.min-width-90 {
+  min-width: 90% !important;
 }
 
 .min-width-300 {
@@ -10487,6 +10504,13 @@ html {
 
 @media (max-width: 992px) {
   .tabs-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs-wrap2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -17176,12 +17200,11 @@ input[name=consent] {
   height: 32px;
 }
 .security .infrastructure__title {
-  font-size: 42px !important;
-  line-height: 53px;
+  font-size: 50px !important;
+  line-height: 60px;
   font-family: "Mulish", sans-serif;
   color: #ffffff;
-  font-weight: 200;
-  letter-spacing: -0.42px;
+  font-weight: 300;
 }
 .security .infrastructure__title2 {
   color: #009CB7;
@@ -17323,6 +17346,49 @@ input[name=consent] {
   font-family: "Mulish", sans-serif;
   max-width: 544px;
   text-align: end;
+}
+.security .pricing .pricing-tabs .nav-link {
+  width: 410px !important;
+  border-bottom: none;
+  font-size: 18px;
+  text-align: start;
+}
+@media (max-width: 767px) {
+  .security .pricing .pricing-tabs .nav-link {
+    width: 300px !important;
+  }
+}
+.security .pricing-tabs .nav-pills {
+  padding-right: 30px;
+  border-right: 1px solid #D9E0E4;
+}
+@media (max-width: 767px) {
+  .security .pricing-tabs .nav-pills {
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+.security .pricing-tabs .nav-link.active {
+  text-align: start;
+  border-bottom: none;
+  border-left: 5px solid #009CB7;
+  background-color: #EBF9FF !important;
+}
+.security .iso__text {
+  font-size: 20px !important;
+  line-height: 32px;
+  font-family: "Mulish", sans-serif;
+  color: #1A5261;
+  font-weight: 700;
+  text-align: center;
+}
+.security .iso__subtext {
+  font-size: 16px !important;
+  line-height: 24px;
+  font-family: "Mulish", sans-serif;
+  color: #607A8A;
+  font-weight: 400;
+  text-align: center;
 }
 
 .contact .header__title {
@@ -22457,6 +22523,32 @@ input[name=consent] {
   white-space: nowrap;
   padding: 0 15px;
 }
+.resources .intro-guide__badge2 {
+  min-width: 100px;
+  height: 35px;
+  background: #F3F8FF;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 12px;
+  color: #245CB0;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  white-space: nowrap;
+  padding: 0 15px;
+}
 .resources .people-choose__bg {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(18.04%, #FFFFFF), color-stop(120.07%, #EBFAFC));
   background: linear-gradient(180deg, #FFFFFF 18.04%, #EBFAFC 120.07%);
@@ -22627,6 +22719,14 @@ input[name=consent] {
 .resources .software-escrow__bg-gray2 {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-20.63%, rgba(238, 243, 249, 0.5)), color-stop(71.07%, rgba(238, 243, 249, 0)));
   background: linear-gradient(0deg, rgba(238, 243, 249, 0.5) -20.63%, rgba(238, 243, 249, 0) 71.07%);
+}
+.resources .software-escrow__bg-image-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 520px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resources .software-escrow__bg-gray3 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(15.95%, rgba(255, 255, 255, 0)), to(#E6F7FB));
@@ -23856,6 +23956,14 @@ input[name=consent] {
   margin-right: 35px;
   margin-bottom: 0px;
 }
+.resources .section__modal-title3 {
+  color: #1A5261;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+  font-family: "Mulish", sans-serif;
+  margin-left: 15px;
+}
 .resources .section__modal-subtext {
   color: #009CB7;
   font-size: 14px;
@@ -23863,6 +23971,14 @@ input[name=consent] {
   font-family: "Mulish", sans-serif;
   margin-left: 15px;
   margin-bottom: 20px !important;
+}
+.resources .section__modal-subtext2 {
+  color: #1A5261;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  margin-left: 15px;
 }
 .resources .modal-dialog {
   min-width: 900px;

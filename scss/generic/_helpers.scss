@@ -618,6 +618,10 @@ html {
   background: linear-gradient(180deg, #009CB7 0%, #00859C 129.3%),
 }
 
+.bg-gradient-bondi-blue2 {
+  background: linear-gradient(180deg, #029FBA 0%, #0196B1 100%);
+}
+
 .bg-gradient-cool-white {
   background: linear-gradient(90deg, #FFFFFF 100%, #F1FDFF 100%);
 }
@@ -1186,6 +1190,14 @@ html {
   max-height: 70px !important;
 }
 
+.mh-100 {
+  max-height: 100px !important;
+}
+
+.mh-130 {
+  max-height: 130px !important;
+}
+
 .mh-35 {
   max-height: 35px !important;
 }
@@ -1240,6 +1252,10 @@ html {
 
 .min-width-230 {
   min-width: 230px !important;
+}
+
+.min-width-90 {
+  min-width: 90% !important;
 }
 
 .min-width-300 {
@@ -1396,6 +1412,12 @@ html {
 
 .tabs-wrap {
   @include screen-md {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs-wrap2 {
+  @include screen-sm {
     flex-wrap: wrap;
   }
 }

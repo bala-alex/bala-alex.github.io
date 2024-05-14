@@ -1084,6 +1084,27 @@
       white-space: nowrap;
       padding: 0 15px;
     }
+
+    &__badge2 {
+      min-width: 100px;
+      height: 35px;
+      background: #F3F8FF;
+      border-radius: 10px;
+      text-align: center;
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 12px;
+      color: #245CB0;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      white-space: nowrap;
+      padding: 0 15px;
+    }
   }
 
   .people-choose {
@@ -1253,6 +1274,14 @@
 
     &__bg-gray2 {
       background: linear-gradient(0deg, rgba(238, 243, 249, 0.5) -20.63%, rgba(238, 243, 249, 0) 71.07%);
+    }
+
+    &__bg-image-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 520px;
+      object-fit: contain;
     }
 
     &__bg-gray3 {
@@ -2482,6 +2511,15 @@
       margin-bottom: 0px;
     }
 
+    &__modal-title3 {
+      color: $dark-cyan;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 300;
+      font-family: 'Mulish', sans-serif;
+      margin-left: 15px;
+    }
+
     &__modal-subtext {
       color: $bondi-blue;
       font-size: 14px;
@@ -2489,6 +2527,15 @@
       font-family: 'Mulish', sans-serif;
       margin-left: 15px;
       margin-bottom: 20px !important;
+    }
+
+    &__modal-subtext2 {
+      color: $dark-cyan;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: 'Mulish', sans-serif;
+      margin-left: 15px;
     }
   }
 
