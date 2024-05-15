@@ -81,7 +81,7 @@
             <a class="dropdown-item py-2 about-us-href fw-700 font-12" href="about-us.html">Ons Verhaal</a>
             <a class="dropdown-item py-2 contact-href fw-700 font-12" href="contact.html">Contact</a>
             <a class="dropdown-item py-2 fw-700 font-12" href="https://careers.codekeeper.co/">Carrières</a>
-            <a class="dropdown-item py-2 security-href fw-700 font-12" href="security.html">Beveiliging</a>
+            <a class="dropdown-item py-2 security-portal-href fw-700 font-12" href="security-portal.html">Beveiliging</a>
           </div>
         </div>
         <a class="nav-link nav-margin fw-700 font-12" href="https://app.codekeeper.co/">
@@ -1067,7 +1067,7 @@
             <a class="footer__subtext mt-2 contact-href" href="contact.html">Contact</a>
             <a class="footer__subtext mt-2 book-a-demo-href" href="book-a-demo.html">Boek een demo</a>
             <a class="footer__subtext mt-2 how-it-works-href" href="how-it-works.html">Zo Werkt Het</a>
-            <a class="footer__subtext mt-2 security-href" href="security.html">Beveiliging</a>
+            <a class="footer__subtext mt-2 security-portal-href" href="security-portal.html">Beveiliging</a>
             <p class="footer__text mt-4 mb-0 fw-bold text-transform-none">Add-ons</p>
             <a class="footer__subtext mt-2 verification-href" href="verification.html">Verificatie</a>
           </div>
@@ -1328,6 +1328,7 @@
       $('.sample-agreement-href').attr('href', 'acuerdo-muestra.html')
       $('.secure-guide-href').attr('href', 'guía-seguro.html')
       $('.security-href').attr('href', 'seguridad.html')
+      $('.security-portal-href').attr('href', 'security-portal.html')
       $('.sign-up-href').attr('href', 'registro.html')
       $('.source-code-escrow-href').attr('href', 'depósito-código-fuente.html')
       $('.start-guide-href').attr('href', 'guía-inicio.html')
@@ -1400,6 +1401,7 @@
       $('.sample-agreement-href').attr('href', 'mustervertrag.html')
       $('.secure-guide-href').attr('href', 'sicherer-leitfaden.html')
       $('.security-href').attr('href', 'sicherheit.html')
+      $('.security-portal-href').attr('href', 'security-portal.html')
       $('.sign-up-href').attr('href', 'anmelden.html')
       $('.source-code-escrow-href').attr('href', 'quellcode-escrow.html')
       $('.start-guide-href').attr('href', 'erste-schritte-leitfaden.html')
@@ -1472,6 +1474,7 @@
       $('.sample-agreement-href').attr('href', 'voorbeeld-overeenkomst.html')
       $('.secure-guide-href').attr('href', 'beveilig-gids.html')
       $('.security-href').attr('href', 'beveiliging.html')
+      $('.security-portal-href').attr('href', 'security-portal.html')
       $('.sign-up-href').attr('href', 'aanmelden.html')
       $('.source-code-escrow-href').attr('href', 'source-code-escrow.html')
       $('.start-guide-href').attr('href', 'start-gids.html')
@@ -1543,6 +1546,7 @@
       $('.sample-agreement-href').attr('href', 'exemplu-de-acord.html')
       $('.secure-guide-href').attr('href', 'ghid-securizat.html')
       $('.security-href').attr('href', 'securitate.html')
+      $('.security-portal-href').attr('href', 'security-portal.html')
       $('.sign-up-href').attr('href', 'înscrie-te.html')
       $('.source-code-escrow-href').attr('href', 'escrow-cod-sursă.html')
       $('.start-guide-href').attr('href', 'ghid-de-pornire.html')
@@ -1614,6 +1618,7 @@
       $('.sample-agreement-href').attr('href', 'modele-de-contrat.html')
       $('.secure-guide-href').attr('href', 'guide-de-securite.html')
       $('.security-href').attr('href', 'securite.html')
+      $('.security-portal-href').attr('href', 'security-portal.html')
       $('.sign-up-href').attr('href', 'inscription.html')
       $('.source-code-escrow-href').attr('href', 'entiercement-de-code-source.html')
       $('.start-guide-href').attr('href', 'guide-de-demarrage.html')
@@ -2006,6 +2011,30 @@
     document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
   }
   else if (pathname.includes('/ro/securitate.html')) {
+    document.title = "Securitate și certificări | Codekeeper"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper operează într-un cadru de securitate cu mai multe straturi, conceput pentru a vă proteja codul sursă. ISO27001, SOC2 Centre de date pentru stocare sigură.";
+  }
+  else if (pathname.includes('/security-portal.html')) {
+    document.title = "Security and Certifications | Codekeeper"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper operates within a multi-layar security framework, designed to protect your source code. ISO27001, SOC2 Datacenters for secure storage. ";
+  }
+  else if (pathname.includes('/es/security-portal.html')) {
+    document.title = "Seguridad y certificaciones | Codekeeper"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper opera dentro de un marco de seguridad multicapa, diseñado para proteger su código fuente. ISO27001, centros de datos SOC2 para un almacenamiento seguro.";
+  }
+  else if (pathname.includes('/de/security-portal.html')) {
+    document.title = "Sicherheit und Zertifizierungen | Codekeeper"
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper arbeitet mit einem mehrschichtigen Sicherheits-Framework, der speziell für den Schutz Ihres Quellcodes entwickelt wurde. ISO27001, SOC2 Rechenzentren für eine sichere Speicherung.";
+  }
+  else if (pathname.includes('/nl/security-portal.html')) {
+    document.title = "Beveiliging en certificaten | Codekeeper "
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper is actief binnen een framework met meerdere beveiligingslagen, ontworpen om uw broncode te beschermen. ISO27001, SOC2 Datacenters voor veilige opslag. ";
+  }
+  else if (pathname.includes('/fr/security-portal.html')) {
+    document.title = "Sécurité et certifications | Codekeeper "
+    document.getElementsByTagName('meta')["description"].content = "Codekeeper est protégé par plusieurs niveaux de sécurité, conçus pour protéger votre code source. Le stockage est sécurisé par des centres de données ISO27001 et SOC2. ";
+  }
+  else if (pathname.includes('/ro/security-portal.html')) {
     document.title = "Securitate și certificări | Codekeeper"
     document.getElementsByTagName('meta')["description"].content = "Codekeeper operează într-un cadru de securitate cu mai multe straturi, conceput pentru a vă proteja codul sursă. ISO27001, SOC2 Centre de date pentru stocare sigură.";
   }
