@@ -1,5 +1,5 @@
 ---
-integration_name: NCC
-permalink: "/comparison/ncc.html"
+integration_name: Escode
+permalink: "/comparison/escode.html"
 layout: provider
 ---
