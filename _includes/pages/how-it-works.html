@@ -16,283 +16,317 @@
     <!-- Header -->
     <div class="solutions">
       <div class="header__content">
-        <div class="header__bg-new position-relative">
-          <img class="header__bg-left-shape" src="/images/how-it-works/header-shape-small.webp" alt="Small Background Shape"/>
-          <img class="header__bg-right-shape" src="/images/how-it-works/header-shape-large.webp" alt="Large Background Shape"/>
+        <div class="header__bg-new position-relative bg-soft-gray">
+          <!-- <img class="header__bg-left-shape" src="/images/how-it-works/header-shape-small.webp" alt="Small Background Shape"/> -->
+          <img class="header__bg-right-shape mh-600" src="/images/how-it-works/header-shape-large.webp" alt="Large Background Shape"/>
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <h1 class="header__title text-align-start mt-4 text-first-capitalize">{{ site.data[page.lang]['how_it_works']['effortless_intuitive'] }}</h1>
-                <p class="header__subtitle text-align-start mt-4">{{ site.data[page.lang]['how_it_works']['codekeeper_is_made'] }}</p>
-                <div class="d-flex flex-wrap resources mt-4">
-                  <a class="button btn-cerulean3 book-a-demo-href mr-4 mb-4" href="book-a-demo.html">
-                    {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-                  </a>
-                  <div>
-                    <p class="header__text">{{ site.data[page.lang]['index']['or_explore'] }}</p>
-                    <a class="header__link pricing-href" href="pricing.html">{{ site.data[page.lang]['index']['pricing_options'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                  </div>
-                </div>
+              <div class="col-md-7 col-sm-12">
+                <h1 class="header__title text-align-start mt-5 pt-4 text-first-capitalize mw-700">{{ site.data[page.lang]['how_it_works']['secure_restore_and'] }}</h1>
+                <p class="header__subtitle text-align-start mt-4 mw-600">{{ site.data[page.lang]['how_it_works']['unlock_business_continuity'] }}</p>
               </div>
-              <div class="col-md-6 col-sm-12 content-center">
+              <div class="col-md-5 col-sm-12 content-center">
                 <img class="image-style mw-530 mt-4" src="/images/how-it-works/header-image.webp" alt="Effortless and Intuitive Process Image"/>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- First Section -->
-      <div class="escrow-works__bg">
-        <div class="escrow-works__bg-shape"></div>
+
+      <div class="resources bg-alice-blue section-large">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-              <p class="escrow-works__title">{{ site.data[page.lang]['how_it_works']['how_does'] }}</p>
-              <p class="escrow-works__subtitle">{{ site.data[page.lang]['how_it_works']['even_if'] }}</p>
+              <p class="people-choose__main-title font-50 line-height-60 pt-0 text-align-start mw-500 overflow-wrap-break-mobile">{{ site.data[page.lang]['how_it_works']['the_critical_role'] }}</p>
             </div>
             <div class="col-md-6 col-sm-12">
-              <img class="escrow-works__image" src="/images/how-it-works/how-it-works.webp" alt="Software Escrow Process Image" loading="lazy"/>
+              <p class="people-choose__main-subtitle mw-100 font-18 text-align-start line-height-28 fw-400 text-dark-cyan">{{ site.data[page.lang]['how_it_works']['in_todays_digital'] }}</p>
+              <a class="button btn-cerulean3 mt-4" data-toggle="modal" data-target="#exampleModal22">
+                {{ site.data[page.lang]['index']['start_planning'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="container">
+            <div class="content-center mt-5">
+              <img class="image-style mw-700" src="/images/how-it-works/create-new-plan.webp" alt="Illustration create new plan" loading="lazy"/>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
+                <img class="mt-3" src="/images/how-it-works/icons/one.svg" alt="One Icon" loading="lazy"/>
+                <p class="people-choose__main-subtitle font-20 text-dark-cyan line-height-28 fw-700 mb-2 mt-3">{{ site.data[page.lang]['how_it_works']['list'] }}</p>
+                <p class="people-choose__main-subtitle font-16 text-dark-cyan line-height-24 fw-400">{{ site.data[page.lang]['how_it_works']['begin_by_identifying'] }}</p>
+              </div>
+              <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
+                <img class="mt-3" src="/images/how-it-works/icons/two.svg" alt="Two Icon" loading="lazy"/>
+                <p class="people-choose__main-subtitle font-20 text-dark-cyan line-height-28 fw-700 mb-2 mt-3">{{ site.data[page.lang]['how_it_works']['assess'] }}</p>
+                <p class="people-choose__main-subtitle font-16 text-dark-cyan line-height-24 fw-400">{{ site.data[page.lang]['how_it_works']['evaluate_potential'] }}</p>
+              </div>
+              <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
+                <img class="mt-3" src="/images/how-it-works/icons/three.svg" alt="Three Icon" loading="lazy"/>
+                <p class="people-choose__main-subtitle font-20 text-dark-cyan line-height-28 fw-700 mb-2 mt-3">{{ site.data[page.lang]['how_it_works']['plan'] }}</p>
+                <p class="people-choose__main-subtitle font-16 text-dark-cyan line-height-24 fw-400">{{ site.data[page.lang]['how_it_works']['develop_a_crisis'] }}</p>
+              </div>
+              <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center">
+                <img class="mt-3" src="/images/how-it-works/icons/four.svg" alt="Four Icon" loading="lazy"/>
+                <p class="people-choose__main-subtitle font-20 text-dark-cyan line-height-28 fw-700 mb-2 mt-3">{{ site.data[page.lang]['how_it_works']['secure'] }}</p>
+                <p class="people-choose__main-subtitle font-16 text-dark-cyan line-height-24 fw-400">{{ site.data[page.lang]['how_it_works']['complement_your'] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content section__modal mx-auto">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="m-0">
+                  <div class="section__modal-form p-0 ">
+                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['index']['start_planning'] }}</p>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                        <img class="section__modal-image mb-5" src="/images/landing/disaster-recovery-dashboard-toolkit.webp" alt="Illustration: Disaster Recovery Planning Toolkit" loading="lazy"/>
+                      </div>
+                      <div class="col-md-6 col-sm-12 pt-3">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                          hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5365877",
+                            formId: "2b243a37-2e7a-40e8-a13d-1c7a27e1551b"
+                          });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Second Section -->
-    <div class="container-fluid mb-200 resources">
-      <div class="beneficiary__container mx-auto mt-negative-50 position-relative how-bg-gradient">
-        <div class="container py-5">
-          <p class="how-works__main-title mx-auto pb-5">{{ site.data[page.lang]['how_it_works']['how_to_activate'] }}</p>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_1'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1 text-transform-none">{{ site.data[page.lang]['how_it_works']['sign_up_to'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['the_first_step'] }} <a class="text-bondi-blue pricing-href text-underline fw-bold" href="pricing.html">{{ site.data[page.lang]['how_it_works']['pricing_page'] }}</a> {{ site.data[page.lang]['how_it_works']['you_will_be'] }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 pr-5">
-              <img class="works__image2 mt-5 ml-negative-80" src="/images/how-it-works/step-1.webp" alt="Signing Up on Codekeeper" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config2">
-                <img class="works__image2 ml-negative-80" src="/images/how-it-works/step-2.webp" alt="Exploring Dashboard" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config3 mobile-centered">
-                <div class="works__number-bg-step2">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_2'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">{{ site.data[page.lang]['how_it_works']['explore_dashboard'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['easily_manage_all'] }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config4 mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_3'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">{{ site.data[page.lang]['how_it_works']['manage_other_party'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['in_the_escrow'] }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="works__image2 ml-negative-80 mt-80" src="/images/how-it-works/step-3.webp" alt="Managing Party Information" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config7">
-                <img class="works__image2 ml-negative-80" src="/images/how-it-works/step-4.webp" alt="Defining Release Triggers" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config3 mobile-centered">
-                <div class="works__number-bg-step2">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_4'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">{{ site.data[page.lang]['how_it_works']['define_release'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['specify_for_each'] }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config6 mobile-centered">
-                <div class="works__number-bg-step">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_5'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">{{ site.data[page.lang]['how_it_works']['review_and_sign'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['once_the_basic'] }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img class="works__image2 mt-80" src="/images/how-it-works/step-5.webp" alt="Reviewing and Signing the Agreement" loading="lazy"/>
-            </div>
-          </div>
-          <div class="row column-reverse-mobile">
-            <div class="col-md-6 col-sm-12">
-              <div class="works__config8">
-                <img class="works__image2 ml-negative-80" src="/images/how-it-works/step-6.webp" alt="Depositing Your Assets" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="works__content mobile-centered border-none">
-                <div class="works__number-bg-step3">
-                  <div class="works__step">{{ site.data[page.lang]['how_it_works']['step_6'] }}</div>
-                </div>
-                <div>
-                  <p class="how-works__text mt-1">{{ site.data[page.lang]['how_it_works']['deposit_your_assets'] }}</p>
-                  <p class="how-works__subtext2">{{ site.data[page.lang]['how_it_works']['you_can_set'] }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column align-items-center">
-            <img class="how-works__active-icon" src="/images/how-it-works/icons/active-escrow.svg" alt="Active Escrow Icon" loading="lazy"/>
-            <p class="how-works__text mt-3 mr-3">{{ site.data[page.lang]['how_it_works']['active_escrow'] }}</p>
-            <p class="how-works__subtext2 text-center mw-570">{{ site.data[page.lang]['how_it_works']['your_new_source'] }}</p>
-            <p class="how-works__subtext2 text-center mt-2 text-bondi-blue">{{ site.data[page.lang]['how_it_works']['for_more_details'] }}</p>
-            <a class="button btn-cerulean3 book-a-demo-href mx-auto mt-2" href="book-a-demo.html">
-              {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="section-large pt-3 resources">
-      <div class="container">
-        <p class="deposit-assets__main-title pb-5">{{ site.data[page.lang]['how_it_works']['how_to_deposit'] }}</p>
-        <p class="deposit-assets__title mt-5">{{ site.data[page.lang]['how_it_works']['fully_automated'] }}</p>
-        <p class="deposit-assets__subtitle">{{ site.data[page.lang]['how_it_works']['recent_version'] }}</p>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="resources">
-              <div class="applications__logos mt-4 justify-content-start">
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-2" src="/images/homepage/logos/bitbucket-large.svg" alt="Bitbucket Logo" loading="lazy"/>
-                  <p class="applications__logo-text">Bitbucket</p>
-                </div>
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-2" src="/images/homepage/logos/github-large.svg" alt="Github Logo" loading="lazy"/>
-                  <p class="applications__logo-text">GitHub</p>
-                </div>
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-1" src="/images/homepage/logos/gitlab-large.svg" alt="Gitlab Logo" loading="lazy"/>
-                  <p class="applications__logo-text">GitLab</p>
-                </div>
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-1" src="/images/homepage/logos/google-cloud-large.svg" alt="Google Cloud Logo" loading="lazy"/>
-                  <p class="applications__logo-text">Google<br> Cloud</p>
-                </div>
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-1" src="/images/homepage/logos/azure-large.svg" alt="Azure Logo" loading="lazy"/>
-                  <p class="applications__logo-text">Microsoft Azure</p>
-                </div>
-                <div class="applications__logo mx-0">
-                  <img class="applications__logo-image3 p-2" src="/images/homepage/logos/aws-large.svg" alt="Amazon Web Services Logo" loading="lazy"/>
-                  <p class="applications__logo-text">Amazon<br> Web<br> Services</p>
-                </div>
-              </div>
+      <div class="resources section-large bg-white">
+        <p class="people-choose__main-title overflow-wrap-break-mobile mb-2 pt-0">{{ site.data[page.lang]['how_it_works']['how_disaster_recovery'] }}</p>
+        <p class="people-choose__main-subtitle mw-100 font-18 text-dark-cyan line-height-28 mw-800 mx-auto mt-2">{{ site.data[page.lang]['how_it_works']['after_laying'] }}</p>
+        <a class="button btn-cerulean2 mx-auto solutions-href mt-4" href="solutions.html">
+          {{ site.data[page.lang]['how_it_works']['learn_more_about'] }}
+        </a>
+        <div class="container mt-5">
+          <div class="row pt-100 column-reverse-mobile">
+            <div class="col-md-7 col-sm-12">
+              <img class="image-style mw-600" src="/images/how-it-works/software-backup-recovery.webp" alt="Backup for Internal Recovery Illustration" loading="lazy"/>
             </div>
-            <div class="d-flex align-items-start mt-3 position-relative">
-              <img class="mr-3" src="/images/how-it-works/icons/one.svg" alt="One Icon" loading="lazy"/>
-              <p class="deposit-assets__text">{{ site.data[page.lang]['how_it_works']['first_to_activate'] }}</p>
-              <div class="deposit-assets__dotted-line"></div>
-            </div>
-            <div class="d-flex align-items-start mt-3 position-relative">
-              <img class="mr-3" src="/images/how-it-works/icons/two.svg" alt="Two Icon" loading="lazy"/>
-              <p class="deposit-assets__text">{{ site.data[page.lang]['how_it_works']['once_on_the_page'] }}</p>
-              <div class="deposit-assets__dotted-line"></div>
-            </div>
-            <div class="d-flex align-items-start mt-3 position-relative">
-              <img class="mr-3" src="/images/how-it-works/icons/three.svg" alt="Three Icon" loading="lazy"/>
-              <p class="deposit-assets__text">{{ site.data[page.lang]['how_it_works']['once_you_click'] }}</p>
-              <div class="deposit-assets__dotted-line"></div>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 z-index-1" src="/images/how-it-works/icons/four.svg" alt="Four Icon" loading="lazy"/>
-              <p class="deposit-assets__text">{{ site.data[page.lang]['how_it_works']['after_the_integration'] }}</p>
+            <div class="col-md-5 col-sm-12 software-escrow">
+              <img class="easy__icon ml-negative-10" src="/images/disaster-recovery/icons/software-backups-shield-icon.svg" alt="Software Backup Shield Icon" loading="lazy" />
+              <p class="people-choose__main-title pt-0 text-align-start mw-500 font-35 line-height-40 fw-light overflow-wrap-break-mobile">{{ site.data[page.lang]['how_it_works']['backup_for_internal'] }}</p>
+              <p class="people-choose__main-subtitle mw-100 font-18 text-align-start line-height-28 fw-400 text-dark-cyan">{{ site.data[page.lang]['how_it_works']['building_upon_a'] }}</p>
+              <a class="easy__link text-secondary-link software-backup-href font-18" href="software-backup.html">{{site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-md-5 col-sm-12 software-escrow">
-            <img class="w-100 mw-420 mt-5" src="/images/how-it-works/how-to-deposit.webp" alt="Automated Repository Connection Illustration" loading="lazy"/>
-            <div class="d-flex align-items-start">
-              <img class="mr-3 mw-35 mt-2" src="/images/source-code-escrow/icons/info.svg" alt="Info Icon" loading="lazy"/>
-              <!-- <i class="fa fa-info-circle mr-3" aria-hidden="true"></i> -->
-              <p class="setting-up__text mb-0">{{ site.data[page.lang]['source_code_escrow']['for_non'] }} <a class="text-bondi-blue contact-href" href="contact.html">{{ site.data[page.lang]['source_code_escrow']['contact_us'] }}.</a></p>
+          <div class="row pt-100">
+            <div class="col-md-5 col-sm-12 software-escrow">
+              <img class="easy__icon ml-negative-10" src="/images/disaster-recovery/icons/software-escrow-shield-icon.svg" alt="Software Escrow Shield Icon" loading="lazy" />
+              <p class="people-choose__main-title pt-0 text-align-start mw-500 font-35 line-height-40 fw-light overflow-wrap-break-mobile">{{ site.data[page.lang]['how_it_works']['software_escrow_for'] }}</p>
+              <p class="people-choose__main-subtitle mw-100 font-18 text-align-start line-height-28 fw-400 text-dark-cyan">{{ site.data[page.lang]['how_it_works']['as_you_build'] }}</p>
+              <a class="easy__link text-secondary-link software-escrow-href font-18" href="software-escrow.html">{{site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <img class="image-style mw-600" src="/images/how-it-works/software-escrow-recovery.webp" alt="Software Escrow for Client Recovery Illustration" loading="lazy"/>
+            </div>
+          </div>
+          <div class="row pt-100 column-reverse-mobile">
+            <div class="col-md-7 col-sm-12">
+              <img class="image-style mw-600" src="/images/how-it-works/saas-escrow-recovery.webp" alt="SaaS Escrow for Continuity Illustration" loading="lazy"/>
+            </div>
+            <div class="col-md-5 col-sm-12 software-escrow">
+              <img class="easy__icon ml-negative-10" src="/images/landing/icons/saas-escrow-shield.svg" alt="SaaS Escrow Shield Icon" loading="lazy" />
+              <p class="people-choose__main-title pt-0 text-align-start mw-500 font-35 line-height-40 fw-light overflow-wrap-break-mobile">{{ site.data[page.lang]['how_it_works']['saas_escrow_for'] }}</p>
+              <p class="people-choose__main-subtitle mw-100 font-18 text-align-start line-height-28 fw-400 text-dark-cyan">{{ site.data[page.lang]['how_it_works']['for_businesses_that'] }}</p>
+              <a class="easy__link text-secondary-link saas-escrow-href font-18" href="saas-escrow.html">{{site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="row pt-100">
+            <div class="col-md-5 col-sm-12 software-escrow">
+              <img class="easy__icon ml-negative-10" src="/images/landing/icons/data-custodian-shield.svg" alt="Software Custodian Shield Icon" loading="lazy" />
+              <p class="people-choose__main-title pt-0 text-align-start mw-500 font-35 line-height-40 fw-light overflow-wrap-break-mobile">{{ site.data[page.lang]['how_it_works']['software_custodian'] }}</p>
+              <p class="people-choose__main-subtitle mw-100 font-18 text-align-start line-height-28 fw-400 text-dark-cyan">{{ site.data[page.lang]['how_it_works']['the_most_comprehensive'] }}</p>
+              <a class="easy__link text-secondary-link software-custodian-href font-18" href="software-custodian.html">{{site.data[page.lang]['software_escrow']['learn_more'] }} <i class="fa fa-xs fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <img class="image-style mw-600" src="/images/how-it-works/software-custodian-recovery.webp" alt="Software Custodian for Full Lifecycle Illustration" loading="lazy"/>
             </div>
           </div>
         </div>
-        <div class="deposit-assets__devider"></div>
-        <div class="row">
-          <div class="col-md-5 col-sm-12">
-            <img class="image-style" src="/images/how-it-works/do-it-manually.webp" alt="Secure Upload Folder Illustration" loading="lazy"/>
-          </div>
-          <div class="col-md-7 col-sm-12">
-            <p class="deposit-assets__title mt-5 mw-420">{{ site.data[page.lang]['how_it_works']['do_it_manually'] }}</p>
-            <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['if_you_prefer'] }}</p>
-          </div>
-        </div>
-        <div class="deposit-assets__devider"></div>
-        <p class="deposit-assets__title mw-530">{{ site.data[page.lang]['how_it_works']['what_can_and'] }}</p>
-        <div class="row mt-5">
-          <div class="col-md-6 col-sm-12">
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/screens.svg" alt="Screens Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['a_general_description'] }}</p>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/code.svg" alt="Code Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['any_applications'] }}</p>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/encryption.svg" alt="Encryption Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['encryption_information'] }}</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/source-code.svg" alt="Source Code Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['source_code'] }}</p>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/build.svg" alt="Build Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['build_instructions'] }}</p>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/key.svg" alt="Key Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['key_developers'] }}</p>
-            </div>
-            <div class="d-flex align-items-start mt-3">
-              <img class="mr-3 mt-1" src="/images/how-it-works/icons/samples.svg" alt="Samples Icon" loading="lazy"/>
-              <p class="deposit-assets__subtitle mw-530">{{ site.data[page.lang]['how_it_works']['samples_of_any'] }}</p>
-            </div>
-          </div>
+
+      </div>
+
+
+      <div class="bg-white section-large pt-0 pricing">
+        <div class="container pt-5 pb-3 overflow-x-scroll">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th scope="col"
+                  class="plan__table-subtitle border-none break-spaces font-35 line-height-40 fw-light">
+                  {{ site.data[page.lang]['software_backup_features']['solution_comparison'] }}</th>
+                <th scope="col"
+                  class="plan__table-subtitle border-none text-center break-spaces">
+                  <img class="mr-2" src="/images/software-escrow/icons/software-backup-icon.svg"
+                    alt="Software Backup Icon" loading="lazy" /><br>{{
+                  site.data[page.lang]['software_backup_features']['software_backup'] }}
+                </th>
+                <th scope="col" class="plan__table-subtitle border-none text-center break-spaces"><img
+                    class="mr-2" src="/images/software-escrow/icons/software-escrow-icon.svg"
+                    alt="Software Escrow Icon" loading="lazy" /><br>{{
+                  site.data[page.lang]['software_backup_features']['software_escrow'] }}</th>
+                <th scope="col" class="plan__table-subtitle border-none text-center break-spaces"><img
+                    class="mr-2" src="/images/software-escrow/icons/saas-escrow-icon.svg" alt="SaaS Escrow Icon"
+                    loading="lazy" /><br>{{ site.data[page.lang]['software_backup_features']['saas_escrow'] }}
+                </th>
+                <th scope="col" class="plan__table-subtitle border-none text-center break-spaces"><img
+                    class="mr-2" src="/images/software-escrow/icons/software-custodian-icon2.svg"
+                    alt="Software Custodian Icon" loading="lazy" /><br>{{
+                  site.data[page.lang]['software_backup_features']['software_custodian'] }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-1 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['usage_context'] }}</p>
+                </th>
+                <td class="plan__table-text text-center font-16">{{
+                  site.data[page.lang]['software_backup_features']['internal'] }}
+                </td>
+                <td class="plan__table-text text-center font-16">{{
+                  site.data[page.lang]['software_backup_features']['client_vendors'] }}</td>
+                <td class="plan__table-text text-center font-16">{{
+                  site.data[page.lang]['software_backup_features']['client_vendors'] }}</td>
+                <td class="plan__table-text text-center font-16">{{
+                  site.data[page.lang]['software_backup_features']['internal_client_vendors'] }}</td>
+              </tr>
+
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['protection_level'] }}</p>
+                </th>
+                <td class="plan__table-text text-center pt-3">{{
+                  site.data[page.lang]['software_backup_features']['recovery'] }}</td>
+                <td class="plan__table-text text-center pt-3">{{
+                  site.data[page.lang]['software_backup_features']['recovery'] }}</td>
+                <td class="plan__table-text text-center pt-3">{{
+                  site.data[page.lang]['software_backup_features']['recovery_continuity'] }}</td>
+                <td class="plan__table-text text-center">{{
+                  site.data[page.lang]['software_backup_features']['recovery_continuity_accountability'] }}</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['legal_framework'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white pt-3">-
+                </td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['source_code'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['data'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['hosting_environments'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3">-
+                </td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['3rd_party_providers'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3">-
+                </td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['data_operations'] }}</p>
+                </th>
+                <td class="plan__table-text text-center bg-white font-18 fw-600 pt-3">-
+                </td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+              <tr>
+                <th class="" scope="row">
+                  <p class="plan__table-text my-2 fw-light">{{
+                    site.data[page.lang]['software_backup_features']['sla_performance'] }}</p>
+                </th>
+                <td
+                  class="plan__table-text text-center bg-white font-18 fw-600 pt-3">
+                  -</td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3">-</td>
+                <td class="plan__table-text text-center pt-3"><img class=""
+                    src="/images/disaster-recovery/icons/circle-check-icon.svg" alt="Circle Check Icon" /></td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
 
     <!-- Section -->
-    <div class="container section-large pricing">
+    <div class="container section-large pt-0 pricing">
       <h4 class="section__title text-align-start">{{ site.data[page.lang]['pricing']['frequently_asked'] }}</h4>
       <ul class="faq mt-5 pb-5 pl-0">
         <li class="q d-flex align-items-center justify-content-between">
@@ -345,7 +379,105 @@
       </ul>
     </div>
     <!-- Section -->
-    {% include demo-intro.html %}
+    <div class="resources">
+      <div class="container content-center">
+        <p class="people-choose__main-title mw-800 text-bondi-blue pt-0">{{ site.data[page.lang]['index']['these_companies'] }}</p>
+      </div>
+      <div class="people-choose__bg">
+        <div class="container">
+          <p class="people-choose__main-subtitle2 mx-auto mt-4">{{ site.data[page.lang]['index']['software_escrow_secures'] }}</p>
+          <a class="button btn-cerulean3 pricing-href mx-auto px-5 mt-5" href="pricing.html">
+            {{ site.data[page.lang]['includes']['intro']['get_started'] }}
+          </a>
+          <div class="d-flex flex-wrap justify-content-center mt-4">
+            <p class="software-escrow__text text-center mr-4"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['best_price'] }}</p>
+            <p class="software-escrow__text text-center"><i class="fa fa-check-circle text-light-green mr-2"></i>{{ site.data[page.lang]['index']['no_hidden_costs'] }}</p>
+          </div>
+          
+        </div>
+        <div class="container section-medium">
+          <img class="image-style" src="/images/how-it-works/companies-logos.webp" alt="Illustration: Trusted Partner Companies" loading="lazy"/>
+        </div>
+      </div>
+    
+    
+      <div class=" mt-150">
+        <div class="container">
+          <div class="intro-guide__bg">
+            <img class="intro-guide__image" src="/images/landing/shape-intro.webp" alt="Illustration: Shape Intro" loading="lazy"/>
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <p class="intro-guide__title">{{ site.data[page.lang]['compare_solutions']['disaster_recovery_solutions'] }}</p>
+                <div class="d-flex align-items-center">
+                  <p class="intro-guide__badge">{{ site.data[page.lang]['index']['e_book'] }}</p>
+                  <p class="intro-guide__text">{{ site.data[page.lang]['index']['10_pages'] }}</p>
+                </div>
+                <p class="intro-guide__subtitle">{{ site.data[page.lang]['index']['learn_more_about_solutions'] }}</p>
+                <a class="button btn-cerulean3 mt-4" data-toggle="modal" data-target="#exampleModal53">
+                  {{ site.data[page.lang]['includes']['intro']['download_guide'] }}
+                </a>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <img class="intro-guide__illustration mt-4" src="/images/how-it-works/disaster-recovery-solutions.webp" alt="Illustration: Disaster Recovery Guide" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal53" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content section__modal mx-auto">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="m-0">
+                  <div class="section__modal-form p-0 ">
+                    <p class="section__modal-title mt-3">{{ site.data[page.lang]['resources']['download_this_ebook'] }}</p>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                        <img class="section__modal-image" src="/images/how-it-works/disaster-recovery-solutions.webp" alt="Illustration: Disaster Recovery Guide" loading="lazy"/>
+                        <p class="section__modal-subtext mt-0">*{{ site.data[page.lang]['pricing']['ebook_available_only'] }}</p>
+                      </div>
+                      <div class="col-md-6 col-sm-12 pt-3">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                          hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5365877",
+                            formId: "c3ee8875-9128-450a-9dd0-9965d25924da"
+                          });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="intro-guide__container pt-100 pb-100 mt-5 min-h-600 bg-soft-gray">
+        <img class="intro-guide__shape-left" src="/images/landing/experts-small-shape.webp" alt="Decorative Small Shape" loading="lazy"/>
+        <img class="intro-guide__shape-right" src="/images/landing/experts-large-shape.webp" alt="Decorative Large Shape" loading="lazy"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <img class="image-style" src="/images/landing/our-experts.webp" alt="Illustration: Our Expert" loading="lazy"/>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <p class="intro-guide__main-title mt-4">{{ site.data[page.lang]['index']['a_session_with'] }}</p>
+              <p class="intro-guide__main-subtitle">{{ site.data[page.lang]['index']['schedule_a_session'] }}</p>
+              <a class="button btn-cerulean3 book-a-demo-href my-4" href="book-a-demo.html">
+                {{ site.data[page.lang]['book_demo']['book_a_demo'] }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
     {% include footer.html %}
   </div>
